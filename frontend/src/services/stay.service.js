@@ -1,74 +1,66 @@
-
-// import { storageService } from './async-storage.service.js'
+// import { storageService } from './async-storage-service.js'
+// import { utilService } from './util-service.js'
 import { httpService } from './http.service.js'
-import { utilService } from './util.service.js'
-import { userService } from './user.service.js'
 
 
-const STORAGE_KEY = 'car'
 
-export const carService = {
+
+
+const ENDPOINT = 'stay'
+const STAYS_KEY = 'staysDB'
+    // _createStay()
+
+
+export const stayService = {
     query,
-    getById,
-    save,
-    remove,
-    getEmptyCar,
-    addCarMsg
-}
-window.cs = carService
-
-
-async function query(filterBy = { txt: '', price: 0 }) {
-    return httpService.get(STORAGE_KEY, filterBy)
-
-    // var cars = await storageService.query(STORAGE_KEY)
-    // if (filterBy.txt) {
-    //     const regex = new RegExp(filterBy.txt, 'i')
-    //     cars = cars.filter(car => regex.test(car.vendor) || regex.test(car.description))
-    // }
-    // if (filterBy.price) {
-    //     cars = cars.filter(car => car.price <= filterBy.price)
-    // }
-    // return cars
-
-}
-function getById(carId) {
-    // return storageService.get(STORAGE_KEY, carId)
-    return httpService.get(`car/${carId}`)
-}
-
-async function remove(carId) {
-    // await storageService.remove(STORAGE_KEY, carId)
-    return httpService.delete(`car/${carId}`)
-}
-async function save(car) {
-    var savedCar
-    if (car._id) {
-        // savedCar = await storageService.put(STORAGE_KEY, car)
-        savedCar = await httpService.put(`car/${car._id}`, car)
-
-    } else {
-        // Later, owner is set by the backend
-        car.owner = userService.getLoggedinUser()
-        // savedCar = await storageService.post(STORAGE_KEY, car)
-        savedCar = await httpService.post('car', car)
-    }
-    return savedCar
-}
-
-async function addCarMsg(carId, txt) {
-    const savedMsg = await httpService.post(`car/${carId}/msg`, {txt})
-    return savedMsg
+    getById
 }
 
 
-function getEmptyCar() {
-    return {
-        vendor: 'Susita-' + (Date.now() % 1000),
-        price: utilService.getRandomIntInclusive(1000, 9000),
+
+
+async function query(filterBy) {
+    try {
+        return await httpService.get(ENDPOINT, filterBy)
+    } catch {
+        console.error('cannot load stays')
     }
 }
 
+
+
+async function getById(entityId) {
+    try {
+        return await httpService.get(`${ENDPOINT}/${entityId}`)
+    } catch {
+        console.error('cannot load stay')
+    }
+}
+
+
+function _filterStays(stays, filterBy) {
+    let filteredStays = stays
+    if (filterBy.country) {
+
+        const regex = new RegExp(filterBy.country, 'i')
+        filteredStays = filteredStays.filter(stay => regex.test(stay.address.country || stay.address.city))
+    }
+
+    if (filterBy.type.length) {
+        filteredStays = filteredStays.filter((stay) => {
+            return filterBy.type.some((label) => {
+                return label === stay.roomType
+            })
+        })
+    }
+    if (filterBy.price) {
+        filteredStays = filteredStays.filter((stay) => {
+            return stay.price > filterBy.price.minPrice && stay.price < filterBy.price.maxPrice
+        })
+    }
+
+    return filteredStays
+}
 
 
 
