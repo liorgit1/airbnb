@@ -7,7 +7,7 @@
         </button>
       </section>
   
-      <home-list />
+      <StayList />
       <section class="host-container flex">
         <div class="container-title flex">
           <h2 class="host-title">
@@ -19,40 +19,24 @@
           <span class="host-btn-txt">Lets try</span>
         </button>
       </section>
-      <login-modal
-       v-close="closeLoginModal" 
-        v-if="modalLoginIsOpen"
-        @login="setLogin"
-        @closeLoginModal="closeLoginModal"
       />
     </main>
   </template>
   
   <script>
-  import appHeader from "../components/app-header.vue";
-  import homeList from "../components/home-list.vue";
-  import loginModal from "../components/login-modal.vue";
-  import { userService } from "../services/user-service.js";
+  import StayList from "../cmps/StayList.vue";
+
   
   export default {
-    name: "home-page",
-    data() {
-      return {
-        modalLoginIsOpen: false,
-      };
-    },
-    methods: {
-      flexibleClick() {
-        this.$router.push("/stay/");
-      },
-    },
+    name: "StayIndex",
+   
     computed: {
       stays() {
         this.$store.commit({ type: "setStay", stay });
       },
     },
     components: {
-      appHeader,
+      StayList,
     },
   };
   </script>

@@ -11,7 +11,7 @@
   </template>
   
   <script>
-  import stayPreview from "./StayPreview.vue";
+  import stayPreview from "./stay-preview.vue";
   export default {
     name: "stay-list",
     props: {
