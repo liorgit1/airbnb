@@ -73,7 +73,6 @@
   </template>
   
   <script>
-  import imgUploader from "../cmps/ImgUploader.vue";
   export default {
     name: "StayPreview",
     props: {
@@ -86,17 +85,11 @@
         this.$router.push(`/stay/${this.stay._id}`);
         window.scrollTo(0, 0);
       },
-    },
-    computed: {
+    }
+  }
+
     
-      getStayName() {
-        return this.stay.name.slice(0,38)
-      },
-    },
-    components: {
-      imgUploader,
-    },
-  };
+   
   </script>
   
   <style></style>
