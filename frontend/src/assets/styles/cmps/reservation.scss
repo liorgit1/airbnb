@@ -9,10 +9,20 @@
     border-radius: 12px;
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-    padding-top: 48px;
+    padding-top:20px;
     right: 40px;
     position: relative;
-    border: 1px solid rgb(221, 221, 221)
+
+    border: 1px solid rgb(221, 221, 221);
+
+    span {
+        font-size: 16px;
+
+    }
+
+   .bigSpan {
+        font-size: 22px;
+    }
 
     /////////////////////////////////
 }

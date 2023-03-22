@@ -29,10 +29,10 @@
   </template>
   
   <script>
-  import appHeader from "../components/app-header.vue";
-  import homeList from "../components/home-list.vue";
-  import loginModal from "../components/login-modal.vue";
-  import { userService } from "../services/user-service.js";
+  // import appHeader from "../components/app-header.vue";
+  // import homeList from "../components/home-list.vue";
+  // import loginModal from "../components/login-modal.vue";
+  // import { userService } from "../services/user-service.js";
   
   export default {
     name: "home-page",
@@ -52,7 +52,7 @@
       },
     },
     components: {
-      appHeader,
+      // appHeader,
     },
   };
   </script>
