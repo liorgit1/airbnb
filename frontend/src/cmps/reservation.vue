@@ -1,6 +1,9 @@
 <template>
     <section class="reservationModal">
-        hhhaaaaaaaaaaaaaa
+        <div>
+            <span class="bigSpan">$9,023 </span><span>night</span>
+        </div>
+        
     </section>
 </template>
 
