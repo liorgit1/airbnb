@@ -1,107 +1,46 @@
-// import { carService } from '../services/car.service.local'
-import { carService } from '../services/stay.service'
+import { stayService } from '../services/stay.service.js'
 
-export function getActionRemoveCar(carId) {
-    return {
-        type: 'removeCar',
-        carId
-    }
-}
-export function getActionAddCar(car) {
-    return {
-        type: 'addCar',
-        car
-    }
-}
-export function getActionUpdateCar(car) {
-    return {
-        type: 'updateCar',
-        car
-    }
-}
-export function getActionAddCarMsg(carId) {
-    return {
-        type: 'addCarMsg',
-        carId,
-        txt: 'Stam txt'
-    }
-}
-
-export const carStore = {
+export default {
     state: {
-        cars: []
+        stays: [],
+        filterBy: {
+            country: '',
+            guests: {
+                adults: 0,
+                kids: 0,
+                Infants: 0,
+            },
+            stayTime: '',
+            type: [],
+            price: {
+                minPrice: 30,
+                maxPrice: 150
+            },
+            amenities: [],
+        },
     },
     getters: {
-        cars({cars}) { return cars },
+        stays(state) {
+            return state.stays;
+
     },
     mutations: {
-        setCars(state, { cars }) {
-            state.cars = cars
+        setStay(state, { stays }) {
+            state.stays = stays
         },
-        addCar(state, { car }) {
-            state.cars.push(car)
-        },
-        updateCar(state, { car }) {
-            const idx = state.cars.findIndex(c => c._id === car._id)
-            state.cars.splice(idx, 1, car)
-        },
-        removeCar(state, { carId }) {
-            state.cars = state.cars.filter(car => car._id !== carId)
-        },
-        addCarMsg(state, { carId , msg}) {
-            const car = state.cars.find(car => car._id === carId)
-            if (!car.msgs) car.msgs = []
-            car.msgs.push(msg)
-        },
-    },
+
     actions: {
-        async addCar(context, { car }) {
+        async loadStays({ commit, state }) {
+            const stays = await stayService.query(state.filterBy)
             try {
-                car = await carService.save(car)
-                context.commit(getActionAddCar(car))
-                return car
+                commit({ type: 'setStay', stays })
             } catch (err) {
-                console.log('carStore: Error in addCar', err)
-                throw err
-            }
-        },
-        async updateCar(context, { car }) {
-            try {
-                car = await carService.save(car)
-                context.commit(getActionUpdateCar(car))
-                return car
-            } catch (err) {
-                console.log('carStore: Error in updateCar', err)
-                throw err
-            }
-        },
-        async loadCars(context) {
-            try {
-                const cars = await carService.query()
-                context.commit({ type: 'setCars', cars })
-            } catch (err) {
-                console.log('carStore: Error in loadCars', err)
-                throw err
-            }
-        },
-        async removeCar(context, { carId }) {
-            try {
-                await carService.remove(carId)
-                context.commit(getActionRemoveCar(carId))
-            } catch (err) {
-                console.log('carStore: Error in removeCar', err)
-                throw err
-            }
-        },
-        async addCarMsg(context, { carId, txt }) {
-            try {
-                const msg = await carService.addCarMsg(carId, txt)
-                context.commit({type: 'addCarMsg', carId, msg })
-            } catch (err) {
-                console.log('carStore: Error in addCarMsg', err)
+                console.error('Cannot Load stays', err)
                 throw err
             }
         },
 
+    }
+}
     }
 }
