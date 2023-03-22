@@ -8,9 +8,10 @@
 }
 
 html {
-    font-family: montserrat;
+    font-family: cereal,sans-serif;
     line-height: 1.6;
-    color: $clr2;
+    color: #222;
+    letter-spacing: .007em;
 }
 
 body {
@@ -44,4 +45,5 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 

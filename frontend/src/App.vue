@@ -1,6 +1,7 @@
 <template>
   <section>
     <AppHeader />
+    <FilterList/>
     <RouterView/>
     <UserMsg/>
   </section>
@@ -13,6 +14,7 @@ import { userService } from './services/user.service'
 import { store } from './store/store'
 
 import AppHeader from './cmps/AppHeader.vue'
+import FilterList from './cmps/FilterList.vue'
 import UserMsg from './cmps/UserMsg.vue'
 
 
@@ -25,6 +27,7 @@ export default {
   },
   components: {
     AppHeader,
+    FilterList,
     UserMsg
   },
 }
