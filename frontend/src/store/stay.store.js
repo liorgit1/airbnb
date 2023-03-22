@@ -1,5 +1,5 @@
 // import { carService } from '../services/car.service.local'
-import { carService } from '../services/car.service'
+import { carService } from '../services/stay.service'
 
 export function getActionRemoveCar(carId) {
     return {
