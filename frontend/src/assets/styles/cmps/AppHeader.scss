@@ -1,38 +1,112 @@
-header {
-    background-color: $clr5;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
 
-    .loggedin-user {
-        background-color: $clr1;
-        padding: 2px 8px;
-        border-radius: 1em;
-        align-self: flex-end;
-        color: whitesmoke;
-        span{
-            background-color: $clr2;
-            padding: 4px;
-            margin: 10px;
-            border-radius: 50%;
-        }
-        img {
-            width: 2em;
-            height: 2em;
-            border-radius: 50%;
-        }
-    }
-    nav {
-        background-color: $clr4;
-        padding: 5px 0;
-    }
-    nav a:not(:first-child) {
-        border-top: 1px solid $clr1;
-        padding: 0 5px;
-        margin: 10px;
-    }
-    nav .active {
-        color: $clr1;
-    }
+
+// header {
     
+//     // .loggedin-user {
+//     //     background-color: $clr1;
+//     //     padding: 2px 8px;
+//     //     border-radius: 1em;
+//     //     align-self: flex-end;
+//     //     color: whitesmoke;
+//     //     span{
+//     //         background-color: $clr2;
+//     //         padding: 4px;
+//     //         margin: 10px;
+//     //         border-radius: 50%;
+//     //     }
+//     //     img {
+//     //         width: 2em;
+//     //         height: 2em;
+//     //         border-radius: 50%;
+//     //     }
+//     // }
+    
+// }
+
+nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
 }
+
+.logo{
+    display: flex;
+
+}
+
+.logo-img{
+    height: 32px;
+    width: 32px;
+}
+
+.search-bar{
+    padding-inline-start: 8px;
+    background-color: #fff;
+    border: 1px solid #DDDDDD;
+    border-radius: 40px;
+    box-shadow: 0 1px 2px #00000014, 0 4px 12px #0000000d;
+    transition: box-shadow .2s ease;
+    align-items: center;
+    color: #222;
+    display: inline-flex;
+    max-width: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+//    border-top-right-radius: 16px;
+//    border-bottom-right-radius: 16px;
+//    border-bottom-left-radius: 16px;
+//    border-top-left-radius: 16px;
+   
+}
+
+.search-bar button{
+    background-color: transparent;
+    color: inherit;
+    font-size: .875rem;
+    font-family: cereal-medium;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 80px;
+    cursor: inherit;
+    border: none;
+}
+
+.search-bar .search-btn{
+    color: #fff;
+    background-color: #ff385c;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 7px 7px 7px 0;
+    height: 32px;
+    min-width: 32px;
+}
+
+.logo-text{
+    font-weight: 1000;
+    font-size: 1.5rem;
+    color:$clr7;
+}
+
+.user-nav{
+    display: flex;
+    border-radius: 50px;
+    border: 1px solid #DDDDDD;
+    cursor: pointer;
+    
+    position: relative;
+    padding: 5px 5px 5px 12px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.user-nav .user-png{
+    display: block;
+    width:30px;
+    height:30px;
+    fill: currentcolor;
+}
+
+

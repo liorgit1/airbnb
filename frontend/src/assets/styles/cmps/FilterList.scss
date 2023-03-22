@@ -1,0 +1,27 @@
+.Filter-list{
+    
+    display: flex;
+    padding:2em;
+    justify-content: space-between;
+}
+
+.Filter-list button{
+    padding: 5px;
+    background-color: white;
+    overflow: hidden;
+    width:40px;
+    border: none;
+}
+
+.Filter-list img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    color: #717171;
+    font-size: 12px;
+    height: 24px;
+    fill: #717171;
+    opacity: 50%;
+    transition: opacity .2s;
+}
