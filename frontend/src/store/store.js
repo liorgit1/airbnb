@@ -7,8 +7,8 @@ import  StayStore  from './stay-store.js'
 export const store = Vuex.createStore({
   strict: true,
   modules: {
-    userStore,
     StayStore,
+    userStore,
   },
   state: {
   },
