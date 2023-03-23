@@ -1,0 +1,47 @@
+StayInfo {}
+
+.stay-info {
+    margin-inline-start: 76px;
+    margin-block-start: 122px;
+    width: 650px;
+    // background-color: #b93535;
+    /* max-width: 650px; */
+    height: 1000px;
+    grid-row: 1/2;
+}
+
+.host-info {
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+    padding-bottom: 24px;
+
+
+    &h2 {
+        font-size: 1.375rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+}
+
+.stay-baths-beds {
+    font-weight: 300;
+    padding: 0
+}
+
+.dot {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0 5px;
+}
+
+.mini-host-img {
+    border-radius: 50%;
+    height: 56px;
+    object-fit: cover;
+    width: 56px;
+}
+.stay-summery{
+    max-width: none;
+    border-bottom: 1px solid #ddd;
+}

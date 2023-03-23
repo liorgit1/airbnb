@@ -1,8 +1,8 @@
 <template>
-    <section>
+    <section class="detailsMainGrid" >
 
 
-        <section class="detailsMainGrid">
+        <section >
             <h1> Castle in Crete</h1>
             <div class="likeAndShare">
                 <p class="placeLink">Siena, Italy</p>
@@ -17,7 +17,12 @@
                 <div class="img img4"></div>
                 <div class="img mainIgm"></div>
             </div>
-            <reservation/>
+            <section class="infoGrid">
+                <reservation />
+                <StayInfo />
+            </section>
+
+
         </section>
     </section>
 </template>
@@ -25,6 +30,7 @@
 
 <script>
 import reservation from '../cmps/reservation.vue'
+import StayInfo from './StayInfo.vue'
 
 
 
@@ -40,7 +46,8 @@ export default {
     },
     methods: {
     }, components: {
-        reservation
+        reservation,
+        StayInfo
     }
 
 
