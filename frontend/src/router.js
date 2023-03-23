@@ -1,50 +1,30 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import homePage from '../src/views/home-page.vue'
+import explorePage from '../src/views/explore-app.vue'
+import stayDetails from '../src/views/StayDetails.vue'
 
-import Chat from './views/Chat.vue'
-import StayDetails from './views/StayDetails.vue'
-import StayIndex from './views/StayIndex.vue'
-import ReviewIndex from './views/ReviewIndex.vue'
-import LoginSignup from './views/LoginSignup.vue'
-import UserDetails from './views/UserDetails.vue'
-import HostDetails from './views/HostDetails.vue'
+
 
 const routes = [
   {
+    path: '/',
+    name: 'home',
+    component: homePage
+  },
+  {
     path: '/stay',
-    name: 'StayIndex',
-    component: StayIndex
+    name: 'explore-page',
+    component: explorePage
   },
   {
     path: '/stay/:id',
-    name: 'StayDetails',
-    component: StayDetails
-  },
-  {
-    path: '/review',
-    name: 'ReviewIndex',
-    component: ReviewIndex
-  },
-  {
-    path: '/chat',
-    name: 'Chat',
-    component: Chat
-  },
-  {
-    path: '/login',
-    name: 'LoginSignup',
-    component: LoginSignup
-  },
-  {
-    path: '/user/:id',
-    name: 'UserDetails',
-    component: UserDetails
-  },
-  {
-    path: '/Host/:id',
-    name: 'HostDetails',
-    component: HostDetails
-  },
-]
+    name: 'stay-details',
+    component: stayDetails
+  }
+];
+
+
+
 
 
 export const router = createRouter({

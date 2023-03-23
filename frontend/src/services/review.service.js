@@ -4,7 +4,7 @@ import {userService} from './user.service'
 import {showErrorMsg, showSuccessMsg} from '../services/event-bus.service'
 
 import { store } from '../store/store'
-import { socketService, SOCKET_EVENT_REVIEW_ADDED, SOCKET_EVENT_REVIEW_ABOUT_YOU } from './socket.service'
+
 
 
 ;(() => {

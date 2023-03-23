@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Font Sizes
 .fs12 { font-size: rem(12px); }
 .fs14 { font-size: rem(14px); }
@@ -17,9 +18,12 @@
 }
 // flex helpers
 
+=======
+// Flex
+>>>>>>> 627a67d80885652f789ea0a6f45e84124492f94c
 .flex {
-
     display: flex;
+<<<<<<< HEAD
 
     > *.full {
         flex: 1;
@@ -49,3 +53,70 @@
 .portrait-ratio {
     @include aspect-ratio(9, 16);
 }
+=======
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .inline-flex {
+    display: inline-flex;
+  }
+  
+  //grid
+  .grid {
+    display: grid;
+  }
+  
+  // List
+  .clean-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .align-center {
+    align-items: center;
+  }
+  
+  // Text
+  .vertical-text {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+  }
+  
+  .tag-text {
+    text-transform: uppercase;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  .hide {
+    visibility: hidden;
+  }
+  .none {
+    display: none !important;
+  }
+  .relative {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
+>>>>>>> 627a67d80885652f789ea0a6f45e84124492f94c
