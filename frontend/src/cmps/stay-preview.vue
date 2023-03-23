@@ -1,95 +1,124 @@
 <template>
-    <li class="stay-preview-container" >
-      <section class="stay-preview clickable">
-        <div class="stay-preview-gallery">
-          <section>
-            <imgUploader
-              :imgs="stay.imgUrls"
-              class="card-img"
-            />
-          </section>
-          <div>
-            <span class="icon-heart">
-              <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-                style="
-                  display: block;
-                  height: 24px;
-                  width: 24px;
-                  fill: rgba(0, 0, 0, 0.5);
-                  stroke-width: 2;
-                  overflow: visible;
-                  stroke: white;
-                "
-              >
-                <path
-                  d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791
-             0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949
-              2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"
-                ></path>
-              </svg>
-            </span>
-          </div>
+  <section>
+    <ul class="home-list">
+      <li
+        class="home-card clickable"
+        v-for="stay in ratedStays"
+        :key="stay._id"
+        @click="goToStay(stay)"
+      >
+        <img
+          class="home-img"
+          :src="`https://res.cloudinary.com/yonatan-cajan22/image/upload/v1648051428/airyny/${stay}1.jpg`"
+          alt="img rated stay"
+        />
+        <div class="txt-container">
+          <h3 class="country-name popular">
+            {{ stays }}
+          </h3>
         </div>
-        <div class="stay-preview-info">
-          <div class="flex card-rate">
-            <div class="star-preview">
-              <svg
-                viewBox="0 0 32 32"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-                style="
-                  display: block;
-                  height: 14px;
-                  width: 14px;
-                  fill: #ff385c;
-                "
-              >
+      </li>
+    </ul>
 
-              </svg>
-            </div>
-            <span class="total-rate"> {{ getRating.toFixed(1) }} </span>
-            <span> ({{ stay.numOfReviews }} reviews ) </span>
+    <div class="unique-dest-list popular-dest-list">
+      <h2 class="popular-header">
+        <span>Unique Destinations</span>
+      </h2>
+      <ul class="home-list">
+        <li
+          class="home-card clickable"
+          v-for="stay in uniqueStays"
+          :key="stay._id"
+          @click="goToUnique(stay)"
+        >
+          <img
+            class="home-img"
+            :src="`https://res.cloudinary.com/yonatan-cajan22/image/upload/v1648051428/airyny/${stay.country}`"
+            alt="img unique stay"
+          />
+          <div class="unique-txt">
+            <h3 class="country-name">
+              {{ stays.loc.country }}
+            </h3>
+            <span class="dist-country">{{ stay.km }}</span>
           </div>
-  
-          <div class="stay-type">
-            {{ stay.propertyType }} <span> &#183;</span>
-            {{ stay.address.city }}
-          </div>
-          <div class="stay-name">{{getStayName }}</div>
-          <div class="stay-price">
-            <span class="bold">${{ stay.price }}</span> /
-            night
-          </div>
-        </div>
-      </section>
-    </li>
-  </template>
-  
-  <script>
-  export default {
-    name: "StayPreview",
-    props: {
-      stay: {
-        type: Object,
+        </li>
+      </ul>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      ratedStays: ["New York", "Barcelona", "Porto", "Sydney"],
+      uniqueStays: [
+        {
+          country: "Canada",
+          id: "62447fdb4a61d0a384daa6dd",
+          km: "9,644km",
+        },
+        {
+          country: "Japan",
+          id: "62447e554a61d0a384d970b2",
+          km: "9,079 km",
+        },
+        {
+          country: "Norway",
+          id: "62447b7a4a61d0a384d6ed7f",
+          date: "mar 1-6",
+          km: "5,315.6km",
+        },
+        {
+          // 11115999
+          country: "Philippines",
+          id: "62447f9d4a61d0a384da7580",
+          km: "8,979km",
+        },
+      ],
+      filterBy: {
+        country: "",
+        guests: {
+          adults: 0,
+          kids: 0,
+          Infants: 0,
+        },
+        stayTime: "",
+        type: [],
+        price: {
+          minPrice: 30,
+          maxPrice: 2000,
+        },
       },
+    };
+  },
+  computed: {
+    stays() {
+      return console.log(this.$store.getters.stays);
     },
-    methods: {
-      goToDeatails() {
-        this.$router.push(`/stay/${this.stay._id}`);
-        window.scrollTo(0, 0);
-      },
-    }
-  }
+  },created() {
+    console.log(stays);
+  },
 
-    
-   
-  </script>
-  
-  <style></style>
+  methods: {
+    goToStay(stay) {
+      this.filterBy.country = stay;
+      this.$store.dispatch({
+        type: "setFilter",
+        filterBy: JSON.parse(JSON.stringify(this.filterBy)),
+      });
+      this.$router.push(`/stay`);
+      window.scrollTo(0, 0);
+    },
+
+    goToUnique(stay) {
+      delete stay.km;
+      this.$router.push(`/stay/${stay.id}`);
+      window.scrollTo(0, 0);
+    },
+  },
+};
+</script>
+
+<style></style>
