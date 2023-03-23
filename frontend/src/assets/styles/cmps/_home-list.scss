@@ -1,0 +1,111 @@
+.home-list {
+  grid-column: 1/-1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  };
+
+.ul{
+  margin: 8px;
+}
+
+ul.p{
+font-size: 10px;
+}
+
+.home-card {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: flex-start;
+  cursor: pointer;
+  position: relative;
+}
+  .home-image { 
+  //   z-index: 0;
+  //   display: flex;
+  //   flex-wrap: nowrap;
+  //   background-color: #fff;
+  //   box-shadow: rgba(50, 50, 93, 0.023) 0px 6px 8px -2px, rgba(0, 0, 0, 0.1) 0px 3px 7px -3px;
+  //   overflow-x: scroll;
+  //   border-radius: px-to-rem(12px);
+  //   transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  //   margin-bottom: 1.25rem;
+  //   position: relative;
+  //   scroll-snap-type: x mandatory;
+  //   scroll-behavior: smooth;
+  //   -webkit-overflow-scrolling: touch;
+  //   &::-webkit-scrollbar {
+  //       display: none;
+  // }
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-height: calc(60vh - 2rem);
+
+  > * {
+      width: 100%;
+  }
+
+  > *:first-child {
+      grid-row: 1/-1;
+  }
+// }
+
+  .country-name {
+    font-family: Cereal-Regular;
+    text-align: start;
+    white-space: pre-line;
+    font-size: 10px;
+    letter-spacing: -0.27px;
+    line-height: 27px;
+    margin-bottom: 24px;
+    margin-top: 14px;
+    color: white;
+    margin-left: 1.1rem;
+  }
+  .popular {
+    padding-top: 2px;
+  }
+}
+.txt-container {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  // grid-template-columns: repeat(4, 1fr);
+  background-color: #05050566;
+  // border-radius: 12px !important;
+  font-family: Cereal-Regular;
+
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: flex-start;
+  .dist-country {
+    // bottom: -1rem;
+    font-family: Cereal-Regular;
+    color: white;
+    line-height: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: rem(18px);
+  }
+
+  @include for-mobile-layout {
+    bottom: 0px;
+    height: 28px;
+    line-height: 6px;
+    /* font-weight: 200; */
+    /* font-size: 4px; */
+    padding-bottom: 68px;
+    .home-card .popular {
+      padding-top: 0px !important;
+    }
+  }
+}

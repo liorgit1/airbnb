@@ -1,0 +1,51 @@
+.stay-preview {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  width: calc(33.33333% - 32px);
+  margin: 16px;
+}
+
+.image-container {
+  height: 0;
+  padding-bottom: 66.66667%;
+  position: relative;
+  width: 272.97px;
+  height: 287.34px;
+}
+
+img {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.details-container {
+  padding: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #717171;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}

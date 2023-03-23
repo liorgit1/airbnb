@@ -1,59 +1,146 @@
-.main-layout {
-    padding-left: rem(80px);
-    padding-right: rem(80px);
+// Font helpers
+.font-bold {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.font-medium {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-weight: 400;
+}
+.font-base {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
 }
 
-.details-layout {
-    margin: 0 auto;
-    max-width: 1280px;
-    padding-left: rem(80px);
-    padding-right: rem(80px);
-    @include for-wide-layout {
-        max-width: 1120px;
-        padding-left: rem(40px);
-        padding-right: rem(40px);
-    }
-    @include for-narrow-layout {
-        padding-left: rem(24px);
-        padding-right: rem(24px);
-    }
+.text-muted {
+    color: transparent;
 }
 
-.main-layout2 {
-    margin: 0 auto;
-    display: grid;
-    padding-left: rem(80px);
-    padding-right: rem(80px);
-    max-width: 1600px;
-    @include for-wide-layout {
-        max-width: 1120px;
-        padding-left: rem(80px);
-        padding-right: rem(80px);
-    }
-    @include for-narrow-layout {
-        padding-left: rem(40px);
-        padding-right: rem(20px);
-    }
-    @include for-mobile-layout {
-        padding-left: rem(20px);
-        padding-right: rem(20px);
+// Scrollbar
+.disable-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+
+    &::-webkit-scrollbar {
+        background: transparent; /* Chrome/Safari/Webkit */
+        width: 0px;
+        height: 0;
     }
 }
 
-.main-layout3 {
-    margin: 24px auto 0 auto;
-    display: grid;
-    @include for-wide-layout {
-        max-width: 1120px;
-        padding-left: rem(80px);
-        padding-right: rem(80px);
+// List
+.clean-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.inline-clamp {
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    line-height: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// Inline space
+.space-inline-s {
+    & > *:not(:last-child) {
+        margin-inline-end: 1em;
     }
-    @include for-narrow-layout {
-        padding-left: rem(40px);
-        padding-right: rem(20px);
+}
+
+.space-inline-m {
+    & > *:not(:last-child) {
+        margin-inline-end: 2em;
     }
-    @include for-mobile-layout {
-        padding-left: rem(20px);
-        padding-right: rem(20px);
+}
+
+.space-inline-l {
+    & > *:not(:last-child) {
+        margin-inline-end: 3em;
+    }
+}
+
+// Aspect ratios
+
+.ratio-16-9 {
+    @include aspect-ratio(100, 56);
+}
+
+.ratio-square {
+    @include aspect-ratio(100, 100);
+}
+
+.ratio-card {
+    @include aspect-ratio(100, 80);
+}
+
+.ratio-poster {
+    @include aspect-ratio(100, 150);
+}
+
+.flex {
+    display: flex;
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.flex-center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
+
+    &.justify-start {
+        justify-content: flex-start;
+    }
+
+    &.justify-end {
+        justify-content: flex-end;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+}
+.hidden {
+    display: none !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.avatar {
+    width: 3.75rem;
+    height: 3.75rem;
+    object-fit: cover;
+    border-radius: 55px;
+    &.sm {
+        width: 2.75rem;
+        height: 2.75rem;
     }
 }

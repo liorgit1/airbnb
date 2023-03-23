@@ -24,10 +24,9 @@
   </template>
   
   <script>
-  // import appHeader from "../components/app-header.vue";
-  // import homeList from "../components/home-list.vue";
-  // import loginModal from "../components/login-modal.vue";
-  // import { userService } from "../services/user-service.js";
+  import appHeader from "../cmps/AppHeader.vue";
+  import stayList from "../cmps/stay-list.vue";
+  
   
   export default {
     name: "StayIndex",
@@ -38,7 +37,8 @@
       },
     },
     components: {
-      // appHeader,
+      appHeader,
+      stayList,
     },
   };
   </script>

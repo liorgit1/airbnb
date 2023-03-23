@@ -1,34 +1,30 @@
 <template>
-    <ul class="stay-list">
-      <stay-preview
-        @stayLiked="setLiked"
-        v-for="stay in stays"
-        :stay="stay"
-        :key="stay._id"
-      >
-      </stay-preview>
-    </ul>
-  </template>
-  
-  <script>
-  import stayPreview from "./stay-preview.vue";
-  export default {
-    name: "stay-list",
-    props: {
-      stays: {
-        type: Array,
-      },
+  <ul class="stay-list">
+    <stay-preview
+      v-for="stay in stays"
+      :stay="stay"
+      :key="stay._id"
+    >
+    </stay-preview>
+  </ul>
+</template>
+
+<script>
+import stayPreview from './stay-preview.vue'
+export default {
+  name: "stay-list",
+  props: {
+    stays: {
+      type: Array,
     },
-    components: {
-      stayPreview,
-    },
-    methods: {
-      setLiked(stay) {
-        this.$emit("stayLiked", stay);
-      },
+  },
+  components: {
+    stayPreview,
+  },
+  methods: {
+
     },
   };
-  </script>
-  
-  <style></style>
-  
+</script>
+
+<style></style>
