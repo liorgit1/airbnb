@@ -15,6 +15,7 @@ import { store } from './store/store'
 
 import AppHeader from './cmps/AppHeader.vue'
 import FilterList from './cmps/FilterList.vue'
+import HeaderFilter from './cmps/HeaderFilter.vue'
 import UserMsg from './cmps/UserMsg.vue'
 
 
@@ -27,6 +28,7 @@ export default {
   },
   components: {
     AppHeader,
+    HeaderFilter,
     FilterList,
     UserMsg
   },
