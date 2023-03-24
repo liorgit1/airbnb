@@ -31,6 +31,9 @@ nav{
    
 }
 
+p{
+    margin: inherit;
+}
 .logo{
     display: flex;
 
@@ -61,11 +64,10 @@ nav{
    
 }
 
-.search-bar button{
+.search-bar button:not(:last-child){
     background-color: transparent;
     color: inherit;
     font-size: .875rem;
-    font-family: cereal-medium;
     line-height: 18px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -77,12 +79,15 @@ nav{
 
 .search-bar .search-btn{
     color: #fff;
+    display: flex;
+    align-items: center;
+    padding: inherit;
     background-color: #ff385c;
+    border: none;
+    margin-right: 10px;
     border-radius: 50%;
-    padding: 10px;
-    margin: 7px 7px 7px 0;
     height: 32px;
-    min-width: 32px;
+    width: 32px;
 }
 
 .logo-text{
