@@ -1,42 +1,59 @@
-.container {
-    max-width: 1500px;
-    padding: 10px;
+.main-layout {
+    padding-left: rem(80px);
+    padding-right: rem(80px);
 }
 
-.main-container {
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-
-    > * {
-        grid-column: 2;
-
-        &.full {
-            grid-column: 1 /-1;
-        }
-    }
-
-    @include for-narrow-layout {
-        grid-template-columns: 
-            minmax(20px, 1fr)
-            minmax(auto, $mobile-breakpoint)
-            minmax(20px, 1fr);
-    }
-    @include for-normal-layout {
-        grid-template-columns: 
-            minmax(20px, 1fr)
-            minmax(auto, $narrow-breakpoint)
-            minmax(20px, 1fr);
-    }
+.details-layout {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-left: rem(80px);
+    padding-right: rem(80px);
     @include for-wide-layout {
-        grid-template-columns: 
-            minmax(20px, 1fr)
-            minmax(auto, $normal-breakpoint)
-            minmax(20px, 1fr);
+        max-width: 1120px;
+        padding-left: rem(40px);
+        padding-right: rem(40px);
+    }
+    @include for-narrow-layout {
+        padding-left: rem(24px);
+        padding-right: rem(24px);
     }
 }
 
-.card-grid {
+.main-layout2 {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+    padding-left: rem(80px);
+    padding-right: rem(80px);
+    max-width: 1600px;
+    @include for-wide-layout {
+        max-width: 1120px;
+        padding-left: rem(80px);
+        padding-right: rem(80px);
+    }
+    @include for-narrow-layout {
+        padding-left: rem(40px);
+        padding-right: rem(20px);
+    }
+    @include for-mobile-layout {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+    }
+}
+
+.main-layout3 {
+    margin: 24px auto 0 auto;
+    display: grid;
+    @include for-wide-layout {
+        max-width: 1120px;
+        padding-left: rem(80px);
+        padding-right: rem(80px);
+    }
+    @include for-narrow-layout {
+        padding-left: rem(40px);
+        padding-right: rem(20px);
+    }
+    @include for-mobile-layout {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+    }
 }

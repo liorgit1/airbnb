@@ -1,7 +1,6 @@
 // import { storageService } from './async-storage.service'
 import { httpService } from './http.service'
 import { store } from '../store/store'
-import { socketService, SOCKET_EVENT_USER_UPDATED, SOCKET_EMIT_USER_WATCH } from './socket.service'
 import { showSuccessMsg } from './event-bus.service'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
@@ -16,7 +15,6 @@ export const userService = {
     getById,
     remove,
     update,
-    changeScore
 }
 
 window.userService = userService

@@ -1,14 +1,14 @@
 import Vuex from 'vuex'
 
 import { userStore } from './user.store.js'
-// import { carStore } from './stay.store.js'
-import { reviewStore } from './review.store.js'
+// import  StayStore  from './stay-store.js'
+// import { reviewStore } from './review.store.js'
 
 export const store = Vuex.createStore({
   strict: true,
   modules: {
     userStore,
-    // carStore,
+    carStore,
     reviewStore
   },
   state: {
@@ -16,5 +16,9 @@ export const store = Vuex.createStore({
   mutations: {
   },
   actions: {
-  }
+  },
+  getters: {
+
+  },
+  
 })

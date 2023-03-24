@@ -2,29 +2,33 @@
     box-sizing: border-box;
 }
 
+
+
 .detailsMainGrid {
     height: 580px;
     display: grid;
-    grid-template-columns: 1fr max(1200px) 1fr;
+    // grid-template-columns: minmax(80px, 1fr) max(1200px) minmax(80px ,1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     grid-auto-flow: row;
 
 
-    // .reservationModal {
-    //     grid-column: 2/3;
-    // }
+    .reservationModal {
+        grid-column: 2/3;
+        margin-inline-start: 130px;
+    }
 
     h1 {
         font-size: 26px;
-        grid-column: 2/3;
-        margin-inline: 43px;
+        grid-column: 1;
+        margin-inline: 82px;
     }
 
     .likeAndShare {
         margin-block-end: 17px;
-        margin-inline: 43px;
+        margin-inline: 82px;
         display: flex;
         flex-direction: row;
-        grid-column: 2/3;
+        grid-column: 1;
         justify-content: flex-end;
         align-items: flex-end;
 
@@ -48,7 +52,7 @@
         margin-top: 2px;
         grid-template-columns: 560px 270px 270px;
         grid-template-rows: 280px 280px;
-        grid-column: 2/3;
+        grid-column: 1/2;
         max-height: 583px;
         ;
         max-width: 1120px;
@@ -114,4 +118,24 @@
             background-size: cover;
         }
     }
+}
+
+.infoGrid {
+    display: grid;
+    margin: auto;
+    gap: 8px;
+    margin-top: 2px;
+    grid-template-columns: auto auto;
+    grid-column: 1;
+
+
+    // max-height: 583px;
+    // ;
+    // max-width: 1120px;
+    // ;
+    // min-width: 950px;
+    // ;
+    // min-height: 500px;
+    // // background-color: black;
+    // padding-inline: 80px;
 }

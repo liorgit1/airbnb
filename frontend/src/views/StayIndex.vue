@@ -7,7 +7,7 @@
         </button>
       </section>
   
-      <home-list />
+      <StayList />
       <section class="host-container flex">
         <div class="container-title flex">
           <h2 class="host-title">
@@ -19,11 +19,6 @@
           <span class="host-btn-txt">Lets try</span>
         </button>
       </section>
-      <login-modal
-       v-close="closeLoginModal" 
-        v-if="modalLoginIsOpen"
-        @login="setLogin"
-        @closeLoginModal="closeLoginModal"
       />
     </main>
   </template>
@@ -35,17 +30,8 @@
   // import { userService } from "../services/user-service.js";
   
   export default {
-    name: "home-page",
-    data() {
-      return {
-        modalLoginIsOpen: false,
-      };
-    },
-    methods: {
-      flexibleClick() {
-        this.$router.push("/stay/");
-      },
-    },
+    name: "StayIndex",
+   
     computed: {
       stays() {
         this.$store.commit({ type: "setStay", stay });
