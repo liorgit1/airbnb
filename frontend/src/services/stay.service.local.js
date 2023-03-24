@@ -268,7 +268,7 @@ const demoStays = [{
       "city": "Boston",
       "address": "17 Kombo st",
       "lat": -8.61308,
-      "lng": 41.1413
+      "lng": 41.1413,
         "country": "Portugal",
         "countryCode": "PT",
         "city": "Porto",

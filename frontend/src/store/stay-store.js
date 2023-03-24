@@ -1,18 +1,18 @@
 import { stayService } from '../services/stay.service.local.js'
 
 export default {
-    state : {
-     stays : [],
-      filterBy:{}
+    state: {
+        stays: [],
+        filterBy: {}
     },
     getters: {
         stays(state) {
             return state.stays;
 
-      },
-  },
+        },
+    },
     mutations: {
-        setStay(state,{stays}) {
+        setStay(state, { stays }) {
             state.stays = stays
         },
     },
@@ -22,7 +22,7 @@ export default {
         },
     },
 
-    actions: {
+
 
 
     actions: {
@@ -41,4 +41,4 @@ export default {
 
 
 
-        }
+
