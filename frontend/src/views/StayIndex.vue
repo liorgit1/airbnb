@@ -7,7 +7,7 @@
         </button>
       </section>
   
-      <StayList />
+      <!-- <StayList /> -->
       <section class="host-container flex">
         <div class="container-title flex">
           <h2 class="host-title">
@@ -25,7 +25,7 @@
   
   <script>
   import appHeader from "../cmps/AppHeader.vue";
-  import stayList from "../cmps/stay-list.vue";
+  // import stayList from "../cmps/stay-list.vue";
   
   
   export default {
@@ -38,7 +38,7 @@
     },
     components: {
       appHeader,
-      stayList,
+      // stayList,
     },
   };
   </script>

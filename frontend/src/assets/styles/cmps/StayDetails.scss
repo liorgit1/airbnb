@@ -4,12 +4,8 @@
 
 
 
-.detailsMainGrid {
-    height: 580px;
-    display: grid;
-    // grid-template-columns: minmax(80px, 1fr) max(1200px) minmax(80px ,1fr);
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-flow: row;
+.stay-details {
+
 
 
     .reservationModal {
@@ -20,12 +16,12 @@
     h1 {
         font-size: 26px;
         grid-column: 1;
-        margin-inline: 82px;
+        // margin-inline: 82px;
     }
 
     .likeAndShare {
-        margin-block-end: 17px;
-        margin-inline: 82px;
+        // margin-block-end: 17px;
+        // margin-inline: 82px;
         display: flex;
         flex-direction: row;
         grid-column: 1;
@@ -66,11 +62,11 @@
 
 
 
-        .img {
+        img {
             // margin: 3px;
-            size: 100%;
-            // height: 100%;
-            // width: 100%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
 
         .mainIgm {
@@ -78,64 +74,47 @@
             margin-inline-end: 5px;
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
-            // background-color: #d85e5e;
-            background-image: url("https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large");
+
+
             background-size: cover;
             grid-column: 1/3;
             grid-row: 1/3;
             max-width: 560px;
-            // max-height: 560px;
         }
 
         .img1 {
             border-top-right-radius: 8px;
             grid-column: 3/4;
             grid-row: 1/2;
-            background-image: url("https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large");
-            background-size: cover;
         }
 
         .img2 {
             grid-column: 3/4;
             grid-row: 2/3;
             border-bottom-right-radius: 8px;
-            background-image: url("https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large");
-            background-size: cover;
         }
 
         .img3 {
             grid-column: 2/3;
             grid-row: 2/3;
-            background-image: url("https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large");
-            background-size: cover;
         }
 
         .img4 {
 
             grid-column: 2/3;
             grid-row: 1/2;
-            background-image: url("https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large");
-            background-size: cover;
         }
     }
 }
 
-.infoGrid {
-    display: grid;
+.info-container {
+    display: flex;
     margin: auto;
     gap: 8px;
     margin-top: 2px;
     grid-template-columns: auto auto;
     grid-column: 1;
+    justify-content: center;
+    flex-direction: row-reverse;
 
-
-    // max-height: 583px;
-    // ;
-    // max-width: 1120px;
-    // ;
-    // min-width: 950px;
-    // ;
-    // min-height: 500px;
-    // // background-color: black;
-    // padding-inline: 80px;
 }

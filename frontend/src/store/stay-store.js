@@ -25,23 +25,24 @@ export default {
 
         },
     },
-        mutations: {
-            setStay(state, { stays }) {
-                state.stays = stays
-            },
+    mutations: {
+        setStay(state, { stays }) {
+            state.stays = stays
+        },
+    },
+
+    actions: {
+
+        async loadStays({ commit, state }) {
+            const stays = await stayService.query(state.filterBy)
+            try {
+                commit({ type: 'setStay', stays })
+            } catch (err) {
+                console.error('Cannot Load stays', err)
+                throw err
+            }
         },
 
-        actions: {
-            async loadStays({ commit, state }) {
-                const stays = await stayService.query(state.filterBy)
-                try {
-                    commit({ type: 'setStay', stays })
-                } catch (err) {
-                    console.error('Cannot Load stays', err)
-                    throw err
-                }
-            },
-
-        }
     }
+}
 

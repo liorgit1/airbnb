@@ -18,13 +18,14 @@ window.cs = stayService
 
 async function query(filterBy = { txt: '', price: 0 }) {
     var stays = await storageService.query(STORAGE_KEY)
+
     if (filterBy.txt) {
         const regex = new RegExp(filterBy.txt, 'i')
         stays = stays.filter(stay => regex.test(stay.name) || regex.test(stay.description))
     }
-    if (filterBy.price) {
-        stays = stays.filter(stay => stay.price <= filterBy.price)
-    }
+    // if (filterBy.price) {
+    //     stays = stays.filter(stay => stay.price <= filterBy.price)
+    // }
     return stays
 }
 
@@ -78,7 +79,13 @@ function getEmptyStay() {
 //         "_id": "10006546",
 //         "name": "Ribeira Charming Duplex",
 //         "type": "House",
-//         "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+//         "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "https://a0.muscache.com/im/pictures/miso/Hosting-44695391/original/bd5d1aa0-57d1-45f7-ae99-01562b0e61d0.jpeg?im_w=1200","https://a0.muscache.com/im/pictures/101293ac-7c8f-4d58-9228-cf6112cdada2.jpg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-44695391/original/2471e8e6-c764-4219-8665-04106757c213.jpeg?im_w=1200"],
+
+
+
+
+
+
 //         "price": 80.00,
 //         "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
 //         "capacity": 8,
@@ -99,7 +106,7 @@ function getEmptyStay() {
 //         "host": {
 //             "_id": "u101",
 //             "fullname": "Davit Pok",
-//             "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+//             "imgUrl": "https://a0.muscache.com/im/pictures/user/c977c377-7fc9-47d4-92ce-e1c761156bfe.jpg?im_w=240",
 //         },
 //         "loc": {
 //             "country": "Portugal",
