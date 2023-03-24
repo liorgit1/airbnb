@@ -1,6 +1,5 @@
 <template>
   <main class="home-page">
-    
     <stay-list :stays="stays"/>
   </main>
 </template>
