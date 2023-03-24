@@ -1,21 +1,27 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import homePage from '../src/views/home-page.vue'
-import explorePage from '../src/views/explore-app.vue'
+// import homePage from '../src/views/home-page.vue'
+// import explorePage from '../src/views/explore-app.vue'
 import stayDetails from '../src/views/StayDetails.vue'
+import stayIndex from '../src/views/StayIndex.vue'
 
 
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'home',
+  //   component: homePage
+  // },
   {
     path: '/',
-    name: 'home',
-    component: homePage
+    name: 'stayIndex',
+    component: stayIndex
   },
-  {
-    path: '/stay',
-    name: 'explore-page',
-    component: explorePage
-  },
+  // {
+  //   path: '/stay',
+  //   name: 'explore-page',
+  //   component: explorePage
+  // },
   {
     path: '/stay/:id',
     name: 'stay-details',

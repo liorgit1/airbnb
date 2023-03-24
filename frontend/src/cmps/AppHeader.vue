@@ -2,6 +2,7 @@
   <header>
     <nav class="flex">
       <RouterLink @click = "isOpen = false" to="/" class="logo">
+      <!-- <RouterLink to="/" class="logo"> -->
         <img class="logo-img" src="../assets/pngs/logo1.png">
         <span class="logo-text">Earthbnb</span>
       </RouterLink>
