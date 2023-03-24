@@ -1,5 +1,5 @@
 <template>
-    <section class="Filter-list">
+    <section v-if = "!isOpen" class="Filter-list">
     <button class="list-btn">
         <img src="../assets/pngs/icon2.jpg">
     </button>
@@ -35,3 +35,11 @@
     </button>
 </section>
 </template>
+
+<script>
+
+export default{
+    props: ['isOpen']
+    
+}
+</script>

@@ -8,8 +8,8 @@ export const store = Vuex.createStore({
   strict: true,
   modules: {
     userStore,
-    carStore,
-    reviewStore
+    // carStore,
+    // reviewStore
   },
   state: {
   },
