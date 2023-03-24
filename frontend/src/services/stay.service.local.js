@@ -203,9 +203,9 @@ const demoStays =[ {
       "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
     },
     "loc": {
-      "country": "Portugal",
+      "country": "Usa",
       "countryCode": "PT",
-      "city": "Porto",
+      "city": "Boston",
       "address": "17 Kombo st",
       "lat": -8.61308,
       "lng": 41.1413
@@ -252,9 +252,9 @@ const demoStays =[ {
       "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
     },
     "loc": {
-      "country": "Portugal",
+      "country": "Spain",
       "countryCode": "PT",
-      "city": "Porto",
+      "city": "Madrid",
       "address": "17 Kombo st",
       "lat": -8.61308,
       "lng": 41.1413
