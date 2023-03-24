@@ -41,6 +41,7 @@
 
 // Flex
 .flex {
+    display: flex;
   display: flex;
 
   >*.full {
@@ -77,6 +78,71 @@
 .portrait-ratio {
   @include aspect-ratio(9, 16);
 }
+  
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .inline-flex {
+    display: inline-flex;
+  }
+  
+  //grid
+  .grid {
+    display: grid;
+  }
+  
+  // List
+  .clean-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .align-center {
+    align-items: center;
+  }
+  
+  // Text
+  .vertical-text {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+  }
+  
+  .tag-text {
+    text-transform: uppercase;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  .hide {
+    visibility: hidden;
+  }
+  .none {
+    display: none !important;
+  }
+  .relative {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 
 .flex-col {

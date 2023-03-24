@@ -9,6 +9,8 @@ export const store = Vuex.createStore({
   modules: {
     StayStore,
     userStore,
+    // carStore,
+    // reviewStore
   },
   state: {
   },

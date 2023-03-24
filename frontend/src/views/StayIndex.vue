@@ -1,12 +1,16 @@
 <template>
+  <FilterList />
   <main class="home-page">
     <stay-list :stays="stays"/>
+    
   </main>
 </template>
 
 <script>
 import appHeader from "../cmps/AppHeader.vue";
 import stayList from "../cmps/StayList.vue";
+import FilterList from "../cmps/FilterList.vue";
+
 
 
 export default {
@@ -21,7 +25,9 @@ export default {
   },
   components: {
     appHeader,
+    FilterList,
     stayList,
-  },
+    
+},
 };
 </script>
