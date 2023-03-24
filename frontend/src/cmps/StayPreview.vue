@@ -1,13 +1,11 @@
 <template>
   <section>
     <ul class="home-list">
-      <!-- <router-link class="details-router" :to="'/stay/' + stay._id" > -->
       <img @click="this.$router.push('/stay/' + stay._id)"
       class="home-img"
         :src="stay.imgUrls[0]"
         alt="img rated stay"
         />     
-      <!-- </router-link> -->
         <div class="txt-list">
         <h3 class="country-name popular">{{ stay.loc.country }},{{ stay.loc.city }}</h3>
           <p>{{ stay.labels[0]}}</p>

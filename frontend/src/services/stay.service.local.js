@@ -89,56 +89,6 @@ function getEmptyStay() {
 //         "type": "House",
 //         "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "https://a0.muscache.com/im/pictures/miso/Hosting-44695391/original/bd5d1aa0-57d1-45f7-ae99-01562b0e61d0.jpeg?im_w=1200","https://a0.muscache.com/im/pictures/101293ac-7c8f-4d58-9228-cf6112cdada2.jpg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-44695391/original/2471e8e6-c764-4219-8665-04106757c213.jpeg?im_w=1200"],
 
-
-
-
-
-
-//         "price": 80.00,
-//         "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
-//         "capacity": 8,
-//         "amenities": [
-//             "TV",
-//             "Wifi",
-//             "Kitchen",
-//             "Smoking allowed",
-//             "Pets allowed",
-//             "Cooking basics"
-//         ],
-//         "labels": [
-//             "Top of the world",
-//             "Trending",
-//             "Play",
-//             "Tropical"
-//         ],
-//         "host": {
-//             "_id": "u101",
-//             "fullname": "Davit Pok",
-//             "imgUrl": "https://a0.muscache.com/im/pictures/user/c977c377-7fc9-47d4-92ce-e1c761156bfe.jpg?im_w=240",
-//         },
-//         "loc": {
-//             "country": "Portugal",
-//             "countryCode": "PT",
-//             "city": "Porto",
-//             "address": "17 Kombo st",
-//             "lat": -8.61308,
-//             "lng": 41.1413
-//         },
-//         "reviews": [
-//             {
-//                 "id": "madeId",
-//                 "txt": "Very helpful hosts. Cooked traditional...",
-//                 "rate": 4,
-//                 "by": {
-//                     "_id": "u102",
-//                     "fullname": "user2",
-//                     "imgUrl": "/img/img2.jpg"
-//                 }
-//             }
-//         ],
-//         "likedByUsers": ['mini-user'] // for user-wishlist : use $in
-//     })
-// })()
 const demoStays = [{
     "_id": "10006546",
     "name": "Ribeira Charming Duplex",
@@ -268,7 +218,7 @@ const demoStays = [{
       "city": "Boston",
       "address": "17 Kombo st",
       "lat": -8.61308,
-      "lng": 41.1413
+      "lng": 41.1413,
         "country": "Portugal",
         "countryCode": "PT",
         "city": "Porto",
@@ -540,7 +490,7 @@ const demoStays = [{
     "name": "Ribeira Charming Duplex",
     "type": "House",
     "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
-    "price": 80.00,
+    "price": 1220.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
     "amenities": [
@@ -583,6 +533,451 @@ const demoStays = [{
         }
     ],
     "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "10006546",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 34.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+      "country": "Portugal",
+      "countryCode": "PT",
+      "city": "Porto",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts",
+          "rate": 5,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "1000777",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 80.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+      "country": "Poland",
+      "countryCode": "PT",
+      "city": "Worsow",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "10210888",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 80.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+    "country": "Usa",
+    "countryCode": "PT",
+    "city": "Boston",
+    "address": "17 Kombo st",
+    "lat": -8.61308,
+    "lng": 41.1413,
+      "country": "Portugal",
+      "countryCode": "PT",
+      "city": "Porto",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "1003988",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 99.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+    "country": "Spain",
+    "countryCode": "PT",
+    "city": "Madrid",
+    "address": "17 Kombo st",
+    "lat": -8.61308,
+    "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          },
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "1033323",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 67.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+      "country": "Israel",
+      "countryCode": "PT",
+      "city": "Tel Aviv",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "1330927",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 333.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+      "country": "Italy",
+      "countryCode": "PT",
+      "city": "Rome",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "1224322",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 213.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+      "country": "Denemark",
+      "countryCode": "PT",
+      "city": "Kopenhagen",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "1222322",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 132.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+      "country": "Brazil",
+      "countryCode": "PT",
+      "city": "Rio",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+},
+{
+  "_id": "12223211",
+  "name": "Ribeira Charming Duplex",
+  "type": "House",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "price": 1220.00,
+  "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+  "capacity": 8,
+  "amenities": [
+      "TV",
+      "Wifi",
+      "Kitchen",
+      "Smoking allowed",
+      "Pets allowed",
+      "Cooking basics"
+  ],
+  "labels": [
+      "Top of the world",
+      "Trending",
+      "Play",
+      "Tropical"
+  ],
+  "host": {
+      "_id": "u101",
+      "fullname": "Davit Pok",
+      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+  },
+  "loc": {
+      "country": "France",
+      "countryCode": "PT",
+      "city": "Paris",
+      "address": "17 Kombo st",
+      "lat": -8.61308,
+      "lng": 41.1413
+  },
+  "reviews": [
+      {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+              "_id": "u102",
+              "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+          }
+      }
+  ],
+  "likedByUsers": ['mini-user'] // for user-wishlist : use $in
 },
 ]
 _createStays()
