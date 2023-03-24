@@ -162,9 +162,9 @@
 
 <script>
 import appHeader from "../cmps/AppHeader.vue";
-import stayList from "../cmps/stay-list.vue";
+import stayList from "../cmps/StayList.vue";
 import typePlaceModal from "../cmps/type-place-modal.vue";
-import { userService } from "../services/user.service.js";
+// import { userService } from "../services/user.service.js";
 
 export default {
   created() {},

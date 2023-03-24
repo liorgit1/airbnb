@@ -1,0 +1,152 @@
+// .main-layout2.home-page {
+//   margin-top: 0;
+// }
+
+// .main-hero {
+//   margin-top: 0px;
+//   background-image: url(https://res.cloudinary.com/yonatan-cajan22/image/upload/v1648679529/airyny/mainPice.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 72vh;
+//   text-align: center;
+//   background-position: 50%;
+//   margin-bottom: 96px;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   flex-direction: column;
+//   padding-bottom: 72px;
+// }
+
+// .flexible {
+//   // margin-bottom: 73px;
+//   width: 162px;
+//   height: 58px;
+//   background: #fff;
+//   border-radius: 1000px;
+//   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12) !important;
+//   border: none;
+// }
+
+// .main-hero .flexible h3 {
+//   margin: 0;
+//   text-align: center;
+//   padding: 0px 2px;
+//   font-size: 18px;
+//   background: -webkit-linear-gradient(
+//     90deg,
+//     #6f019c,
+//     #c6017e 135.12%
+//   );
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+// .main-hero h1 {
+//   white-space: pre-line;
+//   max-width: 100%;
+//   font-size: 48px;
+//   font-weight: 600;
+//   letter-spacing: -0.96px;
+//   line-height: 54px;
+//   color: #fff;
+//   margin-bottom: 27px;
+// }
+
+// .host-container {
+//   background-image: url(https://res.cloudinary.com/yonatan-cajan22/image/upload/v1648198618/airyny/hostPicMain.jpg);
+//   background-position: 50%;
+//   background-size: cover;
+//   height: 634px;
+//   width: 100%;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-content: start;
+//   padding: 80px;
+//   @include for-mobile-layout {
+//     max-width: 100vh;
+//   }
+// }
+
+// .container-title {
+//   flex-direction: column;
+//   line-break: strict;
+//   width: 448px;
+//   height: 294px;
+//   margin: 0px;
+
+//   @include for-mobile-layout {
+//     width: 0px;
+//   }
+//   @include for-narrow-layout {
+//     // bottom: 11px;
+//     width: 0px;
+//   }
+// }
+
+// .host-container .host-title {
+//   // display: flex;
+//   flex-direction: column;
+//   font-family: Cereal-Regular;
+//   color: $clr2;
+//   font-size: 74px;
+//   font-weight: 600;
+//   line-height: 77px;
+//   letter-spacing: -1.48px;
+//   max-width: 100%;
+//   min-width: 0px;
+//   // overflow-wrap: anywhere;
+//   margin: 0px;
+//   @include for-mobile-layout {
+//     max-width: 263px;
+//     padding: 0px;
+//     margin: 0px;
+//     display: flex;
+//     align-content: flex-end;
+//     flex-wrap: nowrap;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     justify-content: space-evenly;
+//     span {
+//       color: #000;
+//       /* background-color: #fff; */
+//       padding: 0px 0px 0px 106px;
+//       border-radius: 8px;
+//       max-width: 170px;
+//       /* margin-bottom: 30px; */
+//       font-size: 54px;
+//       font-weight: 900;
+//     }
+//   }
+// }
+
+// .host-container button {
+//   flex-direction: row;
+//   font-family: Cereal-Medium;
+//   margin-bottom: 0px;
+//   justify-self: flex-end;
+//   border: none;
+//   color: #222;
+//   background-color: #fff;
+//   padding: 14px 24px;
+//   border-radius: 8px;
+//   max-width: 170px;
+//   margin-bottom: 30px;
+//   font-size: 16px;
+//   cursor: pointer;
+// }
+
+// .host-title span {
+//   height: 231px;
+//   width: 341px;
+// }
+
+// .host-container button .host-btn-txt {
+//   display: flex;
+//   font-family: Cereal-Medium;
+//   font-size: 16px;
+//   font-weight: 400;
+//   justify-content: center;
+//   max-width: 100%;
+// }

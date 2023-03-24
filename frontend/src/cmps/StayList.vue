@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import stayPreview from './stay-preview.vue'
+import stayPreview from './StayPreview.vue'
 export default {
   name: "stay-list",
   props: {
