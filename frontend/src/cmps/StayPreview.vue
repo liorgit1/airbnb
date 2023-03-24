@@ -3,20 +3,16 @@
     <ul class="home-list">
        <img
           class="home-img"
-          :src="`https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large`"
+          :src="stay.imgUrls[0]"
           alt="img rated stay"
         />
        
+        <h3 class="country-name popular">{{ stay.loc.country }},{{ stay.loc.city }}</h3>
         <div class="txt-list">
-          <h3 class="country-name popular">
-      <p>{{ stay.loc.country }},{{ stay.loc.city }}</p> 
       <p>{{ stay.labels[0]}}</p>
       <p><strong>${{ stay.price}}</strong> night</p>
       <p>mar 1-8</p>
-
-          </h3>
         </div>
-      <!-- </li> -->
     </ul>
 
     

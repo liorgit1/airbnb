@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="flex">
-      <RouterLink to="/stay" class="logo">
+      <RouterLink to="/" class="logo">
         <img class="logo-img" src="../assets/pngs/logo1.png">
         <span class="logo-text">earthbnb</span>
       </RouterLink>
