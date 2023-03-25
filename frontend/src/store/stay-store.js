@@ -15,6 +15,9 @@ export default {
         setStay(state, { stays }) {
             state.stays = stays
         },
+        setFilter(state, {filterBy}) {
+            if(filterBy.country) state.filterBy.country = filterBy.country
+        }
     },
     mutations: {
         setStay(state, { stays }) {
@@ -35,8 +38,18 @@ export default {
                 throw err
             }
         },
-
+        async setFilter({ commit, dispatch }, { filterBy }) {
+            console.log(filterBy)
+            try {
+                commit({ type: 'setFilter', filterBy })
+                dispatch({ type: 'loadStays' })
+            } catch {
+                console.error(err)
+            }
+            
+        }
     }
+    
 }
 
 

@@ -40,6 +40,7 @@
     <hr class="solid" v-if="!isOpen">
   </header>
    <!-- <hr class="boundry" v-if="!isOpen">  -->
+  <!-- <hr class="solid" v-if="!isOpen"> -->
   <!-- <modal v-if="isOpen" class="back-drop">
     <div style="background-color: white;">.</div>
   </modal> -->

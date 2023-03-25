@@ -18,14 +18,14 @@
 }
 
 .isLiked {
-  fill: #ff385c !important ;
+  fill: #080002 !important ;
 }
 .card-rate {
   // font-family: Cereal-Medium;
   font-size: rem(14px);
   align-items: baseline;
   padding-top: rem(10px);
-  color: $clr5;
+  color: black;
   span:nth-child(2) {
     color: $clr5;
     margin-right: rem(4px);
