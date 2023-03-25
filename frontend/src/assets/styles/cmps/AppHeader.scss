@@ -29,11 +29,11 @@ nav{
     text-align: center;
     justify-content: space-between;
    
+    p{
+        margin: inherit;
+    }
 }
 
-p{
-    margin: inherit;
-}
 .logo{
     display: flex;
 

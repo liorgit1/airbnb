@@ -39,7 +39,7 @@
     </section>
     
   </header>
-  <hr class="solid" v-if="!isOpen">
+  <!-- <hr class="solid" v-if="!isOpen"> -->
   <!-- <modal v-if="isOpen" class="back-drop">
     <div style="background-color: white;">.</div>
   </modal> -->

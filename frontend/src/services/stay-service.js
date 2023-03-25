@@ -38,29 +38,7 @@ async function getById(entityId) {
 }
 
 
-function _filterStays(stays, filterBy) {
-    let filteredStays = stays
-    if (filterBy.country) {
 
-        const regex = new RegExp(filterBy.country, 'i')
-        filteredStays = filteredStays.filter(stay => regex.test(stay.address.country || stay.address.city))
-    }
-
-    if (filterBy.type.length) {
-        filteredStays = filteredStays.filter((stay) => {
-            return filterBy.type.some((label) => {
-                return label === stay.roomType
-            })
-        })
-    }
-    if (filterBy.price) {
-        filteredStays = filteredStays.filter((stay) => {
-            return stay.price > filterBy.price.minPrice && stay.price < filterBy.price.maxPrice
-        })
-    }
-
-    return filteredStays
-}
 
 
 

@@ -1,71 +1,85 @@
-.stay-preview {
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 16px;
-  border-radius: 16px;
-  overflow: hidden;
-  width: calc(33.33333% - 32px);
-  margin: 20px;
-}
-
-.home-list{
-  height: 0;
-  padding-bottom: 66.66667%;
+.stay-preview-gallery {
   position: relative;
-  
-  
-    .home-img{
-      border-radius: 0.5rem;
-   
+  img {
+    border-radius: 12px;
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+  }
+}
+.stay-preview-container{
+  max-width: 270px;
+}
+.icon-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+}
+
+.isLiked {
+  fill: #ff385c !important ;
+}
+.card-rate {
+  // font-family: Cereal-Medium;
+  font-size: rem(14px);
+  align-items: baseline;
+  padding-top: rem(10px);
+  color: $clr5;
+  span:nth-child(2) {
+    color: $clr5;
+    margin-right: rem(4px);
+  }
+  span:nth-child(3) {
+    color: #717171;
+  }
+
+  .star-preview {
+    margin-right: rem(4px);
+  }
+}
+.total-rate {
+  font-family: Cereal-Bold;
+}
+
+.stay-type {
+  padding-top: rem(7px);
+  font-size: rem(16px);
+}
+.el-carousel__arrow:hover {
+  background-color: white !important ;
+  color: $clr5 !important ;
+  opacity: 0.9;
+}
+.el-carousel__arrow {
+  background-color: white !important ;
+  color: $clr5 !important ;
+  opacity: 0.6;
+}
+
+.card-detail {
+  font-size: rem(17px);
+  margin-top: rem(17px);
+  span {
+    margin-top: rem(17px);
   }
 }
 
-.likeAndShare {
-  margin-block-end: 17px;
-  margin-inline: 82px;
-  display: flex;
-  flex-direction: row;
-  grid-column: 1;
-  justify-content: flex-end;
-  align-items: flex-end;
+.stay-preview-info {
+  line-height: 17px;
+}
 
-  a {
-      margin-inline: 8px;
-      // align-self: flex-start;
+.stay-name {
+  font-size: rem(16px);
+  padding-top: rem(5px);
+  text-overflow: ellipsis;
+}
+
+.stay-price {
+  padding-top: rem(8px);
+  font-size: rem(16px);
+  span {
+    font-family: Cereal-Bold;
   }
 }
 
-// img {
-//   height: 100%;
-//   left: 0;
-//   object-fit: cover;
-//   position: absolute;
-//   top: 0;
-//   border-radius: 0.5rem;
-//   width: 100%;
-// }
-
-// .details-container {
-//   padding: 16px;
-// }
-
-// .title {
-//   font-size: 18px;
-//   font-weight: 600;
-//   margin-bottom: 4px;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-// }
-
-// .location {
-//   font-size: 14px;
-//   margin-bottom: 8px;
-//   color: #717171;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-// }
-
-// .price {
-//   font-size: 18px;
-//   font-weight: 600;
-// }

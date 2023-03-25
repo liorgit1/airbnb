@@ -24,12 +24,12 @@ function _createStays() {
     }
 }
 
-async function query(filterBy = { txt: '', price: 0 }) {
+async function query(filterBy = {country: ''}) {
     var stays = await storageService.query(STORAGE_KEY)
 
     if (filterBy.txt) {
-        const regex = new RegExp(filterBy.txt, 'i')
-        stays = stays.filter(stay => regex.test(stay.name) || regex.test(stay.description))
+        const regex = new RegExp(filterBy.travelTo, 'i')
+        stays = stays.filter(stay => regex.test(stay.loc.country) || regex.test(stay.description))
     }
     // if (filterBy.price) {
     //     stays = stays.filter(stay => stay.price <= filterBy.price)
@@ -279,7 +279,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 4,
+            "rate": 3.4,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -328,7 +328,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 4,
+            "rate": 2.1,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -475,7 +475,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 4,
+            "rate": 1.6,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -524,7 +524,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 4,
+            "rate": 4.5,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -620,7 +620,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 4,
+          "rate": 4.8,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -647,7 +647,6 @@ const demoStays = [{
       "Cooking basics"
   ],
   "labels": [
-      "Top of the world",
       "Trending",
       "Play",
       "Tropical"
@@ -702,10 +701,11 @@ const demoStays = [{
       "Cooking basics"
   ],
   "labels": [
+      "Tropical",
       "Top of the world",
       "Trending",
       "Play",
-      "Tropical"
+      
   ],
   "host": {
       "_id": "u101",
@@ -724,7 +724,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 4,
+          "rate": 2.2,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -773,7 +773,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 4,
+          "rate": 1.8,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -800,7 +800,7 @@ const demoStays = [{
       "Cooking basics"
   ],
   "labels": [
-      "Top of the world",
+      "Beutiful view on the valey",
       "Trending",
       "Play",
       "Tropical"
@@ -822,7 +822,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 4,
+          "rate": 1.1,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -849,7 +849,7 @@ const demoStays = [{
       "Cooking basics"
   ],
   "labels": [
-      "Top of the world",
+      "perfect location!!!",
       "Trending",
       "Play",
       "Tropical"
@@ -871,7 +871,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 4,
+          "rate": 0.6,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -969,7 +969,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 4,
+          "rate": 2,
           "by": {
               "_id": "u102",
               "fullname": "user2",
