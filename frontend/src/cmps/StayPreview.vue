@@ -63,7 +63,6 @@
             </svg>
           </div>
           <span class="total-rate"> {{  stay.reviews.rate }} </span>
-          <span> ({{ stay.imgUrls.length}} reviews ) </span>
         </div>
 
         <div class="stay-type">
