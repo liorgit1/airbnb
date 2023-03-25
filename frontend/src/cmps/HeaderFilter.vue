@@ -1,6 +1,7 @@
 <template>
     <!-- <form class="bar"> -->
-
+  <div class="container">
+    
   <div class="bar">
   <div class="location">
     <p>Location</p>
@@ -21,6 +22,7 @@
   </div>
 </div>
 
+</div>
 </template>
 
 <script>
@@ -53,7 +55,7 @@ methods: {
 
     //   this.$router.push(`/explore/destination=${this.destination}/guestsNum=${this.guestsNum}`)
 
-      this.$router.push({ path: "/explore", query: { destination: this.destination, guests: this.guestsNum} } )
+       this.$router.push({ path: "/explore", query: { destination: this.destination, guests: this.guestsNum} } )
 
       console.log( this.destination, this.guestsNum)
     }
