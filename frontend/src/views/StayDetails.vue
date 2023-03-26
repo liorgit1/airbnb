@@ -1,9 +1,9 @@
 <template>
-    <section v-if="stay" class="stay-details main-layout" @click="this.showModal=false">
+    <section v-if="stay" class="stay-details details-layout" @click="this.showModal=false">
 
 
-        <section>
-            <div>
+        <!-- <section> -->
+            <divg class="gc23">
 
                 <h1> {{ stay.name }}</h1>
                 <div class="likeAndShare">
@@ -12,7 +12,7 @@
                     <a>like</a>
                     <a>share</a>
                 </div>
-            </div>
+            </divg>
             <div class="detailsImgContainer">
                 <img :src="stay.imgUrls[0]" class="img img1">
                 <img :src="stay.imgUrls[1] || stay.imgUrls[0]" class="img img2">
@@ -21,7 +21,7 @@
                 <img :src="stay.imgUrls[4] || stay.imgUrls[0]" class="img mainIgm">
             </div>
             <section class="info-container">
-                <GuestsModal עןא שגג v-if="showModal" />
+                <GuestsModal  v-if="showModal" />
                 <Reservation @click.stop :stay="stay" @openModal="this.showModal = true" />
                 <div>
                     <StayInfo :stay="stay" />
@@ -30,9 +30,9 @@
             </section>
 
 
-        </section>
+        <!-- </section> -->
 
-        <pre>{{ stay }}</pre>
+        <!-- <pre>{{ stay }}</pre> -->
 
     </section>
 </template>

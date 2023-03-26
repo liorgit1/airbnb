@@ -61,7 +61,7 @@
                 pets, please let
                 your host know.</p>
         </div>
-        <p>{{ guestsNum }}</p>
+        <!-- <p>{{ guestsNum }}</p> -->
     </section>
 </template>
 <script>
