@@ -2,11 +2,23 @@
     <section class="stay-amenities">
         <h1>What this place offers</h1>
         <div class="stay-amenities-container">
-            <div style="display: flex; gap: 13px;"><img src="https://air-bxb.onrender.com/assets/tv.39c759e9.svg"
+            <div style="display: flex; gap: 13px" v-for="amenitie in stay.amenities" :key="amenitie">
+                <img style="width: 1.2em" :src="`../../../../src/assets/pngs/amenities/${amenitie.toLowerCase()}.svg`">
+
+                <p>{{ amenitie }}</p>
+            </div>
+
+
+
+
+            <!-- <div style="display: flex; gap: 13px"><img src="https://air-bxb.onrender.com/assets/tv.39c759e9.svg"
                     style="width: 1.2em;">
                 <p>TV</p>
-            </div>
-            <div style="display: flex; gap: 13px;"><img src="https://air-bxb.onrender.com/assets/air.498c5990.svg"
+            </div> -->
+
+
+
+            <!-- <div style="display: flex; gap: 13px;"><img src="https://air-bxb.onrender.com/assets/air.498c5990.svg"
                     style="width: 1.2em;">
                 <p>Air conditioning</p>
             </div>
@@ -33,7 +45,7 @@
             <div style="display: flex; gap: 13px;"><img src="https://air-bxb.onrender.com/assets/free.bbed5c37.svg"
                     style="width: 1.2em;">
                 <p>Free parking on premises</p>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>

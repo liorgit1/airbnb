@@ -1,14 +1,14 @@
 <template>
-    <section v-if="stay" class="stay-details main-layout">
+    <section v-if="stay" class="stay-details main-layout" @click="this.showModal=false">
 
 
         <section>
-            <div >
+            <div>
 
                 <h1> {{ stay.name }}</h1>
                 <div class="likeAndShare">
                     <p class="placeLink">{{ stay.loc.city }}, {{ stay.loc.country }}</p>
-                    
+
                     <a>like</a>
                     <a>share</a>
                 </div>
@@ -21,17 +21,18 @@
                 <img :src="stay.imgUrls[4] || stay.imgUrls[0]" class="img mainIgm">
             </div>
             <section class="info-container">
-                <reservation :stay="stay" />
+                <GuestsModal עןא שגג v-if="showModal" />
+                <Reservation @click.stop :stay="stay" @openModal="this.showModal = true" />
                 <div>
                     <StayInfo :stay="stay" />
-                    <StayAmenities />
+                    <StayAmenities :stay="stay" />
                 </div>
             </section>
 
 
         </section>
 
-        <pre>{{stay }}</pre>
+        <pre>{{ stay }}</pre>
 
     </section>
 </template>
@@ -39,42 +40,51 @@
 
 <script>
 // import { stayService } from '../services/stay.service.local'
-import reservation from '../cmps/reservation.vue'
+import GuestsModal from '../cmps/GuestsModal.vue'
+import Reservation from '../cmps/Reservation.vue'
 import StayInfo from './StayInfo.vue'
 import StayAmenities from './StayAmenities.vue'
 
+import { stayService } from '../services/stay.service.local.js'
 
 
 export default {
+   
     data() {
         return {
-
-            // stay:null
+            showModal: false,
+            stay: null
         }
     },
     computed: {
 
     },
     async created() {
-        this.$store.dispatch({ type: 'loadStays' })
+        // this.$store.dispatch({ type: 'loadStays' })
 
-        // const { stayId } = this.$route.params
-        // if (stayId) {
-        //     stayService.getById(stayId).then((stay) => {
-        //         this.stay = stay
-        //     })
-        // }
+        const { id } = this.$route.params
+        console.log('this.$route.params :>> ', this.$route.params);
+
+        if (id) {
+            const stay = await stayService.getById(id)
+            this.stay = stay
+        }
     },
     methods: {
-    }, components: {
-        reservation,
+
+    },
+    components: {
+        Reservation,
         StayInfo,
-        StayAmenities
+        StayAmenities,
+        GuestsModal
     }
     , computed: {
-        stay() {
-            return this.$store.getters.stays[0]
-        }
+
+    
+        // stay() {
+        //     return this.$store.getters.stays[0]
+        // }
     },
 
 

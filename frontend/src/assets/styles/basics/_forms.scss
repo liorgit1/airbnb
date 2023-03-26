@@ -5,7 +5,7 @@
 //     margin: 5px;
 // }
 
-form > * {
+form:not(.reservation-form)>* {
     display: block;
     width: 200px;
     margin: 10px 0px;

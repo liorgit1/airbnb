@@ -1,7 +1,7 @@
 <template>
   <FilterList />
   <main class="home-page">
-    <stay-list :stays="stays"/>
+    <stay-list :stays="stays" />
   </main>
 </template>
 
@@ -14,12 +14,12 @@ import FilterList from "../cmps/FilterList.vue";
 
 export default {
   name: "StayIndex",
- created() {
-  this.$store.dispatch({type:'loadStays'})
- },
+  created() {
+    this.$store.dispatch({ type: 'loadStays' })
+  },
   computed: {
     stays() {
-      return this.$store.getters.stays 
+      return this.$store.getters.stays
     },
   },
   components: {

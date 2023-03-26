@@ -3,27 +3,35 @@ import { stayService } from '../services/stay.service.local.js'
 export default {
     state: {
         stays: [],
-        filterBy: {}
+        filterBy: {},
+        guestsNum: 0
+
     },
     getters: {
         stays(state) {
             return state.stays;
-
         },
-    },
-    mutations: {
-        setStay(state, { stays }) {
-            state.stays = stays
-        },
-        setFilter(state, {filterBy}) {
-            if(filterBy.country) state.filterBy.country = filterBy.country
+        guestsNum(state) {
+            return state.guestsNum
         }
     },
     mutations: {
         setStay(state, { stays }) {
             state.stays = stays
         },
+        setGuestsNum(state, { guestsNum }) {
+            state.guestsNum = guestsNum
+            console.log('guestsNum :>> ', guestsNum);
+            console.log('state.guestsNum :>> ', state.guestsNum);
+        },
+        setFilter(state, { filterBy }) {
+            if (filterBy.country) state.filterBy.country = filterBy.country
+        }
+
+
     },
+
+
 
 
 
@@ -46,11 +54,12 @@ export default {
             } catch {
                 console.error(err)
             }
-            
+
         }
     }
-    
+
 }
+
 
 
 
