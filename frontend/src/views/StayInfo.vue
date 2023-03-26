@@ -60,7 +60,7 @@
 
 
 <script>
-import reservation from '../cmps/reservation.vue'
+import reservation from '../cmps/Reservation.vue'
 
 
 
