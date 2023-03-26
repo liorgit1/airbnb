@@ -61,7 +61,6 @@
             </form>
         </section>
         <div class="reservation-footer">
-            <p>Report this listing</p>
         </div>
     </main>
 </template>

@@ -8,11 +8,11 @@
     </div>
     <div class="check-in">
       <p>Check in</p>
-      <input type="text" placeholder="Add dates" />
+      <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
     <div class="check-out">
       <p>Check out</p>
-      <input type="text" placeholder="Add dates" />
+      <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
     <div class="guests">
       <p>Guests</p>
@@ -32,14 +32,14 @@ export default {
 
   data() {
     return {
-      searchBy: { country: '',guests:'' }
+      searchBy: { country: '' }
     }
   },
 
 
   methods: {
      setSearch() {
-     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country, guests: this.searchBy.guests } })
+     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country} })
 
      this.$emit('closeModal' , false)
     

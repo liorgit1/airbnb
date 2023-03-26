@@ -24,7 +24,7 @@ function _createStays() {
     }
 }
 
-async function query(filterBy = {country: ''}) {
+async function query(filterBy = {country: '',guests: 0, date:''}) {
     var stays = await storageService.query(STORAGE_KEY)
 
     if (filterBy.txt) {
@@ -93,7 +93,9 @@ const demoStays = [{
     "_id": "10006546",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/1255274133/photo/luxurious-beach-side-villa-with-swimming-pool-and-palm-trees-at-summer-sunset-scene.jpg?s=612x612&w=0&k=20&c=ZV7TQSRNAnJODeqHNQpAKMc-F3wVuEOB9-k0p2inevE=", "otherImg.jpg"],
+    "guests": "4",
+    "date": "aug 19-26",
+    "imgUrls": ["https://media.istockphoto.com/id/1255274133/photo/luxurious-beach-side-villa-with-swimming-pool-and-palm-trees-at-summer-sunset-scene.jpg?s=612x612&w=0&k=20&c=ZV7TQSRNAnJODeqHNQpAKMc-F3wVuEOB9-k0p2inevE=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 34.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -112,7 +114,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
         "country": "Portugal",
@@ -140,7 +142,9 @@ const demoStays = [{
     "_id": "1000777",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+    "guests": "3",
+    "date": "jan 11-17",
+    "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 777.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -161,7 +165,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
         "country": "Poland",
@@ -175,7 +179,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 1.1,
+            "rate": 4.1,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -189,7 +193,9 @@ const demoStays = [{
     "_id": "1000888",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/1283532082/photo/luxurious-beautiful-modern-villa-with-front-yard-garden-at-sunset.jpg?s=612x612&w=0&k=20&c=AlUKu_HgyCeyrpeb9EVx0k8VG_Sngr-BFOO6ZQawS5o=", "otherImg.jpg"],
+    "guests": "4",
+    "date": "may 6-9",
+    "imgUrls": ["https://media.istockphoto.com/id/1283532082/photo/luxurious-beautiful-modern-villa-with-front-yard-garden-at-sunset.jpg?s=612x612&w=0&k=20&c=AlUKu_HgyCeyrpeb9EVx0k8VG_Sngr-BFOO6ZQawS5o=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 90.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -210,7 +216,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
       "country": "Usa",
@@ -244,7 +250,9 @@ const demoStays = [{
     "_id": "1000988",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/157525171/photo/villa-sunrise.jpg?s=612x612&w=0&k=20&c=l5eQDGar2pVuGOsuBoNYyUsPs1BPZ4_JmPMubVkC-vE=", "otherImg.jpg"],
+    "guests": "2",
+    "date": "feb 14-20",
+    "imgUrls": ["https://media.istockphoto.com/id/157525171/photo/villa-sunrise.jpg?s=612x612&w=0&k=20&c=l5eQDGar2pVuGOsuBoNYyUsPs1BPZ4_JmPMubVkC-vE=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 99.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -265,7 +273,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
       "country": "Spain",
@@ -279,7 +287,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 3.4,
+            "rate": 4.6,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -293,7 +301,9 @@ const demoStays = [{
     "_id": "1000123",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/1221865626/photo/luxurious-modern-house-with-swimming-pool.jpg?s=612x612&w=0&k=20&c=LXH-oj14anTW-Q7WQI7uovp87CTCqBn96zHA2waq-hQ=", "otherImg.jpg"],
+    "guests": "4",
+    "date": "apr 24-29",
+    "imgUrls": ["https://media.istockphoto.com/id/1221865626/photo/luxurious-modern-house-with-swimming-pool.jpg?s=612x612&w=0&k=20&c=LXH-oj14anTW-Q7WQI7uovp87CTCqBn96zHA2waq-hQ=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 67.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -314,7 +324,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
         "country": "Israel",
@@ -328,7 +338,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 2.1,
+            "rate": 4.1,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -342,7 +352,9 @@ const demoStays = [{
     "_id": "1000927",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/1227329047/photo/two-ampty-chairs-facing-magnificent-sunset-view-at-beach.jpg?s=612x612&w=0&k=20&c=z7HngBDSmIyrvduaiz5F9bVd9fblyRWb8AKe3pf09fY=", "otherImg.jpg"],
+    "guests": "2",
+    "date": "mar 13-19",
+    "imgUrls": ["https://media.istockphoto.com/id/1227329047/photo/two-ampty-chairs-facing-magnificent-sunset-view-at-beach.jpg?s=612x612&w=0&k=20&c=z7HngBDSmIyrvduaiz5F9bVd9fblyRWb8AKe3pf09fY=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 333.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -363,7 +375,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
         "country": "Italy",
@@ -377,7 +389,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 3.3,
+            "rate": 4.3,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -391,7 +403,9 @@ const demoStays = [{
     "_id": "1000991",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/925052286/photo/exclusive-luxury-villa-with-swimming-pool.jpg?s=612x612&w=0&k=20&c=1hy2ZI_grzLR9UBOlycPNNcivERN6NFqLtxhaRVzY-w=", "otherImg.jpg"],
+    "guests": "3",
+    "date": "jun 14-25",
+    "imgUrls": ["https://media.istockphoto.com/id/925052286/photo/exclusive-luxury-villa-with-swimming-pool.jpg?s=612x612&w=0&k=20&c=1hy2ZI_grzLR9UBOlycPNNcivERN6NFqLtxhaRVzY-w=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 213.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -404,7 +418,7 @@ const demoStays = [{
         "Cooking basics"
     ],
     "labels": [
-        "Wasnt what i expected not worth the money",
+        "beautiful site!!!",
         "Trending",
         "Play",
         "Tropical"
@@ -412,12 +426,12 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
-        "country": "Denemark",
+        "country": "Usa",
         "countryCode": "PT",
-        "city": "Kopenhagen",
+        "city": "Colorado",
         "address": "17 Kombo st",
         "lat": -8.61308,
         "lng": 41.1413
@@ -426,7 +440,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 2.7,
+            "rate": 4.6,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -440,7 +454,9 @@ const demoStays = [{
     "_id": "1000933",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/503044702/photo/illuminated-sky-and-outside-of-waterfront-buiding.jpg?s=612x612&w=0&k=20&c=xkDBkqmCVvhR4idfybXRb-yFS0KqOjqtikg_LtO4pzs=", "otherImg.jpg"],
+    "guests": "2",
+    "date": "oct 22-30",
+    "imgUrls": ["https://media.istockphoto.com/id/503044702/photo/illuminated-sky-and-outside-of-waterfront-buiding.jpg?s=612x612&w=0&k=20&c=xkDBkqmCVvhR4idfybXRb-yFS0KqOjqtikg_LtO4pzs=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 132.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -453,7 +469,7 @@ const demoStays = [{
         "Cooking basics"
     ],
     "labels": [
-        "Wasnt what i expected not worth the money",
+        "beautiful site!!!",
         "Trending",
         "Play",
         "Tropical"
@@ -461,7 +477,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
         "country": "Brazil",
@@ -475,7 +491,7 @@ const demoStays = [{
         {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 1.6,
+            "rate": 4.6,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
@@ -489,7 +505,9 @@ const demoStays = [{
     "_id": "1000988",
     "name": "Ribeira Charming Duplex",
     "type": "House",
-    "imgUrls": ["https://media.istockphoto.com/id/528487340/photo/beach-living-on-sea-view.jpg?s=612x612&w=0&k=20&c=-txUQWbvHNG6jOAPQrduesK9foBw8hQid6f3Y2GnwYo=", "otherImg.jpg"],
+    "guests": "3",
+    "date": "sep 22-28",
+    "imgUrls": ["https://media.istockphoto.com/id/528487340/photo/beach-living-on-sea-view.jpg?s=612x612&w=0&k=20&c=-txUQWbvHNG6jOAPQrduesK9foBw8hQid6f3Y2GnwYo=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 654.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -510,7 +528,7 @@ const demoStays = [{
     "host": {
         "_id": "u101",
         "fullname": "Davit Pok",
-        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
     },
     "loc": {
         "country": "France",
@@ -538,7 +556,9 @@ const demoStays = [{
   "_id": "10006546",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/629625894/photo/luxury-mediterranean-style-villa.jpg?s=612x612&w=0&k=20&c=Dno3g0Aayo77RljU19bTwUA4M7bUlhISs3LJ5IW0j1w=", "otherImg.jpg"],
+  "guests": "4",
+  "date": "aug 7-9",
+  "imgUrls": ["https://media.istockphoto.com/id/629625894/photo/luxury-mediterranean-style-villa.jpg?s=612x612&w=0&k=20&c=Dno3g0Aayo77RljU19bTwUA4M7bUlhISs3LJ5IW0j1w=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 34.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -557,7 +577,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
       "country": "Portugal",
@@ -585,7 +605,9 @@ const demoStays = [{
   "_id": "1000777",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/175248296/photo/wooden-cottage-log-home-log-cabin.jpg?s=612x612&w=0&k=20&c=xfQ0E9EE9mFr8fG3XIkM5hQmaPpBNKRQKGo6aSzKUkw=", "otherImg.jpg"],
+  "guests": "3",
+  "date": "feb 19-23",
+  "imgUrls": ["https://media.istockphoto.com/id/175248296/photo/wooden-cottage-log-home-log-cabin.jpg?s=612x612&w=0&k=20&c=xfQ0E9EE9mFr8fG3XIkM5hQmaPpBNKRQKGo6aSzKUkw=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 187.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -606,7 +628,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
       "country": "Poland",
@@ -634,7 +656,9 @@ const demoStays = [{
   "_id": "10210888",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/611294084/photo/sea-view-house-with-pool-in-modern-design.jpg?s=612x612&w=0&k=20&c=CvuNZx_vZ6cOoPcHt-g-riyoySJ2RJ6Ny6MVvUAnRNk=", "otherImg.jpg"],
+  "guests": "5",
+  "date": "nov 21-22",
+  "imgUrls": ["https://media.istockphoto.com/id/611294084/photo/sea-view-house-with-pool-in-modern-design.jpg?s=612x612&w=0&k=20&c=CvuNZx_vZ6cOoPcHt-g-riyoySJ2RJ6Ny6MVvUAnRNk=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 300.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -654,7 +678,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
     "country": "Usa",
@@ -688,7 +712,9 @@ const demoStays = [{
   "_id": "1003988",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/1191376167/photo/island-villa.jpg?s=612x612&w=0&k=20&c=qJNjEwEFRJpJuitWhq_loxq4ECfQX4mgekhv4JedxgQ=", "otherImg.jpg"],
+  "guests": "4",
+  "date": "dec 28-30",
+  "imgUrls": ["https://media.istockphoto.com/id/1191376167/photo/island-villa.jpg?s=612x612&w=0&k=20&c=qJNjEwEFRJpJuitWhq_loxq4ECfQX4mgekhv4JedxgQ=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 99.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -710,7 +736,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
     "country": "Spain",
@@ -724,7 +750,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 2.2,
+          "rate": 4.2,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -738,7 +764,9 @@ const demoStays = [{
   "_id": "1033323",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+  "guests": "2",
+  "date": "jul 11-13",
+  "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 67.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -759,7 +787,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
       "country": "Israel",
@@ -773,7 +801,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 1.8,
+          "rate": 4.8,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -787,7 +815,9 @@ const demoStays = [{
   "_id": "1330927",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/509553708/photo/tropical-modern-villa-exterior.jpg?s=612x612&w=0&k=20&c=rMmOmihiXHl6htuhYVzbfPdKAawYHFuNMhD32A0sWUg=", "otherImg.jpg"],
+  "guests": "3",
+  "date": "jun 10-15",
+  "imgUrls": ["https://media.istockphoto.com/id/509553708/photo/tropical-modern-villa-exterior.jpg?s=612x612&w=0&k=20&c=rMmOmihiXHl6htuhYVzbfPdKAawYHFuNMhD32A0sWUg=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 333.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -808,7 +838,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
       "country": "Italy",
@@ -822,7 +852,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 1.1,
+          "rate": 4.1,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -836,7 +866,9 @@ const demoStays = [{
   "_id": "1224322",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/156629930/photo/villa-in-autumn-mont-tremblant-quebec-canada.jpg?s=612x612&w=0&k=20&c=TmjcNZ1YT2rN-8wigX0Efzk2hOF1L6Kc8QWp7MNosXo=", "otherImg.jpg"],
+  "guests": "1",
+  "date": "jan 1-5",
+  "imgUrls": ["https://media.istockphoto.com/id/156629930/photo/villa-in-autumn-mont-tremblant-quebec-canada.jpg?s=612x612&w=0&k=20&c=TmjcNZ1YT2rN-8wigX0Efzk2hOF1L6Kc8QWp7MNosXo=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 131.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -857,12 +889,12 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
-      "country": "Denemark",
+      "country": "Usa",
       "countryCode": "PT",
-      "city": "Kopenhagen",
+      "city": "Utah",
       "address": "17 Kombo st",
       "lat": -8.61308,
       "lng": 41.1413
@@ -871,7 +903,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 0.6,
+          "rate": 4.6,
           "by": {
               "_id": "u102",
               "fullname": "user2",
@@ -885,7 +917,9 @@ const demoStays = [{
   "_id": "1222322",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/1091875700/photo/colored-beach-houses-in-a-row.jpg?s=612x612&w=0&k=20&c=Tgh8phwOgYTc-wfilkUMBug2CUtPi5IPf6vH8Ie1K-0=", "otherImg.jpg"],
+  "guests": "2",
+  "date": "may 21-23",
+  "imgUrls": ["https://media.istockphoto.com/id/1091875700/photo/colored-beach-houses-in-a-row.jpg?s=612x612&w=0&k=20&c=Tgh8phwOgYTc-wfilkUMBug2CUtPi5IPf6vH8Ie1K-0=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 79.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -906,7 +940,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
       "country": "Brazil",
@@ -934,7 +968,9 @@ const demoStays = [{
   "_id": "12223211",
   "name": "Ribeira Charming Duplex",
   "type": "House",
-  "imgUrls": ["https://media.istockphoto.com/id/1254871777/photo/modern-minimalist-family-villa.jpg?s=612x612&w=0&k=20&c=IFWrSPJVEajIvY0fkcTDYf93fJvn2oISiiZY6B5GlCI=", "otherImg.jpg"],
+  "guests": "2",
+  "date": "apr 2-4",
+  "imgUrls": ["https://media.istockphoto.com/id/1254871777/photo/modern-minimalist-family-villa.jpg?s=612x612&w=0&k=20&c=IFWrSPJVEajIvY0fkcTDYf93fJvn2oISiiZY6B5GlCI=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
   "price": 1220.00,
   "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
   "capacity": 8,
@@ -955,7 +991,7 @@ const demoStays = [{
   "host": {
       "_id": "u101",
       "fullname": "Davit Pok",
-      "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+      "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large",
   },
   "loc": {
       "country": "France",
@@ -969,7 +1005,7 @@ const demoStays = [{
       {
           "id": "madeId",
           "txt": "Very helpful hosts. Cooked traditional...",
-          "rate": 2,
+          "rate": 4.4,
           "by": {
               "_id": "u102",
               "fullname": "user2",
