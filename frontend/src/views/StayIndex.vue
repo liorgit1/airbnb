@@ -1,4 +1,5 @@
 <template>
+  
   <FilterList />
   <main class="home-page">
     <stay-list :stays="stays" />
