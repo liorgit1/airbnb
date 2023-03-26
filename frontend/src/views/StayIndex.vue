@@ -1,11 +1,13 @@
 <template>
   
-  <section>
+   <section class="main-layout">
   <FilterList />
+</section>
+
   <main class="home-page">
     <stay-list :stays="stays" />
   </main>
-</section>
+<!-- </section> -->
 </template>
 
 <script>

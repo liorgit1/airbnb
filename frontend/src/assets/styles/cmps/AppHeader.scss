@@ -26,15 +26,18 @@
 header{
     height: 80px;
     position: relative;
-    align-items: end;
+    align-items: center;
     z-index: 2;
+    box-shadow: 1px 1px;
 }
 
 nav{
     display: flex;
-    justify-content: center;
+    
     text-align: center;
     justify-content: space-between;
+    position: relative;
+    align-items: center;
    
 }
 
@@ -107,9 +110,16 @@ font-weight: normal;
 }
 
 .logo-text{
-    font-weight: 1000;
+    
+    font-weight: 100;
     font-size: 1.5rem;
     color:$clr7;
+    text-decoration: none;
+}
+
+.logo-text span{
+    text-decoration: none;
+
 }
 
 .user-nav{
