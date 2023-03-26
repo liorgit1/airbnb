@@ -39,6 +39,12 @@ export default {
 
  
   
+  // mounted:{
+
+  //   handleOutFoucs(){
+    
+  // }
+  // },
 
   methods: {
      setSearch() {

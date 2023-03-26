@@ -1,8 +1,7 @@
 <template>
     <section class="Filter-list">
 
-    
-    <button v-for="key in keys">
+    <button v-for="key in keys" :key = "key.url">
     <img :src="key.url" />
     {{ key.key }}
     </button>
@@ -11,6 +10,9 @@
 </template>
 
 <script>
+//  import VueSlickCarousel from 'vue-slick-carousel'
+//  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+//  import slick from 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'
   
 export default{
 
