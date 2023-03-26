@@ -1,18 +1,18 @@
-// Font helpers
-.font-bold {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-}
+ Font helpers
+ .font-bold {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: 400;
+ }
 
-.font-medium {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-    font-weight: 400;
-}
+ .font-medium {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+     font-weight: 400;
+ }
 
-.font-base {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-}
+ .font-base {
+     font-family: Georgia, Times, 'Times New Roman', serif;
+     font-weight: 400;
+ }
 
 .text-muted {
     color: transparent;
@@ -159,8 +159,18 @@
 /////////////////////////////////
 /// 
 .main-layout {
-    padding-left: rem(80px);
-    padding-right: rem(80px);
+
+    display: grid;
+    
+    grid-template-columns: minmax(20px,1fr) minmax(auto,88.3vw) minmax(20px,1fr);
+
+    > * {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 /-1;
+        }
+    }
 }
   .main-layout2 {
     margin: 0 auto;

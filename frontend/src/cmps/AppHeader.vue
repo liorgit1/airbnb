@@ -1,20 +1,21 @@
 <template>
-  <header >
+  <header class="main-layout"
+  v-bind:class="{'stay-details':isDetails}">
     <nav class="flex">
 
       <RouterLink to="/" @click = "isOpen = false && resetParams()"  class="logo">
 
       <RouterLink to="/" class="logo" />  
         <img class="logo-img" src="../assets/pngs/logo1.png">
-        <span class="logo-text">Earthbnb</span>
+        <span class="logo-text">earthbnb</span>
       </RouterLink>
 
       <div @click = "isOpen=true" v-if="!isOpen" class="search-bar">
-        <button>anywhere</button>
+        <button>Anywhere</button>
         <span>|</span>
-        <button>anyweek</button>
+        <button>Anyweek</button>
         <span>|</span>
-        <button style="font-weight: normal">add guests</button>
+        <button style="font-weight: normal">Add guests</button>
         <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></button>
       </div>
 
@@ -41,7 +42,7 @@
       <span>{{ loggedInUser.score.toLocaleString() }}</span>
       <img :src="loggedInUser.imgUrl" />
     </section>
-    <hr class="solid" v-if="!isOpen">
+    <!-- <hr class="solid" v-if="!isOpen"> -->
   </header>
   
 </template>
@@ -55,7 +56,12 @@ export default {
 
   data() {
   return {
-  isOpen: false
+  isOpen: false,
+
+  thisRoute: this.$route.name,
+
+  isDetails: false
+
   }
   }
   ,
@@ -71,6 +77,7 @@ export default {
   unmounted (){
     window.removeEventListener('scroll', this.handleScroll);
   },
+
   computed: {
     
   resetParams(){
@@ -84,12 +91,13 @@ export default {
 
   methods:{
 
-  //   closeModal(value){
-  //   this.isOpen = false
-  // },
+    handleRoute(){
+      if (this.thisRoute == 'stay')
+      this.isDetails = true
+    },
 
-    handleScroll (event) {
-      this.isOpen=false
+    handleScroll () {
+      this.isOpen = false
     },
    
 
