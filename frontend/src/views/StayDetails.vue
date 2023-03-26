@@ -1,5 +1,5 @@
 <template>
-    <section v-if="stay" class="stay-details main-layout" @click="this.showModal=false">
+    <section v-if="stay" class="details-layout" @click="this.showModal=false">
 
 
         <!-- <section> -->

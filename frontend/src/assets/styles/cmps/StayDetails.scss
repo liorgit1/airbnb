@@ -3,15 +3,15 @@
 }
 
 
-.details-layout {
-    display: grid;
-    // grid-template-columns: $layoutPadding 1fr $layoutPadding;
-    grid-template-columns: minmax(24px, 1fr) minmax(auto, 1120px) minmax(24px, 1fr);
-}
+
 
 .stay-details {
 
-
+    .details-layout {
+        display: grid;
+        // grid-template-columns: $layoutPadding 1fr $layoutPadding;
+        grid-template-columns: minmax(24px, 1fr) minmax(auto, 1120px) minmax(24px, 1fr);
+    }
 
     .reservationModal {
         grid-column: 2/3;
