@@ -18,28 +18,33 @@
 }
 
 .isLiked {
-  fill: #ff385c !important ;
+  fill: #080002 !important ;
 }
 .card-rate {
   // font-family: Cereal-Medium;
+  justify-content: flex-end;
+  width: 260px;
   font-size: rem(14px);
-  align-items: baseline;
+  align-items: right;
   padding-top: rem(10px);
-  color: $clr5;
+  color: black;
   span:nth-child(2) {
     color: $clr5;
     margin-right: rem(4px);
   }
   span:nth-child(3) {
-    color: #717171;
+    color: #060101;
   }
 
   .star-preview {
-    margin-right: rem(4px);
+    width: rem(200px);
   }
 }
-.total-rate {
-  font-family: Cereal-Bold;
+span.total-rate {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: right;
+  color:#060101;
 }
 
 .stay-type {
@@ -67,6 +72,15 @@
 
 .stay-preview-info {
   line-height: 17px;
+}
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1.053/1;
+    height: auto;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    border-radius: 5%;
 }
 
 .stay-name {

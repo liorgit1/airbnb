@@ -1,11 +1,12 @@
 .stay-list {
   display: grid;
+  list-style: none;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(303px, 1fr)
+    minmax(270px, 1fr)
   );
   column-gap: rem(24px);
-  row-gap: rem(46px);
+  row-gap: rem(40px);
   padding-top: 16px;
   padding-bottom: 250px;
   @include for-wide-layout {

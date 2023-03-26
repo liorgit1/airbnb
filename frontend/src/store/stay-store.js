@@ -24,9 +24,13 @@ export default {
             console.log('guestsNum :>> ', guestsNum);
             console.log('state.guestsNum :>> ', state.guestsNum);
         },
+        setFilter(state, { filterBy }) {
+            if (filterBy.country) state.filterBy.country = filterBy.country
+        }
 
 
     },
+
 
 
 
@@ -42,9 +46,20 @@ export default {
                 throw err
             }
         },
+        async setFilter({ commit, dispatch }, { filterBy }) {
+            console.log(filterBy)
+            try {
+                commit({ type: 'setFilter', filterBy })
+                dispatch({ type: 'loadStays' })
+            } catch {
+                console.error(err)
+            }
 
+        }
     }
+
 }
+
 
 
 

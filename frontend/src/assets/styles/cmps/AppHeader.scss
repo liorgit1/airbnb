@@ -23,24 +23,40 @@
     
 // }
 
+header{
+    height: 80px;
+    position: relative;
+    align-items: end;
+    z-index: 2;
+}
+
 nav{
     display: flex;
     justify-content: center;
     text-align: center;
+    justify-content: space-between;
    
 }
 
+nav p{
+    margin: inherit;
+}
 .logo{
     display: flex;
+    z-index: 100;
 
 }
 
 .logo-img{
     height: 32px;
     width: 32px;
+    z-index: 100;
 }
 
 .search-bar{
+    height: 50px;
+    width: 367px;
+    justify-content: space-around;
     padding-inline-start: 8px;
     background-color: #fff;
     border: 1px solid #DDDDDD;
@@ -60,11 +76,10 @@ nav{
    
 }
 
-.search-bar button{
+.search-bar button:not(:last-child){
     background-color: transparent;
     color: inherit;
-    font-size: .875rem;
-    font-family: cereal-medium;
+    font-size: .9375em;
     line-height: 18px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -72,16 +87,23 @@ nav{
     min-width: 80px;
     cursor: inherit;
     border: none;
+    font-weight: bold;
 }
 
+.guests{
+font-weight: normal;
+}
 .search-bar .search-btn{
     color: #fff;
+    display: flex;
+    align-items: center;
+    padding: inherit;
     background-color: #ff385c;
+    border: none;
+    margin-right: 10px;
     border-radius: 50%;
-    padding: 10px;
-    margin: 7px 7px 7px 0;
     height: 32px;
-    min-width: 32px;
+    width: 32px;
 }
 
 .logo-text{
@@ -95,11 +117,12 @@ nav{
     border-radius: 50px;
     border: 1px solid #DDDDDD;
     cursor: pointer;
-    
+    height: 40px;
     position: relative;
     padding: 5px 5px 5px 12px;
     align-items: center;
     background-color: #fff;
+    z-index: 100;
 }
 
 .user-nav .user-png{
@@ -107,6 +130,18 @@ nav{
     width:30px;
     height:30px;
     fill: currentcolor;
+}
+
+.back-drop{
+    color: #fff;
+    position: relative;
+    width: 100%;
+    
+    top:80px;
+}
+
+.boundry{
+    margin: auto;
 }
 
 
