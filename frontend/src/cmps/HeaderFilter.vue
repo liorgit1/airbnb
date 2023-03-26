@@ -33,12 +33,12 @@ export default {
     }
   },
 
-  mounted:{
+  // mounted:{
 
-    handleOutFoucs(){
+  //   handleOutFoucs(){
     
-  }
-  },
+  // }
+  // },
 
   methods: {
     setSearch() {
