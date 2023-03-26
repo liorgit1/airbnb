@@ -3,7 +3,8 @@
     <nav class="flex">
 
       <RouterLink to="/" @click = "isOpen = false && resetParams()"  class="logo">
-        <RouterLink to="/" class="logo" />  
+
+      <RouterLink to="/" class="logo" />  
         <img class="logo-img" src="../assets/pngs/logo1.png">
         <span class="logo-text">Earthbnb</span>
       </RouterLink>
@@ -19,7 +20,7 @@
 
       
       
-      <HeaderFilter @closeModal="closeModal" v-else>
+      <HeaderFilter  v-else>
       
       </HeaderFilter>
     
@@ -32,6 +33,7 @@
       </button>
       
     </nav>
+
     <section class="loggedin-user" v-if="loggedInUser">
       <RouterLink :to="`/user/${loggedInUser._id}`">
         {{ loggedInUser.fullname }}
@@ -41,24 +43,21 @@
     </section>
     <hr class="solid" v-if="!isOpen">
   </header>
-   <!-- <hr class="boundry" v-if="!isOpen">  -->
-  <!-- <hr class="solid" v-if="!isOpen"> -->
-  <!-- <modal v-if="isOpen" class="back-drop">
-    <div style="background-color: white;">.</div>
-  </modal> -->
+  
 </template>
+
 <script>
 
 import HeaderFilter from './HeaderFilter.vue'
 import FilterList from './FilterList.vue'
-import { ref } from 'vue'
 
 export default {
 
   data() {
   return {
   isOpen: false
-  }}
+  }
+  }
   ,
   components: {
    HeaderFilter,
@@ -74,25 +73,25 @@ export default {
   },
   computed: {
     
-    resetParams(){
+  resetParams(){
       this.$router.replace({'query': null});
 
-    },
+  },
     loggedInUser() {
       return this.$store.getters.loggedinUser
-    },
+  },
   },
 
   methods:{
 
-    closeModal(value){
-    this.isOpen = value
-  },
+  //   closeModal(value){
+  //   this.isOpen = false
+  // },
 
     handleScroll (event) {
       this.isOpen=false
     },
-    // onClickOutside(el_target_ref){},
+   
 
     toggle () {
             if (this.opened) {

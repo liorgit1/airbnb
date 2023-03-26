@@ -1,8 +1,11 @@
 <template>
+  
+  <section>
   <FilterList />
   <main class="home-page">
     <stay-list :stays="stays" />
   </main>
+</section>
 </template>
 
 <script>
