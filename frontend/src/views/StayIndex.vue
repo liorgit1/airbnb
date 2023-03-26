@@ -1,7 +1,7 @@
 <template>
   
-  <section>
-  <FilterList />
+  <section class="main-layout">
+    <FilterList />
   <main class="home-page">
     <stay-list :stays="stays" />
   </main>

@@ -1,9 +1,9 @@
-<template>
-    <section class="Filter-list">
+<template class="main-layout">
+    <section class="Filter-list main-layout">
 
     <button v-for="key in keys" :key = "key.url">
     <img :src="key.url" />
-    {{ key.key }}
+    <h1>{{ key.key }}</h1>
     </button>
     
 </section>

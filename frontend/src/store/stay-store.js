@@ -4,25 +4,15 @@ export default {
     state: {
         stays: [],
         filterBy: {},
-        guestsNum: 0
-
     },
     getters: {
         stays(state) {
             return state.stays;
         },
-        guestsNum(state) {
-            return state.guestsNum
-        }
     },
     mutations: {
         setStay(state, { stays }) {
             state.stays = stays
-        },
-        setGuestsNum(state, { guestsNum }) {
-            state.guestsNum = guestsNum
-            console.log('guestsNum :>> ', guestsNum);
-            console.log('state.guestsNum :>> ', state.guestsNum);
         },
         setFilter(state, { filterBy }) {
             if (filterBy.country) state.filterBy.country = filterBy.country
