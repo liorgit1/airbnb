@@ -3,7 +3,7 @@
 .Filter-list{
     
     display: flex;
-    padding:1em;
+    
     justify-content: space-between;
    
 }
@@ -17,7 +17,14 @@
     overflow: hidden;
     width:40px;
     border: none;
+    text-align: inherit;
 }
+
+.Filter-list button h1{
+    font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: normal;
+}
+
 
 .Filter-list img{
     width: 100%;

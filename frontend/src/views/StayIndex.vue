@@ -1,8 +1,8 @@
 <template>
   
-  <section>
-  <FilterList />
-  <main class="home-page main-layout">
+  <section class="main-layout">
+    <FilterList />
+  <main class="home-page">
     <stay-list :stays="stays" />
   </main>
 </section>

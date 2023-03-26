@@ -1,9 +1,10 @@
 <template>
-  <div ref="container" class="container">
+  <div ref="container"  class="container">
     <div class="bar">
     <div class="location">
       <p>Location</p>
-      <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" />
+      
+    <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" /> 
     </div>
     <div class="check-in">
       <p>Check in</p>
@@ -16,7 +17,7 @@
     <div class="guests">
       <p>Guests</p>
       <input type="text" v-model="searchBy.guests" placeholder="Add guests" />
-      <span @keyup.enter="setSearch()"><i class="lni lni-search-alt"></i></span>
+      <span @click="setSearch()"><i class="lni lni-search-alt"></i></span>
     </div>
 </div>
   </div>
@@ -35,14 +36,6 @@ export default {
     }
   },
 
- 
-  
-  // mounted:{
-
-  //   handleOutFoucs(){
-    
-  // }
-  // },
 
   methods: {
      setSearch() {
