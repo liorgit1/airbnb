@@ -114,12 +114,11 @@
 
 .info-container {
     display: flex;
-    margin-inline-end: auto;
     gap: 8px;
     margin-top: 2px;
     grid-template-columns: auto auto;
-    grid-column: 2/4;
+    grid-column: 2/3;
     justify-content: space-between;
     flex-direction: row-reverse;
-
 }
+

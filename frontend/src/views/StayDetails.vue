@@ -23,7 +23,7 @@
             <section class="info-container">
                 <GuestsModal  v-if="showModal" />
                 <Reservation @click.stop :stay="stay" @openModal="this.showModal = true" />
-                <div>
+                <div class="flex-col">
                     <StayInfo :stay="stay" />
                     <StayAmenities :stay="stay" />
                 </div>

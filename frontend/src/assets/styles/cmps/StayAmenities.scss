@@ -1,16 +1,16 @@
 .stay-amenities-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-inline-start: 70px;
-    padding-inline-start: 80px
-
-
 
 }
-.flex{
 
-    svg{
+.flex {
+
+    svg {
         margin-inline-end: 10px;
     }
 }
 
+.stay-main-amenities-list{
+    padding-inline-start: 0;
+}
