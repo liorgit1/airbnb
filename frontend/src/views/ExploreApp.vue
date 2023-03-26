@@ -58,7 +58,4 @@ export default {
 
 
 <style>
-.main-layout2.h4{
-  font: 14px cereal
-}
 </style>

@@ -1,24 +1,22 @@
 <template>
-  <div ref="container" @focusout="handleOutFoucs()" class="container">
+  <div ref="container" class="container">
     <div class="bar">
     <div class="location">
       <p>Location</p>
-      <input type="text" v-model="searchBy.country" placeholder="Where are you going?"  />
-      <!-- <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" /> -->
+      <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" />
     </div>
     <div class="check-in">
       <p>Check in</p>
-      <input type="text" placeholder="Add dates" />
+      <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
     <div class="check-out">
       <p>Check out</p>
-      <input type="text" placeholder="Add dates" />
+      <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
     <div class="guests">
       <p>Guests</p>
       <input type="text" v-model="searchBy.guests" placeholder="Add guests" />
-      <span ><i class="lni lni-search-alt"></i></span>
-      <!-- <span @click="setSearch()"><i class="lni lni-search-alt"></i></span> -->
+      <span @keyup.enter="setSearch()"><i class="lni lni-search-alt"></i></span>
     </div>
 </div>
   </div>
@@ -33,7 +31,7 @@ export default {
 
   data() {
     return {
-      searchBy: { country: '',guests:'' }
+      searchBy: { country: '' }
     }
   },
 
@@ -48,7 +46,7 @@ export default {
 
   methods: {
      setSearch() {
-     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country, guests: this.searchBy.guests } })
+     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country} })
 
      this.$emit('closeModal' , false)
     

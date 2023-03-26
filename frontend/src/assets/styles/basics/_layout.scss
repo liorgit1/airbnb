@@ -159,17 +159,22 @@
 /////////////////////////////////
 /// 
 .main-layout {
-    padding-left: rem(80px);
-    padding-right: rem(80px);
-        // display: grid;
-    // grid-template-columns: $layoutPadding 1fr $layoutPadding;
-    // grid-template-columns: minmax(24px, 1fr) minmax(auto, 1120px) minmax(24px, 1fr);
+    grid-template-columns: minmax(20px,1fr) minmax(auto,88.3vw) minmax(20px,1fr);
+
+    > * {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 /-1;
+        }
+    }
 }
+
   .main-layout2 {
     margin: 0 auto;
     display: grid;
-    padding-left: rem(40px);
-    padding-right: rem(40px);
+    padding-left: rem(20px);
+    padding-right: rem(20px);
     max-width: 1600px;
     @include for-wide-layout {
         max-width: 1120px;

@@ -2,7 +2,7 @@
   
   <section>
   <FilterList />
-  <main class="home-page">
+  <main class="home-page main-layout">
     <stay-list :stays="stays" />
   </main>
 </section>
