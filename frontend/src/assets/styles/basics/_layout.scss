@@ -158,10 +158,16 @@
 
 /////////////////////////////////
 /// 
+.details-layout {
+    display: grid;
+    // grid-template-columns: $layoutPadding 1fr $layoutPadding;
+    grid-template-columns: minmax(24px, 1fr) minmax(auto, 1120px) minmax(24px, 1fr);
+}
+
 .main-layout {
 
     display: grid;
-    
+
     grid-template-columns: minmax(20px,1fr) minmax(auto,88.3vw) minmax(20px,1fr);
 
     > * {

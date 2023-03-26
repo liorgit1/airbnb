@@ -7,7 +7,7 @@
 
             <h1> {{ stay.name }}</h1>
             <div class="likeAndShare">
-                <p class="placeLink fs16">  <img src="../assets/pngs/star.png    " alt="">  {{ stay.loc.city }}, {{ stay.loc.country }}</p>
+                <p class="placeLink fs16">  <img src="../assets/pngs/star.png" alt="">  {{ stay.loc.city }}, {{ stay.loc.country }}</p>
                 <span class="fs16">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false"
