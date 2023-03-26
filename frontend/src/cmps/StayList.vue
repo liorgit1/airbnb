@@ -3,7 +3,7 @@
     <stay-preview
     v-for="stay in stays"
     :stay="stay"
-    :key="stay._id"
+    :key="stay._id" 
     >
     </stay-preview>
   </ul>

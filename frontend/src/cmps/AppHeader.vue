@@ -8,7 +8,7 @@
         <span class="logo-text">Earthbnb</span>
       </RouterLink>
 
-      <div v-on:click = "isOpen=true" v-if="!isOpen" class="search-bar">
+      <div @click = "isOpen=true" v-if="!isOpen" class="search-bar">
         <button>anywhere</button>
         <span>|</span>
         <button>anyweek</button>
