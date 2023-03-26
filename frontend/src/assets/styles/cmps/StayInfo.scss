@@ -1,7 +1,6 @@
 StayInfo {}
 
 .stay-info {
-    margin-block-start: 122px;
     width: 650px;
     // background-color: #b93535;
     /* max-width: 650px; */
@@ -10,7 +9,7 @@ StayInfo {}
 }
 
 .host-info {
-    align-items: center;
+    align-items: top;
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
     padding-bottom: 24px;

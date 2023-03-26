@@ -20,7 +20,8 @@
 
     h1 {
         font-size: 26px;
-        grid-column: 1;
+        margin-block-end: 11px;
+        // grid-column: 1;
         // margin-inline: 82px;
     }
 
@@ -50,9 +51,9 @@
         display: grid;
         margin: auto;
         gap: 8px;
-        margin-top: 2px;
+        margin-top: 14px;
         grid-template-columns: 560px 270px 270px;
-        grid-template-rows: 280px 280px;
+        grid-template-rows: 277px 252px;
         grid-column: 2/3;
         max-height: 583px;
         ;
@@ -65,7 +66,7 @@
         padding-inline: 80px;
         place-content: center;
 
-
+        margin-block-end: 42px;
 
         img {
             // margin: 3px;
