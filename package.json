@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "vue-slick": "^1.2.0",
+    "vue-slick-carousel": "^1.0.6"
+  }
+}

@@ -1,13 +1,14 @@
 <template>
   <header >
     <nav class="flex">
+
       <RouterLink to="/" @click = "isOpen = false && resetParams()"  class="logo">
         <RouterLink to="/" class="logo" />  
         <img class="logo-img" src="../assets/pngs/logo1.png">
         <span class="logo-text">Earthbnb</span>
       </RouterLink>
 
-      <div @click = "isOpen = true" v-bind:isOpen = "isOpen" v-if="!isOpen" class="search-bar">
+      <div v-on:click = "isOpen=true" v-if="!isOpen" class="search-bar">
         <button>anywhere</button>
         <span>|</span>
         <button>anyweek</button>
@@ -18,9 +19,10 @@
 
       
       
-      <HeaderFilter  v-else>
+      <HeaderFilter @closeModal="closeModal" v-else>
       
       </HeaderFilter>
+    
 
       <!-- <RouterLink to="/">become a host</RouterLink> -->
       <button class="user-nav">
@@ -49,6 +51,7 @@
 
 import HeaderFilter from './HeaderFilter.vue'
 import FilterList from './FilterList.vue'
+import { ref } from 'vue'
 
 export default {
 
@@ -62,8 +65,15 @@ export default {
    FilterList
   },
 
-  computed: {
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
 
+  unmounted (){
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  computed: {
+    
     resetParams(){
       this.$router.replace({'query': null});
 
@@ -72,6 +82,33 @@ export default {
       return this.$store.getters.loggedinUser
     },
   },
+
+  methods:{
+
+    closeModal(value){
+    this.isOpen = value
+  },
+
+    handleScroll (event) {
+      this.isOpen=false
+    },
+    // onClickOutside(el_target_ref){},
+
+    toggle () {
+            if (this.opened) {
+                return this.hide()
+            }
+            return this.show()
+        },
+        show () {
+            this.opened = true;
+            setTimeout(() => document.addEventListener('click',this.hide), 0);
+        },
+        hide () {
+            this.opened = false;
+            document.removeEventListener('click',this.hide);
+        } 
+  }
 
 }
 </script>
