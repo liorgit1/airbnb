@@ -1,5 +1,5 @@
 <template>
-    <section class="stay-info">
+    <section class="stay-info flex-col">
         <div class="host-info flex">
             <div>
                 <h2>{{ stay.type }} hosted {{ stay.host.fullname }} </h2>

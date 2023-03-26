@@ -23,9 +23,15 @@ export default{
     },
 },
 
-//    components:{ slick },
+    //    components:{ slick },
 
-    data(){ return {
+    data() {
+        return {
+            props: {
+                isOpen: {
+                    type: Boolean,
+                },
+            },
 
         
         keys:[
@@ -129,8 +135,9 @@ export default{
         
 
 
-    }
-},
+
+        }
+    },
 }
 
 

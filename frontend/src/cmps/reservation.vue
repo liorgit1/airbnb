@@ -68,7 +68,7 @@
 
 
 <script>
-import reservationBtnVue from './reservationBtn.vue'
+import reservationBtnVue from './ReservationBtn.vue'
 
 
 
