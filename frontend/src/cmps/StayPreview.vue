@@ -1,5 +1,5 @@
 <template>
-  <li class="stay-preview-container" @click="goToDeatails">
+  <li class="stay-preview-container">
     <section class="stay-preview clickable">
       <div class="stay-preview-gallery">
         <section>
@@ -28,7 +28,7 @@
                 overflow: visible;
                 stroke: white;
               "
-            >
+                >
               <path
                 d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791
            0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949
@@ -54,19 +54,19 @@
                 fill: black;
               "
                  >
-              <path
-                d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965
-           9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853
-            7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z"
-                fill-rule="evenodd"
-              ></path>
-            </svg>
-          </div>
-          <span class="total-rate"> {{  stay.reviews.rate }} </span>
+                 <path
+                 d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965
+                 9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853
+                 7.293-6.565a1 1 0 0 0-.541-1.735l-9.86-1.271-4.127-8.885a1 1 0 0 0-1.814 0z"
+                 fill-rule="evenodd"
+                 ></path>
+                </svg>
+              </div>
+              <span class="total-rate"> {{  stay.reviews[0].rate }} </span>
         </div>
 
-        <div class="stay-type">
-          {{ stay.loc.country }} <span> &#183;</span>
+        <div class="stay-type" >
+          {{ stay.loc.country }} <span>/</span>
           {{ stay.loc.city }}
         </div>
         <div class="stay-name">{{stay.labels[0] }}</div>
@@ -80,7 +80,6 @@
 </template>
       
 <script>
-import imgCarousel from "../cmps/img-carousel.vue";
 export default {
   name: "stay-preview",
   props: {
@@ -91,11 +90,10 @@ export default {
 
   computed: {
     getRating() {
-      return this.stay.reviews.rate ;
+      return this.stay.reviews.rate / stay.country.length ;
     },
   },
   components: {
-    imgCarousel,
   },
   created() {
   },

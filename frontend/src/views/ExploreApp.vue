@@ -1,6 +1,6 @@
 <template>
   <section class="main-layout2">
-    <h1>over {{ filteredStays.length - 1 }} homes</h1>
+    <h4>over {{ filteredStays.length - 1 }} homes</h4>
     <stay-list :stays="filteredStays" v-if="filteredStays.length > 0"></stay-list>
   </section>
 </template>
@@ -13,7 +13,7 @@ import typePlaceModal from '../cmps/type-place-modal.vue'
 import { stayService } from '../services/stay.service.local'
 
 export default {
-  name: 'Explore',
+  name: 'explore',
   components: {
     appHeader,
     stayList,
@@ -57,4 +57,8 @@ export default {
 </script>
 
 
-<style></style>
+<style>
+.main-layout2.h4{
+  font: 14px cereal
+}
+</style>
