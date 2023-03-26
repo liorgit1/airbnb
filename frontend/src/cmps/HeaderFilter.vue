@@ -1,5 +1,6 @@
 <template>
-  <div class="bar">
+  <div ref="container" @focusout="handleOutFoucs()" class="container">
+    <div class="bar">
     <div class="location">
       <p>Location</p>
       <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" />
@@ -17,6 +18,7 @@
       <input type="text" v-model="searchBy.guests" placeholder="Add guests" />
       <span @click="setSearch()"><i class="lni lni-search-alt"></i></span>
     </div>
+</div>
   </div>
 </template>
 
@@ -30,10 +32,23 @@ export default {
       searchBy: { country: '',guests:'' }
     }
   },
+
+  mounted:{
+
+    handleOutFoucs(){
+    
+  }
+  },
+
   methods: {
     setSearch() {
       this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country, guests: this.searchBy.guests } })
-    }
+
+      this.$emit('closeModal' , false)
+    },
+
+    
+
   }
 }
 </script>
