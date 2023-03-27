@@ -38,14 +38,14 @@
     //   &::-webkit-scrollbar {
     //       display: none;
     // }
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0.5rem;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    max-height: calc(60vh - 2rem);
+  //   width: 105%;
+  //   display: grid;
+  //   grid-template-columns: 2fr 1fr 1fr;
+  //   grid-template-rows: repeat(2, 1fr);
+  //   gap: 0.5rem;
+  //   border-radius: 0.5rem;
+  //   overflow: hidden;
+  //   max-height: calc(60vh - 2rem);
   
     > * {
         width: 100%;

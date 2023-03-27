@@ -1,6 +1,7 @@
 <template>
   <li class="stay-preview-container">
     <section class="stay-preview clickable">
+      <div class="stay-preview">
       <div class="stay-preview-gallery">
         <section>
           <div class="card-img">
@@ -40,7 +41,7 @@
       </div>
       <div class="stay-preview-info">
         <div class="flex card-rate">
-          <span class="total-rate"> {{  stay.reviews[0].rate }} </span>
+          <span class="preview-rate"> {{  stay.reviews[0].rate }} </span>
           <div class="star-preview">
             <svg
               viewBox="0 0 32 32"
@@ -76,6 +77,7 @@
           night
         </div>
       </div>
+    </div>
     </section>
     </li>
 </template>
