@@ -82,21 +82,21 @@ function getEmptyStay() {
 
 
 // TEST DATA
-; (async () => {
-    await storageService.post(STORAGE_KEY, {
-        "_id": "10006546",
-        "name": "Ribeira Charming Duplex",
-        "type": "House",
-        "imgUrls": [
-            "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
-            "https://a0.muscache.com/im/pictures/miso/Hosting-44695391/original/bd5d1aa0-57d1-45f7-ae99-01562b0e61d0.jpeg?im_w=1200",
-            "https://a0.muscache.com/im/pictures/101293ac-7c8f-4d58-9228-cf6112cdada2.jpg?im_w=720",
-            "https://a0.muscache.com/im/pictures/101293ac-7c8f-4d58-9228-cf6112cdada2.jpg?im_w=720",
-            "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=1200"
+// ; (async () => {
+//     await storageService.post(STORAGE_KEY, {
+//         "_id": "10006546",
+//         "name": "Ribeira Charming Duplex",
+//         "type": "House",
+//         "imgUrls": [
+//             "https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large",
+//             "https://a0.muscache.com/im/pictures/miso/Hosting-44695391/original/bd5d1aa0-57d1-45f7-ae99-01562b0e61d0.jpeg?im_w=1200",
+//             "https://a0.muscache.com/im/pictures/101293ac-7c8f-4d58-9228-cf6112cdada2.jpg?im_w=720",
+//             "https://a0.muscache.com/im/pictures/101293ac-7c8f-4d58-9228-cf6112cdada2.jpg?im_w=720",
+//             "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg?im_w=1200"
 
-        ]
-    });
-})();
+//         ]
+//     });
+// })();
 
 const demoStays = [{
     "_id": "10006546",
@@ -104,7 +104,7 @@ const demoStays = [{
     "type": "House",
     "guests": "4",
     "date": "aug 19-26",
-    "imgUrls": ["https://media.istockphoto.com/id/1255274133/photo/luxurious-beach-side-villa-with-swimming-pool-and-palm-trees-at-summer-sunset-scene.jpg?s=612x612&w=0&k=20&c=ZV7TQSRNAnJODeqHNQpAKMc-F3wVuEOB9-k0p2inevE=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
+    "imgUrls": ["https://media.istockphoto.com/id/1255274133/photo/luxurious-beach-side-villa-with-swimming-pool-and-palm-trees-at-summer-sunset-scene.jpg?s=612x612&w=0&k=20&c=ZV7TQSRNAnJODeqHNQpAKMc-F3wVuEOB9-k0p2inevE=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 34.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -136,12 +136,12 @@ const demoStays = [{
     "reviews": [
         {
             "id": "madeId",
-            "txt": "Very helpful hosts",
+            "txt": "Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts",
             "rate": 4.6,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
-                "imgUrl": "/img/img2.jpg"
+                "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large"
             }
         }
     ],

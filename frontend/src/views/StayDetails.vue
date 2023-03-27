@@ -1,9 +1,9 @@
 <template>
-    <section v-if="stay" class="stay-details details-layout" @click="this.showModal = false">
+    <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
 
 
         <!-- <section> -->
-        <divg class="gc23" style="height: 76px;">
+        <div class="gc23" style="height: 76px;">
 
             <h1> {{ stay.name }}</h1>
             <div class="likeAndShare">
@@ -25,11 +25,11 @@
                     <a> <img style="width:16px ; " src="../assets/pngs/heart.png"> Save</a>
                 </span>
             </div>
-        </divg>
+        </div>
         <div class="detailsImgContainer">
-            <!-- <img v-for="(url, index) in stay.imgUrls" :key="index" :src="url || stay.imgUrls[0]"
-                :class="'img img' + (index + 1)"> -->
-                
+            <img v-for="(url, index) in stay.imgUrls.slice(0, 5)" :key="index" :src="url || stay.imgUrls[0]"
+                :class="'img img' + (index + 1)">
+
             <!-- <img :src="stay.imgUrls[0]" class="img img1">
             <img :src="stay.imgUrls[1] || stay.imgUrls[0]" class="img img2">
             <img :src="stay.imgUrls[2] || stay.imgUrls[0]" class="img img3">
@@ -38,14 +38,14 @@
         </div>
         <section class="info-container">
             <!-- <div>   -->
-            <Reservation @click.stop :stay="stay" @openModal="this.showModal = true" />
-            <!-- <GuestsModal v-if="showModal" /> -->
+            <Reservation @click.stop :stay="stay" />
             <!-- </div> -->
             <div class="flex-col">
                 <StayInfo :stay="stay" />
                 <StayAmenities :stay="stay" />
             </div>
         </section>
+        <StayReviews :stay="stay" />
 
 
         <!-- </section> -->
@@ -61,8 +61,10 @@
 import GuestsModal from '../cmps/GuestsModal.vue'
 import Reservation from '../cmps/Reservation.vue'
 import StayInfo from './StayInfo.vue'
-import StayAmenities from './StayAmenities.vue'
+import StayAmenities from '../cmps/StayAmenities.vue'
+import StayReviews from '../cmps/StayReviews.vue'
 
+import { eventBus } from '../services/event-bus.service.js'
 import { stayService } from '../services/stay.service.local.js'
 
 
@@ -70,7 +72,7 @@ export default {
 
     data() {
         return {
-            showModal: false,
+
             stay: null
         }
     },
@@ -89,13 +91,17 @@ export default {
         }
     },
     methods: {
+        closeModal() {
+            eventBus.emit('closeModal')
 
+        }
     },
     components: {
         Reservation,
         StayInfo,
         StayAmenities,
-        GuestsModal
+        GuestsModal,
+        StayReviews
     }
     , computed: {
 

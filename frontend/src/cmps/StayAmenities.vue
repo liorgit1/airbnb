@@ -71,7 +71,7 @@ export default {
 
     },
     created() {
-        console.log('stay :>> ', this.stay);
+        // console.log('stay :>> ', this.stay);
     },
     methods: {
 
