@@ -28,7 +28,7 @@
                 overflow: visible;
                 stroke: white;
               "
-                >
+                  >
               <path
                 d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791
            0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949
@@ -54,7 +54,7 @@
                 width: 14px;
                 fill: black;
               "
-                  >
+                   >
                  <path
                  d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965
                  9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853
@@ -69,7 +69,7 @@
           {{ stay.loc.country }}<span>, </span>
           {{ stay.loc.city }}
         </div>
-        <div class="stay-name">{{stay.labels[0] }}</div>
+        <div class="stay-name">{{stay.guests }} beds</div>
         <div class="stay-date">{{stay.date }}</div>
         <div class="stay-price">
           <span class="bold">${{ stay.price }}</span>
@@ -97,6 +97,7 @@ export default {
   components: {
   },
   created() {
+    console.log(this.stay);
   },
 
 }

@@ -3,7 +3,7 @@
 
 
         <!-- <section> -->
-        <divg class="gc23" style="height: 76px;">
+        <div class="gc23" style="height: 76px;">
 
             <h1> {{ stay.name }}</h1>
             <div class="likeAndShare">
@@ -25,7 +25,7 @@
                     <a> <img style="width:16px ; " src="../assets/pngs/heart.png"> Save</a>
                 </span>
             </div>
-        </divg>
+        </div>
         <div class="detailsImgContainer">
             <!-- <img v-for="(url, index) in stay.imgUrls" :key="index" :src="url || stay.imgUrls[0]"
                 :class="'img img' + (index + 1)"> -->

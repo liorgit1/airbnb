@@ -1,4 +1,5 @@
 .stay-list {
+  place-items: center;
   display: grid;
   list-style: none;
   grid-template-columns: repeat(
@@ -7,8 +8,9 @@
   );
   column-gap: rem(24px);
   row-gap: rem(40px);
-  padding-top: 16px;
-  padding-bottom: 250px;
+  // padding-top: 16px;
+  // padding-bottom: 250px;
+  padding: 0;
   @include for-wide-layout {
     grid-template-columns: repeat(
       auto-fill,
