@@ -1,5 +1,5 @@
 <template>
-  <section class="main-layout2">
+  <section class="main-layout">
     <h4>over {{ filteredStays.length - 1 }} homes</h4>
     <stay-list :stays="filteredStays" v-if="filteredStays.length > 0"></stay-list>
   </section>
