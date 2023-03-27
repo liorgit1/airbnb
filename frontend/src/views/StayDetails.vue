@@ -7,7 +7,8 @@
 
             <h1> {{ stay.name }}</h1>
             <div class="likeAndShare">
-                <p class="placeLink fs16">  <img src="../assets/pngs/star.png" alt="">  {{ stay.loc.city }}, {{ stay.loc.country }}</p>
+                <p class="placeLink fs16"> <img src="../assets/pngs/star.png" alt=""> {{ stay.loc.city }}, {{
+                    stay.loc.country }}</p>
                 <span class="fs16">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false"
@@ -26,15 +27,20 @@
             </div>
         </divg>
         <div class="detailsImgContainer">
-            <img :src="stay.imgUrls[0]" class="img img1">
+            <!-- <img v-for="(url, index) in stay.imgUrls" :key="index" :src="url || stay.imgUrls[0]"
+                :class="'img img' + (index + 1)"> -->
+                
+            <!-- <img :src="stay.imgUrls[0]" class="img img1">
             <img :src="stay.imgUrls[1] || stay.imgUrls[0]" class="img img2">
             <img :src="stay.imgUrls[2] || stay.imgUrls[0]" class="img img3">
             <img :src="stay.imgUrls[3] || stay.imgUrls[0]" class="img img4">
-            <img :src="stay.imgUrls[4] || stay.imgUrls[0]" class="img mainIgm">
+            <img :src="stay.imgUrls[4] || stay.imgUrls[0]" class="img img5"> -->
         </div>
         <section class="info-container">
-            <GuestsModal v-if="showModal" />
+            <!-- <div>   -->
             <Reservation @click.stop :stay="stay" @openModal="this.showModal = true" />
+            <!-- <GuestsModal v-if="showModal" /> -->
+            <!-- </div> -->
             <div class="flex-col">
                 <StayInfo :stay="stay" />
                 <StayAmenities :stay="stay" />
@@ -44,7 +50,7 @@
 
         <!-- </section> -->
 
-        <!-- <pre>{{ stay }}</pre> -->
+        <pre>{{ stay }}</pre>
 
     </section>
 </template>

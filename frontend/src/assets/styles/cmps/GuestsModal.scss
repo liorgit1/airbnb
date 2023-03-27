@@ -1,20 +1,37 @@
 .guest-modal {
+
+    margin: auto;
     top: 150px;
     position: sticky;
-    height: 360px;
-    width: 264px;
+    height: 390px;
+    width: 322px;
     display: grid;
-    grid-template-columns: 145px 112px;
-    grid-template-rows: repeat(5, 61px);
-    translate: -295px 186px;
+    grid-template-columns: 145px 174px;
+    grid-template-rows: repeat(5, 68px);
+    translate: 7px -83px;
     background-color: white;
     z-index: 101;
     place-items: center;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
+    align-content: center;
 
 
 
+    // top: 150px;
+    // position: sticky;
+    // height: 360px;
+    // width: 320px;
+    // display: grid;
+    // grid-template-columns: 145px 112px;
+    // grid-template-rows: repeat(5, 61px);
+    // translate: -295px 186px;
+    // background-color: white;
+    // z-index: 101;
+    // place-items: center;
+    // border-radius: 4px;
+    // box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
+    // margin: auto;
 
 
 
@@ -29,10 +46,26 @@
     .space-between {
         width: 100px;
 
+        &.counter {
+            width: 113px;
+            justify-self: end;
+            padding-inline-end: 10px;
+        }
+
         span {
             color: black;
         }
     }
+}
+
+.flex {
+    .description {
+        margin-block-start: 5px;
+    }
+
+
+
+
 }
 
 .roundBtn {

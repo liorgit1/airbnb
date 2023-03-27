@@ -5,7 +5,7 @@
             <div style="display: flex; gap: 13px" v-for="amenitie in stay.amenities" :key="amenitie">
                 <img style="width: 1.2em" :src="`../../../../src/assets/pngs/amenities/${amenitie.toLowerCase()}.svg`">
 
-                <p>{{ amenitie }}</p>
+                <p style="margin: 0;font-size: 14px;padding-block-start: 10px;">{{ amenitie }}</p>
             </div>
 
 
