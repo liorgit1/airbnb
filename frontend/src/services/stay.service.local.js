@@ -104,7 +104,7 @@ const demoStays = [{
     "type": "House",
     "guests": "4",
     "date": "aug 19-26",
-    "imgUrls": ["https://media.istockphoto.com/id/1255274133/photo/luxurious-beach-side-villa-with-swimming-pool-and-palm-trees-at-summer-sunset-scene.jpg?s=612x612&w=0&k=20&c=ZV7TQSRNAnJODeqHNQpAKMc-F3wVuEOB9-k0p2inevE=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
+    "imgUrls": ["https://media.istockphoto.com/id/1255274133/photo/luxurious-beach-side-villa-with-swimming-pool-and-palm-trees-at-summer-sunset-scene.jpg?s=612x612&w=0&k=20&c=ZV7TQSRNAnJODeqHNQpAKMc-F3wVuEOB9-k0p2inevE=", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440", "https://a0.muscache.com/im/pictures/2476f261-7505-468e-bd16-438087b83e04.jpg?im_w=1440"],
     "price": 34.00,
     "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
     "capacity": 8,
@@ -136,12 +136,12 @@ const demoStays = [{
     "reviews": [
         {
             "id": "madeId",
-            "txt": "Very helpful hosts",
+            "txt": "Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts",
             "rate": 4.6,
             "by": {
                 "_id": "u102",
                 "fullname": "user2",
-                "imgUrl": "/img/img2.jpg"
+                "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large"
             }
         }
     ],

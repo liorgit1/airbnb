@@ -16,16 +16,13 @@ export default {
         },
         setFilter(state, { filterBy }) {
             if (filterBy.country) state.filterBy.country = filterBy.country
-        }
+        },
+        setGuestsNum(state, { guestsNum }) {
+            state.guestsNum = guestsNum
+        },
 
 
     },
-
-
-
-
-
-
     actions: {
         async loadStays({ commit, state }) {
             const stays = await stayService.query(state.filterBy)
@@ -48,9 +45,8 @@ export default {
         }
     }
 
+
 }
-
-
 
 
 

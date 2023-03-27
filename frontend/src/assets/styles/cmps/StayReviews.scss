@@ -1,0 +1,14 @@
+
+
+.stay-reviews{
+    grid-column: 2;
+    // width: 100%;
+    background-color: rgba(0, 0, 0, 0.182);
+}
+.reviews-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px 1px;
+    height: 290px;
+    width: 100%;
+}
