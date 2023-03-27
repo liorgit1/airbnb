@@ -1,14 +1,14 @@
 .guest-modal {
 
     margin: auto;
-    top: 420px;
-    position: sticky;
+    // top: 420px;
+    position: absolute;
     height: 390px;
     width: 330px;
     display: grid;
     grid-template-columns: 145px 174px;
     grid-template-rows: repeat(5, 68px);
-    translate: 10px -83px;
+    translate: 0px -63px;
     background-color: white;
     z-index: 101;
     place-items: center;

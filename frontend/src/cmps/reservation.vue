@@ -59,10 +59,10 @@
                     </button>
                 </reservationBtnVue>
             </form>
+            <GuestsModal v-if="showModal" />
             <div class="reservation-footer">
             </div>
         </section>
-        <GuestsModal v-if="showModal" />
     </main>
 </template>
 

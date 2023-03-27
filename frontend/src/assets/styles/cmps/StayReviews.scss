@@ -1,14 +1,28 @@
-
+.review-container{
+    grid-column: 2;
+}
 
 .stay-reviews{
-    grid-column: 2;
+    grid-column: 1/-1;
     // width: 100%;
-    background-color: rgba(0, 0, 0, 0.182);
+    // background-color: rgba(0, 0, 0, 0.182);
 }
 .reviews-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px 1px;
+    grid-gap: 40px 10px;
     height: 290px;
     width: 100%;
+}
+.mini-guest-img {
+    border-radius: 50%;
+    height: 43px;
+    object-fit: cover;
+    width: 43px;
+    margin-inline-end: 15px;
+}
+
+.review{
+    margin-block-end: 35px;
+    margin-block-start: 23px;
 }
