@@ -20,8 +20,8 @@
                         </path>
                     </svg>
                     <div>
-                        <h3>Great communication</h3>
-                        <p>100% of recent guests rated Maria 5-star in communication..</p>
+                        <h3 class="fs18">Great communication</h3>
+                        <p class="fs14">100% of recent guests rated Maria 5-star in communication..</p>
                     </div>
                 </div>
             </li>
@@ -34,8 +34,8 @@
                         </path>
                     </svg>
                     <div>
-                        <h3>{{ stay.host.fullname }} is a Superhost</h3>
-                        <p>This Host committed to Airbnb's 5-step enhanced cleaning process.</p>
+                        <h3 class="fs18">{{ stay.host.fullname }} is a Superhost</h3>
+                        <p class="fs14">This Host committed to Airbnb's 5-step enhanced cleaning process.</p>
                     </div>
                 </div>
             </li>
@@ -48,13 +48,13 @@
                         </path>
                     </svg>
                     <div>
-                        <h3> Self check-in</h3>
-                        <p>Check yourself in with the lockbox.</p>
+                        <h3 class="fs18"> Self check-in</h3>
+                        <p class="fs14">Check yourself in with the lockbox.</p>
                     </div>
                 </div>
             </li>
         </ul>
-        <p class="stay-summery">{{stay.summary }}</p>
+        <p style="display: inline-block;" class="stay-summery">{{ stay.summary }}</p>
     </section>
 </template>
 
