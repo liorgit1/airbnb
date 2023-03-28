@@ -1,5 +1,6 @@
 <template>
-  <header v-bind:class="{'main-layout':!isDetails}">
+<!-- v-bind:class="{'stay-details':isDetails}" -->
+  <header class="main-layout">
     <nav class="flex">
 
       <RouterLink to="/" @click = "isOpen = false && resetParams()"  class="logo">
