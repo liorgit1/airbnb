@@ -11,6 +11,7 @@
       <p>Check in</p>
       <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
+    <DatePickerModal />
     <div class="check-out bar-div">
       <p>Check out</p>
       <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
@@ -33,9 +34,10 @@ import { onMounted } from 'vue'
 import { stayService } from '../services/stay.service.local.js'
 import LocationsModal from './LocationsModal.vue'
 import vClickOutside from 'click-outside-vue3'
+import DatePickerModal from './DatePickerModal.vue'
 export default {
 
-components:{LocationsModal},
+components:{LocationsModal , DatePickerModal},
 
   name: 'DestSearch',
 
