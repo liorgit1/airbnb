@@ -1,0 +1,30 @@
+.locations-container{
+    position: absolute;
+    display:grid;
+    background: white;
+    top: 90px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    box-shadow: 0 0 0 1px #0000000a, 0 8px 16px #00000026;
+    left: 5px;
+    
+}
+
+.location-container{
+    display: flex;
+    align-items: center;
+    padding: 8px 32px 8px 12px;
+    font-size: 20px;
+}
+
+.pin-container{
+    background-color: #ebebeb;
+    border-radius: 12px;
+    margin-right: 16px;
+    padding:15px;
+}
+
+.location-container:hover{
+    background-color: #f4f4f4;
+    
+}

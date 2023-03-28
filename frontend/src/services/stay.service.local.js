@@ -140,10 +140,37 @@ const demoStays = [{
             "rate": 4.6,
             "by": {
                 "_id": "u102",
-                "fullname": "user2",
+                "fullname": "Avi",
                 "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large"
             }
-        }
+        }, {
+            "id": "madeId",
+            "txt": "Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts",
+            "rate": 4.6,
+            "by": {
+                "_id": "u102",
+                "fullname": "Yosi",
+                "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large"
+            }
+        }, {
+            "id": "madeId",
+            "txt": "Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts",
+            "rate": 4.6,
+            "by": {
+                "_id": "u102",
+                "fullname": "Avram",
+                "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large"
+            }
+        }, {
+            "id": "madeId",
+            "txt": "Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts Very helpful hosts",
+            "rate": 4.6,
+            "by": {
+                "_id": "u102",
+                "fullname": "Yogev",
+                "imgUrl": "https://a0.muscache.com/im/pictures/user/2ff57666-087d-4e62-8871-68926adb89ba.jpg?aki_policy=profile_large"
+            }
+        },
     ],
     "likedByUsers": ['mini-user'] // for user-wishlist : use $in
 },

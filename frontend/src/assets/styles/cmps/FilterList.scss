@@ -3,8 +3,13 @@
 .Filter-list{
     
     display: flex;
-    
+    flex-wrap: nowrap;
+    height: 78px;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 18.3px;
+    white-space: nowrap;
+    
    
 }
 
@@ -12,22 +17,28 @@
     display: flex;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
     flex-direction: column;
-    padding: 5px;
     background-color: white;
     overflow: hidden;
-    width:40px;
+    width:50px;
     border: none;
-    text-align: inherit;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 .Filter-list button h1{
+    height: 16px;
     font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: normal;
+    padding-top: 10px;
+    margin: none;
+    align-self: center;
 }
 
 
 .Filter-list img{
-    width: 100%;
+    width: 24px;
+    height: 24px;
     // height: 100%;
     display: block;
     box-sizing: border-box;

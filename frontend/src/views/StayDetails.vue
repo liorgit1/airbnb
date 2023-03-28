@@ -50,7 +50,7 @@
 
         <!-- </section> -->
 
-        <pre>{{ stay }}</pre>
+        <!-- <pre>{{ stay }}</pre> -->
 
     </section>
 </template>

@@ -12,19 +12,19 @@
 
       <div @click = "isOpen=true" v-if="!isOpen" class="search-bar">
         <button>Anywhere</button>
+         <span>|</span> 
+        <button>Any week</button>
         <span>|</span>
-        <button>Anyweek</button>
-        <span>|</span>
-        <button style="font-weight: normal">Add guests</button>
-        <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></button>
+        <button style="font-weight: normal ; opacity: 80%;">Add guests</button>
+        <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></button>
       </div>
 
       
-      
-      <HeaderFilter  v-else>
+      <modal v-else  >
+      <HeaderFilter  >
       
       </HeaderFilter>
-    
+      </modal>
 
       <!-- <RouterLink to="/">become a host</RouterLink> -->
       <button class="user-nav">
@@ -58,7 +58,7 @@ export default {
   return {
   isOpen: false,
 
-  thisRoute: this.$route.name,
+  // thisRoute: this.$route.name,
 
   isDetails: false
 
@@ -79,7 +79,10 @@ export default {
   },
 
   computed: {
-    
+    thisRoute(){
+      return this.$route.name
+    },
+
   resetParams(){
       this.$router.replace({'query': null});
 
@@ -89,9 +92,20 @@ export default {
   },
   },
 
+  watch: {
+    '$route.name': {
+      handler() {
+       this.handleRoute();
+      },
+      deep: true,
+      immediate: true,
+    },
+  },
+
   methods:{
 
     handleRoute(){
+      console.log('thisRoute',this.thisRoute);
       if (this.thisRoute == 'stay')
       this.isDetails = true
     },
