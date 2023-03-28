@@ -50,7 +50,7 @@
               focusable="false"
               style="
                 display: inline;
-                height: 10px;
+                height: px;
                 width: 10px;
                 fill: black;
               "

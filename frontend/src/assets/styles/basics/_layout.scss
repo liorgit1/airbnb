@@ -333,16 +333,16 @@
     }
 }
 
-// @media screen and (min-width: 800px) {
-//     .search-bar {
-//         display:flex;
-//         align-items: center;
-//         width: auto;
-//         height: 48px;
-//         padding: 0 24px;
-//         margin-right: auto
-//     }
-// }
+@media screen and (min-width: 800px) {
+    .search-bar {
+        display:flex;
+        align-items: center;
+        width: auto;
+        height: 48px;
+        padding: 0 24px;
+        margin-right: auto
+    }
+}
 
 .main-text {
     margin-bottom: rem(90px);
