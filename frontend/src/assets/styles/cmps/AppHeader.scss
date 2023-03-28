@@ -24,12 +24,13 @@
 // }
 
 header{
+    display:grid;
     height: 80px;
     position: relative;
-    display: flex;
+    // display: flex;
     align-items: center;
     z-index: 2;
-    box-shadow: 1px 1px #00000014;
+    box-shadow: 0px 1px #00000014;
     text-decoration: none;
 }
 
@@ -114,7 +115,7 @@ font-weight: normal;
     display: flex;
     align-items: center;
     padding: inherit;
-    margin-right: 3px;
+    margin-right: 10px;
     background-color: #ff385c;
     border: none;
     
@@ -142,6 +143,7 @@ font-weight: normal;
     border: 1px solid #DDDDDD;
     cursor: pointer;
     height: 40px;
+    width: 70px;
     position: relative;
     padding: 5px 5px 5px 12px;
     align-items: center;
@@ -151,8 +153,10 @@ font-weight: normal;
 
 .user-nav .user-png{
     display: block;
+    // padding-left: 10px;
     width:30px;
-    height:30px;
+    
+    // height:30px;
     fill: currentcolor;
 }
 
