@@ -28,7 +28,12 @@ header{
     position: relative;
     align-items: center;
     z-index: 2;
-    box-shadow: 1px 1px;
+    box-shadow: 1px 1px #00000014;
+    text-decoration: none;
+}
+
+header:hover{
+    text-decoration: none;
 }
 
 nav{
@@ -59,7 +64,7 @@ nav p{
 .search-bar{
     height: 50px;
     width: 367px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-inline-start: 8px;
     background-color: #fff;
     border: 1px solid #DDDDDD;
@@ -68,10 +73,11 @@ nav p{
     transition: box-shadow .2s ease;
     align-items: center;
     color: #222;
-    display: inline-flex;
+    display: flex;
     max-width: 100%;
     vertical-align: middle;
     cursor: pointer;
+    font-size: 14px;
 //    border-top-right-radius: 16px;
 //    border-bottom-right-radius: 16px;
 //    border-bottom-left-radius: 16px;
@@ -91,19 +97,26 @@ nav p{
     cursor: inherit;
     border: none;
     font-weight: bold;
+    box-shadow: h-offset 1px
+}
+
+.search-bar button:last-child{
+    
 }
 
 .guests{
 font-weight: normal;
 }
+
 .search-bar .search-btn{
     color: #fff;
     display: flex;
     align-items: center;
     padding: inherit;
+    margin-right: 3px;
     background-color: #ff385c;
     border: none;
-    margin-right: 10px;
+    
     border-radius: 50%;
     height: 32px;
     width: 32px;
@@ -152,6 +165,10 @@ font-weight: normal;
 
 .boundry{
     margin: auto;
+}
+
+.filter-list svg{
+    margin-left: 1px;
 }
 
 
