@@ -3,10 +3,10 @@
         <div class="flex adult-count space-between">
             <div class="description">
                 <div class="title fs16">Adults</div>
-                <div class="subtitle fs12">Ages 13 or above</div>
+                <div class="subtitle fs14">Ages 13 +</div>
             </div>
         </div>
-        <div class="flex space-between ">
+        <div class="flex space-between counter">
 
             <div @click="decAdultCount" class="roundBtn">-</div>
             <span>{{ adultCount }}</span>
@@ -14,14 +14,14 @@
             <div @click="incAdultCount" class="roundBtn">+</div>
         </div>
 
-        <div class="flex children-count space-between">
+        <div style="align-self: start;" class="flex children-count space-between">
             <div class="description">
                 <div class="title fs16">Children</div>
-                <div class="subtitle fs12">Ages 2-12</div>
+                <div class="subtitle fs14">Ages 2-12</div>
             </div>
         </div>
 
-        <div class="flex space-between ">
+        <div class="flex space-between counter">
 
             <div @click="decChildrenCount" class="roundBtn">-</div>
             <span>{{ childrenCount }}</span>
@@ -29,13 +29,13 @@
             <div @click="incChildrenCount" class="roundBtn">+</div>
         </div>
 
-        <div class="flex Infants-count space-between">
+        <div style="align-self: start;" class="flex Infants-count space-between">
             <div class="description">
                 <div class="title fs16">Infants</div>
                 <div class="subtitle fs12">Under 2</div>
             </div>
         </div>
-        <div class="flex space-between ">
+        <div class="flex space-between counter">
 
             <div @click="decInfantsCount" class="roundBtn">-</div>
             <span>{{ infantsCount }}</span>
@@ -43,13 +43,13 @@
             <div @click="incInfantsCount" class="roundBtn">+</div>
         </div>
 
-        <div class="flex pets-count">
+        <div class="flex space-between pets-count">
             <div class="description">
-                <div style="margin-inline-start: 26px;" class="title fs16">pets</div>
-                <div class="subtitle fs12"><a>Bringing a service animal?</a></div>
+                <div class="title fs16">Pets</div>
+                <span class="subtitle fs14"><a class="fs12">Bringing a service animal?</a></span>
             </div>
         </div>
-        <div class="flex space-between ">
+        <div class="flex space-between counter">
 
             <div @click="decPetsCount" class="roundBtn">-</div>
             <span>{{ petsCount }}</span>
@@ -57,7 +57,9 @@
             <div @click="incPetsCount" class="roundBtn">+</div>
         </div>
         <div style="grid-column: 1/-1;">
-            <p class="fs12">This place has a maximum of 4 guests, not including infants. If you're bringing more than 2
+            <p style="margin: 0px;margin-block-start: 13px;" class=" fs12">This place has a maximum of 4 guests, not
+                including infants. If you're
+                bringing more than 2
                 pets, please let
                 your host know.</p>
         </div>
@@ -126,7 +128,7 @@ export default {
         },
         setGuestsNum() {
             this.$store.commit({
-                type: 'setGuestsNum', guestsNum:this.guestsNum
+                type: 'setGuestsNum', guestsNum: this.guestsNum
             })
         },
     },

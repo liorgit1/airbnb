@@ -23,8 +23,8 @@
 
 
 
-    <main>
-        <section class="order-container">
+    <main @click=" showModal= false" >
+        <section @click.stop class="order-container" >
 
             <div class="order-form-header">
                 <p><span class="cost">{{ stay.price }}</span> / night</p>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
 
-                    <div class="guest-input"  @click="$emit('openModal')">
+                    <div class="guest-input" @click="showModal = true">
                         <label>GUESTS</label>
                         <input value="2">
                         <input type="text">
@@ -54,22 +54,23 @@
                         </svg>
                     </div>
                 </div>
-                <reservationBtnVue >
+                <reservationBtnVue>
                     <button @click="submit.prevent" style="display: none">
                     </button>
                 </reservationBtnVue>
             </form>
+            <GuestsModal v-if="showModal" />
+            <div class="reservation-footer">
+            </div>
         </section>
-        <div class="reservation-footer">
-        </div>
     </main>
 </template>
 
 
 <script>
 import reservationBtnVue from './ReservationBtn.vue'
-
-
+import GuestsModal from '../cmps/GuestsModal.vue'
+import { eventBus } from '../services/event-bus.service.js'
 
 
 export default {
@@ -80,18 +81,20 @@ export default {
     },
     data() {
         return {
-
+            showModal: false,
         }
+    }, watch() {
+
     },
     computed: {
 
     },
     created() {
-
+        eventBus.on('closeModal', ()=>this.showModal = false)
     },
     methods: {
     },
-    components: { reservationBtnVue }
+    components: { GuestsModal, reservationBtnVue }
 
 
 }
