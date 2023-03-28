@@ -4,7 +4,7 @@
   border: none;
   display: block;
   height: 100%;
-  width: 100%;
+  width: 98%;
   cursor: pointer;
   box-sizing: border-box;
   font-size: .9375rem;
@@ -33,6 +33,7 @@
   right:12px;
   top: 12px;
   z-index: 2;
+  translate:11px
 }
 
 .isLiked {
@@ -41,6 +42,7 @@
 span .preview-rate {
   // font-family: Cereal-Medium;
   font-size: 15px;
+  translate:232px;
   font-family: 'cereal',sans-serif;
   flex-direction: row-reverse;
   justify-items: flex-end;
@@ -49,16 +51,31 @@ span .preview-rate {
   color: black;
   span:nth-child(2) {
     color: black;
-    margin-right: rem(1px);
+    margin-right: rem(2px);
   }
   span:nth-child(3) {
     color: #080101;
   }
 }
- 
-.preview-rate, .preview-rate-icon {
-  text-align: right;
+
+.card-rate {
+  // font-family: Cereal-Medium;
+  justify-content: flex-end;
+  font-family: 'cereal',sans-serif;
+  width: 270px;
+  font-size: rem(14px);
+  align-items: right;
+  padding-top: rem(10px);
+  color: black;
+  span:nth-child(2) {
+    color: $clr5;
+    margin-right: rem(4px);
+  }
 }
+// .preview-rate, .preview-star {
+//   text-align: right;
+//   translate:235px;
+// }
 
 .el-carousel__arrow:hover {
   background-color: white !important ;
@@ -93,12 +110,13 @@ span .preview-rate {
 }
 
 .stay-type {
-  margin-block-start: -22px;
+  margin-block-start: -24px;
   font-weight:bolder ;
   padding-top: rem(6px);
-  font-size: rem(15px);
-  font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-family: 'Circular', '-apple-system', 'BlinkMacSystemFont', 'Roboto', Helvetica 'Neue', sans-serif;
   margin-left: 32 px;
+  line-height: 19px;
   }
 
 .stay-name {
@@ -113,7 +131,7 @@ span .preview-rate {
 }
 
 .stay-date {
-  font-size: .9375rem;
+  font-size: .9075rem;
   color: #717171;
   padding: 0;
   font-family: 'Circular', 'BlinkMacSystemFont', 'Roboto', Helvetica 'Neue', sans-serif;
@@ -125,7 +143,7 @@ span .preview-rate {
 
 .stay-price {
   padding-top: rem(8px);
-  font-size: rem(16px);
+  font-size: rem(15px);
   margin-left: 32 px;
   span {
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
