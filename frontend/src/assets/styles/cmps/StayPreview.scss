@@ -21,13 +21,14 @@
   img {
     border-radius: 12px;
     width: 105%;
-    max-height: 280px;
+    // max-height: 280px;
     object-fit: cover;
+    aspect-ratio: 1.053/1;
   }
 }
-.stay-preview-container{
-  max-width: 270px;
-}
+// .stay-preview-container{
+//   max-width: 270px;
+// }
 .icon-heart {
   position:absolute;
   right:12px;

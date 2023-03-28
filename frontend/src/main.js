@@ -9,6 +9,7 @@ import vClickOutside from "click-outside-vue3"
 
 import VueDatepickerUi from 'vue-datepicker-ui'
 import 'vue-datepicker-ui/lib/vuedatepickerui.css';
+
 // Vue.component('Datepicker', VueDatepickerUi)
 
 import './assets/styles/main.scss'
@@ -20,4 +21,5 @@ app.use(router)
 app.use(store)
 app.use(ElementPlus)
 app.use(vClickOutside)
+app.use(VueDatepickerUi)
 app.mount('#app')
