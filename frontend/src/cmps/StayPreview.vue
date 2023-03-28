@@ -1,6 +1,7 @@
 <template>
   <li class="stay-preview-container">
     <section class="stay-preview clickable">
+      <div class="stay-preview">
       <div class="stay-preview-gallery">
         <section>
           <div class="card-img">
@@ -40,8 +41,7 @@
       </div>
       <div class="stay-preview-info">
         <div class="flex card-rate">
-          <span class="total-rate"> {{  stay.reviews[0].rate }} </span>
-          <div class="star-preview">
+          <span class="preview-rate"> 
             <svg
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,9 +49,9 @@
               role="presentation"
               focusable="false"
               style="
-                display: block;
-                height: 14px;
-                width: 14px;
+                display: inline;
+                height: 10px;
+                width: 10px;
                 fill: black;
               "
                    >
@@ -62,7 +62,7 @@
                  fill-rule="evenodd"
                  ></path>
                 </svg>
-              </div>
+                {{  stay.reviews[0].rate }} </span>
         </div>
 
         <div class="stay-type" >
@@ -76,6 +76,7 @@
           night
         </div>
       </div>
+    </div>
     </section>
     </li>
 </template>
