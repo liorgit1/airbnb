@@ -1,12 +1,12 @@
 <template>
-  <div ref="container"  class="container">
+  <div v-click-outside="onClickedOutside" ref="container"  class="container">
     <div class="bar">
     <div class="location bar-div">
       <p>Location</p>
       
     <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" /> 
     </div>
-    <LocationsModal @passData="getData($event)" @close="showModal = false" v-if="showModal"/>
+    <LocationsModal @passData="getData($event)" @close="showLocationsModal = false" v-if="showLocationsModal"/>
     <div class="check-in bar-div">
       <p>Check in</p>
       <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
@@ -32,6 +32,7 @@
 import { onMounted } from 'vue'
 import { stayService } from '../services/stay.service.local.js'
 import LocationsModal from './LocationsModal.vue'
+import vClickOutside from 'click-outside-vue3'
 export default {
 
 components:{LocationsModal},
@@ -44,7 +45,7 @@ components:{LocationsModal},
 
       clickedDest:{country:''},
     
-      showModal : true,
+      showLocationsModal : true,
 
     mounted(){
 
@@ -53,8 +54,13 @@ components:{LocationsModal},
     },
   }
   },
+  
+  directives: {
+      clickOutside: vClickOutside.directive
+    },
 
   methods: {
+
      setSearch() {
      this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country} })
 
@@ -66,6 +72,12 @@ components:{LocationsModal},
         // this.clickedDest = data
         this.searchBy.country = data.country
         console.log(this.searchBy)
+     },
+
+     onClickedOutside(event){
+        console.log('clicked outside')
+        this.$emit('close')
+        console.log(event)
      }
 
   }
