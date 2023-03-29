@@ -1,26 +1,27 @@
 <template>
-  <el-carousl
+  <el-carousel
     indicator-position="inside"
     :autoplay="false"
-    height="230px"
+    height="100%"
   >
-    <el-carousl-item class="img-carousl">
-            <img v-for="(url, index) in stay.imgUrls.slice(0, 5)" :key="index" :src="url || stay.imgUrls[0]"
-                :class="'img img' + (index + 1)">
-    </el-carousl-item>
-  </el-carousl>
+    <el-carousel-item v-for="img in imgs" :key="img">
+        <img :src="img"
+        class="card-img"
+        height="105%"/>
+       
+    </el-carousel-item>
+  </el-carousel>
 </template>
-
 <script>
 export default {
- created() {
-  console.log(this.stay);
- },
   props: {
-    stay: {
-      type: Object,
+    imgs: {
+      type: Array,
     },
   },
+  created(){
+  console.log(this.imgs);
+  }
 };
 </script>
 
