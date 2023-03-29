@@ -9,12 +9,12 @@
     <LocationsModal @passData="getData($event)" @close="showLocationsModal = false" v-if="showLocationsModal"/>
     <div class="check-in bar-div">
       <p>Check in</p>
-      <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
+      <input type="text" v-model="getDates.start" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
-    <DatePickerModal />
+    <DatePickerModal @passDateData="getDateData($event)" @close = "showDatesModal = false" v-if="showDatesModal"/>
     <div class="check-out bar-div">
       <p>Check out</p>
-      <input type="text" placeholder="Add dates" @keyup.enter="setSearch()"/>
+      <input type="text" v-model="getDates.end" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
     <div class="guests bar-div">
     <div>
@@ -44,10 +44,14 @@ components:{LocationsModal , DatePickerModal},
   data() {
     return {
       searchBy: { country: '' },
-
+      
+      getDates:{start:'' , end:''},
+      
       clickedDest:{country:''},
     
       showLocationsModal : true,
+
+      showDatesModal:true,
 
     mounted(){
 
@@ -74,6 +78,12 @@ components:{LocationsModal , DatePickerModal},
         // this.clickedDest = data
         this.searchBy.country = data.country
         console.log(this.searchBy)
+     },
+
+     getDateData(data){
+        this.getDates.start = data.start
+        this.getDates.end = data.end
+        console.log(this.getDates.start , this.getDates.end)
      },
 
      onClickedOutside(event){
