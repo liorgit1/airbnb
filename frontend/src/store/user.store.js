@@ -123,7 +123,7 @@ export default {
         const stays = await userService.getUserLikedStays(likedStays);
         stays.forEach((stay) => (stay.isLiked = true));
         return stays;
-        // commit({ type: 'setOrderUser', orders })
+        commit({ type: 'setOrderUser', orders })
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;
