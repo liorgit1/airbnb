@@ -23,6 +23,15 @@
 
 }
 
+.overall-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.1875em;
+    margin-block-end: 27px;
+    margin-block-start: 45px;
+
+}
+
 .el-progress {
     translate: 2px 8px;
 }

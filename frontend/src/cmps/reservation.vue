@@ -23,8 +23,8 @@
 
 
 
-    <main @click=" showModal= false" >
-        <section @click.stop class="order-container" >
+    <main @click="showModal = false">
+        <section @click.stop class="order-container">
 
             <div class="order-form-header">
                 <p><span class="cost">{{ stay.price }}</span> / night</p>
@@ -36,17 +36,17 @@
                     <div class="date-picker">
                         <div class="date-input">
                             <label>CHECK IN</label>
-                            <input value="Tue Sep 07 2021">
+                            <input v-model="startDate">
                         </div>
                         <div class="date-input">
                             <label>CHECK OUT</label>
-                            <input value="Tue Sep 07 2021">
+                            <input v-model="endDate">
                         </div>
                     </div>
 
                     <div class="guest-input" @click="showModal = true">
                         <label>GUESTS</label>
-                        <input value="2">
+                        <input v-model="guestsDisplay">
                         <input type="text">
                         <svg viewBox="0 0 320 512" width="100" title="angle-down">
                             <path
@@ -59,7 +59,7 @@
                     </button>
                 </reservationBtnVue>
             </form>
-            <GuestsModal v-if="showModal" />
+            <GuestsModal @setAdultCount="setAdultCount1($event)" v-if="showModal" />
             <div class="reservation-footer">
             </div>
         </section>
@@ -82,17 +82,37 @@ export default {
     data() {
         return {
             showModal: false,
+            totalPrice: 1190,
+            startDate: "2025/10/15",
+            endDate: "2025/10/17",
+            guests: {
+                adults: 2,
+                kids: 1
+            },
         }
-    }, watch() {
+
+
+
+    },
+    watch() {
 
     },
     computed: {
-
+        guestsDisplay() {
+            let adults
+            this.guests.adults > 0 ? adults = `${this.guests.adults} adults` : ''
+            return adults
+        }
     },
     created() {
-        eventBus.on('closeModal', ()=>this.showModal = false)
+
+        eventBus.on('closeModal', () => this.showModal = false)
     },
     methods: {
+        setAdultCount1({ adultCount }) {
+            this.guests.adults = adultCount
+            console.log('this.guests.adult22222 :>> ', this.guests.adults);
+        }
     },
     components: { GuestsModal, reservationBtnVue }
 

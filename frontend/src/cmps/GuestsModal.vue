@@ -78,11 +78,10 @@ export default {
     },
     data() {
         return {
-            adultCount: 5,
-            childrenCount: 5,
-            infantsCount: 5,
-            petsCount: 5,
-
+            adultCount: 1,
+            childrenCount: 0,
+            infantsCount: 0,
+            petsCount: 0,
         }
     },
     computed: {
@@ -96,6 +95,7 @@ export default {
     methods: {
         incAdultCount() {
             this.adultCount++
+            this.$emit('setAdultCount', { adultCount: this.adultCount })
             this.setGuestsNum()
         },
         decAdultCount() {
@@ -131,7 +131,7 @@ export default {
                 type: 'setGuestsNum', guestsNum: this.guestsNum
             })
         },
-    },
+    }, emits: ['setAdultCount'],
     components: {}
 
 

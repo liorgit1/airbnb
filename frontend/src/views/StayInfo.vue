@@ -2,7 +2,7 @@
     <section class="stay-info flex-col">
         <div class="host-info flex">
             <div>
-                <h2>{{ stay.type }} hosted {{ stay.host.fullname }} </h2>
+                <h2>{{ stay.type }} hosted by {{ stay.host.fullname }} </h2>
                 <ul class="stay-baths-beds flex">
                     <div>{{ stay.capacity }} guests</div><span class="dot">·</span>
                     <div>6 beds</div><span class="dot">·</span>
@@ -20,8 +20,8 @@
                         </path>
                     </svg>
                     <div>
-                        <h3 class="fs18">Great communication</h3>
-                        <p class="fs14">100% of recent guests rated Maria 5-star in communication..</p>
+                        <h3 class="fs18" style="margin-inline-start: 16px;">Great communication</h3>
+                        <p class=" fs14" style=" margin-inline-start: 16px;">100% of recent guests rated Maria 5-star in communication..</p>
                     </div>
                 </div>
             </li>
@@ -34,13 +34,13 @@
                         </path>
                     </svg>
                     <div>
-                        <h3 class="fs18">{{ stay.host.fullname }} is a Superhost</h3>
-                        <p class="fs14">This Host committed to Airbnb's 5-step enhanced cleaning process.</p>
+                        <h3 style="margin-inline-start: 16px;" class="fs18">{{ stay.host.fullname }} is a Superhost</h3>
+                        <p style=" margin-inline-start: 16px;" class="fs14">This Host committed to Airbnb's 5-step enhanced cleaning process.</p>
                     </div>
                 </div>
             </li>
             <li class="flex">
-                <div class="flex">
+                <div style="padding-block-end: 10px; " class="flex">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
                         <path
@@ -48,18 +48,20 @@
                         </path>
                     </svg>
                     <div>
-                        <h3 class="fs18"> Self check-in</h3>
-                        <p class="fs14">Check yourself in with the lockbox.</p>
+                        <h3 style="margin-inline-start: 16px;" class="fs18"> Self check-in</h3>
+                        <p style=" margin-inline-start: 16px;" class="fs14">Check yourself in with the lockbox.</p>
                     </div>
                 </div>
             </li>
         </ul>
-        <p style="display: inline-block;" class="stay-summery">{{ stay.summary }}</p>
+        <p style="display: inline-block;" class="stay-summery fs16">{{ stay.summary }}</p>
+        <AirCover />
     </section>
 </template>
 
 
 <script>
+import AirCover from '../cmps/AirCover.vue'
 import reservation from '../cmps/Reservation.vue'
 
 
@@ -83,7 +85,7 @@ export default {
     },
     methods: {
     }, components: {
-        reservation
+        reservation, AirCover
 
 
     },
