@@ -18,6 +18,7 @@
 .fs20 {
   font-size: rem(20px);
 }
+
 .fs22 {
   font-size: rem(22px);
 }
@@ -34,7 +35,9 @@
   font-size: rem(30px);
 }
 
-
+.none {
+  display: none;
+}
 
 .debug {
   outline: 1px greenyellow solid;

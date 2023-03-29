@@ -2,7 +2,7 @@
 <!-- v-bind:class="{'stay-details':isDetails}" -->
 
   <header>
-    <section class="" :class="{'details-layout':isDetails,'stay-details':isDetails, 'main-layout':!isDetails}"> 
+    <section class="" :class="{'details-layout':isDetails , 'main-layout':!isDetails}"> 
     <nav class="flex">
 
       <RouterLink to="/" @click = "isOpen = false && resetParams()"  class="logo">
