@@ -1,18 +1,21 @@
 <template>
   <div v-click-outside="onClickedOutside" ref="container"  class="container">
     <div class="bar">
-    <div class="location bar-div">
+    <div class="location bar-div" @click="showLocationsModal = true , showDatesModal = false">
       <p>Location</p>
       
     <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" /> 
     </div>
     <LocationsModal @passData="getData($event)" @close="showLocationsModal = false" v-if="showLocationsModal"/>
-    <div class="check-in bar-div">
+
+    <div class="check-in bar-div" @click="showLocationsModal = false , showDatesModal = true">
       <p>Check in</p>
       <input type="text" v-model="getDates.start" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
+
     <DatePickerModal @passDateData="getDateData($event)" @close = "showDatesModal = false" v-if="showDatesModal"/>
-    <div class="check-out bar-div">
+
+    <div class="check-out bar-div" @click="showLocationsModal = false , showDatesModal = true">
       <p>Check out</p>
       <input type="text" v-model="getDates.end" placeholder="Add dates" @keyup.enter="setSearch()"/>
     </div>
@@ -21,7 +24,7 @@
       <p>Guests</p>
       <input type="text" v-model="searchBy.guests" placeholder="Add guests" />
     </div>
-      <span @click="setSearch() "><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg>search</span>
+      <span @click="setSearch() , $emit('close')"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg>search</span>
     </div>
     
     </div>
@@ -46,7 +49,7 @@ components:{LocationsModal , DatePickerModal},
       searchBy: { country: '' },
       
       getDates:{start:'' , end:''},
-      
+
       clickedDest:{country:''},
     
       showLocationsModal : true,
