@@ -176,7 +176,7 @@
 
     display: grid;
     grid-template-columns: 80px 1fr 80px;
-    max-width: 1820px;
+    // max-width: 1863px;
     // margin-inline: auto;
 
     > * {
@@ -198,9 +198,9 @@
     display: grid;
     padding-left: rem(20px);
     padding-right: rem(20px);
-    max-width: 1600px;
+    // max-width: 1600px;
     @include for-wide-layout {
-        max-width: 1120px;
+        // max-width: 1120px;
         padding-left: rem(80px);
         padding-right: rem(80px);
     }

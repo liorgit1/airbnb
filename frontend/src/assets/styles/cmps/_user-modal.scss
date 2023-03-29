@@ -1,0 +1,26 @@
+.user-modal {
+    position: absolute;
+   top: rem(70px);
+   right: rem(80px);
+    width: rem(240px);
+    height: rem(360px);
+    z-index: 20;
+    justify-content: flex-start;
+    background: $clr2;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease ;
+    a , span{
+        color: $clr5;
+        font-size: 14px;
+        padding: rem(15px) rem(20px);
+        cursor: pointer;
+        font-family: Cereal-medium;
+        text-shadow: none;
+        font-weight: 400;
+    }
+    a ,span:hover{
+        background-color: hsla(0,0%,92.5%,.48627450980392156);;
+    
+    }
+  
+}

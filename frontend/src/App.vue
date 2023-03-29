@@ -10,8 +10,8 @@
 <script>
 
 
-import { userService } from './services/user.service'
-import { store } from './store/store'
+import { userService } from './services/user-service.js'
+import { store } from './store/store.js'
 
 import AppHeader from './cmps/AppHeader.vue'
 // import FilterList from './cmps/FilterList.vue'
@@ -22,6 +22,7 @@ import UserMsg from './cmps/UserMsg.vue'
 export default {
 
   created() {
+    this.$store.dispatch({ type: "loadStays" });
     console.log('Vue App created')
     const user = userService.getLoggedinUser()
     if (user)  store.commit({type: 'setLoggedinUser', user})
