@@ -1,111 +1,122 @@
-// import { storageService } from './async-storage.service'
-import { httpService } from './http.service'
-import { store } from '../store/store'
-import { showSuccessMsg } from './event-bus.service'
+// import { storageService } from "./async-storage-service.js";
+// import { stayService } from "./stay-service.js";
+// import { orderService } from "./order-service.js";
+// import { httpService } from "./http.service.js";
+// import { utilService } from "./util-service.js";
+// import { socketService } from "./socket.service.js";
 
-const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
+const STORAGE_KEY = "userDB";
+const ENDPOINT = "auth";
 
 export const userService = {
-    login,
-    logout,
-    signup,
-    getLoggedinUser,
-    saveLocalUser,
-    getUsers,
-    getById,
-    remove,
-    update,
+  getLoggedinUser,
+  saveUser,
+  getUserStays,
+  getUserOrder,
+  getUserLikedStays,
+  login,
+  signup,
+  logout,
+};
+
+async function getUserStays(entityId) {
+  let userStays = []
+  const stays = await stayService.query();
+  try {
+    userStays = stays.filter(stay => stay.host.id === entityId)
+    console.log('userStays');
+    return userStays
+  } catch {
+    console.log('baiaaa');
+
+  }
 }
 
-window.userService = userService
-
-
-function getUsers() {
-    // return storageService.query('user')
-    return httpService.get(`user`)
+async function getUserLikedStays(likedStays) {
+  return await Promise.all(
+    likedStays.map((likedStay) => {
+      return stayService.getById(likedStay);
+    })
+  );
 }
-
-function onUserUpdate(user) {
-    showSuccessMsg(`This user ${user.fullname} just got updated from socket, new score: ${user.score}`)
-    store.dispatch({ type: 'setWatchedUser', user })
+async function getUserOrder(entityId) {
+  let userOrders = []
+  const orders = await orderService.query();
+  try {
+    userOrders = orders.filter(order => order.hostId === entityId)
+    return userOrders;
+  } catch {
+    console.error("cannot get user order");
+  }
+  // async function getUserOrder() {
+  //   const orders = await orderService.query();
+  //   try {
+  //     orders =  stays.filter(stay => stay.host.id === entityId )
+  //     const orders = await orderService.getById();
+  //     return orders;
+  //   } catch {
+  //     console.error("cannot get user order");
+  //   }
 }
+// async function getUserOrdar(entityId){
+//     const orders =[]
+//        await orderService.query().then((entities) =>
+//           entities.find((entity) => {
+//             if(entity.stay_id === entityId) stays.push(entity)
+//           }))
+//       return orders
+// }
 
-async function getById(userId) {
-    // const user = await storageService.get('user', userId)
-    const user = await httpService.get(`user/${userId}`)
-
-    socketService.emit(SOCKET_EMIT_USER_WATCH, userId)
-    socketService.off(SOCKET_EVENT_USER_UPDATED, onUserUpdate)
-    socketService.on(SOCKET_EVENT_USER_UPDATED, onUserUpdate)
-
-    return user
-}
-function remove(userId) {
-    // return storageService.remove('user', userId)
-    return httpService.delete(`user/${userId}`)
-}
-
-async function update({_id, score}) {
-    // const user = await storageService.get('user', _id)
-    let user = getById(_id)
-    user.score = score
-    // await storageService.put('user', user)
-
-    user = await httpService.put(`user/${user._id}`, user)
-    // Handle case in which admin updates other user's details
-    if (getLoggedinUser()._id === user._id) saveLocalUser(user)
-    return user
-}
-
-
-async function login(userCred) {
-    // const users = await storageService.query('user')
-    // const user = users.find(user => user.username === userCred.username)
-    const user = await httpService.post('auth/login', userCred)
-    if (user) {
-        socketService.login(user._id)
-        return saveLocalUser(user)
-    }
-}
-async function signup(userCred) {
-    userCred.score = 10000
-    if (!userCred.imgUrl) userCred.imgUrl = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png'
-    // const user = await storageService.post('user', userCred)
-    const user = await httpService.post('auth/signup', userCred)
-    socketService.login(user._id)
-    return saveLocalUser(user)
-}
-async function logout() {
-    sessionStorage.removeItem(STORAGE_KEY_LOGGEDIN_USER)
-    // socketService.logout()
-    return await httpService.post('auth/logout')
-}
-
-async function changeScore(by) {
-    const user = getLoggedinUser()
-    if (!user) throw new Error('Not loggedin')
-    user.score = user.score + by || by
-    await update(user)
-    return user.score
-}
-
-
-function saveLocalUser(user) {
-    user = {_id: user._id, fullname: user.fullname, imgUrl: user.imgUrl, score: user.score}
-    sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
-    return user
+async function login(userInfo) {
+  try {
+    const loggedInUser = await httpService.post(`${ENDPOINT}/login`, userInfo);
+    utilService.saveToSessionStorage(STORAGE_KEY, loggedInUser);
+    socketService.emit('set-user-socket', loggedInUser.id)
+    return loggedInUser;
+  } catch {
+    console.log("cant login");
+  }
 }
 
 function getLoggedinUser() {
-    return JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER))
+  return JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "null");
 }
 
+async function saveUser(user) {
+  user = await httpService.put(`user/${user._id}`, user);
+  // Handle case in which admin updates other user's details
+  if (getLoggedinUser()._id === user._id) _saveLocalUser(user);
+  return user;
+}
 
-// ;(async ()=>{
-//     await userService.signup({fullname: 'Puki Norma', username: 'puki', password:'123',score: 10000, isAdmin: false})
-//     await userService.signup({fullname: 'Master Adminov', username: 'admin', password:'123', score: 10000, isAdmin: true})
-//     await userService.signup({fullname: 'Muki G', username: 'muki', password:'123', score: 10000})
-// })()
+function _saveLocalUser(user) {
+  sessionStorage.setItem(STORAGE_KEY, JSON.stringify(user))
+  return user
+}
 
+async function logout() {
+  try {
+    const loggedOutUser = await httpService.post(`${ENDPOINT}/logout`);
+    utilService.removeFromSessionStorage(STORAGE_KEY);
+    socketService.emit('unset-user-socket', loggedOutUser.id)
+    return loggedOutUser;
+  } catch {
+    console.log("logout failed");
+  }
+}
+// signup()
+async function signup(userDetails) {
+  try {
+    return await httpService.post(`${ENDPOINT}/signup`, userDetails);
+    // return signUser.data
+  } catch {
+    console.log("cant login");
+  }
+}
+
+(async () => {
+  var user = getLoggedinUser()
+  if (user) socketService.emit('set-user-socket', user.id)
+})();
 
 

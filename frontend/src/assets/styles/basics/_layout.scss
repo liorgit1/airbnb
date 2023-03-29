@@ -176,7 +176,7 @@
 
     display: grid;
     grid-template-columns: 80px 1fr 80px;
-    max-width: 2520px;
+    max-width: 1820px;
     // margin-inline: auto;
 
     > * {
@@ -248,6 +248,12 @@
 
 @media screen and (max-width: 800px) {
     .main-nav {
+        justify-content:center
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .stay-list {
         justify-content:center
     }
 }
