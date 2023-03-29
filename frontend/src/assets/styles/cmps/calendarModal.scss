@@ -1,0 +1,23 @@
+.calendar-container{
+    position: absolute;
+    display: grid;
+    top:90px;
+    background: white;
+    border-radius: 32px;
+    width: 700px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0392156863), 0 8px 16px rgba(0, 0, 0, 0.1490196078);
+}
+
+.vc-pane-container{
+     width: inherit;
+}
+
+.vc-container{
+    width: inherit;
+}
+
+.vc-time-picker{
+
+    display: none;
+
+}

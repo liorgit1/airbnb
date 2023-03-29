@@ -7,8 +7,9 @@ import 'element-plus/dist/index.css'
 
 import vClickOutside from "click-outside-vue3"
 
-import VueDatepickerUi from 'vue-datepicker-ui'
-import 'vue-datepicker-ui/lib/vuedatepickerui.css';
+import 'v-calendar/style.css';
+import VCalendar from 'v-calendar';
+
 
 // Vue.component('Datepicker', VueDatepickerUi)
 
@@ -21,5 +22,7 @@ app.use(router)
 app.use(store)
 app.use(ElementPlus)
 app.use(vClickOutside)
-app.use(VueDatepickerUi)
+app.use(VCalendar, {})
 app.mount('#app')
+// app.component('VCalendar', Calendar)
+// app.component('VDatePicker', DatePicker)
