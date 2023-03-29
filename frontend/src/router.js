@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import exploreApp from './views/ExploreApp.vue'
 import stayDetails from '../src/views/StayDetails.vue'
 import stayIndex from '../src/views/StayIndex.vue'
+// import userDashboard  from '../src/views/User-Dashboard.vue'
 
 
 
@@ -26,7 +27,17 @@ const routes = [
     path: '/stay/:id',
     name: 'stay-details',
     component: stayDetails
-  }
+  },
+  // {
+  //   path: '/dashboard',
+  //   name: 'user-dashboard',
+  //   component: userDashboard
+  // },
+  // {
+  //       path: '/wishList',
+  //       name: 'user-wish-list',
+  //       component: userWishList
+  // },
 ];
 
 

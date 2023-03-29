@@ -48,8 +48,8 @@
               focusable="false"
               style="
                 display: inline;
-                height: px;
-                width: 10px;
+                height: 12px;
+                width: 12px;
                 fill: black;
               "
                    >

@@ -64,7 +64,7 @@
 
 <script>
 import AirCover from '../cmps/AirCover.vue'
-import reservation from '../cmps/Reservation.vue'
+import reservation from '../cmps/reservation.vue'
 
 
 
