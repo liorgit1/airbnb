@@ -4,7 +4,6 @@ import { router } from './router.js'
 import { store } from './store/store.js'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-
 import vClickOutside from "click-outside-vue3"
 
 import 'v-calendar/style.css';
@@ -24,5 +23,3 @@ app.use(ElementPlus)
 app.use(vClickOutside)
 app.use(VCalendar, {})
 app.mount('#app')
-// app.component('VCalendar', Calendar)
-// app.component('VDatePicker', DatePicker)

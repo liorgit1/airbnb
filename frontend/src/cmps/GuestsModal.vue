@@ -78,11 +78,10 @@ export default {
     },
     data() {
         return {
-            adultCount: 5,
-            childrenCount: 5,
-            infantsCount: 5,
-            petsCount: 5,
-
+            adultCount: 0,
+            childrenCount: 0,
+            infantsCount: 0,
+            petsCount: 0,
         }
     },
     computed: {
@@ -96,34 +95,42 @@ export default {
     methods: {
         incAdultCount() {
             this.adultCount++
+            this.$emit('setAdultCount', { adultCount: this.adultCount })
             this.setGuestsNum()
         },
         decAdultCount() {
             if (this.adultCount > 0) this.adultCount--
+            this.$emit('setAdultCount', { adultCount: this.adultCount })
             this.setGuestsNum()
         },
         incChildrenCount() {
             this.childrenCount++
+            this.$emit('setChildrenCount', { childrenCount: this.childrenCount })
             this.setGuestsNum()
         },
         decChildrenCount() {
             if (this.childrenCount > 0) this.childrenCount--
+            this.$emit('setChildrenCount', { childrenCount: this.childrenCount })
             this.setGuestsNum()
         },
         incInfantsCount() {
             this.infantsCount++
+            this.$emit('setInfantsCount', { infantsCount: this.infantsCount })
             this.setGuestsNum()
         },
         decInfantsCount() {
             if (this.infantsCount > 0) this.infantsCount--
+            this.$emit('setInfantsCount', { infantsCount: this.infantsCount })
             this.setGuestsNum()
         },
         incPetsCount() {
             this.petsCount++
+            this.$emit('setPetsCount', { petsCount: this.petsCount })
             this.setGuestsNum()
         },
         decPetsCount() {
             if (this.petsCount > 0) this.petsCount--
+            this.$emit('setPetsCount', { petsCount: this.petsCount })
             this.setGuestsNum()
         },
         setGuestsNum() {
@@ -131,7 +138,7 @@ export default {
                 type: 'setGuestsNum', guestsNum: this.guestsNum
             })
         },
-    },
+    }, emits: ['setPetsCount','setAdultCount','setChildrenCount','setInfantsCount'],
     components: {}
 
 

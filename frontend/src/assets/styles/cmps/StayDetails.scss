@@ -7,11 +7,12 @@
 
 .stay-details {
     margin-block-start: 24px;
-     .details-layout {
-         display: grid;
-         // grid-template-columns: $layoutPadding 1fr $layoutPadding;
-         grid-template-columns: minmax(24px, 1fr) minmax(auto, 1120px) minmax(24px, 1fr);
-     }
+
+    .details-layout {
+        display: grid;
+        // grid-template-columns: $layoutPadding 1fr $layoutPadding;
+        grid-template-columns: minmax(24px, 1fr) minmax(auto, 1120px) minmax(24px, 1fr);
+    }
 
     .reservationModal {
         grid-column: 2/3;
@@ -21,6 +22,7 @@
     h1 {
         font-size: 26px;
         margin-block-end: 11px;
+        margin-block-start: 30px;
         // grid-column: 1;
         // margin-inline: 82px;
     }
@@ -51,7 +53,6 @@
         display: grid;
         margin: auto;
         gap: 8px;
-        margin-top: 14px;
         grid-template-columns: 560px 270px 270px;
         grid-template-rows: 277px 252px;
         grid-column: 2/3;
@@ -67,6 +68,7 @@
         place-content: center;
 
         margin-block-end: 42px;
+        margin-block-start: 39px;
 
         img {
             // margin: 3px;
@@ -122,4 +124,3 @@
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-

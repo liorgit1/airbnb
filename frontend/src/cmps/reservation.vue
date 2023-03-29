@@ -23,8 +23,11 @@
 
 
 
-    <main @click=" showModal= false" >
-        <section @click.stop class="order-container" >
+    <main @click="() => {
+        showModal = false
+        openDatesModal = false
+    }">
+        <section @click.stop class="order-container">
 
             <div class="order-form-header">
                 <p><span class="cost">{{ stay.price }}</span> / night</p>
@@ -33,20 +36,26 @@
 
             <form class="reservation-form">
                 <div class="order-data">
-                    <div class="date-picker">
+                    <div class="date-picker" @click.stop="() => {
+                        this.openDatesModal = true
+                        this.showModal = false
+                    }">
                         <div class="date-input">
                             <label>CHECK IN</label>
-                            <input value="Tue Sep 07 2021">
+                            <DatePickerModalVue @click.stop v-if="openDatesModal" style="translate: -212px; z-index: 1 ;"
+                                @close="closeDates" @passDateData="getDateData($event)"
+                                v-click-outside="onClickedOutside" />
+                            <input v-model="startDateDisplay">
                         </div>
                         <div class="date-input">
                             <label>CHECK OUT</label>
-                            <input value="Tue Sep 07 2021">
+                            <input v-model="endDateDisplay">
                         </div>
                     </div>
 
-                    <div class="guest-input" @click="showModal = true">
+                    <div class="guest-input" @click="() => { showModal = true, onClickedOutside() }">
                         <label>GUESTS</label>
-                        <input value="2">
+                        <input v-model="guestsDisplay">
                         <input type="text">
                         <svg viewBox="0 0 320 512" width="100" title="angle-down">
                             <path
@@ -59,7 +68,8 @@
                     </button>
                 </reservationBtnVue>
             </form>
-            <GuestsModal v-if="showModal" />
+            <GuestsModal @setChildrenCount="setChildrenCount($event)" @setAdultCount="setAdultCount1($event)"
+                @setInfantsCount="setInfantsCount($event)" @setPetsCount="setPetsCount($event)" v-if="showModal" />
             <div class="reservation-footer">
             </div>
         </section>
@@ -71,7 +81,8 @@
 import reservationBtnVue from './ReservationBtn.vue'
 import GuestsModal from '../cmps/GuestsModal.vue'
 import { eventBus } from '../services/event-bus.service.js'
-
+import DatePickerModalVue from './DatePickerModal.vue'
+import vClickOutside from 'click-outside-vue3'
 
 export default {
     props: {
@@ -81,21 +92,95 @@ export default {
     },
     data() {
         return {
+            openDatesModal: false,
             showModal: false,
+            totalPrice: 1190,
+            startDate: "2025/10/17",
+            endDate: "2025/10/17",
+            guests: {
+                adults: 0,
+                kids: 0,
+                infants: 0,
+                pets: 0
+            },
+
         }
-    }, watch() {
+
+
 
     },
-    computed: {
+    watch: {
+        openDatesModal: {
+            handler() {
+                console.log('openDatesModal :>> ', this.openDatesModal);
+            },
+        },
+    },
 
+    computed: {
+        startDateDisplay() {
+            return this.startDate//.toLocaleDateString('en-US')
+        },
+        endDateDisplay() {
+            return this.endDate//.toLocaleDateString('en-US')
+        },
+        guestsDisplay() {
+            let adults
+            let kids
+            let guests
+            let infants
+            let totalGuests
+            let pets
+            adults = this.guests.adults
+            kids = this.guests.kids
+            guests = adults + kids > 0 ? `${adults + kids} guests` : ' '
+            infants = this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
+            pets = this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
+            totalGuests = `${guests} ${infants} ${pets}`
+            console.log('totalGuests :>> ', totalGuests);
+            return totalGuests
+        }
     },
     created() {
-        eventBus.on('closeModal', ()=>this.showModal = false)
+
+        eventBus.on('closeModal', () => this.showModal = false)
+        // eventBus.on('close', () => this.openDatesModal = false)
     },
+
     methods: {
+        closeDates() {
+            this.openDatesModal = false
+
+            console.log('123123');
+            console.log('openDatesModal', this.openDatesModal);
+        },
+
+        setAdultCount1({ adultCount }) {
+            this.guests.adults = adultCount
+            console.log('this.guests.adult2111 :>> ', this.guests.adults);
+        },
+        setChildrenCount({ childrenCount }) {
+            this.guests.kids = childrenCount
+            console.log('this.guests.kids :>> ', this.guests.kids);
+        },
+        setInfantsCount({ infantsCount }) {
+            this.guests.infants = infantsCount
+            console.log('this.guests.infants :>> ', this.guests.infants);
+        },
+        setPetsCount({ petsCount }) {
+            this.guests.pets = petsCount
+            console.log('this.guests.pets :>> ', this.guests.pets);
+        }, onClickedOutside() {
+            this.openDatesModal = false
+        },
+        getDateData({ start, end }) {
+            this.startDate = start
+            this.endDate = end
+        }
     },
-    components: { GuestsModal, reservationBtnVue }
+    components: { GuestsModal, reservationBtnVue, DatePickerModalVue }
 
 
 }
+
 </script>

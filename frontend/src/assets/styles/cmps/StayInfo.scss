@@ -38,7 +38,10 @@ StayInfo {}
     object-fit: cover;
     width: 56px;
 }
-.stay-summery{
+
+.stay-summery {
     max-width: none;
+    padding-block-end: 40px;
     border-bottom: 1px solid #ddd;
+    
 }
