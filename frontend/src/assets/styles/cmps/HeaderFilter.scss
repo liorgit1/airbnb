@@ -210,3 +210,9 @@
   .bar>div:hover::before{
     background:transparent;
   }
+
+  .clicked{
+    background: white;
+    box-shadow: 0 6px 20px #0003;
+
+  }
