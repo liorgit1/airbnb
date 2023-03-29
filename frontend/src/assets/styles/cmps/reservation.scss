@@ -98,7 +98,6 @@
     padding: 20px;
     width: 372px;
     box-shadow: 0 0 5px 5px #00000015;
-    translate: 10px;
 }
 
 .reservation-footer {
@@ -132,6 +131,7 @@
 .date-picker {
     display: flex;
     justify-content: space-between;
+    height: 70px;
 }
 
 .date-input {

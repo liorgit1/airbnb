@@ -3,9 +3,9 @@
         <div class="host-info flex">
             <div>
                 <h2>{{ stay.type }} hosted by {{ stay.host.fullname }} </h2>
-                <ul class="stay-baths-beds flex">
+                <ul style="margin-block-start: -13px;" class="stay-baths-beds flex">
                     <div>{{ stay.capacity }} guests</div><span class="dot">·</span>
-                    <div>6 beds</div><span class="dot">·</span>
+                    <div>{{ stay.capacity }} beds</div><span class="dot">·</span>
                     <div>3 baths</div>
                 </ul>
             </div><img class="mini-host-img" :src="stay.host.imgUrl">
@@ -21,7 +21,8 @@
                     </svg>
                     <div>
                         <h3 class="fs18" style="margin-inline-start: 16px;">Great communication</h3>
-                        <p class=" fs14" style=" margin-inline-start: 16px;">100% of recent guests rated Maria 5-star in communication..</p>
+                        <p class=" fs14" style=" margin-inline-start: 16px;">100% of recent guests rated Maria 5-star in
+                            communication..</p>
                     </div>
                 </div>
             </li>
@@ -35,7 +36,8 @@
                     </svg>
                     <div>
                         <h3 style="margin-inline-start: 16px;" class="fs18">{{ stay.host.fullname }} is a Superhost</h3>
-                        <p style=" margin-inline-start: 16px;" class="fs14">This Host committed to Airbnb's 5-step enhanced cleaning process.</p>
+                        <p style=" margin-inline-start: 16px;" class="fs14">This Host committed to Airbnb's 5-step enhanced
+                            cleaning process.</p>
                     </div>
                 </div>
             </li>
