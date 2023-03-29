@@ -4,7 +4,6 @@ import { router } from './router.js'
 import { store } from './store/store.js'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
-
 import vClickOutside from "click-outside-vue3"
 
 import VueDatepickerUi from 'vue-datepicker-ui'

@@ -25,14 +25,14 @@ export default {
     },
     actions: {
         async loadStays({ commit, state }) {
-            const stays = await stayService.query(state.filterBy)
             try {
-                commit({ type: 'setStay', stays })
+              const stays = await stayService.query(state.filterBy)
+              commit({ type: 'setStay', stays })
             } catch (err) {
-                console.error('Cannot Load stays', err)
-                throw err
+              console.error('Cannot Load stays', err)
+              throw err
             }
-        },
+          },
         async setFilter({ commit, dispatch }, { filterBy }) {
             console.log(filterBy)
             try {

@@ -4,13 +4,11 @@
       <div class="stay-preview">
       <div class="stay-preview-gallery">
         <section>
-          <div class="card-img">
-            <img @click="this.$router.push('/stay/' + stay._id)"
-            class="home-img"
-            :src="stay.imgUrls[0]"
-            alt="img rated stay"
-            />
-          </div>
+          <img-carousel
+            @click="this.$router.push('/stay/' + stay._id)"
+            :imgs="stay.imgUrls"
+            class="card-img"
+          />
         </section>
         <div>
           <span class="icon-heart">
@@ -82,6 +80,7 @@
 </template>
       
 <script>
+import imgCarousel from './img-carousel.vue';
 export default {
   name: "stay-preview",
   props: {
@@ -89,16 +88,17 @@ export default {
       type: Object,
     },
   },
-
-  computed: {
-    getRating() {
-      return this.stay.reviews.rate / stay.country.length ;
-    },
-  },
-  components: {
-  },
   created() {
     console.log(this.stay);
+  },
+  
+  // computed: {
+  //   getRating() {
+  //     return this.stay.reviews.rate / stay.country.length ;
+  //   },
+  // },
+  components: {
+    imgCarousel,
   },
 
 }

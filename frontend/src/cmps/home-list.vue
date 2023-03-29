@@ -1,8 +1,7 @@
 <template>
   <section class="main-layout">
     <div class="popular-dest-list main-layout">
-      <h2 class="popular-header">
-      </h2>
+     
       <ul class="home-list">
         <li
           class="home-card clickable"
