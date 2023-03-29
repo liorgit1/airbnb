@@ -9,7 +9,7 @@
             <div class="likeAndShare">
                 <p class="placeLink fs16"> <img src="../assets/pngs/star.png" alt=""> {{ stay.loc.city }}, {{
                     stay.loc.country }}</p>
-                <span class="fs16">
+                <span class="fs16">{{  }}
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false"
                         style="fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;">
@@ -17,9 +17,9 @@
                             <path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9"></path>
                             <path d="M16 3v23V3z"></path>
                             <path d="M6 13l9.293-9.293a1 1 0 0 1 1.414 0L26 13"></path>
-                        </g>
+                        </g> 
                     </svg>
-                    <a>share</a>
+                    <a>Share</a>
                 </span>
                 <span class="fs16">
                     <a> <img style="width:16px ; " src="../assets/pngs/heart.png"> Save</a>
