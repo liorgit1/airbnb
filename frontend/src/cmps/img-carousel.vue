@@ -1,6 +1,6 @@
 <template>
   <el-carousel
-    :interval="4000"
+    :interval="5000"
     indicator-position="inside"
     :autoplay="false"
     height="100%"
@@ -21,7 +21,6 @@ export default {
     },
   },
   created(){
-  console.log(this.imgs);
   }
 };
 </script>

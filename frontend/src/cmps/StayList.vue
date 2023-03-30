@@ -1,7 +1,7 @@
 <template>
   <ul class="stay-list">
     <stay-preview
-    @stayliked="setliked"
+    @click="getStay(stay._id)"
       v-for="stay in stays"
       :stay="stay"
       :key="stay._id"
@@ -23,15 +23,19 @@ export default {
     stayPreview,
   },
   methods: {
-    goToStay(stay) {
-      this.filterBy.country = stay;
-      this.$store.dispatch({
-        type: "setFilter",
-        filterBy: JSON.parse(JSON.stringify(this.filterBy)),
-      });
-      this.$router.push(`/stay`);
-      window.scrollTo(0, 0);
+    getStay(stayId){
+      console.log(stayId);
+      this.$emit('getStay',{stayId})
     },
+    // goToStay(stay) {
+    //   this.filterBy.country = stay;
+    //   this.$store.dispatch({
+    //     type: "setFilter",
+    //     filterBy: JSON.parse(JSON.stringify(this.filterBy)),
+    //   });
+    //   this.$router.push(`/stay`);
+    //   window.scrollTo(0, 0);
+    // },
     setliked(stay) {
       this.$emit("stayLiked", stay)
     }

@@ -4,14 +4,10 @@
 // var localLoggedinUser = null
 // if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user || null)
 
-import { userService } from "../services/user-service.js";
-import { stayService } from "../services/stay-service.js";
+import { userService } from "../services/user.service.local";
+import { stayService } from "../services/stay.service.local";
 
-import {
-  socketService,
-  SOCKET_EMIT_USER_WATCH,
-  SOCKET_EVENT_USER_UPDATED,
-} from '../services/socket.service.js'
+
 
 var localLoggedinUser = null;
 if (sessionStorage.user)

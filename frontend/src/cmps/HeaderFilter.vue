@@ -105,8 +105,9 @@ export default {
 
   methods: {
 
-    setSearch() {
-      this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country } })
+     setSearch() {
+     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country , startDate:this.getDates.start , endDate:this.getDates.end,
+    adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
 
       this.$emit('closeModal', false)
 
