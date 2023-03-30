@@ -50,7 +50,7 @@ export default {
 
     methods: {
     getStay({stayId}){
-      this.$router.push(`/stay/${stayId}?startDate=${this.startDate}&endDate=${this.endDate}`)
+      this.$router.push(`/stay/${stayId}?startDate=${this.startDate}&endDate=${this.endDate}&adults=${this.adults}&kids=${this.kids}&infants=${this.infants}&pets=${this.pets}`)
     //   this.$router.push( '/stay/' + stayId ,{  query: { country: this.country , startDate:this.getDates.start , endDate:this.getDates.end,
     // adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
     },

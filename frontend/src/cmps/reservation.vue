@@ -30,7 +30,7 @@
         <section @click.stop class="order-container">
 
             <div class="order-form-header">
-                <p><span class="cost">{{ stay.price }}</span> / night</p>
+                <p><span class="cost">$ {{ stay.price }}</span> / night</p>
                 <p>4.38 <span class="reviews">(4 reviews)</span></p>
             </div>
 
@@ -45,11 +45,11 @@
                             <DatePickerModalVue @click.stop v-if="openDatesModal" style="translate: -212px; z-index: 1 ;"
                                 @close="closeDates" @passDateData="getDateData($event)"
                                 v-click-outside="onClickedOutside" />
-                            <input v-model="startDateDisplay">
+                            <input v-model="startDate">
                         </div>
                         <div class="date-input">
                             <label>CHECK OUT</label>
-                            <input v-model="endDateDisplay">
+                            <input v-model="endDate">
                         </div>
                     </div>
 
@@ -63,7 +63,29 @@
                         </svg>
                     </div>
                 </div>
-                <reservationBtnVue>
+
+                <div v-if="stay.price * duration !== 0">
+                    <span>
+                        <div>
+                            <div class="flex space-between">
+                                <div>{{ `$${stay.price} x ${duration} nights` }}</div>
+                                <span>{{ `$ ${stay.price * duration}` }}</span>
+                            </div>
+                            <div class="flex space-between">
+                                <div>{{ `Cleaning fee` }}</div>
+                                <span>{{ `$ ${fee}` }}</span>
+                            </div>
+                        </div>
+                    </span>
+                    <div v-if="stay.price * duration !== 0" class="flex space-between"
+                        style="padding-block: 19px; border-block-start: 1px solid #dddd;">
+
+                        <h4 style="color: black;">total</h4>
+                        <span>{{ `$ ${(stay.price * duration) + fee}` }}</span>
+                    </div>
+                </div>
+
+                <reservationBtnVue @click="this.$router.push(`/stay/confirm`);">
                     <button @click="submit.prevent" style="display: none">
                     </button>
                 </reservationBtnVue>
@@ -92,17 +114,18 @@ export default {
     },
     data() {
         return {
+            fee: 125,
             openDatesModal: false,
             showModal: false,
             totalPrice: 1190,
             startDate: "2025/10/17",
             endDate: "2025/10/17",
             guests: {
-                
-                adults: 0,
-                kids: 0,
-                infants: 0,
-                pets: 0
+
+                adults: null,
+                kids: null,
+                infants: null,
+                pets: null
 
             },
 
@@ -112,19 +135,34 @@ export default {
 
     },
     watch: {
-        openDatesModal: {
+        duration: {
             handler() {
-                console.log('openDatesModal :>> ', this.openDatesModal);
+                console.log('duration :>> ', this.duration);
+            },
+        },
+        guestsNum: {
+            handler() {
+                console.log('guestsNum :>> ', this.guestsNum);
             },
         },
     },
 
     computed: {
-        startDateDisplay() {
-            return this.startDate//.toLocaleDateString('en-US')
-        },
-        endDateDisplay() {
-            return this.endDate//.toLocaleDateString('en-US')
+        // startDateDisplay() {
+        //     return this.startDate//.toLocaleDateString('en-US')
+        // },
+        // endDateDisplay() {
+        //     return this.endDate//.toLocaleDateString('en-US')
+        // },
+        duration() {
+            const start = new Date(this.startDate)
+            const end = new Date(this.endDate)
+            const diff = Math.abs(end - start)
+            const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
+            console.log('days :>> ', days);
+            return days
+        }, guestsNum() {
+            return +this.guests.adults + this.guests.kids
         },
         guestsDisplay() {
             let adults
@@ -144,9 +182,17 @@ export default {
         }
     },
     created() {
-
+        const { startDate, endDate, adults, kids, infants, pets } = this.$route.query
         eventBus.on('closeModal', () => this.showModal = false)
-        // eventBus.on('close', () => this.openDatesModal = false)
+
+        this.startDate = startDate
+        this.endDate = endDate
+        this.guests.adults = +adults
+        this.guests.kids = +kids
+        this.guests.infants = +infants
+        this.guests.pets = +pets
+        console.log('this.$route.query :>> ', this.$route.query);
+        console.log('startDate, endDate, adults, kids, infants, pets :>> ', startDate, endDate, adults, kids, infants, pets);
     },
 
     methods: {
