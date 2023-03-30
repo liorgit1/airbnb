@@ -2,7 +2,7 @@
     <section class="stay-amenities">
         <h1>What this place offers</h1>
         <div class="stay-amenities-container">
-            <div style="display: flex; gap: 13px" v-for="amenitie in stay.amenities" :key="amenitie">
+            <div style="display: flex; gap: 13px" v-for="amenitie in stay.amenities.slice(0,10)" :key="amenitie">
                 <img style="width: 1.2em" :src="`../../../../src/assets/pngs/amenities/${amenitie.toLowerCase()}.svg`">
 
                 <p style="margin: 0;font-size: 14px;padding-block-start: 10px;">{{ amenitie }}</p>

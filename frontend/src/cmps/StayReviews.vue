@@ -182,22 +182,22 @@ export default {
     },
     computed: {
         averageCleanliness() {
-            return (this.stay.reviews.reduce((sum, review) => sum + review.cleanliness, 0) / this.stay.reviews.length).toFixed(1);
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Cleanliness, 0) / this.stay.reviews.length).toFixed(1);
         },
         averageCommunication() {
-            return (this.stay.reviews.reduce((sum, review) => sum + review.communication, 0) / this.stay.reviews.length).toFixed(1);
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Communication, 0) / this.stay.reviews.length).toFixed(1);
         },
         averageAccuracy() {
-            return (this.stay.reviews.reduce((sum, review) => sum + review.accuracy, 0) / this.stay.reviews.length).toFixed(1);
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Accuracy, 0) / this.stay.reviews.length).toFixed(1);
         },
         averageCheckIn() {
-            return (this.stay.reviews.reduce((sum, review) => sum + review.checkIn, 0) / this.stay.reviews.length).toFixed(1);
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.CheckIn, 0) / this.stay.reviews.length).toFixed(1);
         },
         averageLocation() {
-            return (this.stay.reviews.reduce((sum, review) => sum + review.location, 0) / this.stay.reviews.length).toFixed(1);
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Location, 0) / this.stay.reviews.length).toFixed(1);
         },
         averageValue() {
-            return (this.stay.reviews.reduce((sum, review) => sum + review.value, 0) / this.stay.reviews.length).toFixed(1);
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Value, 0) / this.stay.reviews.length).toFixed(1);
         },
         totalAverage() {
             return ((+this.averageCleanliness + +this.averageCommunication + +this.averageAccuracy + +this.averageCheckIn +
@@ -205,13 +205,15 @@ export default {
         }
     },
     created() {
+        //     console.log(' averageCleanliness :>> ', this.averageCleanliness);
+        //     console.log(' averagCommunication :>> ', this.averageCommunication);
+        //     console.log(' averageAccuracy :>> ', this.averageAccuracy);
+        //     console.log(' averageCheckIn :>> ', this.averageCheckIn);
+        //     console.log(' averageLocation :>> ', this.averageLocation);
+        //     console.log(' averageValue :>> ', this.averageValue);
+    },mounted() {
+        this.$emit('setTotalRate', { totalRate: this.totalAverage })
         
-        console.log(' averageCleanliness :>> ', this.averageCleanliness);
-        console.log(' averagCommunication :>> ', this.averageCommunication);
-        console.log(' averageAccuracy :>> ', this.averageAccuracy);
-        console.log(' averageCheckIn :>> ', this.averageCheckIn);
-        console.log(' averageLocation :>> ', this.averageLocation);
-        console.log(' averageValue :>> ', this.averageValue);
     },
     methods: {
 

@@ -1,18 +1,18 @@
- Font helpers
- .font-bold {
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-     font-weight: 400;
- }
+//  Font helpers
+.font-bold {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
 
- .font-medium {
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
-     font-weight: 400;
- }
+.font-medium {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-weight: 400;
+}
 
- .font-base {
-     font-family: Georgia, Times, 'Times New Roman', serif;
-     font-weight: 400;
- }
+.font-base {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
 
 .text-muted {
     color: transparent;
@@ -163,7 +163,7 @@
     // grid-template-columns: $layoutPadding 1fr $layoutPadding;
     grid-template-columns: minmax(24px, 1fr) minmax(auto, 1120px) minmax(24px, 1fr);
 
-    > * {
+    >* {
         grid-column: 2;
 
         &.full {
@@ -202,7 +202,7 @@
     // max-width: 1863px;
     // margin-inline: auto;
 
-    > * {
+    >* {
         grid-column: 2;
 
         &.full {
@@ -216,21 +216,24 @@
 //     grid-template-columns: 80px 1fr 80px;
 // }
 
-  .main-layout2 {
+.main-layout2 {
     margin: 0 auto;
     display: grid;
     padding-left: rem(20px);
     padding-right: rem(20px);
+
     // max-width: 1600px;
     @include for-wide-layout {
         // max-width: 1120px;
         padding-left: rem(80px);
         padding-right: rem(80px);
     }
+
     @include for-narrow-layout {
         padding-left: rem(40px);
         padding-right: rem(20px);
     }
+
     @include for-mobile-layout {
         padding-left: rem(20px);
         padding-right: rem(20px);
@@ -258,7 +261,7 @@
 
 @media (min-width: 1440px) {
     .main-header {
-        padding-inline:80px
+        padding-inline: 80px
     }
 }
 
@@ -266,18 +269,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-block:16px
+    margin-block: 16px
 }
 
 @media screen and (max-width: 800px) {
     .main-nav {
-        justify-content:center
+        justify-content: center
     }
 }
 
 @media screen and (max-width:1500px) {
     .stay-list {
-        justify-content:center
+        justify-content: center
     }
 }
 
@@ -302,7 +305,7 @@
 
 @media screen and (max-width: 800px) {
     .main-nav .nav-txt .txt {
-        display:none
+        display: none
     }
 }
 
@@ -326,7 +329,7 @@
 
 @media (min-width: 1127px) {
     .main-nav .brand .brand-txt {
-        display:center
+        display: center
     }
 }
 
@@ -342,28 +345,31 @@
 
 @media screen and (max-width: 800px) {
     .main-nav a:not(.mobile-footer .main-nav a) {
-        display:none
+        display: none
     }
 }
 
 @media screen and (min-width: 800px) and (min-width: 950px) {
     .search-bar {
-        margin-right:unset
+        margin-right: unset
     }
 }
 
 .main-layout3 {
     margin: 24px auto 0 auto;
     display: grid;
+
     @include for-wide-layout {
         max-width: 1120px;
         padding-left: rem(80px);
         padding-right: rem(80px);
     }
+
     @include for-narrow-layout {
         padding-left: rem(40px);
         padding-right: rem(20px);
     }
+
     @include for-mobile-layout {
         padding-left: rem(20px);
         padding-right: rem(20px);
@@ -372,7 +378,7 @@
 
 @media screen and (min-width: 800px) {
     .search-bar {
-        display:flex;
+        display: flex;
         align-items: center;
         width: auto;
         height: 48px;
