@@ -1,6 +1,7 @@
 <template>
   <!-- class="main-layout" -->
   <section >
+    <appHeader @openModalLogin="openModalLogin"/>
     <FilterList />
   <main class="home-page main-layout">
     <stay-list
@@ -8,13 +9,21 @@
     :stays="stays" 
     />
   </main>
+  <login-modal
+     v-close="closeLoginModal" 
+      v-if="modalLoginIsOpen"
+      @login="setLogin"
+      @closeLoginModal="closeLoginModal"
+    />
 </section>
+
 </template>
 
 <script>
 import appHeader from "../cmps/AppHeader.vue";
 import stayList from "../cmps/StayList.vue";
 import FilterList from "../cmps/FilterList.vue";
+import loginModal from "../cmps/login-modal.vue";
 
 
 
@@ -37,6 +46,7 @@ export default {
     appHeader,
     FilterList,
     stayList,
+    loginModal
     
 },
 };
