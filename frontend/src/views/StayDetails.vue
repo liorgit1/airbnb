@@ -7,9 +7,11 @@
 
             <h1> {{ stay.name }}</h1>
             <div class="likeAndShare">
-                <p class="placeLink fs16"> <img src="../assets/pngs/star.png" alt=""> {{ stay.loc.city }}, {{
-                    stay.loc.country }}</p>
-                <span class="fs16">{{  }}
+                <img style="padding-block-end: 6px; padding-inline-end: 9px ;width: 22px;"
+                    src="../assets/pngs/star.png"><span style="font-size: 15px;">{{ ` ${totalRate} · ` }}</span>
+                <p class="placeLink fs16"> {{ `${stay.reviews.length} reviews · ` }}</p>
+                <p style="translate: -239%;" class="placeLink fs16">{{ `${stay.loc.city}, ${stay.loc.country} ` }}</p>
+                <span class="fs16">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false"
                         style="fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;">
@@ -17,7 +19,7 @@
                             <path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9"></path>
                             <path d="M16 3v23V3z"></path>
                             <path d="M6 13l9.293-9.293a1 1 0 0 1 1.414 0L26 13"></path>
-                        </g> 
+                        </g>
                     </svg>
                     <a>Share</a>
                 </span>
@@ -45,7 +47,7 @@
                 <StayAmenities :stay="stay" />
             </div>
         </section>
-        <StayReviews :stay="stay" />
+        <StayReviews :stay="stay" @setTotalRate="setTotalRate($event)" />
 
 
         <!-- </section> -->
@@ -73,7 +75,9 @@ export default {
     data() {
         return {
 
+            totalRate: null,
             stay: null
+
         }
     },
     computed: {
@@ -91,6 +95,9 @@ export default {
         }
     },
     methods: {
+        setTotalRate({ totalRate }) {
+            this.totalRate = totalRate
+        },
         closeModal() {
             eventBus.emit('closeModal')
 
