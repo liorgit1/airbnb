@@ -93,7 +93,10 @@ components:{LocationsModal , DatePickerModal , GuestsModal , vClickOutside},
   methods: {
 
      setSearch() {
-     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country} })
+     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country , startDate:this.getDates.start , endDate:this.getDates.end , guests: adults: 0,
+                kids: 0,
+                infants: 0,
+                pets: 0} })
 
      this.$emit('closeModal' , false)
     
