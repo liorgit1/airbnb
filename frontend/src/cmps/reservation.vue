@@ -31,7 +31,12 @@
 
             <div class="order-form-header">
                 <p><span class="cost">$ {{ stay.price }}</span> / night</p>
-                <p>4.38 <span class="reviews">(4 reviews)</span></p>
+                <div class="flex">
+                    <img src="/src/assets/pngs/star.png"
+                        style="margin-inline-end: 7px;margin-block-start: 5px;height: 15px;">
+                    <p>4.38 </p>
+
+                </div>
             </div>
 
             <form class="reservation-form">
