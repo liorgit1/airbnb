@@ -13,6 +13,8 @@
         <div>
           <span class="icon-heart">
             <svg
+              :class="isLiked"
+              @click.stop="setLiked"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -48,11 +50,11 @@
               focusable="false"
               style="
                 display: inline;
-                height: px;
-                width: 10px;
+                height: 12px;
+                width: 12px;
                 fill: black;
-              "
-                   >
+              ">
+                  
                  <path
                  d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965
                  9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853
@@ -60,15 +62,15 @@
                  fill-rule="evenodd"
                  ></path>
                 </svg>
-                {{  stay.reviews[0].rate }} </span>
+                {{  totalAverage }} </span>
         </div>
 
         <div class="stay-type" >
           {{ stay.loc.country }}<span>, </span>
           {{ stay.loc.city }}
         </div>
-        <div class="stay-name">{{stay.guests }} beds</div>
-        <div class="stay-date">{{stay.date }}</div>
+        <div class="stay-name">{{stay.bedrooms }} beds</div>
+        <div class="stay-date">{{stay.type }}</div>
         <div class="stay-price">
           <span class="bold">${{ stay.price }}</span>
           night
@@ -88,15 +90,54 @@ export default {
       type: Object,
     },
   },
+
+  data() {
+    return {
+      liked: false,
+    };
+  },
+
+  computed: {
+    averageCleanliness() {
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Cleanliness, 0) / this.stay.reviews.length).toFixed(1);
+        },
+        averageCommunication() {
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Communication, 0) / this.stay.reviews.length).toFixed(1);
+        },
+        averageAccuracy() {
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Accuracy, 0) / this.stay.reviews.length).toFixed(1);
+        },
+        averageCheckIn() {
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.CheckIn, 0) / this.stay.reviews.length).toFixed(1);
+        },
+        averageLocation() {
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Location, 0) / this.stay.reviews.length).toFixed(1);
+        },
+        averageValue() {
+            return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Value, 0) / this.stay.reviews.length).toFixed(1);
+        },
+        totalAverage() {
+            return ((+this.averageCleanliness + +this.averageCommunication + +this.averageAccuracy + +this.averageCheckIn +
+                +this.averageLocation + +this.averageValue) / 6).toFixed(2)
+        }
+
+      },
+  
+
   created() {
     console.log(this.stay);
   },
   
-  // computed: {
-  //   getRating() {
-  //     return this.stay.reviews.rate / stay.country.length ;
-  //   },
-  // },
+  methods: {
+    getRating() {
+      return this.stay.reviews.rate / stay.country.length ;
+    },
+  },
+  computed: {
+    isLiked() {
+      return this.liked ? "isLiked" : "";
+    },
+  },
   components: {
     imgCarousel,
   },

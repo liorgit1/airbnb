@@ -1,6 +1,7 @@
 <template>
   <ul class="stay-list">
     <stay-preview
+    @stayliked="setliked"
       v-for="stay in stays"
       :stay="stay"
       :key="stay._id"
@@ -31,6 +32,9 @@ export default {
       this.$router.push(`/stay`);
       window.scrollTo(0, 0);
     },
+    setliked(stay) {
+      this.$emit("stayLiked", stay)
+    }
   },
 };
 </script>
