@@ -93,10 +93,8 @@ components:{LocationsModal , DatePickerModal , GuestsModal , vClickOutside},
   methods: {
 
      setSearch() {
-     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country , startDate:this.getDates.start , endDate:this.getDates.end , guests: adults: 0,
-                kids: 0,
-                infants: 0,
-                pets: 0} })
+     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country , startDate:this.getDates.start , endDate:this.getDates.end,
+    adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
 
      this.$emit('closeModal' , false)
     
@@ -136,9 +134,10 @@ components:{LocationsModal , DatePickerModal , GuestsModal , vClickOutside},
             this.guests.pets = petsCount
             console.log('this.guests.pets :>> ', this.guests.pets);
         }, 
-        onClickedOutside() {
-            this.openDatesModal = false
-        }
+
+        // onClickedOutside() {
+        //     this.openDatesModal = false
+        // }
 
   },
 
