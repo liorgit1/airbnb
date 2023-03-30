@@ -16,7 +16,7 @@
     <div class="mini-card-grid mini-card grid-item-3">
     <div class="mini-card-header">
         <h1>Messages</h1>
-        <h4> order #o1226 has been approved</h4>
+        <h4> order #o113 has been approved</h4>
         <button class="mini-card-btn">Go to messages</button>
     </div>
     </div>
@@ -25,7 +25,7 @@
             <div class="mini-card-header flex wrap">
                 <h1 class="">Your Next Stay</h1>
             </div>
-            <h4>Entire amazing views hosted by Patty And Beckett</h4>
+            <h4>Beautiful pool and house hosted by Jacky</h4>
             <button class="mini-card-btn">Go to stay</button>
         </div>
         <div class="next-stay-img">
