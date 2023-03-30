@@ -9,7 +9,10 @@ import vClickOutside from "click-outside-vue3"
 import 'v-calendar/style.css';
 import VCalendar from 'v-calendar';
 
-
+import PrimeVue from 'primevue/config';
+import "primevue/resources/themes/lara-light-indigo/theme.css"; 
+import "primevue/resources/primevue.min.css";
+import "primeicons/primeicons.css";
 // Vue.component('Datepicker', VueDatepickerUi)
 
 import './assets/styles/main.scss'
@@ -22,4 +25,5 @@ app.use(store)
 app.use(ElementPlus)
 app.use(vClickOutside)
 app.use(VCalendar, {})
+app.use(PrimeVue)
 app.mount('#app')

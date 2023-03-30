@@ -98,10 +98,12 @@ export default {
             startDate: "2025/10/17",
             endDate: "2025/10/17",
             guests: {
+                
                 adults: 0,
                 kids: 0,
                 infants: 0,
                 pets: 0
+
             },
 
         }
