@@ -77,9 +77,10 @@
                             </div>
                         </div>
                     </span>
-                    <div v-if="stay.price * duration !== 0" class="flex space-between">
+                    <div v-if="stay.price * duration !== 0" class="flex space-between"
+                        style="padding-block: 19px; border-block-start: 1px solid #dddd;">
 
-                        <h4 style="color: black;    padding-block: 19px; border-block-start: 1px solid #dddd;">total</h4>
+                        <h4 style="color: black;">total</h4>
                         <span>{{ `$ ${(stay.price * duration) + fee}` }}</span>
                     </div>
                 </div>
@@ -121,10 +122,10 @@ export default {
             endDate: "2025/10/17",
             guests: {
 
-                adults: 0,
-                kids: 0,
-                infants: 0,
-                pets: 0
+                adults: null,
+                kids: null,
+                infants: null,
+                pets: null
 
             },
 
@@ -181,9 +182,17 @@ export default {
         }
     },
     created() {
-
+        const { startDate, endDate, adults, kids, infants, pets } = this.$route.query
         eventBus.on('closeModal', () => this.showModal = false)
-        // eventBus.on('close', () => this.openDatesModal = false)
+
+        this.startDate = startDate
+        this.endDate = endDate
+        this.guests.adults = +adults
+        this.guests.kids = +kids
+        this.guests.infants = +infants
+        this.guests.pets = +pets
+        console.log('this.$route.query :>> ', this.$route.query);
+        console.log('startDate, endDate, adults, kids, infants, pets :>> ', startDate, endDate, adults, kids, infants, pets);
     },
 
     methods: {
