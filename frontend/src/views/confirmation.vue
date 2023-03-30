@@ -39,7 +39,7 @@
 
                 <div class="flex">
                     <p style="    font-size: 22px;translate: 67px 122px;">close</p>
-                    <div class="approveBtn">
+                    <div @click="this.$router.push(`/trip`);" class=" approveBtn">
                         <span style="padding-inline-start: 41px;">
                             Approve
                         </span>
