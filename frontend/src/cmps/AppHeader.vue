@@ -15,11 +15,11 @@
       <div @click = "isOpen=true" v-if="!isOpen" class="search-bar">
         <button v-if="!isDetails">Anywhere</button>
         <button v-else>start your search</button>
-        <span v-if="!isDetails">|</span> 
+        <span v-if="!isDetails" style="opacity: 50%;">|</span> 
         <span v-else></span>
         <button v-if="!isDetails">Any week</button>
         <button v-else></button>
-        <span v-if="!isDetails">|</span>
+        <span v-if="!isDetails" style="opacity: 50%;">|</span>
         <span v-else></span>
         <button v-if="!isDetails" style="font-weight: normal ; opacity: 80%;">Add guests</button>
         <button v-else></button>
@@ -60,7 +60,7 @@
 
 import HeaderFilter from './HeaderFilter.vue'
 import FilterList from './FilterList.vue'
-import vClickOutside from 'click-outside-vue3'
+import vClickOutsideUmd from 'click-outside-vue3'
 
 export default {
 
@@ -77,7 +77,9 @@ export default {
   ,
   components: {
    HeaderFilter,
-   FilterList
+   FilterList,
+   vClickOutsideUmd,
+
   },
 
   created () {

@@ -9,45 +9,194 @@
     align-items: center;
     margin-top: 18.3px;
     white-space: nowrap;
+    z-index: 0;
+
+}
+
+.filter-list img{
+    width: 30px;
     
+}
+
+.filter-list .icon{
+    width: 30px;
+    
+}
+
+.filter-list div .icon{
+    width: 30px;
    
 }
 
-.Filter-list button{
-    display: flex;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
-    flex-direction: column;
-    background-color: white;
-    overflow: hidden;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
+// .Filter-list div{
+//     display: flex;
+//     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
+//     flex-direction: column;
+//     background-color: white;
+//     overflow: hidden;
+//     border: none;
+//     align-items: center;
+//     justify-content: center;
+//     white-space: nowrap;
+// }
+
+.filter-container{
+    display: grid;
+    width: fit-content;
+    cursor: pointer;
+    opacity:50%;
+//     border-bottom: solid 3px  #ddd1d1;
+ }
+
+ .filter-container:hover{
+    opacity: 1;
+ }
+
+ .filter-container-clicked{
+    display: grid;
+    // width: 100px;
+    opacity: 1;
+    // border-bottom: solid 3px  black;
+    cursor: pointer;
+ }
+ 
+ .filter-container-clicked:hover h1{
+    opacity: 1;
+    border-bottom: solid 3px black;
+    color: black;
+ }
+
+.filter-container:hover h1{
+    opacity: 1;
+    border-bottom: solid 3px  #ddd1d1;
+    color: black;
+    
 }
 
-.Filter-list button h1{
+.filter-container:focus h1{
+    border-bottom: solid 3px  black;
+ }
+
+ .p-carousel[pv_id_1] .p-carousel-item {
+    display: flex;
+    flex: inherit;
+     margin-right: 10px;
+     margin-left: 10px;
+
+}
+
+
+
+.filter-container h1{
     height: 16px;
     font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: normal;
     padding-top: 10px;
     margin: none;
     align-self: center;
+    justify-self: center;
+    font-size: 0.9075rem;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    border-bottom: solid 3px  transparent;
+    cursor: pointer;
 }
 
 
-.Filter-list img{
+
+
+.filter-container img{
     width: 24px;
     height: 24px;
-    // height: 100%;
+    align-self: center;
+    justify-self: center;
     display: block;
     box-sizing: border-box;
     // font-size: 12px;
-    opacity: 50%;
+    // opacity: 50%;
     transition: opacity .2s;
 }
 
-.Filter-list img:hover{
+.filter-container img:hover{
    opacity: 1;
    cursor: pointer;
+
+   .filter-container h1{
+
+    border-bottom: solid 3px  transparent;
+    padding-bottom: 10px;
+
 }
 
+}
+
+.filter-container h1:hover{
+
+    border-bottom: solid 3px  #ddd1d1;
+    z-index: 3;
+    // padding-bottom: -10px;
+
+}
+
+.p-carousel-container{
+    display: flex;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.p-carousel-indicators , p-reset{
+ display: none;
+}
+
+.p-carousel-content{
+// font-size: 0;
+}
+
+// .p-carousel-next{
+// opacity: 1;
+//     transition: opacity .5s;
+//     border-radius: 50%;
+//     border: 1px solid rgba(0,0,0,.3);
+//     background-color: #fff;
+//     box-shadow: 0 0 20px 22px #fff;
+//     text-align: center;
+//     height: 26px;
+//     width: 26px;
+//     top: 34px;
+//     margin: 0;
+// }
+
+.p-carousel .p-carousel-content .p-carousel-prev{
+    width: 28px;
+    height: 28px;
+    /* color: #6c757d; */
+    border: 0 none;
+    background: transparent;
+    border-radius: 50%;
+    // transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    border: 1px solid rgba(0,0,0,.3);
+     margin: auto;
+}
+
+.p-carousel .p-carousel-content .p-carousel-next{
+    width: 28px;
+    height: 28px;
+    /* color: #6c757d; */
+    border: 0 none;
+    background: transparent;
+    border-radius: 50%;
+    // transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    border: 1px solid rgba(0,0,0,.3);
+    margin: auto;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev:focus , .p-carousel .p-carousel-content .p-carousel-next:focus{
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,.3);
+    background: white;
+}
+
+.p-carousel .p-carousel-content .p-carousel-prev:hover , .p-carousel .p-carousel-content .p-carousel-next:hover{
+    border: 1px solid rgba(0,0,0,.3);
+    background: white;
+}

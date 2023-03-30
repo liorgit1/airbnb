@@ -128,12 +128,18 @@
     z-index: 1;
     position: absolute;
     background-color: #ebebeb;
+    column-gap: 5px;
+  }
+
+  .bar p{
+    font-weight: bold;
   }
   
   .bar-div{
     border-radius:100vw;
     padding:0.8rem 1.5rem;
     transition:background 250ms ease;
+    margin-left: 3px;
   }
   
   .bar-div:hover{
@@ -143,7 +149,7 @@
   .bar-div:on
   
   .location{
-    width:34%;
+    // width:34%;
   }
   .check-in, .check-out{
      width:134px;
@@ -187,7 +193,7 @@
   }
   
   .bar>div{
-    position:relative;
+    // position:relative;
   }
   
   
