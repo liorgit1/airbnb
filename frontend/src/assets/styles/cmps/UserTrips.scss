@@ -190,12 +190,13 @@ ul {
 .main-container>* {
     grid-column: 2;
 }
+
 header {
     top: 0;
     width: 100%;
     background-color: #fff;
     padding: 16px 0;
-    display: flex;
+    // display: flex;
     z-index: 10;
     justify-content: space-between;
     border-bottom: solid 1px #dddddd;
