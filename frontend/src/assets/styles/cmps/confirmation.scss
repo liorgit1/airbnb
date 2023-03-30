@@ -1,0 +1,77 @@
+.confirmation-container {
+    width: 100%;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.confirmation-container {
+    flex-direction: row;
+
+    .your-trip {
+        grid-column: 1/2;
+
+        .rare-find {
+            border: 1px solid #dddd;
+            padding-block-start: 35px;
+
+            padding-inline-start: 30px;
+            border-radius: 20px;
+            height: 120px;
+            width: 450px;
+            // place-self: start;
+        }
+    }
+
+    .confirm-price-modal {
+        grid-column: 2/3;
+
+        .apt-modal {
+            height: 504px;
+            width: 500px;
+            border: 1px solid #dddd;
+            // background-color: black;
+            border-radius: 11px;
+
+        }
+    }
+
+
+
+}
+
+.approveBtn {
+    color: white;
+    height: 57px;
+    width: 218px;
+    background-color: #ff385c;
+    padding-top: 13px;
+    padding-left: 30px;
+    translate: 166px 112px;
+    border-radius: 12px;
+
+}
+
+.confirmation-img {
+    border-radius: 10px;
+    aspect-ratio: 1.053/1;
+    width: 145px;
+    margin-block-start: 35px;
+    margin-inline-start: 49px;
+
+    
+}
+
+
+.confirm-h4{
+    margin-inline-start: 16px;
+    margin-block-start: -14px;
+}
+
+
+
+.confirm-modal-top{
+    padding-block-end: 10px;
+    border-bottom: solid 1px #dddd;
+}

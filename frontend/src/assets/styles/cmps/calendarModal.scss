@@ -16,7 +16,7 @@
 .vc-container{
     width: inherit;
     border-radius: 32px;
-    padding: 7.5px;
+    padding: 10px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0392156863), 0 8px 16px rgba(0, 0, 0, 0.1490196078);
 }
 
@@ -24,4 +24,8 @@
 
     display: none;
 
+}
+
+.vc-pane-layout{
+    column-gap: 25px;
 }
