@@ -5,7 +5,7 @@
       <div class="stay-preview-gallery">
         <section>
           <img-carousel
-            @click="this.$router.push('/stay/' + stay._id)"
+
             :imgs="stay.imgUrls"
             class="card-img"
           />
@@ -125,19 +125,22 @@ export default {
   
 
   created() {
-    console.log(this.stay);
   },
+
   
   methods: {
-    getRating() {
-      return this.stay.reviews.rate / stay.country.length ;
-    },
+    // getRating() {
+    //   return this.stay.reviews.rate / stay.country.length ;
+    // },
+    // getStay(){
+    //   this.$emit('getStay',{stayId:this.stay._id})
+    // }
   },
-  computed: {
-    isLiked() {
-      return this.liked ? "isLiked" : "";
-    },
-  },
+  // computed: {
+  //   isLiked() {
+  //     return this.liked ? "isLiked" : "";
+  //   },
+  // },
   components: {
     imgCarousel,
   },

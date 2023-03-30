@@ -3,7 +3,10 @@
   <section >
     <FilterList />
   <main class="home-page main-layout">
-    <stay-list :stays="stays" />
+    <stay-list
+    @getStay="getStay"  
+    :stays="stays" 
+    />
   </main>
 </section>
 </template>
@@ -19,6 +22,11 @@ export default {
   name: "StayIndex",
   created() {
     this.$store.dispatch({ type: 'loadStays' })
+  },
+  methods: {
+    getStay({stayId}){
+      this.$router.push( '/stay/' + stayId)
+    },
   },
   computed: {
     stays() {

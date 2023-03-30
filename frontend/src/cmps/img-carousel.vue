@@ -21,7 +21,6 @@ export default {
     },
   },
   created(){
-  console.log(this.imgs);
   }
 };
 </script>
