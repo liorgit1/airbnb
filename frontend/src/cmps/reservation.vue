@@ -48,8 +48,7 @@
                         <div class="date-input">
                             <label>CHECK IN</label>
                             <DatePickerModalVue @click.stop v-if="openDatesModal" style="translate: -212px; z-index: 1 ;"
-                                @close="closeDates" @passDateData="getDateData($event)"
-                                v-click-outside="onClickedOutside" />
+                                @passDateData="getDateData($event)" v-click-outside="onClickedOutside" />
                             <input v-model="startDate">
                         </div>
                         <div class="date-input">

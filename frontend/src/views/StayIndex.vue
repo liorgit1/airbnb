@@ -37,8 +37,8 @@ export default {
     this.$store.dispatch({ type: 'loadStays' })
   },
   methods: {
-    getStay({stayId}){
-      this.$router.push( '/stay/' + stayId)
+    getStay({ stayId }) {
+      this.$router.push('/stay/' + stayId)
     },
     openModalLogin() {
       this.modalLoginIsOpen = true;
@@ -64,7 +64,7 @@ export default {
     FilterList,
     stayList,
     loginModal
-    
-},
+
+  },
 };
 </script>
