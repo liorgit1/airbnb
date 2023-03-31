@@ -69,7 +69,7 @@
         <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="closeLoginModal"
           @closeModalDetails="closeModalUser" />
       </nav>
-      <loginModal v-if="modalLoginIsOpen" />
+      <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" />
     </section>
   </header>
 </template>
@@ -82,6 +82,7 @@ import FilterList from './FilterList.vue'
 // import vClickOutsideUmd from 'click-outside-vue3'
 import loginModal from './login-modal.vue'
 import userDetailsModal from './user-details-modal.vue';
+
 export default {
   // name: "stay-header",
   data() {
@@ -108,10 +109,10 @@ export default {
 
   methods: {
     toggleModalLogin() {
-      this.modalUser=false
+      this.modalUser = false
       this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
-   
+
     setLogin(user) {
       this.$store.dispatch({
         type: "login",

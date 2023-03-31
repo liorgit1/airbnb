@@ -63,6 +63,7 @@ export default {
       );
       this.user.username = "";
       this.user.password = "";
+      this.closeModal();
     },
     closeModal() {
       this.$emit("closeLoginModal");

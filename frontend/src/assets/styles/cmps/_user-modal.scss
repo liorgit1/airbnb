@@ -13,6 +13,21 @@
     transition: box-shadow 0.2s ease;
 }
 
+.before-login-modal {
+    position: absolute;
+    top: 3.075rem;
+    right: -4rem;
+    width: 10rem;
+    height: 12.5rem;
+    padding: 8px 0;
+    z-index: 20;
+    border: #ddd 3px solid;
+    justify-content: flex-start;
+    background: white;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
+}
+
 .spank {
     color: black;
     font-size: 14px;
