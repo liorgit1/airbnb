@@ -39,13 +39,13 @@ export default {
       state.loggedinUser.stays = stays;
       userService.saveUser(state.loggedinUser);
     },
-    setOrderUser(state, { orders }) {
-      state.loggedinUser.orders = orders;
+    setReservationUser(state, { reservations }) {
+      state.loggedinUser.reservations = reservations;
       userService.saveUser(state.loggedinUser);
     },
-    addOrderUser(state, { newOrder }) {
-      state.loggedinUser.orders.unshift(newOrder);
-      console.log(newOrder);
+    addReservationUser(state, { newReservation }) {
+      state.loggedinUser.reservations.unshift(newReservation);
+      console.log(newReservation);
       userService.saveUser(state.loggedinUser);
     },
     setLikedStay(state, { stayId }) {
@@ -97,8 +97,8 @@ export default {
       try {
         const stays = await userService.getUserStays(state.loggedinUser.id);
         commit({ type: "setStaysUser", stays });
-        const orders = await userService.getUserOrder(state.loggedinUser.id);
-        commit({ type: "setOrderUser", orders });
+        const reservations = await userService.getUserReservation(state.loggedinUser.id);
+        commit({ type: "setReservationUser", reservations });
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;
@@ -119,7 +119,7 @@ export default {
         const stays = await userService.getUserLikedStays(likedStays);
         stays.forEach((stay) => (stay.isLiked = true));
         return stays;
-        commit({ type: 'setOrderUser', orders })
+        commit({ type: 'setReservationUser', reservations })
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;

@@ -6,7 +6,6 @@ import stayIndex from '../src/views/StayIndex.vue'
 import confirmation from './views/confirmation.vue'
 import userTrip from '../src/views/UserTrip.vue'
 // import userWishList from '../src/views/WishList.vue'
-import loginModal from '../src/views/pussymoneyweed.vue'
 // import userDashboard  from '../src/views/User-Dashboard.vue'
 
 
@@ -41,11 +40,6 @@ const routes = [
     path: '/trip',
     name: 'user-trip',
     component: userTrip
-  },
-  {
-        path: '/pussy',
-        name: 'login-modal',
-        component: loginModal
   },
 ];
 

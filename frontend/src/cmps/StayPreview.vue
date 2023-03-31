@@ -59,6 +59,7 @@
     </section>
   </li>
 </template>
+
       
 <script>
 import imgCarousel from './img-carousel.vue';
