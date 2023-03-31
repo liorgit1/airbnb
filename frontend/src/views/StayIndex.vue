@@ -9,7 +9,6 @@
     />
   </main>
   <login-modal
-     v-close="closeLoginModal" 
       v-if="modalLoginIsOpen"
       @login="setLogin"
       @closeLoginModal="closeLoginModal"
@@ -28,6 +27,12 @@ import loginModal from "../cmps/login-modal.vue";
 
 export default {
   name: "StayIndex",
+  data() {
+    return {
+      modalLoginIsOpen: false,
+    };
+  },
+
   created() {
     this.$store.dispatch({ type: 'loadStays' })
   },

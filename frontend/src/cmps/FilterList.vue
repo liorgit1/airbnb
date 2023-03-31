@@ -189,48 +189,5 @@ export default{
     }
     </script>
     
-        // {
-        //     key: 'Private',
-        //     url: 'https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg',
-        // },
-        // {
-        //     key: 'Off-the-grid',
-        //     url: 'https://a0.muscache.com/pictures/9a2ca4df-ee90-4063-b15d-0de7e4ce210a.jpg',
-        // },
-        // {
-        //     key: 'Luxe',
-        //     url: 'https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg',
-        // },
-        // {
-        //     key: 'Caves',
-        //     url: 'https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg',
-        // },
-        // {
-        //     key: 'Boats',
-        //     url: 'https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg',
-        // },
-        // {
-        //     key: 'Casas particulares',
-        //     url: 'https://a0.muscache.com/pictures/251c0635-cc91-4ef7-bb13-1084d5229446.jpg',
-        // },
-        // {
-        //     key: 'new',
-        //     url: 'https://a0.muscache.com/pictures/c0fa9598-4e37-40f3-b734-4bd0e2377add.jpg',
-        // },
-        // {
-        //     key: 'top',
-        //     url: 'https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg',
-        // },
-        // {
-        //     key: 'Golfing',
-        //     url: 'https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg',
-        // },
-        // {
-        //     key: 'Earth homes',
-        //     url: 'https://a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg',
-        // },
-        // {
-        //     key: 'Countryside',
-        //     url: 'https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg',
-        // },
+       
   

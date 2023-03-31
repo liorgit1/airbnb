@@ -18,7 +18,7 @@
 
 <script>
 import { userService } from "../services/user-service.js";
-// import { Share } from "@element-plus/icons-vue";
+import { Share } from "@element-plus/icons-vue";
 export default {
   data() {
     return {

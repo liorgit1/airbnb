@@ -41,7 +41,7 @@
       <label
           @click="toggleModalUser"
           class="relative"
-          v-close="closeModalUser"
+          @closeModalUser="closeModalUser"
         >
         <button class="user-nav">
 
@@ -50,7 +50,6 @@
         </button>
         </label>
         <user-details-modal
-          v-close="closeModalUser"
           v-if="modalUser"
           @openModalLogin="openModalLogin"
           @closeLoginModal="closeLoginModal"
@@ -72,9 +71,15 @@ import loginModal from './login-modal.vue'
 import userDeatilsModal from './user-deatils-modal.vue'
 
 export default {
+  name: "stay-header",
   data() {
   return {
-    showNotification: false,
+      stickyNav: false,
+      openfilter: true,
+      filter: null,
+      modalUser: false,
+      isDetails: false,
+      isOpen: false
   };
   }
   ,
