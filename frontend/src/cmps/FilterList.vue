@@ -9,26 +9,52 @@
 </template>
 class="main-layout"  -->
  <template>
-<Carousel :value="keys" :numVisible="11" :numScroll="3" :responsiveOptions="responsiveOptions" class="main-layout">
+ <Carousel :value="keys" :numVisible="11" :numScroll="3" :responsiveOptions="responsiveOptions" class="main-layout">
     <template #item="slotProps" class="Filter-list">
         <div @click="slotProps.data.keyClicked = true" class="filter-container" :class="{'filter-container-clicked':slotProps.data.keyClicked }">
             <img :src="slotProps.data.url" />
             <h1>{{ slotProps.data.key }}</h1>
         </div>     
     </template>
-</Carousel>
+</Carousel> 
 </template>
 
+<!-- <template>
+    <ssr-carousel>
+        <div filter-container v-for="key in keys" :key = "key.url" >
+    <img class="icon" :src="key.url" style="width:30px"/>
+    <h1>{{ key.key }}</h1>
+    </div>
+    </ssr-carousel>
+</template> -->
+
+<!-- <template>
+    <div>
+      <VueSlickCarousel  >
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </VueSlickCarousel>
+    </div>
+  </template> -->
+
 <script>
+
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 //  import VueSlickCarousel from 'vue-slick-carousel'
 //  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
 //  import slick from 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'
-  
+
 import Carousel from 'primevue/carousel';
+
+import SsrCarousel from "vue-ssr-carousel";
+import "vue-ssr-carousel/index.css";
 
 export default{
 
-    components:{Carousel},
+    components:{Carousel , VueSlickCarousel},
     
     props: {
 

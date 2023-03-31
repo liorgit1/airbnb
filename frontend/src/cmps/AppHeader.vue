@@ -13,14 +13,21 @@
       </RouterLink>
 
       <div @click = "isOpen=true" v-if="!isOpen" class="search-bar">
+
         <button v-if="!isDetails">Anywhere</button>
+        <!-- <button v-if="isExplore">{{this.country}}</button> -->
         <button v-else>start your search</button>
+
         <span v-if="!isDetails" style="opacity: 50%;">|</span> 
         <span v-else></span>
+
         <button v-if="!isDetails">Any week</button>
-        <button v-else></button>
+        <!-- <button v-if="isExplore">{{this.getDates.start}},{{ this.getDates.end }}</button> -->
+        <button v-else="isDetails"></button>
+
         <span v-if="!isDetails" style="opacity: 50%;">|</span>
         <span v-else></span>
+
         <button v-if="!isDetails" style="font-weight: normal ; opacity: 80%;">Add guests</button>
         <button v-else></button>
         <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></button>
@@ -28,7 +35,7 @@
 
       <!--  -->
       <div  v-else  >
-      <HeaderFilter @close ="isOpen = false" >
+      <HeaderFilter @close ="isOpen = false" @searchData="getData($event)" >
       
       </HeaderFilter>
       </div>
@@ -67,7 +74,21 @@ export default {
   data() {
   return {
   isOpen: false,
+  
+  isExplore:false,
+  
+  isIndex:true,
 
+  getDates:{start:'' , end:''},
+
+      guests: {
+                adults: 0,
+                kids: 0,
+                infants: 0,
+                pets: 0
+            },
+
+  country:'',
   // thisRoute: this.$route.name,
 
   isDetails: false
@@ -118,15 +139,34 @@ export default {
 
     handleRoute(){
       console.log('thisRoute',this.thisRoute);
+      if(this.thisRoute == 'exploreApp')
+      
+      this.isExplore = true
+      this.isIndex = false
+      this.isDetails = false
 
       if(this.thisRoute == 'stayIndex')
+      {
+      this.isIndex=true
       this.isDetails = false
+      this.isExplore = false
+      }
+
       if (this.thisRoute == 'stay-details')
       this.isDetails = true
+      this.isExplore = false
+      this.isIndex = false
     },
 
     handleScroll () {
       this.isOpen = false
+    },
+
+    getData(data){
+    this.country = data.country
+    this.getDates.start = data.startDate
+    this.getDates.end = data.endDate
+    console.log(this.getDates.start , this.getDates.end)
     },
    
 

@@ -97,6 +97,9 @@ components:{LocationsModal , DatePickerModal , GuestsModal , vClickOutside},
     adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
 
      this.$emit('closeModal' , false)
+
+     this.$emit('searchData', {country: this.searchBy.country , startDate:this.getDates.start , endDate:this.getDates.end,
+    adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets})
     
      },
 

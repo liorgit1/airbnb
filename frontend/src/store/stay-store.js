@@ -1,4 +1,4 @@
-import { stayService } from '../services/stay.service.local.js'
+import { stayService } from '../services/stay-service'
 
 export default {
     state: {
