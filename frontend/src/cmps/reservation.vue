@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <div v-if="stay.price * duration !== 0">
+                <div v-if="duration">
                     <span>
                         <div>
                             <div class="flex space-between">
@@ -82,10 +82,10 @@
                             </div>
                         </div>
                     </span>
-                    <div v-if="stay.price * duration !== 0" class="flex space-between"
+                    <div v-if="duration" class="flex space-between"
                         style="padding-block: 19px; border-block-start: 1px solid #dddd;">
 
-                        <h4 style="color: black;">total</h4>
+                        <h4 style="color: black;">Total</h4>
                         <span>{{ `$ ${(stay.price * duration) + fee}` }}</span>
                     </div>
                 </div>
