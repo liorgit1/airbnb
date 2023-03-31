@@ -1,22 +1,12 @@
 <template>
   <!-- class="main-layout" -->
-  <section >
-    <appHeader @openModalLogin="openModalLogin"/>
+  <section>
     <FilterList />
-  <main class="home-page main-layout">
-    <stay-list
-    @getStay="getStay"  
-    :stays="stays" 
-    />
-  </main>
-  <login-modal
-     v-close="closeLoginModal" 
-      v-if="modalLoginIsOpen"
-      @login="setLogin"
-      @closeLoginModal="closeLoginModal"
-    />
-</section>
-
+    <main class="home-page main-layout">
+      <stay-list @getStay="getStay" :stays="stays" />
+    </main>
+    <login-modal v-close="closeLoginModal" v-if="modalLoginIsOpen" @login="setLogin" @closeLoginModal="closeLoginModal" />
+  </section>
 </template>
 
 <script>
@@ -33,8 +23,8 @@ export default {
     this.$store.dispatch({ type: 'loadStays' })
   },
   methods: {
-    getStay({stayId}){
-      this.$router.push( '/stay/' + stayId)
+    getStay({ stayId }) {
+      this.$router.push('/stay/' + stayId)
     },
   },
   computed: {
@@ -47,7 +37,7 @@ export default {
     FilterList,
     stayList,
     loginModal
-    
-},
+
+  },
 };
 </script>
