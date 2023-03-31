@@ -4,23 +4,45 @@
    right: rem(80px);
     width: rem(240px);
     height: rem(360px);
+    padding: 8px 0;
     z-index: 20;
+    border:#ddd 3px solid;
     justify-content: flex-start;
-    background: $clr2;
+    background: white;
     border-radius: 12px;
     transition: box-shadow 0.2s ease ;
+}
+
     a , span{
-        color: $clr5;
+        color: black;
         font-size: 14px;
         padding: rem(15px) rem(20px);
         cursor: pointer;
-        font-family: Cereal-medium;
+        background-color: white;
+        font-family: 'Cereal-medium';
         text-shadow: none;
         font-weight: 400;
     }
-    a ,span:hover{
-        background-color: hsla(0,0%,92.5%,.48627450980392156);;
-    
+    a:hover{
+            color:hsla(0,0%,92.5%,.48627450980392156);;
     }
-  
+    
+    
+    .border1{
+        color: black;
+        font-size: 14px;
+        padding: rem(15px) rem(20px);
+        background-color: white;
+        cursor: pointer;
+        font-family: 'Cereal-medium';
+        text-shadow: none;
+        font-weight: 400;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .border1:hover{
+        color:hsla(0,0%,92.5%,.48627450980392156);;
 }
+   
+  
+
