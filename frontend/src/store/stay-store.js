@@ -3,7 +3,21 @@ import { stayService } from '../services/stay-service'
 export default {
     state: {
         stays: [],
-        filterBy: {},
+        filterBy: {
+            country: '',
+            guests: {
+                adults: 0,
+                kids: 0,
+                Infants: 0,
+            },
+            stayTime: '',
+            type: [],
+            price: {
+                minPrice: 30,
+                maxPrice: 1000
+            },
+            amenities: [],
+        },
     },
     getters: {
         stays(state) {
@@ -16,10 +30,23 @@ export default {
         },
         setFilter(state, { filterBy }) {
             if (filterBy.country) state.filterBy.country = filterBy.country
+            if (filterBy.price) state.filterBy.price = filterBy.price
+            if (filterBy.type) state.filterBy.type = filterBy.type
+            if (filterBy.guests) state.filterBy.guests = filterBy.guests
+            if (filterBy.stayTime) state.filterBy.stayTime = filterBy.stayTime
+            if (filterBy.amenities) state.filterBy.amenities = filterBy.amenities
         },
         setGuestsNum(state, { guestsNum }) {
             state.guestsNum = guestsNum
         },
+
+        ratedStays(state, { filterBy }) {
+            state.filterBy.country = filterBy
+        },
+
+        uniqueStays(state, { filterBy }) {
+            state.filterBy.country = filterBy
+        }
 
 
     },

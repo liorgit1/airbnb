@@ -10,7 +10,7 @@
                 <img style="padding-block-end: 6px; padding-inline-end: 9px ;width: 22px;"
                     src="../assets/pngs/star.png"><span style="font-size: 15px;">{{ ` ${totalRate} · ` }}</span>
                 <p class="placeLink fs16"> {{ `${stay.reviews.length} reviews · ` }}</p>
-                <p style="translate: -239%;" class="placeLink fs16">{{ `${stay.loc.city}, ${stay.loc.country} ` }}</p>
+                <p style="translate: -188%;" class="placeLink fs16">{{ `${stay.loc.city}, ${stay.loc.country} ` }}</p>
                 <span class="fs16">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false"

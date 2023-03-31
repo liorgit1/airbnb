@@ -5,7 +5,7 @@
     :autoplay="false"
     height="100%"
   >
-    <el-carousel-item v-for="img in imgs" :key="img">
+    <el-carousel-item  v-for="img in imgs" :key="img">
         <img :src="img"
         class="card-img"
         height="105%"/>
@@ -21,7 +21,6 @@ export default {
     },
   },
   created(){
-  console.log(this.imgs);
   }
 };
 </script>

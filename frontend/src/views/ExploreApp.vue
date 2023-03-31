@@ -1,7 +1,10 @@
 <template>
   <section class="main-layout">
-    <h4>over {{ filteredStays.length - 1 }} homes</h4>
-    <stay-list :stays="filteredStays" v-if="filteredStays.length > 0"></stay-list>
+    <h4 v-if="stays">over {{ stays.length - 1 }} homes</h4>
+    <stay-list
+     @getStay="getStay" 
+     :stays="stays" v-if="stays">
+    </stay-list>
   </section>
 </template>
 
@@ -23,39 +26,51 @@ export default {
   data() {
     return {
       stays: [],
-      filterBy: { country: '' }
+      filterBy: { country: '' },
+      country: null,
+      startDate: null,
+      endDate: null,
+      adults: null,
+      kids: null,
+      infants: null,
+      pets: null,
     }
   },
   async created() {
-    const { country } = this.$route.query
+    const { country,startDate,endDate,adults,kids,infants,pets } = this.$route.query
     if (country) this.filterBy.country = country
-    // if (guests) this.filterBy.guests = guests
-    this.stays = await stayService.query()
-  },
-  computed: {
-    filteredStays() {
-      const filteredByCountry = this.stays.filter((stay) => {
-        return (
-          stay.loc.country.toLowerCase().includes(this.filterBy.country.toLowerCase())
-        )
-      })
-      const filteredByGuests = filteredByCountry.filter((stay) => {
-        return (
-          stay.capacity >= Number(this.filterBy.guests) || !this.filterBy.guests
-        )
-      })
-      return filteredByGuests
+    this.stays = await stayService.query(this.filterBy)
+    this.startDate =startDate
+    this.endDate = endDate
+    this.adults = adults
+    this.kids = kids
+    this.infants = infants,
+    this.pets = pets
     },
-    title() {
-      if (this.filterBy.country) {
-        return `Stays in ${this.filterBy.country}`
+
+    methods: {
+    getStay({stayId}){
+      this.$router.push(`/stay/${stayId}?startDate=${this.startDate}&endDate=${this.endDate}&adults=${this.adults}&kids=${this.kids}&infants=${this.infants}&pets=${this.pets}`)
+    //   this.$router.push( '/stay/' + stayId ,{  query: { country: this.country , startDate:this.getDates.start , endDate:this.getDates.end,
+    // adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
+    },
+  },
+
+  computed: {
+      // const filteredByGuests = filteredByCountry.filter((stay) => {
+      //   return (
+      //     stay.capacity >= Number(this.filterBy.guests) || !this.filterBy.guests
+      //   )
+      // })
+      // return filteredByGuests
+      title() {
+        if (this.filterBy.country) {
+          return `Stays in ${this.filterBy.country}`
+        }
+        return 'Explore Stays'
       }
-      return 'Explore Stays'
-    }
-  }
-}
+    },
+} 
 </script>
 
 
-<style>
-</style>
