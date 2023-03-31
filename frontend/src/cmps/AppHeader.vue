@@ -93,14 +93,15 @@ import userDetailsModal from './user-details-modal.vue';
 export default {
   // name: "stay-header",
   data() {
-  return {
-  isOpen: false,
-
-  // thisRoute: this.$route.name,
-
-  isDetails: false
-
-  }
+    return {
+      stickyNav: false,
+      openfilter: true,
+      filter: null,
+      modalUser: false,
+      isDetails: false,
+      isOpen: false,
+      modalLoginIsOpen: false
+    };
   }
   ,
 
