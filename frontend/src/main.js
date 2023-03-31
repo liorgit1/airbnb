@@ -15,6 +15,10 @@ import "primevue/resources/primevue.min.css";
 import "primeicons/primeicons.css";
 // Vue.component('Datepicker', VueDatepickerUi)
 
+import SsrCarousel from 'vue-ssr-carousel'
+import ssrCarouselCss from 'vue-ssr-carousel/index.css'
+// Vue.component 'ssr-carousel'
+
 import './assets/styles/main.scss'
 
 import App from './App.vue'
@@ -26,4 +30,5 @@ app.use(ElementPlus)
 app.use(vClickOutside)
 app.use(VCalendar, {})
 app.use(PrimeVue)
+app.use(SsrCarousel)
 app.mount('#app')
