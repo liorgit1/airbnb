@@ -1,7 +1,6 @@
 <template>
   <!-- class="main-layout" -->
   <section >
-    <appHeader @openModalLogin="openModalLogin"/>
     <FilterList />
   <main class="home-page main-layout">
     <stay-list
@@ -36,6 +35,19 @@ export default {
     getStay({stayId}){
       this.$router.push( '/stay/' + stayId)
     },
+    openModalLogin() {
+      this.modalLoginIsOpen = true;
+    },
+    closeLoginModal() {
+      this.modalLoginIsOpen = false;
+    },
+    setLogin(user) {
+      this.$store.dispatch({
+        type: "login",
+        userCred: user,
+      });
+      this.modalLoginIsOpen = false;
+    }
   },
   computed: {
     stays() {

@@ -5,7 +5,7 @@
       <div class="stay-preview-gallery">
         <section>
           <img-carousel
-
+            indicator-position=""
             :imgs="stay.imgUrls"
             class="card-img"
           />
@@ -13,8 +13,6 @@
         <div>
           <span class="icon-heart">
             <svg
-              :class="isLiked"
-              @click.stop="setLiked"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"

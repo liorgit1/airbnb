@@ -13,7 +13,7 @@
     transition: box-shadow 0.2s ease ;
 }
 
-    a , span{
+     .spank{
         color: black;
         font-size: 14px;
         padding: rem(15px) rem(20px);
@@ -23,7 +23,7 @@
         text-shadow: none;
         font-weight: 400;
     }
-    a:hover{
+    .spank:hover{
             color:hsla(0,0%,92.5%,.48627450980392156);;
     }
     
