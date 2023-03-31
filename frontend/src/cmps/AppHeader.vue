@@ -50,7 +50,7 @@
         </button>
         </label>
         <user-details-modal
-          v-if="modalUser"
+          
           @openModalLogin="openModalLogin"
           @closeLoginModal="closeLoginModal"
           @closeModalDetails="closeModalUser"
@@ -59,7 +59,7 @@
   </section>
   </header>
 
-  
+  <!-- v-if="modalUser" -->
 </template>
 
 <script>
@@ -68,10 +68,9 @@ import HeaderFilter from './HeaderFilter.vue'
 import FilterList from './FilterList.vue'
 // import vClickOutsideUmd from 'click-outside-vue3'
 import loginModal from './login-modal.vue'
-import userDeatilsModal from './user-deatils-modal.vue'
+import userDetailsModal from './user-details-modal.vue'
 
 export default {
-  name: "stay-header",
   data() {
   return {
       stickyNav: false,
@@ -86,7 +85,7 @@ export default {
   components: {
    HeaderFilter,
    FilterList,
-   userDeatilsModal,
+   userDetailsModal,
   //  vClickOutsideUmd,
    loginModal
 

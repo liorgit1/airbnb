@@ -4,7 +4,7 @@
       <router-link class="border1" to="/"> Trips</router-link>
 
       <router-link to="/dashboard"> Dashboard</router-link>
-      <router-link to="/trips" class="border1"> Account</router-link>
+      <router-link to="/trip" class="border1"> Account</router-link>
       <span class="spank" @click="doLogout">Logout</span>
       <router-link class="border1" to="/"> About</router-link>
     </section>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { userService } from "../services/user-service.js";
+import { userService } from "../services/user.service.local";
 import { Share } from "@element-plus/icons-vue";
 export default {
   data() {
