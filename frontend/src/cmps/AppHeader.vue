@@ -1,112 +1,117 @@
 <template>
-<!-- v-bind:class="{'stay-details':isDetails}" -->
+  <!-- v-bind:class="{'stay-details':isDetails}" -->
 
   <header>
-    <section class="" :class="{'details-layout':isDetails , 'main-layout':!isDetails}"> 
-    <nav class="flex">
+    <section class="" :class="{ 'details-layout': isDetails, 'main-layout': !isDetails }">
+      <nav class="flex">
 
-      <RouterLink to="/" @click = "isOpen = false && resetParams()"  class="logo">
+        <RouterLink to="/" @click="isOpen = false && resetParams()" class="logo">
 
-      <RouterLink to="/" class="logo" />  
-        <img class="logo-img" src="../assets/pngs/logo1.png">
-        <span class="logo-text">earthbnb</span>
-      </RouterLink>
+          <RouterLink to="/" class="logo" />
+          <img class="logo-img" src="../assets/pngs/logo1.png">
+          <span class="logo-text">earthbnb</span>
+        </RouterLink>
 
-      <div @click = "isOpen=true" v-if="!isOpen" class="search-bar">
-        <button v-if="!isDetails">Anywhere</button>
-        <button v-else>start your search</button>
-        <span v-if="!isDetails" style="opacity: 50%;">|</span> 
-        <span v-else></span>
-        <button v-if="!isDetails">Any week</button>
-        <button v-else></button>
-        <span v-if="!isDetails" style="opacity: 50%;">|</span>
-        <span v-else></span>
-        <button v-if="!isDetails" style="font-weight: normal ; opacity: 80%;">Add guests</button>
-        <button v-else></button>
-        <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;"><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></button>
-      </div>
+        <div @click="isOpen = true" v-if="!isOpen" class="search-bar">
+          <button v-if="!isDetails">Anywhere</button>
+          <button v-else>start your search</button>
+          <span v-if="!isDetails" style="opacity: 50%;">|</span>
+          <span v-else></span>
+          <button v-if="!isDetails">Any week</button>
+          <button v-else></button>
+          <span v-if="!isDetails" style="opacity: 50%;">|</span>
+          <span v-else></span>
+          <button v-if="!isDetails" style="font-weight: normal ; opacity: 80%;">Add guests</button>
+          <button v-else></button>
+          <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+              role="presentation" focusable="false"
+              style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;">
+              <g fill="none">
+                <path
+                  d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+                </path>
+              </g>
+            </svg></button>
+        </div>
 
-      <!--  -->
-      <div  v-else  >
-      <HeaderFilter @close ="isOpen = false" >
-      
-      </HeaderFilter>
-      </div>
+        <!--  -->
+        <div v-else>
+          <HeaderFilter @close="isOpen = false">
 
-      <RouterLink to="/">become a host</RouterLink>
-      
-      
-    
+          </HeaderFilter>
+        </div>
 
-      <label
-          @click="toggleModalUser"
-          class="relative"
-          @closeModalUser="closeModalUser"
-        >
-        <button class="user-nav">
+        <RouterLink to="/">become a host</RouterLink>
 
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; color: grey; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><g fill="none" fill-rule="nonzero"><path d="m2 16h28"></path><path d="m2 24h28"></path><path d="m2 8h28"></path></g></svg>
-        <svg class="user-png" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;  width: 25px; fill: grey;"><path d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"></path></svg>
-        </button>
+
+
+
+        <label @click="this.modalUser = !this.modalUser;" class="relative" @closeModalUser="closeModalUser">
+          <button class="user-nav">
+
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+              focusable="false"
+              style="display: block; color: grey; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+              <g fill="none" fill-rule="nonzero">
+                <path d="m2 16h28"></path>
+                <path d="m2 24h28"></path>
+                <path d="m2 8h28"></path>
+              </g>
+            </svg>
+            <svg class="user-png" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+              role="presentation" focusable="false" style="display: block;  width: 25px; fill: grey;">
+              <path
+                d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+              </path>
+            </svg>
+          </button>
         </label>
-        <user-details-modal
-          v-if="modalUser"
-          @openModalLogin="openModalLogin"
-          @closeLoginModal="closeLoginModal"
-          @closeModalDetails="closeModalUser"
-        />
+        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="closeLoginModal"
+          @closeModalDetails="closeModalUser" />
       </nav>
-  </section>
+      <loginModal v-if="modalLoginIsOpen" />
+    </section>
   </header>
-
-  
 </template>
 
 <script>
+
 
 import HeaderFilter from './HeaderFilter.vue'
 import FilterList from './FilterList.vue'
 // import vClickOutsideUmd from 'click-outside-vue3'
 import loginModal from './login-modal.vue'
-import userDeatilsModal from './user-deatils-modal.vue'
-
+import userDetailsModal from './user-details-modal.vue';
 export default {
-  name: "stay-header",
+  // name: "stay-header",
   data() {
-  return {
+    return {
       stickyNav: false,
       openfilter: true,
       filter: null,
       modalUser: false,
       isDetails: false,
-      isOpen: false
-  };
+      isOpen: false,
+      modalLoginIsOpen: false
+    };
   }
   ,
-  components: {
-   HeaderFilter,
-   FilterList,
-   userDeatilsModal,
-  //  vClickOutsideUmd,
-   loginModal
 
-  },
 
-  created () {
+  created() {
     window.addEventListener('scroll', this.handleScroll);
   },
 
-  unmounted (){
+  unmounted() {
     window.removeEventListener('scroll', this.handleScroll);
   },
 
   methods: {
-    openModalLogin() {
-      this.modalLoginIsOpen = true;
+    toggleModalLogin() {
+      this.modalUser=false
+      this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
-    closeLoginModal() {
-      this.modalLoginIsOpen = false;
-    },
+   
     setLogin(user) {
       this.$store.dispatch({
         type: "login",
@@ -122,67 +127,74 @@ export default {
     },
     toggleModalUser() {
       this.modalUser = !this.modalUser;
+      console.log('!this.modalUser; :>> ', !this.modalUser);
     },
-    openModalLogin() {
-      this.modalUser = false;
-      this.$emit("openModalLogin");
+
+
+    handleRoute() {
+      console.log('thisRoute', this.thisRoute);
+
+      if (this.thisRoute == 'stayIndex')
+        this.isDetails = false
+      if (this.thisRoute == 'stay-details')
+        this.isDetails = true
     },
+
+    handleScroll() {
+      this.isOpen = false
+    },
+
+
+    toggle() {
+      if (this.opened) {
+        return this.hide()
+      }
+      return this.show()
+    },
+    show() {
+      this.opened = true;
+      setTimeout(() => document.addEventListener('click', this.hide), 0);
+    },
+    hide() {
+      this.opened = false;
+      document.removeEventListener('click', this.hide);
+    }
   },
+
   computed: {
-    thisRoute(){
+    thisRoute() {
       return this.$route.name
     },
 
-  resetParams(){
-      this.$router.replace({'query': null});
+    resetParams() {
+      this.$router.replace({ 'query': null });
 
-  },
+    },
     loggedInUser() {
       return this.$store.getters.loggedinUser
-  },
+    },
   },
 
   watch: {
     '$route.name': {
       handler() {
-       this.handleRoute();
+        this.handleRoute();
       },
       deep: true,
       immediate: true,
     },
   },
 
-  methods:{
+  components: {
+    HeaderFilter,
+    FilterList,
+    userDetailsModal,
+    //  vClickOutsideUmd,
+    loginModal
 
-    handleRoute(){
-      console.log('thisRoute',this.thisRoute);
 
-      if(this.thisRoute == 'stayIndex')
-      this.isDetails = false
-      if (this.thisRoute == 'stay-details')
-      this.isDetails = true
-    },
-
-    handleScroll () {
-      this.isOpen = false
-    },
-   
-
-    toggle () {
-            if (this.opened) {
-                return this.hide()
-            }
-            return this.show()
-        },
-        show () {
-            this.opened = true;
-            setTimeout(() => document.addEventListener('click',this.hide), 0);
-        },
-        hide () {
-            this.opened = false;
-            document.removeEventListener('click',this.hide);
-        } 
-  }
+  },
 
 }
+
 </script>
