@@ -6,11 +6,14 @@
         <div class="gc23" style="height: 76px;">
 
             <h1> {{ stay.name }}</h1>
-            <div class="likeAndShare">
-                <img style="padding-block-end: 6px; padding-inline-end: 9px ;width: 22px;"
-                    src="../assets/pngs/star.png"><span style="font-size: 15px;">{{ ` ${totalRate} · ` }}</span>
-                <p class="placeLink fs16"> {{ `${stay.reviews.length} reviews · ` }}</p>
-                <p style="translate: -188%;" class="placeLink fs16">{{ `${stay.loc.city}, ${stay.loc.country} ` }}</p>
+            <div class="likeAndShare space" >
+                <span class="flex" style="margin-inline-end: auto;">
+
+                    <img style="padding-block: 6px; padding-inline-end: 9px ;width: 22px;"
+                        src="../assets/pngs/star.png"><span style="font-size: 15px;">{{ ` ${totalRate} · ` }}</span>
+                    <p class="placeLink fs16"> {{ `${stay.reviews.length} reviews · ` }}</p>
+                    <p class="placeLink fs16">{{ `${stay.loc.city}· ${stay.loc.country} ` }}</p>
+                </span>
                 <span class="fs16">
                     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false"
