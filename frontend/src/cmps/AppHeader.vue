@@ -66,7 +66,7 @@
             </svg>
           </button>
         </label>
-        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="closeLoginModal"
+        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="modalLoginIsOpen = false"
           @closeModalDetails="closeModalUser" />
       </nav>
       <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" />
@@ -85,17 +85,17 @@ import userDetailsModal from './user-details-modal.vue';
 
 export default {
   // name: "stay-header",
-    data() {                                                                      
-      return {
-        stickyNav: false,
-        openfilter: true,
-        filter: null,
-        modalUser: false,
-        isDetails: false,
-        isOpen: false,
-        modalLoginIsOpen: false
-      };
-    }
+  data() {
+    return {
+      stickyNav: false,
+      openfilter: true,
+      filter: null,
+      modalUser: false,
+      isDetails: false,
+      isOpen: false,
+      modalLoginIsOpen: false
+    };
+  }
   ,
 
 
