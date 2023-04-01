@@ -1,5 +1,5 @@
 module.exports = {
   
-  dbURL:  process.env,
+  dbURL:  process.env.DB_KEY,
   dbName: 'stay_db'
 }
