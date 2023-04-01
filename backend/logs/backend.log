@@ -28,3 +28,13 @@
 1.4.2023, 20:16:15 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
 1.4.2023, 20:17:53 - INFO - Hi | 90 | Bobo 
 1.4.2023, 20:17:53 - INFO - Server is running on port: 3030 
+1.4.2023, 20:48:10 - INFO - Hi | 90 | Bobo 
+1.4.2023, 20:48:11 - INFO - Server is running on port: 3030 
+1.4.2023, 20:48:19 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 20:48:19 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 20:48:19 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 20:48:19 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 20:48:19 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 20:48:19 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 21:04:05 - INFO - Hi | 90 | Bobo 
+1.4.2023, 21:04:05 - INFO - Server is running on port: 3030 
