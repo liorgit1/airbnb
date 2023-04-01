@@ -1,7 +1,7 @@
 <template>
   <section>
-    <!-- <AppHeader /> -->
-    <!-- <FilterList/> -->
+    <AppHeader />
+    <FilterList/>
     <RouterView/>
     <UserMsg/>
   </section>
@@ -14,7 +14,7 @@ import { userService } from './services/user-service.js'
 import { store } from './store/store.js'
 import appFooter from './cmps/app-footer.vue'
 // import AppHeader from './cmps/AppHeader.vue'
-// import FilterList from './cmps/FilterList.vue'
+import FilterList from './cmps/FilterList.vue'
 import HeaderFilter from './cmps/HeaderFilter.vue'
 import UserMsg from './cmps/UserMsg.vue'
 

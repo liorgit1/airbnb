@@ -1,7 +1,6 @@
-<template>
-  <app-header @openModalLogin="openModalLogin" />
-  <section >
-    <FilterList />
+  <template>
+    <section>
+   <FilterList />
   <main class="home-page main-layout">
     <stay-list
     @getStay="getStay"  

@@ -46,7 +46,11 @@
 
 
 
-        <label @click="this.modalUser = !this.modalUser;" class="relative" @closeModalUser="closeModalUser">
+        <label
+          @click="toggleModalUser"
+          class="relative"
+          v-close="closeModalUser"
+        >
           <button class="user-nav">
 
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
@@ -66,10 +70,10 @@
             </svg>
           </button>
         </label>
-        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="closeLoginModal"
+        <userDetailsModal v-if="modalUser" @openModalLogin="openModalLogin" @closeLoginModal="closeLoginModal"
           @closeModalDetails="closeModalUser" />
       </nav>
-      <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" />
+      <!-- <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggle" /> -->
     </section>
   </header>
 </template>
@@ -93,22 +97,20 @@ export default {
         modalUser: false,
         isDetails: false,
         isOpen: false,
-        modalLoginIsOpen: false
+        // modalLoginIsOpen: false
       };
     }
   ,
 
 
   created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-
-  unmounted() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
+    this.filter = this.$store.getters.filterBy;
+    socketService.on("order-status-change", this.showNotification);
   },
 
   methods: {
-    toggleModalLogin() {
+    toggle() {
       this.modalUser = false
       this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
@@ -159,11 +161,9 @@ export default {
     hide() {
       this.opened = false;
       document.removeEventListener('click', this.hide);
-    }
-  },
-
-  computed: {
-    thisRoute() {
+    },
+  
+  thisRoute() {
       return this.$route.name
     },
 
@@ -174,6 +174,11 @@ export default {
     loggedInUser() {
       return this.$store.getters.loggedinUser
     },
+    openModalLogin() {
+      this.modalUser = false;
+      this.$emit("openModalLogin");
+    },
+   
   },
 
   watch: {
