@@ -1,6 +1,6 @@
 //  import { storageService } from "./async-storage-service.js";
 import { stayService } from "./stay-service.js";
-// import { orderService } from "./order-service.js";
+import { orderService } from "./order-service.js";
 import { httpService } from "./http.service.js";
 import { utilService } from "./util-service.js";
 import { socketService } from "./socket.service.js";
@@ -12,7 +12,7 @@ export const userService = {
   getLoggedinUser,
   saveUser,
   getUserStays,
-  // getUserOrder,
+  getUserOrder,
   getUserLikedStays,
   login,
   signup,
@@ -39,15 +39,16 @@ async function getUserLikedStays(likedStays) {
     })
   );
 }
-// async function getUserOrder(entityId) {
-//   let userOrders = []
-//   const orders = await orderService.query();
-//   try {
-//     userOrders = orders.filter(order => order.hostId === entityId)
-//     return userOrders;
-//   } catch {
-//     console.error("cannot get user order");
-//   }
+async function getUserOrder(entityId) {
+  let userOrders = []
+  const orders = await orderService.query();
+  try {
+    userOrders = orders.filter(order => order.hostId === entityId)
+    return userOrders;
+  } catch {
+    console.error("cannot get user order");
+  }
+}
 //   async function getUserOrder() {
 //     const orders = await orderService.query();
 //     try {
