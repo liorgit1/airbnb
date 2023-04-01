@@ -5,8 +5,8 @@ import stayDetails from '../src/views/StayDetails.vue'
 import stayIndex from '../src/views/StayIndex.vue'
 import confirmation from './views/confirmation.vue'
 import userTrip from '../src/views/UserTrip.vue'
-// import userWishList from '../src/views/WishList.vue'
-// import userDashboard  from '../src/views/User-Dashboard.vue'
+import userWishList from '../src/views/WishList.vue'
+import userDashboard  from '../src/views/User-Dashboard.vue'
 
 
 
@@ -41,6 +41,16 @@ const routes = [
     name: 'user-trip',
     component: userTrip
   },
+  {
+    path: '/wishlist',
+    name: 'userWishList',
+    component: userWishList
+  },
+  {
+    path: '/login',
+    name: 'user-dashboard',
+    component: userDashboard,
+},
 ];
 
 

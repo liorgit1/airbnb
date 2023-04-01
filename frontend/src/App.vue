@@ -1,6 +1,6 @@
 <template>
   <section>
-    <AppHeader />
+    <!-- <AppHeader /> -->
     <!-- <FilterList/> -->
     <RouterView/>
     <UserMsg/>
@@ -12,15 +12,18 @@
 
 import { userService } from './services/user-service.js'
 import { store } from './store/store.js'
-
-import AppHeader from './cmps/AppHeader.vue'
+import appFooter from './cmps/app-footer.vue'
+// import AppHeader from './cmps/AppHeader.vue'
 // import FilterList from './cmps/FilterList.vue'
 import HeaderFilter from './cmps/HeaderFilter.vue'
 import UserMsg from './cmps/UserMsg.vue'
 
 
 export default {
-
+  name: "app",
+  components: {
+    appFooter,
+  },
   created() {
     this.$store.dispatch({ type: "loadStays" });
     console.log('Vue App created')
@@ -28,7 +31,7 @@ export default {
     if (user)  store.commit({type: 'setLoggedinUser', user})
   },
   components: {
-    AppHeader,
+    // AppHeader,
     HeaderFilter,
     // FilterList,
     UserMsg

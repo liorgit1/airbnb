@@ -13,7 +13,7 @@
         </RouterLink>
 
         <div @click="isOpen = true" v-if="!isOpen" class="search-bar">
-          <button v-if="!isDetails">Anywhere</button>
+          <button style="padding-left: 10px;" v-if="!isDetails">Anywhere</button>
           <button v-else>start your search</button>
           <span v-if="!isDetails" style="opacity: 50%;">|</span>
           <span v-else></span>
@@ -85,17 +85,17 @@ import userDetailsModal from './user-details-modal.vue';
 
 export default {
   // name: "stay-header",
-  data() {
-    return {
-      stickyNav: false,
-      openfilter: true,
-      filter: null,
-      modalUser: false,
-      isDetails: false,
-      isOpen: false,
-      modalLoginIsOpen: false
-    };
-  }
+    data() {                                                                      
+      return {
+        stickyNav: false,
+        openfilter: true,
+        filter: null,
+        modalUser: false,
+        isDetails: false,
+        isOpen: false,
+        modalLoginIsOpen: false
+      };
+    }
   ,
 
 

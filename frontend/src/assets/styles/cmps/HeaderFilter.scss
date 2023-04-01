@@ -114,6 +114,7 @@
 }
 .bar{
     // width:650px;
+    padding:1px;
     background:white;
     box-shadow:0 0 5px hsl(0 0% 78%);
     // height:70px;
@@ -139,7 +140,7 @@
     border-radius:100vw;
     padding:0.8rem 1.5rem;
     transition:background 250ms ease;
-    margin-left: 3px;
+    // margin-left: 3px;
   }
   
   .bar-div:hover{

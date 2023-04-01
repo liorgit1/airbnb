@@ -11,5 +11,9 @@ export default defineConfig({
   }),
   Components({
     resolvers: [ElementPlusResolver()],
-  }),'import-analysis: { disabled: false   }']
+  }),'import-analysis: { disabled: false   }'],
+  build:{
+    outDir:'../backend',
+    emptyOutDir:true
+  }
 })

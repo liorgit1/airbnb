@@ -149,6 +149,7 @@ export default {
     },
     onClickedOutside() {
       this.openDatesModal = false
+      this.$emit('close')
     }
 
   },
