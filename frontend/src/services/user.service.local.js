@@ -23,7 +23,7 @@ export const userService = {
 function getLoggedinUser() {
   var user = JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER) || null)
   if (!user) {
-    user = { _id: 'u101', fullname: 'Baba Ji', balance: 1000, reservations: [] }
+   
     _saveUserToStorage(user)
   }
   return user

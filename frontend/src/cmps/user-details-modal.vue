@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { userService } from "../services/user.service.local";
+import { userService } from "../services/user-service";
 import { Share } from "@element-plus/icons-vue";
 export default {
   data() {

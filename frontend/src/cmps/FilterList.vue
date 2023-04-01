@@ -100,7 +100,7 @@ export default{
         },
         {
             key: 'Beachfront',
-            url: 'https://a0.muscache.com/pictures/31c1d523-cc46-45b3-957a-da76c30c85f9.jpg',
+            url: 'https://res.cloudinary.com/dgzyxjapv/image/upload/v1669918322/stayby/labels/Beachfront.png',
             keyClicked:false
         },
         {

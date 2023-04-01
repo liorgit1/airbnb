@@ -4,7 +4,7 @@
 // var localLoggedinUser = null
 // if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user || null)
 
-import { userService } from "../services/user.service.local";
+import { userService } from "../services/user-service";
 import { stayService } from "../services/stay.service.local";
 
 
