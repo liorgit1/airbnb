@@ -18,11 +18,11 @@ data() { return{
     locations:[{city:'PRT',
                 country:'Portugal'},
 
-                {city:'ISR',
-                country:'Israel'},
+                {city:'CND',
+                country:'Canada'},
 
-                {city:'POL',
-                country:'Poland'},
+                {city:'USA',
+                country:'United States'},
 
                 {city:'ESP',
                 country:'Spain'},

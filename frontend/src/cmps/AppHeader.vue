@@ -13,14 +13,21 @@
         </RouterLink>
 
         <div @click="isOpen = true" v-if="!isOpen" class="search-bar">
+
           <button v-if="!isDetails">Anywhere</button>
+        <!-- <button v-if="isExplore">{{this.country}}</button> -->
           <button v-else>start your search</button>
+
           <span v-if="!isDetails" style="opacity: 50%;">|</span>
           <span v-else></span>
+
           <button v-if="!isDetails">Any week</button>
-          <button v-else></button>
+        <!-- <button v-if="isExplore">{{this.getDates.start}},{{ this.getDates.end }}</button> -->
+          <button v-else="isDetails"></button>
+
           <span v-if="!isDetails" style="opacity: 50%;">|</span>
           <span v-else></span>
+
           <button v-if="!isDetails" style="font-weight: normal ; opacity: 80%;">Add guests</button>
           <button v-else></button>
           <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -34,12 +41,12 @@
             </svg></button>
         </div>
 
-        <!--  -->
-        <div v-else>
-          <HeaderFilter @close="isOpen = false">
-
-          </HeaderFilter>
-        </div>
+      <!--  -->
+      <div  v-else  >
+      <HeaderFilter @close ="isOpen = false" >
+      
+      </HeaderFilter>
+      </div>
 
         <RouterLink to="/">become a host</RouterLink>
 
@@ -178,13 +185,21 @@ export default {
   //   },
   // },
 
-  components: {
-    HeaderFilter,
-    FilterList,
-    userDetailsModal,
-    //  vClickOutsideUmd,
-    loginModal
+  methods:{
 
+    handleRoute(){
+      console.log('thisRoute',this.thisRoute);
+
+      if(this.thisRoute == 'stayIndex')
+      this.isDetails = false
+      if (this.thisRoute == 'stay-details')
+      this.isDetails = true
+    },
+
+    handleScroll () {
+      this.isOpen = false
+    },
+   
 
   },
   computed: {
