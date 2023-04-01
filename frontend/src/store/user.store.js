@@ -4,9 +4,13 @@
 // var localLoggedinUser = null
 // if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user || null)
 
-import { userService } from "../services/user-service";
-import { stayService } from "../services/stay.service.local";
-
+import { userService } from "../services/user-service.js";
+// import stayService from "../services/stay-service.js";
+import {
+  socketService,
+  SOCKET_EMIT_USER_WATCH,
+  SOCKET_EVENT_USER_UPDATED,
+} from "../services/socket.service.js";
 
 
 var localLoggedinUser = null;
@@ -119,11 +123,36 @@ export default {
         const stays = await userService.getUserLikedStays(likedStays);
         stays.forEach((stay) => (stay.isLiked = true));
         return stays;
-        commit({ type: 'setReservationUser', reservations })
+        commit({ type: 'setOrderUser', order })
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;
       }
-    }
+    },
+      async saveUser(context, payload) {
+      try {
+          await userService
+            .saveUser(payload.user);
+          context.commit(payload);
+        } catch (err) {
+          console.error("Cannot change user", err);
+          throw err;
+        }
+    },
+
+      async loadAndWatchUser({ commit }, { userId }) {
+        try {
+            const user = await userService.getById(userId);
+            commit({ type: 'setWatchedUser', user })
+            socketService.emit(SOCKET_EMIT_USER_WATCH, userId)
+            socketService.off(SOCKET_EVENT_USER_UPDATED)
+            socketService.on(SOCKET_EVENT_USER_UPDATED, user => {
+                commit({ type: 'setWatchedUser', user })
+            })
+        } catch (err) {
+            console.log('userStore: Error in loadAndWatchUser', err)
+            throw err
+        }
+    },
 }
 }

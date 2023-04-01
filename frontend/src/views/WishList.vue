@@ -3,6 +3,7 @@
       <h1>Wish list</h1>
   
       <stay-list
+        @getStay="getStay" 
         :stays="stays"
         v-if="stays"
         @stayLiked="setLiked"

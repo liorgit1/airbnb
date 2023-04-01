@@ -48,16 +48,17 @@ async function getUserOrder(entityId) {
   } catch {
     console.error("cannot get user order");
   }
-  // async function getUserOrder() {
-  //   const orders = await orderService.query();
-  //   try {
-  //     orders =  stays.filter(stay => stay.host.id === entityId )
-  //     const orders = await orderService.getById();
-  //     return orders;
-  //   } catch {
-  //     console.error("cannot get user order");
-  //   }
 }
+//   async function getUserOrder() {
+//     const orders = await orderService.query();
+//     try {
+//       orders =  stays.filter(stay => stay.host.id === entityId )
+//       const orders = await orderService.getById();
+//       return orders;
+//     } catch {
+//       console.error("cannot get user order");
+//     }
+// }
 // async function getUserOrdar(entityId){
 //     const orders =[]
 //        await orderService.query().then((entities) =>
@@ -108,7 +109,7 @@ async function logout() {
 async function signup(userDetails) {
   try {
     return await httpService.post(`${ENDPOINT}/signup`, userDetails);
-    // return signUser.data
+    return signUser.data
   } catch {
     console.log("cant login");
   }

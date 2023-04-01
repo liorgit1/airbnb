@@ -1,17 +1,17 @@
 <template>
     <section v-if="userLogged" class="user-modal flex-col">
       <router-link class="spank" to="/wishList"> Wish List</router-link>
-      <router-link class="border1" to="/"> Trips</router-link>
+      <router-link class="border1" to="/trip"> Trips</router-link>
 
       <router-link to="/dashboard"> Dashboard</router-link>
-      <router-link to="/trip" class="border1"> Account</router-link>
+      <router-link to="/" class="border1"> Account</router-link>
       <span class="spank" @click="doLogout">Logout</span>
       <router-link class="border1" to="/"> About</router-link>
     </section>
 
-    <section v-else class="user-modal flex-col">
+    <section v-else class="before-login-modal flex-col">
       <router-link to="/"> Messages</router-link>
-      <span class="spank" @click="openModalLogin"> Login</span>
+      <span class="border1" @click="openModalLogin"> Login</span>
       <span class="spank"> Logout</span>
     </section>
 </template>

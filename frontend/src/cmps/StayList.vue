@@ -27,17 +27,9 @@ export default {
       console.log(stayId);
       this.$emit('getStay',{stayId})
     },
-    // goToStay(stay) {
-    //   this.filterBy.country = stay;
-    //   this.$store.dispatch({
-    //     type: "setFilter",
-    //     filterBy: JSON.parse(JSON.stringify(this.filterBy)),
-    //   });
-    //   this.$router.push(`/stay`);
-    //   window.scrollTo(0, 0);
-    // },
-    setliked(stay) {
-      this.$emit("stayLiked", stay)
+   
+    setliked(stayId) {
+      this.$emit("stayLiked", {stayId})
     }
   },
 };

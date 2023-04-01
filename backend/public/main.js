@@ -13,7 +13,7 @@ window.onAddCarMsg = onAddCarMsg
 
 async function onLoadCars() {
     const stays = await stayService.query()
-    render('Cars', stays)
+    render('Stays', stays)
 }
 async function onLoadUsers() {
     const users = await userService.query()

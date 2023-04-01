@@ -1,4 +1,7 @@
 <template>
+  <section class="upper-section-header-explore main-header fix">
+    <app-header @openModalLogin="openModalLogin" />
+  </section>
   <section class="main-layout">
     <h4 v-if="stays">over {{ stays.length - 1 }} homes</h4>
     <stay-list

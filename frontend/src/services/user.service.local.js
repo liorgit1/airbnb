@@ -1,43 +1,43 @@
-import { storageService } from './async-storage.service.js'
+// import { storageService } from './async-storage.service.js'
 import { utilService } from './util-service.js'
 
 const USER_KEY = 'userDB'
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
-
-export const userService = {
+_createUsers()
+export const userLocalService = {
   getLoggedinUser,
   login,
   logout,
   signup,
   get,
   _saveUserToStorage,
-  getUserLikedStays,
-  getUserStays,
-  getUserReservation,
-  updateBalance,
-  changeReservationStatus,
+  // getUserLikedStays,
+  // getUserStays,
+  // getUserReservation,
+  // updateBalance,
+  // changeReservationStatus,
 }
 
 
 function getLoggedinUser() {
   var user = JSON.parse(sessionStorage.getItem(STORAGE_KEY_LOGGEDIN_USER) || null)
-  if (!user) {
-   
+  if (user) {
     _saveUserToStorage(user)
   }
   return user
 }
 
 
-function login(credentials) {
+function login(userCred) {
   return storageService.query(USER_KEY)
     .then(users => {
-      const user = users.find(u => u.username === credentials.username)
+      const user = users.find(u => u.username === userCred.username)
       if (user) {
         return _saveUserToStorage(user)
       } else {
-        return Promise.reject('Invalid credentials')
+        // return Promise.reject('Invalid userCred')
+        return signup(userCred)
       }
     })
 }
@@ -47,12 +47,12 @@ function logout() {
   return Promise.resolve()
 }
 
-function signup(credentials) {
+function signup(userCred) {
   return storageService.query(USER_KEY)
     .then(users => {
-      const user = users.find(u => u.username === credentials.username)
+      const user = users.find(u => u.username === userCred.username)
       if (user) return Promise.reject('Username already taken')
-      return storageService.post(USER_KEY, { ...credentials, balance: 10000, reservations: [] })
+      return storageService.post(USER_KEY, { ...userCred, balance: 10000, reservations: [] })
         .then(user => {
           return _saveUserToStorage(user)
         })
@@ -61,6 +61,66 @@ function signup(credentials) {
 
 function get(userId) {
   return storageService.get(USER_KEY, userId)
+}
+
+function _saveUserToStorage(user) {
+  sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
+  return user
+}
+
+function _createUsers() {
+  let users = utilService.loadFromStorage(USER_KEY)
+  if (!users || !users.length) {
+      users = [ {
+        
+        "UserName": "lolo9",
+        "password": "123",
+        "fullname": "Baby no",
+        "balance": "3232",
+        "reservations": []
+      },
+      {
+        
+        "UserName": "lolo8",
+        "password": "2221",
+        "fullname": "hohoho mo",
+        "balance": "4567",
+        "reservations": []
+      },
+      {
+        
+        "UserName": "lolo1",
+        "password": "223",
+        "fullname": "alex bar",
+        "balance": "1459",
+        "reservations": []
+      },
+      {
+        
+        "UserName": "lolo12",
+        "password": "553",
+        "fullname": "dan ann",
+        "balance": "1300",
+        "reservations": []
+      },
+      {
+        
+        "UserName": "lolo21",
+        "password": "666",
+        "fullname": "lin tavlin",
+        "balance": "9900",
+        "reservations": []
+      },
+      {
+        
+        "UserName": "lolo32",
+        "password": "777",
+        "fullname": "killer diller",
+        "balance": "800",
+        "reservations": []
+      }]
+      utilService.saveToStorage(USER_KEY, users)
+  }
 }
 
 
@@ -113,11 +173,7 @@ function updateBalance(amount) {
     _saveUserToStorage(savedUser)
     return savedUser.balance
   })
-}
 
-function _saveUserToStorage(user) {
-  sessionStorage.setItem(STORAGE_KEY_LOGGEDIN_USER, JSON.stringify(user))
-  return user
 }
 
 function addReservation(cart, total) {
@@ -138,3 +194,6 @@ function addReservation(cart, total) {
     return savedUser
   })
 }
+
+
+ 
