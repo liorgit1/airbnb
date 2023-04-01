@@ -1,2 +1,18 @@
 1.4.2023, 19:23:08 - INFO - Hi | 90 | Bobo 
 1.4.2023, 19:23:08 - INFO - Server is running on port: 3030 
+1.4.2023, 19:27:58 - INFO - Req was made 
+1.4.2023, 19:27:58 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:28:01 - INFO - Req was made 
+1.4.2023, 19:28:01 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:28:32 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:28:32 - INFO - Server is running on port: 3030 
+1.4.2023, 19:29:18 - INFO - Req was made 
+1.4.2023, 19:29:18 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:29:22 - INFO - Req was made 
+1.4.2023, 19:29:22 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:49:07 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:49:07 - INFO - Server is running on port: 3030 
+1.4.2023, 19:53:17 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:53:17 - INFO - Server is running on port: 3030 
+1.4.2023, 19:56:18 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:56:18 - INFO - Server is running on port: 3030 
