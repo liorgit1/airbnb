@@ -1,11 +1,11 @@
-import { storageService } from './async-storage.service.js'
+// import { storageService } from './async-storage.service.js'
 import { utilService } from './util-service.js'
 
 const USER_KEY = 'userDB'
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
 
 _createUsers()
-export const userService = {
+export const userLocalService = {
   getLoggedinUser,
   login,
   logout,

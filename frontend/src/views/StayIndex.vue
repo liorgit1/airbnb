@@ -1,11 +1,13 @@
 <template>
-  <!-- class="main-layout" -->
+  <app-header @openModalLogin="openModalLogin" />
   <section >
     <FilterList />
   <main class="home-page main-layout">
     <stay-list
     @getStay="getStay"  
     :stays="stays" 
+    v-if="stays"
+      @stayLiked="setLiked"
     />
   </main>
   <login-modal
@@ -30,6 +32,7 @@ export default {
   data() {
     return {
       modalLoginIsOpen: false,
+      stayLiked: false,
     };
   },
 
@@ -52,6 +55,12 @@ export default {
         userCred: user,
       });
       this.modalLoginIsOpen = false;
+    },
+    setLiked(stay) {
+      this.$store.dispatch({
+        type: "setLikedStay",
+        stayId: JSON.parse(JSON.stringify(stay)),
+      });
     }
   },
   computed: {

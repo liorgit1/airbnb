@@ -1,9 +1,9 @@
-// import { storageService } from "./async-storage-service.js";
-// import { stayService } from "./stay-service.js";
+//  import { storageService } from "./async-storage-service.js";
+import { stayService } from "./stay-service.js";
 // import { orderService } from "./order-service.js";
-// import { httpService } from "./http.service.js";
-// import { utilService } from "./util-service.js";
-// import { socketService } from "./socket.service.js";
+import { httpService } from "./http.service.js";
+import { utilService } from "./util-service.js";
+import { socketService } from "./socket.service.js";
 
 const STORAGE_KEY = "userDB";
 const ENDPOINT = "auth";
@@ -12,7 +12,7 @@ export const userService = {
   getLoggedinUser,
   saveUser,
   getUserStays,
-  getUserOrder,
+  // getUserOrder,
   getUserLikedStays,
   login,
   signup,
@@ -39,25 +39,25 @@ async function getUserLikedStays(likedStays) {
     })
   );
 }
-async function getUserOrder(entityId) {
-  let userOrders = []
-  const orders = await orderService.query();
-  try {
-    userOrders = orders.filter(order => order.hostId === entityId)
-    return userOrders;
-  } catch {
-    console.error("cannot get user order");
-  }
-  // async function getUserOrder() {
-  //   const orders = await orderService.query();
-  //   try {
-  //     orders =  stays.filter(stay => stay.host.id === entityId )
-  //     const orders = await orderService.getById();
-  //     return orders;
-  //   } catch {
-  //     console.error("cannot get user order");
-  //   }
-}
+// async function getUserOrder(entityId) {
+//   let userOrders = []
+//   const orders = await orderService.query();
+//   try {
+//     userOrders = orders.filter(order => order.hostId === entityId)
+//     return userOrders;
+//   } catch {
+//     console.error("cannot get user order");
+//   }
+//   async function getUserOrder() {
+//     const orders = await orderService.query();
+//     try {
+//       orders =  stays.filter(stay => stay.host.id === entityId )
+//       const orders = await orderService.getById();
+//       return orders;
+//     } catch {
+//       console.error("cannot get user order");
+//     }
+// }
 // async function getUserOrdar(entityId){
 //     const orders =[]
 //        await orderService.query().then((entities) =>
@@ -108,7 +108,7 @@ async function logout() {
 async function signup(userDetails) {
   try {
     return await httpService.post(`${ENDPOINT}/signup`, userDetails);
-    // return signUser.data
+    return signUser.data
   } catch {
     console.log("cant login");
   }

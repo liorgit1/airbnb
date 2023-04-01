@@ -46,7 +46,11 @@
 
 
 
-        <label @click="this.modalUser = !this.modalUser;" class="relative" @closeModalUser="closeModalUser">
+        <label
+          @click="toggleModalUser"
+          class="relative"
+          v-close="closeModalUser"
+        >
           <button class="user-nav">
 
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
@@ -66,10 +70,15 @@
             </svg>
           </button>
         </label>
-        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="closeLoginModal"
-          @closeModalDetails="closeModalUser" />
+        <user-details-modal
+          v-close="closeModalUser"
+          v-if="modalUser"
+          @openModalLogin="openModalLogin"
+          @closeLoginModal="closeLoginModal"
+          @closeModalDetails="closeModalUser"
+        />
       </nav>
-      <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" />
+      <!-- <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggle" /> -->
     </section>
   </header>
 </template>
@@ -79,7 +88,7 @@
 
 import HeaderFilter from './HeaderFilter.vue'
 import FilterList from './FilterList.vue'
-// import vClickOutsideUmd from 'click-outside-vue3'
+import vClickOutsideUmd from 'click-outside-vue3'
 import loginModal from './login-modal.vue'
 import userDetailsModal from './user-details-modal.vue';
 
@@ -93,7 +102,7 @@ export default {
       modalUser: false,
       isDetails: false,
       isOpen: false,
-      modalLoginIsOpen: false
+      // modalLoginIsOpen: false
     };
   }
   ,
@@ -108,17 +117,24 @@ export default {
   },
 
   methods: {
-    toggleModalLogin() {
-      this.modalUser = false
-      this.modalLoginIsOpen = !this.modalLoginIsOpen
+    showNotification() {
+      this.isApprove = true;
     },
-
-    setLogin(user) {
-      this.$store.dispatch({
-        type: "login",
-        userCred: user,
-      });
-      this.modalLoginIsOpen = false;
+    handleScroll(event) {
+      if (window.top.scrollY > 20) {
+        this.stickyNav = true;
+        this.openfilter = false;
+      } else {
+        this.stickyNav = false;
+        this.openfilter = true;
+      }
+    },
+    toggle() {
+      this.openfilter = !this.openfilter;
+      this.mobileFilter = !this.mobileFilter;
+    },
+    setMiniFilter(filterBy) {
+      this.filter = filterBy;
     },
     openModalUser() {
       this.modalUser = true;
@@ -128,41 +144,19 @@ export default {
     },
     toggleModalUser() {
       this.modalUser = !this.modalUser;
-      console.log('!this.modalUser; :>> ', !this.modalUser);
     },
-
-
-    handleRoute() {
-      console.log('thisRoute', this.thisRoute);
-
-      if (this.thisRoute == 'stayIndex')
-        this.isDetails = false
-      if (this.thisRoute == 'stay-details')
-        this.isDetails = true
+    openModalLogin() {
+      this.modalUser = false;
+      this.$emit("openModalLogin");
     },
-
-    handleScroll() {
-      this.isOpen = false
+    setFilter() {
+      this.$store.dispatch({
+        type: "setFilter",
+        filterBy: JSON.parse(JSON.stringify(this.filter)),
+      });
+      this.mobileFilter = false;
+      this.$router.push(`/stay`);
     },
-
-
-    toggle() {
-      if (this.opened) {
-        return this.hide()
-      }
-      return this.show()
-    },
-    show() {
-      this.opened = true;
-      setTimeout(() => document.addEventListener('click', this.hide), 0);
-    },
-    hide() {
-      this.opened = false;
-      document.removeEventListener('click', this.hide);
-    }
-  },
-
-  computed: {
     thisRoute() {
       return this.$route.name
     },
@@ -171,20 +165,18 @@ export default {
       this.$router.replace({ 'query': null });
 
     },
-    loggedInUser() {
-      return this.$store.getters.loggedinUser
-    },
   },
 
-  watch: {
-    '$route.name': {
-      handler() {
-        this.handleRoute();
-      },
-      deep: true,
-      immediate: true,
-    },
-  },
+    
+  // watch: {
+  //   '$route.name': {
+  //     handler() {
+  //       this.handleRoute();
+  //     },
+  //     deep: true,
+  //     immediate: true,
+  //   },
+  // },
 
   components: {
     HeaderFilter,
@@ -195,7 +187,22 @@ export default {
 
 
   },
+  computed: {
+      getLogo() {
+        return this.stickyNav
+          ? "https://a0.muscache.com/im/pictures/user/613cd4c0-cf5f-407e-9f13-ec7cbcc592d6.jpg?im_w=240"
+          : "https://a0.muscache.com/im/pictures/user/bc2a266c-3ed1-4e9f-886f-9c47b2fd95b4.jpg?im_w=240";
+      },
+      getFilter() {
+        return this.filter.country ? `${this.filter.country}` : "Start to search";
+      },
+    },
+    unmounted() {
+      window.removeEventListener("scroll", this.handleScroll);
+    },
+  };
 
-}
+
+
 
 </script>

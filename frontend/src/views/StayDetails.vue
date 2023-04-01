@@ -1,4 +1,7 @@
 <template>
+    <section >
+        <app-header @openModalLogin="openModalLogin" />
+  </section>
     <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
 
 
@@ -61,7 +64,7 @@
 <script>
 // import { stayService } from '../services/stay.service.local'
 import GuestsModal from '../cmps/GuestsModal.vue'
-import Reservation from '../cmps/reservation.vue'
+import Reservation from '../cmps/Reservation.vue'
 import StayInfo from './StayInfo.vue'
 import StayAmenities from '../cmps/StayAmenities.vue'
 import StayReviews from '../cmps/StayReviews.vue'

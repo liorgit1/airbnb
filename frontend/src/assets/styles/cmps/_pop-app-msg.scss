@@ -1,0 +1,18 @@
+.el-notification.right {
+  background-color: rgb(254, 254, 254);
+
+  .el-icon {
+    display: block !important;
+  }
+}
+
+.el-notification.left {
+  border: 4px solid #e41d56;
+
+  .el-notification__content {
+    border-top: 0.2px solid #e41d56;
+  }
+  .el-icon {
+    display: block !important;
+  }
+}

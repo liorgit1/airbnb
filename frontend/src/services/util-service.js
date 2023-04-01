@@ -1,63 +1,114 @@
 export const utilService = {
     makeId,
-    makeLorem,
-    getRandomIntInclusive,
     debounce,
-    randomPastTime,
+    getRandomInt,
+    getRandomColor,
+    getLoremIpsum,
+    loadFromStorage,
     saveToStorage,
-    loadFromStorage
-}
-
-function makeId(length = 6) {
+    loadFromSessionStorage,
+    saveToSessionStorage,
+    removeFromSessionStorage
+  }
+  
+  function makeId(length = 5) {
     var txt = ''
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-
-    for (var i = 0; i < length; i++) {
-        txt += possible.charAt(Math.floor(Math.random() * possible.length))
-    }
-
-    return txt
-}
-
-function makeLorem(size = 100) {
-    var words = ['The sky', 'above', 'the port', 'was', 'the color of television', 'tuned', 'to', 'a dead channel', '.', 'All', 'this happened', 'more or less', '.', 'I', 'had', 'the story', 'bit by bit', 'from various people', 'and', 'as generally', 'happens', 'in such cases', 'each time', 'it', 'was', 'a different story', '.', 'It', 'was', 'a pleasure', 'to', 'burn']
-    var txt = ''
-    while (size > 0) {
-        size--
-        txt += words[Math.floor(Math.random() * words.length)] + ' '
+    for (let i = 0; i < length; i++) {
+      txt += possible.charAt(Math.floor(Math.random() * possible.length))
     }
     return txt
-}
-
-function getRandomIntInclusive(min, max) {
+  }
+  
+  function getRandomInt(min, max) {
     min = Math.ceil(min)
     max = Math.floor(max)
-    return Math.floor(Math.random() * (max - min + 1)) + min //The maximum is inclusive and the minimum is inclusive 
-}
-
-
-function randomPastTime() {
-    const HOUR = 1000 * 60 * 60
-    const DAY = 1000 * 60 * 60 * 24
-    const WEEK = 1000 * 60 * 60 * 24 * 7
-
-    const pastTime = getRandomIntInclusive(HOUR, WEEK)
-    return Date.now() - pastTime
-}
-
-function debounce(func, timeout = 300){
-    let timer
-    return (...args) => {
-      clearTimeout(timer)
-      timer = setTimeout(() => { func.apply(this, args) }, timeout)
+    return Math.floor(Math.random() * (max - min + 1)) + min //The maximum is inclusive and the minimum is inclusive
+  }
+  
+  function getLoremIpsum(length = 5) {
+    const words = [
+      'The sky',
+      'above',
+      'the port',
+      'was',
+      'the color of television',
+      'tuned',
+      'to',
+      'a dead channel',
+      '.',
+      'All',
+      'this happened',
+      'more or less',
+      '.',
+      'I',
+      'had',
+      'the story',
+      'bit by bit',
+      'from various people',
+      'and',
+      'as generally',
+      'happens',
+      'in such cases',
+      'each time',
+      'it',
+      'was',
+      'a different story',
+      '.',
+      'It',
+      'was',
+      'a pleasure',
+      'to',
+      'burn',
+    ]
+    let sentence = ''
+    while (length > 0) {
+      sentence += words[getRandomInt(0, words.length - 1)] + ' '
+      length--
     }
-}
-
-function saveToStorage(key, value) {
-    localStorage.setItem(key, JSON.stringify(value))
-}
-
-function loadFromStorage(key) {
-    const data = localStorage.getItem(key)
-    return (data) ? JSON.parse(data) : undefined
-}
+    return sentence.trim()
+  }
+  
+  function getRandomColor() {
+    var color = '#'
+    for (var i = 0; i < 6; i++) {
+      color += Math.floor(Math.random() * 10)
+    }
+    return color
+  }
+  
+  function debounce(func, wait) {
+    let timeout
+  
+    return function executedFunction(...args) {
+      //rest-makes the args to an array
+      const later = () => {
+        clearTimeout(timeout)
+        func(...args) //spread-from array to vars
+      }
+  
+      clearTimeout(timeout)
+      timeout = setTimeout(later, wait)
+    }
+  }
+  
+  function loadFromStorage(key) {
+    var val = localStorage.getItem(key)
+    return val ? JSON.parse(val) : null
+  }
+  
+  function saveToStorage(key, val) {
+    localStorage[key] = JSON.stringify(val)
+  }
+  
+  function loadFromSessionStorage(key) {
+    var val = sessionStorage.getItem(key)
+    return val ? JSON.parse(val) : null
+  }
+  
+  function saveToSessionStorage(key, val) {
+    sessionStorage[key] = JSON.stringify(val)
+  }
+  function removeFromSessionStorage(key) {
+    sessionStorage.removeItem(key);
+  }
