@@ -1,4 +1,4 @@
-// import { storageService } from './async-storage.service.js'
+import { storageService } from './async-storage.service.js'
 import { httpService } from './http.service.js'
 
 const STORAGE_KEY_LOGGEDIN_USER = 'loggedinUser'
