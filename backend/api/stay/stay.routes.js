@@ -1,8 +1,9 @@
 const express = require('express')
 const { requireAuth, requireAdmin } = require('../../middlewares/requireAuth.middleware')
 const { log } = require('../../middlewares/logger.middleware')
-const { getStays, getStayById, addStay, updateStay, removeStay, addStayMsg, removeStayMsg } = require('./Stay.controller.js')
+const { getStays, getStayById, addStay, updateStay } = require('./stay.controller.js')
 const router = express.Router()
+// , removeStay, addStayMsg, removeStayMsg
 
 // middleware that is specific to this router
 // router.use(requireAuth)
