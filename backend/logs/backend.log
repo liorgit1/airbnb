@@ -1865,3 +1865,21 @@
 2.4.2023, 18:02:48 - INFO - Server is running on port: 3030 
 2.4.2023, 18:46:14 - INFO - Hi | 90 | Bobo 
 2.4.2023, 18:46:14 - INFO - Server is running on port: 3030 
+2.4.2023, 19:01:09 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:01:09 - INFO - Server is running on port: 3030 
+2.4.2023, 19:19:04 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:19:05 - INFO - Server is running on port: 3030 
+2.4.2023, 19:19:57 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:19:59 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:20:16 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:20:36 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:21:24 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:23:39 - ERROR - while finding stay :622f337a75c7d36e498aaaf8 | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+2.4.2023, 19:23:39 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+2.4.2023, 19:25:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:25:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:25:52 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:27:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:27:23 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:28:06 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:28:06 - INFO - Server is running on port: 3030 
