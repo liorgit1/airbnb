@@ -39,15 +39,7 @@ export default defineConfig({
     }
   ],
   build: {
-<<<<<<< HEAD
-    outDir: '../backend',
-    emptyOutDir: true
-  }
-})
-
-=======
     outDir: '../backend/public',
     emptyOutDir: true
   }
 })
->>>>>>> 26e3747c40650849ea4f7f977471eb5aa370f999

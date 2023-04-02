@@ -62,15 +62,16 @@
 
 
 <script>
-import { stayService } from '../services/stay.service.local'
+// import { stayService } from '../services/stay.service.local'
 import GuestsModal from '../cmps/GuestsModal.vue'
 import Reservation from '../cmps/reservation.vue'
 import StayInfo from './StayInfo.vue'
 import StayAmenities from '../cmps/StayAmenities.vue'
 import StayReviews from '../cmps/StayReviews.vue'
 
+
 import { eventBus } from '../services/event-bus.service.js'
-// import { stayService } from '../services/stay-service.js'
+import { stayService } from '../services/stay-service.js'
 
 
 export default {
