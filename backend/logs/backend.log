@@ -1861,6 +1861,7 @@
 2.4.2023, 17:32:50 - INFO - Server is running on port: 3030 
 2.4.2023, 17:44:59 - INFO - Hi | 90 | Bobo 
 2.4.2023, 17:44:59 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
 2.4.2023, 18:02:47 - INFO - Hi | 90 | Bobo 
 2.4.2023, 18:02:48 - INFO - Server is running on port: 3030 
 2.4.2023, 18:46:14 - INFO - Hi | 90 | Bobo 
@@ -1883,3 +1884,7 @@
 2.4.2023, 19:27:23 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
 2.4.2023, 19:28:06 - INFO - Hi | 90 | Bobo 
 2.4.2023, 19:28:06 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> cd13db32829fa727c114853719444d40d6290125
+2.4.2023, 19:29:10 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:29:11 - INFO - Server is running on port: 3030 
