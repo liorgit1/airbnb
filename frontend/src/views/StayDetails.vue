@@ -1,11 +1,12 @@
 <template>
     <section >
-    <app-header
-      class="header-details details-layout"
+    <AppHeader
       @openModalLogin="openModalLogin"
     />
   </section>
   <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
+
+    <!-- header-details -->
 
 
 <!-- <section> -->
@@ -74,6 +75,7 @@ import Reservation from '../cmps/reservation.vue'
 import StayInfo from './StayInfo.vue'
 import StayAmenities from '../cmps/StayAmenities.vue'
 import StayReviews from '../cmps/StayReviews.vue'
+import AppHeader from '../cmps/AppHeader.vue'
 
 import { eventBus } from '../services/event-bus.service.js'
 import { stayService } from '../services/stay-service.js'
@@ -117,7 +119,8 @@ Reservation,
 StayInfo,
 StayAmenities,
 GuestsModal,
-StayReviews
+StayReviews,
+AppHeader
 }
 , computed: {
 

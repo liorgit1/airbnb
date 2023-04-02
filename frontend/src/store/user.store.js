@@ -5,7 +5,8 @@
 // if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user || null)
 
 import { userService } from "../services/user-service.js";
-// import stayService from "../services/stay-service.js";
+import {stayService} from "../services/stay-service.js";
+
 import {
   socketService,
   SOCKET_EMIT_USER_WATCH,
@@ -97,17 +98,17 @@ export default {
         throw err;
       }
     },
-    async loadStaysUser({ commit, state }) {
-      try {
-        const stays = await userService.getUserStays(state.loggedinUser.id);
-        commit({ type: "setStaysUser", stays });
-        const reservations = await userService.getUserReservation(state.loggedinUser.id);
-        commit({ type: "setReservationUser", reservations });
-      } catch (err) {
-        console.error("Cannot Load stays", err);
-        throw err;
-      }
-    },
+    // async loadStaysUser({ commit, state }) {
+    //   try {
+    //     const stays = await userService.getUserStays(state.loggedinUser);
+    //     commit({ type: "setStaysUser", stays });
+    //     const reservations = await userService.getUserReservation(state.loggedinUser);
+    //     commit({ type: "setReservationUser", reservations });
+    //   } catch (err) {
+    //     console.error("Cannot Load stays", err);
+    //     throw err;
+    //   }
+    // },
     async setLikedStay({ commit, state }, { stayId }) {
       if(!state.loggedinUser) return
       commit({ type: "setLikedStay", stayId });
