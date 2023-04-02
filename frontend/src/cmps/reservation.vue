@@ -39,6 +39,12 @@
                 </div>
             </div>
 
+
+
+
+
+
+
             <form class="reservation-form">
                 <div class="order-data">
                     <div class="date-picker" @click.stop="() => {
@@ -61,15 +67,25 @@
                         <label>GUESTS</label>
                         <input v-model="guestsDisplay">
                         <input type="text">
-                        <svg viewBox="0 0 320 512" width="100" title="angle-down">
+                        <svg v-if="!showModal" viewBox="0 0 320 512" width="100" title="angle-down">
                             <path
                                 d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+                        </svg>
+                        <svg v-else style="height: 8px;" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                            clip-rule="evenodd" viewBox="0 0 512 346.35">
+                            <path fill-rule="nonzero"
+                                d="M410.1 346.35 256 201.69 101.9 346.35 0 240.31 256 0l256 240.31z" />
                         </svg>
                     </div>
                 </div>
 
-                <div v-if="duration">
-                    <span>
+
+
+
+
+                <div>
+                    <span v-if="duration">
                         <div>
                             <div class="flex space-between">
                                 <div>{{ `$${stay.price} x ${duration} nights` }}</div>
@@ -81,8 +97,10 @@
                             </div>
                         </div>
                     </span>
-                    <GuestsModal @setChildrenCount="setChildrenCount($event)" @setAdultCount="setAdultCount1($event)"
-                        @setInfantsCount="setInfantsCount($event)" @setPetsCount="setPetsCount($event)" v-if="showModal" />
+
+                    <GuestsModal v-if="showModal" @setChildrenCount="setChildrenCount($event)"
+                        @setAdultCount="setAdultCount1($event)" @setInfantsCount="setInfantsCount($event)"
+                        @setPetsCount="setPetsCount($event)" />
 
                     <div v-if="duration" class="flex space-between"
                         style="padding-block: 19px; border-block-start: 1px solid #dddd;">
@@ -91,6 +109,7 @@
                         <span>{{ `$ ${(stay.price * duration) + fee}` }}</span>
                     </div>
                 </div>
+
 
                 <reservationBtnVue @click="this.$router.push(`/stay/confirm`);">
                     <button @click="submit.prevent" style="display: none">
@@ -141,9 +160,9 @@ export default {
 
     },
     watch: {
-        duration: {
+        showModal: {
             handler() {
-                console.log('duration :>> ', this.duration);
+                console.log('showModal :>> ', this.showModal);
             },
         },
         guestsNum: {
