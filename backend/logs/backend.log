@@ -1804,3 +1804,6 @@
 2.4.2023, 16:08:35 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
 2.4.2023, 16:08:35 - INFO - Req was made 
 2.4.2023, 16:08:49 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 16:27:12 - INFO - Hi | 90 | Bobo 
+2.4.2023, 16:27:13 - INFO - Server is running on port: 3030 
+2.4.2023, 16:27:17 - INFO - New connected socket [id: HFfiKew9kYimytabAAAB] 
