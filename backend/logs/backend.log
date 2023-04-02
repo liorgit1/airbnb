@@ -1,0 +1,1703 @@
+18.3.2023, 15:01:44 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:01:44 - INFO - Server is running on port: 3030 
+18.3.2023, 15:01:53 - INFO - Req was made 
+18.3.2023, 15:01:53 - DEBUG - Getting Toys | {"txt":""} 
+18.3.2023, 15:01:53 - ERROR - cannot find toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:01:53 - ERROR - Failed to get toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:01:56 - INFO - Req was made 
+18.3.2023, 15:01:56 - DEBUG - Getting Toys | {"txt":""} 
+18.3.2023, 15:01:56 - ERROR - cannot find toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:01:56 - ERROR - Failed to get toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:03:49 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:03:49 - INFO - Server is running on port: 3030 
+18.3.2023, 15:03:55 - INFO - Req was made 
+18.3.2023, 15:03:55 - DEBUG - Getting Toys | {"txt":""} 
+18.3.2023, 15:03:55 - ERROR - cannot find toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:03:55 - ERROR - Failed to get toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:04:04 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 15:04:04 - ERROR - Failed to Login Invalid username or password 
+18.3.2023, 15:04:04 - INFO - Req was made 
+18.3.2023, 15:04:04 - DEBUG - Getting Toys | {"txt":""} 
+18.3.2023, 15:04:04 - ERROR - cannot find toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:04:04 - ERROR - Failed to get toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:04:14 - DEBUG - auth.service - login with username: tal 
+18.3.2023, 15:04:14 - INFO - User login:  | {"_id":"6384e1f834243247088e63cd","username":"tal","fullname":"t","imgUrl":null,"score":100} 
+18.3.2023, 15:04:17 - INFO - Req was made 
+18.3.2023, 15:04:17 - DEBUG - Getting Toys | {"txt":""} 
+18.3.2023, 15:04:17 - ERROR - cannot find toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:04:17 - ERROR - Failed to get toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:05:18 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:05:18 - INFO - Server is running on port: 3030 
+18.3.2023, 15:05:28 - INFO - Req was made 
+18.3.2023, 15:05:28 - DEBUG - Getting Toys | {"txt":""} 
+18.3.2023, 15:05:28 - ERROR - cannot find toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:05:28 - ERROR - Failed to get toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:05:44 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:05:44 - INFO - Server is running on port: 3030 
+18.3.2023, 15:05:47 - INFO - Req was made 
+18.3.2023, 15:05:47 - DEBUG - Getting Toys | {"txt":""} 
+18.3.2023, 15:05:47 - ERROR - cannot find toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:05:47 - ERROR - Failed to get toys | SyntaxError: Unexpected token u in JSON at position 0 
+18.3.2023, 15:12:24 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:12:24 - INFO - Server is running on port: 3030 
+18.3.2023, 15:12:30 - INFO - Req was made 
+18.3.2023, 15:12:30 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:12:30 - ERROR - cannot find toys | ReferenceError: options is not defined 
+18.3.2023, 15:12:30 - ERROR - Failed to get toys | ReferenceError: options is not defined 
+18.3.2023, 15:12:43 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:12:43 - INFO - Server is running on port: 3030 
+18.3.2023, 15:12:44 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:12:44 - INFO - Server is running on port: 3030 
+18.3.2023, 15:12:46 - INFO - Req was made 
+18.3.2023, 15:12:46 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:12:50 - ERROR - while finding toy KYBNx1 | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:12:50 - ERROR - Failed to get toy | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:14:37 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:14:37 - INFO - Server is running on port: 3030 
+18.3.2023, 15:14:39 - ERROR - while finding toy KYBNx1 | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:14:39 - ERROR - Failed to get toy | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:15:16 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:15:16 - INFO - Server is running on port: 3030 
+18.3.2023, 15:15:19 - INFO - Req was made 
+18.3.2023, 15:15:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:15:22 - ERROR - while finding toy KYBNx | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:15:22 - ERROR - Failed to get toy | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:15:27 - INFO - Req was made 
+18.3.2023, 15:15:27 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:15:29 - ERROR - while finding toy IsWmp | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:15:29 - ERROR - Failed to get toy | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+18.3.2023, 15:17:44 - INFO - Req was made 
+18.3.2023, 15:17:44 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:18:25 - INFO - Req was made 
+18.3.2023, 15:18:25 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:18:52 - INFO - Req was made 
+18.3.2023, 15:18:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:19:25 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:19:25 - INFO - Req was made 
+18.3.2023, 15:20:32 - INFO - Req was made 
+18.3.2023, 15:20:32 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:36 - INFO - Req was made 
+18.3.2023, 15:21:36 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:38 - INFO - Req was made 
+18.3.2023, 15:21:38 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:39 - INFO - Req was made 
+18.3.2023, 15:21:39 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:42 - INFO - Req was made 
+18.3.2023, 15:21:42 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:47 - INFO - Req was made 
+18.3.2023, 15:21:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:50 - INFO - Req was made 
+18.3.2023, 15:21:50 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:51 - INFO - Req was made 
+18.3.2023, 15:21:51 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:53 - INFO - Req was made 
+18.3.2023, 15:21:53 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:57 - INFO - Req was made 
+18.3.2023, 15:21:57 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:21:59 - INFO - Req was made 
+18.3.2023, 15:21:59 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:00 - INFO - Req was made 
+18.3.2023, 15:22:00 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:00 - INFO - Req was made 
+18.3.2023, 15:22:00 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:00 - INFO - Req was made 
+18.3.2023, 15:22:00 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:01 - INFO - Req was made 
+18.3.2023, 15:22:01 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:01 - INFO - Req was made 
+18.3.2023, 15:22:01 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:03 - INFO - Req was made 
+18.3.2023, 15:22:03 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:04 - INFO - Req was made 
+18.3.2023, 15:22:04 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:04 - INFO - Req was made 
+18.3.2023, 15:22:04 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:22:30 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:22:30 - INFO - Server is running on port: 3030 
+18.3.2023, 15:22:55 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:22:55 - INFO - Server is running on port: 3030 
+18.3.2023, 15:23:02 - INFO - Req was made 
+18.3.2023, 15:23:02 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:33:08 - INFO - Req was made 
+18.3.2023, 15:33:08 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:33:14 - INFO - Req was made 
+18.3.2023, 15:33:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:33:16 - INFO - Req was made 
+18.3.2023, 15:33:16 - DEBUG - Getting Toys | {"txt":"ppp","status":"","labels":null} 
+18.3.2023, 15:33:43 - INFO - Req was made 
+18.3.2023, 15:33:43 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:33:49 - INFO - Req was made 
+18.3.2023, 15:33:49 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:33:56 - INFO - Req was made 
+18.3.2023, 15:33:56 - DEBUG - Getting Toys | {"txt":"pp","status":"","labels":null} 
+18.3.2023, 15:34:11 - INFO - Req was made 
+18.3.2023, 15:34:11 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:34:14 - INFO - Req was made 
+18.3.2023, 15:34:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:38:02 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:38:02 - INFO - Server is running on port: 3030 
+18.3.2023, 15:38:28 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:38:28 - INFO - Server is running on port: 3030 
+18.3.2023, 15:38:31 - INFO - Req was made 
+18.3.2023, 15:38:31 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:38:42 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:38:42 - INFO - Server is running on port: 3030 
+18.3.2023, 15:38:44 - INFO - Req was made 
+18.3.2023, 15:38:44 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:38:47 - INFO - Req was made 
+18.3.2023, 15:38:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:39:01 - INFO - Req was made 
+18.3.2023, 15:39:01 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:39:03 - INFO - Req was made 
+18.3.2023, 15:39:03 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:39:04 - INFO - Req was made 
+18.3.2023, 15:39:04 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:39:07 - INFO - Req was made 
+18.3.2023, 15:39:07 - DEBUG - Getting Toys | {"txt":"r","status":"","labels":null} 
+18.3.2023, 15:39:10 - INFO - Req was made 
+18.3.2023, 15:39:10 - DEBUG - Getting Toys | {"txt":"ra","status":"","labels":null} 
+18.3.2023, 15:39:11 - INFO - Req was made 
+18.3.2023, 15:39:11 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:39:13 - INFO - Req was made 
+18.3.2023, 15:39:13 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board"]} 
+18.3.2023, 15:39:14 - INFO - Req was made 
+18.3.2023, 15:39:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board","Art"]} 
+18.3.2023, 15:39:15 - INFO - Req was made 
+18.3.2023, 15:39:15 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art"]} 
+18.3.2023, 15:39:15 - INFO - Req was made 
+18.3.2023, 15:39:15 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 15:39:26 - INFO - Server is running on port: 3030 
+18.3.2023, 15:39:26 - INFO - Hi | 90 | Bobo 
+18.3.2023, 15:42:41 - INFO - Req was made 
+18.3.2023, 15:42:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:04:48 - INFO - Req was made 
+18.3.2023, 16:04:48 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:07:26 - INFO - Req was made 
+18.3.2023, 16:07:26 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:07:43 - INFO - Req was made 
+18.3.2023, 16:07:43 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:08:16 - INFO - Req was made 
+18.3.2023, 16:08:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:08:23 - INFO - Req was made 
+18.3.2023, 16:08:23 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:09:20 - INFO - Hi | 90 | Bobo 
+18.3.2023, 16:09:20 - INFO - Server is running on port: 3030 
+18.3.2023, 16:10:10 - INFO - Req was made 
+18.3.2023, 16:10:10 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:12:34 - INFO - Req was made 
+18.3.2023, 16:12:34 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:14:02 - INFO - Req was made 
+18.3.2023, 16:14:02 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:14:48 - INFO - Req was made 
+18.3.2023, 16:14:48 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:15:31 - INFO - Hi | 90 | Bobo 
+18.3.2023, 16:15:31 - INFO - Server is running on port: 3030 
+18.3.2023, 16:16:12 - INFO - Req was made 
+18.3.2023, 16:16:12 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:16:22 - INFO - Req was made 
+18.3.2023, 16:16:22 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:18:00 - INFO - Req was made 
+18.3.2023, 16:18:00 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:18:04 - INFO - Req was made 
+18.3.2023, 16:18:04 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:18:08 - INFO - Req was made 
+18.3.2023, 16:18:08 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:18:31 - INFO - Req was made 
+18.3.2023, 16:18:31 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:19:16 - INFO - Req was made 
+18.3.2023, 16:19:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:21:45 - INFO - Req was made 
+18.3.2023, 16:21:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:22:41 - INFO - Hi | 90 | Bobo 
+18.3.2023, 16:22:41 - INFO - Server is running on port: 3030 
+18.3.2023, 16:26:52 - INFO - Req was made 
+18.3.2023, 16:26:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:29:43 - INFO - Req was made 
+18.3.2023, 16:29:43 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:30:09 - INFO - Req was made 
+18.3.2023, 16:30:09 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:30:19 - INFO - Req was made 
+18.3.2023, 16:30:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:30:22 - INFO - Req was made 
+18.3.2023, 16:30:22 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:31:50 - INFO - Req was made 
+18.3.2023, 16:31:50 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:32:19 - INFO - Req was made 
+18.3.2023, 16:32:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:34:06 - INFO - Req was made 
+18.3.2023, 16:34:06 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:36:48 - INFO - Req was made 
+18.3.2023, 16:36:48 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:37:50 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:37:50 - INFO - Req was made 
+18.3.2023, 16:42:21 - INFO - Req was made 
+18.3.2023, 16:42:21 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:43:05 - INFO - Req was made 
+18.3.2023, 16:43:05 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:43:49 - INFO - Req was made 
+18.3.2023, 16:43:49 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:43:53 - INFO - Req was made 
+18.3.2023, 16:43:53 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:44:10 - INFO - Req was made 
+18.3.2023, 16:44:10 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:49:43 - INFO - Req was made 
+18.3.2023, 16:49:43 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 16:53:45 - INFO - Req was made 
+18.3.2023, 16:53:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:01:10 - INFO - Req was made 
+18.3.2023, 17:01:10 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:01:18 - INFO - Req was made 
+18.3.2023, 17:01:18 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:06:38 - INFO - Req was made 
+18.3.2023, 17:06:38 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:07:36 - INFO - Req was made 
+18.3.2023, 17:07:36 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:08:40 - INFO - Req was made 
+18.3.2023, 17:08:40 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:09:21 - INFO - Req was made 
+18.3.2023, 17:09:21 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels"]} 
+18.3.2023, 17:09:22 - INFO - Req was made 
+18.3.2023, 17:09:22 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:09:23 - INFO - Req was made 
+18.3.2023, 17:09:23 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:09:24 - INFO - Req was made 
+18.3.2023, 17:09:24 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:09:29 - INFO - Req was made 
+18.3.2023, 17:09:29 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:19:52 - INFO - Req was made 
+18.3.2023, 17:19:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:31:12 - INFO - Req was made 
+18.3.2023, 17:31:12 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board"]} 
+18.3.2023, 17:31:13 - INFO - Req was made 
+18.3.2023, 17:31:13 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board","Art"]} 
+18.3.2023, 17:31:14 - INFO - Req was made 
+18.3.2023, 17:31:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art"]} 
+18.3.2023, 17:31:14 - INFO - Req was made 
+18.3.2023, 17:31:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art","Board"]} 
+18.3.2023, 17:31:15 - INFO - Req was made 
+18.3.2023, 17:31:15 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board"]} 
+18.3.2023, 17:31:15 - INFO - Req was made 
+18.3.2023, 17:31:15 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:31:19 - INFO - Req was made 
+18.3.2023, 17:31:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:31:20 - INFO - Req was made 
+18.3.2023, 17:31:20 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:31:20 - INFO - Req was made 
+18.3.2023, 17:31:20 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:31:21 - INFO - Req was made 
+18.3.2023, 17:31:21 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:37 - INFO - Req was made 
+18.3.2023, 17:35:37 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:37 - INFO - Req was made 
+18.3.2023, 17:35:37 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:38 - INFO - Req was made 
+18.3.2023, 17:35:38 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:40 - INFO - Req was made 
+18.3.2023, 17:35:40 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:40 - INFO - Req was made 
+18.3.2023, 17:35:40 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:40 - INFO - Req was made 
+18.3.2023, 17:35:40 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:41 - INFO - Req was made 
+18.3.2023, 17:35:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:42 - INFO - Req was made 
+18.3.2023, 17:35:42 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:42 - INFO - Req was made 
+18.3.2023, 17:35:42 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:44 - INFO - Req was made 
+18.3.2023, 17:35:44 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:44 - INFO - Req was made 
+18.3.2023, 17:35:44 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:45 - INFO - Req was made 
+18.3.2023, 17:35:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:45 - INFO - Req was made 
+18.3.2023, 17:35:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:45 - INFO - Req was made 
+18.3.2023, 17:35:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:46 - INFO - Req was made 
+18.3.2023, 17:35:46 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:35:47 - INFO - Req was made 
+18.3.2023, 17:35:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:36:34 - INFO - Req was made 
+18.3.2023, 17:36:34 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels"]} 
+18.3.2023, 17:36:35 - INFO - Req was made 
+18.3.2023, 17:36:35 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels","Board"]} 
+18.3.2023, 17:36:35 - INFO - Req was made 
+18.3.2023, 17:36:35 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels","Board","Art"]} 
+18.3.2023, 17:36:35 - INFO - Req was made 
+18.3.2023, 17:36:35 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels","Board","Art","Baby"]} 
+18.3.2023, 17:47:01 - INFO - Req was made 
+18.3.2023, 17:47:01 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:51:47 - INFO - Req was made 
+18.3.2023, 17:51:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:52:16 - INFO - Req was made 
+18.3.2023, 17:52:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:52:21 - INFO - Req was made 
+18.3.2023, 17:52:21 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:52:27 - INFO - Req was made 
+18.3.2023, 17:52:27 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 17:52:32 - INFO - Req was made 
+18.3.2023, 17:52:32 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:00:19 - INFO - Req was made 
+18.3.2023, 18:00:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:00:46 - INFO - Req was made 
+18.3.2023, 18:00:46 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:02:42 - INFO - Req was made 
+18.3.2023, 18:02:42 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:04:45 - INFO - Req was made 
+18.3.2023, 18:04:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:05:04 - INFO - Req was made 
+18.3.2023, 18:05:04 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:16:43 - INFO - Req was made 
+18.3.2023, 18:16:43 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:16:49 - INFO - Req was made 
+18.3.2023, 18:16:49 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:17:55 - INFO - Req was made 
+18.3.2023, 18:17:55 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:43:35 - DEBUG - auth.service - login with username: undefined 
+18.3.2023, 18:43:36 - ERROR - Failed to Login Invalid username or password 
+18.3.2023, 18:43:54 - DEBUG - auth.service - login with username: undefined 
+18.3.2023, 18:43:54 - ERROR - Failed to Login Invalid username or password 
+18.3.2023, 18:45:58 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:45:58 - ERROR - Failed to Login Invalid username or password 
+18.3.2023, 18:46:49 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:46:49 - ERROR - Failed to Login Invalid username or password 
+18.3.2023, 18:48:51 - DEBUG - auth.service - signup with username: admin, fullname: undefined 
+18.3.2023, 18:48:51 - ERROR - Failed to signup fullname, username and password are required! 
+18.3.2023, 18:49:27 - DEBUG - auth.service - signup with username: admin, fullname: admin admin 
+18.3.2023, 18:49:27 - ERROR - cannot insert user | Error: Username taken 
+18.3.2023, 18:49:27 - ERROR - Failed to signup Error: Username taken 
+18.3.2023, 18:52:11 - DEBUG - auth.service - signup with username: admin, fullname: t 
+18.3.2023, 18:52:11 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$H3TV/7Tirm9uzqLvg98OpeE1fyjqigUvh0PrWpLeuZw41DqsqlCu2","fullname":"t","score":0,"_id":"6415ec3bafbc2c748d644701"} 
+18.3.2023, 18:52:11 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:52:11 - INFO - User login:  | {"_id":"6415ec3bafbc2c748d644701","username":"admin","fullname":"t","score":0} 
+18.3.2023, 18:52:54 - DEBUG - auth.service - signup with username: admin, fullname: admin admin 
+18.3.2023, 18:52:54 - DEBUG - auth.route - new account created: {"username":"admin","password":"$2b$10$E6tetzI/KMkbs9G7ARjNYue20KmNlNc7RTOqdUylRPubpVh/c9ko.","fullname":"admin admin","score":0,"_id":"6415ec66afbc2c748d644702"} 
+18.3.2023, 18:52:54 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:52:54 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 18:52:57 - DEBUG - auth.service - signup with username: admin, fullname: admin admin 
+18.3.2023, 18:52:57 - ERROR - cannot insert user | Error: Username taken 
+18.3.2023, 18:52:57 - ERROR - Failed to signup Error: Username taken 
+18.3.2023, 18:53:59 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:53:59 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 18:54:07 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:54:07 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 18:54:22 - INFO - Req was made 
+18.3.2023, 18:54:22 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 18:55:22 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:55:22 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 18:57:48 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 18:57:48 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 18:58:00 - INFO - Req was made 
+18.3.2023, 18:58:00 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels"]} 
+18.3.2023, 18:58:03 - INFO - Req was made 
+18.3.2023, 18:58:03 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels"]} 
+18.3.2023, 18:58:03 - INFO - Req was made 
+18.3.2023, 18:58:03 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["On wheels"]} 
+18.3.2023, 19:10:42 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 19:10:42 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 19:10:55 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 19:10:55 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 19:10:59 - INFO - Req was made 
+18.3.2023, 19:10:59 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:11:00 - INFO - Req was made 
+18.3.2023, 19:11:00 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:11:03 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 19:11:03 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 19:11:27 - DEBUG - auth.service - login with username: admin 
+18.3.2023, 19:11:28 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+18.3.2023, 19:11:32 - INFO - Req was made 
+18.3.2023, 19:11:32 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:20:26 - INFO - Req was made 
+18.3.2023, 19:20:26 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:21:58 - INFO - Req was made 
+18.3.2023, 19:21:58 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:23:10 - INFO - Req was made 
+18.3.2023, 19:23:10 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:27:22 - INFO - Req was made 
+18.3.2023, 19:27:22 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:31:23 - INFO - Req was made 
+18.3.2023, 19:31:23 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:34:59 - INFO - Req was made 
+18.3.2023, 19:34:59 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:35:19 - INFO - Req was made 
+18.3.2023, 19:35:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:35:24 - INFO - Req was made 
+18.3.2023, 19:35:24 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:36:31 - INFO - Req was made 
+18.3.2023, 19:36:31 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:36:55 - INFO - Req was made 
+18.3.2023, 19:36:55 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:40:52 - INFO - Req was made 
+18.3.2023, 19:40:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:40:56 - INFO - Req was made 
+18.3.2023, 19:40:56 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:40:58 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+18.3.2023, 19:40:58 - INFO - Req was made 
+18.3.2023, 19:41:04 - INFO - Req was made 
+18.3.2023, 19:41:04 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 7:41:18 - INFO - Hi | 90 | Bobo 
+19.3.2023, 7:41:18 - INFO - Server is running on port: 3030 
+19.3.2023, 7:42:16 - INFO - Req was made 
+19.3.2023, 7:42:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 7:42:24 - DEBUG - auth.service - login with username: tal 
+19.3.2023, 7:42:24 - INFO - User login:  | {"_id":"6384e1f834243247088e63cd","username":"tal","fullname":"t","imgUrl":null,"score":100} 
+19.3.2023, 7:42:37 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 7:42:37 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0} 
+19.3.2023, 7:44:03 - INFO - Req was made 
+19.3.2023, 7:44:03 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 7:44:07 - INFO - Req was made 
+19.3.2023, 7:44:07 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 7:44:16 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 7:44:17 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 7:44:26 - DEBUG - auth.service - login with username: tal 
+19.3.2023, 7:44:27 - INFO - User login:  | {"_id":"6384e1f834243247088e63cd","username":"tal","fullname":"t","imgUrl":null,"score":100} 
+19.3.2023, 7:44:35 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 7:44:35 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 7:45:59 - DEBUG - auth.service - login with username: tal 
+19.3.2023, 7:46:00 - INFO - User login:  | {"_id":"6384e1f834243247088e63cd","username":"tal","fullname":"Tal Liber","imgUrl":null,"score":100} 
+19.3.2023, 7:46:23 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 7:46:23 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 7:49:55 - INFO - Req was made 
+19.3.2023, 7:49:55 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 7:49:58 - INFO - Req was made 
+19.3.2023, 7:49:58 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:00:17 - INFO - Req was made 
+19.3.2023, 8:00:17 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:01:52 - INFO - Req was made 
+19.3.2023, 8:01:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:33:17 - DEBUG - auth.service - login with username: tal 
+19.3.2023, 8:33:18 - INFO - User login:  | {"_id":"6384e1f834243247088e63cd","username":"tal","fullname":"Tal Liber","imgUrl":null,"score":100} 
+19.3.2023, 8:33:51 - INFO - Req was made 
+19.3.2023, 8:33:51 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art"]} 
+19.3.2023, 8:33:53 - INFO - Req was made 
+19.3.2023, 8:33:53 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art","On wheels"]} 
+19.3.2023, 8:33:55 - INFO - Req was made 
+19.3.2023, 8:33:55 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art"]} 
+19.3.2023, 8:33:56 - INFO - Req was made 
+19.3.2023, 8:33:56 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:33:58 - INFO - Req was made 
+19.3.2023, 8:33:58 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:33:58 - INFO - Req was made 
+19.3.2023, 8:33:58 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:34:09 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 8:34:09 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 8:34:22 - INFO - Req was made 
+19.3.2023, 8:34:22 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:42:49 - INFO - Req was made 
+19.3.2023, 8:42:49 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board"]} 
+19.3.2023, 8:42:50 - INFO - Req was made 
+19.3.2023, 8:42:50 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board","Art"]} 
+19.3.2023, 8:42:50 - INFO - Req was made 
+19.3.2023, 8:42:50 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board","Art","Baby"]} 
+19.3.2023, 8:44:48 - INFO - Req was made 
+19.3.2023, 8:44:48 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board","Art"]} 
+19.3.2023, 8:44:49 - INFO - Req was made 
+19.3.2023, 8:44:49 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Board"]} 
+19.3.2023, 8:44:49 - INFO - Req was made 
+19.3.2023, 8:44:49 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:44:58 - INFO - Req was made 
+19.3.2023, 8:44:58 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art"]} 
+19.3.2023, 8:45:07 - INFO - Req was made 
+19.3.2023, 8:45:07 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art","Baby"]} 
+19.3.2023, 8:45:10 - INFO - Req was made 
+19.3.2023, 8:45:10 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art"]} 
+19.3.2023, 8:45:18 - INFO - Req was made 
+19.3.2023, 8:45:18 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 8:45:19 - INFO - Req was made 
+19.3.2023, 8:45:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Baby"]} 
+19.3.2023, 8:45:19 - INFO - Req was made 
+19.3.2023, 8:45:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Baby","Art"]} 
+19.3.2023, 8:45:29 - INFO - Req was made 
+19.3.2023, 8:45:29 - DEBUG - Getting Toys | {"txt":"","status":"","labels":["Art"]} 
+19.3.2023, 8:53:06 - INFO - Req was made 
+19.3.2023, 8:53:06 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:17:26 - INFO - Req was made 
+19.3.2023, 9:17:26 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:18:35 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:18:35 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 9:22:17 - DEBUG - auth.service - signup with username: Islam, fullname: Islam Islam 
+19.3.2023, 9:22:17 - DEBUG - auth.service - login with username: Islam 
+19.3.2023, 9:22:17 - DEBUG - auth.route - new account created: {"username":"Islam","password":"$2b$10$.CVOrHd21RWUrsvnS2pr/eiJoA0dYBbTDyEl1L1cb/EQ8FKwab55q","fullname":"Islam Islam","score":0,"_id":"6416b82961910a4a128206b4"} 
+19.3.2023, 9:22:17 - INFO - User login:  | {"_id":"6416b82961910a4a128206b4","username":"Islam","fullname":"Islam Islam","score":0} 
+19.3.2023, 9:22:45 - DEBUG - auth.service - signup with username: Islam, fullname: undefined 
+19.3.2023, 9:22:45 - ERROR - Failed to signup fullname, username and password are required! 
+19.3.2023, 9:35:41 - INFO - Req was made 
+19.3.2023, 9:35:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:36:24 - INFO - Hi | 90 | Bobo 
+19.3.2023, 9:36:24 - INFO - Server is running on port: 3030 
+19.3.2023, 9:38:51 - INFO - Hi | 90 | Bobo 
+19.3.2023, 9:38:51 - INFO - Server is running on port: 3030 
+19.3.2023, 9:41:32 - INFO - Req was made 
+19.3.2023, 9:41:32 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:42:52 - INFO - Req was made 
+19.3.2023, 9:42:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:43:19 - INFO - Req was made 
+19.3.2023, 9:43:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:43:29 - INFO - Req was made 
+19.3.2023, 9:43:29 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:43:35 - INFO - Req was made 
+19.3.2023, 9:43:35 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:43:38 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:43:38 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 9:43:40 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:43:40 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 9:43:53 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:43:53 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 9:43:56 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:43:56 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 9:47:14 - INFO - Req was made 
+19.3.2023, 9:47:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:47:17 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:47:17 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 9:47:56 - INFO - Req was made 
+19.3.2023, 9:47:56 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:48:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:48:47 - INFO - Req was made 
+19.3.2023, 9:48:50 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:48:50 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 9:49:45 - INFO - Req was made 
+19.3.2023, 9:49:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:52:54 - INFO - Req was made 
+19.3.2023, 9:52:54 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:53:01 - INFO - Req was made 
+19.3.2023, 9:53:01 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 9:53:05 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 9:53:05 - INFO - User login:  | {"_id":"6415ec66afbc2c748d644702","username":"admin","fullname":"admin admin","score":0,"isAdmin":true} 
+19.3.2023, 20:03:22 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:03:22 - INFO - Server is running on port: 3030 
+19.3.2023, 20:04:10 - INFO - Req was made 
+19.3.2023, 20:04:10 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:04:44 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:04:44 - ERROR - Failed to Login Invalid username or password 
+19.3.2023, 20:04:45 - INFO - Req was made 
+19.3.2023, 20:04:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:05:03 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:05:03 - ERROR - Failed to Login Invalid username or password 
+19.3.2023, 20:05:04 - INFO - Req was made 
+19.3.2023, 20:05:04 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:05:09 - INFO - Req was made 
+19.3.2023, 20:05:09 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:05:46 - DEBUG - auth.service - login with username: puki 
+19.3.2023, 20:05:46 - ERROR - Failed to Login Invalid username or password 
+19.3.2023, 20:05:47 - INFO - Req was made 
+19.3.2023, 20:05:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:07:24 - INFO - Server is running on port: 3030 
+19.3.2023, 20:07:24 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:07:26 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:07:26 - INFO - Server is running on port: 3030 
+19.3.2023, 20:07:35 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:07:35 - ERROR - Failed to Login Invalid username or password 
+19.3.2023, 20:07:36 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:07:36 - INFO - Req was made 
+19.3.2023, 20:08:36 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:08:36 - INFO - Server is running on port: 3030 
+19.3.2023, 20:08:39 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:08:39 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aec","username":"admin","fullname":"Admin","isAdmin":true} 
+19.3.2023, 20:10:28 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:10:28 - INFO - Server is running on port: 3030 
+19.3.2023, 20:10:40 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:10:40 - ERROR - Failed to Login ReferenceError: saltRounds is not defined 
+19.3.2023, 20:10:41 - INFO - Req was made 
+19.3.2023, 20:10:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:11:13 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:11:13 - INFO - Server is running on port: 3030 
+19.3.2023, 20:11:17 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:11:18 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aec","username":"admin","fullname":"Admin","isAdmin":true} 
+19.3.2023, 20:11:51 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:11:51 - INFO - Server is running on port: 3030 
+19.3.2023, 20:14:36 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:14:36 - INFO - Server is running on port: 3030 
+19.3.2023, 20:14:46 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:14:46 - ERROR - Failed to Login Invalid username or password 
+19.3.2023, 20:14:47 - INFO - Req was made 
+19.3.2023, 20:14:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:16:13 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:16:13 - INFO - Server is running on port: 3030 
+19.3.2023, 20:16:16 - INFO - Req was made 
+19.3.2023, 20:16:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:16:23 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:16:24 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aec","username":"admin","fullname":"Admin","isAdmin":true} 
+19.3.2023, 20:16:55 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:16:55 - INFO - Server is running on port: 3030 
+19.3.2023, 20:17:07 - DEBUG - auth.service - login with username: puki 
+19.3.2023, 20:17:07 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aeb","username":"puki","fullname":"puki","isAdmin":false} 
+19.3.2023, 20:17:51 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:17:51 - INFO - Server is running on port: 3030 
+19.3.2023, 20:18:00 - DEBUG - auth.service - login with username: puki 
+19.3.2023, 20:18:00 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aeb","username":"puki","fullname":"puki","isAdmin":false} 
+19.3.2023, 20:18:12 - DEBUG - auth.service - login with username: admin 
+19.3.2023, 20:18:13 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aec","username":"admin","fullname":"Admin","isAdmin":true} 
+19.3.2023, 20:24:49 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:24:49 - INFO - Server is running on port: 3030 
+19.3.2023, 20:25:57 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:25:57 - INFO - Server is running on port: 3030 
+19.3.2023, 20:26:28 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:26:28 - INFO - Server is running on port: 3030 
+19.3.2023, 20:27:28 - INFO - Server is running on port: 3030 
+19.3.2023, 20:27:28 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:28:08 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:28:08 - INFO - Server is running on port: 3030 
+19.3.2023, 20:30:21 - INFO - Req was made 
+19.3.2023, 20:30:21 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:33:31 - INFO - Hi | 90 | Bobo 
+19.3.2023, 20:33:31 - INFO - Server is running on port: 3030 
+19.3.2023, 20:34:17 - INFO - Req was made 
+19.3.2023, 20:34:17 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:37:30 - INFO - Req was made 
+19.3.2023, 20:37:30 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:37:48 - INFO - Req was made 
+19.3.2023, 20:37:48 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:43:41 - INFO - Req was made 
+19.3.2023, 20:43:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:50:18 - INFO - Req was made 
+19.3.2023, 20:50:18 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:57:39 - INFO - Req was made 
+19.3.2023, 20:57:39 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 20:57:52 - INFO - Req was made 
+19.3.2023, 20:57:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:05:59 - DEBUG - auth.service - login with username: puki 
+19.3.2023, 21:05:59 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aeb","username":"puki","fullname":"puki","isAdmin":false} 
+19.3.2023, 21:06:08 - INFO - Req was made 
+19.3.2023, 21:06:08 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:06:22 - INFO - Req was made 
+19.3.2023, 21:06:22 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:06:24 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:06:24 - INFO - Req was made 
+19.3.2023, 21:07:13 - INFO - Req was made 
+19.3.2023, 21:07:13 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:07:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:07:14 - INFO - Req was made 
+19.3.2023, 21:07:36 - INFO - Req was made 
+19.3.2023, 21:07:36 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:08:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:08:16 - INFO - Req was made 
+19.3.2023, 21:08:42 - INFO - Req was made 
+19.3.2023, 21:08:42 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:09:49 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:09:49 - INFO - Req was made 
+19.3.2023, 21:10:31 - INFO - Hi | 90 | Bobo 
+19.3.2023, 21:10:31 - INFO - Server is running on port: 3030 
+19.3.2023, 21:10:33 - INFO - Req was made 
+19.3.2023, 21:10:33 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+19.3.2023, 21:11:27 - INFO - Req was made 
+19.3.2023, 21:11:27 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 0:30:53 - INFO - Server is running on port: 3030 
+20.3.2023, 0:30:53 - INFO - Hi | 90 | Bobo 
+20.3.2023, 6:15:35 - INFO - Server is running on port: 3030 
+20.3.2023, 6:15:35 - INFO - Hi | 90 | Bobo 
+20.3.2023, 6:16:20 - INFO - Req was made 
+20.3.2023, 6:16:20 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:16:31 - DEBUG - auth.service - login with username: admin 
+20.3.2023, 6:16:31 - INFO - User login:  | {"_id":"64174d63d71af05b3c3d7aec","username":"admin","fullname":"Admin","isAdmin":true} 
+20.3.2023, 6:29:17 - INFO - Req was made 
+20.3.2023, 6:29:17 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:37:40 - INFO - Req was made 
+20.3.2023, 6:37:40 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:41:18 - INFO - Req was made 
+20.3.2023, 6:41:18 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:43:35 - INFO - Req was made 
+20.3.2023, 6:43:35 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:45:55 - INFO - Req was made 
+20.3.2023, 6:45:55 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:46:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:46:19 - INFO - Req was made 
+20.3.2023, 6:46:56 - INFO - Req was made 
+20.3.2023, 6:46:56 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:47:48 - INFO - Req was made 
+20.3.2023, 6:47:48 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:47:51 - ERROR - Failed to add review | TypeError: Cannot read properties of undefined (reading '0') 
+20.3.2023, 6:49:11 - INFO - Req was made 
+20.3.2023, 6:49:11 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:49:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:49:14 - INFO - Req was made 
+20.3.2023, 6:50:26 - INFO - Hi | 90 | Bobo 
+20.3.2023, 6:50:26 - INFO - Server is running on port: 3030 
+20.3.2023, 6:50:30 - ERROR - Failed to add review | TypeError: Cannot read properties of undefined (reading '0') 
+20.3.2023, 6:51:04 - INFO - Hi | 90 | Bobo 
+20.3.2023, 6:51:04 - INFO - Server is running on port: 3030 
+20.3.2023, 6:51:12 - INFO - Hi | 90 | Bobo 
+20.3.2023, 6:51:12 - INFO - Server is running on port: 3030 
+20.3.2023, 6:51:15 - ERROR - Failed to add review | TypeError: Cannot read properties of undefined (reading '0') 
+20.3.2023, 6:51:38 - INFO - Hi | 90 | Bobo 
+20.3.2023, 6:51:38 - INFO - Server is running on port: 3030 
+20.3.2023, 6:51:40 - ERROR - Failed to add review | TypeError: Cannot read properties of undefined (reading '0') 
+20.3.2023, 6:53:21 - INFO - Hi | 90 | Bobo 
+20.3.2023, 6:53:21 - INFO - Server is running on port: 3030 
+20.3.2023, 6:55:27 - INFO - Req was made 
+20.3.2023, 6:55:27 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 6:57:19 - INFO - Req was made 
+20.3.2023, 6:57:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 7:12:16 - INFO - Hi | 90 | Bobo 
+20.3.2023, 7:12:16 - INFO - Server is running on port: 3030 
+20.3.2023, 7:41:46 - INFO - Server is running on port: 3030 
+20.3.2023, 7:41:46 - INFO - Hi | 90 | Bobo 
+20.3.2023, 8:37:09 - INFO - Req was made 
+20.3.2023, 8:37:09 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:43:00 - INFO - Hi | 90 | Bobo 
+20.3.2023, 22:43:00 - INFO - Server is running on port: 3030 
+20.3.2023, 22:43:41 - INFO - New connected socket [id: h66SUp0-fjMcZ64UAAAB] 
+20.3.2023, 22:43:49 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:43:50 - INFO - New connected socket [id: anYQ9Mym5Tlk6KA6AAAD] 
+20.3.2023, 22:47:39 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:47:40 - INFO - Req was made 
+20.3.2023, 22:47:40 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:47:40 - INFO - New connected socket [id: QfEPKkvp9U9Ygok5AAAF] 
+20.3.2023, 22:47:46 - DEBUG - auth.service - login with username: Admin 
+20.3.2023, 22:47:46 - ERROR - Failed to Login Invalid username or password 
+20.3.2023, 22:47:46 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:47:47 - INFO - Req was made 
+20.3.2023, 22:47:47 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:47:47 - INFO - New connected socket [id: uIKPivCAKUkg2DoEAAAH] 
+20.3.2023, 22:48:01 - DEBUG - auth.service - login with username: test123 
+20.3.2023, 22:48:01 - ERROR - Failed to Login Invalid username or password 
+20.3.2023, 22:48:01 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:48:02 - INFO - Req was made 
+20.3.2023, 22:48:02 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:48:02 - INFO - New connected socket [id: z6VUXQ52WD0knT42AAAJ] 
+20.3.2023, 22:48:15 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:48:16 - INFO - Req was made 
+20.3.2023, 22:48:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:48:16 - INFO - New connected socket [id: CHJGuWW-UKStvrJkAAAL] 
+20.3.2023, 22:48:19 - INFO - Req was made 
+20.3.2023, 22:48:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:52:09 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:52:09 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:52:09 - INFO - Req was made 
+20.3.2023, 22:52:10 - INFO - New connected socket [id: fV9fbsxx8CSYlZ7AAAAN] 
+20.3.2023, 22:52:13 - DEBUG - auth.service - login with username: puki 
+20.3.2023, 22:52:13 - ERROR - Failed to Login Invalid username or password 
+20.3.2023, 22:52:13 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:52:14 - INFO - Req was made 
+20.3.2023, 22:52:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:52:14 - INFO - New connected socket [id: Q2GOLNX9NsHIpI6vAAAP] 
+20.3.2023, 22:52:40 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 22:52:41 - INFO - Req was made 
+20.3.2023, 22:52:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:52:41 - INFO - New connected socket [id: A5e84jiZCeberaHFAAAR] 
+20.3.2023, 22:53:21 - DEBUG - auth.service - signup with username: test, fullname: undefined 
+20.3.2023, 22:53:21 - ERROR - Failed to signup fullname, username and password are required! 
+20.3.2023, 22:53:23 - DEBUG - auth.service - signup with username: test, fullname: undefined 
+20.3.2023, 22:53:23 - ERROR - Failed to signup fullname, username and password are required! 
+20.3.2023, 22:53:42 - DEBUG - auth.service - signup with username: test, fullname: Test MctestyFace 
+20.3.2023, 22:53:42 - DEBUG - auth.route - new account created: {"username":"test","password":"$2b$10$BwjeIcAs/fsTIVKQs414Ouq4ixD1CS9L7o3W2UiikeZoTJdIfWwuu","fullname":"Test MctestyFace","score":0,"_id":"6418c7d6c702c36de79c0246"} 
+20.3.2023, 22:53:42 - DEBUG - auth.service - login with username: test 
+20.3.2023, 22:53:42 - INFO - User login:  | {"_id":"6418c7d6c702c36de79c0246","username":"test","fullname":"Test MctestyFace","score":0} 
+20.3.2023, 22:53:51 - DEBUG - auth.service - login with username: test 
+20.3.2023, 22:53:51 - INFO - User login:  | {"_id":"6418c7d6c702c36de79c0246","username":"test","fullname":"Test MctestyFace","score":0} 
+20.3.2023, 22:57:44 - INFO - Req was made 
+20.3.2023, 22:57:44 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:57:44 - INFO - New connected socket [id: OiZ7NK4BvJKp_SQ6AAAT] 
+20.3.2023, 22:57:44 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: OiZ7NK4BvJKp_SQ6AAAT] 
+20.3.2023, 22:57:55 - INFO - Req was made 
+20.3.2023, 22:57:55 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 22:57:55 - INFO - New connected socket [id: JpluEU3jEwlVNGrjAAAV] 
+20.3.2023, 22:58:13 - DEBUG - auth.service - signup with username: test2, fullname: Testu MctastyFace 
+20.3.2023, 22:58:13 - DEBUG - auth.route - new account created: {"username":"test2","password":"$2b$10$kkw4MYLiJ1fcDuI83wvlKuw.24oujyzRrbmMwYZpU1VtS6JbqKBsa","fullname":"Testu MctastyFace","score":0,"_id":"6418c8e5c702c36de79c0247"} 
+20.3.2023, 22:58:13 - DEBUG - auth.service - login with username: test2 
+20.3.2023, 22:58:13 - INFO - User login:  | {"_id":"6418c8e5c702c36de79c0247","username":"test2","fullname":"Testu MctastyFace","score":0} 
+20.3.2023, 22:58:17 - DEBUG - auth.service - login with username: test2 
+20.3.2023, 22:58:17 - INFO - User login:  | {"_id":"6418c8e5c702c36de79c0247","username":"test2","fullname":"Testu MctastyFace","score":0} 
+20.3.2023, 23:00:42 - INFO - New chat msg from socket [id: JpluEU3jEwlVNGrjAAAV], emitting to topic 6418c773454bf510164e277e 
+20.3.2023, 23:00:49 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 23:00:50 - INFO - Req was made 
+20.3.2023, 23:00:50 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 23:00:50 - INFO - New connected socket [id: mQcP_76IhuUoP0d_AAAX] 
+20.3.2023, 23:00:50 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: mQcP_76IhuUoP0d_AAAX] 
+20.3.2023, 23:00:50 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 23:00:51 - INFO - Req was made 
+20.3.2023, 23:00:51 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 23:00:51 - INFO - New connected socket [id: YzJgZb57QT2ZTk-bAAAZ] 
+20.3.2023, 23:00:52 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: YzJgZb57QT2ZTk-bAAAZ] 
+20.3.2023, 23:00:54 - INFO - New chat msg from socket [id: YzJgZb57QT2ZTk-bAAAZ], emitting to topic 6418c773454bf510164e277e 
+20.3.2023, 23:01:10 - INFO - New chat msg from socket [id: YzJgZb57QT2ZTk-bAAAZ], emitting to topic 6418c773454bf510164e277e 
+20.3.2023, 23:02:04 - INFO - Hi | 90 | Bobo 
+20.3.2023, 23:02:04 - INFO - Server is running on port: 3030 
+20.3.2023, 23:02:05 - INFO - New connected socket [id: MqEM_oJwbavNz3CYAAAD] 
+20.3.2023, 23:02:05 - INFO - New connected socket [id: Pq0cugOzq6-fMWg3AAAE] 
+20.3.2023, 23:02:05 - INFO - New connected socket [id: 6MP2-KIN1XBjKv2dAAAF] 
+20.3.2023, 23:03:02 - INFO - Hi | 90 | Bobo 
+20.3.2023, 23:03:02 - INFO - Server is running on port: 3030 
+20.3.2023, 23:03:03 - INFO - New connected socket [id: _ZF8cUzso3QZqF2qAAAD] 
+20.3.2023, 23:03:03 - INFO - New connected socket [id: EL5BEMdDahbTHIDMAAAE] 
+20.3.2023, 23:03:03 - INFO - New connected socket [id: 2I-eXHsKpIxjAvClAAAF] 
+20.3.2023, 23:03:23 - INFO - Hi | 90 | Bobo 
+20.3.2023, 23:03:23 - INFO - Server is running on port: 3030 
+20.3.2023, 23:03:24 - INFO - New connected socket [id: XbVO1Y70tncHTizqAAAC] 
+20.3.2023, 23:03:24 - INFO - New connected socket [id: wE1-vLQ9oGRGvh2bAAAD] 
+20.3.2023, 23:03:25 - INFO - New connected socket [id: WL0R9oAyFC1PrwDEAAAF] 
+20.3.2023, 23:05:02 - INFO - Hi | 90 | Bobo 
+20.3.2023, 23:05:02 - INFO - Server is running on port: 3030 
+20.3.2023, 23:05:02 - INFO - New connected socket [id: iIp3zgZjU8DEofZlAAAB] 
+20.3.2023, 23:05:03 - INFO - New connected socket [id: sghBI9ciFedEHfM_AAAE] 
+20.3.2023, 23:05:03 - INFO - New connected socket [id: f8zf-V8tNd5h4rnbAAAF] 
+20.3.2023, 23:05:08 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 23:05:09 - INFO - Req was made 
+20.3.2023, 23:05:09 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 23:05:09 - INFO - New connected socket [id: Q1vfZ8QDL-leAYUIAAAH] 
+20.3.2023, 23:05:10 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: Q1vfZ8QDL-leAYUIAAAH] 
+20.3.2023, 23:05:14 - INFO - New chat msg from socket [id: Q1vfZ8QDL-leAYUIAAAH], emitting to topic 6418c773454bf510164e277e 
+20.3.2023, 23:05:18 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 23:05:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 23:05:19 - INFO - Req was made 
+20.3.2023, 23:05:19 - INFO - New connected socket [id: t7wJr2aTo7FuEhK4AAAJ] 
+20.3.2023, 23:05:20 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: t7wJr2aTo7FuEhK4AAAJ] 
+20.3.2023, 23:05:22 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 23:05:23 - INFO - Req was made 
+20.3.2023, 23:05:23 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 23:05:23 - INFO - New connected socket [id: pcU8S899rDDN9MALAAAL] 
+20.3.2023, 23:05:23 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: pcU8S899rDDN9MALAAAL] 
+20.3.2023, 23:05:25 - INFO - New chat msg from socket [id: pcU8S899rDDN9MALAAAL], emitting to topic 6418c773454bf510164e277e 
+20.3.2023, 23:06:51 - INFO - Hi | 90 | Bobo 
+20.3.2023, 23:06:51 - INFO - Server is running on port: 3030 
+20.3.2023, 23:07:12 - INFO - Hi | 90 | Bobo 
+20.3.2023, 23:07:12 - INFO - Server is running on port: 3030 
+20.3.2023, 23:07:12 - INFO - New connected socket [id: Dh2l2Ywn0dYVezoPAAAB] 
+20.3.2023, 23:07:16 - INFO - New connected socket [id: 2hRRmze3nqSXPhPFAAAD] 
+20.3.2023, 23:07:16 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 2hRRmze3nqSXPhPFAAAD] 
+20.3.2023, 23:07:17 - INFO - New connected socket [id: c9yoO56ZYiGkjMJMAAAF] 
+20.3.2023, 23:07:17 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: c9yoO56ZYiGkjMJMAAAF] 
+20.3.2023, 23:07:18 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 23:07:19 - INFO - Req was made 
+20.3.2023, 23:07:19 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 23:07:19 - INFO - New connected socket [id: cMpxF_77THtK9tFFAAAH] 
+20.3.2023, 23:07:20 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: cMpxF_77THtK9tFFAAAH] 
+20.3.2023, 23:07:22 - INFO - Socket disconnected [id: undefined] 
+20.3.2023, 23:07:23 - INFO - Req was made 
+20.3.2023, 23:07:23 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+20.3.2023, 23:07:23 - INFO - New connected socket [id: kPoQ4U18RGWYkQ_HAAAJ] 
+20.3.2023, 23:07:24 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: kPoQ4U18RGWYkQ_HAAAJ] 
+21.3.2023, 1:15:17 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:15:17 - INFO - Server is running on port: 3030 
+21.3.2023, 1:15:18 - INFO - New connected socket [id: uSdeQjjDmZjyJx4-AAAD] 
+21.3.2023, 1:15:18 - INFO - New connected socket [id: rwKWtziQW-YM9ot-AAAE] 
+21.3.2023, 1:15:18 - INFO - New connected socket [id: WCDIeIxuxAmf4A7GAAAF] 
+21.3.2023, 1:16:45 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:16:45 - INFO - Server is running on port: 3030 
+21.3.2023, 1:16:46 - INFO - New connected socket [id: HnH0OCKNplpf6RhNAAAD] 
+21.3.2023, 1:16:46 - INFO - New connected socket [id: Pro7grR7a1f5yclnAAAE] 
+21.3.2023, 1:16:46 - INFO - New connected socket [id: rpvkh0fPFTgOMeYqAAAF] 
+21.3.2023, 1:16:55 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:16:55 - INFO - Server is running on port: 3030 
+21.3.2023, 1:16:56 - INFO - New connected socket [id: uYe1trveulS9Gz8qAAAB] 
+21.3.2023, 1:16:57 - INFO - New connected socket [id: z1yTLGc8XS568LPrAAAE] 
+21.3.2023, 1:16:57 - INFO - New connected socket [id: xGSREjbKzvGUfmjRAAAF] 
+21.3.2023, 1:17:09 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:17:11 - INFO - New connected socket [id: 0QzCaidb2uAMoD2FAAAH] 
+21.3.2023, 1:17:11 - INFO - Req was made 
+21.3.2023, 1:17:11 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:17:11 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 0QzCaidb2uAMoD2FAAAH] 
+21.3.2023, 1:17:11 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:17:12 - INFO - Req was made 
+21.3.2023, 1:17:12 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:17:12 - INFO - New connected socket [id: yAv71vWedz5eAyekAAAJ] 
+21.3.2023, 1:17:13 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: yAv71vWedz5eAyekAAAJ] 
+21.3.2023, 1:19:39 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:19:39 - INFO - Server is running on port: 3030 
+21.3.2023, 1:19:40 - INFO - New connected socket [id: aGuf3fWll24Ygjz5AAAB] 
+21.3.2023, 1:19:40 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: aGuf3fWll24Ygjz5AAAB] 
+21.3.2023, 1:19:41 - INFO - New connected socket [id: 84TL9OfFfJKePYuxAAAD] 
+21.3.2023, 1:19:41 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 84TL9OfFfJKePYuxAAAD] 
+21.3.2023, 1:19:42 - INFO - New connected socket [id: Ia0jRRRhhPwo9CK7AAAF] 
+21.3.2023, 1:19:42 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:19:43 - INFO - Req was made 
+21.3.2023, 1:19:43 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:19:43 - INFO - New connected socket [id: KBzaEZ6SeVBZIHFMAAAH] 
+21.3.2023, 1:19:43 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: KBzaEZ6SeVBZIHFMAAAH] 
+21.3.2023, 1:19:49 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:19:50 - INFO - Req was made 
+21.3.2023, 1:19:50 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:19:50 - INFO - New connected socket [id: 6uDWKJnhHcKOGjfSAAAJ] 
+21.3.2023, 1:19:50 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: 6uDWKJnhHcKOGjfSAAAJ] 
+21.3.2023, 1:19:54 - INFO - New chat msg from socket [id: 6uDWKJnhHcKOGjfSAAAJ], emitting to topic 6418c773454bf510164e277e 
+21.3.2023, 1:19:58 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:19:58 - INFO - Req was made 
+21.3.2023, 1:19:58 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:19:59 - INFO - New connected socket [id: mCBEl3GyWahgkGzOAAAL] 
+21.3.2023, 1:19:59 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: mCBEl3GyWahgkGzOAAAL] 
+21.3.2023, 1:20:16 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:20:16 - INFO - Server is running on port: 3030 
+21.3.2023, 1:20:17 - INFO - New connected socket [id: DQRutumyM_ntbJrwAAAB] 
+21.3.2023, 1:20:18 - INFO - New connected socket [id: Ft-ASCHazj4E97wZAAAE] 
+21.3.2023, 1:20:18 - INFO - New connected socket [id: AI-vJ86GYmVoDIMeAAAF] 
+21.3.2023, 1:20:31 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:20:31 - INFO - Server is running on port: 3030 
+21.3.2023, 1:20:32 - INFO - New connected socket [id: Hx1kjiReSj9W_N9vAAAC] 
+21.3.2023, 1:20:32 - INFO - New connected socket [id: F8IZzwz2UwRD0CdpAAAD] 
+21.3.2023, 1:20:32 - INFO - New connected socket [id: YgKo929m8SOrHVIFAAAF] 
+21.3.2023, 1:21:22 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:21:22 - INFO - Server is running on port: 3030 
+21.3.2023, 1:21:23 - INFO - New connected socket [id: eJnYST3LBbcpTqzOAAAD] 
+21.3.2023, 1:21:23 - INFO - New connected socket [id: FnOVv921ExhlQdxYAAAE] 
+21.3.2023, 1:21:23 - INFO - New connected socket [id: 7F5KG3OTYhhZ4Z2RAAAF] 
+21.3.2023, 1:21:51 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:21:51 - INFO - Server is running on port: 3030 
+21.3.2023, 1:21:52 - INFO - New connected socket [id: QR3LoNqvRScWvPFYAAAD] 
+21.3.2023, 1:21:52 - INFO - New connected socket [id: 3nicKX7jxuFS2zTHAAAE] 
+21.3.2023, 1:21:52 - INFO - New connected socket [id: XnNvR19IBj8s493ZAAAF] 
+21.3.2023, 1:29:05 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:29:05 - INFO - Server is running on port: 3030 
+21.3.2023, 1:32:25 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:32:25 - INFO - Server is running on port: 3030 
+21.3.2023, 1:32:54 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:32:54 - INFO - Server is running on port: 3030 
+21.3.2023, 1:33:16 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:33:16 - INFO - Server is running on port: 3030 
+21.3.2023, 1:33:17 - INFO - New connected socket [id: R5GF2Cc_AloFB_4tAAAD] 
+21.3.2023, 1:33:17 - INFO - New connected socket [id: rUNjW_IVsOT9i1FEAAAE] 
+21.3.2023, 1:33:17 - INFO - New connected socket [id: L_iatJxX3rVTz3pNAAAF] 
+21.3.2023, 1:33:19 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:33:20 - INFO - Req was made 
+21.3.2023, 1:33:20 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:33:20 - INFO - New connected socket [id: 0qDRkua_cAc9RLfiAAAH] 
+21.3.2023, 1:33:21 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 0qDRkua_cAc9RLfiAAAH] 
+21.3.2023, 1:34:02 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:34:03 - INFO - Req was made 
+21.3.2023, 1:34:03 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:34:04 - INFO - New connected socket [id: BLXrOqhnMQgbJAk9AAAJ] 
+21.3.2023, 1:34:04 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: BLXrOqhnMQgbJAk9AAAJ] 
+21.3.2023, 1:34:10 - INFO - New chat msg from socket [id: BLXrOqhnMQgbJAk9AAAJ], emitting to topic 6418c773454bf510164e277e 
+21.3.2023, 1:34:10 - INFO - Broadcasting event: chat-add-msg 
+21.3.2023, 1:34:10 - INFO - Broadcast to room 6418c773454bf510164e277e excluding user: 6418c7d6c702c36de79c0246 
+21.3.2023, 1:34:13 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:34:14 - INFO - Req was made 
+21.3.2023, 1:34:14 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:34:14 - INFO - New connected socket [id: 3Y9gPSwAO_hZYEVfAAAL] 
+21.3.2023, 1:34:14 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: 3Y9gPSwAO_hZYEVfAAAL] 
+21.3.2023, 1:34:58 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:34:58 - INFO - Server is running on port: 3030 
+21.3.2023, 1:34:59 - INFO - New connected socket [id: 0x-Xsb7S4tZyumzoAAAB] 
+21.3.2023, 1:34:59 - INFO - New connected socket [id: vTzSkZfXwdetzhUrAAAE] 
+21.3.2023, 1:34:59 - INFO - New connected socket [id: N0Z8M8XXXFPhI8l9AAAF] 
+21.3.2023, 1:35:12 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:35:12 - INFO - Server is running on port: 3030 
+21.3.2023, 1:35:13 - INFO - New connected socket [id: SM7-DIb2du1mhIhpAAAD] 
+21.3.2023, 1:35:13 - INFO - New connected socket [id: dib6IJ7cz9zbi0ykAAAE] 
+21.3.2023, 1:35:13 - INFO - New connected socket [id: xKSASImiO4iCyGAnAAAF] 
+21.3.2023, 1:35:54 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:35:54 - INFO - Server is running on port: 3030 
+21.3.2023, 1:35:54 - INFO - New connected socket [id: gMCYQpHwJ6j_Y8oWAAAB] 
+21.3.2023, 1:35:55 - INFO - New connected socket [id: 2m-4IZihOm-UZ6dEAAAD] 
+21.3.2023, 1:35:56 - INFO - New connected socket [id: pJLAw27tgnonfCV6AAAF] 
+21.3.2023, 1:36:22 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:36:22 - INFO - Server is running on port: 3030 
+21.3.2023, 1:36:23 - INFO - New connected socket [id: LXv0zl7fQltCw7PdAAAB] 
+21.3.2023, 1:36:24 - INFO - New connected socket [id: CVuyFV58yoDCzDepAAAE] 
+21.3.2023, 1:36:24 - INFO - New connected socket [id: S5ERFRry-zVg5zU2AAAF] 
+21.3.2023, 1:36:59 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:36:59 - INFO - Server is running on port: 3030 
+21.3.2023, 1:36:59 - INFO - New connected socket [id: p0dENbSkZnhnppUUAAAB] 
+21.3.2023, 1:36:59 - INFO - New connected socket [id: r52g5Exte7LHaglAAAAD] 
+21.3.2023, 1:37:00 - INFO - New connected socket [id: LV6zHkIphi-Jv8JsAAAF] 
+21.3.2023, 1:37:05 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:37:05 - INFO - Server is running on port: 3030 
+21.3.2023, 1:37:06 - INFO - New connected socket [id: SbyGYv6uZCANccHEAAAB] 
+21.3.2023, 1:37:06 - INFO - New connected socket [id: Sn7Y1WZzY8HGtbmvAAAD] 
+21.3.2023, 1:37:07 - INFO - New connected socket [id: dzXw0WBW3KSYS-pDAAAF] 
+21.3.2023, 1:37:12 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:37:12 - INFO - Server is running on port: 3030 
+21.3.2023, 1:37:12 - INFO - New connected socket [id: XkqrX83Ap0AninoKAAAB] 
+21.3.2023, 1:37:13 - INFO - New connected socket [id: -KCXme20M9D_txKrAAAE] 
+21.3.2023, 1:37:13 - INFO - New connected socket [id: LgH99RNlQb90fCliAAAF] 
+21.3.2023, 1:37:19 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:37:19 - INFO - Server is running on port: 3030 
+21.3.2023, 1:37:19 - INFO - New connected socket [id: _Fw9GJkVy_ESUWeJAAAB] 
+21.3.2023, 1:37:20 - INFO - New connected socket [id: 92-hkwSIyfFUSEJIAAAE] 
+21.3.2023, 1:37:20 - INFO - New connected socket [id: _yC1sTi7I38UsfTSAAAF] 
+21.3.2023, 1:37:24 - INFO - Server is running on port: 3030 
+21.3.2023, 1:37:24 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:37:25 - INFO - New connected socket [id: S451yRjxVmTByyB0AAAB] 
+21.3.2023, 1:37:25 - INFO - New connected socket [id: VSFFFrZHhjh8oi7eAAAE] 
+21.3.2023, 1:37:25 - INFO - New connected socket [id: aG22rI6SN5FvsA7TAAAF] 
+21.3.2023, 1:37:56 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:37:56 - INFO - Server is running on port: 3030 
+21.3.2023, 1:37:57 - INFO - New connected socket [id: gwKoBXH-uE4j119EAAAB] 
+21.3.2023, 1:37:58 - INFO - New connected socket [id: friYMNBILmg0k-8UAAAE] 
+21.3.2023, 1:37:58 - INFO - New connected socket [id: AKCK8slr9zd2f5FRAAAF] 
+21.3.2023, 1:40:15 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:40:15 - INFO - Server is running on port: 3030 
+21.3.2023, 1:40:16 - INFO - New connected socket [id: cbFPTPtO4ZvbWt3RAAAB] 
+21.3.2023, 1:40:16 - INFO - New connected socket [id: oswrtDuYcV6HW4ahAAAD] 
+21.3.2023, 1:40:17 - INFO - New connected socket [id: 6K6gmEULwt-z5_8xAAAF] 
+21.3.2023, 1:40:29 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:40:29 - INFO - Server is running on port: 3030 
+21.3.2023, 1:40:30 - INFO - New connected socket [id: noU-tnk2ZSLwenQ1AAAB] 
+21.3.2023, 1:40:31 - INFO - New connected socket [id: FVMPFZFgnanyQGZPAAAE] 
+21.3.2023, 1:40:31 - INFO - New connected socket [id: FNIeXrxhWsUHkxZEAAAF] 
+21.3.2023, 1:40:37 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:40:37 - INFO - Server is running on port: 3030 
+21.3.2023, 1:40:38 - INFO - New connected socket [id: MsYDYNiikFoTS0SuAAAB] 
+21.3.2023, 1:40:38 - INFO - New connected socket [id: ynekYrZw8a80BQl2AAAD] 
+21.3.2023, 1:40:39 - INFO - New connected socket [id: 0ll2-VBcvnGAyA7uAAAF] 
+21.3.2023, 1:41:10 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:41:10 - INFO - Server is running on port: 3030 
+21.3.2023, 1:41:11 - INFO - New connected socket [id: nmpS6AfEHNeH4DmFAAAB] 
+21.3.2023, 1:41:11 - INFO - New connected socket [id: gZxtrUPxmDj0suUeAAAD] 
+21.3.2023, 1:41:12 - INFO - New connected socket [id: QRAVNYMjp-1ehPBTAAAF] 
+21.3.2023, 1:47:36 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:47:36 - INFO - Req was made 
+21.3.2023, 1:47:36 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:47:36 - INFO - New connected socket [id: qBlItKHaGuP6u3ePAAAH] 
+21.3.2023, 1:47:37 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: qBlItKHaGuP6u3ePAAAH] 
+21.3.2023, 1:49:39 - INFO - Socket is leaving topic 6418c773454bf510164e277e [id: gZxtrUPxmDj0suUeAAAD] 
+21.3.2023, 1:50:23 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:50:24 - INFO - Req was made 
+21.3.2023, 1:50:24 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:50:24 - INFO - New connected socket [id: YbVNHwFkR2D5PqqhAAAJ] 
+21.3.2023, 1:50:25 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: YbVNHwFkR2D5PqqhAAAJ] 
+21.3.2023, 1:51:12 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:51:12 - INFO - Req was made 
+21.3.2023, 1:51:12 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:51:12 - INFO - New connected socket [id: VBY6yIoIbLeyhgjVAAAL] 
+21.3.2023, 1:51:13 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: VBY6yIoIbLeyhgjVAAAL] 
+21.3.2023, 1:51:42 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:51:43 - INFO - Req was made 
+21.3.2023, 1:51:43 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:51:43 - INFO - New connected socket [id: tDI-32AGDkN-pCjCAAAN] 
+21.3.2023, 1:51:48 - DEBUG - auth.service - login with username: test 
+21.3.2023, 1:51:48 - INFO - User login:  | {"_id":"6418c7d6c702c36de79c0246","username":"test","fullname":"Test MctestyFace","score":0,"isAdmin":true} 
+21.3.2023, 1:52:52 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:52:52 - INFO - Server is running on port: 3030 
+21.3.2023, 1:52:52 - INFO - New connected socket [id: j7KTfqvpHSMknJn1AAAB] 
+21.3.2023, 1:52:54 - INFO - New connected socket [id: znecnfp2jPj0Qh6yAAAE] 
+21.3.2023, 1:52:54 - INFO - New connected socket [id: fq_fivguOuGfqGiZAAAF] 
+21.3.2023, 1:53:02 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:53:02 - INFO - Server is running on port: 3030 
+21.3.2023, 1:53:03 - INFO - New connected socket [id: id98Qqeb88YSrhCoAAAB] 
+21.3.2023, 1:53:03 - INFO - New connected socket [id: Yll2XdynAhoiRhwPAAAD] 
+21.3.2023, 1:53:04 - INFO - New connected socket [id: WLL3PTZh-sw-VW7IAAAF] 
+21.3.2023, 1:53:05 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:53:06 - INFO - Req was made 
+21.3.2023, 1:53:06 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:53:06 - INFO - New connected socket [id: RmdJqJ88nIN6ZuoVAAAH] 
+21.3.2023, 1:53:06 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: RmdJqJ88nIN6ZuoVAAAH] 
+21.3.2023, 1:53:09 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:53:10 - INFO - Req was made 
+21.3.2023, 1:53:10 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:53:10 - INFO - New connected socket [id: AUdFNpxG4ID0lywWAAAJ] 
+21.3.2023, 1:53:10 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: AUdFNpxG4ID0lywWAAAJ] 
+21.3.2023, 1:53:15 - INFO - Broadcasting event: admin-update 
+21.3.2023, 1:53:15 - INFO - Broadcast to all excluding user: 6418c7d6c702c36de79c0246 
+21.3.2023, 1:53:40 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:53:41 - INFO - Req was made 
+21.3.2023, 1:53:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:53:41 - INFO - New connected socket [id: Xe0RsCQShDOFWMlKAAAL] 
+21.3.2023, 1:53:41 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:53:42 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: Xe0RsCQShDOFWMlKAAAL] 
+21.3.2023, 1:53:42 - INFO - Req was made 
+21.3.2023, 1:53:42 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:53:42 - INFO - New connected socket [id: Pd0KwDPrQJgbyxi_AAAN] 
+21.3.2023, 1:53:43 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: Pd0KwDPrQJgbyxi_AAAN] 
+21.3.2023, 1:53:52 - INFO - Broadcasting event: admin-update 
+21.3.2023, 1:53:52 - INFO - Broadcast to all excluding user: 6418c7d6c702c36de79c0246 
+21.3.2023, 1:55:06 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:55:06 - INFO - Server is running on port: 3030 
+21.3.2023, 1:55:06 - INFO - New connected socket [id: BBanIg_F53aghXuYAAAB] 
+21.3.2023, 1:55:07 - INFO - New connected socket [id: QCYSvKARixzsx-DUAAAE] 
+21.3.2023, 1:55:07 - INFO - New connected socket [id: QauAUcoatbqajpc_AAAF] 
+21.3.2023, 1:55:25 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:55:25 - INFO - Server is running on port: 3030 
+21.3.2023, 1:55:25 - INFO - New connected socket [id: cs7IrMGLL5Av6DXTAAAC] 
+21.3.2023, 1:55:25 - INFO - New connected socket [id: CT8GZ40uKN4ycZUkAAAD] 
+21.3.2023, 1:55:26 - INFO - New connected socket [id: LSXl9MNvGAjva6nNAAAF] 
+21.3.2023, 1:55:33 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:55:34 - INFO - Req was made 
+21.3.2023, 1:55:34 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:55:34 - INFO - New connected socket [id: NqVKcfag12TqJjS2AAAH] 
+21.3.2023, 1:55:34 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: NqVKcfag12TqJjS2AAAH] 
+21.3.2023, 1:55:35 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:55:36 - INFO - Req was made 
+21.3.2023, 1:55:36 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:55:36 - INFO - New connected socket [id: wI40jEnzy7hvmZskAAAK] 
+21.3.2023, 1:55:36 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: wI40jEnzy7hvmZskAAAK] 
+21.3.2023, 1:55:51 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:55:52 - INFO - Req was made 
+21.3.2023, 1:55:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:55:52 - INFO - New connected socket [id: 1kU1-_HzCbapRYuuAAAM] 
+21.3.2023, 1:55:52 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 1kU1-_HzCbapRYuuAAAM] 
+21.3.2023, 1:56:02 - INFO - Broadcasting event: admin-update 
+21.3.2023, 1:56:02 - INFO - Emit to all 
+21.3.2023, 1:57:24 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:57:25 - INFO - Req was made 
+21.3.2023, 1:57:25 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:57:25 - INFO - New connected socket [id: HLMzbj5n-0BIhX8uAAAO] 
+21.3.2023, 1:57:25 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: HLMzbj5n-0BIhX8uAAAO] 
+21.3.2023, 1:57:31 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:57:33 - INFO - Req was made 
+21.3.2023, 1:57:33 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:57:33 - INFO - New connected socket [id: 9lj6n44w0cYmVitTAAAQ] 
+21.3.2023, 1:57:33 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: 9lj6n44w0cYmVitTAAAQ] 
+21.3.2023, 1:57:50 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:57:52 - INFO - Req was made 
+21.3.2023, 1:57:52 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:57:52 - INFO - New connected socket [id: TjTjNNuyaEqse-jcAAAS] 
+21.3.2023, 1:57:52 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: TjTjNNuyaEqse-jcAAAS] 
+21.3.2023, 1:57:58 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:57:59 - INFO - Req was made 
+21.3.2023, 1:57:59 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 1:57:59 - INFO - New connected socket [id: bmaR8UQvlZj_fnUcAAAU] 
+21.3.2023, 1:58:00 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: bmaR8UQvlZj_fnUcAAAU] 
+21.3.2023, 1:58:39 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 1:58:48 - INFO - Hi | 90 | Bobo 
+21.3.2023, 1:58:48 - INFO - Server is running on port: 3030 
+21.3.2023, 1:58:49 - INFO - New connected socket [id: jMYWh6FEU-gZQq5jAAAC] 
+21.3.2023, 1:58:49 - INFO - New connected socket [id: 4ZAqd_WN5YKb7Hb4AAAD] 
+21.3.2023, 2:02:43 - INFO - Hi | 90 | Bobo 
+21.3.2023, 2:02:43 - INFO - Server is running on port: 3030 
+21.3.2023, 2:03:03 - INFO - Req was made 
+21.3.2023, 2:03:03 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 2:03:03 - INFO - New connected socket [id: 2gapv6FSFVYxTfIwAAAB] 
+21.3.2023, 2:03:03 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 2gapv6FSFVYxTfIwAAAB] 
+21.3.2023, 2:03:16 - INFO - Req was made 
+21.3.2023, 2:03:16 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 2:03:16 - INFO - New connected socket [id: jHbBAZO3O1JB_ZFfAAAD] 
+21.3.2023, 2:03:24 - DEBUG - auth.service - login with username: test 
+21.3.2023, 2:03:25 - INFO - User login:  | {"_id":"6418c7d6c702c36de79c0246","username":"test","fullname":"Test MctestyFace","score":0,"isAdmin":true} 
+21.3.2023, 2:03:58 - INFO - Broadcasting event: admin-update 
+21.3.2023, 2:03:58 - INFO - Emit to all 
+21.3.2023, 2:05:41 - INFO - Hi | 90 | Bobo 
+21.3.2023, 2:05:41 - INFO - Server is running on port: 3030 
+21.3.2023, 2:05:44 - INFO - New connected socket [id: _W0d_545TV0vd_r2AAAB] 
+21.3.2023, 2:05:45 - INFO - New connected socket [id: nwa-RLMA7Lsh-ROpAAAD] 
+21.3.2023, 2:05:54 - INFO - Server is running on port: 3030 
+21.3.2023, 2:05:54 - INFO - Hi | 90 | Bobo 
+21.3.2023, 2:05:55 - INFO - New connected socket [id: UEJercZovV8UbQOFAAAC] 
+21.3.2023, 2:05:55 - INFO - New connected socket [id: DeIDG0k-LQHyuzfjAAAD] 
+21.3.2023, 2:06:22 - INFO - Hi | 90 | Bobo 
+21.3.2023, 2:06:22 - INFO - Server is running on port: 3030 
+21.3.2023, 2:06:22 - INFO - New connected socket [id: FK8mBilxU1x4Yi14AAAB] 
+21.3.2023, 2:06:23 - INFO - New connected socket [id: 2RCpR28pSOPYOpw8AAAD] 
+21.3.2023, 2:06:34 - INFO - Hi | 90 | Bobo 
+21.3.2023, 2:06:34 - INFO - Server is running on port: 3030 
+21.3.2023, 2:06:34 - INFO - New connected socket [id: dMF6kra2G45pp474AAAB] 
+21.3.2023, 2:06:35 - INFO - New connected socket [id: cTCOAvYTbxIonEhvAAAD] 
+21.3.2023, 2:06:38 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 2:06:39 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 2:06:41 - INFO - Req was made 
+21.3.2023, 2:06:41 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 2:06:41 - INFO - New connected socket [id: 3fghKMp-hFgLpU5fAAAG] 
+21.3.2023, 2:06:41 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 3fghKMp-hFgLpU5fAAAG] 
+21.3.2023, 2:06:48 - INFO - Req was made 
+21.3.2023, 2:06:48 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 2:06:48 - INFO - New connected socket [id: HX_0lQMEA-LYczgsAAAH] 
+21.3.2023, 2:06:48 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: HX_0lQMEA-LYczgsAAAH] 
+21.3.2023, 2:06:53 - INFO - Broadcasting event: admin-update 
+21.3.2023, 2:06:53 - INFO - Emit to all 
+21.3.2023, 2:06:59 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 2:07:00 - INFO - Req was made 
+21.3.2023, 2:07:00 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 2:07:00 - INFO - New connected socket [id: 3ZtlQ8RWzas3rGybAAAJ] 
+21.3.2023, 2:07:00 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: 3ZtlQ8RWzas3rGybAAAJ] 
+21.3.2023, 2:07:06 - INFO - Broadcasting event: admin-update 
+21.3.2023, 2:07:06 - INFO - Emit to all 
+21.3.2023, 2:07:19 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 2:07:20 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 8:23:30 - INFO - Hi | 90 | Bobo 
+21.3.2023, 8:23:30 - INFO - Server is running on port: 3030 
+21.3.2023, 8:23:45 - INFO - Req was made 
+21.3.2023, 8:23:45 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 8:23:45 - INFO - New connected socket [id: 8BliV0sLuxjH_n55AAAB] 
+21.3.2023, 8:24:09 - INFO - Req was made 
+21.3.2023, 8:24:09 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 8:24:09 - INFO - New connected socket [id: HRTj4-hWZHHqmmmzAAAD] 
+21.3.2023, 8:24:23 - DEBUG - auth.service - login with username: test2 
+21.3.2023, 8:24:24 - INFO - User login:  | {"_id":"6418c8e5c702c36de79c0247","username":"test2","fullname":"Testu MctastyFace","score":0} 
+21.3.2023, 8:24:25 - DEBUG - auth.service - login with username: test 
+21.3.2023, 8:24:25 - INFO - User login:  | {"_id":"6418c7d6c702c36de79c0246","username":"test","fullname":"Test MctestyFace","score":0,"isAdmin":true} 
+21.3.2023, 8:24:31 - INFO - Broadcasting event: admin-update 
+21.3.2023, 8:24:31 - INFO - Emit to all 
+21.3.2023, 8:26:10 - INFO - Hi | 90 | Bobo 
+21.3.2023, 8:26:10 - INFO - Server is running on port: 3030 
+21.3.2023, 8:26:10 - INFO - New connected socket [id: UnH-FwHATRVvDUC1AAAB] 
+21.3.2023, 8:26:10 - INFO - New connected socket [id: QQsSzxf0YiS7-7wWAAAD] 
+21.3.2023, 8:26:20 - INFO - Broadcasting event: admin-update 
+21.3.2023, 8:26:20 - INFO - Emit to all 
+21.3.2023, 8:26:23 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 8:26:23 - INFO - Req was made 
+21.3.2023, 8:26:23 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 8:26:23 - INFO - New connected socket [id: QzvTbMgB36C6sOk2AAAF] 
+21.3.2023, 8:26:24 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: QzvTbMgB36C6sOk2AAAF] 
+21.3.2023, 8:26:24 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 8:26:26 - INFO - Req was made 
+21.3.2023, 8:26:26 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 8:26:26 - INFO - New connected socket [id: NIK4JvP-N0lwF0-UAAAH] 
+21.3.2023, 8:26:27 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: NIK4JvP-N0lwF0-UAAAH] 
+21.3.2023, 8:26:30 - INFO - Broadcasting event: admin-update 
+21.3.2023, 8:26:30 - INFO - Broadcast to all excluding user: 6418c7d6c702c36de79c0246 
+21.3.2023, 8:27:03 - INFO - Hi | 90 | Bobo 
+21.3.2023, 8:27:03 - INFO - Server is running on port: 3030 
+21.3.2023, 8:27:03 - INFO - New connected socket [id: QynRrmMG0biMdZBuAAAB] 
+21.3.2023, 8:27:04 - INFO - New connected socket [id: 2DTwv538f-r64AfMAAAD] 
+21.3.2023, 8:35:10 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 8:35:11 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 8:35:12 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 8:35:12 - INFO - Req was made 
+21.3.2023, 8:35:12 - INFO - New connected socket [id: qhlpZVaMOAdh6rHiAAAF] 
+21.3.2023, 8:35:13 - INFO - Req was made 
+21.3.2023, 8:35:13 - DEBUG - Getting Toys | {"txt":"","status":"","labels":null} 
+21.3.2023, 8:35:13 - INFO - Setting socket.userId = 6418c7d6c702c36de79c0246 for socket [id: qhlpZVaMOAdh6rHiAAAF] 
+21.3.2023, 8:35:13 - INFO - New connected socket [id: EXnTGEFqedEYm8d4AAAH] 
+21.3.2023, 8:35:14 - INFO - Setting socket.userId = 6418c8e5c702c36de79c0247 for socket [id: EXnTGEFqedEYm8d4AAAH] 
+21.3.2023, 8:35:36 - INFO - New chat msg from socket [id: qhlpZVaMOAdh6rHiAAAF], emitting to topic 6418c773454bf510164e2780 
+21.3.2023, 8:35:36 - INFO - Broadcasting event: chat-add-msg 
+21.3.2023, 8:35:36 - INFO - Broadcast to room 6418c773454bf510164e2780 excluding user: 6418c7d6c702c36de79c0246 
+21.3.2023, 8:36:00 - INFO - Broadcasting event: admin-update 
+21.3.2023, 8:36:00 - INFO - Broadcast to all excluding user: 6418c7d6c702c36de79c0246 
+21.3.2023, 8:48:16 - INFO - Hi | 90 | Bobo 
+21.3.2023, 8:48:16 - INFO - Server is running on port: 3030 
+21.3.2023, 8:48:16 - INFO - New connected socket [id: ZMJ-1-MTjBMSH8q_AAAB] 
+21.3.2023, 8:48:16 - INFO - New connected socket [id: bG9slAX5nCpQBQsrAAAD] 
+21.3.2023, 9:12:32 - INFO - Socket is leaving topic 6418c773454bf510164e2780 [id: bG9slAX5nCpQBQsrAAAD] 
+21.3.2023, 9:12:34 - INFO - Socket is leaving topic 6418c773454bf510164e2782 [id: bG9slAX5nCpQBQsrAAAD] 
+21.3.2023, 9:12:41 - INFO - New chat msg from socket [id: ZMJ-1-MTjBMSH8q_AAAB], emitting to topic 6418c773454bf510164e2780 
+21.3.2023, 9:12:41 - INFO - Emit to room: 6418c773454bf510164e2780 
+21.3.2023, 9:12:41 - INFO - Broadcasting event: chat-add-msg 
+21.3.2023, 9:58:07 - INFO - Socket disconnected [id: undefined] 
+21.3.2023, 9:58:08 - INFO - Socket disconnected [id: undefined] 
+31.3.2023, 15:15:08 - INFO - Hi | 90 | Bobo 
+31.3.2023, 15:15:08 - INFO - Server is running on port: 3030 
+31.3.2023, 15:15:45 - INFO - Hi | 90 | Bobo 
+31.3.2023, 15:15:45 - INFO - Server is running on port: 3030 
+31.3.2023, 15:18:25 - INFO - Hi | 90 | Bobo 
+31.3.2023, 15:18:25 - INFO - Server is running on port: 3030 
+31.3.2023, 15:18:45 - DEBUG - auth.service - login with username: puk 
+31.3.2023, 15:18:46 - ERROR - Failed to Login Invalid username or password 
+31.3.2023, 15:18:52 - DEBUG - auth.service - login with username: muki 
+31.3.2023, 15:18:52 - ERROR - Failed to Login Invalid username or password 
+31.3.2023, 15:22:53 - INFO - Hi | 90 | Bobo 
+31.3.2023, 15:22:53 - INFO - Server is running on port: 3030 
+31.3.2023, 16:32:29 - INFO - Hi | 90 | Bobo 
+31.3.2023, 16:32:29 - INFO - Server is running on port: 3030 
+31.3.2023, 16:32:50 - DEBUG - auth.service - login with username: puk 
+31.3.2023, 16:32:50 - ERROR - Failed to Login Invalid username or password 
+31.3.2023, 16:34:37 - INFO - Hi | 90 | Bobo 
+31.3.2023, 16:34:37 - INFO - Server is running on port: 3030 
+31.3.2023, 16:35:45 - INFO - Hi | 90 | Bobo 
+31.3.2023, 16:35:45 - INFO - Server is running on port: 3030 
+31.3.2023, 17:08:26 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:08:26 - INFO - Server is running on port: 3030 
+31.3.2023, 17:10:50 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:10:50 - INFO - Server is running on port: 3030 
+31.3.2023, 17:10:54 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:10:54 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:11:33 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:11:33 - INFO - Server is running on port: 3030 
+31.3.2023, 17:11:43 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:11:43 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:31:28 - INFO - Req was made 
+31.3.2023, 17:31:28 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+31.3.2023, 17:31:35 - INFO - Req was made 
+31.3.2023, 17:31:35 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+31.3.2023, 17:44:04 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:44:04 - INFO - Server is running on port: 3030 
+31.3.2023, 17:44:13 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:44:13 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:44:15 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:44:15 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:44:50 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:44:50 - INFO - Server is running on port: 3030 
+31.3.2023, 17:45:10 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:45:10 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:47:23 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:47:23 - INFO - Server is running on port: 3030 
+31.3.2023, 17:47:32 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:47:32 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:47:59 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:48:00 - INFO - Server is running on port: 3030 
+31.3.2023, 17:48:15 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:48:15 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 17:48:32 - INFO - Hi | 90 | Bobo 
+31.3.2023, 17:48:32 - INFO - Server is running on port: 3030 
+31.3.2023, 17:49:31 - INFO - Req was made 
+31.3.2023, 17:49:31 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+31.3.2023, 17:55:46 - INFO - Req was made 
+31.3.2023, 17:55:46 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+31.3.2023, 18:27:13 - INFO - Hi | 90 | Bobo 
+31.3.2023, 18:27:13 - INFO - Server is running on port: 3030 
+31.3.2023, 18:27:20 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 18:27:20 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 18:27:50 - INFO - Req was made 
+31.3.2023, 18:27:50 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 18:28:07 - INFO - Req was made 
+31.3.2023, 18:28:07 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 18:59:19 - INFO - Req was made 
+31.3.2023, 18:59:19 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 19:30:43 - INFO - Req was made 
+31.3.2023, 19:30:43 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 19:36:31 - INFO - Hi | 90 | Bobo 
+31.3.2023, 19:36:31 - INFO - Server is running on port: 3030 
+31.3.2023, 19:52:12 - INFO - Hi | 90 | Bobo 
+31.3.2023, 19:52:12 - INFO - Server is running on port: 3030 
+31.3.2023, 19:52:20 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 19:52:20 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 20:54:30 - INFO - Hi | 90 | Bobo 
+31.3.2023, 20:54:30 - INFO - Server is running on port: 3030 
+31.3.2023, 20:54:37 - ERROR - while finding toy stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 20:54:37 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 20:54:49 - INFO - Req was made 
+31.3.2023, 20:54:49 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 21:11:26 - INFO - Hi | 90 | Bobo 
+31.3.2023, 21:11:26 - INFO - Server is running on port: 3030 
+31.3.2023, 21:11:36 - INFO - Req was made 
+31.3.2023, 21:11:36 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 21:12:53 - INFO - Hi | 90 | Bobo 
+31.3.2023, 21:12:53 - INFO - Server is running on port: 3030 
+31.3.2023, 21:13:00 - INFO - Req was made 
+31.3.2023, 21:13:00 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 21:14:44 - INFO - Hi | 90 | Bobo 
+31.3.2023, 21:14:44 - INFO - Server is running on port: 3030 
+31.3.2023, 21:14:46 - INFO - Hi | 90 | Bobo 
+31.3.2023, 21:14:46 - INFO - Server is running on port: 3030 
+31.3.2023, 21:26:44 - INFO - Hi | 90 | Bobo 
+31.3.2023, 21:26:44 - INFO - Server is running on port: 3030 
+31.3.2023, 21:26:52 - INFO - Req was made 
+31.3.2023, 21:26:52 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 21:30:37 - ERROR - while finding stay  : ObjectId("6426def81a9c822559a29aeb") | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:30:37 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:30:48 - ERROR - while finding stay  : "6426def81a9c822559a29aeb" | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:30:48 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:31:03 - ERROR - while finding stay  : 6426def81a9c822559a29aeb | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:31:03 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:31:08 - ERROR - while finding stay   6426def81a9c822559a29aeb | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:31:08 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:31:20 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:31:20 - ERROR - while finding stay  6426def81a9c822559a29aeb | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:43:31 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 21:43:31 - INFO - Req was made 
+31.3.2023, 21:47:37 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 21:47:37 - ERROR - while finding stay stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 22:39:37 - INFO - Hi | 90 | Bobo 
+31.3.2023, 22:39:37 - INFO - Server is running on port: 3030 
+31.3.2023, 22:40:07 - INFO - Hi | 90 | Bobo 
+31.3.2023, 22:40:07 - INFO - Server is running on port: 3030 
+31.3.2023, 22:40:13 - INFO - Req was made 
+31.3.2023, 22:40:13 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 22:42:03 - INFO - Hi | 90 | Bobo 
+31.3.2023, 22:42:03 - INFO - Server is running on port: 3030 
+31.3.2023, 22:42:38 - INFO - Hi | 90 | Bobo 
+31.3.2023, 22:42:38 - INFO - Server is running on port: 3030 
+31.3.2023, 22:56:01 - INFO - Req was made 
+31.3.2023, 22:56:02 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 22:57:52 - ERROR - while finding stay stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 22:57:52 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 22:58:05 - ERROR - while finding stay stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 22:58:05 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 23:51:39 - INFO - Req was made 
+31.3.2023, 23:51:40 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:51:41 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:51:41 - INFO - Req was made 
+31.3.2023, 23:55:25 - INFO - Req was made 
+31.3.2023, 23:55:25 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:55:26 - INFO - Req was made 
+31.3.2023, 23:55:26 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:55:45 - ERROR - while finding stay stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 23:55:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+31.3.2023, 23:56:26 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:56:26 - INFO - Req was made 
+31.3.2023, 23:56:26 - INFO - Req was made 
+31.3.2023, 23:56:26 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:56:56 - INFO - Req was made 
+31.3.2023, 23:56:56 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:56:56 - INFO - Req was made 
+31.3.2023, 23:56:56 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:58:14 - INFO - Req was made 
+31.3.2023, 23:58:14 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:58:15 - INFO - Req was made 
+31.3.2023, 23:58:15 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:58:38 - INFO - Req was made 
+31.3.2023, 23:58:38 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+31.3.2023, 23:58:38 - INFO - Req was made 
+31.3.2023, 23:58:38 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:01:05 - INFO - Hi | 90 | Bobo 
+1.4.2023, 0:01:06 - INFO - Server is running on port: 3030 
+1.4.2023, 0:01:16 - INFO - Req was made 
+1.4.2023, 0:01:16 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:01:16 - INFO - Req was made 
+1.4.2023, 0:01:16 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:15:57 - INFO - Req was made 
+1.4.2023, 0:15:57 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:15:57 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:15:57 - INFO - Req was made 
+1.4.2023, 0:16:39 - INFO - Req was made 
+1.4.2023, 0:16:39 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:16:39 - INFO - Req was made 
+1.4.2023, 0:16:39 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:25:07 - INFO - Req was made 
+1.4.2023, 0:25:07 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:25:07 - INFO - Req was made 
+1.4.2023, 0:25:07 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:26:44 - INFO - Req was made 
+1.4.2023, 0:26:44 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:26:45 - INFO - Req was made 
+1.4.2023, 0:26:45 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:34:15 - INFO - Hi | 90 | Bobo 
+1.4.2023, 0:34:15 - INFO - Server is running on port: 3030 
+1.4.2023, 0:34:30 - INFO - Req was made 
+1.4.2023, 0:34:30 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:35:54 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:35:54 - INFO - Req was made 
+1.4.2023, 0:35:55 - INFO - Req was made 
+1.4.2023, 0:35:55 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:40:43 - INFO - Req was made 
+1.4.2023, 0:40:44 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:40:44 - INFO - Req was made 
+1.4.2023, 0:40:44 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:44:04 - INFO - Hi | 90 | Bobo 
+1.4.2023, 0:44:04 - INFO - Server is running on port: 3030 
+1.4.2023, 0:44:12 - INFO - Req was made 
+1.4.2023, 0:44:12 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:45:41 - INFO - Hi | 90 | Bobo 
+1.4.2023, 0:45:41 - INFO - Server is running on port: 3030 
+1.4.2023, 0:46:14 - INFO - Req was made 
+1.4.2023, 0:46:14 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:46:38 - INFO - Req was made 
+1.4.2023, 0:46:38 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:46:39 - INFO - Req was made 
+1.4.2023, 0:46:39 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 0:46:53 - INFO - Req was made 
+1.4.2023, 0:46:53 - DEBUG - Getting Stays | {"stays":{},"country":"","status":"","labels":null} 
+1.4.2023, 2:15:43 - INFO - Hi | 90 | Bobo 
+1.4.2023, 2:15:44 - INFO - Server is running on port: 3030 
+1.4.2023, 2:16:54 - ERROR - cannot find users | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+1.4.2023, 2:16:54 - ERROR - Failed to get users | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+1.4.2023, 2:18:20 - INFO - Hi | 90 | Bobo 
+1.4.2023, 2:18:20 - INFO - Server is running on port: 3030 
+1.4.2023, 2:52:45 - INFO - Hi | 90 | Bobo 
+1.4.2023, 2:52:45 - INFO - Server is running on port: 3030 
+1.4.2023, 2:54:37 - INFO - Req was made 
+1.4.2023, 2:54:37 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 2:54:38 - INFO - Req was made 
+1.4.2023, 2:54:38 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 2:56:55 - INFO - Req was made 
+1.4.2023, 2:56:55 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 2:56:55 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 2:56:55 - INFO - Req was made 
+1.4.2023, 2:59:26 - INFO - Req was made 
+1.4.2023, 2:59:26 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 2:59:26 - INFO - Req was made 
+1.4.2023, 2:59:26 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:07:18 - INFO - Req was made 
+1.4.2023, 3:07:18 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:17:22 - INFO - Req was made 
+1.4.2023, 3:17:22 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:17:22 - INFO - New connected socket [id: NJ4BA1_j0eKhxodNAAAB] 
+1.4.2023, 3:17:23 - INFO - Req was made 
+1.4.2023, 3:17:23 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:17:26 - INFO - Req was made 
+1.4.2023, 3:17:26 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:17:27 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:17:27 - INFO - Req was made 
+1.4.2023, 3:17:28 - INFO - New connected socket [id: zZHz8gWsb0aGFOTsAAAD] 
+1.4.2023, 3:18:11 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 3:18:44 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 3:18:45 - INFO - Req was made 
+1.4.2023, 3:18:45 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:18:46 - INFO - New connected socket [id: PlkQyBzBeLR2NQedAAAF] 
+1.4.2023, 3:18:46 - INFO - Req was made 
+1.4.2023, 3:18:46 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:19:21 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 3:19:23 - INFO - Req was made 
+1.4.2023, 3:19:23 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:19:23 - INFO - New connected socket [id: mmyeDcw1wQ61udG2AAAH] 
+1.4.2023, 3:19:23 - INFO - Req was made 
+1.4.2023, 3:19:23 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:21:23 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 3:21:26 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:21:26 - INFO - Req was made 
+1.4.2023, 3:21:26 - INFO - Req was made 
+1.4.2023, 3:21:26 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:21:26 - INFO - New connected socket [id: XcaZotzUC6HqxAg2AAAJ] 
+1.4.2023, 3:22:04 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 3:22:05 - INFO - Req was made 
+1.4.2023, 3:22:05 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:22:05 - INFO - Req was made 
+1.4.2023, 3:22:05 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:22:05 - INFO - New connected socket [id: Q-psGGhGBsnkIwf-AAAL] 
+1.4.2023, 3:33:35 - INFO - Req was made 
+1.4.2023, 3:33:35 - DEBUG - Getting Stays | {"stays":{"country":"Portugal"},"country":"Portugal","status":"","labels":null} 
+1.4.2023, 3:33:52 - INFO - Req was made 
+1.4.2023, 3:33:52 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:33:59 - INFO - Req was made 
+1.4.2023, 3:33:59 - DEBUG - Getting Stays | {"stays":{"country":"Portugal"},"country":"Portugal","status":"","labels":null} 
+1.4.2023, 3:34:02 - INFO - Req was made 
+1.4.2023, 3:34:02 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:34:25 - INFO - Req was made 
+1.4.2023, 3:34:25 - DEBUG - Getting Stays | {"stays":{"country":"Canada"},"country":"Canada","status":"","labels":null} 
+1.4.2023, 3:34:27 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:34:27 - INFO - Req was made 
+1.4.2023, 3:35:38 - INFO - Req was made 
+1.4.2023, 3:35:38 - DEBUG - Getting Stays | {"stays":{"country":"Portugal"},"country":"Portugal","status":"","labels":null} 
+1.4.2023, 3:35:41 - INFO - Req was made 
+1.4.2023, 3:35:41 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:38:24 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 3:38:58 - INFO - Req was made 
+1.4.2023, 3:38:58 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:38:59 - INFO - New connected socket [id: JZVCfXhCdQvv3iEqAAAN] 
+1.4.2023, 3:38:59 - INFO - Req was made 
+1.4.2023, 3:38:59 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:39:13 - INFO - Req was made 
+1.4.2023, 3:39:13 - DEBUG - Getting Stays | {"stays":{"country":"Portugal"},"country":"Portugal","status":"","labels":null} 
+1.4.2023, 3:39:14 - INFO - Req was made 
+1.4.2023, 3:39:14 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:54:17 - INFO - Hi | 90 | Bobo 
+1.4.2023, 3:54:17 - INFO - Server is running on port: 3030 
+1.4.2023, 3:54:17 - INFO - New connected socket [id: xl-uCHqBzTAVYAvBAAAB] 
+1.4.2023, 3:54:20 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 3:54:42 - INFO - Hi | 90 | Bobo 
+1.4.2023, 3:54:43 - INFO - Server is running on port: 3030 
+1.4.2023, 3:55:51 - INFO - New connected socket [id: aa7hCAZtyraxhy2qAAAB] 
+1.4.2023, 3:55:51 - INFO - Req was made 
+1.4.2023, 3:55:51 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:55:52 - INFO - Req was made 
+1.4.2023, 3:55:52 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:56:05 - INFO - Req was made 
+1.4.2023, 3:56:05 - DEBUG - Getting Stays | {"stays":{"country":"Portugal"},"country":"Portugal","status":"","labels":null} 
+1.4.2023, 3:56:08 - INFO - Req was made 
+1.4.2023, 3:56:08 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 3:57:07 - INFO - Hi | 90 | Bobo 
+1.4.2023, 3:57:08 - INFO - Server is running on port: 3030 
+1.4.2023, 3:57:08 - INFO - New connected socket [id: U-G8KS42LjrAu2NWAAAB] 
+1.4.2023, 3:57:24 - INFO - Req was made 
+1.4.2023, 3:57:24 - DEBUG - Getting Stays | {"stays":{"country":"Portugal"},"country":"Portugal","status":"","labels":null} 
+1.4.2023, 3:57:26 - INFO - Req was made 
+1.4.2023, 3:57:26 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 4:00:06 - INFO - Req was made 
+1.4.2023, 4:00:06 - DEBUG - Getting Stays | {"stays":{"country":"Canada"},"country":"Canada","status":"","labels":null} 
+1.4.2023, 4:08:21 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:08:21 - INFO - Server is running on port: 3030 
+1.4.2023, 4:08:21 - INFO - New connected socket [id: Br8UkG5P1Y6i-nXWAAAB] 
+1.4.2023, 4:08:23 - INFO - Req was made 
+1.4.2023, 4:08:23 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 4:08:30 - INFO - Req was made 
+1.4.2023, 4:08:30 - DEBUG - Getting Stays | {"stays":{"country":"Portugal"},"country":"Portugal","status":"","labels":null} 
+1.4.2023, 4:09:25 - INFO - Req was made 
+1.4.2023, 4:09:25 - DEBUG - Getting Stays | {"stays":{"country":"","guests":"{\"adults\":0,\"kids\":0,\"Infants\":0}","stayTime":"","price":"{\"minPrice\":30,\"maxPrice\":1000}"},"country":"","status":"","labels":null} 
+1.4.2023, 4:09:32 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:09:32 - INFO - Server is running on port: 3030 
+1.4.2023, 4:09:32 - INFO - New connected socket [id: EYB3VqvBXDQs0P-hAAAB] 
+1.4.2023, 4:14:21 - INFO - Req was made 
+1.4.2023, 4:14:21 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:14:30 - INFO - Req was made 
+1.4.2023, 4:14:30 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
+1.4.2023, 4:14:34 - INFO - Req was made 
+1.4.2023, 4:14:34 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:15:46 - INFO - Req was made 
+1.4.2023, 4:15:46 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
+1.4.2023, 4:17:02 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:17:02 - INFO - Server is running on port: 3030 
+1.4.2023, 4:17:02 - INFO - New connected socket [id: WSdlhrPS6ZFQNqxbAAAB] 
+1.4.2023, 4:17:04 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:17:04 - INFO - Req was made 
+1.4.2023, 4:17:16 - INFO - Req was made 
+1.4.2023, 4:17:16 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
+1.4.2023, 4:19:51 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:19:51 - INFO - Server is running on port: 3030 
+1.4.2023, 4:19:51 - INFO - New connected socket [id: KfFcuXEtMV-OB_TtAAAB] 
+1.4.2023, 4:19:54 - INFO - Req was made 
+1.4.2023, 4:19:54 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:20:04 - INFO - Req was made 
+1.4.2023, 4:20:04 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
+1.4.2023, 4:21:50 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:21:50 - INFO - Server is running on port: 3030 
+1.4.2023, 4:21:50 - INFO - New connected socket [id: 5ozUnIZL5WRMza8sAAAB] 
+1.4.2023, 4:21:54 - INFO - Req was made 
+1.4.2023, 4:21:55 - ERROR - Failed to get stays | ReferenceError: stayService is not defined 
+1.4.2023, 4:22:11 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:22:11 - INFO - Server is running on port: 3030 
+1.4.2023, 4:22:12 - INFO - New connected socket [id: SXqSJNicOAWMmH_RAAAB] 
+1.4.2023, 4:22:37 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 4:22:38 - INFO - Req was made 
+1.4.2023, 4:22:38 - ERROR - Failed to get stays | ReferenceError: stayService is not defined 
+1.4.2023, 4:22:38 - INFO - Req was made 
+1.4.2023, 4:22:38 - ERROR - Failed to get stays | ReferenceError: stayService is not defined 
+1.4.2023, 4:22:38 - INFO - New connected socket [id: tW6zoFXSj-Zh5cw_AAAD] 
+1.4.2023, 4:24:59 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:24:59 - INFO - Server is running on port: 3030 
+1.4.2023, 4:25:00 - INFO - New connected socket [id: 7k4flXEC58-8e1Z7AAAB] 
+1.4.2023, 4:25:05 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 4:25:06 - INFO - Req was made 
+1.4.2023, 4:25:06 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:25:06 - INFO - Req was made 
+1.4.2023, 4:25:06 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:25:06 - INFO - New connected socket [id: oQebdGjJaiRMshetAAAD] 
+1.4.2023, 4:26:02 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:26:02 - INFO - Server is running on port: 3030 
+1.4.2023, 4:26:02 - INFO - New connected socket [id: qVRKdFoMO2TWi_9rAAAB] 
+1.4.2023, 4:26:06 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 4:26:07 - INFO - Req was made 
+1.4.2023, 4:26:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:26:07 - INFO - Req was made 
+1.4.2023, 4:26:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:26:11 - INFO - New connected socket [id: gzUGGcAxhi1W6hNzAAAD] 
+1.4.2023, 4:26:43 - INFO - Req was made 
+1.4.2023, 4:26:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 4:26:51 - INFO - Req was made 
+1.4.2023, 4:26:51 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
+1.4.2023, 4:27:19 - INFO - Hi | 90 | Bobo 
+1.4.2023, 4:27:19 - INFO - Server is running on port: 3030 
+1.4.2023, 4:27:20 - INFO - New connected socket [id: 9jL8DUZYRujPPbhSAAAB] 
+1.4.2023, 14:53:05 - INFO - Hi | 90 | Bobo 
+1.4.2023, 14:53:05 - INFO - Server is running on port: 3030 
+1.4.2023, 14:53:38 - INFO - Req was made 
+1.4.2023, 14:53:38 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 14:53:38 - INFO - New connected socket [id: DmzX8fWt7ZGMXs4PAAAB] 
+1.4.2023, 14:53:39 - INFO - Req was made 
+1.4.2023, 14:53:39 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 14:53:49 - INFO - Req was made 
+1.4.2023, 14:53:49 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
+1.4.2023, 14:54:48 - INFO - Req was made 
+1.4.2023, 14:54:48 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 14:54:55 - INFO - Req was made 
+1.4.2023, 14:54:55 - DEBUG - Getting Stays | {"country":"Spain","status":"","labels":null} 
+1.4.2023, 14:55:25 - INFO - Req was made 
+1.4.2023, 14:55:25 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 14:55:45 - INFO - Req was made 
+1.4.2023, 14:55:45 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:01:44 - INFO - Req was made 
+1.4.2023, 15:01:44 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
+1.4.2023, 15:01:54 - INFO - Req was made 
+1.4.2023, 15:01:54 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:22:53 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 15:36:00 - INFO - Hi | 90 | Bobo 
+1.4.2023, 15:36:00 - INFO - Server is running on port: 3030 
+1.4.2023, 15:40:43 - INFO - Hi | 90 | Bobo 
+1.4.2023, 15:40:43 - INFO - Server is running on port: 3030 
+1.4.2023, 15:40:43 - INFO - New connected socket [id: 2EPsOt9RUnYH2hZUAAAB] 
+1.4.2023, 15:40:51 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 15:40:52 - INFO - Req was made 
+1.4.2023, 15:40:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:40:52 - INFO - Req was made 
+1.4.2023, 15:40:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:40:53 - INFO - New connected socket [id: ZuUISneaTNSfqJVzAAAD] 
+1.4.2023, 15:41:06 - INFO - Req was made 
+1.4.2023, 15:41:06 - DEBUG - Getting Stays | {"country":"Canada","status":"","labels":null} 
+1.4.2023, 15:41:15 - INFO - Req was made 
+1.4.2023, 15:41:15 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:42:17 - INFO - Hi | 90 | Bobo 
+1.4.2023, 15:42:17 - INFO - Server is running on port: 3030 
+1.4.2023, 15:42:18 - INFO - New connected socket [id: VjJKY8xT3m6TbfjjAAAB] 
+1.4.2023, 15:42:26 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 15:42:30 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:42:30 - INFO - Req was made 
+1.4.2023, 15:42:30 - INFO - Req was made 
+1.4.2023, 15:42:30 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:42:30 - INFO - New connected socket [id: saUDrRPnugI6tqDNAAAD] 
+1.4.2023, 15:42:30 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 15:42:30 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 15:42:30 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 15:42:30 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 15:43:04 - INFO - Hi | 90 | Bobo 
+1.4.2023, 15:43:04 - INFO - Server is running on port: 3030 
+1.4.2023, 15:43:05 - INFO - New connected socket [id: cS_Xu0csUYOtIKVoAAAB] 
+1.4.2023, 15:43:07 - INFO - Hi | 90 | Bobo 
+1.4.2023, 15:43:07 - INFO - Server is running on port: 3030 
+1.4.2023, 15:43:07 - INFO - New connected socket [id: Mno9ygDk6GI8L0bnAAAB] 
+1.4.2023, 15:43:21 - INFO - Hi | 90 | Bobo 
+1.4.2023, 15:43:21 - INFO - Server is running on port: 3030 
+1.4.2023, 15:43:26 - INFO - New connected socket [id: r66D7r3EJxEH_DWmAAAB] 
+1.4.2023, 15:43:34 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 15:43:37 - INFO - Req was made 
+1.4.2023, 15:43:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:43:37 - INFO - Req was made 
+1.4.2023, 15:43:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 15:43:37 - INFO - New connected socket [id: XIpXbS70hvD_CCYhAAAD] 
