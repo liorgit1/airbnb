@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient
 const url = "mongodb://127.0.0.1:27017"
 const config = require('../config')
+const logger =require('../services/logger.service')
 
 module.exports = {
     getCollection

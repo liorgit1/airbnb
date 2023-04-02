@@ -1,4 +1,4 @@
-const Stayservice = require('../stay/stay.service.js')
+const stayService = require('../stay/stay.service.js')
 const socketService = require('../../services/socket.service.js')
 const logger = require('../../services/logger.service')
 
@@ -35,11 +35,12 @@ async function getStays(req, res) {
         }
       : {}
 
-    logger.debug('Getting Stays', filterBy)
-    const Stays = await Stayservice.query(filterBy, sortBy)
+    // logger.debug('Getting Stays', filterBy)
+    const Stays = await stayService.query(filterBy, sortBy)
     res.json(Stays)
   } catch (err) {
-    logger.error('Failed to get Stays', err)
+    console.log('error :>> ',err);
+    // logger.error('Failed to get Stays', err)
     res.status(500).send({ err: 'Failed to get Stays' })
   }
 }
