@@ -1701,19 +1701,3 @@
 1.4.2023, 15:43:37 - INFO - Req was made 
 1.4.2023, 15:43:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
 1.4.2023, 15:43:37 - INFO - New connected socket [id: XIpXbS70hvD_CCYhAAAD] 
-1.4.2023, 22:00:53 - INFO - Hi | 90 | Bobo 
-1.4.2023, 22:00:53 - INFO - Server is running on port: 3030 
-1.4.2023, 22:01:32 - INFO - Req was made 
-1.4.2023, 22:01:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 22:01:32 - INFO - New connected socket [id: m8XJChJxFj1ASRXaAAAB] 
-1.4.2023, 22:01:34 - INFO - Req was made 
-1.4.2023, 22:01:34 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 22:02:17 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 22:02:17 - INFO - Req was made 
-1.4.2023, 22:02:17 - INFO - New connected socket [id: l8jbMMYP6y66qxDRAAAD] 
-1.4.2023, 22:02:18 - INFO - Req was made 
-1.4.2023, 22:02:18 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 22:02:23 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:02:52 - INFO - Hi | 90 | Bobo 
-1.4.2023, 22:02:52 - INFO - Server is running on port: 3030 
-1.4.2023, 22:02:53 - INFO - New connected socket [id: zzVbCZu8YM9ojw8_AAAB] 
