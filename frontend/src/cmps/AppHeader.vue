@@ -41,7 +41,7 @@
           </HeaderFilter>
         </div>
 
-        <RouterLink to="/">become a host</RouterLink>
+        <!-- <RouterLink to="/">become a host</RouterLink> -->
 
 
 
@@ -112,10 +112,12 @@ export default {
       this.modalUser = false
       this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
-
+    
     setLogin(user) {
+      console.log('user' , user)
       this.$store.dispatch({
         type: "login",
+       
         userCred: user,
       });
       this.modalLoginIsOpen = false;
@@ -134,11 +136,13 @@ export default {
 
     handleRoute() {
       console.log('thisRoute', this.thisRoute);
-
+      
       if (this.thisRoute == 'stayIndex')
         this.isDetails = false
       if (this.thisRoute == 'stay-details')
         this.isDetails = true
+      if(this.thisRoute == 'user-trip')
+      this.isDetails = false
     },
 
     handleScroll() {
@@ -199,3 +203,12 @@ export default {
 }
 
 </script>
+
+
+
+
+
+
+
+
+

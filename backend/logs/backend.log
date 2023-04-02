@@ -1,3 +1,45 @@
+1.4.2023, 19:23:08 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:23:08 - INFO - Server is running on port: 3030 
+1.4.2023, 19:27:58 - INFO - Req was made 
+1.4.2023, 19:27:58 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:28:01 - INFO - Req was made 
+1.4.2023, 19:28:01 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:28:32 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:28:32 - INFO - Server is running on port: 3030 
+1.4.2023, 19:29:18 - INFO - Req was made 
+1.4.2023, 19:29:18 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:29:22 - INFO - Req was made 
+1.4.2023, 19:29:22 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 19:49:07 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:49:07 - INFO - Server is running on port: 3030 
+1.4.2023, 19:53:17 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:53:17 - INFO - Server is running on port: 3030 
+1.4.2023, 19:56:18 - INFO - Hi | 90 | Bobo 
+1.4.2023, 19:56:18 - INFO - Server is running on port: 3030 
+1.4.2023, 20:15:43 - INFO - Hi | 90 | Bobo 
+1.4.2023, 20:15:43 - INFO - Server is running on port: 3030 
+1.4.2023, 20:16:15 - INFO - Req was made 
+1.4.2023, 20:16:15 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 20:16:15 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 20:16:15 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 20:16:15 - INFO - Req was made 
+1.4.2023, 20:16:15 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 20:16:15 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 20:16:15 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 20:17:53 - INFO - Hi | 90 | Bobo 
+1.4.2023, 20:17:53 - INFO - Server is running on port: 3030 
+1.4.2023, 20:48:10 - INFO - Hi | 90 | Bobo 
+1.4.2023, 20:48:11 - INFO - Server is running on port: 3030 
+1.4.2023, 20:48:19 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 20:48:19 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 20:48:19 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 20:48:19 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 20:48:19 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+1.4.2023, 20:48:19 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+1.4.2023, 21:04:05 - INFO - Hi | 90 | Bobo 
+1.4.2023, 21:04:05 - INFO - Server is running on port: 3030 
+2.4.2023, 16:21:31 - INFO - Hi | 90 | Bobo 
+2.4.2023, 16:21:31 - INFO - Server is running on port: 3030 
 18.3.2023, 15:01:44 - INFO - Hi | 90 | Bobo 
 18.3.2023, 15:01:44 - INFO - Server is running on port: 3030 
 18.3.2023, 15:01:53 - INFO - Req was made 
@@ -1701,387 +1743,121 @@
 1.4.2023, 15:43:37 - INFO - Req was made 
 1.4.2023, 15:43:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
 1.4.2023, 15:43:37 - INFO - New connected socket [id: XIpXbS70hvD_CCYhAAAD] 
-1.4.2023, 21:08:39 - INFO - Hi | 90 | Bobo 
-1.4.2023, 21:08:39 - INFO - Server is running on port: 3030 
-1.4.2023, 21:08:53 - INFO - Req was made 
-1.4.2023, 21:08:53 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:08:53 - INFO - New connected socket [id: -hUPET_c10_YPBqYAAAB] 
-1.4.2023, 21:08:55 - INFO - Req was made 
-1.4.2023, 21:08:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:09:06 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:09:07 - INFO - Req was made 
-1.4.2023, 21:09:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:09:07 - INFO - New connected socket [id: TOXE2bsEl_pjX2TKAAAD] 
-1.4.2023, 21:09:07 - INFO - Req was made 
-1.4.2023, 21:09:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:09:31 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:09:31 - INFO - Req was made 
-1.4.2023, 21:12:03 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:12:04 - INFO - Req was made 
-1.4.2023, 21:12:04 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:12:04 - INFO - New connected socket [id: rESPLTnAVivWLsCWAAAF] 
-1.4.2023, 21:12:56 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:12:57 - INFO - Req was made 
-1.4.2023, 21:12:57 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:12:57 - INFO - New connected socket [id: hYdbhxpICKSqbFfgAAAH] 
-1.4.2023, 21:13:58 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:13:58 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:13:58 - INFO - Req was made 
-1.4.2023, 21:13:58 - INFO - New connected socket [id: RPYxT6-612osco_XAAAJ] 
-1.4.2023, 21:14:06 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:14:07 - INFO - Req was made 
-1.4.2023, 21:14:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:14:07 - INFO - New connected socket [id: E40wlQkWrATNrsKIAAAL] 
-1.4.2023, 21:14:38 - INFO - Req was made 
-1.4.2023, 21:14:38 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:14:43 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:14:43 - INFO - Req was made 
-1.4.2023, 21:14:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:14:43 - INFO - New connected socket [id: 5xIWOV5ckLVv4tDPAAAN] 
-1.4.2023, 21:14:53 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:14:53 - INFO - Req was made 
-1.4.2023, 21:14:53 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:14:53 - INFO - New connected socket [id: b1cuYlQdH6k7SR5QAAAP] 
-1.4.2023, 21:14:54 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:14:54 - INFO - Req was made 
-1.4.2023, 21:15:14 - INFO - Hi | 90 | Bobo 
-1.4.2023, 21:15:14 - INFO - Server is running on port: 3030 
-1.4.2023, 21:15:15 - INFO - New connected socket [id: vRSptd42rksZIEh_AAAB] 
-1.4.2023, 21:15:18 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:15:21 - INFO - Req was made 
-1.4.2023, 21:15:21 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:15:21 - INFO - New connected socket [id: NGWADDsmMNfrN95mAAAD] 
-1.4.2023, 21:15:28 - INFO - Req was made 
-1.4.2023, 21:15:28 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:15:30 - INFO - Req was made 
-1.4.2023, 21:15:30 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:15:34 - INFO - Req was made 
-1.4.2023, 21:15:34 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:17:07 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:17:08 - INFO - Req was made 
-1.4.2023, 21:17:08 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:17:08 - INFO - New connected socket [id: 81C48bWQfl1nHKaDAAAF] 
-1.4.2023, 21:20:39 - INFO - Req was made 
-1.4.2023, 21:20:39 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 21:20:45 - INFO - Req was made 
-1.4.2023, 21:20:45 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 21:20:47 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:20:48 - INFO - Req was made 
-1.4.2023, 21:20:48 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:20:48 - INFO - Req was made 
-1.4.2023, 21:20:48 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 21:20:48 - INFO - New connected socket [id: xZ33Z5G1jPEOwtdQAAAH] 
-1.4.2023, 21:21:01 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:21:01 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:21:01 - INFO - Req was made 
-1.4.2023, 21:21:01 - INFO - Req was made 
-1.4.2023, 21:21:01 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 21:21:01 - INFO - New connected socket [id: s8vY8uSicE5SxfydAAAJ] 
-1.4.2023, 21:21:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:21:32 - INFO - Req was made 
-1.4.2023, 21:21:34 - INFO - Req was made 
-1.4.2023, 21:21:34 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:21:48 - INFO - Req was made 
-1.4.2023, 21:21:48 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:36:38 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:36:38 - INFO - Req was made 
-1.4.2023, 21:37:46 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:37:46 - INFO - Req was made 
-1.4.2023, 21:37:49 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:37:50 - INFO - Req was made 
-1.4.2023, 21:37:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:37:50 - INFO - New connected socket [id: YlyUEfDewEvafHRWAAAL] 
-1.4.2023, 21:37:51 - INFO - Req was made 
-1.4.2023, 21:37:51 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:39:04 - INFO - Hi | 90 | Bobo 
-1.4.2023, 21:39:04 - INFO - Server is running on port: 3030 
-1.4.2023, 21:39:04 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:39:04 - INFO - Req was made 
-1.4.2023, 21:39:04 - INFO - New connected socket [id: 87jmejuHSHusoa2YAAAB] 
-1.4.2023, 21:41:38 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:41:39 - INFO - Req was made 
-1.4.2023, 21:41:39 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:41:40 - INFO - New connected socket [id: fdxU4D66JrIl_6lYAAAD] 
-1.4.2023, 21:41:41 - INFO - Req was made 
-1.4.2023, 21:41:41 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:41:41 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:41:42 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:41:42 - INFO - Req was made 
-1.4.2023, 21:41:42 - INFO - New connected socket [id: wnIIbJhdOtaHTq_wAAAF] 
-1.4.2023, 21:41:43 - INFO - Req was made 
-1.4.2023, 21:41:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:41:47 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:41:48 - INFO - Req was made 
-1.4.2023, 21:41:48 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:41:48 - INFO - New connected socket [id: ZEaTkJjBbBSMZxQYAAAH] 
-1.4.2023, 21:41:49 - INFO - Req was made 
-1.4.2023, 21:41:49 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:41:52 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 21:41:55 - INFO - Req was made 
-1.4.2023, 21:41:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 21:41:55 - INFO - New connected socket [id: kt3xjTVpPbN35twWAAAJ] 
-1.4.2023, 21:41:56 - INFO - Req was made 
-1.4.2023, 21:41:56 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 22:20:42 - INFO - Req was made 
-1.4.2023, 22:20:42 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-1.4.2023, 22:22:11 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:22:31 - INFO - New connected socket [id: YG2dhwfQNw3J7TKBAAAM] 
-1.4.2023, 22:22:40 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:22:41 - INFO - New connected socket [id: K5Rip8cuRV-VJ2Y7AAAO] 
-1.4.2023, 22:22:54 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:22:57 - INFO - New connected socket [id: 46jSJNez94uIp3qBAAAQ] 
-1.4.2023, 22:22:58 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:23:04 - INFO - New connected socket [id: cRs398SPIK4oIhq3AAAS] 
-1.4.2023, 22:23:21 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:23:21 - INFO - New connected socket [id: ytN4CCrcmLvMdzYPAAAU] 
-1.4.2023, 22:23:53 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:24:10 - INFO - New connected socket [id: rEA4WUGUXvfl62ElAAAW] 
-1.4.2023, 22:24:15 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:24:15 - INFO - New connected socket [id: rMn2XtUhjB-GmIPtAAAY] 
-1.4.2023, 22:24:39 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:24:40 - INFO - New connected socket [id: anoma1vbfwGx11NAAAAa] 
-1.4.2023, 22:24:43 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:24:43 - INFO - New connected socket [id: mUTEa_-EYruXBz6UAAAc] 
-1.4.2023, 22:32:32 - INFO - Req was made 
-1.4.2023, 22:32:32 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:32:51 - INFO - Req was made 
-1.4.2023, 22:32:51 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:33:18 - INFO - Req was made 
-1.4.2023, 22:33:18 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:34:19 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:34:22 - INFO - New connected socket [id: QeH8BBgGcqytPNnhAAAe] 
-1.4.2023, 22:34:40 - INFO - Req was made 
-1.4.2023, 22:34:40 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:34:58 - INFO - Req was made 
-1.4.2023, 22:34:58 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:35:49 - INFO - Req was made 
-1.4.2023, 22:35:49 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:36:02 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:36:02 - INFO - Req was made 
-1.4.2023, 22:36:18 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:36:19 - INFO - New connected socket [id: esI_dpm3spMC7DhIAAAg] 
-1.4.2023, 22:36:32 - INFO - Req was made 
-1.4.2023, 22:36:32 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:37:16 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:37:20 - INFO - Req was made 
-1.4.2023, 22:37:20 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:37:20 - INFO - New connected socket [id: 46AoITInn2hWT6EUAAAi] 
-1.4.2023, 22:37:23 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:37:35 - INFO - Req was made 
-1.4.2023, 22:37:35 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:37:36 - INFO - New connected socket [id: 2js7Ph5j0B0nmDQtAAAk] 
-1.4.2023, 22:37:38 - INFO - Req was made 
-1.4.2023, 22:37:38 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-1.4.2023, 22:37:38 - INFO - New connected socket [id: FUsRvSsG7ryVY7HKAAAm] 
-1.4.2023, 22:38:20 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:38:29 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:38:30 - INFO - New connected socket [id: aQqBRt2U-Y-QBss5AAAo] 
-1.4.2023, 22:38:38 - INFO - Socket disconnected [id: undefined] 
-1.4.2023, 22:38:39 - INFO - New connected socket [id: p_9k7djmq049mD9EAAAq] 
-1.4.2023, 23:56:50 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 9:57:45 - INFO - New connected socket [id: ga5pfNdjv-_pCU7dAAAt] 
-2.4.2023, 10:17:09 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 10:17:10 - INFO - New connected socket [id: E88sXkJStk9EBO0_AAAv] 
-2.4.2023, 10:17:22 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 10:17:23 - INFO - New connected socket [id: z1ME7g89qXTEstIlAAAx] 
-2.4.2023, 10:17:27 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 10:17:27 - INFO - New connected socket [id: NoSUShW0PxmptT_IAAAz] 
-2.4.2023, 11:21:32 - INFO - Hi | 90 | Bobo 
-2.4.2023, 11:21:32 - INFO - Server is running on port: 3030 
-2.4.2023, 11:21:32 - INFO - New connected socket [id: wOqec4bsW47JaIXtAAAB] 
-2.4.2023, 12:44:35 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 12:44:36 - INFO - New connected socket [id: DL9CBCL5yqH8S-A2AAAD] 
-2.4.2023, 14:04:53 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:04:55 - INFO - New connected socket [id: C0U2_lv1Z4XvMlo9AAAF] 
-2.4.2023, 14:35:19 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:35:21 - INFO - New connected socket [id: H4vh5-wYHw8sgRg7AAAH] 
-2.4.2023, 14:35:49 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:35:50 - INFO - New connected socket [id: fjctZt7xMkExpH7TAAAJ] 
-2.4.2023, 14:46:22 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:46:23 - INFO - New connected socket [id: QAYVUuaqoXFf-giaAAAL] 
-2.4.2023, 14:50:07 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:50:08 - INFO - New connected socket [id: MT72NYxzUnfdbdJeAAAN] 
-2.4.2023, 14:55:37 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:55:38 - INFO - New connected socket [id: 71spoDV0IJtTKMP8AAAP] 
-2.4.2023, 14:57:12 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:57:14 - INFO - New connected socket [id: H7zB_V_X4AobQ7ejAAAR] 
-2.4.2023, 14:58:57 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 14:58:58 - INFO - New connected socket [id: IloKA0IyJ5Pe7ubFAAAT] 
-2.4.2023, 15:01:36 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 15:01:36 - INFO - New connected socket [id: Fs2oy6Nd4cJ_rQt4AAAV] 
-2.4.2023, 15:02:57 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 15:02:58 - INFO - New connected socket [id: VYbcjnsLMPfewh2qAAAX] 
-2.4.2023, 15:14:14 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 15:14:16 - INFO - New connected socket [id: oxiW5ciomh_cC-GWAAAZ] 
-2.4.2023, 16:15:38 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:15:41 - INFO - New connected socket [id: cb3zERjUFNDiJtLKAAAc] 
-2.4.2023, 16:15:41 - INFO - New connected socket [id: fFGd5VOvWGBEGCvlAAAd] 
-2.4.2023, 16:19:27 - INFO - Hi | 90 | Bobo 
-2.4.2023, 16:19:27 - INFO - Server is running on port: 3030 
-2.4.2023, 16:19:27 - INFO - New connected socket [id: Nosi2GBHM75tkp2cAAAB] 
-2.4.2023, 16:19:28 - INFO - New connected socket [id: _Dvuv0qVrwCWZQ1uAAAD] 
-2.4.2023, 16:19:46 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:19:47 - ERROR - while finding stay stay.service.js | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
-2.4.2023, 16:19:47 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
-2.4.2023, 16:21:10 - INFO - Hi | 90 | Bobo 
-2.4.2023, 16:21:10 - INFO - Server is running on port: 3030 
-2.4.2023, 16:21:11 - INFO - New connected socket [id: 5IvBiQ99QzypxGa9AAAB] 
-2.4.2023, 16:21:12 - INFO - New connected socket [id: 76XtvcekPmJLICu3AAAD] 
-2.4.2023, 16:21:26 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:21:26 - INFO - New connected socket [id: nPLTOQVJ57K3QqEJAAAF] 
-2.4.2023, 16:24:25 - INFO - Hi | 90 | Bobo 
-2.4.2023, 16:24:25 - INFO - Server is running on port: 3030 
-2.4.2023, 16:24:25 - INFO - New connected socket [id: YcwBuJk-CceYS0i7AAAB] 
-2.4.2023, 16:24:29 - INFO - New connected socket [id: FcnJXuZBV6Zh-CtAAAAD] 
-2.4.2023, 16:24:31 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:24:31 - INFO - New connected socket [id: Xdil0JNRPIOiGsh7AAAF] 
-2.4.2023, 16:24:43 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:24:43 - INFO - New connected socket [id: ti9-KUo2wzSdqb1mAAAH] 
-2.4.2023, 16:25:13 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:25:13 - INFO - New connected socket [id: vwsfjlteqqaESmQEAAAJ] 
-2.4.2023, 16:27:17 - INFO - Hi | 90 | Bobo 
-2.4.2023, 16:27:17 - INFO - Server is running on port: 3030 
-2.4.2023, 16:27:19 - INFO - New connected socket [id: USwn29tVg9wfjn4ZAAAB] 
-2.4.2023, 16:27:19 - INFO - New connected socket [id: R7ivHYqYUXGVOfHcAAAD] 
-2.4.2023, 16:29:09 - INFO - Hi | 90 | Bobo 
-2.4.2023, 16:29:09 - INFO - Server is running on port: 3030 
-2.4.2023, 16:29:10 - INFO - New connected socket [id: WEBmTQOxOVNNnXJJAAAC] 
-2.4.2023, 16:29:10 - INFO - New connected socket [id: 04Zy16cKgzOucdo2AAAE] 
-2.4.2023, 16:29:22 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:29:28 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:29:32 - INFO - New connected socket [id: RZvnvU89qd3QbCS9AAAG] 
-2.4.2023, 16:38:09 - INFO - Hi | 90 | Bobo 
-2.4.2023, 16:38:09 - INFO - Server is running on port: 3030 
-2.4.2023, 16:38:09 - INFO - New connected socket [id: 8eu6aAShyeadEp9_AAAB] 
-2.4.2023, 16:41:58 - INFO - Hi | 90 | Bobo 
-2.4.2023, 16:41:58 - INFO - Server is running on port: 3030 
-2.4.2023, 16:42:00 - INFO - New connected socket [id: ksz1E6qXI05RPq1ZAAAB] 
-2.4.2023, 16:42:00 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 16:42:01 - INFO - Req was made 
-2.4.2023, 16:42:01 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 16:42:01 - INFO - New connected socket [id: EWjYkyxz98gkf4QbAAAD] 
-2.4.2023, 16:42:03 - INFO - Req was made 
-2.4.2023, 16:42:03 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:17:32 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:17:32 - INFO - Server is running on port: 3030 
-2.4.2023, 17:17:33 - INFO - New connected socket [id: Do4exlBdbesH9RgDAAAB] 
-2.4.2023, 17:17:44 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:17:44 - INFO - Server is running on port: 3030 
-2.4.2023, 17:17:46 - INFO - Req was made 
-2.4.2023, 17:17:46 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:17:48 - INFO - New connected socket [id: AT4Cv3f3Z3dkFRipAAAB] 
-2.4.2023, 17:17:51 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:17:52 - INFO - Req was made 
-2.4.2023, 17:17:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:17:52 - INFO - New connected socket [id: 8sAvSom1fSc_j2brAAAD] 
-2.4.2023, 17:19:49 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:19:49 - INFO - Server is running on port: 3030 
-2.4.2023, 17:19:50 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:19:50 - INFO - Server is running on port: 3030 
-2.4.2023, 17:20:01 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:20:01 - INFO - Server is running on port: 3030 
-2.4.2023, 17:20:02 - INFO - Req was made 
-2.4.2023, 17:20:02 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:20:06 - INFO - New connected socket [id: Fvp2Tus87dfr32WxAAAB] 
-2.4.2023, 17:24:03 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:24:03 - INFO - Server is running on port: 3030 
-2.4.2023, 17:24:04 - INFO - New connected socket [id: fTDU2hZTZ83OWMhpAAAB] 
-2.4.2023, 17:24:06 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:24:06 - INFO - Server is running on port: 3030 
-2.4.2023, 17:24:06 - INFO - New connected socket [id: 55rV6NpJb7D0EYFWAAAB] 
-2.4.2023, 17:24:15 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:24:15 - INFO - Server is running on port: 3030 
-2.4.2023, 17:24:15 - INFO - New connected socket [id: kkhdoB6unGCb52HuAAAB] 
-2.4.2023, 17:24:15 - INFO - Req was made 
-2.4.2023, 17:24:15 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:25:25 - INFO - Server is running on port: 3030 
-2.4.2023, 17:25:25 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:25:25 - INFO - New connected socket [id: rDF6MuSBQ29ZRTR_AAAB] 
-2.4.2023, 17:26:09 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:26:09 - INFO - Server is running on port: 3030 
-2.4.2023, 17:26:09 - INFO - Req was made 
-2.4.2023, 17:26:09 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:26:09 - INFO - New connected socket [id: g0_YsRRILJNE551LAAAB] 
-2.4.2023, 17:26:11 - INFO - Req was made 
-2.4.2023, 17:26:11 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:26:47 - INFO - Req was made 
-2.4.2023, 17:26:47 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:34:54 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:34:54 - INFO - Req was made 
-2.4.2023, 17:34:54 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:34:55 - INFO - New connected socket [id: Vcs9Y7gZnDxC2ToFAAAD] 
-2.4.2023, 17:34:55 - INFO - Req was made 
-2.4.2023, 17:34:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:35:06 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:35:07 - INFO - Req was made 
-2.4.2023, 17:35:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:35:07 - INFO - New connected socket [id: kNTSTDS6NmH3IomMAAAF] 
-2.4.2023, 17:35:08 - INFO - Req was made 
-2.4.2023, 17:35:08 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:35:21 - INFO - Req was made 
-2.4.2023, 17:35:21 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-2.4.2023, 17:36:36 - INFO - Req was made 
-2.4.2023, 17:36:36 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:37:03 - INFO - Hi | 90 | Bobo 
-2.4.2023, 17:37:03 - INFO - Server is running on port: 3030 
-2.4.2023, 17:37:05 - INFO - Req was made 
-2.4.2023, 17:37:05 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:37:05 - INFO - New connected socket [id: Efsxb6pBBJuwHmumAAAB] 
-2.4.2023, 17:37:05 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:37:06 - INFO - Req was made 
-2.4.2023, 17:37:06 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:37:06 - INFO - New connected socket [id: K6_DHS4Oj20VvvbJAAAD] 
-2.4.2023, 17:37:08 - INFO - Req was made 
-2.4.2023, 17:37:08 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:37:58 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:37:58 - INFO - Req was made 
-2.4.2023, 17:37:58 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:37:59 - INFO - New connected socket [id: n8wz5O4DiPSduJMbAAAF] 
-2.4.2023, 17:38:00 - INFO - Req was made 
-2.4.2023, 17:38:00 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:38:09 - INFO - Req was made 
-2.4.2023, 17:38:09 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-2.4.2023, 17:38:52 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:39:02 - INFO - Req was made 
-2.4.2023, 17:39:02 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:39:02 - INFO - New connected socket [id: Cero5PMtGiRsxhhBAAAH] 
-2.4.2023, 17:39:03 - INFO - Req was made 
-2.4.2023, 17:39:03 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:39:55 - INFO - Req was made 
-2.4.2023, 17:39:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:40:16 - INFO - Req was made 
-2.4.2023, 17:40:16 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:40:58 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:40:59 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:40:59 - INFO - Req was made 
-2.4.2023, 17:40:59 - INFO - New connected socket [id: tLrqJEkswIMXi7GXAAAJ] 
-2.4.2023, 17:41:00 - INFO - Req was made 
-2.4.2023, 17:41:00 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:45:31 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:45:31 - INFO - Req was made 
-2.4.2023, 17:45:31 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:45:31 - INFO - New connected socket [id: 5951ndX5QKhMUbCoAAAL] 
-2.4.2023, 17:45:32 - INFO - Req was made 
-2.4.2023, 17:45:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:45:43 - INFO - Req was made 
-2.4.2023, 17:45:43 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
-2.4.2023, 17:48:47 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:48:47 - INFO - Req was made 
-2.4.2023, 17:48:47 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:48:47 - INFO - Req was made 
-2.4.2023, 17:48:47 - DEBUG - Getting Stays | {"country":"Portugal","status":"","labels":null} 
-2.4.2023, 17:48:47 - INFO - New connected socket [id: a30Nz9fl_gP5wxXtAAAN] 
-2.4.2023, 17:49:12 - INFO - Req was made 
-2.4.2023, 17:49:12 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:53:52 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:53:52 - INFO - Req was made 
-2.4.2023, 17:53:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:53:52 - INFO - New connected socket [id: vB1dPNdqY-MBs1GbAAAP] 
-2.4.2023, 17:53:53 - INFO - Req was made 
-2.4.2023, 17:53:53 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:53:59 - INFO - Socket disconnected [id: undefined] 
-2.4.2023, 17:53:59 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
-2.4.2023, 17:53:59 - INFO - Req was made 
-2.4.2023, 17:54:00 - INFO - New connected socket [id: mDWQiSyELsOmIg_AAAAR] 
-2.4.2023, 17:54:00 - INFO - Req was made 
-2.4.2023, 17:54:00 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:23:58 - INFO - Hi | 90 | Bobo 
+1.4.2023, 16:23:58 - INFO - Server is running on port: 3030 
+1.4.2023, 16:24:02 - INFO - New connected socket [id: xsHQb4wOZvH3QIlIAAAB] 
+1.4.2023, 16:24:42 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:25:29 - INFO - Req was made 
+1.4.2023, 16:25:29 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:25:30 - INFO - New connected socket [id: riYC1EJKnJr349CKAAAD] 
+1.4.2023, 16:25:33 - INFO - Req was made 
+1.4.2023, 16:25:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:32:25 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:32:37 - INFO - Req was made 
+1.4.2023, 16:32:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:32:38 - INFO - New connected socket [id: _RvWjV1wZ1XSlBxDAAAF] 
+1.4.2023, 16:35:49 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:35:52 - INFO - Req was made 
+1.4.2023, 16:35:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:35:52 - INFO - New connected socket [id: 0Sy-3p6dmT4ydAgzAAAH] 
+1.4.2023, 16:36:05 - INFO - Req was made 
+1.4.2023, 16:36:05 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:36:16 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:36:25 - INFO - Req was made 
+1.4.2023, 16:36:25 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:36:27 - INFO - New connected socket [id: snW0h_jxmLdMpD9rAAAJ] 
+1.4.2023, 16:36:27 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:36:27 - INFO - Req was made 
+1.4.2023, 16:36:45 - INFO - New connected socket [id: qc8y_Yy1CL5BLw7tAAAL] 
+1.4.2023, 16:37:09 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:42:37 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:42:48 - INFO - Req was made 
+1.4.2023, 16:42:48 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:42:49 - INFO - New connected socket [id: gXoqZ6P16Gz0-IiMAAAN] 
+1.4.2023, 16:42:51 - INFO - Req was made 
+1.4.2023, 16:42:51 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:48:46 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:48:51 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:48:51 - INFO - Req was made 
+1.4.2023, 16:48:52 - INFO - New connected socket [id: WlXgWd9lswhsUaRVAAAP] 
+1.4.2023, 16:48:54 - INFO - Req was made 
+1.4.2023, 16:48:54 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:50:11 - INFO - Req was made 
+1.4.2023, 16:50:11 - DEBUG - Getting Stays | {"country":"portugal","status":"","labels":null} 
+1.4.2023, 16:54:38 - INFO - Socket disconnected [id: undefined] 
+1.4.2023, 16:54:43 - INFO - Req was made 
+1.4.2023, 16:54:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 16:54:44 - INFO - New connected socket [id: UytyQXz-YQXfq9dPAAAR] 
+1.4.2023, 17:39:32 - INFO - Hi | 90 | Bobo 
+1.4.2023, 17:39:32 - INFO - Server is running on port: 3030 
+1.4.2023, 17:40:06 - INFO - Req was made 
+1.4.2023, 17:40:06 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 17:40:09 - INFO - Req was made 
+1.4.2023, 17:40:09 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 17:41:22 - INFO - Req was made 
+1.4.2023, 17:41:22 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 17:43:42 - INFO - Req was made 
+1.4.2023, 17:43:42 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:52:06 - INFO - Hi | 90 | Bobo 
+2.4.2023, 15:52:06 - INFO - Server is running on port: 3030 
+2.4.2023, 15:52:06 - INFO - New connected socket [id: yv5Tr_ThmUr8pox2AAAB] 
+2.4.2023, 15:52:38 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 15:53:05 - INFO - Req was made 
+2.4.2023, 15:53:05 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:53:06 - INFO - New connected socket [id: 77uJEg6GN3LoPewoAAAD] 
+2.4.2023, 15:53:09 - INFO - Req was made 
+2.4.2023, 15:53:09 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:54:45 - INFO - Req was made 
+2.4.2023, 15:54:45 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:54:58 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 15:55:05 - INFO - Req was made 
+2.4.2023, 15:55:05 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:55:06 - INFO - New connected socket [id: Tz1sj02BazTHbsVsAAAF] 
+2.4.2023, 15:55:07 - INFO - Req was made 
+2.4.2023, 15:55:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:55:42 - INFO - New connected socket [id: _srQbEQXRdTP8wxwAAAH] 
+2.4.2023, 15:55:49 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 15:56:03 - DEBUG - auth.service - login with username: rrrr123 
+2.4.2023, 15:56:03 - ERROR - Failed to Login Invalid username or password 
+2.4.2023, 15:57:13 - INFO - Req was made 
+2.4.2023, 15:57:13 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:57:14 - INFO - New connected socket [id: zUSqqTqwC347aKU0AAAJ] 
+2.4.2023, 15:57:15 - INFO - Req was made 
+2.4.2023, 15:57:15 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:59:23 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 16:00:05 - INFO - New connected socket [id: 7OuKb1k9WzdrxQPGAAAL] 
+2.4.2023, 16:03:50 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 16:03:56 - INFO - Req was made 
+2.4.2023, 16:03:56 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 16:03:57 - INFO - New connected socket [id: K9Pg6IGppEKFvWU7AAAN] 
+2.4.2023, 16:03:59 - INFO - Req was made 
+2.4.2023, 16:03:59 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 16:04:54 - DEBUG - auth.service - login with username: rrrr123 
+2.4.2023, 16:04:54 - ERROR - Failed to Login Invalid username or password 
+2.4.2023, 16:05:43 - INFO - Req was made 
+2.4.2023, 16:05:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 16:05:43 - INFO - New connected socket [id: 4D8dHvxBmvnCVlSlAAAP] 
+2.4.2023, 16:05:44 - INFO - Req was made 
+2.4.2023, 16:05:44 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 16:08:29 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 16:08:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 16:08:33 - INFO - Req was made 
+2.4.2023, 16:08:33 - INFO - New connected socket [id: NVU3uEWP3UUPe4dNAAAR] 
+2.4.2023, 16:08:35 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 16:08:35 - INFO - Req was made 
+2.4.2023, 16:08:49 - INFO - Socket disconnected [id: undefined] 
+2.4.2023, 16:27:12 - INFO - Hi | 90 | Bobo 
+2.4.2023, 16:27:13 - INFO - Server is running on port: 3030 
+2.4.2023, 16:27:17 - INFO - New connected socket [id: HFfiKew9kYimytabAAAB] 
+2.4.2023, 16:31:41 - INFO - Hi | 90 | Bobo 
+2.4.2023, 16:31:41 - INFO - Server is running on port: 3030 
+2.4.2023, 16:37:09 - INFO - Hi | 90 | Bobo 
+2.4.2023, 16:37:09 - INFO - Server is running on port: 3030 
+2.4.2023, 17:17:31 - INFO - Hi | 90 | Bobo 
+2.4.2023, 17:17:31 - INFO - Server is running on port: 3030 
+2.4.2023, 17:40:28 - INFO - Hi | 90 | Bobo 
+2.4.2023, 17:40:28 - INFO - Server is running on port: 3030 
+2.4.2023, 17:32:49 - INFO - Hi | 90 | Bobo 
+2.4.2023, 17:32:50 - INFO - Server is running on port: 3030 
+2.4.2023, 17:44:59 - INFO - Hi | 90 | Bobo 
+2.4.2023, 17:44:59 - INFO - Server is running on port: 3030 

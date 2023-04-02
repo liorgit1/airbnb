@@ -1,5 +1,12 @@
 <template>
-    <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
+    <section >
+    <!-- <AppHeader
+      @openModalLogin="openModalLogin"
+    /> -->
+  </section>
+  <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
+
+    <!-- header-details -->
 
 
         <!-- <section> -->
@@ -68,6 +75,7 @@ import Reservation from '../cmps/reservation.vue'
 import StayInfo from './StayInfo.vue'
 import StayAmenities from '../cmps/StayAmenities.vue'
 import StayReviews from '../cmps/StayReviews.vue'
+import AppHeader from '../cmps/AppHeader.vue'
 
 
 import { eventBus } from '../services/event-bus.service.js'
@@ -105,16 +113,17 @@ export default {
         closeModal() {
             eventBus.emit('closeModal')
 
-        }
-    },
-    components: {
-        Reservation,
-        StayInfo,
-        StayAmenities,
-        GuestsModal,
-        StayReviews
-    }
-    , computed: {
+}
+},
+components: {
+Reservation,
+StayInfo,
+StayAmenities,
+GuestsModal,
+StayReviews,
+AppHeader
+}
+, computed: {
 
 
         // stay() {

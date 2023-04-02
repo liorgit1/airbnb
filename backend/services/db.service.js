@@ -6,6 +6,8 @@ module.exports = {
     getCollection
 }
 
+const dbName = 'stay_db'
+
 var dbConn = null
 
 async function getCollection(collectionName) {
