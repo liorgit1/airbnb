@@ -62,7 +62,7 @@ async function addStay(req, res) {
   try {
     const Stay = req.body
     Stay.owner = loggedinUser
-    const addedStay = await Stayservice.add(Stay)
+    const addedStay = await stayService.add(Stay)
     res.json(addedStay)
 
     if (loggedinUser.isAdmin) {
@@ -83,7 +83,7 @@ async function updateStay(req, res) {
   try {
     const { loggedinUser } = req
     const Stay = req.body
-    const updatedStay = await Stayservice.update(Stay)
+    const updatedStay = await stayService.update(Stay)
     res.json(updatedStay)
     if (loggedinUser.isAdmin) {
       socketService.broadcastAdminUpdate({
@@ -102,7 +102,7 @@ async function removeStay(req, res) {
   try {
     const { loggedinUser } = req
     const StayId = req.params.id
-    const removedStayName = await Stayservice.remove(StayId)
+    const removedStayName = await stayService.remove(StayId)
     res.send()
     if (loggedinUser.isAdmin) {
       socketService.broadcastAdminUpdate({
@@ -139,7 +139,7 @@ async function removeStayMsg(req, res) {
     const StayId = req.params.id
     const { msgId } = req.params
 
-    const removedId = await Stayservice.removeStayMsg(StayId, msgId)
+    const removedId = await stayService.removeStayMsg(StayId, msgId)
     res.send(removedId)
   } catch (err) {
     logger.error('Failed to remove Stay msg', err)
