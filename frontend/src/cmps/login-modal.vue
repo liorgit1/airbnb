@@ -65,7 +65,7 @@ export default {
       this.closeModal();
     },
     closeModal() {
-      this.$emit("closeLoginModal");
+      this.$emit("closeLoginModal")
     },
     calcMouse(e) {
        const div = this.$refs.myRefs;

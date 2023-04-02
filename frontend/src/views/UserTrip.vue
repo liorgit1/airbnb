@@ -1,16 +1,18 @@
 <template>
-    <app-header></app-header>
-    <section style="margin-bottom: 80px;">
+    <section>
 <div class="alert" style="display: none;">
 </div>
-<section class="main-layout" style="margin-top: 100px;">
+<section class="main-layout" >
     <h1 class="trips">Trips</h1>
     <section class="user-trips">
     <div class="mini-card-grid mini-card grid-item-2">
       <div class="mini-card-header flex row wrap">
         <h1>Wishlist</h1>
         </div>
-        <h4><span>0</span>&nbsp;saved stays</h4>
+        <div class="mini-stay-img">
+        <img src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/home-improvement/wp-content/uploads/2022/08/las-vegas-realtor.jpg alt=">
+        </div>
+        <h4><span>4</span>&nbsp;saved stays</h4>
         <button class="mini-card-btn">Go to wishlist</button>
     </div>
     <div class="mini-card-grid mini-card grid-item-3">
@@ -25,7 +27,8 @@
             <div class="mini-card-header flex wrap">
                 <h1 class="">Your Next Stay</h1>
             </div>
-            <h4>Beautiful pool and house hosted by Jacky</h4>
+            <h4>hosted by {{stay.host.Fullname}}</h4>
+            <h4>May 23-26, 2023</h4>
             <button class="mini-card-btn">Go to stay</button>
         </div>
         <div class="next-stay-img">
