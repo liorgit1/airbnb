@@ -1,8 +1,8 @@
 <template>
     <section >
-    <AppHeader
+    <!-- <AppHeader
       @openModalLogin="openModalLogin"
-    />
+    /> -->
   </section>
   <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
 

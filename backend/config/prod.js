@@ -1,4 +1,6 @@
 module.exports = {
-  dbURL: 'mongodb+srv://yfty777:YiftachZ15i@mycloudservice.mafxmux.mongodb.net/?retryWrites=true&w=majority',
+  
+  dbURL:  process.env.DB_KEY,
   dbName: 'stay_db'
+  
 }
