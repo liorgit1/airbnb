@@ -1865,3 +1865,89 @@
 2.4.2023, 18:02:48 - INFO - Server is running on port: 3030 
 2.4.2023, 18:46:14 - INFO - Hi | 90 | Bobo 
 2.4.2023, 18:46:14 - INFO - Server is running on port: 3030 
+2.4.2023, 18:56:36 - INFO - Hi | 90 | Bobo 
+2.4.2023, 18:56:36 - INFO - Server is running on port: 3030 
+2.4.2023, 18:57:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 18:57:32 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:32 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 18:57:33 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:33 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+2.4.2023, 19:00:08 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:00:08 - INFO - Server is running on port: 3030 
+2.4.2023, 19:00:12 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:00:12 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:00:13 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:02:59 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:03:00 - INFO - Server is running on port: 3030 
+2.4.2023, 19:03:02 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:03:02 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:03:03 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:10 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:04:10 - INFO - Server is running on port: 3030 
+2.4.2023, 19:04:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:54 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:04:54 - INFO - Server is running on port: 3030 
+2.4.2023, 19:04:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:55 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:55 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:05:32 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:05:32 - INFO - Server is running on port: 3030 
+2.4.2023, 19:06:11 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:06:11 - INFO - Server is running on port: 3030 
+2.4.2023, 19:06:22 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:06:22 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:22 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:06:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:38 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:07:38 - INFO - Server is running on port: 3030 
+2.4.2023, 19:07:49 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:07:49 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:07:50 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:11:27 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:11:27 - INFO - Server is running on port: 3030 
+2.4.2023, 19:11:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:11:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
