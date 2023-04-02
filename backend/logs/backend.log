@@ -1888,3 +1888,7 @@
 >>>>>>> cd13db32829fa727c114853719444d40d6290125
 2.4.2023, 19:29:10 - INFO - Hi | 90 | Bobo 
 2.4.2023, 19:29:11 - INFO - Server is running on port: 3030 
+2.4.2023, 19:36:37 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:36:37 - INFO - Server is running on port: 3030 
+2.4.2023, 19:38:00 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 19:38:39 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
