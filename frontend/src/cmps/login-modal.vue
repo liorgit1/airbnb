@@ -1,7 +1,7 @@
 <template>
   <section class="login-modal">
     <div class="flex space-between" style="    border-bottom: 1px solid #ddd;">
-      <h1 class="loginHeader">Log in or Sign up</h1> 
+      <h1 class="loginHeader">Log in or Sign up</h1>
       <button class="close-login" @click="closeModal">
         X
       </button>
@@ -35,7 +35,6 @@
     </form>
   </section>
 </template>
-
 <script>
 export default {
   name:"login-modal",
@@ -83,6 +82,5 @@ export default {
   },
 };
 </script>
-
 <style>
 </style>

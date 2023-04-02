@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'production') {
       'http://localhost:3000',
       'http://localhost:3030',
       'http://127.0.0.1:27017',
-      'http://localhost:27017',
+      // 'http://localhost:27017',
     ],
     credentials: true,
   }
@@ -46,7 +46,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/stay', stayRoutes)
 app.use('/api/review', reviewRoutes)
-// setupSocketAPI(http)
+setupSocketAPI(http)
 // Make every server-side-route to match the index.html
 // so when requesting http://localhost:3030/index.html/toy/123 it will still respond with
 // our SPA (single page app) (the index.html file) and allow vue-router to take it from there
