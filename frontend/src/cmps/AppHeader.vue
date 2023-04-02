@@ -41,7 +41,7 @@
           </HeaderFilter>
         </div>
 
-        <RouterLink to="/">become a host</RouterLink>
+        <!-- <RouterLink to="/">become a host</RouterLink> -->
 
 
 
@@ -66,10 +66,10 @@
             </svg>
           </button>
         </label>
-        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="closeLoginModal"
+        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="modalLoginIsOpen = false"
           @closeModalDetails="closeModalUser" />
       </nav>
-      <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" />
+      <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" @login="setLogin" />
     </section>
   </header>
 </template>
@@ -112,10 +112,12 @@ export default {
       this.modalUser = false
       this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
-
+    
     setLogin(user) {
+      console.log('user' , user)
       this.$store.dispatch({
         type: "login",
+       
         userCred: user,
       });
       this.modalLoginIsOpen = false;
@@ -199,3 +201,12 @@ export default {
 }
 
 </script>
+
+
+
+
+
+
+
+
+
