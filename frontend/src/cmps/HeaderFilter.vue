@@ -28,7 +28,7 @@
         @click="showDatesModal = false, showLocationsModal = false, showGuestsModal = true, checkInClicked = false, checkOutClicked = false">
         <div>
           <p>Guests</p>
-          <input type="text" v-model="guestsDisplay" placeholder="Add guests" />
+          <input type="text" v-model = "guests" placeholder="Add guests" />
           <!-- v-model="searchBy.guests" -->
         </div>
         <span @click="setSearch(), $emit('close')"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ export default {
       let pets
       adults = this.guests.adults
       kids = this.guests.kids
-      guests = adults + kids > 0 ? `${adults + kids} guests` : 'enter guests'
+      guests = adults + kids > 0 ? `${adults + kids} guests` : 'Add guests'
       infants = this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
       pets = this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
       totalGuests = `${guests} ${infants} ${pets}`
