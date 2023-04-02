@@ -1892,3 +1892,8 @@
 2.4.2023, 19:36:37 - INFO - Server is running on port: 3030 
 2.4.2023, 19:38:00 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
 2.4.2023, 19:38:39 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 19:58:15 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:58:15 - INFO - Server is running on port: 3030 
+2.4.2023, 19:58:48 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 20:01:31 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 20:01:36 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
