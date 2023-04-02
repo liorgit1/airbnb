@@ -1,7 +1,7 @@
 const MongoClient = require('mongodb').MongoClient
 const url = "mongodb://127.0.0.1:27017"
 const config = require('../config')
-const logger =require('../services/logger.service')
+const logger = require('../services/logger.service')
 
 module.exports = {
     getCollection
@@ -25,6 +25,7 @@ async function getCollection(collectionName) {
 
 async function connect() {
     if (dbConn) return dbConn
+    console.log(config);
     try {
         const client = await MongoClient.connect(config.dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
         const db = client.db(config.dbName)

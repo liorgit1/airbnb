@@ -15,10 +15,15 @@
         <h4><span>4</span>&nbsp;saved stays</h4>
         <button class="mini-card-btn">Go to wishlist</button>
     </div>
-    <div class="mini-card-grid mini-card grid-item-3">
+    <div class="mini-card-grid mini-card grid-item-3" >
     <div class="mini-card-header">
         <h1>Messages</h1>
-        <h4> order #o113 has been approved</h4>
+        <ul>
+            <li style="none"><h4>order #o113 has been approved</h4></li>
+            <li style="none"><h4>order #o114 has been approved</h4></li>
+            <li style="none"><h4>order #o115 has been approved</h4></li>
+            <li style="none"><h4>order #o116 has been approved</h4></li>
+        </ul>
         <button class="mini-card-btn">Go to messages</button>
     </div>
     </div>
@@ -27,8 +32,11 @@
             <div class="mini-card-header flex wrap">
                 <h1 class="">Your Next Stay</h1>
             </div>
-            <h4>hosted by {{stay.host.Fullname}}</h4>
+            <h4>hosted by andy and maria</h4>
             <h4>May 23-26, 2023</h4>
+            <h4>beautiul house, with</h4>
+            <h4>with amazing views</h4>
+
             <button class="mini-card-btn">Go to stay</button>
         </div>
         <div class="next-stay-img">
