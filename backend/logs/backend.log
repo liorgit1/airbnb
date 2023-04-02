@@ -1756,3 +1756,69 @@
 1.4.2023, 17:41:22 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
 1.4.2023, 17:43:42 - INFO - Req was made 
 1.4.2023, 17:43:42 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 21:34:36 - INFO - Hi | 90 | Bobo 
+1.4.2023, 21:34:36 - INFO - Server is running on port: 3030 
+1.4.2023, 21:35:55 - INFO - Req was made 
+1.4.2023, 21:35:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+1.4.2023, 21:35:58 - INFO - Req was made 
+1.4.2023, 21:35:58 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:27:39 - INFO - Hi | 90 | Bobo 
+2.4.2023, 9:27:39 - INFO - Server is running on port: 3030 
+2.4.2023, 9:28:34 - INFO - Req was made 
+2.4.2023, 9:28:34 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:28:37 - INFO - Req was made 
+2.4.2023, 9:28:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:29:33 - INFO - Req was made 
+2.4.2023, 9:29:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:29:36 - INFO - Req was made 
+2.4.2023, 9:29:36 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:29:44 - INFO - Req was made 
+2.4.2023, 9:29:44 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:29:45 - INFO - Req was made 
+2.4.2023, 9:29:45 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:38:03 - INFO - Req was made 
+2.4.2023, 9:38:03 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:38:05 - INFO - Req was made 
+2.4.2023, 9:38:05 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:45:07 - INFO - Req was made 
+2.4.2023, 9:45:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:45:09 - INFO - Req was made 
+2.4.2023, 9:45:09 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:47:09 - INFO - Req was made 
+2.4.2023, 9:47:09 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:47:11 - INFO - Req was made 
+2.4.2023, 9:47:11 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:48:51 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:48:51 - INFO - Req was made 
+2.4.2023, 9:48:53 - INFO - Req was made 
+2.4.2023, 9:48:53 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:54:30 - INFO - Req was made 
+2.4.2023, 9:54:30 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:54:31 - INFO - Req was made 
+2.4.2023, 9:54:31 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:58:53 - INFO - Req was made 
+2.4.2023, 9:58:53 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 9:58:56 - INFO - Req was made 
+2.4.2023, 9:58:56 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 13:48:02 - INFO - Req was made 
+2.4.2023, 13:48:02 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 13:48:06 - INFO - Req was made 
+2.4.2023, 13:48:06 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 14:03:42 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 14:03:42 - INFO - Req was made 
+2.4.2023, 14:04:18 - INFO - Req was made 
+2.4.2023, 14:04:18 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 14:23:52 - INFO - Req was made 
+2.4.2023, 14:23:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 14:23:55 - INFO - Req was made 
+2.4.2023, 14:23:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 14:35:47 - INFO - Req was made 
+2.4.2023, 14:35:47 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 14:35:50 - INFO - Req was made 
+2.4.2023, 14:35:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:16:04 - INFO - Req was made 
+2.4.2023, 15:16:04 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:16:07 - INFO - Req was made 
+2.4.2023, 15:16:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 15:33:05 - INFO - Hi | 90 | Bobo 
+2.4.2023, 15:33:05 - INFO - Server is running on port: 3030 
