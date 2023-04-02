@@ -1951,3 +1951,20 @@
 2.4.2023, 19:11:27 - INFO - Server is running on port: 3030 
 2.4.2023, 19:11:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
 2.4.2023, 19:11:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:34:37 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:35:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:36:58 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:36:58 - INFO - Server is running on port: 3030 
+2.4.2023, 19:39:12 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:48:56 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:49:01 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:49:27 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:54:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:55:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:55:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:58:29 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:58:31 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:03:17 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:03:19 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:04:29 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:04:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
