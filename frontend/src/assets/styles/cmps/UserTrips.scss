@@ -53,15 +53,13 @@ button, span, section, div {
     grid-template-rows: repeat(2,2fr) 1.6fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
-    margin-block-end: 10px;
+    margin-block-end: -6px;
 }
 
 
 .user-page h1.trips {
     font-size: 32px;
     color: #222;
-    margin-block-start: 36px;
-    margin-block-end: 24px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: Airbnb-Cereal-Book;
@@ -143,6 +141,13 @@ ul {
     width: 100%;
     height: 100%;
     border-radius: 12px;
+}
+
+.mini-stay-wishlist-img img{
+    object-fit: cover;
+    height: 72px;
+    width: 72px;
+    border-radius: 4px;
 }
 
  .mini-card-btn {
@@ -287,4 +292,7 @@ li {
 .grid-item-4 {
     grid-column: 1/7;
     grid-row: 3/4;
+    border: 1px solid #ddd;
+        padding-inline: 10px;
+        border-radius: 12px;
 }

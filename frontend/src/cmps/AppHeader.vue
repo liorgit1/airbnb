@@ -13,7 +13,7 @@
         </RouterLink>
 
         <div @click="isOpen = true" v-if="!isOpen" class="search-bar">
-          <button v-if="!isDetails">Anywhere</button>
+          <button style="padding-left: 10px;" v-if="!isDetails">Anywhere</button>
           <button v-else>start your search</button>
           <span v-if="!isDetails" style="opacity: 50%;">|</span>
           <span v-else></span>
@@ -46,11 +46,7 @@
 
 
 
-        <label
-          @click="toggleModalUser"
-          class="relative"
-          v-close="closeModalUser"
-        >
+        <label @click="this.modalUser = !this.modalUser;" class="relative" @closeModalUser="closeModalUser">
           <button class="user-nav">
 
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
@@ -70,10 +66,10 @@
             </svg>
           </button>
         </label>
-        <userDetailsModal v-if="modalUser" @openModalLogin="openModalLogin" @closeLoginModal="closeLoginModal"
+        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="modalLoginIsOpen = false"
           @closeModalDetails="closeModalUser" />
       </nav>
-      <!-- <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggle" /> -->
+      <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" @login="setLogin" />
     </section>
   </header>
 </template>
@@ -97,20 +93,22 @@ export default {
         modalUser: false,
         isDetails: false,
         isOpen: false,
-        // modalLoginIsOpen: false
+        modalLoginIsOpen: false
       };
     }
   ,
 
 
   created() {
-    window.addEventListener("scroll", this.handleScroll);
-    this.filter = this.$store.getters.filterBy;
-    socketService.on("order-status-change", this.showNotification);
+    window.addEventListener('scroll', this.handleScroll);
+  },
+
+  unmounted() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
 
   methods: {
-    toggle() {
+    toggleModalLogin() {
       this.modalUser = false
       this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
@@ -161,9 +159,11 @@ export default {
     hide() {
       this.opened = false;
       document.removeEventListener('click', this.hide);
-    },
-  
-  thisRoute() {
+    }
+  },
+
+  computed: {
+    thisRoute() {
       return this.$route.name
     },
 
@@ -174,11 +174,6 @@ export default {
     loggedInUser() {
       return this.$store.getters.loggedinUser
     },
-    openModalLogin() {
-      this.modalUser = false;
-      this.$emit("openModalLogin");
-    },
-   
   },
 
   watch: {
