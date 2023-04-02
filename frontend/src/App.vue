@@ -1,6 +1,6 @@
 <template>
   <section>
-    <!-- <AppHeader /> -->
+    <AppHeader />
     <!-- <FilterList/> -->
     <RouterView/>
     <UserMsg/>
@@ -13,8 +13,8 @@
 import { userService } from './services/user-service.js'
 import { store } from './store/store.js'
 import appFooter from './cmps/app-footer.vue'
-// import AppHeader from './cmps/AppHeader.vue'
-// import FilterList from './cmps/FilterList.vue'
+import AppHeader from './cmps/AppHeader.vue'
+import FilterList from './cmps/FilterList.vue'
 import HeaderFilter from './cmps/HeaderFilter.vue'
 import UserMsg from './cmps/UserMsg.vue'
 
@@ -31,9 +31,9 @@ export default {
     if (user)  store.commit({type: 'setLoggedinUser', user})
   },
   components: {
-    // AppHeader,
+    AppHeader,
     HeaderFilter,
-    // FilterList,
+    FilterList,
     UserMsg
   },
 }

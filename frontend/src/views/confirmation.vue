@@ -1,7 +1,7 @@
 <template>
     <section class="details-layout">
         <div class="confirmation">
-            <h1 style="font-size: 40px; margin-bottom: 50px;">confirmation</h1>
+            <h1 style="font-size: 40px; margin-block: 50px;">confirmation</h1>
         </div>
         <div class="confirmation-container ">
             <div class="your-trip flex-col">
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="flex">
-                    <p style="    font-size: 22px;translate: 67px 122px;">close</p>
+                    <p style="font-size: 22px;translate: 67px 92px;; text-decoration: underline;">close</p>
                     <div style="cursor: pointer;" @click="this.$router.push(`/trip`);" class=" approveBtn">
                         <span style="padding-inline-start: 41px;">
                             Approve

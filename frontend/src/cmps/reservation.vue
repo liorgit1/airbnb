@@ -46,14 +46,14 @@
                         this.showModal = false
                     }">
                         <div class="date-input">
-                            <label>CHECK IN</label>
+                            <label class="fs10" style="color: black; ">CHECK IN</label>
                             <DatePickerModalVue @click.stop v-if="openDatesModal" style="translate: -212px; z-index: 1 ;"
                                 @passDateData="getDateData($event)" v-click-outside="onClickedOutside" />
-                            <input v-model="startDate">
+                            <input v-model="startDate" placeholder="Add date">
                         </div>
                         <div class="date-input">
-                            <label>CHECK OUT</label>
-                            <input v-model="endDate">
+                            <label class="fs10" style="color: black;">CHECK OUT</label>
+                            <input v-model="endDate" placeholder="Add date">
                         </div>
                     </div>
 
@@ -81,6 +81,9 @@
                             </div>
                         </div>
                     </span>
+                    <GuestsModal @setChildrenCount="setChildrenCount($event)" @setAdultCount="setAdultCount1($event)"
+                        @setInfantsCount="setInfantsCount($event)" @setPetsCount="setPetsCount($event)" v-if="showModal" />
+
                     <div v-if="duration" class="flex space-between"
                         style="padding-block: 19px; border-block-start: 1px solid #dddd;">
 
@@ -94,8 +97,7 @@
                     </button>
                 </reservationBtnVue>
             </form>
-            <GuestsModal @setChildrenCount="setChildrenCount($event)" @setAdultCount="setAdultCount1($event)"
-                @setInfantsCount="setInfantsCount($event)" @setPetsCount="setPetsCount($event)" v-if="showModal" />
+
             <div class="reservation-footer">
             </div>
         </section>

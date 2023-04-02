@@ -1,6 +1,6 @@
 <template>
   <section class="upper-section-header-explore main-header fix">
-    <app-header @openModalLogin="openModalLogin" />
+    <!-- <app-header @openModalLogin="openModalLogin" /> -->
   </section>
   <section class="main-layout">
     <h4 v-if="stays">over {{ stays.length - 1 }} homes</h4>
@@ -16,7 +16,8 @@ import appHeader from '../cmps/AppHeader.vue'
 import headerFilter from '../cmps/HeaderFilter.vue'
 import stayList from '../cmps/StayList.vue'
 import typePlaceModal from '../cmps/type-place-modal.vue'
-import { stayService } from '../services/stay-service'
+// import { stayService } from '../services/stay-service'
+import { stayService } from '../services/stay.service.local'
 
 export default {
   name: 'explore',

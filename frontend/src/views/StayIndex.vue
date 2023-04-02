@@ -1,5 +1,5 @@
 <template>
-  <app-header @openModalLogin="openModalLogin" />
+  <!-- <app-header @openModalLogin="openModalLogin" /> -->
   <section >
     <FilterList />
   <main class="home-page main-layout">
