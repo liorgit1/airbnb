@@ -1,4 +1,5 @@
-import { stayService } from '../services/stay-service'
+// import { stayService } from '../services/stay-service'
+import { stayService } from '../services/./stay.service.local'
 
 export default {
     state: {

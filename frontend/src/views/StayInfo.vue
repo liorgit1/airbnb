@@ -8,7 +8,7 @@
                     <div>{{ stay.capacity }} beds</div><span class="dot">·</span>
                     <div>3 baths</div>
                 </ul>
-            </div><img class="mini-host-img" :src="stay.host.imgUrl">
+            </div><img style="translate: 0px -2px; align-self: center;" class="mini-host-img" :src="stay.host.pictureUrl">
         </div>
         <ul class="stay-main-amenities-list">
             <li class="flex">

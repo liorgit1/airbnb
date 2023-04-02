@@ -1,7 +1,7 @@
 <template>
     <section class="details-layout">
         <div class="confirmation">
-            <h1 style="font-size: 40px; margin-bottom: 50px;">confirmation</h1>
+            <h1 style="font-size: 40px; margin-block: 50px;">confirmation</h1>
         </div>
         <div class="confirmation-container ">
             <div class="your-trip flex-col">
@@ -19,14 +19,15 @@
                     </svg>
 
                     <h1 style="translate: -10px -41px;">This is a rare find</h1>
-                    <h4 style="padding-block-start: 10px ;translate: -10px -37px;">Kevins place is usually booked </h4>
+                    <h4 style="padding-block-start: 10px ;translate: -10px -37px;">Ron and Shay's place is usually booked
+                    </h4>
                 </div>
                 <div style="padding-block-end: 10px;">
                     <h2 style="padding-block:40px ;padding-block-end: 26px;">Your trip</h2>
                     <div class="flex space-between">
 
                         <h3>Dates</h3>
-                        <h3 style="padding-inline-end: 91px">Dec 27 - 29</h3>
+                        <h3 style="padding-inline-end: 91px">Apr 7 - 14</h3>
                     </div>
                     <div style="margin-top: 30px;" class="flex space-between">
 
@@ -38,8 +39,8 @@
                 </div>
 
                 <div class="flex">
-                    <p style="    font-size: 22px;translate: 67px 122px;">close</p>
-                    <div @click="this.$router.push(`/trip`);" class=" approveBtn">
+                    <p style="font-size: 22px;translate: 67px 92px;; text-decoration: underline;">close</p>
+                    <div style="cursor: pointer;" @click="this.$router.push(`/trip`);" class=" approveBtn">
                         <span style="padding-inline-start: 41px;">
                             Approve
                         </span>
@@ -58,9 +59,9 @@
                     <div class="flex confirm-modal-top">
                         <img class="confirmation-img" src="../assets/img/1.jpg">
                         <div>
-                            <p style="margin-block-start: 33px;margin-inline-start: 23px;" class="fs14">Apartment</p>
+                            <p style="margin-block-start: 33px;margin-inline-start: 15px;" class="fs14">Villa</p>
                             <div class="confirm-h4">
-                                <h4>Home,Sweet,Harlem</h4>
+                                <h4>Westin Kaanapali KORVN 2BR</h4>
                                 <h4 style="margin-block-start: -6px;">Welcome</h4>
                             </div>
                         </div>
@@ -68,8 +69,8 @@
                     <div class="confrim-price-details">
                         <h3 style="margin-block-start: 26px;margin-inline-start: 30px;">Price details</h3>
                         <div style="margin-inline: 30px; margin-block-start: 40px;" class="flex space-between">
-                            <h4>$110 X 2 nights </h4>
-                            <h4>$220</h4>
+                            <h4>$500 X 7 nights </h4>
+                            <h4>$3500</h4>
                         </div>
                         <div style="padding-block-end: 21px;margin-inline: 30px; margin-block-start: 17px;border-bottom: 1px solid #ddd;"
                             class="flex space-between">
@@ -78,7 +79,7 @@
                         </div>
                         <div style="margin-inline: 30px; margin-block-start: 35px;" class="flex space-between">
                             <h4>Total </h4>
-                            <h4>$244</h4>
+                            <h4>$3524</h4>
                         </div>
                     </div>
                 </div>

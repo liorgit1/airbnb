@@ -1,5 +1,6 @@
 // import { storageService } from "./async-storage-service.js";
- import { stayService } from "./stay-service.js";
+//  import { stayService } from "./stay-service.js";
+ import { stayService } from "./stay.service.local.js";
  import { orderService } from "./order-service.js";
  import { httpService } from "./http.service.js";
  import { utilService } from "./util-service.js";

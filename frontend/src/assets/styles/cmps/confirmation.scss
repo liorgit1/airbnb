@@ -1,6 +1,5 @@
 .confirmation-container {
     width: 100%;
-    height: 100dvh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -26,7 +25,7 @@
 
     .confirm-price-modal {
         grid-column: 2/3;
-
+        align-items: flex-end;
         .apt-modal {
             height: 504px;
             width: 500px;
@@ -48,7 +47,7 @@
     background-color: #ff385c;
     padding-top: 13px;
     padding-left: 30px;
-    translate: 166px 112px;
+    translate: 206px 81px;
     border-radius: 12px;
 
 }
@@ -57,21 +56,19 @@
     border-radius: 10px;
     aspect-ratio: 1.053/1;
     width: 145px;
-    margin-block-start: 35px;
-    margin-inline-start: 49px;
-
-    
+    margin-block: 35px;
+    margin-inline: 26px;
 }
 
 
-.confirm-h4{
+.confirm-h4 {
     margin-inline-start: 16px;
     margin-block-start: -14px;
 }
 
 
 
-.confirm-modal-top{
+.confirm-modal-top {
     padding-block-end: 10px;
     border-bottom: solid 1px #dddd;
 }
