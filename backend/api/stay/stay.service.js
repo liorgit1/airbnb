@@ -9,7 +9,7 @@ async function query(filterBy, sortBy) {
     const collection = await dbService.getCollection('stay')
       var stays = await collection.find(criteria).sort().toArray()
       stays.sort((a,b) => b.price - a.price)
-       const Stays = stays.filter(stay => (stay.price < 550) && (stay.reviews[0].rate.Communication > 4.2))
+       const Stays = stays.filter(stay => (stay.price < 550) || (stay.reviews[0].rate.Communication > 4.2))
       
       // stays
       //   return a.reviews.rate.location - b.reviews.rate.location

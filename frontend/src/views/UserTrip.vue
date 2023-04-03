@@ -32,8 +32,10 @@
             <div class="mini-card-header flex wrap">
                 <h1 class="">Your Next Stay</h1>
             </div>
-            <div class="text-header">hosted by andy and maria May 23-26, 2023 beautiul house, with with amazing views</div>
-            <button class="mini-card-btn">Go to stay</button>
+            <div class="text-header">hosted by Ron and Shay beautiul house, with with amazing views</div>
+            <div class="text-header">From May 23-26, 2023 </div>
+            <div class="text-header">Check-In for 2 guests </div>
+            <button class="next-oreder-img">Go to stay</button>
         </div>
         <div class="next-stay-img">
             <img src="http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436294/mvhb3iazpiar6duvy9we.jpg" alt="">

@@ -2146,3 +2146,11 @@
 3.4.2023, 17:22:54 - INFO - Hi | 90 | Bobo 
 3.4.2023, 17:22:54 - INFO - Server is running on port: 3030 
 >>>>>>> ed610ac037a523fa41628121c27892aa9fe2bfc1
+3.4.2023, 17:35:33 - INFO - Hi | 90 | Bobo 
+3.4.2023, 17:35:33 - INFO - Server is running on port: 3030 
+3.4.2023, 17:41:12 - INFO - Hi | 90 | Bobo 
+3.4.2023, 17:41:12 - INFO - Server is running on port: 3030 
+3.4.2023, 18:53:22 - DEBUG - auth.service - login with username: 222 
+3.4.2023, 18:53:25 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 19:04:19 - INFO - Hi | 90 | Bobo 
+3.4.2023, 19:04:19 - INFO - Server is running on port: 3030 
