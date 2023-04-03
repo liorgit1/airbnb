@@ -2036,7 +2036,88 @@
 2.4.2023, 20:41:47 - INFO - Server is running on port: 3030 
 2.4.2023, 20:43:19 - INFO - Hi | 90 | Bobo 
 2.4.2023, 20:43:19 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
 3.4.2023, 17:16:39 - INFO - Hi | 90 | Bobo 
 3.4.2023, 17:16:39 - INFO - Server is running on port: 3030 
 3.4.2023, 17:16:53 - INFO - Hi | 90 | Bobo 
 3.4.2023, 17:16:53 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> 2e5a282a6c26aaff38b628466319bce257cc7622
+2.4.2023, 20:52:25 - INFO - Hi | 90 | Bobo 
+2.4.2023, 20:52:26 - INFO - Server is running on port: 3030 
+2.4.2023, 21:30:16 - INFO - Hi | 90 | Bobo 
+2.4.2023, 21:30:16 - INFO - Server is running on port: 3030 
+2.4.2023, 21:43:38 - DEBUG - auth.service - login with username: 3232 
+2.4.2023, 21:43:38 - ERROR - Failed to Login Invalid username or password 
+2.4.2023, 21:50:06 - DEBUG - auth.service - login with username: 3232 
+2.4.2023, 21:50:06 - ERROR - Failed to Login Invalid username or password 
+2.4.2023, 21:52:58 - INFO - Hi | 90 | Bobo 
+2.4.2023, 21:52:58 - INFO - Server is running on port: 3030 
+2.4.2023, 21:53:13 - DEBUG - auth.service - login with username: lior 
+2.4.2023, 21:53:15 - INFO - User login:  | {"_id":"642956a588daf949bf62a5cb","username":"lior","fullname":"lior L","score":0} 
+2.4.2023, 23:27:59 - DEBUG - auth.service - signup with username: 33, fullname: 33 
+2.4.2023, 23:27:59 - DEBUG - auth.route - new account created: {"username":"33","password":"$2b$10$h.Fk0Pv4htBTHVUl/bw0e.OF7fc46TK5F6RngWzhv4MsOaFEs7L1q","fullname":"33","score":0,"_id":"6429e54f3b082fcf3d5fc215"} 
+2.4.2023, 23:27:59 - DEBUG - auth.service - login with username: 33 
+2.4.2023, 23:28:00 - INFO - User login:  | {"_id":"6429e54f3b082fcf3d5fc215","username":"33","fullname":"33","score":0} 
+2.4.2023, 23:37:19 - DEBUG - auth.service - signup with username: 111, fullname: 222 
+2.4.2023, 23:37:20 - DEBUG - auth.route - new account created: {"username":"111","password":"$2b$10$1zsuKDNG10oXPcik184PS.Gscz/1gR9iphHinfsfxOkDE.u/kv3TW","fullname":"222","score":0,"_id":"6429e7803b082fcf3d5fc216"} 
+2.4.2023, 23:37:20 - DEBUG - auth.service - login with username: 111 
+2.4.2023, 23:37:20 - INFO - User login:  | {"_id":"6429e7803b082fcf3d5fc216","username":"111","fullname":"222","score":0} 
+3.4.2023, 0:00:11 - DEBUG - auth.service - signup with username: tttt, fullname: tttt 
+3.4.2023, 0:00:12 - DEBUG - auth.route - new account created: {"username":"tttt","password":"$2b$10$txqkhYDoFfi.Fw0pFUJq4e1YqRg19UlTzd7pcXLoLA7IaOWwy0.hC","fullname":"tttt","score":0,"_id":"6429ecdc3b082fcf3d5fc217"} 
+3.4.2023, 0:00:12 - DEBUG - auth.service - login with username: tttt 
+3.4.2023, 0:00:13 - INFO - User login:  | {"_id":"6429ecdc3b082fcf3d5fc217","username":"tttt","fullname":"tttt","score":0} 
+3.4.2023, 0:02:25 - DEBUG - auth.service - login with username: 222 
+3.4.2023, 0:02:25 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 0:02:36 - DEBUG - auth.service - login with username: rrrr123 
+3.4.2023, 0:02:36 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 0:02:43 - DEBUG - auth.service - login with username: 33 
+3.4.2023, 0:02:44 - INFO - User login:  | {"_id":"6429e54f3b082fcf3d5fc215","username":"33","fullname":"33","score":0} 
+3.4.2023, 0:03:03 - DEBUG - auth.service - signup with username: rrr, fullname: rrr 
+3.4.2023, 0:03:04 - DEBUG - auth.route - new account created: {"username":"rrr","password":"$2b$10$B7yOPZGSdrZ2FLJXIOOn6elDn1c1pZ.9X46n2wq9NZpjaAx8qQVEK","fullname":"rrr","score":0,"_id":"6429ed873b082fcf3d5fc218"} 
+3.4.2023, 0:03:04 - DEBUG - auth.service - login with username: rrr 
+3.4.2023, 0:03:05 - INFO - User login:  | {"_id":"6429ed873b082fcf3d5fc218","username":"rrr","fullname":"rrr","score":0} 
+3.4.2023, 0:06:41 - INFO - Hi | 90 | Bobo 
+3.4.2023, 0:06:41 - INFO - Server is running on port: 3030 
+3.4.2023, 0:06:52 - DEBUG - auth.service - signup with username: rrrr, fullname: 4454545 
+3.4.2023, 0:06:53 - DEBUG - auth.route - new account created: {"username":"rrrr","password":"$2b$10$lZCjy.Gw5MMUHATeF4icA.SSBCxkeCuQ8eEqdH8GqrvCs9o1K.pK.","fullname":"4454545","wishlist":[],"reservations":[],"_id":"6429ee6d75d5b293cf23fb1e"} 
+3.4.2023, 0:06:53 - DEBUG - auth.service - login with username: rrrr 
+3.4.2023, 0:06:53 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
+3.4.2023, 2:58:44 - DEBUG - auth.service - login with username: 222 
+3.4.2023, 2:58:44 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 12:44:31 - INFO - Hi | 90 | Bobo 
+3.4.2023, 12:44:31 - INFO - Server is running on port: 3030 
+3.4.2023, 12:45:49 - DEBUG - auth.service - signup with username: rrr, fullname: rrrrr 
+3.4.2023, 12:45:49 - ERROR - cannot insert user | Error: Username taken 
+3.4.2023, 12:45:49 - ERROR - Failed to signup Error: Username taken 
+3.4.2023, 12:53:08 - INFO - Hi | 90 | Bobo 
+3.4.2023, 12:53:09 - INFO - Server is running on port: 3030 
+3.4.2023, 12:55:37 - INFO - Hi | 90 | Bobo 
+3.4.2023, 12:55:37 - INFO - Server is running on port: 3030 
+3.4.2023, 13:03:05 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:03:05 - INFO - Server is running on port: 3030 
+3.4.2023, 13:05:22 - INFO - Server is running on port: 3030 
+3.4.2023, 13:05:22 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:06:13 - DEBUG - auth.service - signup with username: rrrrrrrrr, fullname: rrrrrrrr 
+3.4.2023, 13:06:15 - DEBUG - auth.route - new account created: {"username":"rrrrrrrrr","password":"$2b$10$9vhOLXNZkGz5jGtgfWH6wurUQYAXuH0mWWQBKMSDVEo3ia4PrFcDe","fullname":"rrrrrrrr","wishlist":[],"_id":"642aa51693912744156ea8a6"} 
+3.4.2023, 13:06:15 - DEBUG - auth.service - login with username: rrrrrrrrr 
+3.4.2023, 13:06:15 - INFO - User login:  | {"_id":"642aa51693912744156ea8a6","username":"rrrrrrrrr","fullname":"rrrrrrrr","wishlist":[]} 
+3.4.2023, 13:11:29 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:11:29 - INFO - Server is running on port: 3030 
+3.4.2023, 13:12:43 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:12:43 - INFO - Server is running on port: 3030 
+3.4.2023, 13:13:01 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:13:01 - INFO - Server is running on port: 3030 
+3.4.2023, 13:13:32 - DEBUG - auth.service - signup with username: OOII, fullname: OOII 
+3.4.2023, 13:13:33 - DEBUG - auth.route - new account created: {"username":"OOII","password":"$2b$10$T8QEyT3tXJGoClzDmJfjl.HmmEsDXbdBrFgeI4/JgG6Anj.nfayeC","fullname":"OOII","likedStays":[],"_id":"642aa6cd5fb63b6c489e7888"} 
+3.4.2023, 13:13:33 - DEBUG - auth.service - login with username: OOII 
+3.4.2023, 13:13:34 - INFO - User login:  | {"_id":"642aa6cd5fb63b6c489e7888","username":"OOII","fullname":"OOII","likedStays":[]} 
+3.4.2023, 13:15:16 - DEBUG - auth.service - login with username: 222 
+3.4.2023, 13:15:17 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 13:15:29 - DEBUG - auth.service - login with username: rrrr 
+3.4.2023, 13:15:30 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
+3.4.2023, 17:13:47 - INFO - Hi | 90 | Bobo 
+3.4.2023, 17:13:47 - INFO - Server is running on port: 3030 
+>>>>>>> bc73bf1e9e3a86fe17105b865abea3012ada94ed
+3.4.2023, 17:22:54 - INFO - Hi | 90 | Bobo 
+3.4.2023, 17:22:54 - INFO - Server is running on port: 3030 
