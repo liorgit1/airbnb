@@ -2052,6 +2052,12 @@
 2.4.2023, 20:41:47 - INFO - Server is running on port: 3030 
 2.4.2023, 20:43:19 - INFO - Hi | 90 | Bobo 
 2.4.2023, 20:43:19 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
+3.4.2023, 17:16:39 - INFO - Hi | 90 | Bobo 
+3.4.2023, 17:16:39 - INFO - Server is running on port: 3030 
+3.4.2023, 17:16:53 - INFO - Hi | 90 | Bobo 
+3.4.2023, 17:16:53 - INFO - Server is running on port: 3030 
+=======
 >>>>>>> 2e5a282a6c26aaff38b628466319bce257cc7622
 2.4.2023, 20:52:25 - INFO - Hi | 90 | Bobo 
 2.4.2023, 20:52:26 - INFO - Server is running on port: 3030 
@@ -2095,14 +2101,3 @@
 3.4.2023, 0:06:53 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
 3.4.2023, 2:58:44 - DEBUG - auth.service - login with username: 222 
 3.4.2023, 2:58:44 - ERROR - Failed to Login Invalid username or password 
->>>>>>> ebbc731b2026d92352dc36d374edf16ba8da6c0a
-3.4.2023, 11:46:11 - INFO - Hi | 90 | Bobo 
-3.4.2023, 11:46:12 - INFO - Server is running on port: 3030 
-3.4.2023, 11:46:13 - INFO - Hi | 90 | Bobo 
-3.4.2023, 11:46:14 - INFO - Server is running on port: 3030 
-3.4.2023, 11:46:22 - INFO - Hi | 90 | Bobo 
-3.4.2023, 11:46:22 - INFO - Server is running on port: 3030 
-3.4.2023, 14:39:43 - INFO - Hi | 90 | Bobo 
-3.4.2023, 14:39:43 - INFO - Server is running on port: 3030 
-3.4.2023, 16:14:35 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:14:35 - INFO - Server is running on port: 3030 

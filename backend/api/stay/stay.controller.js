@@ -22,14 +22,14 @@ async function getStays(req, res) {
   try {
 
     const filterBy = {
-      // stays:req.query || '',
+      stays:req.query || '',
       country: req.query.country || '',
       status: req.query.status || '',
       labels: req.query.labels || null,
 
     }
     const sortBy = req.query.sortTitle
-    // console.log(sortBy)
+    console.log(sortBy)
       ? {
           [req.query.sortTitle]: +req.query.sortDesc,
         }
@@ -125,7 +125,7 @@ async function addStayMsg(req, res) {
       txt: req.body.txt,
       by: loggedinUser,
     }
-    const savedMsg = await Stayervice.addStayMsg(StayId, msg)
+    const savedMsg = await stayService.addStayMsg(StayId, msg)
     res.json(savedMsg)
   } catch (err) {
     logger.error('Failed to update Stay', err)

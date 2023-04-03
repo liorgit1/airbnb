@@ -54,7 +54,7 @@ function _buildCriteria(filterBy) {
     if (filterBy.type) {
         criteria.roomType = { $in: filterBy.type }
     }
-
+  
     if (filterBy.amenities) {
         criteria.amenities = { $in: filterBy.amenities }
     }
@@ -64,5 +64,5 @@ function _buildCriteria(filterBy) {
     }
     console.log('criteria', criteria)
     return criteria
-
-}
+  
+  }
