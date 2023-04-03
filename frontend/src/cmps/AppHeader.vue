@@ -2,7 +2,7 @@
   <!-- v-bind:class="{'stay-details':isDetails}" -->
 
   <header>
-    <section class="" :class="{ 'details-layout': isDetails, 'main-layout': !isDetails,}">
+    <section class="" :class="{ 'details-layout': isDetails, 'main-layout': !isDetails, }">
       <nav class="flex">
 
         <RouterLink to="/" @click="isOpen = false && resetParams()" class="logo">
@@ -12,9 +12,9 @@
           <span class="logo-text">earthbnb</span>
         </RouterLink>
 
-        <div @click="isOpen = true" v-if="!isOpen" class="search-bar" :class="{'none':isUserTrips}">
+        <div @click="isOpen = true" v-if="!isOpen" class="search-bar" :class="{ 'none': isUserTrips }">
           <button style="padding-left: 10px;" v-if="!isDetails">Anywhere</button>
-          <button v-else style="padding-left: 10px;" >Start your search</button>
+          <button v-else style="padding-left: 10px;">Start your search</button>
           <span v-if="!isDetails" style="opacity: 50%;">|</span>
           <span v-else></span>
           <button v-if="!isDetails">Any week</button>
@@ -67,10 +67,10 @@
             </svg>
           </button>
         </label>
-        <userDetailsModal v-if="modalUser" @openSignUpModal="openSignUpModal" @openModalLogin="toggleModalLogin" @closeLoginModal="modalLoginIsOpen = false"
-          @closeModalDetails="closeModalUser" />
+        <userDetailsModal v-if="modalUser" @openSignUpModal="openSignUpModal" @openModalLogin="toggleModalLogin"
+          @closeLoginModal="modalLoginIsOpen = false" @closeModalDetails="closeModalUser" />
       </nav>
-      <sign-up-modal v-if="modalSignUpIsOpen" @closeSignUpModal="modalSignUpIsOpen = false" @signup="setSignup"></sign-up-modal>
+      <signUpModal v-if="modalSignUpIsOpen" @closeSignUpModal="modalSignUpIsOpen = false" @signup="setSignup"></signUpModal>
       <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" @login="setLogin" />
     </section>
   </header>
@@ -88,19 +88,19 @@ import signUpModal from './signUpModal.vue'
 
 export default {
   // name: "stay-header",
-    data() {                                                                      
-      return {
-        stickyNav: false,
-        openfilter: true,
-        filter: null,
-        modalUser: false,
-        isDetails: false,
-        isOpen: false,
-        modalLoginIsOpen: false,
-        modalSignUpIsOpen: false,
-        isUserTrips:false,
-      };
-    }
+  data() {
+    return {
+      stickyNav: false,
+      openfilter: true,
+      filter: null,
+      modalUser: false,
+      isDetails: false,
+      isOpen: false,
+      modalLoginIsOpen: false,
+      modalSignUpIsOpen: false,
+      isUserTrips: false,
+    };
+  }
   ,
 
 
@@ -117,25 +117,25 @@ export default {
       this.modalUser = false
       this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
-    
+
     openSignUpModal() {
       this.modalUser = false
-      this.modalSignUpIsOpen =  !this.modalSignUpIsOpen
+      this.modalSignUpIsOpen = !this.modalSignUpIsOpen
     },
     setLogin(user) {
-      console.log('user' , user)
+      console.log('user', user)
       this.$store.dispatch({
         type: "login",
-       
+
         userCred: user,
       });
       this.modalLoginIsOpen = false;
     },
     setSignup(user) {
-      console.log('user' , user)
+      console.log('user', user)
       this.$store.dispatch({
         type: "signup",
-       
+
         userCred: user,
       });
       this.modalLoginIsOpen = false;
@@ -154,19 +154,19 @@ export default {
 
     handleRoute() {
       console.log('thisRoute', this.thisRoute);
-      
-      if (this.thisRoute == 'stayIndex'){
+
+      if (this.thisRoute == 'stayIndex') {
         this.isDetails = false
-        this.isUserTrips=false
-    }
-      if (this.thisRoute == 'stay-details'){
+        this.isUserTrips = false
+      }
+      if (this.thisRoute == 'stay-details') {
         this.isDetails = true
         this.isUserTrips = false
       }
-      if(this.thisRoute == 'user-trip'){
-        console.log('you are in user trips' , this.thisRoute)
-      this.isDetails = false
-      this.isUserTrips = true
+      if (this.thisRoute == 'user-trip') {
+        console.log('you are in user trips', this.thisRoute)
+        this.isDetails = false
+        this.isUserTrips = true
       }
     },
 
@@ -220,9 +220,8 @@ export default {
     FilterList,
     userDetailsModal,
     //  vClickOutsideUmd,
-    loginModal
-
-
+    loginModal,
+    signUpModal
   },
 
 }
