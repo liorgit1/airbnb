@@ -19,7 +19,7 @@
                     </svg>
 
                     <h1 style="translate: -10px -41px;">This is a rare find</h1>
-                    <h4 style="padding-block-start: 10px ;translate: -10px -37px;">Ron and Shay's place is usually booked
+                    <h4 style="translate: -10px -37px;">Ron and Shay's place is usually booked
                     </h4>
                 </div>
                 <div style="padding-block-end: 10px;">

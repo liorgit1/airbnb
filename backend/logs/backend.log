@@ -2101,3 +2101,5 @@
 3.4.2023, 0:06:53 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
 3.4.2023, 2:58:44 - DEBUG - auth.service - login with username: 222 
 3.4.2023, 2:58:44 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 19:02:57 - INFO - Server is running on port: 3030 
+3.4.2023, 19:02:57 - INFO - Hi | 90 | Bobo 
