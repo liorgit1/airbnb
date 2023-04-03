@@ -30,11 +30,11 @@
     <div class="mini-card next-stay flex row space-between grid-item-1">
         <div class="next-stay-first flex row wrap">
             <div class="mini-card-header flex wrap">
-                <h1 class="">Your Next Stay</h1>
+                <h1>Your Next Stay</h1>
             </div>
-            <div class="text-header">hosted by Ron and Shay beautiul house, with with amazing views</div>
-            <div class="text-header">From May 23-26, 2023 </div>
-            <div class="text-header">Check-In for 2 guests </div>
+            <h4 style="line-height: 15px;"><p>Hosted by Ron and Shay beautiul house, with with amazing views</p></h4>
+            <h4 style="letter-spacing: -1px;"><p>From May 23-26, 2023</p></h4>
+            <h4 style="letter-spacing: -1px;"><p>Check-In for 2 guests</p></h4>
             <button class="next-oreder-img">Go to stay</button>
         </div>
         <div class="next-stay-img">
@@ -49,7 +49,7 @@
                     <img src="http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436496/ihozxprafjzuhil9qhh4.jpg" alt="">
                 </div>
                 <div class="mini-stay-desc flex row wrap">
-                    <h1>{{ stay.loc.city }}</h1>
+                    <h1>Madrid</h1>
                     <h4>hosted by Jonas</h4>
                     <h4>Nov 12-19, 2020</h4>
                 </div>

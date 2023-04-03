@@ -84,6 +84,7 @@ export default {
     async signup({ commit }, { userCred }) {
       try {
         const user = await userService.signup(userCred);
+        console.log(user);
         commit({ type: "setLoggedinUser", user });
         return user;
       } catch (err) {
@@ -100,17 +101,17 @@ export default {
         throw err;
       }
     },
-    // async loadStaysUser({ commit, state }) {
-    //   try {
-    //     const stays = await userService.getUserStays(state.loggedinUser);
-    //     commit({ type: "setStaysUser", stays });
-    //     const reservations = await userService.getUserReservation(state.loggedinUser);
-    //     commit({ type: "setReservationUser", reservations });
-    //   } catch (err) {
-    //     console.error("Cannot Load stays", err);
-    //     throw err;
-    //   }
-    // },
+    async loadStaysUser({ commit, state }) {
+      try {
+        const stays = await userService.getUserStays(state.loggedinUser);
+        commit({ type: "setStaysUser", stays });
+        const reservations = await userService.getUserReservation(state.loggedinUser);
+        commit({ type: "setReservationUser", reservations });
+      } catch (err) {
+        console.error("Cannot Load stays", err);
+        throw err;
+      }
+    },
     async setLikedStay({ commit, state }, { stayId }) {
       if (!state.loggedinUser) return
       commit({ type: "setLikedStay", stayId });

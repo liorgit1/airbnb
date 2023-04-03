@@ -70,7 +70,7 @@
         <userDetailsModal v-if="modalUser" @openSignUpModal="openSignUpModal" @openModalLogin="toggleModalLogin" @closeLoginModal="modalLoginIsOpen = false"
           @closeModalDetails="closeModalUser" />
       </nav>
-      <sign-up-modal v-if="modalSignUpIsOpen" @closeSignUpModal="modalSignUpIsOpen = false" @signup="setSignup"></sign-up-modal>
+      <signUpModal v-if="modalSignUpIsOpen" @closeSignUpModal="modalSignUpIsOpen = false" @signup="setSignup"></signUpModal>
       <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" @login="setLogin" />
     </section>
   </header>
@@ -220,9 +220,8 @@ export default {
     FilterList,
     userDetailsModal,
     //  vClickOutsideUmd,
-    loginModal
-
-
+    loginModal,
+    signUpModal
   },
 
 }
