@@ -2134,9 +2134,18 @@
 3.4.2023, 13:15:30 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
 3.4.2023, 17:13:47 - INFO - Hi | 90 | Bobo 
 3.4.2023, 17:13:47 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
+3.4.2023, 17:19:11 - INFO - Hi | 90 | Bobo 
+3.4.2023, 17:19:11 - INFO - Server is running on port: 3030 
+3.4.2023, 17:26:15 - DEBUG - auth.service - signup with username: oioi, fullname: oioi 
+3.4.2023, 17:26:15 - DEBUG - auth.route - new account created: {"username":"oioi","password":"$2b$10$/WQpFZ1MboP5EegneAP8Iu8LMuaSwuh.6n..xGOIVvz/zx6lgPnaC","fullname":"oioi","likedStays":[],"_id":"642ae207e6d4ef0998ede484"} 
+3.4.2023, 17:26:15 - DEBUG - auth.service - login with username: oioi 
+3.4.2023, 17:26:16 - INFO - User login:  | {"_id":"642ae207e6d4ef0998ede484","username":"oioi","fullname":"oioi","likedStays":[]} 
+=======
 >>>>>>> bc73bf1e9e3a86fe17105b865abea3012ada94ed
 3.4.2023, 17:22:54 - INFO - Hi | 90 | Bobo 
 3.4.2023, 17:22:54 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
 3.4.2023, 17:31:17 - INFO - Hi | 90 | Bobo 
 3.4.2023, 17:31:17 - INFO - Server is running on port: 3030 
 3.4.2023, 17:32:16 - INFO - Hi | 90 | Bobo 
@@ -2165,3 +2174,6 @@
 3.4.2023, 17:57:01 - INFO - Server is running on port: 3030 
 3.4.2023, 18:43:12 - INFO - Hi | 90 | Bobo 
 3.4.2023, 18:43:12 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> ed610ac037a523fa41628121c27892aa9fe2bfc1
+>>>>>>> c9058dc6ce14632d40f6855e2637c7bba6ffa7fe
