@@ -11,14 +11,14 @@ async function query(filterBy, sortBy) {
       stays.sort((a,b) => b.price - a.price)
       const Stays = stays.filter(stay => (stay.price < 550) && (stay.reviews[0].rate.Communication > 4))
       
-      const idToFind = "642a7903c59b1f6f0fb59450"
+//       const idToFind = "642a7903c59b1f6f0fb59450"
 
-const index = stays.findIndex((stay) => stay._id === idToFind);
+// const index = stays.findIndex((stay) => stay._id === idToFind);
 
-if (index !== -1) {
-  const [splicedStay] = stays.splice(index, 1);
-  stays.unshift(splicedStay);
-}
+// if (index !== -1) {
+//   const [splicedStay] = stays.splice(index, 1);
+//   stays.unshift(splicedStay);
+// }
       // stays
       //   return a.reviews.rate.location - b.reviews.rate.location
       // })
