@@ -1861,6 +1861,154 @@
 2.4.2023, 17:32:50 - INFO - Server is running on port: 3030 
 2.4.2023, 17:44:59 - INFO - Hi | 90 | Bobo 
 2.4.2023, 17:44:59 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
+<<<<<<< HEAD
+2.4.2023, 18:02:47 - INFO - Hi | 90 | Bobo 
+2.4.2023, 18:02:48 - INFO - Server is running on port: 3030 
+2.4.2023, 18:46:14 - INFO - Hi | 90 | Bobo 
+2.4.2023, 18:46:14 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
+2.4.2023, 18:56:36 - INFO - Hi | 90 | Bobo 
+2.4.2023, 18:56:36 - INFO - Server is running on port: 3030 
+2.4.2023, 18:57:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 18:57:32 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:32 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 18:57:33 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:33 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+2.4.2023, 19:00:08 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:00:08 - INFO - Server is running on port: 3030 
+2.4.2023, 19:00:12 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:00:12 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:00:13 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:02:59 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:03:00 - INFO - Server is running on port: 3030 
+2.4.2023, 19:03:02 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:03:02 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:03:03 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:10 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:04:10 - INFO - Server is running on port: 3030 
+2.4.2023, 19:04:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:54 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:04:54 - INFO - Server is running on port: 3030 
+2.4.2023, 19:04:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:55 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:55 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:05:32 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:05:32 - INFO - Server is running on port: 3030 
+2.4.2023, 19:06:11 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:06:11 - INFO - Server is running on port: 3030 
+2.4.2023, 19:06:22 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:06:22 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:22 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:06:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:38 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:07:38 - INFO - Server is running on port: 3030 
+2.4.2023, 19:07:49 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:07:49 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:07:50 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:11:27 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:11:27 - INFO - Server is running on port: 3030 
+2.4.2023, 19:11:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:11:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:34:37 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:35:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:36:58 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:36:58 - INFO - Server is running on port: 3030 
+2.4.2023, 19:39:12 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:48:56 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:49:01 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:49:27 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:54:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:55:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:55:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:58:29 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:58:31 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:03:17 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:03:19 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:04:29 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:04:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+=======
+2.4.2023, 19:01:09 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:01:09 - INFO - Server is running on port: 3030 
+2.4.2023, 19:19:04 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:19:05 - INFO - Server is running on port: 3030 
+2.4.2023, 19:19:57 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:19:59 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:20:16 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:20:36 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:21:24 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:23:39 - ERROR - while finding stay :622f337a75c7d36e498aaaf8 | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+2.4.2023, 19:23:39 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+2.4.2023, 19:25:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:25:43 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:25:52 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:27:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:27:23 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:28:06 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:28:06 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> cd13db32829fa727c114853719444d40d6290125
+2.4.2023, 19:29:10 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:29:11 - INFO - Server is running on port: 3030 
+2.4.2023, 19:36:37 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:36:37 - INFO - Server is running on port: 3030 
+2.4.2023, 19:38:00 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 19:38:39 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 19:58:15 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:58:15 - INFO - Server is running on port: 3030 
+2.4.2023, 19:58:48 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 20:01:31 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 20:01:36 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 20:22:59 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 20:26:37 - INFO - Hi | 90 | Bobo 
+2.4.2023, 20:26:37 - INFO - Server is running on port: 3030 
+2.4.2023, 20:26:52 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+2.4.2023, 20:26:59 - ERROR - Failed to get Stay | ReferenceError: Stayservice is not defined 
+=======
 2.4.2023, 20:28:29 - INFO - Hi | 90 | Bobo 
 2.4.2023, 20:28:29 - INFO - Server is running on port: 3030 
 2.4.2023, 20:28:31 - INFO - Hi | 90 | Bobo 
@@ -1883,6 +2031,7 @@
 2.4.2023, 20:32:15 - INFO - Server is running on port: 3030 
 2.4.2023, 20:32:16 - INFO - Hi | 90 | Bobo 
 2.4.2023, 20:32:16 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
 2.4.2023, 20:33:03 - INFO - Hi | 90 | Bobo 
 2.4.2023, 20:33:03 - INFO - Server is running on port: 3030 
 2.4.2023, 20:33:48 - INFO - Hi | 90 | Bobo 
@@ -1897,3 +2046,63 @@
 3.4.2023, 10:44:33 - INFO - Server is running on port: 3030 
 3.4.2023, 11:39:15 - INFO - Hi | 90 | Bobo 
 3.4.2023, 11:39:15 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> 7d5f67ad8be59decba1edf3a9d8f1602ce6ae1e6
+2.4.2023, 20:41:47 - INFO - Hi | 90 | Bobo 
+2.4.2023, 20:41:47 - INFO - Server is running on port: 3030 
+2.4.2023, 20:43:19 - INFO - Hi | 90 | Bobo 
+2.4.2023, 20:43:19 - INFO - Server is running on port: 3030 
+>>>>>>> 2e5a282a6c26aaff38b628466319bce257cc7622
+2.4.2023, 20:52:25 - INFO - Hi | 90 | Bobo 
+2.4.2023, 20:52:26 - INFO - Server is running on port: 3030 
+2.4.2023, 21:30:16 - INFO - Hi | 90 | Bobo 
+2.4.2023, 21:30:16 - INFO - Server is running on port: 3030 
+2.4.2023, 21:43:38 - DEBUG - auth.service - login with username: 3232 
+2.4.2023, 21:43:38 - ERROR - Failed to Login Invalid username or password 
+2.4.2023, 21:50:06 - DEBUG - auth.service - login with username: 3232 
+2.4.2023, 21:50:06 - ERROR - Failed to Login Invalid username or password 
+2.4.2023, 21:52:58 - INFO - Hi | 90 | Bobo 
+2.4.2023, 21:52:58 - INFO - Server is running on port: 3030 
+2.4.2023, 21:53:13 - DEBUG - auth.service - login with username: lior 
+2.4.2023, 21:53:15 - INFO - User login:  | {"_id":"642956a588daf949bf62a5cb","username":"lior","fullname":"lior L","score":0} 
+2.4.2023, 23:27:59 - DEBUG - auth.service - signup with username: 33, fullname: 33 
+2.4.2023, 23:27:59 - DEBUG - auth.route - new account created: {"username":"33","password":"$2b$10$h.Fk0Pv4htBTHVUl/bw0e.OF7fc46TK5F6RngWzhv4MsOaFEs7L1q","fullname":"33","score":0,"_id":"6429e54f3b082fcf3d5fc215"} 
+2.4.2023, 23:27:59 - DEBUG - auth.service - login with username: 33 
+2.4.2023, 23:28:00 - INFO - User login:  | {"_id":"6429e54f3b082fcf3d5fc215","username":"33","fullname":"33","score":0} 
+2.4.2023, 23:37:19 - DEBUG - auth.service - signup with username: 111, fullname: 222 
+2.4.2023, 23:37:20 - DEBUG - auth.route - new account created: {"username":"111","password":"$2b$10$1zsuKDNG10oXPcik184PS.Gscz/1gR9iphHinfsfxOkDE.u/kv3TW","fullname":"222","score":0,"_id":"6429e7803b082fcf3d5fc216"} 
+2.4.2023, 23:37:20 - DEBUG - auth.service - login with username: 111 
+2.4.2023, 23:37:20 - INFO - User login:  | {"_id":"6429e7803b082fcf3d5fc216","username":"111","fullname":"222","score":0} 
+3.4.2023, 0:00:11 - DEBUG - auth.service - signup with username: tttt, fullname: tttt 
+3.4.2023, 0:00:12 - DEBUG - auth.route - new account created: {"username":"tttt","password":"$2b$10$txqkhYDoFfi.Fw0pFUJq4e1YqRg19UlTzd7pcXLoLA7IaOWwy0.hC","fullname":"tttt","score":0,"_id":"6429ecdc3b082fcf3d5fc217"} 
+3.4.2023, 0:00:12 - DEBUG - auth.service - login with username: tttt 
+3.4.2023, 0:00:13 - INFO - User login:  | {"_id":"6429ecdc3b082fcf3d5fc217","username":"tttt","fullname":"tttt","score":0} 
+3.4.2023, 0:02:25 - DEBUG - auth.service - login with username: 222 
+3.4.2023, 0:02:25 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 0:02:36 - DEBUG - auth.service - login with username: rrrr123 
+3.4.2023, 0:02:36 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 0:02:43 - DEBUG - auth.service - login with username: 33 
+3.4.2023, 0:02:44 - INFO - User login:  | {"_id":"6429e54f3b082fcf3d5fc215","username":"33","fullname":"33","score":0} 
+3.4.2023, 0:03:03 - DEBUG - auth.service - signup with username: rrr, fullname: rrr 
+3.4.2023, 0:03:04 - DEBUG - auth.route - new account created: {"username":"rrr","password":"$2b$10$B7yOPZGSdrZ2FLJXIOOn6elDn1c1pZ.9X46n2wq9NZpjaAx8qQVEK","fullname":"rrr","score":0,"_id":"6429ed873b082fcf3d5fc218"} 
+3.4.2023, 0:03:04 - DEBUG - auth.service - login with username: rrr 
+3.4.2023, 0:03:05 - INFO - User login:  | {"_id":"6429ed873b082fcf3d5fc218","username":"rrr","fullname":"rrr","score":0} 
+3.4.2023, 0:06:41 - INFO - Hi | 90 | Bobo 
+3.4.2023, 0:06:41 - INFO - Server is running on port: 3030 
+3.4.2023, 0:06:52 - DEBUG - auth.service - signup with username: rrrr, fullname: 4454545 
+3.4.2023, 0:06:53 - DEBUG - auth.route - new account created: {"username":"rrrr","password":"$2b$10$lZCjy.Gw5MMUHATeF4icA.SSBCxkeCuQ8eEqdH8GqrvCs9o1K.pK.","fullname":"4454545","wishlist":[],"reservations":[],"_id":"6429ee6d75d5b293cf23fb1e"} 
+3.4.2023, 0:06:53 - DEBUG - auth.service - login with username: rrrr 
+3.4.2023, 0:06:53 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
+3.4.2023, 2:58:44 - DEBUG - auth.service - login with username: 222 
+3.4.2023, 2:58:44 - ERROR - Failed to Login Invalid username or password 
+>>>>>>> ebbc731b2026d92352dc36d374edf16ba8da6c0a
+3.4.2023, 11:46:11 - INFO - Hi | 90 | Bobo 
+3.4.2023, 11:46:12 - INFO - Server is running on port: 3030 
+3.4.2023, 11:46:13 - INFO - Hi | 90 | Bobo 
+3.4.2023, 11:46:14 - INFO - Server is running on port: 3030 
+3.4.2023, 11:46:22 - INFO - Hi | 90 | Bobo 
+3.4.2023, 11:46:22 - INFO - Server is running on port: 3030 
+3.4.2023, 14:39:43 - INFO - Hi | 90 | Bobo 
+3.4.2023, 14:39:43 - INFO - Server is running on port: 3030 
+3.4.2023, 16:14:35 - INFO - Hi | 90 | Bobo 
+3.4.2023, 16:14:35 - INFO - Server is running on port: 3030 

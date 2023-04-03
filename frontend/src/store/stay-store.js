@@ -24,6 +24,9 @@ export default {
         stays(state) {
             return state.stays;
         },
+        guests(state) {
+            return state.guests
+        }
     },
     mutations: {
         setStay(state, { stays }) {

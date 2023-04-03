@@ -14,12 +14,7 @@ async function getStays(req, res) {
             labels: req.query.labels || null,
 
         }
-        const sortBy = req.query.sortTitle
-
-            ? {
-                [req.query.sortTitle]: +req.query.sortDesc,
-            }
-            : {}
+        const sortBy = req.query.sortTitle ? { [req.query.sortTitle]: +req.query.sortDesc, } : {}
 
         logger.debug('Getting Stays', filterBy)
         const Stays = await Stayservice.query(filterBy, sortBy)

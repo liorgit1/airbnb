@@ -26,12 +26,12 @@ import {userService} from '../services/user.service'
 export default {
   data() {
     return {
-      // user: null
+      user: null
     }
   },
   async created() {
-    // const user = await userService.getById(id)
-    // this.user = user
+    const user = await userService.getById(id)
+    this.user = user
   },
   watch: {
     userId: {

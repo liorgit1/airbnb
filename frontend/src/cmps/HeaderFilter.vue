@@ -28,7 +28,7 @@
         @click="showDatesModal = false, showLocationsModal = false, showGuestsModal = true, checkInClicked = false, checkOutClicked = false">
         <div>
           <p>Guests</p>
-          <input type="text" v-model = "guestsDisplay" placeholder="Add guests" />
+          <input type="text" v-model="guestsDisplay" placeholder="Add guests" />
           <!-- v-model="searchBy.guests" -->
         </div>
         <span @click="setSearch(), $emit('close')"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
@@ -106,9 +106,13 @@ export default {
 
   methods: {
 
-     setSearch() {
-     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country , startDate:this.getDates.start , endDate:this.getDates.end,
-    adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
+    setSearch() {
+      this.$router.push({
+        name: 'exploreApp', query: {
+          country: this.searchBy.country, startDate: this.getDates.start, endDate: this.getDates.end,
+          adults: this.guests.adults, kids: this.guests.kids, infants: this.guests.infants, pets: this.guests.pets
+        }
+      })
 
       this.$emit('closeModal', false)
 

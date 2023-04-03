@@ -47,7 +47,7 @@ const routes = [
     component: userWishList
   },
   {
-    path: '/login',
+    path: '/dashboard',
     name: 'user-dashboard',
     component: userDashboard,
 },

@@ -148,7 +148,7 @@ export default {
             endDate: "2025/10/17",
             guests: {
 
-                adults: null,
+                adults: 1,
                 kids: null,
                 infants: null,
                 pets: null
@@ -197,12 +197,13 @@ export default {
             let infants
             let totalGuests
             let pets
-            adults = this.guests.adults
-            kids = this.guests.kids
-            guests = adults + kids > 0 ? `${adults + kids} guests` : ' '
-            infants = this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
-            pets = this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
+            adults = +this.guests.adults
+            kids = +this.guests.kids
+            guests =( +adults + +kids )> 1 ? `${adults + kids} guests` : '1 guest'
+            infants = +this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
+            pets = +this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
             totalGuests = `${guests} ${infants} ${pets}`
+
             console.log('totalGuests :>> ', totalGuests);
             return totalGuests
         }
@@ -213,7 +214,7 @@ export default {
 
         this.startDate = startDate
         this.endDate = endDate
-        this.guests.adults = +adults
+        if (adults >= 1) this.guests.adults = +adults
         this.guests.kids = +kids
         this.guests.infants = +infants
         this.guests.pets = +pets
@@ -230,7 +231,7 @@ export default {
         },
 
         setAdultCount1({ adultCount }) {
-            this.guests.adults = adultCount
+            this.guests.adults = +adultCount
             console.log('this.guests.adult2111 :>> ', this.guests.adults);
         },
         setChildrenCount({ childrenCount }) {
