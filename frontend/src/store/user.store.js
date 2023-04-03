@@ -5,7 +5,7 @@
 // if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user || null)
 
 import { userService } from "../services/user-service.js";
-import {stayService} from "../services/stay-service.js";
+import { stayService } from "../services/stay-service.js";
 
 import {
   socketService,
@@ -16,7 +16,8 @@ import {
 
 var localLoggedinUser = null;
 if (sessionStorage.user)
-  localLoggedinUser = JSON.parse(sessionStorage.user || null);
+localLoggedinUser = JSON.parse(sessionStorage.user || null);
+
 export default {
   state: {
     loggedinUser: userService.getLoggedinUser(),
@@ -84,6 +85,7 @@ export default {
     async signup({ commit }, { userCred }) {
       try {
         const user = await userService.signup(userCred);
+        console.log('user :>> ', user);
         commit({ type: "setLoggedinUser", user });
         return user;
       } catch (err) {
