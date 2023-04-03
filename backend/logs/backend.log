@@ -2079,3 +2079,34 @@
 3.4.2023, 0:06:53 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
 3.4.2023, 2:58:44 - DEBUG - auth.service - login with username: 222 
 3.4.2023, 2:58:44 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 12:44:31 - INFO - Hi | 90 | Bobo 
+3.4.2023, 12:44:31 - INFO - Server is running on port: 3030 
+3.4.2023, 12:45:49 - DEBUG - auth.service - signup with username: rrr, fullname: rrrrr 
+3.4.2023, 12:45:49 - ERROR - cannot insert user | Error: Username taken 
+3.4.2023, 12:45:49 - ERROR - Failed to signup Error: Username taken 
+3.4.2023, 12:53:08 - INFO - Hi | 90 | Bobo 
+3.4.2023, 12:53:09 - INFO - Server is running on port: 3030 
+3.4.2023, 12:55:37 - INFO - Hi | 90 | Bobo 
+3.4.2023, 12:55:37 - INFO - Server is running on port: 3030 
+3.4.2023, 13:03:05 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:03:05 - INFO - Server is running on port: 3030 
+3.4.2023, 13:05:22 - INFO - Server is running on port: 3030 
+3.4.2023, 13:05:22 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:06:13 - DEBUG - auth.service - signup with username: rrrrrrrrr, fullname: rrrrrrrr 
+3.4.2023, 13:06:15 - DEBUG - auth.route - new account created: {"username":"rrrrrrrrr","password":"$2b$10$9vhOLXNZkGz5jGtgfWH6wurUQYAXuH0mWWQBKMSDVEo3ia4PrFcDe","fullname":"rrrrrrrr","wishlist":[],"_id":"642aa51693912744156ea8a6"} 
+3.4.2023, 13:06:15 - DEBUG - auth.service - login with username: rrrrrrrrr 
+3.4.2023, 13:06:15 - INFO - User login:  | {"_id":"642aa51693912744156ea8a6","username":"rrrrrrrrr","fullname":"rrrrrrrr","wishlist":[]} 
+3.4.2023, 13:11:29 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:11:29 - INFO - Server is running on port: 3030 
+3.4.2023, 13:12:43 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:12:43 - INFO - Server is running on port: 3030 
+3.4.2023, 13:13:01 - INFO - Hi | 90 | Bobo 
+3.4.2023, 13:13:01 - INFO - Server is running on port: 3030 
+3.4.2023, 13:13:32 - DEBUG - auth.service - signup with username: OOII, fullname: OOII 
+3.4.2023, 13:13:33 - DEBUG - auth.route - new account created: {"username":"OOII","password":"$2b$10$T8QEyT3tXJGoClzDmJfjl.HmmEsDXbdBrFgeI4/JgG6Anj.nfayeC","fullname":"OOII","likedStays":[],"_id":"642aa6cd5fb63b6c489e7888"} 
+3.4.2023, 13:13:33 - DEBUG - auth.service - login with username: OOII 
+3.4.2023, 13:13:34 - INFO - User login:  | {"_id":"642aa6cd5fb63b6c489e7888","username":"OOII","fullname":"OOII","likedStays":[]} 
+3.4.2023, 13:15:16 - DEBUG - auth.service - login with username: 222 
+3.4.2023, 13:15:17 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 13:15:29 - DEBUG - auth.service - login with username: rrrr 
+3.4.2023, 13:15:30 - INFO - User login:  | {"_id":"6429ee6d75d5b293cf23fb1e","username":"rrrr","fullname":"4454545","wishlist":[],"reservations":[]} 
