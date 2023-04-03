@@ -69,10 +69,11 @@ export default {
   },
   actions: {
     async login({ commit, dispatch }, { userCred }) {
-      console.log('user :>> ', user);
+      console.log('user :>> ', userCred);
       try {
         const user = await userService.login(userCred);
         commit({ type: "setLoggedinUser", user });
+        console.log('user :>> ', user);
         dispatch({ type: "loadStaysUser" });
         return user;
       } catch (err) {
