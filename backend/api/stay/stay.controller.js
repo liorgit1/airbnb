@@ -1,4 +1,4 @@
-const Stayservice = require('../stay/stay.service.js')
+const stayService = require('../stay/stay.service.js')
 const socketService = require('../../services/socket.service.js')
 const logger = require('../../services/logger.service')
 
@@ -35,11 +35,12 @@ async function getStays(req, res) {
         }
       : {}
 
-    logger.debug('Getting Stays', filterBy)
-    const Stays = await Stayservice.query(filterBy, sortBy)
+    // logger.debug('Getting Stays', filterBy)
+    const Stays = await stayService.query(filterBy, sortBy)
     res.json(Stays)
   } catch (err) {
-    logger.error('Failed to get Stays', err)
+    console.log('error :>> ',err);
+    // logger.error('Failed to get Stays', err)
     res.status(500).send({ err: 'Failed to get Stays' })
   }
 }
@@ -47,7 +48,7 @@ async function getStays(req, res) {
 async function getStayById(req, res) {
   try {
     const StayId = req.params.id
-    const Stay = await Stayservice.getById(StayId)
+    const Stay = await stayService.getById(StayId)
     res.json(Stay)
   } catch (err) {
     logger.error('Failed to get Stay', err)
@@ -61,7 +62,7 @@ async function addStay(req, res) {
   try {
     const Stay = req.body
     Stay.owner = loggedinUser
-    const addedStay = await Stayservice.add(Stay)
+    const addedStay = await stayService.add(Stay)
     res.json(addedStay)
 
     if (loggedinUser.isAdmin) {
@@ -82,7 +83,7 @@ async function updateStay(req, res) {
   try {
     const { loggedinUser } = req
     const Stay = req.body
-    const updatedStay = await Stayservice.update(Stay)
+    const updatedStay = await stayService.update(Stay)
     res.json(updatedStay)
     if (loggedinUser.isAdmin) {
       socketService.broadcastAdminUpdate({
@@ -101,7 +102,7 @@ async function removeStay(req, res) {
   try {
     const { loggedinUser } = req
     const StayId = req.params.id
-    const removedStayName = await Stayservice.remove(StayId)
+    const removedStayName = await stayService.remove(StayId)
     res.send()
     if (loggedinUser.isAdmin) {
       socketService.broadcastAdminUpdate({
@@ -138,7 +139,7 @@ async function removeStayMsg(req, res) {
     const StayId = req.params.id
     const { msgId } = req.params
 
-    const removedId = await Stayservice.removeStayMsg(StayId, msgId)
+    const removedId = await stayService.removeStayMsg(StayId, msgId)
     res.send(removedId)
   } catch (err) {
     logger.error('Failed to remove Stay msg', err)
