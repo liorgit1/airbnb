@@ -9,8 +9,16 @@ async function query(filterBy, sortBy) {
     const collection = await dbService.getCollection('stay')
       var stays = await collection.find(criteria).sort().toArray()
       stays.sort((a,b) => b.price - a.price)
-       const Stays = stays.filter(stay => (stay.price < 550) && (stay.reviews[0].rate.Communication > 4.2))
+      const Stays = stays.filter(stay => (stay.price < 550) && (stay.reviews[0].rate.Communication > 4))
       
+      const idToFind = "642a7903c59b1f6f0fb59450"
+
+const index = stays.findIndex((stay) => stay._id === idToFind);
+
+if (index !== -1) {
+  const [splicedStay] = stays.splice(index, 1);
+  stays.unshift(splicedStay);
+}
       // stays
       //   return a.reviews.rate.location - b.reviews.rate.location
       // })
@@ -19,7 +27,7 @@ async function query(filterBy, sortBy) {
     // console.log(stays)
     return Stays
   } catch (err) {
-    // logger.error('cannot find stays', err)
+     logger.error('cannot find stays', err)
     throw err
   }
 }
