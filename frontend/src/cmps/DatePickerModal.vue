@@ -1,6 +1,6 @@
 <template>
-  <section class="calendar-container">
-    <VDatePicker :columns="2" v-model.range="range" mode="dateTime" @input="onDateRangeChange" />
+  <section class="calendar-container" >
+    <VDatePicker :columns="2" v-model.range="range" mode="dateTime" @input="onDateRangeChange" @click.stop />
     <!--  -->
   </section>
 </template>

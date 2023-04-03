@@ -54,8 +54,8 @@
 
 <script>
 import { onMounted } from 'vue'
-import { stayService } from '../services/stay-service.js'
-// import { stayService } from '../services/stay.service.local.js'
+// import { stayService } from '../services/stay-service.js'
+import { stayService } from '../services/stay.service.local.js'
 import LocationsModal from './LocationsModal.vue'
 import vClickOutside from 'click-outside-vue3'
 import DatePickerModal from './DatePickerModal.vue'
