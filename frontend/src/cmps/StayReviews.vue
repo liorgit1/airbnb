@@ -88,7 +88,7 @@
                         <div style="margin-bottom: 13px;" class="flex-col">
                             <span style="margin-block-start: -3px; margin-block-end: -7px;">{{ review.by.fullname
                             }}</span>
-                            <span class="fs14" style="width: max-content;">Jan 2023{{ review.date }}</span>
+                            <span class="fs14" style="width: max-content;">{{ months[index] }} 2023{{ review.date }}</span>
                         </div>
                     </div>
                     <div class="fs14" style="width: max-content; max-width: 400px;">{{ review.txt }}</div>
@@ -167,7 +167,7 @@
 <script>
 
 
-
+import { utilService } from '../services/util-service';
 
 export default {
     props: {
@@ -177,10 +177,15 @@ export default {
     },
     data() {
         return {
-
+            months: ['Jan', 'Feb', 'Mar','Apr','Jan', 'Feb', 'Mar','Apr','Jan', 'Feb', 'Mar','Apr','Jan', 'Feb', 'Mar','Apr']
         }
     },
     computed: {
+
+        randomMonth() {
+            return utilService.getRandomInt(0, this.months.length)
+        },
+
         averageCleanliness() {
             return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Cleanliness, 0) / this.stay.reviews.length).toFixed(1);
         },
@@ -211,9 +216,9 @@ export default {
         //     console.log(' averageCheckIn :>> ', this.averageCheckIn);
         //     console.log(' averageLocation :>> ', this.averageLocation);
         //     console.log(' averageValue :>> ', this.averageValue);
-    },mounted() {
+    }, mounted() {
         this.$emit('setTotalRate', { totalRate: this.totalAverage })
-        
+
     },
     methods: {
 
