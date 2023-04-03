@@ -3,7 +3,7 @@
         <h1>What this place offers</h1>
         <div class="stay-amenities-container">
             <div style="display: flex; gap: 13px" v-for="amenitie in stay.amenities.slice(0, 10)" :key="amenitie">
-                <i class="icon" v-html="getSvg(amenitie.toLowerCase())"></i>
+                <i style="align-self: center;" class="icon" v-html="getSvg(amenitie.toLowerCase())"></i>
 
                 <p style="margin: 0;font-size: 14px;padding-block-start: 10px;">{{ amenitie }}</p>
             </div>

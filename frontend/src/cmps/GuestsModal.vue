@@ -8,10 +8,18 @@
         </div>
         <div class="flex space-between counter">
 
-            <div @click="decAdultCount" class="roundBtn">-</div>
+            <div @click="decAdultCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px;margin-block: 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28"></path>
+                </svg></div>
             <span>{{ adultCount }}</span>
 
-            <div @click="incAdultCount" class="roundBtn">+</div>
+            <div @click="incAdultCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28m-14-14v28"></path>
+                </svg></div>
         </div>
 
         <div style="align-self: start;" class="flex children-count space-between">
@@ -23,10 +31,18 @@
 
         <div class="flex space-between counter">
 
-            <div @click="decChildrenCount" class="roundBtn">-</div>
+            <div @click="decChildrenCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px;margin-block: 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28"></path>
+                </svg></div>
             <span>{{ childrenCount }}</span>
 
-            <div @click="incChildrenCount" class="roundBtn">+</div>
+            <div @click="incChildrenCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28m-14-14v28"></path>
+                </svg></div>
         </div>
 
         <div style="align-self: start;" class="flex Infants-count space-between">
@@ -37,10 +53,18 @@
         </div>
         <div class="flex space-between counter">
 
-            <div @click="decInfantsCount" class="roundBtn">-</div>
+            <div @click="decInfantsCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px;margin-block: 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28"></path>
+                </svg></div>
             <span>{{ infantsCount }}</span>
 
-            <div @click="incInfantsCount" class="roundBtn">+</div>
+            <div @click="incInfantsCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28m-14-14v28"></path>
+                </svg></div>
         </div>
 
         <div class="flex space-between pets-count">
@@ -51,18 +75,26 @@
         </div>
         <div class="flex space-between counter">
 
-            <div @click="decPetsCount" class="roundBtn">-</div>
+            <div @click="decPetsCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px;margin-block: 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28"></path>
+                </svg></div>
             <span>{{ petsCount }}</span>
 
-            <div @click="incPetsCount" class="roundBtn">+</div>
+            <div @click="incPetsCount" class="roundBtn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" role="presentation" focusable="false"
+                    style=" translate: -0.5px 9px; display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                    <path d="m2 16h28m-14-14v28"></path>
+                </svg></div>
         </div>
-        <div style="grid-column: 1/-1;">
+        <!-- <div style="grid-column: 1/-1;">
             <p style="margin: 0px;margin-block-start: 13px;" class=" fs12">This place has a maximum of 4 guests, not
                 including infants. If you're
                 bringing more than 2
                 pets, please let
                 your host know.</p>
-        </div>
+        </div> -->
         <!-- <p>{{ guestsNum }}</p> -->
     </section>
 </template>
@@ -78,7 +110,7 @@ export default {
     },
     data() {
         return {
-            adultCount: 0,
+            adultCount: 1,
             childrenCount: 0,
             infantsCount: 0,
             petsCount: 0,
@@ -90,7 +122,16 @@ export default {
         }
     },
     created() {
-        this.setGuestsNum()
+
+        const { adults, kids, infants, pets } = this.$route.query
+
+        if (adults > 1) this.adultCount = +adults
+        if (kids) this.childrenCount = +kids
+        if (infants) this.infantsCount = +infants
+        if (pets) this.petsCount = +pets
+
+        this.$emit('setAdultCount', { adultCount: this.adultCount })
+        // this.setGuestsNum()
     },
     methods: {
         incAdultCount() {
@@ -138,7 +179,7 @@ export default {
                 type: 'setGuestsNum', guestsNum: this.guestsNum
             })
         },
-    }, emits: ['setPetsCount','setAdultCount','setChildrenCount','setInfantsCount'],
+    }, emits: ['setPetsCount', 'setAdultCount', 'setChildrenCount', 'setInfantsCount'],
     components: {}
 
 

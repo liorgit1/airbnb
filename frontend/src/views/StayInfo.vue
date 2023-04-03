@@ -6,7 +6,7 @@
                 <ul style="margin-block-start: -13px;" class="stay-baths-beds flex">
                     <div>{{ stay.capacity }} guests</div><span class="dot">·</span>
                     <div>{{ stay.capacity }} beds</div><span class="dot">·</span>
-                    <div>3 baths</div>
+                    <div>{{stay.bathrooms}} baths</div>
                 </ul>
             </div><img style="translate: 0px -2px; align-self: center;" class="mini-host-img" :src="stay.host.pictureUrl">
         </div>

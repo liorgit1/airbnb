@@ -1,5 +1,5 @@
-import { stayService } from '../services/stay-service'
-// import { stayService } from '../services/./stay.service.local'
+// import { stayService } from '../services/stay-service'
+import { stayService } from '../services/./stay.service.local'
 
 export default {
     state: {
@@ -24,6 +24,9 @@ export default {
         stays(state) {
             return state.stays;
         },
+        guests(state) {
+            return state.guests
+        }
     },
     mutations: {
         setStay(state, { stays }) {

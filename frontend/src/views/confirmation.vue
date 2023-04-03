@@ -1,7 +1,7 @@
 <template>
     <section class="details-layout">
         <div class="confirmation">
-            <h1 style="font-size: 40px; margin-block: 50px;">confirmation</h1>
+            <h1 style="font-size: 40px; margin-block: 50px;">Confirmation</h1>
         </div>
         <div class="confirmation-container ">
             <div class="your-trip flex-col">

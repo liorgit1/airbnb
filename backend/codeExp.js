@@ -6,54 +6,49 @@ router.get('/', log, getStays)
 
 async function getStays(req, res) {
     try {
-  
-      const filterBy = {
-        stays:req.query || '',
-        country: req.query.country || '',
-        status: req.query.status || '',
-        labels: req.query.labels || null,
-  
-      }
-      const sortBy = req.query.sortTitle
-      
-        ? {
-            [req.query.sortTitle]: +req.query.sortDesc,
-          }
-        : {}
-  
-      logger.debug('Getting Stays', filterBy)
-      const Stays = await stayService.query(filterBy, sortBy)
-      res.json(Stays)
+
+        const filterBy = {
+            stays: req.query || '',
+            country: req.query.country || '',
+            status: req.query.status || '',
+            labels: req.query.labels || null,
+
+        }
+        const sortBy = req.query.sortTitle ? { [req.query.sortTitle]: +req.query.sortDesc, } : {}
+
+        logger.debug('Getting Stays', filterBy)
+        const Stays = await Stayservice.query(filterBy, sortBy)
+        res.json(Stays)
     } catch (err) {
-      logger.error('Failed to get Stays', err)
-      res.status(500).send({ err: 'Failed to get Stays' })
+        logger.error('Failed to get Stays', err)
+        res.status(500).send({ err: 'Failed to get Stays' })
     }
-  }
+}
 
+//query request
 
-
-  async function query(filterBy, sortBy) {
+async function query(filterBy, sortBy) {
     try {
-      const criteria = _buildCriteria(filterBy)
-      const collection = await dbService.getCollection('stay')
-      var stays = await collection.find(criteria).sort(sortBy).toArray()
-      
-      return stays
+        const criteria = _buildCriteria(filterBy)
+        const collection = await dbService.getCollection('stay')
+        var stays = await collection.find(criteria).sort(sortBy).toArray()
+
+        return stays
     } catch (err) {
-      logger.error('cannot find stays', err)
-      throw err
+        logger.error('cannot find stays', err)
+        throw err
     }
-  }
+}
 
-  
+//building query from our data base according to the choices of the user
 
-  function _buildCriteria(filterBy) {
+function _buildCriteria(filterBy) {
     let criteria = {};
     if (!filterBy.country && !filterBy.type && !filterBy.price) return criteria
     if (filterBy.country) {
         const regex = { $regex: filterBy.country, $options: 'i' }
         criteria.$or = [{ 'loc.country': regex },
-            { 'loc.city': regex }
+        { 'loc.city': regex }
         ]
     }
     if (filterBy.type) {
