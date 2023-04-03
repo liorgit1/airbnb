@@ -1,5 +1,4 @@
 <template>
-  <app-header class="user-details" />
   <section
     class="main-layout2 my-details-section"
     v-if="user"

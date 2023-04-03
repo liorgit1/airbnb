@@ -110,7 +110,6 @@ async function logout() {
 async function signup(userDetails) {
   try {
     return await httpService.post(`${ENDPOINT}/signup`, userDetails);
-    return signUser.data
   } catch {
     console.log("cant login");
   }

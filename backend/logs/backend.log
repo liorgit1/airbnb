@@ -1867,6 +1867,111 @@
 2.4.2023, 18:02:48 - INFO - Server is running on port: 3030 
 2.4.2023, 18:46:14 - INFO - Hi | 90 | Bobo 
 2.4.2023, 18:46:14 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
+2.4.2023, 18:56:36 - INFO - Hi | 90 | Bobo 
+2.4.2023, 18:56:36 - INFO - Server is running on port: 3030 
+2.4.2023, 18:57:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 18:57:32 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:32 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 18:57:33 - ERROR - cannot find stays | ReferenceError: logger is not defined 
+2.4.2023, 18:57:33 - ERROR - Failed to get Stays | ReferenceError: logger is not defined 
+2.4.2023, 19:00:08 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:00:08 - INFO - Server is running on port: 3030 
+2.4.2023, 19:00:12 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:00:12 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:12 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:00:13 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:00:13 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:02:59 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:03:00 - INFO - Server is running on port: 3030 
+2.4.2023, 19:03:02 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:03:02 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:02 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:03:03 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:03:03 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:10 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:04:10 - INFO - Server is running on port: 3030 
+2.4.2023, 19:04:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:54 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:04:54 - INFO - Server is running on port: 3030 
+2.4.2023, 19:04:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:55 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:04:55 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:04:55 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:05:32 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:05:32 - INFO - Server is running on port: 3030 
+2.4.2023, 19:06:11 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:06:11 - INFO - Server is running on port: 3030 
+2.4.2023, 19:06:22 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:06:22 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:22 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:06:23 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:06:23 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:38 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:07:38 - INFO - Server is running on port: 3030 
+2.4.2023, 19:07:49 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:07:49 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:49 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:07:50 - ERROR - Cannot Connect to DB | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - Failed to get Stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - Failed to get Mongo collection | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:07:50 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+2.4.2023, 19:11:27 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:11:27 - INFO - Server is running on port: 3030 
+2.4.2023, 19:11:33 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:11:37 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:34:37 - DEBUG - Getting Stays | {"country":"United States","status":"","labels":null} 
+2.4.2023, 19:35:07 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:36:58 - INFO - Hi | 90 | Bobo 
+2.4.2023, 19:36:58 - INFO - Server is running on port: 3030 
+2.4.2023, 19:39:12 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:48:56 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:49:01 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:49:27 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:54:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:55:50 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:55:52 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:58:29 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 19:58:31 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:03:17 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:03:19 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:04:29 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+2.4.2023, 20:04:32 - DEBUG - Getting Stays | {"country":"","status":"","labels":null} 
+=======
 2.4.2023, 19:01:09 - INFO - Hi | 90 | Bobo 
 2.4.2023, 19:01:09 - INFO - Server is running on port: 3030 
 2.4.2023, 19:19:04 - INFO - Hi | 90 | Bobo 
@@ -1931,89 +2036,3 @@
 2.4.2023, 20:41:47 - INFO - Server is running on port: 3030 
 2.4.2023, 20:43:19 - INFO - Hi | 90 | Bobo 
 2.4.2023, 20:43:19 - INFO - Server is running on port: 3030 
-2.4.2023, 20:46:37 - INFO - Hi | 90 | Bobo 
-2.4.2023, 20:46:37 - INFO - Server is running on port: 3030 
-2.4.2023, 20:50:26 - INFO - Hi | 90 | Bobo 
-2.4.2023, 20:50:26 - INFO - Server is running on port: 3030 
-2.4.2023, 20:51:06 - INFO - Hi | 90 | Bobo 
-2.4.2023, 20:51:06 - INFO - Server is running on port: 3030 
-2.4.2023, 22:55:13 - INFO - Hi | 90 | Bobo 
-2.4.2023, 22:55:13 - INFO - Server is running on port: 3030 
-2.4.2023, 22:56:48 - INFO - Hi | 90 | Bobo 
-2.4.2023, 22:56:49 - INFO - Server is running on port: 3030 
-2.4.2023, 22:59:41 - INFO - Hi | 90 | Bobo 
-2.4.2023, 22:59:41 - INFO - Server is running on port: 3030 
-3.4.2023, 10:39:44 - INFO - Hi | 90 | Bobo 
-3.4.2023, 10:39:44 - INFO - Server is running on port: 3030 
-3.4.2023, 11:09:31 - INFO - Hi | 90 | Bobo 
-3.4.2023, 11:09:31 - INFO - Server is running on port: 3030 
-3.4.2023, 11:33:54 - INFO - Hi | 90 | Bobo 
-3.4.2023, 11:33:54 - INFO - Server is running on port: 3030 
-3.4.2023, 11:36:01 - INFO - Hi | 90 | Bobo 
-3.4.2023, 11:36:01 - INFO - Server is running on port: 3030 
-3.4.2023, 12:42:06 - INFO - Hi | 90 | Bobo 
-3.4.2023, 12:42:06 - INFO - Server is running on port: 3030 
-3.4.2023, 12:43:21 - INFO - Hi | 90 | Bobo 
-3.4.2023, 12:43:21 - INFO - Server is running on port: 3030 
-3.4.2023, 12:43:59 - INFO - Hi | 90 | Bobo 
-3.4.2023, 12:43:59 - INFO - Server is running on port: 3030 
-3.4.2023, 12:44:43 - INFO - Hi | 90 | Bobo 
-3.4.2023, 12:44:43 - INFO - Server is running on port: 3030 
-3.4.2023, 12:46:12 - INFO - Hi | 90 | Bobo 
-3.4.2023, 12:46:12 - INFO - Server is running on port: 3030 
-3.4.2023, 13:17:32 - INFO - Hi | 90 | Bobo 
-3.4.2023, 13:17:32 - INFO - Server is running on port: 3030 
-3.4.2023, 15:16:02 - INFO - Hi | 90 | Bobo 
-3.4.2023, 15:16:02 - INFO - Server is running on port: 3030 
-3.4.2023, 15:36:35 - INFO - Hi | 90 | Bobo 
-3.4.2023, 15:36:35 - INFO - Server is running on port: 3030 
-3.4.2023, 15:37:10 - INFO - Hi | 90 | Bobo 
-3.4.2023, 15:37:10 - INFO - Server is running on port: 3030 
-3.4.2023, 16:08:24 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:08:24 - INFO - Server is running on port: 3030 
-3.4.2023, 16:12:28 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:12:28 - INFO - Server is running on port: 3030 
-3.4.2023, 16:13:12 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:13:12 - INFO - Server is running on port: 3030 
-3.4.2023, 16:13:57 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:13:57 - INFO - Server is running on port: 3030 
-3.4.2023, 16:14:39 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:14:40 - INFO - Server is running on port: 3030 
-3.4.2023, 16:16:34 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:16:34 - INFO - Server is running on port: 3030 
-3.4.2023, 16:17:24 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:17:24 - INFO - Server is running on port: 3030 
-3.4.2023, 16:18:02 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:18:02 - INFO - Server is running on port: 3030 
-3.4.2023, 16:20:28 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:20:28 - INFO - Server is running on port: 3030 
-3.4.2023, 16:21:29 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:21:29 - INFO - Server is running on port: 3030 
-3.4.2023, 16:42:34 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:42:34 - INFO - Server is running on port: 3030 
-3.4.2023, 16:42:45 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:42:45 - INFO - Server is running on port: 3030 
-3.4.2023, 16:43:10 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:43:10 - INFO - Server is running on port: 3030 
-3.4.2023, 16:44:04 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:44:04 - INFO - Server is running on port: 3030 
-3.4.2023, 16:44:26 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:44:26 - INFO - Server is running on port: 3030 
-3.4.2023, 16:45:32 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:45:32 - INFO - Server is running on port: 3030 
-3.4.2023, 16:48:47 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:48:47 - INFO - Server is running on port: 3030 
-3.4.2023, 16:49:59 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:49:59 - INFO - Server is running on port: 3030 
-3.4.2023, 16:52:58 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:52:58 - INFO - Server is running on port: 3030 
-3.4.2023, 16:54:04 - INFO - Server is running on port: 3030 
-3.4.2023, 16:54:04 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:54:18 - INFO - Hi | 90 | Bobo 
-3.4.2023, 16:54:18 - INFO - Server is running on port: 3030 
-3.4.2023, 17:04:46 - INFO - Hi | 90 | Bobo 
-3.4.2023, 17:04:46 - INFO - Server is running on port: 3030 
-3.4.2023, 17:06:33 - INFO - Hi | 90 | Bobo 
-3.4.2023, 17:06:33 - INFO - Server is running on port: 3030 
-3.4.2023, 17:11:48 - INFO - Hi | 90 | Bobo 
-3.4.2023, 17:11:48 - INFO - Server is running on port: 3030 

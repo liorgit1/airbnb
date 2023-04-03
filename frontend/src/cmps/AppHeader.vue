@@ -66,9 +66,10 @@
             </svg>
           </button>
         </label>
-        <userDetailsModal v-if="modalUser" @openModalLogin="toggleModalLogin" @closeLoginModal="modalLoginIsOpen = false"
+        <userDetailsModal v-if="modalUser" @openSignUpModal="openSignUpModal" @openModalLogin="toggleModalLogin" @closeLoginModal="modalLoginIsOpen = false"
           @closeModalDetails="closeModalUser" />
       </nav>
+      <sign-up-modal v-if="modalSignUpIsOpen" @closeSignUpModal="modalSignUpIsOpen = false" @signup="setSignup"></sign-up-modal>
       <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" @login="setLogin" />
     </section>
   </header>
@@ -82,6 +83,7 @@ import FilterList from './FilterList.vue'
 import vClickOutsideUmd from 'click-outside-vue3'
 import loginModal from './login-modal.vue'
 import userDetailsModal from './user-details-modal.vue';
+import signUpModal from './signUpModal.vue'
 
 export default {
   // name: "stay-header",
@@ -94,6 +96,7 @@ export default {
         isDetails: false,
         isOpen: false,
         modalLoginIsOpen: false,
+        modalSignUpIsOpen: false,
         isUserTrips:false,
       };
     }
@@ -114,10 +117,23 @@ export default {
       this.modalLoginIsOpen = !this.modalLoginIsOpen
     },
     
+    openSignUpModal() {
+      this.modalUser = false
+      this.modalSignUpIsOpen =  !this.modalSignUpIsOpen
+    },
     setLogin(user) {
       console.log('user' , user)
       this.$store.dispatch({
         type: "login",
+       
+        userCred: user,
+      });
+      this.modalLoginIsOpen = false;
+    },
+    setSignup(user) {
+      console.log('user' , user)
+      this.$store.dispatch({
+        type: "signup",
        
         userCred: user,
       });
@@ -201,7 +217,7 @@ export default {
     HeaderFilter,
     FilterList,
     userDetailsModal,
-    vClickOutsideUmd,
+    //  vClickOutsideUmd,
     loginModal
 
 
