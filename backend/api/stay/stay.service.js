@@ -7,9 +7,17 @@ async function query(filterBy, sortBy) {
   try {
     const criteria = _buildCriteria(filterBy)
     const collection = await dbService.getCollection('stay')
-      var stays = await collection.find(criteria).sort(sortBy).toArray()
-    console.log(stays)
-    return stays
+      var stays = await collection.find(criteria).sort().toArray()
+      stays.sort((a,b) => b.price - a.price)
+       const Stays = stays.filter(stay => (stay.price < 550) && (stay.reviews[0].rate.Communication > 4.2))
+      
+      // stays
+      //   return a.reviews.rate.location - b.reviews.rate.location
+      // })
+      // sortBy
+      // stays.sort()
+    // console.log(stays)
+    return Stays
   } catch (err) {
     // logger.error('cannot find stays', err)
     throw err
@@ -117,6 +125,11 @@ function _buildCriteria(filterBy) {
 
 }
 
+// function getAvg(a){
+//  let avg =  a.reviews.reduce((sum, review) => sum + review.rate.Communication, 0) / a.reviews.length.toFixed(1);
+//  return avg
+// }
+
 module.exports = {
   remove,
   query,
@@ -125,4 +138,5 @@ module.exports = {
   update,
   addStayMsg,
   removeStayMsg,
+  // getAvg,
 }

@@ -2,7 +2,7 @@
   <!-- v-bind:class="{'stay-details':isDetails}" -->
 
   <header>
-    <section class="" :class="{ 'details-layout': isDetails, 'main-layout': !isDetails }">
+    <section class="" :class="{ 'details-layout': isDetails, 'main-layout': !isDetails,}">
       <nav class="flex">
 
         <RouterLink to="/" @click="isOpen = false && resetParams()" class="logo">
@@ -14,7 +14,7 @@
 
         <div @click="isOpen = true" v-if="!isOpen" class="search-bar">
           <button style="padding-left: 10px;" v-if="!isDetails">Anywhere</button>
-          <button v-else>start your search</button>
+          <button v-else style="padding-left: 10px;" >Start your search</button>
           <span v-if="!isDetails" style="opacity: 50%;">|</span>
           <span v-else></span>
           <button v-if="!isDetails">Any week</button>
@@ -25,7 +25,7 @@
           <button v-else></button>
           <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               role="presentation" focusable="false"
-              style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;">
+              style="display: inherit; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px;margin-top: 2px;">
               <g fill="none">
                 <path
                   d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
@@ -79,7 +79,7 @@
 
 import HeaderFilter from './HeaderFilter.vue'
 import FilterList from './FilterList.vue'
-// import vClickOutsideUmd from 'click-outside-vue3'
+import vClickOutsideUmd from 'click-outside-vue3'
 import loginModal from './login-modal.vue'
 import userDetailsModal from './user-details-modal.vue';
 
@@ -93,7 +93,8 @@ export default {
         modalUser: false,
         isDetails: false,
         isOpen: false,
-        modalLoginIsOpen: false
+        modalLoginIsOpen: false,
+        isUserTrips:false,
       };
     }
   ,
@@ -137,12 +138,18 @@ export default {
     handleRoute() {
       console.log('thisRoute', this.thisRoute);
       
-      if (this.thisRoute == 'stayIndex')
+      if (this.thisRoute == 'stayIndex'){
         this.isDetails = false
-      if (this.thisRoute == 'stay-details')
+        this.isUserTrips=false
+    }
+      if (this.thisRoute == 'stay-details'){
         this.isDetails = true
-      if(this.thisRoute == 'user-trip')
+        this.isUserTrips = false
+      }
+      if(this.thisRoute == 'user-trip'){
       this.isDetails = false
+      this.isUserTrips = true
+      }
     },
 
     handleScroll() {
@@ -194,7 +201,7 @@ export default {
     HeaderFilter,
     FilterList,
     userDetailsModal,
-    //  vClickOutsideUmd,
+    vClickOutsideUmd,
     loginModal
 
 

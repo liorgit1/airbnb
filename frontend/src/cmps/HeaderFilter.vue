@@ -39,7 +39,7 @@
                 d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
               </path>
             </g>
-          </svg>search</span>
+          </svg>Search</span>
       </div>
 
       <GuestsModal v-if="showGuestsModal" @setChildrenCount="setChildrenCount($event)"
@@ -149,7 +149,8 @@ export default {
       console.log('this.guests.pets :>> ', this.guests.pets);
     },
     onClickedOutside() {
-      this.openDatesModal = false
+      this.openDatesModal = false,
+      this.$emit('close')
     }
 
   },
