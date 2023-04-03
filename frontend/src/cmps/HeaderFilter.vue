@@ -28,7 +28,7 @@
         @click="showDatesModal = false, showLocationsModal = false, showGuestsModal = true, checkInClicked = false, checkOutClicked = false">
         <div>
           <p>Guests</p>
-          <input type="text" v-model = "guestsDisplay" placeholder="Add guests" />
+          <input type="text" v-model="guestsDisplay" placeholder="Add guests" />
           <!-- v-model="searchBy.guests" -->
         </div>
         <span @click="setSearch(), $emit('close')"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
                 d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
               </path>
             </g>
-          </svg>search</span>
+          </svg>Search</span>
       </div>
 
       <GuestsModal v-if="showGuestsModal" @setChildrenCount="setChildrenCount($event)"
@@ -54,8 +54,8 @@
 
 <script>
 import { onMounted } from 'vue'
-// import  stayService  from '../services/stay-service.js'
-// import { stayService } from '../services/stay.service.local.js'
+// import { stayService } from '../services/stay-service.js'
+import { stayService } from '../services/stay.service.local.js'
 import LocationsModal from './LocationsModal.vue'
 import vClickOutside from 'click-outside-vue3'
 import DatePickerModal from './DatePickerModal.vue'
@@ -106,9 +106,13 @@ export default {
 
   methods: {
 
-     setSearch() {
-     this.$router.push({ name: 'exploreApp', query: { country: this.searchBy.country , startDate:this.getDates.start , endDate:this.getDates.end,
-    adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
+    setSearch() {
+      this.$router.push({
+        name: 'exploreApp', query: {
+          country: this.searchBy.country, startDate: this.getDates.start, endDate: this.getDates.end,
+          adults: this.guests.adults, kids: this.guests.kids, infants: this.guests.infants, pets: this.guests.pets
+        }
+      })
 
       this.$emit('closeModal', false)
 
@@ -149,7 +153,8 @@ export default {
       console.log('this.guests.pets :>> ', this.guests.pets);
     },
     onClickedOutside() {
-      this.openDatesModal = false
+      this.openDatesModal = false,
+      this.$emit('close')
     }
 
   },

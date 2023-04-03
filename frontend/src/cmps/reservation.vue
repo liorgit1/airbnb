@@ -71,9 +71,10 @@
                             <path
                                 d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
                         </svg>
-                        <svg v-else style="height: 8px;" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                            clip-rule="evenodd" viewBox="0 0 512 346.35">
+                        <svg v-else style="height: 8px;" xmlns="http://www.w3.org/2000/svg"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 512 346.35">
                             <path fill-rule="nonzero"
                                 d="M410.1 346.35 256 201.69 101.9 346.35 0 240.31 256 0l256 240.31z" />
                         </svg>
@@ -111,7 +112,7 @@
                 </div>
 
 
-                <reservationBtnVue @click="this.$router.push(`/stay/confirm`);">
+                <reservationBtnVue :class="{ 'disabled': openDatesModal }" @click="this.$router.push(`/stay/confirm`);">
                     <button @click="submit.prevent" style="display: none">
                     </button>
                 </reservationBtnVue>
@@ -147,7 +148,7 @@ export default {
             endDate: "2025/10/17",
             guests: {
 
-                adults: null,
+                adults: 1,
                 kids: null,
                 infants: null,
                 pets: null
@@ -196,12 +197,13 @@ export default {
             let infants
             let totalGuests
             let pets
-            adults = this.guests.adults
-            kids = this.guests.kids
-            guests = adults + kids > 0 ? `${adults + kids} guests` : ' '
-            infants = this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
-            pets = this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
+            adults = +this.guests.adults
+            kids = +this.guests.kids
+            guests =( +adults + +kids )> 1 ? `${adults + kids} guests` : '1 guest'
+            infants = +this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
+            pets = +this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
             totalGuests = `${guests} ${infants} ${pets}`
+
             console.log('totalGuests :>> ', totalGuests);
             return totalGuests
         }
@@ -212,7 +214,7 @@ export default {
 
         this.startDate = startDate
         this.endDate = endDate
-        this.guests.adults = +adults
+        if (adults >= 1) this.guests.adults = +adults
         this.guests.kids = +kids
         this.guests.infants = +infants
         this.guests.pets = +pets
@@ -229,7 +231,7 @@ export default {
         },
 
         setAdultCount1({ adultCount }) {
-            this.guests.adults = adultCount
+            this.guests.adults = +adultCount
             console.log('this.guests.adult2111 :>> ', this.guests.adults);
         },
         setChildrenCount({ childrenCount }) {

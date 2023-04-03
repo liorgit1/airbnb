@@ -12,7 +12,7 @@
             </svg>
             <span class="fs22">{{ totalAverage }}</span> ·
             <a class="fs22" style="text-decoration: none; color: black;" href="#reviews">{{ this.stay.reviews.length }}
-                reviews</a>
+                Reviews</a>
 
 
 
@@ -88,7 +88,7 @@
                         <div style="margin-bottom: 13px;" class="flex-col">
                             <span style="margin-block-start: -3px; margin-block-end: -7px;">{{ review.by.fullname
                             }}</span>
-                            <span class="fs14" style="width: max-content;">Jun 2023{{ review.date }}</span>
+                            <span class="fs14" style="width: max-content;">Jan 2023{{ review.date }}</span>
                         </div>
                     </div>
                     <div class="fs14" style="width: max-content; max-width: 400px;">{{ review.txt }}</div>

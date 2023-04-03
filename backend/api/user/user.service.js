@@ -97,6 +97,10 @@ async function add(user) {
             
             
             
+            // score: user.score || 0
+            reservations:[],
+            whishList:[],
+            
         }
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)
