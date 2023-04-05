@@ -50,8 +50,10 @@ export default {
       userService.saveUser(state.loggedinUser);
     },
     addReservationUser(state, { newReservation }) {
-      state.loggedinUser.reservations.unshift(newReservation);
-      console.log(newReservation);
+      console.log('state.loggedinUser :>> ', state.loggedinUser);
+
+      state.loggedinUser.reservations=[]
+      state.loggedinUser.reservations.push(newReservation);
       userService.saveUser(state.loggedinUser);
     },
     setLikedStay(state, { stayId }) {

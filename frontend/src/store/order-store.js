@@ -8,7 +8,7 @@ export default {
     },
     mutations: {
         setOrder(state, { newOrder }) {
-            state.orders.unshift(newOrder)
+            state.orders.push(newOrder)
         },
 
     },
@@ -24,7 +24,7 @@ export default {
                 console.log(orderToSave);
                 console.log(newOrder);
                 commit({ type: 'setOrder', newOrder })
-                commit({ type: 'addOrderUser', newOrder })
+                commit({ type: 'addReservationUser', newReservation: newOrder })
                 return newOrder
             } catch (err) {
                 console.log('orderStore: error in addOrder', err)
