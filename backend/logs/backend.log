@@ -1,0 +1,153 @@
+3.4.2023, 22:52:58 - INFO - Hi | 90 | Bobo 
+3.4.2023, 22:52:58 - INFO - Server is running on port: 3030 
+3.4.2023, 22:53:23 - DEBUG - auth.service - signup with username: asdasdasd, fullname: asdasdasd 
+3.4.2023, 22:53:23 - DEBUG - auth.route - new account created: {"username":"asdasdasd","password":"$2b$10$QMstoturRvG2YwG1y352UuEuIWe0djIrJPUN/dBJw8YkQiVEjfPUy","fullname":"asdasdasd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b2eb31df53524407a7eb3"} 
+3.4.2023, 22:53:23 - DEBUG - auth.service - login with username: asdasdasd 
+3.4.2023, 22:53:23 - INFO - User login:  | {"_id":"642b2eb31df53524407a7eb3","username":"asdasdasd","fullname":"asdasdasd","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:14:50 - DEBUG - auth.service - login with username: lior 
+3.4.2023, 23:14:51 - INFO - User login:  | {"_id":"642956a588daf949bf62a5cb","username":"lior","fullname":"lior L","score":0} 
+3.4.2023, 23:14:51 - ERROR - cannot update user 642956a588daf949bf62a5cb | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:14:51 - ERROR - Failed to update user | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:15:03 - DEBUG - auth.service - login with username: lior 
+3.4.2023, 23:15:03 - INFO - User login:  | {"_id":"642956a588daf949bf62a5cb","username":"lior","fullname":"lior L","score":0} 
+3.4.2023, 23:15:04 - ERROR - cannot update user 642956a588daf949bf62a5cb | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:15:04 - ERROR - Failed to update user | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:30:50 - DEBUG - auth.service - signup with username: 123321, fullname: 123321 
+3.4.2023, 23:30:50 - DEBUG - auth.route - new account created: {"username":"123321","password":"$2b$10$ImGMcai22GWjdd/QMgxy7etNnK1pmnZv0qMRPBsSk8rwOddnetL3W","fullname":"123321","likedStays":[],"reservations":[],"whishList":[],"_id":"642b377a1df53524407a7eb4"} 
+3.4.2023, 23:30:50 - DEBUG - auth.service - login with username: 123321 
+3.4.2023, 23:30:50 - INFO - User login:  | {"_id":"642b377a1df53524407a7eb4","username":"123321","fullname":"123321","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:30:50 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:30:51 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:32:37 - DEBUG - auth.service - signup with username: hgfhgfhgfh, fullname: hgfhgfhgf 
+3.4.2023, 23:32:37 - DEBUG - auth.route - new account created: {"username":"hgfhgfhgfh","password":"$2b$10$NRZOJt/dnJebM2maKs6cpu8kYCB9ZmFdxSKtdcYEMOeweYS4QuTP6","fullname":"hgfhgfhgf","likedStays":[],"reservations":[],"whishList":[],"_id":"642b37e51df53524407a7eb5"} 
+3.4.2023, 23:32:37 - DEBUG - auth.service - login with username: hgfhgfhgfh 
+3.4.2023, 23:32:37 - INFO - User login:  | {"_id":"642b37e51df53524407a7eb5","username":"hgfhgfhgfh","fullname":"hgfhgfhgf","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:32:37 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:32:37 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:32:38 - ERROR - cannot update user 642b37e51df53524407a7eb5 | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:32:38 - ERROR - Failed to update user | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:34:59 - DEBUG - auth.service - signup with username: qweqweqweqwe, fullname: qweasd 
+3.4.2023, 23:34:59 - DEBUG - auth.route - new account created: {"username":"qweqweqweqwe","password":"$2b$10$ZcROtZaglnhjk2kWZOkHNu5yXtwTGDDmUSFxRwWU8nTBGPk17nY.m","fullname":"qweasd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b38731df53524407a7eb6"} 
+3.4.2023, 23:34:59 - DEBUG - auth.service - login with username: qweqweqweqwe 
+3.4.2023, 23:34:59 - INFO - User login:  | {"_id":"642b38731df53524407a7eb6","username":"qweqweqweqwe","fullname":"qweasd","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:34:59 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:34:59 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:35:00 - ERROR - cannot update user 642b38731df53524407a7eb6 | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:35:00 - ERROR - Failed to update user | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:35:52 - DEBUG - auth.service - signup with username: 4546878465465, fullname: 78949879874 
+3.4.2023, 23:35:52 - DEBUG - auth.route - new account created: {"username":"4546878465465","password":"$2b$10$Ody.WycuU7O0ilp3M.Sc7eUdY0cQfJ847kjoQal9WeD4aVKf2UPJC","fullname":"78949879874","likedStays":[],"reservations":[],"whishList":[],"_id":"642b38a81df53524407a7eb7"} 
+3.4.2023, 23:35:52 - DEBUG - auth.service - login with username: 4546878465465 
+3.4.2023, 23:35:52 - INFO - User login:  | {"_id":"642b38a81df53524407a7eb7","username":"4546878465465","fullname":"78949879874","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:35:52 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:35:52 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:35:53 - ERROR - cannot update user 642b38a81df53524407a7eb7 | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:35:53 - ERROR - Failed to update user | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:38:59 - DEBUG - auth.service - signup with username: 654789654, fullname: 987789654 
+3.4.2023, 23:39:00 - DEBUG - auth.route - new account created: {"username":"654789654","password":"$2b$10$JziZCSBq7rIaEqomScxEwuVHSSVEKWr8E4pCCjEvKwTu.Xs8hOki2","fullname":"987789654","likedStays":[],"reservations":[],"whishList":[],"_id":"642b39641df53524407a7eb8"} 
+3.4.2023, 23:39:00 - DEBUG - auth.service - login with username: 654789654 
+3.4.2023, 23:39:00 - INFO - User login:  | {"_id":"642b39641df53524407a7eb8","username":"654789654","fullname":"987789654","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:39:00 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:39:00 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:39:01 - ERROR - cannot update user 642b39641df53524407a7eb8 | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:39:01 - ERROR - Failed to update user | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:41:36 - DEBUG - auth.service - signup with username: asdasdasd, fullname: asddsadasd 
+3.4.2023, 23:41:36 - ERROR - cannot insert user | Error: Username taken 
+3.4.2023, 23:41:36 - ERROR - Failed to signup Error: Username taken 
+3.4.2023, 23:41:36 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:41:36 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:42:58 - DEBUG - auth.service - signup with username: osnjfdisgsofnlksdcxzm, fullname: ijsdijoijoijoisjosij 
+3.4.2023, 23:42:58 - DEBUG - auth.route - new account created: {"username":"osnjfdisgsofnlksdcxzm","password":"$2b$10$b4nNhuNWu/ovk2o0xTRIBes/Cj2.eAcwSySl97e5Ba0BcLqw8t8Xq","fullname":"ijsdijoijoijoisjosij","likedStays":[],"reservations":[],"whishList":[],"_id":"642b3a521df53524407a7eb9"} 
+3.4.2023, 23:42:58 - DEBUG - auth.service - login with username: osnjfdisgsofnlksdcxzm 
+3.4.2023, 23:42:58 - INFO - User login:  | {"_id":"642b3a521df53524407a7eb9","username":"osnjfdisgsofnlksdcxzm","fullname":"ijsdijoijoijoisjosij","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:42:58 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:42:58 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:45:23 - DEBUG - auth.service - signup with username: fsdcvnbcmgfktyjdrsefSfxhasdxz, fullname: adfdsfsftyjtuykyhbsdzcx nghftfyudhrgfdfd 
+3.4.2023, 23:45:23 - DEBUG - auth.route - new account created: {"username":"fsdcvnbcmgfktyjdrsefSfxhasdxz","password":"$2b$10$N9SeM9eTfc0qRv/nS0ENzO.Tu4MqyibnElE1ueK6p0rHQYmr6HNxa","fullname":"adfdsfsftyjtuykyhbsdzcx nghftfyudhrgfdfd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b3ae31df53524407a7eba"} 
+3.4.2023, 23:45:23 - DEBUG - auth.service - login with username: fsdcvnbcmgfktyjdrsefSfxhasdxz 
+3.4.2023, 23:45:23 - INFO - User login:  | {"_id":"642b3ae31df53524407a7eba","username":"fsdcvnbcmgfktyjdrsefSfxhasdxz","fullname":"adfdsfsftyjtuykyhbsdzcx nghftfyudhrgfdfd","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:45:23 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:45:23 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:46:14 - INFO - Hi | 90 | Bobo 
+3.4.2023, 23:46:14 - INFO - Server is running on port: 3030 
+3.4.2023, 23:46:16 - INFO - Hi | 90 | Bobo 
+3.4.2023, 23:46:16 - INFO - Server is running on port: 3030 
+3.4.2023, 23:46:29 - INFO - Hi | 90 | Bobo 
+3.4.2023, 23:46:29 - INFO - Server is running on port: 3030 
+3.4.2023, 23:46:47 - DEBUG - auth.service - signup with username: kmijnuhbygvtfc, fullname: knjbhvgyfctdxrsxrdcftvygbhnjm 
+3.4.2023, 23:46:47 - DEBUG - auth.route - new account created: {"username":"kmijnuhbygvtfc","password":"$2b$10$WK.rQcpZvxfePxVtJJ95k.7esJYc5xbmhC1sd544Uk5RO6C1.IKKi","fullname":"knjbhvgyfctdxrsxrdcftvygbhnjm","likedStays":[],"reservations":[],"whishList":[],"_id":"642b3b3721b6913ec7af90fb"} 
+3.4.2023, 23:46:47 - DEBUG - auth.service - login with username: kmijnuhbygvtfc 
+3.4.2023, 23:46:48 - INFO - User login:  | {"_id":"642b3b3721b6913ec7af90fb","username":"kmijnuhbygvtfc","fullname":"knjbhvgyfctdxrsxrdcftvygbhnjm","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:46:48 - DEBUG - auth.service - login with username: undefined 
+3.4.2023, 23:46:48 - ERROR - Failed to Login Error: data and hash arguments required 
+3.4.2023, 23:54:09 - INFO - Hi | 90 | Bobo 
+3.4.2023, 23:54:09 - INFO - Server is running on port: 3030 
+4.4.2023, 0:02:08 - INFO - Hi | 90 | Bobo 
+4.4.2023, 0:02:08 - INFO - Server is running on port: 3030 
+4.4.2023, 0:04:23 - DEBUG - auth.service - signup with username: sadfghfghhhhhh, fullname: sdfgfhjgfhgfdsadsadddddd 
+4.4.2023, 0:04:24 - DEBUG - auth.route - new account created: {"username":"sadfghfghhhhhh","password":"$2b$10$E5NKEDvvhuMCvB70WPBac.bextIrdhMHp2XGc.Yz.QThhUR.w1aUy","fullname":"sdfgfhjgfhgfdsadsadddddd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b3f58815a75c31339fd3d"} 
+4.4.2023, 0:04:24 - DEBUG - auth.service - login with username: sadfghfghhhhhh 
+4.4.2023, 0:04:24 - INFO - User login:  | {"_id":"642b3f58815a75c31339fd3d","username":"sadfghfghhhhhh","fullname":"sdfgfhjgfhgfdsadsadddddd","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:04:24 - DEBUG - auth.service - login with username: undefined 
+4.4.2023, 0:04:24 - ERROR - Failed to Login Error: data and hash arguments required 
+4.4.2023, 0:04:44 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 0:04:45 - INFO - User login:  | {"_id":"642956a588daf949bf62a5cb","username":"lior","fullname":"lior L","score":0} 
+4.4.2023, 0:06:25 - DEBUG - auth.service - signup with username: 213123123123123123123, fullname: sdsdadasd 
+4.4.2023, 0:06:25 - DEBUG - auth.service - login with username: undefined 
+4.4.2023, 0:06:25 - ERROR - Failed to Login Error: data and hash arguments required 
+4.4.2023, 0:06:25 - DEBUG - auth.route - new account created: {"username":"213123123123123123123","password":"$2b$10$ZIMQ67JspSFVjiI.Gt9Sou5r5Q.K5RV0KdjH3Fez1ns/Xyulp43tu","fullname":"sdsdadasd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b3fd1815a75c31339fd3e"} 
+4.4.2023, 0:06:25 - DEBUG - auth.service - login with username: 213123123123123123123 
+4.4.2023, 0:06:25 - INFO - User login:  | {"_id":"642b3fd1815a75c31339fd3e","username":"213123123123123123123","fullname":"sdsdadasd","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:08:34 - DEBUG - auth.service - signup with username: zxczxczxcaqqqqq, fullname: sdacxxzcxzczxc 
+4.4.2023, 0:08:34 - DEBUG - auth.route - new account created: {"username":"zxczxczxcaqqqqq","password":"$2b$10$9sQjZbAotvE.YRsigmW7iee62rUQkjJqA.b9NoTZtUiOT83NVWcym","fullname":"sdacxxzcxzczxc","likedStays":[],"reservations":[],"whishList":[],"_id":"642b4052815a75c31339fd3f"} 
+4.4.2023, 0:08:34 - DEBUG - auth.service - login with username: zxczxczxcaqqqqq 
+4.4.2023, 0:08:35 - INFO - User login:  | {"_id":"642b4052815a75c31339fd3f","username":"zxczxczxcaqqqqq","fullname":"sdacxxzcxzczxc","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:09:18 - DEBUG - auth.service - signup with username: asdasdasddddddd, fullname: asdasdasd 
+4.4.2023, 0:09:18 - DEBUG - auth.service - login with username: undefined 
+4.4.2023, 0:09:18 - ERROR - Failed to Login Error: data and hash arguments required 
+4.4.2023, 0:09:19 - DEBUG - auth.route - new account created: {"username":"asdasdasddddddd","password":"$2b$10$N9F0bl/.GBrEI5VZ706N5eUqbkAxMvKv7LF0S2cYwCvzvJFQCCajO","fullname":"asdasdasd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b407f815a75c31339fd40"} 
+4.4.2023, 0:09:19 - DEBUG - auth.service - login with username: asdasdasddddddd 
+4.4.2023, 0:09:19 - INFO - User login:  | {"_id":"642b407f815a75c31339fd40","username":"asdasdasddddddd","fullname":"asdasdasd","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:09:41 - DEBUG - auth.service - signup with username: 2312312312333333, fullname: 1111111122222111 
+4.4.2023, 0:09:41 - DEBUG - auth.route - new account created: {"username":"2312312312333333","password":"$2b$10$sVN3L9T8mXdwir5.Y4.GbeIxlPe1/WKBos2KmiOidUOX3Gc5z2CkK","fullname":"1111111122222111","likedStays":[],"reservations":[],"whishList":[],"_id":"642b4095815a75c31339fd41"} 
+4.4.2023, 0:09:41 - DEBUG - auth.service - login with username: 2312312312333333 
+4.4.2023, 0:09:41 - INFO - User login:  | {"_id":"642b4095815a75c31339fd41","username":"2312312312333333","fullname":"1111111122222111","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:10:19 - DEBUG - auth.service - signup with username: d1d1d1d1d1, fullname: dd 
+4.4.2023, 0:10:19 - DEBUG - auth.route - new account created: {"username":"d1d1d1d1d1","password":"$2b$10$dBkdIU8YcYWzExUo8ymWCu3vHiRoFyDibcEuiYzfHC74m73EwQRni","fullname":"dd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b40bb815a75c31339fd42"} 
+4.4.2023, 0:10:19 - DEBUG - auth.service - login with username: d1d1d1d1d1 
+4.4.2023, 0:10:19 - INFO - User login:  | {"_id":"642b40bb815a75c31339fd42","username":"d1d1d1d1d1","fullname":"dd","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:11:22 - DEBUG - auth.service - signup with username: d11d1d1d1, fullname: asdasddd 
+4.4.2023, 0:11:23 - DEBUG - auth.route - new account created: {"username":"d11d1d1d1","password":"$2b$10$PxEMbXDz5fZxIPjdtj6o9ugtyy9f74N783lrGJ7PTvv1o625cNHLu","fullname":"asdasddd","likedStays":[],"reservations":[],"whishList":[],"_id":"642b40fb815a75c31339fd43"} 
+4.4.2023, 0:11:23 - DEBUG - auth.service - login with username: d11d1d1d1 
+4.4.2023, 0:11:23 - INFO - User login:  | {"_id":"642b40fb815a75c31339fd43","username":"d11d1d1d1","fullname":"asdasddd","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:12:30 - DEBUG - auth.service - signup with username: 123123123333ppkk, fullname: 123123 
+4.4.2023, 0:12:30 - DEBUG - auth.route - new account created: {"username":"123123123333ppkk","password":"$2b$10$E1RLsHp4CUbG/93KcMiDaOs43t8C4DRvzKaN55qxM.OYqG4y2zfOm","fullname":"123123","likedStays":[],"reservations":[],"whishList":[],"_id":"642b413e815a75c31339fd44"} 
+4.4.2023, 0:12:30 - DEBUG - auth.service - login with username: 123123123333ppkk 
+4.4.2023, 0:12:30 - INFO - User login:  | {"_id":"642b413e815a75c31339fd44","username":"123123123333ppkk","fullname":"123123","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:13:15 - DEBUG - auth.service - signup with username: 214rfdsfdghj, fullname: 323123123 
+4.4.2023, 0:13:15 - DEBUG - auth.service - login with username: 214rfdsfdghj 
+4.4.2023, 0:13:15 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 0:13:15 - DEBUG - auth.route - new account created: {"username":"214rfdsfdghj","password":"$2b$10$VvhvhRtycVwt9bHQVSNXLupSOWLD7QKg8ig/4AGAGuvw7DLifBZoe","fullname":"323123123","likedStays":[],"reservations":[],"whishList":[],"_id":"642b416b815a75c31339fd45"} 
+4.4.2023, 0:13:15 - DEBUG - auth.service - login with username: 214rfdsfdghj 
+4.4.2023, 0:13:15 - INFO - User login:  | {"_id":"642b416b815a75c31339fd45","username":"214rfdsfdghj","fullname":"323123123","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:14:58 - DEBUG - auth.service - signup with username: xxxx, fullname: xxxx 
+4.4.2023, 0:14:58 - DEBUG - auth.service - login with username: xxxx 
+4.4.2023, 0:14:58 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 0:14:58 - DEBUG - auth.route - new account created: {"username":"xxxx","password":"$2b$10$tyIb1CkU8V7c/mxBzkznqupNPdCkDvygsmZGhvVi9JtfZjeaPfrCu","fullname":"xxxx","likedStays":[],"reservations":[],"whishList":[],"_id":"642b41d2815a75c31339fd46"} 
+4.4.2023, 0:14:58 - DEBUG - auth.service - login with username: xxxx 
+4.4.2023, 0:14:58 - INFO - User login:  | {"_id":"642b41d2815a75c31339fd46","username":"xxxx","fullname":"xxxx","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 0:17:14 - DEBUG - auth.service - login with username: xxxx 
+4.4.2023, 0:17:14 - INFO - User login:  | {"_id":"642b41d2815a75c31339fd46","username":"xxxx","fullname":"xxxx","likedStays":[],"reservations":[],"whishList":[]} 
+4.4.2023, 18:30:21 - INFO - Hi | 90 | Bobo 
+4.4.2023, 18:30:21 - INFO - Server is running on port: 3030 
+4.4.2023, 18:56:03 - INFO - Hi | 90 | Bobo 
+4.4.2023, 18:56:03 - INFO - Server is running on port: 3030 
+4.4.2023, 18:57:00 - INFO - Hi | 90 | Bobo 
+4.4.2023, 18:57:00 - INFO - Server is running on port: 3030 
+5.4.2023, 0:11:53 - INFO - Hi | 90 | Bobo 
+5.4.2023, 0:11:53 - INFO - Server is running on port: 3030 
+5.4.2023, 19:51:37 - INFO - Hi | 90 | Bobo 
+5.4.2023, 19:51:37 - INFO - Server is running on port: 3030 
+5.4.2023, 21:38:51 - DEBUG - auth.service - login with username: lior 
+5.4.2023, 21:38:51 - ERROR - Failed to Login Invalid username or password 
+5.4.2023, 21:39:31 - DEBUG - auth.service - login with username: lior 
+5.4.2023, 21:39:31 - INFO - User login:  | {"_id":"642956a588daf949bf62a5cb","username":"lior","fullname":"lior L","score":0} 

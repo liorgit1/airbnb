@@ -68,7 +68,7 @@ async function update(user) {
     try {
         // peek only updatable fields!
         const userToSave = {
-            _id: ObjectId(user._id),
+            _id: new ObjectId(user._id),
             username: user.username,
             fullname: user.fullname,
             likedStays: [],

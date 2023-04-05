@@ -121,36 +121,36 @@ export default {
     getData(data) {
       // this.clickedDest = data
       this.searchBy.country = data.country
-      console.log(this.searchBy)
+      // console.log(this.searchBy)
     },
 
     getDateData(data) {
       this.getDates.start = data.start
       this.getDates.end = data.end
-      console.log(this.getDates.start, this.getDates.end)
+      // console.log(this.getDates.start, this.getDates.end)
     },
 
     onClickedOutside(event) {
-      console.log('clicked outside')
+      // console.log('clicked outside')
       this.$emit('close')
       console.log(event)
     },
 
     setAdultCount1({ adultCount }) {
       this.guests.adults = adultCount
-      console.log('this.guests.adult2111 :>> ', this.guests.adults);
+      // console.log('this.guests.adult2111 :>> ', this.guests.adults);
     },
     setChildrenCount({ childrenCount }) {
       this.guests.kids = childrenCount
-      console.log('this.guests.kids :>> ', this.guests.kids);
+      // console.log('this.guests.kids :>> ', this.guests.kids);
     },
     setInfantsCount({ infantsCount }) {
       this.guests.infants = infantsCount
-      console.log('this.guests.infants :>> ', this.guests.infants);
+      // console.log('this.guests.infants :>> ', this.guests.infants);
     },
     setPetsCount({ petsCount }) {
       this.guests.pets = petsCount
-      console.log('this.guests.pets :>> ', this.guests.pets);
+      // console.log('this.guests.pets :>> ', this.guests.pets);
     },
     onClickedOutside() {
       this.openDatesModal = false,
@@ -173,7 +173,7 @@ export default {
       infants = this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
       pets = this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
       totalGuests = `${guests} ${infants} ${pets}`
-      console.log('totalGuests :>> ', totalGuests);
+      // console.log('totalGuests :>> ', totalGuests);
       return totalGuests
     }
   }
