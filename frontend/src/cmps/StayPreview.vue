@@ -1,5 +1,5 @@
 <template>
-  <li class="stay-preview-container">
+  <li class="stay-preview-container" @click="goToDeatails">
     <section class="stay-preview clickable">
       <div class="stay-preview">
         <div class="stay-preview-gallery">
@@ -85,6 +85,10 @@ export default {
       // getRating() {
       //   return this.stay.reviews.rate / stay.country.length ;
       // },
+      goToDeatails() {
+      this.$router.push(`/stay/${this.stay._id}`);
+      window.scrollTo(0, 0);
+    },
       getStay(){
         this.$emit('getStay',{stayId:this.stay.id})
       },

@@ -72,13 +72,24 @@ export default {
     },
   },
   actions: {
+    // async login({ commit, dispatch }, { userCred }) {
+    //   console.log('userCred1111 :>> ', userCred);
+    //   try {
+    //     const user = await userService.login(userCred);
+    //     commit({ type: "setLoggedinUser", user });
+    //     console.log('user :>> ', user);
+    //     // dispatch({ type: "loadStaysUser" });
+    //     return user;
+    //   } catch (err) {
+    //     console.log("userStore: Error in login", err);
+    //     throw err;
+    //   }
+    // },
     async login({ commit, dispatch }, { userCred }) {
-      console.log('userCred1111 :>> ', userCred);
       try {
         const user = await userService.login(userCred);
         commit({ type: "setLoggedinUser", user });
-        console.log('user :>> ', user);
-        // dispatch({ type: "loadStaysUser" });
+        dispatch({ type: "loadStaysUser" });
         return user;
       } catch (err) {
         console.log("userStore: Error in login", err);
@@ -134,12 +145,10 @@ export default {
         const stays = await userService.getUserLikedStays(likedStays);
         stays.forEach((stay) => (stay.isLiked = true));
         return stays;
-      //   commit({ type: 'setOrderUser', order })
-      // } catch (err) {
-      //   console.error("Cannot Load stays", err);
-      }
-      catch (err){
-
+        // commit({ type: 'setOrderUser', orders })
+      } catch (err) {
+        console.error("Cannot Load stays", err);
+        throw err;
       }
     },
     async saveUser(context, payload) {
@@ -153,19 +162,19 @@ export default {
       }
     },
 
-    async loadAndWatchUser({ commit }, { userId }) {
-      try {
-        const user = await userService.getById(userId);
-        commit({ type: 'setWatchedUser', user })
-        socketService.emit(SOCKET_EMIT_USER_WATCH, userId)
-        socketService.off(SOCKET_EVENT_USER_UPDATED)
-        socketService.on(SOCKET_EVENT_USER_UPDATED, user => {
-          commit({ type: 'setWatchedUser', user })
-        })
-      } catch (err) {
-        console.log('userStore: Error in loadAndWatchUser', err)
-        throw err
-      }
-    },
+    // async loadAndWatchUser({ commit }, { userId }) {
+    //   try {
+    //     const user = await userService.getById(userId);
+    //     commit({ type: 'setWatchedUser', user })
+    //     socketService.emit(SOCKET_EMIT_USER_WATCH, userId)
+    //     socketService.off(SOCKET_EVENT_USER_UPDATED)
+    //     socketService.on(SOCKET_EVENT_USER_UPDATED, user => {
+    //       commit({ type: 'setWatchedUser', user })
+    //     })
+    //   } catch (err) {
+    //     console.log('userStore: Error in loadAndWatchUser', err)
+    //     throw err
+    //   }
+    // },
   }
-}
+};

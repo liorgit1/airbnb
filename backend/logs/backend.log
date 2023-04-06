@@ -2195,3 +2195,91 @@
 6.4.2023, 18:02:39 - INFO - Server is running on port: 3030 
 =======
 >>>>>>> 1759eb8600479e636e581b4e55071074ce349251
+6.4.2023, 18:08:42 - INFO - Server is running on port: 3030 
+6.4.2023, 18:08:42 - INFO - Hi | 90 | Bobo 
+6.4.2023, 18:10:04 - DEBUG - auth.service - login with username: lior 
+6.4.2023, 18:10:05 - INFO - User login:  | {"_id":"642edc049cdd5e1784ba127d","username":"lior","fullname":"lior L","likedStays":[],"reservations":[{"name":"Old Montreal.  ( Rent for at least 12 months)","hostId":"45563128","country":"Canada","guestName":"lior L","stay_id":"6426def81a9c822559a29b33","pricePerNight":149,"guests":{"adults":1,"kids":5,"infants":0,"pets":0},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=43","created":"6/4/2023","startDate":"4/8/2023","endDate":"4/29/2023","totalPrice":3129,"_id":"642edd2b9cdd5e1784ba127f"},{"name":"Deniz, orman ve şehir manzaralı.","hostId":"10673042","country":"Turkey","guestName":"lior L","stay_id":"6426def81a9c822559a29b43","pricePerNight":527,"guests":{"adults":1,"kids":1,"infants":null,"pets":null},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=13","created":"6/4/2023","startDate":"4/1/2023","endDate":"4/8/2023","totalPrice":3689,"_id":"642edc409cdd5e1784ba127e"}],"whishList":[]} 
+6.4.2023, 18:45:48 - DEBUG - auth.service - login with username: lior 
+6.4.2023, 18:45:48 - INFO - User login:  | {"_id":"642edc049cdd5e1784ba127d","username":"lior","fullname":"lior L","likedStays":[],"reservations":[{"name":"Old Montreal.  ( Rent for at least 12 months)","hostId":"45563128","country":"Canada","guestName":"lior L","stay_id":"6426def81a9c822559a29b33","pricePerNight":149,"guests":{"adults":1,"kids":5,"infants":0,"pets":0},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=43","created":"6/4/2023","startDate":"4/8/2023","endDate":"4/29/2023","totalPrice":3129,"_id":"642edd2b9cdd5e1784ba127f"},{"name":"Deniz, orman ve şehir manzaralı.","hostId":"10673042","country":"Turkey","guestName":"lior L","stay_id":"6426def81a9c822559a29b43","pricePerNight":527,"guests":{"adults":1,"kids":1,"infants":null,"pets":null},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=13","created":"6/4/2023","startDate":"4/1/2023","endDate":"4/8/2023","totalPrice":3689,"_id":"642edc409cdd5e1784ba127e"}],"whishList":[]} 
+6.4.2023, 19:05:31 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:05:31 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:05:31 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:05:31 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:08:31 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:09:59 - INFO - Hi | 90 | Bobo 
+6.4.2023, 19:10:00 - INFO - Server is running on port: 3030 
+6.4.2023, 19:10:48 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:10:48 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:10:48 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:10:48 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:10:48 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:10:48 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:10:48 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:10:48 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:01 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:01 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:01 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:01 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:02 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:02 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:02 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:18:02 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:22:05 - INFO - Server is running on port: 3030 
+6.4.2023, 19:22:05 - INFO - Hi | 90 | Bobo 
+6.4.2023, 19:22:07 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:22:07 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:22:07 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:22:07 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:22:46 - DEBUG - auth.service - login with username: lior 
+6.4.2023, 19:22:46 - INFO - User login:  | {"_id":"642edc049cdd5e1784ba127d","username":"lior","fullname":"lior L","likedStays":[{},{},{},{}],"reservations":[{"name":"Old Montreal.  ( Rent for at least 12 months)","hostId":"45563128","country":"Canada","guestName":"lior L","stay_id":"6426def81a9c822559a29b33","pricePerNight":149,"guests":{"adults":1,"kids":5,"infants":0,"pets":0},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=43","created":"6/4/2023","startDate":"4/8/2023","endDate":"4/29/2023","totalPrice":3129,"_id":"642edd2b9cdd5e1784ba127f"},{"name":"Deniz, orman ve şehir manzaralı.","hostId":"10673042","country":"Turkey","guestName":"lior L","stay_id":"6426def81a9c822559a29b43","pricePerNight":527,"guests":{"adults":1,"kids":1,"infants":null,"pets":null},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=13","created":"6/4/2023","startDate":"4/1/2023","endDate":"4/8/2023","totalPrice":3689,"_id":"642edc409cdd5e1784ba127e"}],"whishList":[]} 
+6.4.2023, 19:25:44 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:44 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:44 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:44 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:44 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:44 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:44 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:44 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:25:45 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:38:40 - INFO - Hi | 90 | Bobo 
+6.4.2023, 19:38:40 - INFO - Server is running on port: 3030 
+6.4.2023, 19:47:53 - INFO - Hi | 90 | Bobo 
+6.4.2023, 19:47:53 - INFO - Server is running on port: 3030 
+6.4.2023, 19:48:49 - DEBUG - auth.service - login with username: lior 
+6.4.2023, 19:48:50 - INFO - User login:  | {"_id":"642edc049cdd5e1784ba127d","username":"lior","fullname":"lior L","likedStays":[{},{},{},{}],"reservations":[{"name":"Old Montreal.  ( Rent for at least 12 months)","hostId":"45563128","country":"Canada","guestName":"lior L","stay_id":"6426def81a9c822559a29b33","pricePerNight":149,"guests":{"adults":1,"kids":5,"infants":0,"pets":0},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=43","created":"6/4/2023","startDate":"4/8/2023","endDate":"4/29/2023","totalPrice":3129,"_id":"642edd2b9cdd5e1784ba127f"},{"name":"Deniz, orman ve şehir manzaralı.","hostId":"10673042","country":"Turkey","guestName":"lior L","stay_id":"6426def81a9c822559a29b43","pricePerNight":527,"guests":{"adults":1,"kids":1,"infants":null,"pets":null},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=13","created":"6/4/2023","startDate":"4/1/2023","endDate":"4/8/2023","totalPrice":3689,"_id":"642edc409cdd5e1784ba127e"}],"whishList":[]} 
+6.4.2023, 19:49:34 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - while finding stay [object Object] | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:49:34 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+6.4.2023, 19:50:36 - INFO - Hi | 90 | Bobo 
+6.4.2023, 19:50:36 - INFO - Server is running on port: 3030 

@@ -1,13 +1,9 @@
 <template>
-    <section class="main-layout">
+    <section class="detailsImgContainer">
       <h1>Wish list</h1>
   
-      <stay-list
-        :stays="stays"
-        v-if="isLiked"
-        @stayLiked="setLiked"
-      >
-      </stay-list>
+      
+     
     </section>
   </template>
   
