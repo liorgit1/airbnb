@@ -24,7 +24,7 @@ async function getUserStays(entityId) {
   let userStays = []
   const stays = await stayService.query();
   try {
-    userStays = stays.filter(stay => stay.host.id === entityId)
+    userStays = stays.filter(stay => stay._id === entityId)
     console.log('userStays');
     return userStays
   } catch {
@@ -117,7 +117,7 @@ async function signup(userDetails) {
 
 (async () => {
   var user = getLoggedinUser()
-  if (user) socketService.emit('set-user-socket', user.id)
+  if (user) socketService.emit('set-user-socket', user._id)
 })();
 
 

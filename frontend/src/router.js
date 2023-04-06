@@ -51,6 +51,11 @@ const routes = [
     name: 'user-dashboard',
     component: userDashboard,
 },
+{
+  path: '/login',
+  name: 'userLogin',
+  component: stayIndex,
+},
 ];
 
 

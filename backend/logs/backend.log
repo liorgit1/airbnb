@@ -2180,3 +2180,25 @@
 >>>>>>> a9e3b4cce05c72127a892f5eca9a2ae5a5ef1c67
 4.4.2023, 8:48:08 - INFO - Hi | 90 | Bobo 
 4.4.2023, 8:48:09 - INFO - Server is running on port: 3030 
+4.4.2023, 8:48:29 - INFO - Hi | 90 | Bobo 
+4.4.2023, 8:48:29 - INFO - Server is running on port: 3030 
+4.4.2023, 8:51:12 - INFO - Hi | 90 | Bobo 
+4.4.2023, 8:51:12 - INFO - Server is running on port: 3030 
+4.4.2023, 8:51:49 - INFO - Hi | 90 | Bobo 
+4.4.2023, 8:51:49 - INFO - Server is running on port: 3030 
+4.4.2023, 9:02:04 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 9:02:05 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 9:08:27 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 9:08:27 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 9:08:37 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 9:08:37 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 9:10:55 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 9:10:55 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 9:15:08 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 9:15:08 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 9:34:16 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 9:34:17 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 9:40:05 - DEBUG - auth.service - login with username: lior 
+4.4.2023, 9:40:05 - ERROR - Failed to Login Invalid username or password 
+4.4.2023, 17:51:41 - INFO - Hi | 90 | Bobo 
+4.4.2023, 17:51:41 - INFO - Server is running on port: 3030 

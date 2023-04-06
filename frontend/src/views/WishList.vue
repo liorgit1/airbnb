@@ -1,11 +1,10 @@
 <template>
-    <section class="main-layout2 wish-list">
+    <section class="main-layout">
       <h1>Wish list</h1>
   
       <stay-list
-        @getStay="getStay" 
         :stays="stays"
-        v-if="stays"
+        v-if="isLiked"
         @stayLiked="setLiked"
       >
       </stay-list>
@@ -27,6 +26,7 @@
     },
     async created() {
       this.user = this.$store.getters.user;
+      console.log(this.user);
       this.stays = await this.$store.dispatch({
         type: "loadStaysLikedUser",
         likedStays: this.user.likedStays,
