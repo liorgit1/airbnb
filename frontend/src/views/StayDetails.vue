@@ -127,17 +127,17 @@ export default {
             order.endDate = orderInfo.endDate;
             const totalPrice =  orderService.getTotalPrice(order);
             order.totalPrice = totalPrice;
-            console.log(" totalPrice",  totalPrice);
-            console.log(" order.total",  order.total);
+            // console.log(" totalPrice",  totalPrice);
+            // console.log(" order.total",  order.total);
 
             const orderToSave = JSON.parse(JSON.stringify(order));
             if (!await order.totalPrice) {
-                console.log('no stay time stydetails134');
+                // console.log('no stay time stydetails134');
                 return;
             }
             
             try {
-                console.log("orderToSave", orderToSave);
+                // console.log("orderToSave", orderToSave);
                 const newOrder = await this.$store.dispatch({
                     type: "addNewOrder",
                     orderToSave,
