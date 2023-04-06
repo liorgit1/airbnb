@@ -2161,3 +2161,19 @@
 3.4.2023, 19:38:14 - INFO - Server is running on port: 3030 
 3.4.2023, 20:08:32 - INFO - Hi | 90 | Bobo 
 3.4.2023, 20:08:33 - INFO - Server is running on port: 3030 
+3.4.2023, 22:55:51 - INFO - Hi | 90 | Bobo 
+3.4.2023, 22:55:51 - INFO - Server is running on port: 3030 
+3.4.2023, 22:57:11 - DEBUG - auth.service - login with username: yiftach 
+3.4.2023, 22:57:11 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 22:57:35 - DEBUG - auth.service - login with username: yiftach 
+3.4.2023, 22:57:35 - ERROR - Failed to Login Invalid username or password 
+3.4.2023, 23:06:50 - DEBUG - auth.service - signup with username: 12345678, fullname: 12345678 
+3.4.2023, 23:06:51 - DEBUG - auth.route - new account created: {"username":"12345678","password":"$2b$10$pV5Y3qWcCu45zbTFrz6bMeOt99i.PDH6oClRribJPy/iv6cLTKxyi","fullname":"12345678","likedStays":[],"reservations":[],"whishList":[],"_id":"642b31dbef02c9cfbb14e41b"} 
+3.4.2023, 23:06:51 - DEBUG - auth.service - login with username: 12345678 
+3.4.2023, 23:06:51 - INFO - User login:  | {"_id":"642b31dbef02c9cfbb14e41b","username":"12345678","fullname":"12345678","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:07:11 - DEBUG - auth.service - login with username: 12345678 
+3.4.2023, 23:07:11 - INFO - User login:  | {"_id":"642b31dbef02c9cfbb14e41b","username":"12345678","fullname":"12345678","likedStays":[],"reservations":[],"whishList":[]} 
+3.4.2023, 23:07:12 - ERROR - cannot update user 642b31dbef02c9cfbb14e41b | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+3.4.2023, 23:07:12 - ERROR - Failed to update user | TypeError: Class constructor ObjectId cannot be invoked without 'new' 
+4.4.2023, 0:15:14 - DEBUG - auth.service - login with username: 4444 
+4.4.2023, 0:15:14 - ERROR - Failed to Login Invalid username or password 
