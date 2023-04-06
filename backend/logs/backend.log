@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 1.4.2023, 19:23:08 - INFO - Hi | 90 | Bobo 
 1.4.2023, 19:23:08 - INFO - Server is running on port: 3030 
 1.4.2023, 19:27:58 - INFO - Req was made 
@@ -2160,24 +2159,9 @@
 >>>>>>> 582790722759faf4b83332912b93eeb9d24c325c
 3.4.2023, 19:38:14 - INFO - Hi | 90 | Bobo 
 3.4.2023, 19:38:14 - INFO - Server is running on port: 3030 
-<<<<<<< HEAD
-3.4.2023, 20:32:07 - INFO - Hi | 90 | Bobo 
-3.4.2023, 20:32:08 - INFO - Server is running on port: 3030 
-3.4.2023, 22:13:50 - DEBUG - auth.service - login with username: 222 
-3.4.2023, 22:13:50 - ERROR - Failed to Login Invalid username or password 
-3.4.2023, 22:17:43 - DEBUG - auth.service - login with username: rrr 
-3.4.2023, 22:17:44 - INFO - User login:  | {"_id":"6429ed873b082fcf3d5fc218","username":"rrr","fullname":"rrr","score":0} 
-3.4.2023, 22:37:12 - DEBUG - auth.service - signup with username: DDD, fullname: DDD 
-3.4.2023, 22:37:13 - DEBUG - auth.route - new account created: {"username":"DDD","password":"$2b$10$Adi.QwRaZ.OQfPIortNnc.GP8ukPOk9cARnAOxQUdOes9S0ibTHOu","fullname":"DDD","likedStays":[],"reservations":[],"whishList":[],"_id":"642b2ae95f658d19b3454809"} 
-3.4.2023, 22:37:13 - DEBUG - auth.service - login with username: DDD 
-3.4.2023, 22:37:14 - INFO - User login:  | {"_id":"642b2ae95f658d19b3454809","username":"DDD","fullname":"DDD","likedStays":[],"reservations":[],"whishList":[]} 
-3.4.2023, 22:37:57 - DEBUG - auth.service - signup with username: AAAA, fullname: AAAA 
-3.4.2023, 22:37:57 - DEBUG - auth.route - new account created: {"username":"AAAA","password":"$2b$10$mhglOH8DKdb4YQaicEbBGOPlVub6ZuSgB4AZqZvh0xhzOzU6J/CP.","fullname":"AAAA","likedStays":[],"reservations":[],"whishList":[],"_id":"642b2b155f658d19b345480a"} 
-3.4.2023, 22:37:57 - DEBUG - auth.service - login with username: AAAA 
-3.4.2023, 22:37:58 - INFO - User login:  | {"_id":"642b2b155f658d19b345480a","username":"AAAA","fullname":"AAAA","likedStays":[],"reservations":[],"whishList":[]} 
-=======
 3.4.2023, 20:08:32 - INFO - Hi | 90 | Bobo 
 3.4.2023, 20:08:33 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
 >>>>>>> a9e3b4cce05c72127a892f5eca9a2ae5a5ef1c67
 4.4.2023, 8:48:08 - INFO - Hi | 90 | Bobo 
 4.4.2023, 8:48:09 - INFO - Server is running on port: 3030 
@@ -2209,3 +2193,5 @@
 6.4.2023, 4:14:23 - INFO - Server is running on port: 3030 
 6.4.2023, 18:02:39 - INFO - Hi | 90 | Bobo 
 6.4.2023, 18:02:39 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> 1759eb8600479e636e581b4e55071074ce349251
