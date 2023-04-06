@@ -6,7 +6,6 @@
     @getStay="getStay"  
     :stays="stays" 
     v-if="stays"
-      @stayLiked="setLiked"
     />
   </main>
   <login-modal
@@ -31,12 +30,12 @@ export default {
   data() {
     return {
       modalLoginIsOpen: false,
-      stayLiked: false,
+      isLiked: false,
     };
   },
 
   created() {
-    this.$store.dispatch({ type: 'loadStays' })
+    this.$store.dispatch({ type: 'loadStaysLikedUser' })
   },
   methods: {
     getStay({ stayId }) {

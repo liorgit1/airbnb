@@ -116,6 +116,6 @@ const users = [
 
 
 // Example - figuring up if the user is an owner:
-// userService.login()
+// userService.w()
   //  const userStays = stayService.query({ownerId: loggeinUser._id})
   //  loggeinUser.isOwner = userStays.length > 0

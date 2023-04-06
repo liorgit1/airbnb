@@ -24,7 +24,7 @@ async function getUserStays(entityId) {
   let userStays = []
   const stays = await stayService.query();
   try {
-    userStays = stays.filter(stay => stay.host.id === entityId)
+    userStays = stays.filter(stay => stay._id === entityId)
     console.log('userStays');
     return userStays
   } catch {
@@ -85,7 +85,9 @@ function getLoggedinUser() {
 }
 
 async function saveUser(user) {
+  console.log('user11111111111111 :>> ', user);
   user = await httpService.put(`user/${user._id}`, user);
+  console.log('user222222222222 :>> ', user);
   // Handle case in which admin updates other user's details
   if (getLoggedinUser()._id === user._id) _saveLocalUser(user);
   return user;
@@ -117,7 +119,7 @@ async function signup(userDetails) {
 
 (async () => {
   var user = getLoggedinUser()
-  if (user) socketService.emit('set-user-socket', user.id)
+  if (user) socketService.emit('set-user-socket', user._id)
 })();
 
 

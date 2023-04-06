@@ -36,6 +36,7 @@
           class="btn-login"
           @mousemove="calcMouse"
           :style="mousePos"
+          @click="setSignup"
         >
           Sign Up
         </button>
@@ -75,7 +76,7 @@
         this.closeModal();
       },
       closeModal() {
-        this.$emit("closeSingUpModal")
+        this.$emit("closeSignUpModal")
       },
       calcMouse(e) {
          const div = this.$refs.myRefs;

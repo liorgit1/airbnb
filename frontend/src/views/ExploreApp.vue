@@ -6,7 +6,10 @@
     <h4 v-if="stays">over {{ stays.length - 1 }} homes</h4>
     <stay-list
      @getStay="getStay" 
-     :stays="stays" v-if="stays">
+     :stays="stays"
+      v-if="stays"
+      @stayLiked="setLiked"    
+      >
     </stay-list>
   </section>
 </template>

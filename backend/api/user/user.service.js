@@ -16,7 +16,7 @@ async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
     try {
         const collection = await dbService.getCollection('user')
-        var users = await collection.find(criteria).sort({nickname: -1}).toArray()
+        var users = await collection.find(criteria).sort({ nickname: -1 }).toArray()
         users = users.map(user => {
             delete user.password
             user.isHappy = true
@@ -68,10 +68,11 @@ async function update(user) {
     try {
         // peek only updatable fields!
         const userToSave = {
-            _id: ObjectId(user._id),
+            _id: new ObjectId(user._id),
             username: user.username,
             fullname: user.fullname,
             likedStays: [],
+            reservations: user.reservations
         }
         const collection = await dbService.getCollection('user')
         await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
@@ -94,13 +95,13 @@ async function add(user) {
             password: user.password,
             fullname: user.fullname,
             likedStays: [],
-            
-            
-            
+
+
+
             // score: user.score || 0
-            reservations:[],
-            whishList:[],
-            
+            reservations: [],
+            whishList: [],
+
         }
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)

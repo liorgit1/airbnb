@@ -17,8 +17,8 @@
                 <span class="flex" style="margin-inline-end: auto;">
 
                     <img style="padding-block: 6px; padding-inline-end: 9px ;width: 22px;"
-                        src="../assets/pngs/star.png"><span style="font-size: 15px;">{{ ` ${totalRate}  ·    ` }}</span>
-                    <p class="placeLink fs16"> {{ ` ${stay.reviews.length} reviews  · ` }}</p>
+                        src="../assets/pngs/star.png"><span style="font-size: 15px;">{{ ` ${totalRate} · ` }}</span>
+                    <p class="placeLink fs16"> {{ ` ${stay.reviews.length} reviews · ` }}</p>
                     <p class="placeLink fs16">{{ `${stay.loc.city} , ${stay.loc.country} ` }}</p>
                 </span>
                 <span class="fs16">
@@ -52,7 +52,7 @@
         </div>
         <section class="info-container">
             <!-- <div>   -->
-            <Reservation @click.stop :stay="stay" />
+            <Reservation @click.stop :stay="stay" @setOrder="setOrder" />
             <!-- </div> -->
             <div class="flex-col">
                 <StayInfo :stay="stay" />
@@ -79,7 +79,7 @@ import StayAmenities from '../cmps/StayAmenities.vue'
 import StayReviews from '../cmps/StayReviews.vue'
 import AppHeader from '../cmps/AppHeader.vue'
 
-
+import { orderService } from "../services/order-service.js"
 import { eventBus } from '../services/event-bus.service.js'
 import { stayService } from '../services/stay-service.js'
 
@@ -101,7 +101,7 @@ export default {
         // this.$store.dispatch({ type: 'loadStays' })
 
         const { id } = this.$route.params
-        console.log('this.$route.params :>> ', this.$route.params);
+        // console.log('this.$route.params :>> ', this.$route.params);
 
         if (id) {
             const stay = await stayService.getById(id)
@@ -115,7 +115,49 @@ export default {
         closeModal() {
             eventBus.emit('closeModal')
 
-        }
+        }, async setOrder(orderInfo) {
+            const order = orderService.getEmptyOrder();
+            order.name = this.stay.name;
+            order.country = this.stay.loc.country;
+            order.stay_id = this.stay._id;
+            order.hostId = this.stay.host.id;
+            order.pricePerNight = this.stay.price;
+            order.guests = orderInfo.guests;
+            order.startDate = orderInfo.startDate;
+            order.endDate = orderInfo.endDate;
+            const totalPrice =  orderService.getTotalPrice(order);
+            order.totalPrice = totalPrice;
+            // console.log(" totalPrice",  totalPrice);
+            // console.log(" order.total",  order.total);
+
+            const orderToSave = JSON.parse(JSON.stringify(order));
+            if (!await order.totalPrice) {
+                // console.log('no stay time stydetails134');
+                return;
+            }
+            
+            try {
+                // console.log("orderToSave", orderToSave);
+                const newOrder = await this.$store.dispatch({
+                    type: "addNewOrder",
+                    orderToSave,
+                });
+
+                // ElNotification({
+                //     title: "Success",
+                //     message:
+                //         "Your booking request has been sent to the host",
+                //     type: "success",
+                // });
+
+                // socketService.emit("addOrder", orderToSave);
+            } catch {
+                console.error;
+            }
+        },
+
+
+
     },
     components: {
         Reservation,

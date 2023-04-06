@@ -80,6 +80,20 @@ export default {
   created(){
     if(this.stay.isLiked === true) this.liked = true
       },
+      
+    methods: {
+      // getRating() {
+      //   return this.stay.reviews.rate / stay.country.length ;
+      // },
+      getStay(){
+        this.$emit('getStay',{stayId:this.stay.id})
+      },
+      setLiked() {
+        this.liked = !this.liked;
+        this.$emit('stayLiked', this.stay.id)
+  
+      }
+    },
 
   computed: {
     averageCleanliness() {
@@ -113,14 +127,6 @@ export default {
     
 
 
-  methods: {
-    // getRating() {
-    //   return this.stay.reviews.rate / stay.country.length ;
-    // },
-    // getStay(){
-    //   this.$emit('getStay',{stayId:this.stay._id})
-    // }
-  },
   // computed: {
   //   isLiked() {
   //     return this.liked ? "isLiked" : "";

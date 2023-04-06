@@ -26,10 +26,25 @@ async function query() {
     }
 }
 
-function getTotalPrice(order){
-    const days = Math.abs(order.stayTime[1] - order.stayTime[0])
-    const diffDays = Math.ceil(days / (1000 * 60 * 60 * 24))
-    return (diffDays * order.pricePerNight)
+function getTotalPrice(order) {
+    // console.log('order.startDate :>> ', order.startDate);
+    // const days = Math.abs(order.startDate - order.endDate)
+    // const diffDays = Math.ceil(days / (1000 * 60 * 60 * 24))
+    // return (diffDays * order.pricePerNight)
+
+
+    const startDate = new Date(order.startDate);
+    const endDate = new Date(order.endDate);
+    const days = Math.abs(startDate - endDate);
+    const diffDays = Math.ceil(days / (1000 * 60 * 60 * 24));
+    console.log('gettotalprice');
+    console.log('startDate :>> ', startDate);
+    console.log('endDate :>> ', endDate);
+    console.log('days :>> ', days);
+    console.log('diffDays :>> ', diffDays);
+    console.log('order :>> ', order);
+    console.log('diffDays * order.pricePerNight :>> ', diffDays * order.pricePerNight);
+    return (diffDays * order.pricePerNight);
 
 }
 async function getById(entityId) {
@@ -42,40 +57,40 @@ async function getById(entityId) {
 
 
 async function add(orderDetails) {
-    try{
+    try {
         if (orderDetails._id) {
             orderDetails = await httpService.put(`${ENDPOINT}/${orderDetails._id}`, orderDetails);
             return orderDetails
-        } 
-           else{
+        }
+        else {
             const addedOrder = await httpService.post(ENDPOINT, orderDetails)
             console.log(addedOrder);
             return addedOrder
-           } 
+        }
 
     } catch {
         console.error('cannot load order')
     }
-   
-      
+
+
 }
 
 function getEmptyOrder() {
     const key = utilService.getRandomInt(0, 50)
-    let userName =  userService.getLoggedinUser()
-    if(!userName)  userName = {fullname:'guset'}
+    let userName = userService.getLoggedinUser()
+    if (!userName) userName = { fullname: 'guset' }
     return {
         name: '',
-        hostId:'',
+        hostId: '',
         country: '',
-        guestName:userName.fullname,
+        guestName: userName.fullname,
         stay_id: '',
         pricePerNight: '',
         guests: '',
         stayTime: '',
         status: 'Pending',
         ImgUrl: `https://i.pravatar.cc/150?img=${key}`,
-        created : new Intl.DateTimeFormat(['ban', 'id']).format(new Date())
+        created: new Intl.DateTimeFormat(['ban', 'id']).format(new Date())
     };
 
 
