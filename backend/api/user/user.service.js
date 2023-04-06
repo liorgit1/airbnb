@@ -12,14 +12,14 @@ module.exports = {
     add
 }
 
-async function query(filterBy = {}) {
-    const criteria = _buildCriteria(filterBy)
+async function query() {
+    // const criteria = _buildCriteria(filterBy)
     try {
         const collection = await dbService.getCollection('user')
-        var users = await collection.find(criteria).sort({ nickname: -1 }).toArray()
+        var users = await collection.find().sort({ nickname: -1 }).toArray()
         users = users.map(user => {
             delete user.password
-            user.isHappy = true
+            // user.isHappy = true
             user.createdAt = new ObjectId(user._id).getTimestamp()
             // Returning fake fresh data
             // user.createdAt = Date.now() - (1000 * 60 * 60 * 24 * 3) // 3 days ago
@@ -47,6 +47,7 @@ async function getByUsername(username) {
     try {
         const collection = await dbService.getCollection('user')
         const user = await collection.findOne({ username })
+        console.log(user, 'getByUsername')
         return user
     } catch (err) {
         logger.error(`while finding user ${username}`, err)
@@ -65,6 +66,7 @@ async function remove(userId) {
 }
 
 async function update(user) {
+    console.log('user22',user);
     try {
         // peek only updatable fields!
         const userToSave = {

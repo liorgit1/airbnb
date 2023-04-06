@@ -5,11 +5,10 @@
   <section class="main-layout">
     <h4 v-if="stays">over {{ stays.length - 1 }} homes</h4>
     <stay-list
-     @getStay="getStay" 
-     :stays="stays"
+      :stays="stays"
       v-if="stays"
-      @stayLiked="setLiked"    
-      >
+      @stayLiked="setLiked"
+    >
     </stay-list>
   </section>
 </template>
@@ -18,18 +17,13 @@
 import appHeader from '../cmps/AppHeader.vue'
 import headerFilter from '../cmps/HeaderFilter.vue'
 import stayList from '../cmps/StayList.vue'
-import typePlaceModal from '../cmps/type-place-modal.vue'
+import loginModal from '../cmps/login-modal.vue'
+// import typePlaceModal from '../cmps/type-place-modal.vue'
 import { stayService } from '../services/stay-service'
 // import { stayService } from '../services/stay.service.local'
 
 export default {
   name: 'explore',
-  components: {
-    appHeader,
-    stayList,
-    typePlaceModal,
-    headerFilter
-  },
   data() {
     return {
       stays: [],
@@ -53,17 +47,12 @@ export default {
     this.kids = kids
     this.infants = infants,
     this.pets = pets
-    },
-
-    methods: {
-    getStay({stayId}){
-      this.$router.push(`/stay/${stayId}?startDate=${this.startDate}&endDate=${this.endDate}&adults=${this.adults}&kids=${this.kids}&infants=${this.infants}&pets=${this.pets}`)
-    //   this.$router.push( '/stay/' + stayId ,{  query: { country: this.country , startDate:this.getDates.start , endDate:this.getDates.end,
-    // adults:this.guests.adults , kids:this.guests.kids , infants:this.guests.infants , pets:this.guests.pets } })
-    },
   },
-
+  
   computed: {
+    stays() {
+      return this.$store.getters.stays;
+    },
       // const filteredByGuests = filteredByCountry.filter((stay) => {
       //   return (
       //     stay.capacity >= Number(this.filterBy.guests) || !this.filterBy.guests
@@ -77,7 +66,69 @@ export default {
         return 'Explore Stays'
       }
     },
-} 
+    methods: {
+    // openModalLogin() {
+    //   this.modalLoginIsOpen = true;
+    // },
+    // closeLoginModal() {
+    //   this.modalLoginIsOpen = false;
+    // },
+    async setLogin(user) {
+      try {
+        await this.$store.dispatch({
+          type: "login",
+          userCred: user,
+        });
+      } catch (err) {
+        console.log(err);
+        this.msg = "Failed to login";
+      }
+      this.modalLoginIsOpen = false;
+    },
+    // ChangeModalPrice() {
+    //   this.modalPrice = !this.modalPrice;
+    // },
+    // ChangeModalType() {
+    //   this.modalType = !this.modalType;
+    // },
+    setSort(sortBy) {
+      this.filterBy.type = sortBy;
+      this.$store.dispatch({
+        type: "setFilter",
+        filterBy: JSON.parse(JSON.stringify(this.filterBy)),
+      });
+      this.modalType = false;
+    },
+    setSortAmenities(amenity) {
+      if (this.filterBy.amenities.includes(amenity)) return;
+
+      this.filterBy.amenities.push(amenity);
+      this.$store.dispatch({
+        type: "setFilter",
+        filterBy: JSON.parse(JSON.stringify(this.filterBy)),
+      });
+    },
+    setFilterByPrice(filterByPrice) {
+      this.filterBy.price.minPrice = filterByPrice.minPrice;
+      this.filterBy.price.maxPrice = filterByPrice.maxPrice;
+      this.$store.dispatch({
+        type: "setFilter",
+        filterBy: JSON.parse(JSON.stringify(this.filterBy)),
+      });
+      this.modalPrice = false;
+    },
+    setLiked(stay) {
+      this.$store.dispatch({
+        type: "setLikedStay",
+        stayId: JSON.parse(JSON.stringify(stay)),
+      });
+    },
+  },
+  components: {
+    stayList,
+    loginModal,
+  },
+};
 </script>
 
 

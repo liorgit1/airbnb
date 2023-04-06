@@ -13,7 +13,7 @@ export const userService = {
   getLoggedinUser,
   saveUser,
   getUserStays,
-  getUserOrder,
+  getUserOrdar,
   getUserLikedStays,
   login,
   signup,
@@ -24,7 +24,7 @@ async function getUserStays(entityId) {
   let userStays = []
   const stays = await stayService.query();
   try {
-    userStays = stays.filter(stay => stay._id === entityId)
+    userStays = stays.filter(stay => stay.host._id === entityId)
     console.log('userStays');
     return userStays
   } catch {
@@ -40,16 +40,16 @@ async function getUserLikedStays(likedStays) {
     })
   );
 }
-async function getUserOrder(entityId) {
-  let userOrders = []
-  const orders = await orderService.query();
-  try {
-    userOrders = orders.filter(order => order.hostId === entityId)
-    return userOrders;
-  } catch {
-    console.error("cannot get user order");
-  }
-}
+// async function getUserOrder(entityId) {
+//   let userOrders = []
+//   const orders = await orderService.query();
+//   try {
+//     userOrders = orders.filter(order => order.hostId === entityId)
+//     return userOrders;
+//   } catch {
+//     console.error("cannot get user order");
+//   }
+// }
 //   async function getUserOrder() {
 //     const orders = await orderService.query();
 //     try {
@@ -60,14 +60,14 @@ async function getUserOrder(entityId) {
 //       console.error("cannot get user order");
 //     }
 // }
-// async function getUserOrdar(entityId){
-//     const orders =[]
-//        await orderService.query().then((entities) =>
-//           entities.find((entity) => {
-//             if(entity.stay_id === entityId) stays.push(entity)
-//           }))
-//       return orders
-// }
+async function getUserOrdar(entityId){
+    const orders =[]
+       await orderService.query().then((entities) =>
+          entities.find((entity) => {
+            if(entity.stay_id === entityId) stays.push(entity)
+          }))
+      return orders
+}
 
 async function login(userInfo) {
   try {
