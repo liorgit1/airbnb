@@ -21,7 +21,7 @@ export default {
         async addNewOrder({ commit }, { orderToSave }) {
             try {
                 const newOrder = await orderService.add(orderToSave)
-                console.log(orderToSave);
+                // console.log(orderToSave);
                 console.log(newOrder);
                 commit({ type: 'setOrder', newOrder })
                 commit({ type: 'addReservationUser', newReservation: newOrder })

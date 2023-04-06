@@ -85,7 +85,9 @@ function getLoggedinUser() {
 }
 
 async function saveUser(user) {
+  console.log('user11111111111111 :>> ', user);
   user = await httpService.put(`user/${user._id}`, user);
+  console.log('user222222222222 :>> ', user);
   // Handle case in which admin updates other user's details
   if (getLoggedinUser()._id === user._id) _saveLocalUser(user);
   return user;
