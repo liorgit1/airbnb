@@ -28,6 +28,7 @@
         class="btn-login"
         @mousemove="calcMouse"
         :style="mousePos"
+        @click="setLogin"
       >
         Log in
       </button>

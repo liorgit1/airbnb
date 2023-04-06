@@ -4,11 +4,13 @@
   <header>
     <section class="" :class="{ 'details-layout': isDetails, 'main-layout': !isDetails, }">
       <nav class="flex">
-
-        <RouterLink to="/" @click="isOpen = false && resetParams()" class="logo">
-
+        <RouterLink
+          to="/"
+          @click="isOpen = false && resetParams()"
+          class="logo"
+        >
           <RouterLink to="/" class="logo" />
-          <img class="logo-img" src="../assets/pngs/logo1.png">
+          <img class="logo-img" src="../assets/pngs/logo1.png" />
           <span class="logo-text">earthbnb</span>
         </RouterLink>
 
@@ -19,9 +21,11 @@
           <span v-else></span>
           <button v-if="!isDetails">Any week</button>
           <button v-else></button>
-          <span v-if="!isDetails" style="opacity: 50%;">|</span>
+          <span v-if="!isDetails" style="opacity: 50%">|</span>
           <span v-else></span>
-          <button v-if="!isDetails" style="font-weight: normal ; opacity: 80%;">Add guests</button>
+          <button v-if="!isDetails" style="font-weight: normal; opacity: 80%">
+            Add guests
+          </button>
           <button v-else></button>
           
           <button class="search-btn"> <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -29,30 +33,42 @@
               style="display: inherit; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px; margin-top: 0px !important;">
               <g fill="none">
                 <path
-                  d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
-                </path>
+                  d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"
+                ></path>
               </g>
-            </svg></button>
+            </svg>
+          </button>
         </div>
 
         <!--  -->
         <div v-else>
-          <HeaderFilter @close="isOpen = false">
-
-          </HeaderFilter>
+          <HeaderFilter @close="isOpen = false"> </HeaderFilter>
         </div>
 
         <!-- <RouterLink to="/">become a host</RouterLink> -->
 
-
-
-
-        <label @click="this.modalUser = !this.modalUser;" class="relative" @closeModalUser="closeModalUser">
+        <label
+          @click="this.modalUser = !this.modalUser"
+          class="relative"
+          @closeModalUser="closeModalUser"
+        >
           <button class="user-nav">
-
-            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+            <svg
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              role="presentation"
               focusable="false"
-              style="display: block; color: grey; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible; ">
+              style="
+                display: block;
+                color: grey;
+                height: 16px;
+                width: 16px;
+                stroke: currentcolor;
+                stroke-width: 3;
+                overflow: visible;
+              "
+            >
               <g fill="none" fill-rule="nonzero">
                 <path d="m2 16h28"></path>
                 <path d="m2 24h28"></path>
@@ -70,21 +86,29 @@
         <userDetailsModal v-if="modalUser" @openSignUpModal="openSignUpModal" @openModalLogin="toggleModalLogin"
           @closeLoginModal="modalLoginIsOpen = false" @closeModalDetails="closeModalUser" />
       </nav>
-      <signUpModal v-if="modalSignUpIsOpen" @closeSignUpModal="modalSignUpIsOpen = false" @signup="setSignup"></signUpModal>
-      <loginModal v-if="modalLoginIsOpen" @closeLoginModal="toggleModalLogin" @login="setLogin" />
+      <signUpModal
+        v-if="modalSignUpIsOpen"
+        @closeSignUpModal="modalSignUpIsOpen = false"
+        @signup="setSignup"
+        
+         ></signUpModal>
+      <loginModal
+        v-if="modalLoginIsOpen"
+        @closeLoginModal="modalLoginIsOpen = false"
+        @login="setLogin"
+        @setLogin="modalLoginIsOpen = false"
+      />
     </section>
   </header>
 </template>
-
+<!-- modalSignUpIsOpen = false -->
 <script>
-
-
-import HeaderFilter from './HeaderFilter.vue'
-import FilterList from './FilterList.vue'
-import vClickOutsideUmd from 'click-outside-vue3'
-import loginModal from './login-modal.vue'
-import userDetailsModal from './user-details-modal.vue';
-import signUpModal from './signUpModal.vue'
+import HeaderFilter from "./HeaderFilter.vue";
+import FilterList from "./FilterList.vue";
+import vClickOutsideUmd from "click-outside-vue3";
+import loginModal from "./login-modal.vue";
+import userDetailsModal from "./user-details-modal.vue";
+import signUpModal from "./signUpModal.vue";
 
 export default {
   // name: "stay-header",
@@ -105,17 +129,27 @@ export default {
 
 
   created() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   },
 
   unmounted() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   },
 
   methods: {
     toggleModalLogin() {
-      this.modalUser = false
-      this.modalLoginIsOpen = !this.modalLoginIsOpen
+      this.modalUser = false;
+      this.modalLoginIsOpen = !this.modalLoginIsOpen;
+    },
+
+    closeLoginModal() {
+      this.modalUser = false;
+      this.modalLoginIsOpen = false;
+    },
+
+    closeSignUpModal() {
+      this.modalUser = false;
+      this.modalSignUpIsOpen = false;
     },
 
     openSignUpModal() {
@@ -138,7 +172,7 @@ export default {
 
         userCred: user,
       });
-      this.modalLoginIsOpen = false;
+      this.modalSingUpIsOpen = false;
     },
     openModalUser() {
       this.modalUser = true;
@@ -148,9 +182,8 @@ export default {
     },
     toggleModalUser() {
       this.modalUser = !this.modalUser;
-      console.log('!this.modalUser; :>> ', !this.modalUser);
+      console.log("!this.modalUser; :>> ", !this.modalUser);
     },
-
 
     handleRoute() {
       console.log('thisRoute', this.thisRoute);
@@ -171,42 +204,40 @@ export default {
     },
 
     handleScroll() {
-      this.isOpen = false
+      this.isOpen = false;
     },
-
 
     toggle() {
       if (this.opened) {
-        return this.hide()
+        return this.hide();
       }
-      return this.show()
+      return this.show();
     },
     show() {
       this.opened = true;
-      setTimeout(() => document.addEventListener('click', this.hide), 0);
+      setTimeout(() => document.addEventListener("click", this.hide), 0);
     },
     hide() {
       this.opened = false;
-      document.removeEventListener('click', this.hide);
-    }
+      document.removeEventListener("click", this.hide);
+    },
   },
 
   computed: {
     thisRoute() {
-      return this.$route.name
+      return this.$route.name;
     },
 
     resetParams() {
-      this.$router.replace({ 'query': null });
-
+      this.$router.replace({ query: null });
     },
     loggedInUser() {
-      return this.$store.getters.loggedinUser
+      return this.$store.getters.loggedinUser;
     },
   },
 
   watch: {
-    '$route.name': {
+    "$route.name": {
       handler() {
         this.handleRoute();
       },
@@ -221,11 +252,9 @@ export default {
     userDetailsModal,
     //  vClickOutsideUmd,
     loginModal,
-    signUpModal
+    signUpModal,
   },
-
-}
-
+};
 </script>
 
 

@@ -2,6 +2,7 @@
   <ul class="stay-list">
     <stay-preview
     @click="getStay(stay._id)"
+    @stayLiked="setLiked"
       v-for="stay in stays"
       :stay="stay"
       :key="stay._id"

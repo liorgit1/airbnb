@@ -43,6 +43,7 @@ export default {
     },
     setStaysUser(state, { stays }) {
       state.loggedinUser.stays = stays;
+      console.log(s);
       userService.saveUser(state.loggedinUser);
     },
     setReservationUser(state, { reservations }) {
@@ -133,10 +134,12 @@ export default {
         const stays = await userService.getUserLikedStays(likedStays);
         stays.forEach((stay) => (stay.isLiked = true));
         return stays;
-        commit({ type: 'setOrderUser', order })
-      } catch (err) {
-        console.error("Cannot Load stays", err);
-        throw err;
+      //   commit({ type: 'setOrderUser', order })
+      // } catch (err) {
+      //   console.error("Cannot Load stays", err);
+      }
+      catch (err){
+
       }
     },
     async saveUser(context, payload) {
