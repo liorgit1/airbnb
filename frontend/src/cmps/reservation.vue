@@ -55,11 +55,11 @@
                             <label class="fs10" style="color: black; ">CHECK IN</label>
                             <DatePickerModalVue @click.stop v-if="openDatesModal" style="translate: -212px; z-index: 1 ;"
                                 @passDateData="getDateData($event)" v-click-outside="onClickedOutside" />
-                            <input v-model="startDate" placeholder="Add date">
+                            <input v-model="orderInfo.startDate" placeholder="Add date">
                         </div>
                         <div class="date-input">
                             <label class="fs10" style="color: black;">CHECK OUT</label>
-                            <input v-model="endDate" placeholder="Add date">
+                            <input v-model="orderInfo.endDate" placeholder="Add date">
                         </div>
                     </div>
 
@@ -112,7 +112,10 @@
                 </div>
 
 
-                <reservationBtnVue :class="{ 'disabled': openDatesModal }" @click="this.$router.push(`/stay/confirm`);">
+                <reservationBtnVue :class="{ 'disabled': openDatesModal }" @click="() => {
+                    setOrder()
+                    this.$router.push(`/stay/confirm`);
+                }">
                     <button @click="submit.prevent" style="display: none">
                     </button>
                 </reservationBtnVue>
@@ -143,17 +146,23 @@ export default {
             fee: 125,
             openDatesModal: false,
             showModal: false,
-            totalPrice: 1190,
-            startDate: "2025/10/17",
-            endDate: "2025/10/17",
-            guests: {
 
-                adults: 1,
-                kids: null,
-                infants: null,
-                pets: null
+            orderInfo: {
+                totalPrice: 1190,
+                startDate: "2025/10/17",
+                endDate: "2025/10/17",
+                guests: {
 
+                    adults: 1,
+                    kids: null,
+                    infants: null,
+                    pets: null
+
+                },
             },
+
+
+
 
         }
 
@@ -161,16 +170,7 @@ export default {
 
     },
     watch: {
-        showModal: {
-            handler() {
-                console.log('showModal :>> ', this.showModal);
-            },
-        },
-        guestsNum: {
-            handler() {
-                console.log('guestsNum :>> ', this.guestsNum);
-            },
-        },
+
     },
 
     computed: {
@@ -181,14 +181,14 @@ export default {
         //     return this.endDate//.toLocaleDateString('en-US')
         // },
         duration() {
-            const start = new Date(this.startDate)
-            const end = new Date(this.endDate)
+            const start = new Date(this.orderInfo.startDate)
+            const end = new Date(this.orderInfo.endDate)
             const diff = Math.abs(end - start)
             const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
             console.log('days :>> ', days);
             return days
         }, guestsNum() {
-            return +this.guests.adults + this.guests.kids
+            return +this.orderInfo.guests.adults + this.orderInfo.guests.kids
         },
         guestsDisplay() {
             let adults
@@ -197,14 +197,14 @@ export default {
             let infants
             let totalGuests
             let pets
-            adults = +this.guests.adults
-            kids = +this.guests.kids
-            guests =( +adults + +kids )> 1 ? `${adults + kids} guests` : '1 guest'
-            infants = +this.guests.infants > 0 ? `${this.guests.infants} infants` : ' '
-            pets = +this.guests.pets > 0 ? `${this.guests.pets} pets` : ' '
+            adults = +this.orderInfo.guests.adults
+            kids = +this.orderInfo.guests.kids
+            guests = (+adults + +kids) > 1 ? `${adults + kids} guests` : '1 guest'
+            infants = +this.orderInfo.guests.infants > 0 ? `${this.orderInfo.guests.infants} infants` : ' '
+            pets = +this.orderInfo.guests.pets > 0 ? `${this.orderInfo.guests.pets} pets` : ' '
             totalGuests = `${guests} ${infants} ${pets}`
 
-            console.log('totalGuests :>> ', totalGuests);
+            // console.log('totalGuests :>> ', totalGuests);
             return totalGuests
         }
     },
@@ -212,45 +212,47 @@ export default {
         const { startDate, endDate, adults, kids, infants, pets } = this.$route.query
         eventBus.on('closeModal', () => this.showModal = false)
 
-        this.startDate = startDate
-        this.endDate = endDate
-        if (adults >= 1) this.guests.adults = +adults
-        this.guests.kids = +kids
-        this.guests.infants = +infants
-        this.guests.pets = +pets
-        console.log('this.$route.query :>> ', this.$route.query);
-        console.log('startDate, endDate, adults, kids, infants, pets :>> ', startDate, endDate, adults, kids, infants, pets);
+        this.orderInfo.startDate = startDate
+        this.orderInfo.endDate = endDate
+        this.orderInfo.guests.adults = +adults
+        this.orderInfo.guests.kids = +kids
+        this.orderInfo.guests.infants = +infants
+        this.orderInfo.guests.pets = +pets
+        // console.log('this.$route.query :>> ', this.$route.query);
+        // console.log('startDate, endDate, adults, kids, infants, pets :>> ', startDate, endDate, adults, kids, infants, pets);
     },
 
     methods: {
+        setOrder() {
+            console.log('orderInfo :>> ', this.orderInfo);
+            this.$emit("setOrder", this.orderInfo);
+        },
         closeDates() {
             this.openDatesModal = false
 
-            console.log('123123');
-            console.log('openDatesModal', this.openDatesModal);
+
         },
 
         setAdultCount1({ adultCount }) {
-            this.guests.adults = +adultCount
-            console.log('this.guests.adult2111 :>> ', this.guests.adults);
+            this.orderInfo.guests.adults = +adultCount
+
         },
         setChildrenCount({ childrenCount }) {
-            this.guests.kids = childrenCount
-            console.log('this.guests.kids :>> ', this.guests.kids);
+            this.orderInfo.guests.kids = childrenCount
+
         },
         setInfantsCount({ infantsCount }) {
-            this.guests.infants = infantsCount
-            console.log('this.guests.infants :>> ', this.guests.infants);
+            this.orderInfo.guests.infants = infantsCount
+
         },
         setPetsCount({ petsCount }) {
-            this.guests.pets = petsCount
-            console.log('this.guests.pets :>> ', this.guests.pets);
+            this.orderInfo.guests.pets = petsCount
         }, onClickedOutside() {
             this.openDatesModal = false
         },
         getDateData({ start, end }) {
-            this.startDate = start
-            this.endDate = end
+            this.orderInfo.startDate = start
+            this.orderInfo.endDate = end
         }
     },
     components: { GuestsModal, reservationBtnVue, DatePickerModalVue }

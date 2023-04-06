@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 1.4.2023, 19:23:08 - INFO - Hi | 90 | Bobo 
 1.4.2023, 19:23:08 - INFO - Server is running on port: 3030 
 1.4.2023, 19:27:58 - INFO - Req was made 
@@ -2202,3 +2203,7 @@
 4.4.2023, 9:40:05 - ERROR - Failed to Login Invalid username or password 
 4.4.2023, 17:51:41 - INFO - Hi | 90 | Bobo 
 4.4.2023, 17:51:41 - INFO - Server is running on port: 3030 
+=======
+>>>>>>> ed78f6183968d04973ef87e1d4cbaa8d160d1476
+6.4.2023, 4:14:23 - INFO - Hi | 90 | Bobo 
+6.4.2023, 4:14:23 - INFO - Server is running on port: 3030 

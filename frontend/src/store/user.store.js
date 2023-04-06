@@ -5,7 +5,7 @@
 // if (sessionStorage.user) localLoggedinUser = JSON.parse(sessionStorage.user || null)
 
 import { userService } from "../services/user-service.js";
-import {stayService} from "../services/stay-service.js";
+import { stayService } from "../services/stay-service.js";
 
 import {
   socketService,
@@ -17,6 +17,7 @@ import {
 var localLoggedinUser = null;
 if (sessionStorage.user)
   localLoggedinUser = JSON.parse(sessionStorage.user || null);
+
 export default {
   state: {
     loggedinUser: userService.getLoggedinUser(),
@@ -50,8 +51,10 @@ export default {
       userService.saveUser(state.loggedinUser);
     },
     addReservationUser(state, { newReservation }) {
-      state.loggedinUser.reservations.unshift(newReservation);
-      console.log(newReservation);
+      console.log('state.loggedinUser :>> ', state.loggedinUser);
+
+      state.loggedinUser.reservations=[]
+      state.loggedinUser.reservations.push(newReservation);
       userService.saveUser(state.loggedinUser);
     },
     setLikedStay(state, { stayId }) {
@@ -70,23 +73,26 @@ export default {
   },
   actions: {
     async login({ commit, dispatch }, { userCred }) {
-      console.log('user :>> ', userCred);
+      console.log('userCred1111 :>> ', userCred);
       try {
         const user = await userService.login(userCred);
         commit({ type: "setLoggedinUser", user });
         console.log('user :>> ', user);
-        dispatch({ type: "loadStaysUser" });
+        // dispatch({ type: "loadStaysUser" });
         return user;
       } catch (err) {
         console.log("userStore: Error in login", err);
         throw err;
       }
     },
-    async signup({ commit }, { userCred }) {
+    async signup({ commit, dispatch }, { userCred }) {
       try {
-        const user = await userService.signup(userCred);
-        console.log(user);
-        commit({ type: "setLoggedinUser", user });
+        const user = await userService.signup(userCred).then(
+          dispatch({ type: 'login', userCred: userCred })
+          );
+          commit({ type: "setLoggedinUser", user });
+          
+          console.log(user)
         return user;
       } catch (err) {
         console.log("userStore: Error in signup", err);
@@ -106,7 +112,7 @@ export default {
       try {
         const stays = await userService.getUserStays(state.loggedinUser);
         commit({ type: "setStaysUser", stays });
-        const reservations = await userService.getUserReservation(state.loggedinUser);
+        // const reservations = await userService.getUserReservation(state.loggedinUser);
         commit({ type: "setReservationUser", reservations });
       } catch (err) {
         console.error("Cannot Load stays", err);
