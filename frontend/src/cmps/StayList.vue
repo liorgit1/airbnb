@@ -29,7 +29,7 @@ export default {
     // },
    
     setLiked(stay) {
-      this.$emit("stayLiked", {stay})
+      this.$emit("stayLiked", stay)
       console.log('stay-list-stay',stay);
     }
   },

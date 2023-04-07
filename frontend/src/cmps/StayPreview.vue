@@ -95,7 +95,7 @@ console.log('1111stay :>> ', this.stay);
     },
     setLiked() {
       this.liked = !this.liked;
-      this.$emit('stayLiked', this.stay._id)
+      this.$emit('stayLiked', this.stay)
 
     }
   },

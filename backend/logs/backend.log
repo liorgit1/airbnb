@@ -52,3 +52,19 @@
 7.4.2023, 15:42:14 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
 7.4.2023, 15:51:21 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
 7.4.2023, 15:51:21 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+7.4.2023, 16:43:50 - DEBUG - auth.service - signup with username: 123, fullname: 123 
+7.4.2023, 16:43:50 - DEBUG - auth.service - login with username: 123 
+7.4.2023, 16:43:50 - ERROR - Failed to Login Invalid username or password 
+7.4.2023, 16:43:51 - DEBUG - auth.route - new account created: {"username":"123","password":"$2b$10$abeHwsTc2snDN1mEf/DuW.OjhIwOZRfUvEwBQ2yIDDIKqrTGa7YuW","fullname":"123","likedStays":[],"reservations":[],"whishList":[],"_id":"64301e16ebb7fb1f1393b2d2"} 
+7.4.2023, 16:43:51 - DEBUG - auth.service - login with username: 123 
+7.4.2023, 16:43:51 - INFO - User login:  | {"_id":"64301e16ebb7fb1f1393b2d2","username":"123","fullname":"123","likedStays":[],"reservations":[],"whishList":[]} 
+7.4.2023, 16:44:00 - DEBUG - auth.service - login with username: 123 
+7.4.2023, 16:44:00 - INFO - User login:  | {"_id":"64301e16ebb7fb1f1393b2d2","username":"123","fullname":"123","likedStays":[],"reservations":[],"whishList":[]} 
+7.4.2023, 16:46:31 - DEBUG - auth.service - signup with username: 111, fullname: 111 
+7.4.2023, 16:46:31 - DEBUG - auth.service - login with username: 111 
+7.4.2023, 16:46:31 - ERROR - Failed to Login Invalid username or password 
+7.4.2023, 16:46:31 - DEBUG - auth.route - new account created: {"username":"111","password":"$2b$10$ChVbOqLed0KLAEBKzQNyrut.shMTdrhnBCKEpX9S8eGv.CAlOPe8G","fullname":"111","likedStays":[],"reservations":[],"whishList":[],"_id":"64301eb7ebb7fb1f1393b2d3"} 
+7.4.2023, 16:46:31 - DEBUG - auth.service - login with username: 111 
+7.4.2023, 16:46:31 - INFO - User login:  | {"_id":"64301eb7ebb7fb1f1393b2d3","username":"111","fullname":"111","likedStays":[],"reservations":[],"whishList":[]} 
+7.4.2023, 16:46:42 - DEBUG - auth.service - login with username: 111 
+7.4.2023, 16:46:42 - INFO - User login:  | {"_id":"64301eb7ebb7fb1f1393b2d3","username":"111","fullname":"111","likedStays":[],"reservations":[],"whishList":[]} 

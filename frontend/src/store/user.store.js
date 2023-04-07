@@ -63,7 +63,8 @@ export default {
     setLikedStay(state, { stayId }) {
       if (!state.loggedinUser) return
       if (!state.loggedinUser.likedStays) {
-        state.loggedinUser = { likedStays: [stayId] }
+        state.loggedinUser.likedStays = []
+        state.loggedinUser.likedStays.push[stayId]
       }
       else if (state.loggedinUser.likedStays.includes(stayId)) {
         const idx = state.loggedinUser.likedStays.findIndex(
@@ -103,10 +104,10 @@ export default {
       try {
         const user = await userService.signup(userCred).then(
           dispatch({ type: 'login', userCred: userCred })
-          );
-          commit({ type: "setLoggedinUser", user });
-          
-          console.log(user)
+        );
+        commit({ type: "setLoggedinUser", user });
+
+        console.log(user)
         return user;
       } catch (err) {
         console.log("userStore: Error in signup", err);
