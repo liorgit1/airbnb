@@ -68,3 +68,27 @@
 7.4.2023, 16:46:31 - INFO - User login:  | {"_id":"64301eb7ebb7fb1f1393b2d3","username":"111","fullname":"111","likedStays":[],"reservations":[],"whishList":[]} 
 7.4.2023, 16:46:42 - DEBUG - auth.service - login with username: 111 
 7.4.2023, 16:46:42 - INFO - User login:  | {"_id":"64301eb7ebb7fb1f1393b2d3","username":"111","fullname":"111","likedStays":[],"reservations":[],"whishList":[]} 
+7.4.2023, 21:58:58 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'rate') 
+7.4.2023, 21:59:26 - INFO - Hi | 90 | Bobo 
+7.4.2023, 21:59:26 - INFO - Server is running on port: 3030 
+7.4.2023, 21:59:29 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'rate') 
+7.4.2023, 21:59:35 - INFO - Hi | 90 | Bobo 
+7.4.2023, 21:59:35 - INFO - Server is running on port: 3030 
+7.4.2023, 21:59:36 - INFO - Hi | 90 | Bobo 
+7.4.2023, 21:59:36 - INFO - Server is running on port: 3030 
+7.4.2023, 22:00:29 - DEBUG - auth.service - signup with username: lior, fullname: lior 
+7.4.2023, 22:00:29 - DEBUG - auth.service - login with username: lior 
+7.4.2023, 22:00:30 - ERROR - Failed to Login Invalid username or password 
+7.4.2023, 22:00:30 - DEBUG - auth.route - new account created: {"username":"lior","password":"$2b$10$7bIylRjPdykPoxvXv4BWJuJbrAe0ozj7O.BhSSTnRcUROUXzdwAQS","fullname":"lior","likedStays":[],"reservations":[],"whishList":[],"_id":"6430684e43be54dedea7fee9"} 
+7.4.2023, 22:00:30 - DEBUG - auth.service - login with username: lior 
+7.4.2023, 22:00:30 - INFO - User login:  | {"_id":"6430684e43be54dedea7fee9","username":"lior","fullname":"lior","likedStays":[],"reservations":[],"whishList":[]} 
+7.4.2023, 22:00:38 - DEBUG - auth.service - login with username: lior 
+7.4.2023, 22:00:38 - INFO - User login:  | {"_id":"6430684e43be54dedea7fee9","username":"lior","fullname":"lior","likedStays":[],"reservations":[],"whishList":[]} 
+7.4.2023, 22:07:26 - DEBUG - auth.service - signup with username: lior, fullname: lior 
+7.4.2023, 22:07:26 - DEBUG - auth.service - login with username: lior 
+7.4.2023, 22:07:26 - ERROR - Failed to Login Invalid username or password 
+7.4.2023, 22:07:26 - DEBUG - auth.route - new account created: {"username":"lior","password":"$2b$10$.KLtyZepVYOHr5LbS6qwWOFWRnkIKPIQxtz7AwN7CqN/BCrkk7K5u","fullname":"lior","likedStays":[],"reservations":[],"whishList":[],"_id":"643069ee43be54dedea7feea"} 
+7.4.2023, 22:07:26 - DEBUG - auth.service - login with username: lior 
+7.4.2023, 22:07:27 - INFO - User login:  | {"_id":"643069ee43be54dedea7feea","username":"lior","fullname":"lior","likedStays":[],"reservations":[],"whishList":[]} 
+7.4.2023, 22:07:31 - DEBUG - auth.service - login with username: lior 
+7.4.2023, 22:07:31 - INFO - User login:  | {"_id":"643069ee43be54dedea7feea","username":"lior","fullname":"lior","likedStays":[],"reservations":[],"whishList":[]} 

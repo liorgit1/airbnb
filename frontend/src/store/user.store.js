@@ -60,21 +60,19 @@ export default {
       state.loggedinUser.reservations.unshift(newReservation);
       userService.saveUser(state.loggedinUser);
     },
-    setLikedStay(state, { stayId }) {
+    setLikedStay(state, { stay }) {
       if (!state.loggedinUser) return
-      if (!state.loggedinUser.likedStays) {
-        state.loggedinUser.likedStays = []
-        state.loggedinUser.likedStays.push[stayId]
-      }
-      else if (state.loggedinUser.likedStays.includes(stayId)) {
-        const idx = state.loggedinUser.likedStays.findIndex(
-          (id) => id === stayId
-        );
-        state.loggedinUser.likedStays.splice(idx, 1);
-      }
-      else state.loggedinUser.likedStays.push(stayId)
-    },
+      const stayId = stay._id
+      const idx = state.loggedinUser.likedStays.findIndex((stay) => stay._id === stayId)
+      if (idx !== -1) state.loggedinUser.likedStays.splice(idx, 1)
+      else state.loggedinUser.likedStays.push(stay)
+    }
+
+
+    // else 
+    // state.loggedinUser.likedStays.push(stayId)
   },
+  // },
   actions: {
     // async login({ commit, dispatch }, { userCred }) {
     //   console.log('userCred1111 :>> ', userCred);
@@ -134,9 +132,9 @@ export default {
         throw err;
       }
     },
-    async setLikedStay({ commit, state }, { stayId }) {
+    async setLikedStay({ commit, state }, { stay }) {
       if (!state.loggedinUser) return
-      commit({ type: "setLikedStay", stayId });
+      commit({ type: "setLikedStay", stay });
       try {
         await userService.saveUser(state.loggedinUser);
       } catch (err) {

@@ -120,7 +120,7 @@ export default {
     setLiked(stay) {
       this.$store.dispatch({
         type: "setLikedStay",
-        stayId: JSON.parse(JSON.stringify(stay)),
+        stay: JSON.parse(JSON.stringify(stay)),
       });
     },
   },
