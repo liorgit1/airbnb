@@ -30,6 +30,9 @@ export default {
     userStays(state) {
       return JSON.parse(JSON.stringify(state.loggedinUser.stays));
     },
+    userLikedStays(state) {
+      return JSON.parse(JSON.stringify(state.loggedinUser.likedStays));
+    },
   },
   mutations: {
     setLoggedinUser(state, { user }) {
@@ -43,7 +46,7 @@ export default {
     },
     setStaysUser(state, { stays }) {
       state.loggedinUser.stays = stays;
-      console.log(s);
+      // console.log(s);
       userService.saveUser(state.loggedinUser);
     },
     setReservationUser(state, { reservations }) {
