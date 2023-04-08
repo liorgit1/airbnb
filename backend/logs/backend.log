@@ -70,3 +70,5 @@
 7.4.2023, 16:46:42 - INFO - User login:  | {"_id":"64301eb7ebb7fb1f1393b2d3","username":"111","fullname":"111","likedStays":[],"reservations":[],"whishList":[]} 
 7.4.2023, 16:58:47 - INFO - Hi | 90 | Bobo 
 7.4.2023, 16:58:47 - INFO - Server is running on port: 3030 
+8.4.2023, 21:48:05 - INFO - Hi | 90 | Bobo 
+8.4.2023, 21:48:05 - INFO - Server is running on port: 3030 
