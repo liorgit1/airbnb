@@ -7,6 +7,7 @@ import confirmation from './views/confirmation.vue'
 import userTrip from '../src/views/UserTrip.vue'
 import userWishList from '../src/views/WishList.vue'
 import userDashboard  from '../src/views/User-Dashboard.vue'
+import AddStay from '../src/views/AddStay.vue'
 
 
 
@@ -55,6 +56,11 @@ const routes = [
   path: '/login',
   name: 'userLogin',
   component: stayIndex,
+},
+{
+  path:'/AddStay',
+  name:'AddStay',
+  component:AddStay,
 },
 ];
 

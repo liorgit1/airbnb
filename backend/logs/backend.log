@@ -2161,3 +2161,55 @@
 3.4.2023, 19:38:14 - INFO - Server is running on port: 3030 
 3.4.2023, 20:08:32 - INFO - Hi | 90 | Bobo 
 3.4.2023, 20:08:33 - INFO - Server is running on port: 3030 
+6.4.2023, 17:56:00 - INFO - Hi | 90 | Bobo 
+6.4.2023, 17:56:00 - INFO - Server is running on port: 3030 
+6.4.2023, 18:01:45 - DEBUG - auth.service - signup with username: yiftach, fullname: yftach 
+6.4.2023, 18:01:45 - DEBUG - auth.service - login with username: yiftach 
+6.4.2023, 18:01:45 - ERROR - Failed to Login Invalid username or password 
+6.4.2023, 18:01:46 - DEBUG - auth.route - new account created: {"username":"yiftach","password":"$2b$10$7oM8Rwm3bWk8rKytKnXmwOSLtKPrIFOcNCt2590jpiDZdt/mSHA9S","fullname":"yftach","likedStays":[],"reservations":[],"whishList":[],"_id":"642ededa0185cce27e5276c8"} 
+6.4.2023, 18:01:46 - DEBUG - auth.service - login with username: yiftach 
+6.4.2023, 18:01:46 - INFO - User login:  | {"_id":"642ededa0185cce27e5276c8","username":"yiftach","fullname":"yftach","likedStays":[],"reservations":[],"whishList":[]} 
+6.4.2023, 18:02:08 - DEBUG - auth.service - login with username: yiftach 
+6.4.2023, 18:02:08 - INFO - User login:  | {"_id":"642ededa0185cce27e5276c8","username":"yiftach","fullname":"yftach","likedStays":[],"reservations":[],"whishList":[]} 
+6.4.2023, 18:13:54 - INFO - Hi | 90 | Bobo 
+6.4.2023, 18:13:54 - INFO - Server is running on port: 3030 
+7.4.2023, 17:07:03 - INFO - Hi | 90 | Bobo 
+7.4.2023, 17:07:03 - INFO - Server is running on port: 3030 
+7.4.2023, 17:25:53 - INFO - Hi | 90 | Bobo 
+7.4.2023, 17:25:53 - INFO - Server is running on port: 3030 
+7.4.2023, 17:42:05 - INFO - Hi | 90 | Bobo 
+7.4.2023, 17:42:05 - INFO - Server is running on port: 3030 
+7.4.2023, 17:42:17 - INFO - Hi | 90 | Bobo 
+7.4.2023, 17:42:17 - INFO - Server is running on port: 3030 
+7.4.2023, 17:42:30 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'rate') 
+7.4.2023, 17:42:30 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'rate') 
+7.4.2023, 17:43:13 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'rate') 
+7.4.2023, 17:46:27 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'rate') 
+7.4.2023, 17:49:37 - INFO - Hi | 90 | Bobo 
+7.4.2023, 17:49:37 - INFO - Server is running on port: 3030 
+7.4.2023, 17:49:45 - ERROR - cannot find stays | TypeError: Cannot read properties of undefined (reading 'rate') 
+7.4.2023, 17:50:14 - INFO - Hi | 90 | Bobo 
+7.4.2023, 17:50:14 - INFO - Server is running on port: 3030 
+7.4.2023, 18:10:44 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:10:44 - INFO - Server is running on port: 3030 
+7.4.2023, 18:10:47 - ERROR - cannot find stays | ReferenceError: Stays is not defined 
+7.4.2023, 18:10:56 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:10:56 - INFO - Server is running on port: 3030 
+7.4.2023, 18:22:34 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:22:34 - INFO - Server is running on port: 3030 
+7.4.2023, 18:24:46 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:24:46 - INFO - Server is running on port: 3030 
+7.4.2023, 18:25:52 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:25:52 - INFO - Server is running on port: 3030 
+7.4.2023, 18:25:57 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:25:57 - INFO - Server is running on port: 3030 
+7.4.2023, 18:26:09 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:26:09 - INFO - Server is running on port: 3030 
+7.4.2023, 18:34:05 - INFO - Server is running on port: 3030 
+7.4.2023, 18:34:05 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:34:16 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:34:16 - INFO - Server is running on port: 3030 
+7.4.2023, 18:57:52 - INFO - Hi | 90 | Bobo 
+7.4.2023, 18:57:52 - INFO - Server is running on port: 3030 
+7.4.2023, 19:00:20 - INFO - Hi | 90 | Bobo 
+7.4.2023, 19:00:20 - INFO - Server is running on port: 3030 

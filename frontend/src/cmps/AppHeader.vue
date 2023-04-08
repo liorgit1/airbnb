@@ -46,7 +46,12 @@
         </div>
 
         <!-- <RouterLink to="/">become a host</RouterLink> -->
-
+        
+        <div>
+          <RouterLink to="/Addstay">
+           become a host
+          </RouterLink>
+        </div>
         <label
           @click="this.modalUser = !this.modalUser"
           class="relative"

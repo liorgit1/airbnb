@@ -13,7 +13,8 @@ const STAYS_KEY = 'staysDB'
 
 export const stayService = {
     query,
-    getById
+    getById,
+    save,
 }
 
 
@@ -29,12 +30,24 @@ async function query(filterBy) {
 
 
 
-async function getById(entityId) {
+    async function getById(entityId) {
     try {
         return await httpService.get(`${ENDPOINT}/${entityId}`)
     } catch {
         console.error('cannot load stay')
     }
+
+    
+}
+
+async function save(stay) {
+    if (stay._id) { 
+        return await httpService.put(`stay/${stay._id}`, stay)
+            // return axios.put(_getUrl(stay._id), stay).then(res => res.data)
+    } else
+    console.log('were going to the backend')
+    return httpService.post('stay', stay)
+        // return axios.post(_getUrl(), stay).then(res => res.data)
 }
 
 
