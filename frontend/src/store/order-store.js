@@ -24,7 +24,7 @@ export default {
                 // console.log(orderToSave);
                 console.log(newOrder);
                 commit({ type: 'setOrder', newOrder })
-                commit({ type: 'addReservationUser', newReservation: newOrder })
+                commit({ type: 'addOrderUser', newOrder: newOrder })
                 return newOrder
             } catch (err) {
                 console.log('orderStore: error in addOrder', err)

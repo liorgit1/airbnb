@@ -43,7 +43,7 @@
             width: 24px;
             fill: currentcolor;
           "
-        >
+         >
           <path
             d="m26 6h-4v-2a2.00229 2.00229 0 0 0 -2-2h-8a2.002 2.002 0 0 0 -2 2v2h-4a5.00588 5.00588 0 0 0 -5 5v14a5.00588 5.00588 0 0 0 5 5h20a5.00588 5.00588 0 0 0 5-5v-14a5.00588 5.00588 0 0 0 -5-5zm-14.00146-2h8.00146v2h-8.00134zm-5.99854 24a3.00328 3.00328 0 0 1 -3-3v-14a3.00328 3.00328 0 0 1 3-3h4v20zm6 0-.00122-20h8.00122v20zm17-3a3.00328 3.00328 0 0 1 -3 3h-4v-20h4a3.00328 3.00328 0 0 1 3 3z"
           ></path>
@@ -190,7 +190,7 @@
           <th>Address</th>
           <th>Actions</th>
         </tr>
-        <tr v-for="stay in user.stays" :key="stay">
+        <tr v-for="stays in user.stays" :key="stays">
           <td>
             <div class="review-img q-pa-md q-gutter-sm">
               <q-avatar>
@@ -201,11 +201,11 @@
               </q-avatar>
             </div>
           </td>
-          <td class="stay-name-details">{{ stay.name }}</td>
-          <td>${{ stay.price }}</td>
+          <td class="stay-name-details">{{ stays.name }}</td>
+          <td>${{ stays.price }}</td>
           <td>
-            {{ stay.address.country }},
-            {{ stay.address.city }}
+            {{ stays.address.country }},
+            {{ stays.address.city }}
           </td>
           <td>edit</td>
         </tr>
