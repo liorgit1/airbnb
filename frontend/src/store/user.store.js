@@ -49,15 +49,15 @@ export default {
       // console.log(s);
       userService.saveUser(state.loggedinUser);
     },
-    setReservationUser(state, { reservations }) {
-      state.loggedinUser.reservations = reservations;
+    setOrderUser(state, { orders }) {
+      state.loggedinUser.orders = orders;
       userService.saveUser(state.loggedinUser);
     },
-    addReservationUser(state, { newReservation }) {
+    addOrderUser(state, { newOrder }) {
       console.log('state.loggedinUser :>> ', state.loggedinUser);
 
 
-      state.loggedinUser.reservations.unshift(newReservation);
+      state.loggedinUser.orders.unshift(newOrder);
       userService.saveUser(state.loggedinUser);
     },
     setLikedStay(state, { stay }) {
@@ -125,8 +125,8 @@ export default {
       try {
         const stays = await userService.getUserStays(state.loggedinUser);
         commit({ type: "setStaysUser", stays });
-        // const reservations = await userService.getUserReservation(state.loggedinUser);
-        commit({ type: "setReservationUser", reservations });
+        // const orders = await userService.getUserOrder(state.loggedinUser);
+        commit({ type: "setOrderUser", orders });
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;

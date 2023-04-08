@@ -13,7 +13,7 @@ export const userService = {
   getLoggedinUser,
   saveUser,
   getUserStays,
-  getUserOrdar,
+  getUserOrder,
   getUserLikedStays,
   login,
   signup,
@@ -60,7 +60,7 @@ async function getUserLikedStays(likedStays) {
 //       console.error("cannot get user order");
 //     }
 // }
-async function getUserOrdar(entityId){
+async function getUserOrder(entityId){
     const orders =[]
        await orderService.query().then((entities) =>
           entities.find((entity) => {

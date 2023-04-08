@@ -74,7 +74,7 @@ async function update(user) {
             username: user.username,
             fullname: user.fullname,
             likedStays: user.likedStays,
-            reservations: user.reservations
+            orders: user.orders
         }
         const collection = await dbService.getCollection('user')
         await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
@@ -101,7 +101,7 @@ async function add(user) {
 
 
             // score: user.score || 0
-            reservations: [],
+            orders: [],
             // whishList: [],
 
         }

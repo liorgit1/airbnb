@@ -1,5 +1,5 @@
 .my-details {
-  font-family: 'Cereal-Regular' !important;
+  font-family: ''Cereal-Regular'' !important;
   margin-top: 100px;
   button {
     font-size: rem(14px);
@@ -23,7 +23,7 @@
   }
 
   button:hover {
-    color: $clr8;
+    color: #ddd8;
   }
 }
 .dash-header {
@@ -62,7 +62,7 @@
   td {
     margin-right: -33px;
     height: 5.25rem;
-    box-shadow: inset 0 -0.5px 0 0 $clr3;
+    box-shadow: inset 0 -0.5px 0 0 #ddd3;
     text-align: center;
     margin-left: 9px;
     margin-top: 7px;
@@ -104,7 +104,7 @@
   }
   th,
   td {
-    box-shadow: inset 0 -0.5px 0 0 $clr3;
+    box-shadow: inset 0 -0.5px 0 0 #ddd3;
     text-align: center;
     margin-top: 7px;
     padding-bottom: 7px;
@@ -127,9 +127,9 @@
 }
 
 .el-alert {
-  border: 2px solid $clr8;
-  background-color: $clr2 !important;
-  color: $clr8 !important;
+  border: 2px solid #ddd8;
+  background-color: #ddd2 !important;
+  color: #ddd8 !important;
 }
 
 .alert-fixed {
@@ -148,14 +148,14 @@
 }
 
 .user-rate {
-  font-family: Cereal-Regular !important;
+  font-family: 'Cereal-Regular' !important;
   border: 0.075px solid #b0b0b0;
 
   border-radius: 12px;
-  // border: 1px solid $clr5;
+  // border: 1px solid #ddd5;
   width: rem(220px);
   height: 45%;
-  // box-shadow: 1px 0.4px $clr5;
+  // box-shadow: 1px 0.4px #ddd5;
   padding: 10px;
 
   span:first-child {
@@ -173,12 +173,12 @@
 }
 
 .user-prof {
-  font-family: Cereal-Regular !important;
+  font-family: 'Cereal-Regular' !important;
   box-shadow: -1px 1px 21px 8px rgb(0 0 0 / 12%);
   gap: 20px;
   margin: 0 auto;
-  // border: 1px solid $clr5;
-  // box-shadow: 1px 0.4px $clr5;
+  // border: 1px solid #ddd5;
+  // box-shadow: 1px 0.4px #ddd5;
   border-radius: 12px;
   padding: 30px;
 
@@ -192,13 +192,13 @@
 .user-profit {
   border: 0.075px solid #b0b0b0;
 
-  font-family: Cereal-Regular !important;
+  font-family: 'Cereal-Regular' !important;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  // border: 1.5px solid $clr5;
+  // border: 1.5px solid #ddd5;
   width: rem(220px);
-  // box-shadow: 1px 0.4px $clr5;
+  // box-shadow: 1px 0.4px #ddd5;
   padding: 10px;
   height: 45%;
   span:first-child {
@@ -218,12 +218,12 @@
   }
 }
 .orders-div {
-  font-family: Cereal-Regular !important;
+  font-family: 'Cereal-Regular' !important;
 
   border-radius: 12px;
-  // border: 1.5px solid $clr5;
+  // border: 1.5px solid #ddd5;
   // width: rem(220px);
-  // box-shadow: 1px 0.4px $clr5;
+  // box-shadow: 1px 0.4px #ddd5;
 
   border: 0.075px solid #b0b0b0;
 
@@ -234,13 +234,13 @@
   }
 
   td {
-    font-family: Cereal-Regular !important;
+    font-family: 'Cereal-Regular' !important;
 
     text-align: center;
     font-size: 1rem;
   }
   .nums-td {
-    font-family: Cereal-Regular !important;
+    font-family: 'Cereal-Regular' !important;
 
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -250,13 +250,13 @@
 }
 
 .wish-list {
-  font-family: Cereal-Regular !important;
+  font-family: 'Cereal-Regular' !important;
 
   margin-top: 100px;
 }
 
 .my-details {
-  font-family: Cereal-Regular !important;
+  font-family: 'Cereal-Regular' !important;
 
   margin-top: 90px;
   z-index: 100;

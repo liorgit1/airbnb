@@ -2327,3 +2327,15 @@
 8.4.2023, 21:45:14 - INFO - Hi | 90 | Bobo 
 8.4.2023, 21:45:14 - INFO - Server is running on port: 3030 
 >>>>>>> 5000bf7af2f157c43917e0fb8f9078e4ac260ff5
+8.4.2023, 21:51:43 - INFO - Hi | 90 | Bobo 
+8.4.2023, 21:51:43 - INFO - Server is running on port: 3030 
+8.4.2023, 22:13:25 - INFO - Hi | 90 | Bobo 
+8.4.2023, 22:13:27 - INFO - Server is running on port: 3030 
+8.4.2023, 22:21:45 - DEBUG - auth.service - signup with username: ben, fullname: benben 
+8.4.2023, 22:21:45 - DEBUG - auth.service - login with username: ben 
+8.4.2023, 22:21:45 - ERROR - Failed to Login Invalid username or password 
+8.4.2023, 22:21:45 - DEBUG - auth.route - new account created: {"username":"ben","password":"$2b$10$lIuCsYRJfO2gtC6frKixV.NWqlH6g37Cyzn4QNFVV33XCcY.Ek6/u","fullname":"benben","likedStays":[],"orders":[],"_id":"6431bec9beaf5c66a4ea5a03"} 
+8.4.2023, 22:21:45 - DEBUG - auth.service - login with username: ben 
+8.4.2023, 22:21:46 - INFO - User login:  | {"_id":"6431bec9beaf5c66a4ea5a03","username":"ben","fullname":"benben","likedStays":[],"orders":[]} 
+8.4.2023, 22:21:54 - DEBUG - auth.service - login with username: ben 
+8.4.2023, 22:21:55 - INFO - User login:  | {"_id":"6431bec9beaf5c66a4ea5a03","username":"ben","fullname":"benben","likedStays":[],"orders":[]} 
