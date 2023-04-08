@@ -120,7 +120,7 @@ export default {
             order.name = this.stay.name;
             order.country = this.stay.loc.country;
             order.stay_id = this.stay._id;
-            order.hostId = this.stay.host.id;
+            order.hostId = this.stay.host._id;
             order.pricePerNight = this.stay.price;
             order.guests = orderInfo.guests;
             order.startDate = orderInfo.startDate;

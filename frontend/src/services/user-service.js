@@ -1,10 +1,10 @@
 // import { storageService } from "./async-storage-service.js";
- import { stayService } from "./stay-service.js";
+import { stayService } from "./stay-service.js";
 //  import { stayService } from "./stay.service.local.js";
- import { orderService } from "./order-service.js";
- import { httpService } from "./http.service.js";
- import { utilService } from "./util-service.js";
- import { socketService } from "./socket.service.js";
+import { orderService } from "./order-service.js";
+import { httpService } from "./http.service.js";
+import { utilService } from "./util-service.js";
+import { socketService } from "./socket.service.js";
 
 const STORAGE_KEY = "userDB";
 const ENDPOINT = "auth";
@@ -13,7 +13,7 @@ export const userService = {
   getLoggedinUser,
   saveUser,
   getUserStays,
-  getUserOrdar,
+  getUserOrder,
   getUserLikedStays,
   login,
   signup,
@@ -25,7 +25,7 @@ async function getUserStays(entityId) {
   const stays = await stayService.query();
   try {
     userStays = stays.filter(stay => stay.host._id === entityId)
-    console.log('userStays');
+    console.log('userStays', userStays);
     return userStays
   } catch {
     console.log('baiaaa');
@@ -40,16 +40,16 @@ async function getUserLikedStays(likedStays) {
     })
   );
 }
-// async function getUserOrder(entityId) {
-//   let userOrders = []
-//   const orders = await orderService.query();
-//   try {
-//     userOrders = orders.filter(order => order.hostId === entityId)
-//     return userOrders;
-//   } catch {
-//     console.error("cannot get user order");
-//   }
-// }
+async function getUserOrder(entityId) {
+  let userOrders = []
+  const orders = await orderService.query();
+  try {
+    userOrders = orders.filter(order => order.hostId === entityId)
+    return userOrders;
+  } catch {
+    console.error("cannot get user order");
+  }
+}
 //   async function getUserOrder() {
 //     const orders = await orderService.query();
 //     try {
@@ -60,14 +60,14 @@ async function getUserLikedStays(likedStays) {
 //       console.error("cannot get user order");
 //     }
 // }
-async function getUserOrdar(entityId){
-    const orders =[]
-       await orderService.query().then((entities) =>
-          entities.find((entity) => {
-            if(entity.stay_id === entityId) stays.push(entity)
-          }))
-      return orders
-}
+// async function getUserOrder(entityId){
+//     const orders =[]
+//        await orderService.query().then((entities) =>
+//           entities.find((entity) => {
+//             if(entity.stay_id === entityId) stays.push(entity)
+//           }))
+//       return orders
+// }
 
 async function login(userInfo) {
   try {
@@ -85,9 +85,9 @@ function getLoggedinUser() {
 }
 
 async function saveUser(user) {
-  console.log('user11111111111111 :>> ', user);
+  // console.log('user11111111111111 :>> ', user);
   user = await httpService.put(`user/${user._id}`, user);
-  console.log('user222222222222 :>> ', user);
+  // console.log('user222222222222 :>> ', user);
   // Handle case in which admin updates other user's details
   if (getLoggedinUser()._id === user._id) _saveLocalUser(user);
   return user;

@@ -1,6 +1,7 @@
 .my-details {
   font-family: 'Cereal-Regular' !important;
   margin-top: 100px;
+
   button {
     font-size: rem(14px);
     width: 7.25rem;
@@ -9,13 +10,16 @@
     display: flex;
     align-items: end;
     gap: rem(4px);
+
     img {
       height: rem(20px);
       width: rem(20px);
     }
   }
+
   button:nth-child(2) {
     width: rem(150px);
+
     img {
       height: rem(18px);
       width: rem(20px);
@@ -23,20 +27,23 @@
   }
 
   button:hover {
-    color: $clr8;
+    color: #ddd8;
   }
 }
+
 .dash-header {
   text-align: center;
 }
 
 .user-order {
   display: contents;
+
   h2 {
     margin-top: 69px;
     margin-bottom: 1px;
     font-size: xx-large;
   }
+
   .table-header {
     background-color: rgb(255, 56, 92, 1) !important;
     height: 15vh !important;
@@ -44,52 +51,62 @@
     color: black;
     overflow: hidden;
     padding-bottom: 10px;
+
     .user-order-th:nth-child(7) {
       border-top-right-radius: 12px !important;
     }
   }
+
   table {
     font-weight: 400;
     font-size: 15px;
     border-collapse: collapse;
     margin-top: 50px;
   }
+
   th:first-child {
     border-top-left-radius: 12px !important;
     padding-left: 10px;
   }
+
   th,
   td {
     margin-right: -33px;
     height: 5.25rem;
-    box-shadow: inset 0 -0.5px 0 0 $clr3;
+    box-shadow: inset 0 -0.5px 0 0 #ddd3;
     text-align: center;
     margin-left: 9px;
     margin-top: 7px;
     padding-bottom: 7px;
+
     .review-img {
       margin-right: 6px;
     }
   }
+
   .img {
     object-fit: cover;
     border-radius: 50%;
     height: 40px !important;
     width: 40px !important;
   }
+
   .btn:first-child {
     color: green;
   }
+
   .btn {
     color: red;
     background-color: transparent;
     text-decoration: underline;
     border: none;
   }
+
   .stay-name-details {
     text-align: start;
     max-width: 150px;
   }
+
   @include for-narrow-layout {
     align-items: center;
     overflow: scroll auto;
@@ -98,13 +115,15 @@
 
 .user-stays {
   margin-top: 20px;
+
   table {
     margin-top: 50px;
     width: 100%;
   }
+
   th,
   td {
-    box-shadow: inset 0 -0.5px 0 0 $clr3;
+    box-shadow: inset 0 -0.5px 0 0 #ddd3;
     text-align: center;
     margin-top: 7px;
     padding-bottom: 7px;
@@ -117,6 +136,7 @@
     height: 40px !important;
     width: 40px !important;
   }
+
   .stay-name-details {
     text-align: start;
   }
@@ -127,9 +147,9 @@
 }
 
 .el-alert {
-  border: 2px solid $clr8;
-  background-color: $clr2 !important;
-  color: $clr8 !important;
+  border: 2px solid #ddd8;
+  background-color: #ddd2 !important;
+  color: #ddd8 !important;
 }
 
 .alert-fixed {
@@ -152,21 +172,23 @@
   border: 0.075px solid #b0b0b0;
 
   border-radius: 12px;
-  // border: 1px solid $clr5;
+  // border: 1px solid #ddd5;
   width: rem(220px);
   height: 45%;
-  // box-shadow: 1px 0.4px $clr5;
+  // box-shadow: 1px 0.4px #ddd5;
   padding: 10px;
 
   span:first-child {
     font-size: 20px;
     font-weight: 600;
   }
-  span:nth-child(2){
+
+  span:nth-child(2) {
     font-size: 18px;
     font-weight: 600;
   }
-  span:nth-child(3){
+
+  span:nth-child(3) {
     font-size: 14px;
     font-weight: 800;
   }
@@ -177,8 +199,8 @@
   box-shadow: -1px 1px 21px 8px rgb(0 0 0 / 12%);
   gap: 20px;
   margin: 0 auto;
-  // border: 1px solid $clr5;
-  // box-shadow: 1px 0.4px $clr5;
+  // border: 1px solid #ddd5;
+  // box-shadow: 1px 0.4px #ddd5;
   border-radius: 12px;
   padding: 30px;
 
@@ -196,19 +218,22 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  // border: 1.5px solid $clr5;
+  // border: 1.5px solid #ddd5;
   width: rem(220px);
-  // box-shadow: 1px 0.4px $clr5;
+  // box-shadow: 1px 0.4px #ddd5;
   padding: 10px;
   height: 45%;
+
   span:first-child {
     font-size: 20px;
     font-weight: 600;
   }
-  span{
+
+  span {
     font-size: 14px;
     font-weight: 800;
   }
+
   .profit {
     flex-direction: row;
     display: flex;
@@ -217,17 +242,19 @@
     gap: 10px;
   }
 }
+
 .orders-div {
   font-family: Cereal-Regular !important;
 
   border-radius: 12px;
-  // border: 1.5px solid $clr5;
+  // border: 1.5px solid #ddd5;
   // width: rem(220px);
-  // box-shadow: 1px 0.4px $clr5;
+  // box-shadow: 1px 0.4px #ddd5;
 
   border: 0.075px solid #b0b0b0;
 
   padding: 10px;
+
   span:first-child {
     font-size: 20px;
     font-weight: 600;
@@ -239,6 +266,7 @@
     text-align: center;
     font-size: 1rem;
   }
+
   .nums-td {
     font-family: Cereal-Regular !important;
 

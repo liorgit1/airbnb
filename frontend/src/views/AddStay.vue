@@ -71,25 +71,28 @@ export default {
         capacity: '',
         loc: { country: '' },
         reviews: [],
-        
+        host: {},
 
 
       },
       // selectedLabels: [],
     }
   },
-  // created() {
-  //   console.log(this.user)
-  //   if (!this.user) this.$router.push('/stay')
+  created() {
+    console.log('this.user :>> ', this.user);
+    console.log('this.newStay.host :>> ', this.newStay.host);
+    this.newStay.host._id = this.user._id
 
-  //   const { stayId } = this.$route.params
-  //   if (stayId) {
-  //     stayService.getById(stayId).then(stay => {
-  //       this.stayToEdit = stay
-  //       this.selectedLabels = stay.labels.map(label => label.title)
-  //     })
-  //   } else this.stayToEdit = stayService.getEmptystay()
-  // },
+    // if (!this.user) this.$router.push('/stay')
+
+    // const { stayId } = this.$route.params
+    // if (stayId) {
+    //   stayService.getById(stayId).then(stay => {
+    //     this.stayToEdit = stay
+    //     this.selectedLabels = stay.labels.map(label => label.title)
+    //   })
+    // } else this.stayToEdit = stayService.getEmptystay()
+  },
   methods: {
     goBack() {
       this.$router.push('/')
@@ -104,14 +107,14 @@ export default {
       //   this.$router.push('/') })
     },
   },
-  // computed: {
-  //   labels() {
-  //     return this.$store.getters.labels
-  //   },
-  //   user() {
-  //     return this.$store.getters.loggedInUser
-  //   },
-  // },
+  computed: {
+    user() {
+      return this.$store.getters.user
+    },
+    //   labels() {
+    //     return this.$store.getters.labels
+    //   },
+  },
 }
 </script>
   
