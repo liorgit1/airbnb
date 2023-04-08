@@ -23,10 +23,10 @@
 @import "cmps/home-list";
 // @import "cmps/StayPreview.scss";
 // @import "cmps/StayDetails";
-// @import "cmps/reservation.scss";
+// @import "cmps/order.scss";
 @import "cmps/FilterList";
 @import "cmps/StayDetails";
-@import "cmps/Reservation.scss";
+@import "cmps/order.scss";
 @import "cmps/HeaderFilter";
 @import "cmps/StayInfo.scss";
 @import "cmps/StayAmenities.scss";
@@ -40,5 +40,6 @@
 @import "cmps/AirCover.scss";
 @import "cmps/login-modal";
 @import "cmps/calendarModal.scss";
-// @import "cmps/user-details";
+@import "cmps/user-details";
+@import "cmps/pop-app-msg";
 
