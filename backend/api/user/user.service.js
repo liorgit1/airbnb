@@ -102,7 +102,7 @@ async function add(user) {
 
             // score: user.score || 0
             reservations: [],
-            whishList: [],
+            // whishList: [],
 
         }
         const collection = await dbService.getCollection('user')

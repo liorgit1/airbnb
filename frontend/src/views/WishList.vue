@@ -2,7 +2,7 @@
   <section class="detailsImgContainer">
 
     <h1>Wish list</h1>
-    <stayList v-if="stays" :stays="stays" />
+    <stayList v-if="stays" :stays="stays" @stayLiked="setLiked" />
 
 
   </section>
@@ -29,26 +29,26 @@ export default {
 
     this.stays = this.user.likedStays
     console.log('this.stays2222222222 :>> ', this.stays);
-    // this.stays = await this.$store.dispatch({
-    //   type: "loadStaysLikedUser",
-    //   likedStays: this.user.likedStays,
-    // });
+
   },
   methods: {
     setLiked(stay) {
       this.$store.dispatch({
         type: "setLikedStay",
-        stayId: JSON.parse(JSON.stringify(stay)),
+        stay: JSON.parse(JSON.stringify(stay)),
       });
     },
+  }, watch: {
+    '$store.getters.userLikedStays'(newVal) {
+      this.stays = newVal;
+    },
   },
-
   computed: {},
   components: {
     stayList,
     appHeader,
   },
-};
+}
 </script>
   
 <style>
