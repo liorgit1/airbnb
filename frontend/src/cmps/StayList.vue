@@ -1,8 +1,7 @@
 <template>
   <ul class="stay-list">
     <stay-preview
-    @click="getStay(stay._id)"
-    @stayLiked="setLiked"
+    @stayLiked="setLiked(stay)"
       v-for="stay in stays"
       :stay="stay"
       :key="stay._id"
@@ -24,13 +23,14 @@ export default {
     stayPreview,
   },
   methods: {
-    getStay(stayId){
-      console.log(stayId);
-      this.$emit('getStay',{stayId})
-    },
+    // getStay(stayId){
+    //   console.log(stayId);
+    //   this.$emit('getStay',{stayId})
+    // },
    
-    setliked(stayId) {
-      this.$emit("stayLiked", {stayId})
+    setLiked(stay) {
+      this.$emit("stayLiked", stay)
+      console.log('stay-list-stay',stay);
     }
   },
 };

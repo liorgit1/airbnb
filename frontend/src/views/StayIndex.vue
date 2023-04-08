@@ -3,10 +3,11 @@
    <FilterList />
   <main class="home-page main-layout">
     <stay-list
-    @getStay="getStay"  
-    :stays="stays" 
-    v-if="stays"
-    />
+      :stays="stays"
+      v-if="stays"
+      @stayLiked="setLiked"
+    >
+    </stay-list>
   </main>
   <login-modal
       v-if="modalLoginIsOpen"
@@ -34,8 +35,13 @@ export default {
     };
   },
 
-  created() {
-    this.$store.dispatch({ type: 'loadStaysLikedUser' })
+  // created() {
+  //   this.$store.dispatch({ type: 'loadStaysLikedUser' })
+  // },
+  computed: {
+    stays() {
+      return this.$store.getters.stays
+    },
   },
   methods: {
     getStay({ stayId }) {
@@ -57,14 +63,9 @@ export default {
     setLiked(stay) {
       this.$store.dispatch({
         type: "setLikedStay",
-        stayId: JSON.parse(JSON.stringify(stay)),
+        stay: JSON.parse(JSON.stringify(stay)),
       });
     }
-  },
-  computed: {
-    stays() {
-      return this.$store.getters.stays
-    },
   },
   components: {
     appHeader,
