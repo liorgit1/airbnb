@@ -50,6 +50,14 @@ export default {
 
         uniqueStays(state, { filterBy }) {
             state.filterBy.country = filterBy
+        },
+
+        saveStay(state, { stay }) {
+            console.log(stay)
+            const idx = state.stays.findIndex(currstay => currstay._id === stay._id)
+            if (idx !== -1) {
+            state.stays.splice(idx, 1, stay)}
+            else state.stays.push(stay)
         }
 
 
@@ -73,7 +81,17 @@ export default {
                 console.error(err)
             }
 
-        }
+        },
+
+        async saveStay({ commit }, { stay }) {
+            try {
+                const newStay = await stayService.save(stay)
+                commit({ type: 'saveStay', stay: newStay })
+            } catch (err) {
+                console.log('Could Not save stay')
+                    // TODO: throw error to display user
+            }
+        },
     }
 
 
