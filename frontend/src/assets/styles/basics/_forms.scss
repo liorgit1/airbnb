@@ -1,7 +1,5 @@
-
-
-form:not(.order-form)>* {
-    display: block;
-    width: 200px;
-    margin: 10px 0px;
-}
+form:not(.order-form) > *:not(.order-data):not(.order-data1):not(.btn-container):not(.reservation-form) {
+  display: block;
+  width: 200px;
+  margin: 10px 0px;
+}   

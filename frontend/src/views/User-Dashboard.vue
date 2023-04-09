@@ -233,8 +233,8 @@ export default {
     this.user = user;
     console.log(user);
     console.log("this.user", this.user);
-    socketService.on("host topic", user.id);
-    socketService.on("order recived", this.addOrder);
+    // socketService.on("host topic", user.id);
+    // socketService.on("order recived", this.addOrder);
   },
   methods: {
     toggle(val) {
@@ -247,7 +247,7 @@ export default {
       order.status = val;
       orderService.add(order);
       const msg = val;
-      socketService.emit("order-status-change", msg);
+      // socketService.emit("order-status-change", msg);
     },
     changeOrderStatusBack(order) {
       if (order.status === "Approve")
@@ -266,8 +266,8 @@ export default {
   },
   computed: {},
   unmounted() {
-    socketService.off("order recived", this.addMsg);
-    socketService.off("host topic", user.id);
+    // socketService.off("order recived", this.addMsg);
+    // socketService.off("host topic", user.id);
   },
   components: {
     appHeader,

@@ -85,7 +85,7 @@
 
 
 
-                <div>
+                <div class="order-data1">
                     <span v-if="duration">
                         <div>
                             <div class="flex space-between">

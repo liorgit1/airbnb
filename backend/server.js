@@ -21,6 +21,8 @@ if (process.env.NODE_ENV === 'production') {
     origin: [
       'http://127.0.0.1:5173',
       'http://localhost:5173',
+      'http://127.0.0.1:5174',
+      'http://localhost:5174',
       'http://127.0.0.1:3000',
       'http://localhost:3000',
       'http://localhost:3030',
@@ -37,7 +39,7 @@ const userRoutes = require('./api/user/user.routes')
 const stayRoutes = require('./api/stay/stay.routes')
 const orderRoutes = require('./api/order/order.routes')
 const reviewRoutes = require('./api/review/review.routes')
-const { setupSocketAPI } = require('./services/socket.service')
+// const { setupSocketAPI } = require('./services/socket.service')
 
 // routes
 const setupAsyncLocalStorage = require('./middlewares/setupAls.middleware')
