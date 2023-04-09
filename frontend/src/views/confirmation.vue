@@ -19,7 +19,7 @@
                     </svg>
 
                     <h1 style="translate: -10px -41px;">This is a rare find</h1>
-                    <h4 style="translate: -10px -37px;">Ron and Shay's place is usually booked
+                    <h4 style="translate: -10px -37px;">{{ this.stay.host.fullname }}'s place is usually booked
                     </h4>
                 </div>
                 <div style="padding-block-end: 10px;">
@@ -27,12 +27,13 @@
                     <div class="flex space-between">
 
                         <h3>Dates</h3>
-                        <h3 style="padding-inline-end: 91px">Apr 7 - 14</h3>
+                        <h3 style="padding-inline-end: 91px">{{ this.order.startDate }} - {{ this.order.endDate }}</h3>
                     </div>
                     <div style="margin-top: 30px;" class="flex space-between">
 
                         <h3>Guests</h3>
-                        <h3 style="padding-inline-end: 91px">2 guests</h3>
+                        <h3 style="padding-inline-end: 91px">{{ this.order.guests.adults + this.order.guests.kids }} guests
+                        </h3>
                     </div>
                     <div class="aprove">
                     </div>
@@ -40,7 +41,7 @@
 
                 <div class="flex">
                     <p style="font-size: 22px;translate: 67px 92px;; text-decoration: underline;">close</p>
-                    <div style="cursor: pointer;" @click="this.$router.push(`/trip`);" class=" approveBtn">
+                    <div style="cursor: pointer;" @click="makeOrder" class=" approveBtn">
                         <span style="padding-inline-start: 41px;">
                             Approve
                         </span>
@@ -57,11 +58,12 @@
             <div class="confirm-price-modal flex-col">
                 <div class="apt-modal">
                     <div class="flex confirm-modal-top">
-                        <img class="confirmation-img" src="../assets/img/1.jpg">
+                        <img class="confirmation-img" :src="stay.imgUrls[0]">
                         <div>
-                            <p style="margin-block-start: 33px;margin-inline-start: 15px;" class="fs14">Villa</p>
+                            <p style="margin-block-start: 33px;margin-inline-start: 15px;" class="fs14">{{ this.stay.type }}
+                            </p>
                             <div class="confirm-h4">
-                                <h4>Westin Kaanapali KORVN 2BR</h4>
+                                <h4>{{ this.stay.name }}</h4>
                                 <h4 style="margin-block-start: -6px;">Welcome</h4>
                             </div>
                         </div>
@@ -69,17 +71,17 @@
                     <div class="confrim-price-details">
                         <h3 style="margin-block-start: 26px;margin-inline-start: 30px;">Price details</h3>
                         <div style="margin-inline: 30px; margin-block-start: 40px;" class="flex space-between">
-                            <h4>$500 X 7 nights </h4>
-                            <h4>$3500</h4>
+                            <h4>${{ stay.price }} X{{ order.stayTime }} nights </h4>
+                            <h4>${{ order.totalPrice }}</h4>
                         </div>
                         <div style="padding-block-end: 21px;margin-inline: 30px; margin-block-start: 17px;border-bottom: 1px solid #ddd;"
                             class="flex space-between">
                             <h4>Service fee </h4>
-                            <h4>$24</h4>
+                            <h4>${{ fee }}</h4>
                         </div>
                         <div style="margin-inline: 30px; margin-block-start: 35px;" class="flex space-between">
                             <h4>Total </h4>
-                            <h4>$3524</h4>
+                            <h4>${{ order.totalPrice + fee }}</h4>
                         </div>
                     </div>
                 </div>
@@ -94,17 +96,52 @@
 
 
 <script>
+import { stayService } from '../services/stay-service';
 // import {userService} from '../services/user.service'
-
 export default {
     data() {
         return {
+            order: {},
+            stay: {},
+            fee: 24
             // user: null
         }
     },
     async created() {
         // const user = await userService.getById(id)
-        // this.user = user
+        this.order = this.$store.getters.currOrder;
+        const stay = await stayService.getById(this.order.stay_id)
+        this.stay = stay
+        console.log('this.stay :>> ', this.stay);
+
+        console.log('this.order :>> ', this.order);
+        console.log('this.$store.getters.currOrder :>> ', this.$store.getters.currOrder);
+    },
+    methods: {
+        async makeOrder() {
+
+            console.log('giiiiiiiiiiiiiiiiiiiiiii')
+            console.log("orderToSave", this.order)
+            try {
+                this.$store.dispatch({
+                    type: "addNewOrder",
+                    orderToSave: this.order,
+                })
+
+                this.$router.push(`/trip`)
+                // ElNotification({
+                //     title: "Success",
+                //     message:
+                //         "Your booking request has been sent to the host",
+                //     type: "success",
+                // });
+
+                // socketService.emit("addOrder", orderToSave);
+            }
+            catch {
+                console.error;
+            }
+        }
     },
     watch: {
 

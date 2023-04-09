@@ -214,10 +214,10 @@ export default {
 
         this.orderInfo.startDate = startDate
         this.orderInfo.endDate = endDate
-        this.orderInfo.guests.adults = +adults
-        this.orderInfo.guests.kids = +kids
-        this.orderInfo.guests.infants = +infants
-        this.orderInfo.guests.pets = +pets
+        this.orderInfo.guests.adults = +adults ? +adults : 1
+        this.orderInfo.guests.kids = +kids ? +kids : 0
+        this.orderInfo.guests.infants = +infants ? +infants : 0
+        this.orderInfo.guests.pets = +pets ? +pets : 0
         // console.log('this.$route.query :>> ', this.$route.query);
         // console.log('startDate, endDate, adults, kids, infants, pets :>> ', startDate, endDate, adults, kids, infants, pets);
     },

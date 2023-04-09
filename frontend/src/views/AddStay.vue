@@ -71,7 +71,9 @@ export default {
         capacity: '',
         loc: { country: '' },
         reviews: [],
-        host: {},
+        host: {
+          pictureUrl:'https://a0.muscache.com/im/pictures/user/241be2bb-a5b5-4768-a8de-4d2438e3bb42.jpg?im_w=240',
+        },
 
 
       },
@@ -82,6 +84,7 @@ export default {
     console.log('this.user :>> ', this.user);
     console.log('this.newStay.host :>> ', this.newStay.host);
     this.newStay.host._id = this.user._id
+    this.newStay.fullname = this.user.fullname
 
     // if (!this.user) this.$router.push('/stay')
 

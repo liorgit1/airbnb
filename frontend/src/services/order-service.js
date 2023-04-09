@@ -14,6 +14,7 @@ export const orderService = {
     getById,
     getEmptyOrder,
     getTotalPrice,
+    getStayTime
 }
 
 
@@ -25,6 +26,15 @@ async function query() {
         console.error('cannot load orders')
     }
 }
+function getStayTime(order) {
+    const start = new Date(order.startDate)
+    const end = new Date(order.endDate)
+    const diff = Math.abs(end - start)
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
+    console.log('days :>> ', days);
+    return days
+}
+
 
 function getTotalPrice(order) {
     // console.log('order.startDate :>> ', order.startDate);
@@ -37,13 +47,13 @@ function getTotalPrice(order) {
     const endDate = new Date(order.endDate);
     const days = Math.abs(startDate - endDate);
     const diffDays = Math.ceil(days / (1000 * 60 * 60 * 24));
-    console.log('gettotalprice');
-    console.log('startDate :>> ', startDate);
-    console.log('endDate :>> ', endDate);
-    console.log('days :>> ', days);
-    console.log('diffDays :>> ', diffDays);
-    console.log('order :>> ', order);
-    console.log('diffDays * order.pricePerNight :>> ', diffDays * order.pricePerNight);
+    // console.log('gettotalprice');
+    // console.log('startDate :>> ', startDate);
+    // console.log('endDate :>> ', endDate);
+    // console.log('days :>> ', days);
+    // console.log('diffDays :>> ', diffDays);
+    // console.log('order :>> ', order);
+    // console.log('diffDays * order.pricePerNight :>> ', diffDays * order.pricePerNight);
     return (diffDays * order.pricePerNight);
 
 }

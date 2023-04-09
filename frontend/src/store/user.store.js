@@ -57,7 +57,7 @@ export default {
       console.log('state.loggedinUser :>> ', state.loggedinUser);
 
 
-      state.loggedinUser.orders.unshift(newOrder);
+      state.loggedinUser.orders ? state.loggedinUser.orders.unshift(newOrder) : state.loggedinUser.orders[0] = newOrder
       userService.saveUser(state.loggedinUser);
     },
     setLikedStay(state, { stay }) {
