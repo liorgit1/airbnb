@@ -6,7 +6,7 @@ import stayIndex from '../src/views/StayIndex.vue'
 import confirmation from './views/confirmation.vue'
 import userTrip from '../src/views/UserTrip.vue'
 import userWishList from '../src/views/WishList.vue'
-import userDashboard  from '../src/views/User-Dashboard.vue'
+import HostDashboard  from '../src/views/Host-Dashboard.vue'
 import AddStay from '../src/views/AddStay.vue'
 
 
@@ -49,8 +49,8 @@ const routes = [
   },
   {
     path: '/dashboard',
-    name: 'user-dashboard',
-    component: userDashboard,
+    name: 'Host-dashboard',
+    component: HostDashboard,
 },
 {
   path: '/login',

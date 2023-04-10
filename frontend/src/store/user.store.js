@@ -123,9 +123,10 @@ export default {
     },
     async loadStaysUser({ commit, state }) {
       try {
-        const stays = await userService.getUserStays(state.loggedinUser);
+        const stays = await userService.getUserStays(state.loggedinUser._id);
+        console.log('staysstore', stays);
         commit({ type: "setStaysUser", stays });
-        // const orders = await userService.getUserOrder(state.loggedinUser);
+        const orders = await userService.getUserOrder(state.loggedinUser._id);
         commit({ type: "setOrderUser", orders });
       } catch (err) {
         console.error("Cannot Load stays", err);
@@ -164,19 +165,19 @@ export default {
       }
     },
 
-    // async loadAndWatchUser({ commit }, { userId }) {
-    //   try {
-    //     const user = await userService.getById(userId);
-    //     commit({ type: 'setWatchedUser', user })
-    //     socketService.emit(SOCKET_EMIT_USER_WATCH, userId)
-    //     socketService.off(SOCKET_EVENT_USER_UPDATED)
-    //     socketService.on(SOCKET_EVENT_USER_UPDATED, user => {
-    //       commit({ type: 'setWatchedUser', user })
-    //     })
-    //   } catch (err) {
-    //     console.log('userStore: Error in loadAndWatchUser', err)
-    //     throw err
-    //   }
-    // },
+    async loadAndWatchUser({ commit }, { userId }) {
+      try {
+        const user = await userService.getById(userId);
+        commit({ type: 'setWatchedUser', user })
+        socketService.emit(SOCKET_EMIT_USER_WATCH, userId)
+        socketService.off(SOCKET_EVENT_USER_UPDATED)
+        socketService.on(SOCKET_EVENT_USER_UPDATED, user => {
+          commit({ type: 'setWatchedUser', user })
+        })
+      } catch (err) {
+        console.log('userStore: Error in loadAndWatchUser', err)
+        throw err
+      }
+    },
   }
 };

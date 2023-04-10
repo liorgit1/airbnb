@@ -39,7 +39,7 @@ const userRoutes = require('./api/user/user.routes')
 const stayRoutes = require('./api/stay/stay.routes')
 const orderRoutes = require('./api/order/order.routes')
 const reviewRoutes = require('./api/review/review.routes')
-// const { setupSocketAPI } = require('./services/socket.service')
+const {connectSockets} = require('./services/socket.service')
 
 // routes
 const setupAsyncLocalStorage = require('./middlewares/setupAls.middleware')
@@ -50,7 +50,7 @@ app.use('/api/user', userRoutes)
 app.use('/api/stay', stayRoutes)
 app.use('/api/review', reviewRoutes)
 app.use('/api/order', orderRoutes)
-// setupSocketAPI(http)
+connectSockets(http)
 // Make every server-side-route to match the index.html
 // so when requesting http://localhost:3030/index.html/toy/123 it will still respond with
 // our SPA (single page app) (the index.html file) and allow vue-router to take it from there
