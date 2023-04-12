@@ -2520,3 +2520,5 @@
 >>>>>>> 50d0013a62be30449cc2d67607c208be7b4da16a
 12.4.2023, 13:27:54 - INFO - Hi | 90 | Bobo 
 12.4.2023, 13:27:55 - INFO - Server is running on port: 3030 
+12.4.2023, 14:28:23 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+12.4.2023, 14:28:23 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 

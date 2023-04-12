@@ -2,7 +2,7 @@
   <section class="main-layout">
     <form  @submit.prevent="saveStay">
       
-      <section>
+      <section style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
       <div class="stay-edit__input-box">
         Stay Name:
         <label for="txt" class="stay-edit__label"></label>
@@ -17,26 +17,30 @@
       </section>
 
       
-      <div class="img-container">
+      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
+        Add images of your property:
+        <section class="img-container">
       <label v-for = "imgUrl in imgUrlss" :key = imgUrl.id class="image-input" @drop.prevent="handleFile($event , imgUrl.id)" @dragover.prevent>
         <span
         v-if="!imgUrl.imgUrl"
         class="placeholder">
-        Drag an Image
+        Add an Image
         </span>
         <img v-else class="placeholder" :src= imgUrl.imgUrl alt="">
         <input type="file" @change="handleFile($event , imgUrl.id)" hidden>
       </label>
+      </section>
       </div>
 
-      <div class="stay-edit__input-box">
+      <div class="stay-edit__input-box" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
         Enter the price per night:
         <label class="stay-edit__label" for="price"></label>
-        <input v-model.number="newStay.price" id="price" type="number" />
+        <input v-model.number="newStay.price" id="price" type="text" placeholder="enter the price here..."/>
       </div>
 
 
-      <div>Select the capacity: {{ selected }}
+      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
+      Select the capacity: {{ selected }}
       <select v-model.number = "newStay.capacity">
         <option disabled value="">Please select</option>
         <option>1</option>
@@ -48,24 +52,29 @@
       </select>
     </div>
 
-      <div>
+      <div class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
         Enter a brief summary:
         <label for="summary"></label>
-        <textarea v-model="newStay.summary"></textarea>
+        <textarea v-model="newStay.summary"
+        rows="5" cols="40"
+        style="resize: none; width: 50%;"> 
+        </textarea>
       </div>
 
-      <section class="grid"> 
+      <section class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;"> 
       Select your amenities:
+      <section class="amenities-grid">
       <div v-for = "amenitiy in nAmenities" key:amenitiy.id>
         <input type="checkbox" for=""  @click="push(amenitiy.id)">
         <label> {{ amenitiy.amenitiy }} </label>
       </div>
+      </section>
      </section>
 
-      <div>
+      <section class="btn-section">
         <button class="btn">save</button>
-        <button class="btn-dark" @click="goBack">go back</button>
-      </div>
+        <button class="btn" @click="goBack">go back</button>
+      </section>
     </form>
   </section>
 </template>
@@ -73,7 +82,7 @@
 <script>
 
 import { stayService } from '../services/stay-service'
-import PictureInput from 'vue-picture-input'
+// import PictureInput from 'vue-picture-input'
 import {uploadImg} from '../services/uploadService'
 import { keys } from 'lodash'
 
@@ -93,6 +102,7 @@ export default {
         likedByUsers:[],
         host: {
           pictureUrl:'https://a0.muscache.com/im/pictures/user/241be2bb-a5b5-4768-a8de-4d2438e3bb42.jpg?im_w=240',
+          _id:''
         },
        
       },
@@ -112,7 +122,9 @@ export default {
                    {id:6 , amenitiy:'Air conditioning'},
                    {id:7 , amenitiy:'Pool'},
                    {id:8 , amenitiy:'Gym'},
-                   {id:9 , amenitiy:'TV'},]
+                   {id:9 , amenitiy:'TV'},
+                   {id:10 , amenitiy:'Washing machine'},
+                   {id:11 , amenitiy:'Grill'},]
     
     }
 
@@ -120,12 +132,13 @@ export default {
   },
 
   components: {
-    PictureInput
+    // PictureInput
   },
 
   created() {
     console.log('this.user :>> ', this.user);
     console.log('this.newStay.host :>> ', this.newStay.host);
+    if(this.user)
     this.newStay.host._id = this.user._id
 
     
