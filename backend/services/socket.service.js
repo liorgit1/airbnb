@@ -30,7 +30,7 @@ function connectSockets(http, session) {
             gIo.emit('order recived', order)
                 // emits only to sockets in the same room
             console.log(socket.myTopic);
-            // gIo.to(socket.myTopic).emit('order recived', order)
+            gIo.to(socket.myTopic).emit('order recived', order)
         })
         socket.on('order-status-change', (msg) => {
             console.log('Emitting new order', msg);

@@ -94,7 +94,7 @@
           <th class="user-order-th">Revenue</th>
           <th class="user-order-th">Actions</th>
         </tr>
-        <tr v-for="order in user.orders" :key="order._id">
+        <tr v-for="order in user.incomingOrders" :key="order._id">
           <td class="flex align-center stay-name-details">
             <div class="review-img q-pa-md q-gutter-sm">
               <!-- <q-avatar>
@@ -152,7 +152,7 @@
           <th>Address</th>
           <th>Actions</th>
         </tr>
-        <tr v-for="stay in user.stays" :key="stay._id">
+        <tr v-for="stay in user.stays" :key="stay">
           <td>
             <div class="review-img q-pa-md q-gutter-sm"></div>
           </td>
@@ -173,7 +173,7 @@
 import appHeader from "../cmps/AppHeader.vue";
 import { utilService } from "../services/util-service.js";
 import { orderService } from "../services/order-service.js";
-import { userService } from "../services/user-service.js";
+// import { userService } from "../services/user-service.js";
 import { socketService } from "../services/socket.service.js";
 import chart from "../cmps/chart.vue";
 export default {
@@ -192,7 +192,8 @@ export default {
     // const orders = userService.getUserOrder(user._id);
     // this.orders = orders;
     this.user = user;
-    // console.log(user);
+    console.log(user);
+    console.log('hostStays',this.user.stays);
     // console.log("lalalalala", this.orders);
     // console.log("added order", user.orders);
     // console.log("this.user", this.user);
@@ -218,7 +219,7 @@ export default {
       orderService.add(order);
     },
     addOrder(order) {
-      this.user.orders.unshift(order);
+      this.user.incomingOrders.unshift(order);
     },
     formatedPrice(price) {
       return new Intl.NumberFormat("en-IN", {

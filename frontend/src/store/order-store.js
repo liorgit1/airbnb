@@ -12,7 +12,7 @@ export default {
     },
     mutations: {
         setOrder(state, { newOrder }) {
-            state.orders.push(newOrder)
+            state.orders.unshift(newOrder)
         },
         setCurrOrder(state, { newOrder }) {
             console.log('newOrder :>> ', newOrder);
@@ -33,7 +33,7 @@ export default {
                 // console.log(orderToSave);
                 console.log(newOrder);
                 commit({ type: 'setOrder', newOrder })
-                commit({ type: 'addOrderUser', newOrder: newOrder })
+                commit({ type: 'addOrderUser', newOrder})
                 return newOrder
             } catch (err) {
                 console.log('orderStore: error in addOrder', err)

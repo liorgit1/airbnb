@@ -50,7 +50,7 @@ export default {
       userService.saveUser(state.loggedinUser);
     },
     setOrderUser(state, { orders }) {
-      state.loggedinUser.orders = orders;
+      state.loggedinUser.incomingOrders = orders;
       userService.saveUser(state.loggedinUser);
     },
     addOrderUser(state, { newOrder }) {
@@ -124,8 +124,8 @@ export default {
     async loadStaysUser({ commit, state }) {
       try {
         const stays = await userService.getUserStays(state.loggedinUser._id);
-        console.log('staysstore', stays);
         commit({ type: "setStaysUser", stays });
+        // console.log('staysstore', stays);
         const orders = await userService.getUserOrder(state.loggedinUser._id);
         commit({ type: "setOrderUser", orders });
       } catch (err) {
@@ -137,7 +137,7 @@ export default {
       if (!state.loggedinUser) return
       commit({ type: "setLikedStay", stay });
       try {
-        await userService.saveUser(state.loggedinUser);
+        await userService.saveUser(state.loggedinUser); 
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;

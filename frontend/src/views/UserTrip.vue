@@ -93,25 +93,69 @@
 </template>
 
 <script>
-
+import { orderService } from "../services/order-service.js";
+// import { userService } from "../services/user-service.js";
+import { socketService } from "../services/socket.service.js";
+import chart from "../cmps/chart.vue";
 export default {
-    computed: {
-    stay() {
-      return this.$store.getters.stays[4]
+  data() {
+    return {
+      // orders: [],
+      user: null,
+      renderOrder: false,
+      // stays: [],
+    };
+  },
+  async created() {
+    this.$store.dispatch({ type: "loadStaysUser" });
+    const user = await this.$store.getters.user;
+    // console.log('pppppppppp',orders.guestName);
+    // const orders = userService.getUserOrder(user._id);
+    // this.orders = orders;
+    this.user = user;
+    console.log('hostStays',user.stays);
+    // console.log(user);
+    // console.log("lalalalala", this.orders);
+    // console.log("added order", user.orders);
+    // console.log("this.user", this.user);
+    socketService.on("host topic", user._id);
+    socketService.on("order recived", this.addOrder);
+  },
+  methods: {
+    toggle(val) {
+      this.renderOrder = val;
+    },
+    // formattedTime(time) {
+    //   return time.slice(0, 10);
+    // },
+    changeOrderStatus(order, val) {
+      order.status = val;
+      orderService.add(order);
+      const msg = val;
+      socketService.emit("order-status-change", msg);
+    },
+    changeOrderStatusBack(order) {
+      if (order.status === "Approve") order.status = "Decline";
+      else order.status = "Approve";
+      orderService.add(order);
+    },
+    addOrder(order) {
+      this.user.incomingOrders.unshift(order);
+    },
+    formatedPrice(price) {
+      return new Intl.NumberFormat("en-IN", {
+        maximumSignificantDigits: 3,
+      }).format(price);
     },
   },
-  created(){
-    this.$store.dispatch({ type: 'loadStays' })
+  computed: {},
+  unmounted() {
+    socketService.off("order recived", this.addMsg);
+    socketService.off("host topic", user._id);
   },
-  mounted() {
-        console.log(this.stay);
-    // this.stay = stay
-  },  
-
-    data() {
-        return {
-        //     // stay:null
-        }
-    }
-}
+  components: {
+    appHeader,
+    chart,
+  },
+};
 </script>

@@ -21,21 +21,20 @@ export const userService = {
 };
 
 async function getUserStays(entityId) {
-  let userStays = []
-  const stays = await stayService.query();
-  // console.log('userStays', stays);
   // console.log('entityId', entityId);
+  let userStays = []
   try {
     console.log('userStays123', stays);
     // console.log('userSta;f;f;f;ys', userStays);
     // console.log('klflflfyId', entityId);
     userStays = await stays.filter(stay => stay.host._id === entityId)
-    console.log('entityId', entityId);
     console.log('userStays', userStays);
     console.log('entityId', entityId);
+    console.log('entityId', entityId);
     return userStays
-  } catch {
-    console.log('baiaaa');
+  }
+  catch {
+    console.log('baiaaa')
 
   }
 }
@@ -53,7 +52,7 @@ async function getUserOrder(entityId) {
   // console.log('orders',orders);
   try {
     userOrders = orders.filter(order => order.hostId === entityId)
-    console.log('userOrders',userOrders);
+    console.log('userOrders', userOrders);
     return userOrders;
   } catch {
     console.error("cannot get user order");
@@ -82,7 +81,7 @@ async function login(userInfo) {
   try {
     const loggedInUser = await httpService.post(`${ENDPOINT}/login`, userInfo);
     utilService.saveToSessionStorage(STORAGE_KEY, loggedInUser);
-    // socketService.emit('set-user-socket', loggedInUser.id)
+    socketService.emit('set-user-socket', loggedInUser._id)
     return loggedInUser;
   } catch {
     console.log("cant login");
@@ -111,7 +110,7 @@ async function logout() {
   try {
     const loggedOutUser = await httpService.post(`${ENDPOINT}/logout`);
     utilService.removeFromSessionStorage(STORAGE_KEY);
-    // socketService.emit('unset-user-socket', loggedOutUser.id)
+    socketService.emit('unset-user-socket', loggedOutUser._id)
     return loggedOutUser;
   } catch {
     console.log("logout failed");

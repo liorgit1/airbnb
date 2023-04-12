@@ -112,16 +112,16 @@ export default {
         this.order = this.$store.getters.currOrder;
         const stay = await stayService.getById(this.order.stay_id)
         this.stay = stay
-        // console.log('this.stay :>> ', this.stay);
+        console.log('this.stay :>> ', this.stay);
 
-        // console.log('this.order :>> ', this.order);
-        // console.log('this.$store.getters.currOrder :>> ', this.$store.getters.currOrder);
+        console.log('this.order :>> ', this.order);
+        console.log('this.$store.getters.currOrder :>> ', this.$store.getters.currOrder);
     },
     methods: {
         async makeOrder() {
 
-            // console.log('giiiiiiiiiiiiiiiiiiiiiii')
-            // console.log("orderToSave", this.order)
+            console.log('giiiiiiiiiiiiiiiiiiiiiii')
+            console.log("orderToSave", this.order)
             try {
                 this.$store.dispatch({
                     type: "addNewOrder",
@@ -129,14 +129,14 @@ export default {
                 })
 
                 this.$router.push(`/trip`)
-                // ElNotification({
-                //     title: "Success",
-                //     message:
-                //         "Your booking request has been sent to the host",
-                //     type: "success",
-                // });
+                ElNotification({
+                    title: "Success",
+                    message:
+                        "Your booking request has been sent to the host",
+                    type: "success",
+                });
 
-                // socketService.emit("addOrder", orderToSave);
+                socketService.emit("addOrder", orderToSave);
             }
             catch {
                 console.error;
