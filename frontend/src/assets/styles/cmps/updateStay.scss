@@ -1,0 +1,44 @@
+.image-input{
+  display: block;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center center;
+   img {
+    //  margin: 3px;
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+}
+
+.placeholder{
+  background: #F0F0F0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#333;
+  font-size: 18px;
+  font-family:Helvetica;
+
+
+}
+
+.placeholder:hover{
+  background: #E0E0E0;
+}
+
+
+.file-input{
+  display:none;
+}
+
+.img-container{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}

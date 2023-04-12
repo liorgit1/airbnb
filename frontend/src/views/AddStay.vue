@@ -1,26 +1,43 @@
 <template>
   <section class="main-layout">
-    <form class="stay-edit__form grid" @submit.prevent="saveStay">
+    <form  @submit.prevent="saveStay">
+      
+      <section>
       <div class="stay-edit__input-box">
-        <label for="txt" class="stay-edit__label">stay Name</label>
+        Stay Name:
+        <label for="txt" class="stay-edit__label"></label>
         <input v-model="newStay.name" id="txt" type="text" placeholder="Enter your stay name here..." />
       </div>
 
-      <div class="stay-edit__input-box">
-        <label class="stay-edit__label" for="price">Price</label>
-        <input required v-model.number="newStay.price" id="price" type="number" />
+      <div>
+        Enter your stay location country:
+        <label for="country"></label>
+        <input v-model="newStay.loc.country" id="country" type="text" placeholder="enter the country here..."/>
+      </div>
+      </section>
+
+      
+      <div class="img-container">
+      <label v-for = "imgUrl in imgUrlss" :key = imgUrl.id class="image-input" @drop.prevent="handleFile($event , imgUrl.id)" @dragover.prevent>
+        <span
+        v-if="!imgUrl.imgUrl"
+        class="placeholder">
+        Drag an Image
+        </span>
+        <img v-else class="placeholder" :src= imgUrl.imgUrl alt="">
+        <input type="file" @change="handleFile($event , imgUrl.id)" hidden>
+      </label>
       </div>
 
-      <!-- <el-switch
-          v-model="stayToEdit.inStock"
-          size="large"
-          active-text="In Stock"
-          inactive-text="Out of stock"
-        /> -->
+      <div class="stay-edit__input-box">
+        Enter the price per night:
+        <label class="stay-edit__label" for="price"></label>
+        <input v-model.number="newStay.price" id="price" type="number" />
+      </div>
 
-      <div>Select the capacity: {{ selected }}</div>
 
-      <select v-model="newStay.capacity">
+      <div>Select the capacity: {{ selected }}
+      <select v-model.number = "newStay.capacity">
         <option disabled value="">Please select</option>
         <option>1</option>
         <option>2</option>
@@ -29,25 +46,21 @@
         <option>5</option>
         <option>6</option>
       </select>
+    </div>
 
       <div>
-        <label for="summary">enter a brief summary:</label>
+        Enter a brief summary:
+        <label for="summary"></label>
         <textarea v-model="newStay.summary"></textarea>
       </div>
 
-      <div>
-        <label for="country">enter your stay location country:</label>
-        <input v-model="newStay.loc.country" id="country" type="text" />
+      <section class="grid"> 
+      Select your amenities:
+      <div v-for = "amenitiy in nAmenities" key:amenitiy.id>
+        <input type="checkbox" for=""  @click="push(amenitiy.id)">
+        <label> {{ amenitiy.amenitiy }} </label>
       </div>
-      <!-- <el-select v-model="selectedLabels" multiple placeholder="Pick number of beds">
-          <el-option
-            v-for="label in labels"
-            :key="label.title"
-            :label="label.title"
-            :value="label.title"
-            :style="{ backgroundColor: label.color, color: '#ffffff' }"
-          />
-        </el-select> -->
+     </section>
 
       <div>
         <button class="btn">save</button>
@@ -58,7 +71,11 @@
 </template>
   
 <script>
+
 import { stayService } from '../services/stay-service'
+import PictureInput from 'vue-picture-input'
+import {uploadImg} from '../services/uploadService'
+import { keys } from 'lodash'
 
 export default {
   name: 'stay-edit',
@@ -71,50 +88,149 @@ export default {
         capacity: '',
         loc: { country: '' },
         reviews: [],
+        imgUrls:[],
         host: {},
-
-
+        amenities:[],
+        likedByUsers:[]
       },
-      // selectedLabels: [],
+
+      imgUrlss:[{id:0 , imgUrl:null},
+                   {id:1 , imgUrl:null},
+                   {id:2 , imgUrl:null},
+                   {id:3, imgUrl:null},
+                   {id:4, imgUrl:null}],
+
+                   nAmenities:[{id:0 , amenitiy:'Wifi'},
+                   {id:1 , amenitiy:'Pets allowed'},
+                   {id:2 , amenitiy:'Kitchen'},
+                   {id:3 , amenitiy:'Dryer'},
+                   {id:4 , amenitiy:'Heating'},
+                   {id:5 , amenitiy:'Essentials'},
+                   {id:6 , amenitiy:'Air conditioning'},
+                   {id:7 , amenitiy:'Pool'},
+                   {id:8 , amenitiy:'Gym'},
+                   {id:9 , amenitiy:'TV'},]
+    
     }
+
+    
   },
+
+  components: {
+    PictureInput
+  },
+
   created() {
     console.log('this.user :>> ', this.user);
     console.log('this.newStay.host :>> ', this.newStay.host);
-    this.newStay.host._id = this.user._id
+    this.newStay.host = this.user
 
-    // if (!this.user) this.$router.push('/stay')
-
-    // const { stayId } = this.$route.params
-    // if (stayId) {
-    //   stayService.getById(stayId).then(stay => {
-    //     this.stayToEdit = stay
-    //     this.selectedLabels = stay.labels.map(label => label.title)
-    //   })
-    // } else this.stayToEdit = stayService.getEmptystay()
+    
   },
   methods: {
     goBack() {
       this.$router.push('/')
     },
     saveStay() {
-      // const newLabels = this.labels.filter(label => this.selectedLabels.includes(label.title))
-      // this.stayToEdit.labels = newLabels
       console.log(this.newStay)
       console.log(this.newStay.loc.country)
+      const newImgUrls = this.imgUrlss.map((imgUrl) =>{
+      if(imgUrl) return imgUrl['imgUrl']
+      })
+
+      this.newStay.imgUrls = newImgUrls
+      console.log(this.newStay.imgUrls)
       this.$store.dispatch({ type: 'saveStay', stay: this.newStay })
-      // .then(() => {
-      //   this.$router.push('/') })
+      
+  
+      },
+
+      print(){
+        console.log(this.newStay.nAmenities)
+      },
+
+       
+    push(id){
+    if(this.newStay.amenities.indexOf(this.nAmenities[id].amenitiy) === -1)
+    this.newStay.amenities.push(this.nAmenities[id].amenitiy)
+    else{
+    const index = this.newStay.amenities.indexOf(this.nAmenities[id].amenitiy)
+    this.newStay.amenities.splice(index , 1)
+    }
+    console.log(this.newStay.amenities)
     },
+    // chooseImage () {
+    //   // this.$emit( event.target.files)
+    //   this.$refs.imageDatas.click()
+    // },
+
+    // onSelectFile () {
+    //   const input = this.$refs.fileInput
+    //   const files = input.files
+    //   if (files && files[0]) {
+    //     const reader = new FileReader
+    //     reader.onload = e => {
+    //       this.imgUrl = e.target.result
+    //     }
+    //     reader.readAsDataURL(files[0])
+    //     this.$emit('input', files[0])
+    //   }
+    // },
+
+    async handleFile(ev , id) {
+            const file = ev.type === 'change' ?
+            ev.target.files[0] :
+            ev.dataTransfer.files[0]
+            console.log(file)
+            console.log(id)
+            const { url } = await uploadImg(file)
+            console.log(url)
+            this.imgUrlss[id].imgUrl = url
+            // img(id)
+  }
+
   },
   computed: {
     user() {
       return this.$store.getters.user
     },
-    //   labels() {
-    //     return this.$store.getters.labels
-    //   },
+
+    // img(id) {
+    //         console.log(id)
+    //         console.log(this.imgUrlss[id].imgUrl)
+    //         return this.imgUrlss[id].imgUrl ?
+    //         this.imgUrlss[id].imgUrl :
+    //             'upload your image'
+    //     },
   },
+
+  watch: {
+    'this.newStay.nAmenities':{
+      handler() {
+        console.log(this.newStay.nAmenities)
+      },
+      deep: true,
+      immediate: true,
+    }
+  }
 }
+
 </script>
   
+ <!-- <div v-for = "imageData in imageDatas"
+// class="image-input"
+// :style="{ 'background-image': `url(${imageData.imgUrl})`}"
+// @click="chooseImage($event)"
+// >
+// <span
+// v-if="!imageData.imgUrl"
+// class="placeholder">
+// Choose an Image
+// </span>
+// <input
+// class="file-input"
+// ref="imageDatas" 
+// type="file"
+// @input="onSelectFile"
+// >
+// </div> -->
