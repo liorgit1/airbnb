@@ -197,7 +197,7 @@ export default {
     // console.log("lalalalala", this.orders);
     // console.log("added order", user.orders);
     // console.log("this.user", this.user);
-    socketService.on("host topic", user._id);
+    socketService.on("set-user-socket", user._id);
     socketService.on("order recived", this.addOrder);
   },
   methods: {
@@ -230,7 +230,7 @@ export default {
   computed: {},
   unmounted() {
     socketService.off("order recived", this.addMsg);
-    socketService.off("host topic", user._id);
+    socketService.off("set-user-socket", user._id);
   },
   components: {
     appHeader,

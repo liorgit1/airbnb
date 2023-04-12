@@ -2,22 +2,22 @@
   <section class="main-layout">
     <form  @submit.prevent="saveStay">
       
-      <section style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
+      <section style = "box-shadow: 0px 1px #00000014; padding-block: 20px; display: grid;row-gap: 10px;">
       <div class="stay-edit__input-box">
         Stay Name:
         <label for="txt" class="stay-edit__label"></label>
-        <input v-model="newStay.name" id="txt" type="text" placeholder="Enter your stay name here..." />
+        <input v-model="newStay.name" id="txt" type="text" style ="border-bottom: 1px #E0E0E0 solid;" placeholder="Enter your stay name here..." />
       </div>
 
       <div>
         Enter your stay location country:
         <label for="country"></label>
-        <input v-model="newStay.loc.country" id="country" type="text" placeholder="enter the country here..."/>
+        <input v-model="newStay.loc.country" id="country" type="text" style ="border-bottom: 1px #E0E0E0 solid;" placeholder="enter the country here..."/>
       </div>
       </section>
 
       
-      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
+      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;display: grid;row-gap: 10px;">
         Add images of your property:
         <section class="img-container">
       <label v-for = "imgUrl in imgUrlss" :key = imgUrl.id class="image-input" @drop.prevent="handleFile($event , imgUrl.id)" @dragover.prevent>
@@ -35,13 +35,13 @@
       <div class="stay-edit__input-box" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
         Enter the price per night:
         <label class="stay-edit__label" for="price"></label>
-        <input v-model.number="newStay.price" id="price" type="text" placeholder="enter the price here..."/>
+        <input v-model.number="newStay.price" id="price" type="text" style ="border-bottom: 1px #E0E0E0 solid;" placeholder="enter the price here..."/>
       </div>
 
 
-      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
-      Select the capacity: {{ selected }}
-      <select v-model.number = "newStay.capacity">
+      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;display: grid; row-gap: 10px;">
+      Select the capacity: {{ newStay.capacity }}
+      <select v-model.number = "newStay.capacity" style="width:150px; border: 1px #E0E0E0 solid">
         <option disabled value="">Please select</option>
         <option>1</option>
         <option>2</option>
@@ -52,16 +52,16 @@
       </select>
     </div>
 
-      <div class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
-        Enter a brief summary:
+      <div class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;row-gap: 5px;">
+        Enter a brief summary of your property:
         <label for="summary"></label>
         <textarea v-model="newStay.summary"
-        rows="5" cols="40"
-        style="resize: none; width: 50%;"> 
+        rows="5" cols="40" placeholder="enter your summary here"
+        style="resize: none; width: 317px; border: 1px #E0E0E0 solid;"> 
         </textarea>
       </div>
 
-      <section class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;"> 
+      <section class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;margin-bottom:20px;row-gap:10px;"> 
       Select your amenities:
       <section class="amenities-grid">
       <div v-for = "amenitiy in nAmenities" key:amenitiy.id>
@@ -157,7 +157,7 @@ export default {
       this.newStay.imgUrls = newImgUrls
       console.log(this.newStay.imgUrls)
       this.$store.dispatch({ type: 'saveStay', stay: this.newStay })
-      
+      location.reload()
   
       },
 
