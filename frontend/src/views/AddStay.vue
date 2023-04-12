@@ -2,42 +2,46 @@
   <section class="main-layout">
     <form  @submit.prevent="saveStay">
       
-      <section>
+      <section style = "box-shadow: 0px 1px #00000014; padding-block: 20px; display: grid;row-gap: 10px;">
       <div class="stay-edit__input-box">
         Stay Name:
         <label for="txt" class="stay-edit__label"></label>
-        <input v-model="newStay.name" id="txt" type="text" placeholder="Enter your stay name here..." />
+        <input v-model="newStay.name" id="txt" type="text" style ="border-bottom: 1px #E0E0E0 solid;" placeholder="Enter your stay name here..." />
       </div>
 
       <div>
         Enter your stay location country:
         <label for="country"></label>
-        <input v-model="newStay.loc.country" id="country" type="text" placeholder="enter the country here..."/>
+        <input v-model="newStay.loc.country" id="country" type="text" style ="border-bottom: 1px #E0E0E0 solid;" placeholder="enter the country here..."/>
       </div>
       </section>
 
       
-      <div class="img-container">
+      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;display: grid;row-gap: 10px;">
+        Add images of your property:
+        <section class="img-container">
       <label v-for = "imgUrl in imgUrlss" :key = imgUrl.id class="image-input" @drop.prevent="handleFile($event , imgUrl.id)" @dragover.prevent>
         <span
         v-if="!imgUrl.imgUrl"
         class="placeholder">
-        Drag an Image
+        Add an Image
         </span>
         <img v-else class="placeholder" :src= imgUrl.imgUrl alt="">
         <input type="file" @change="handleFile($event , imgUrl.id)" hidden>
       </label>
+      </section>
       </div>
 
-      <div class="stay-edit__input-box">
+      <div class="stay-edit__input-box" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;">
         Enter the price per night:
         <label class="stay-edit__label" for="price"></label>
-        <input v-model.number="newStay.price" id="price" type="number" />
+        <input v-model.number="newStay.price" id="price" type="text" style ="border-bottom: 1px #E0E0E0 solid;" placeholder="enter the price here..."/>
       </div>
 
 
-      <div>Select the capacity: {{ selected }}
-      <select v-model.number = "newStay.capacity">
+      <div style = "box-shadow: 0px 1px #00000014; padding-block: 20px;display: grid; row-gap: 10px;">
+      Select the capacity: {{ newStay.capacity }}
+      <select v-model.number = "newStay.capacity" style="width:150px; border: 1px #E0E0E0 solid">
         <option disabled value="">Please select</option>
         <option>1</option>
         <option>2</option>
@@ -48,24 +52,29 @@
       </select>
     </div>
 
-      <div>
-        Enter a brief summary:
+      <div class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;row-gap: 5px;">
+        Enter a brief summary of your property:
         <label for="summary"></label>
-        <textarea v-model="newStay.summary"></textarea>
+        <textarea v-model="newStay.summary"
+        rows="5" cols="40" placeholder="enter your summary here"
+        style="resize: none; width: 317px; border: 1px #E0E0E0 solid;"> 
+        </textarea>
       </div>
 
-      <section class="grid"> 
+      <section class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;margin-bottom:20px;row-gap:10px;"> 
       Select your amenities:
+      <section class="amenities-grid">
       <div v-for = "amenitiy in nAmenities" key:amenitiy.id>
         <input type="checkbox" for=""  @click="push(amenitiy.id)">
         <label> {{ amenitiy.amenitiy }} </label>
       </div>
+      </section>
      </section>
 
-      <div>
+      <section class="btn-section">
         <button class="btn">save</button>
-        <button class="btn-dark" @click="goBack">go back</button>
-      </div>
+        <button class="btn" @click="goBack">go back</button>
+      </section>
     </form>
   </section>
 </template>
@@ -93,6 +102,7 @@ export default {
         likedByUsers:[],
         host: {
           pictureUrl:'https://a0.muscache.com/im/pictures/user/241be2bb-a5b5-4768-a8de-4d2438e3bb42.jpg?im_w=240',
+          _id:''
         },
        
       },
@@ -112,7 +122,9 @@ export default {
                    {id:6 , amenitiy:'Air conditioning'},
                    {id:7 , amenitiy:'Pool'},
                    {id:8 , amenitiy:'Gym'},
-                   {id:9 , amenitiy:'TV'},]
+                   {id:9 , amenitiy:'TV'},
+                   {id:10 , amenitiy:'Washing machine'},
+                   {id:11 , amenitiy:'Grill'},]
     
     }
 
@@ -126,6 +138,7 @@ export default {
   created() {
     console.log('this.user :>> ', this.user);
     console.log('this.newStay.host :>> ', this.newStay.host);
+    if(this.user)
     this.newStay.host._id = this.user._id
 
     
@@ -144,7 +157,7 @@ export default {
       this.newStay.imgUrls = newImgUrls
       console.log(this.newStay.imgUrls)
       this.$store.dispatch({ type: 'saveStay', stay: this.newStay })
-      
+      location.reload()
   
       },
 

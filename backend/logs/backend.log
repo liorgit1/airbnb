@@ -2715,6 +2715,10 @@
 >>>>>>> 50d0013a62be30449cc2d67607c208be7b4da16a
 12.4.2023, 13:27:54 - INFO - Hi | 90 | Bobo 
 12.4.2023, 13:27:55 - INFO - Server is running on port: 3030 
+<<<<<<< HEAD
+12.4.2023, 14:28:23 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+12.4.2023, 14:28:23 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+=======
 >>>>>>> 18ae4c7d968d638af065fc17e458654c4a8dd2d0
 12.4.2023, 13:35:11 - INFO - Hi | 90 | Bobo 
 12.4.2023, 13:35:11 - INFO - Server is running on port: 3030 
@@ -2761,6 +2765,7 @@
 12.4.2023, 14:40:31 - DEBUG - Setting (UmDlgE53us5JgHTDAAAV) socket.userId = 643069ee43be54dedea7feea 
 12.4.2023, 14:42:43 - DEBUG - Setting (YhP9u_ssC4igH6R3AAAX) socket.userId = 643069ee43be54dedea7feea 
 12.4.2023, 14:43:05 - DEBUG - Setting (GJkOK99KAEckXKcFAAAZ) socket.userId = 643069ee43be54dedea7feea 
+<<<<<<< HEAD
 >>>>>>> df9646205df73e944fa58a18b5605bc72fd90bb9
 12.4.2023, 14:45:36 - INFO - Hi | 90 | Bobo 
 12.4.2023, 14:45:36 - INFO - Server is running on port: 3030 
@@ -2904,3 +2909,8 @@
 12.4.2023, 18:01:12 - DEBUG - Setting (Vnoxk_A1XRF6LTxnAAA1) socket.userId = 64369bcfa3ce5d18717e14d8 
 12.4.2023, 18:40:33 - DEBUG - Setting (Vnoxk_A1XRF6LTxnAAA1) socket.userId = 64369bcfa3ce5d18717e14d8 
 12.4.2023, 18:40:51 - DEBUG - Setting (WihUMaz2Wkrt94i7AAA3) socket.userId = 64369bcfa3ce5d18717e14d8 
+=======
+>>>>>>> fcf659fc676f81f497a888ca6c0ab358cf85e8f1
+12.4.2023, 16:22:06 - INFO - Hi | 90 | Bobo 
+12.4.2023, 16:22:06 - INFO - Server is running on port: 3030 
+>>>>>>> aa755365b047cf176b361da89f0bd11a46e294fc
