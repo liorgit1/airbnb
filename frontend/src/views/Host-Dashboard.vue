@@ -152,7 +152,7 @@
           <th>Address</th>
           <th>Actions</th>
         </tr>
-        <tr v-for="stay in user.stays" :key="stay._id">
+        <tr v-for="stay in stays" :key="stay._id">
           <td>
             <div class="review-img q-pa-md q-gutter-sm"></div>
           </td>
@@ -192,6 +192,7 @@ export default {
     // const orders = userService.getUserOrder(user._id);
     // this.orders = orders;
     this.user = user;
+    console.log(user.stays);
     // console.log(user);
     // console.log("lalalalala", this.orders);
     // console.log("added order", user.orders);

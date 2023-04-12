@@ -82,7 +82,7 @@ async function login(userInfo) {
   try {
     const loggedInUser = await httpService.post(`${ENDPOINT}/login`, userInfo);
     utilService.saveToSessionStorage(STORAGE_KEY, loggedInUser);
-    // socketService.emit('set-user-socket', loggedInUser.id)
+    socketService.emit('set-user-socket', loggedInUser._id)
     return loggedInUser;
   } catch {
     console.log("cant login");
@@ -111,7 +111,7 @@ async function logout() {
   try {
     const loggedOutUser = await httpService.post(`${ENDPOINT}/logout`);
     utilService.removeFromSessionStorage(STORAGE_KEY);
-    // socketService.emit('unset-user-socket', loggedOutUser.id)
+    socketService.emit('unset-user-socket', loggedOutUser._id)
     return loggedOutUser;
   } catch {
     console.log("logout failed");

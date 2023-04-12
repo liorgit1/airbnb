@@ -154,16 +154,16 @@ export default {
         throw err;
       }
     },
-    async saveUser(context, payload) {
-      try {
-        await userService
-          .saveUser(payload.user);
-        context.commit(payload);
-      } catch (err) {
-        console.error("Cannot change user", err);
-        throw err;
-      }
-    },
+    // async saveUser(context, payload) {
+    //   try {
+    //     await userService
+    //       .saveUser(payload.user);
+    //     context.commit(payload);
+    //   } catch (err) {
+    //     console.error("Cannot change user", err);
+    //     throw err;
+    //   }
+    // },
 
     async loadAndWatchUser({ commit }, { userId }) {
       try {

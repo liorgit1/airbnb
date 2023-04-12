@@ -14,7 +14,8 @@ export const orderService = {
     getById,
     getEmptyOrder,
     getTotalPrice,
-    getStayTime
+    getStayTime,
+    getTotalRevenue
 }
 
 
@@ -57,6 +58,15 @@ function getTotalPrice(order) {
     return (diffDays * order.pricePerNight);
 
 }
+
+async function getTotalRevenue(orders) {
+    let totalRevenue = 0;
+    for (let i = 0; i < orders.length; i++) {
+      totalRevenue += getTotalPrice(orders[i]);
+    }
+    return totalRevenue;
+  }
+  
 async function getById(entityId) {
     try {
         return await httpService.get(`${ENDPOINT}/${entityId}`)

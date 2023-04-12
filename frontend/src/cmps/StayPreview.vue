@@ -34,7 +34,7 @@
                               height: 12px;
                               width: 12px;
                               fill: black;
-                            ">
+                            "  >
 
                 <path d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965
                                9.852a1 1 0 0 0 1.483 1.061L16 25.951l8.625 4.997a1 1 0 0 0 1.482-1.06l-1.965-9.853
@@ -42,7 +42,7 @@
                   fill-rule="evenodd">
                 </path>
               </svg>
-              {{ totalAverage }} </span>
+              </span>
           </div>
 
           <div class="stay-type">
@@ -108,28 +108,28 @@ export default {
   // emits:{stayLiked},
 
   computed: {
-    averageCleanliness() {
-      return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Cleanliness, 0) / this.stay.reviews.length).toFixed(1);
-    },
-    averageCommunication() {
-      return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Communication, 0) / this.stay.reviews.length).toFixed(1);
-    },
-    averageAccuracy() {
-      return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Accuracy, 0) / this.stay.reviews.length).toFixed(1);
-    },
-    averageCheckIn() {
-      return (this.stay.reviews.reduce((sum, review) => sum + review.rate.CheckIn, 0) / this.stay.reviews.length).toFixed(1);
-    },
-    averageLocation() {
-      return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Location, 0) / this.stay.reviews.length).toFixed(1);
-    },
-    averageValue() {
-      return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Value, 0) / this.stay.reviews.length).toFixed(1);
-    },
-    totalAverage() {
-      return ((+this.averageCleanliness + +this.averageCommunication + +this.averageAccuracy + +this.averageCheckIn +
-        +this.averageLocation + +this.averageValue) / 6).toFixed(2)
-    },
+    // averageCleanliness() {
+    //   return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Cleanliness, 0) / this.stay.reviews.length).toFixed(1);
+    // },
+    // averageCommunication() {
+    //   return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Communication, 0) / this.stay.reviews.length).toFixed(1);
+    // },
+    // averageAccuracy() {
+    //   return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Accuracy, 0) / this.stay.reviews.length).toFixed(1);
+    // },
+    // averageCheckIn() {
+    //   return (this.stay.reviews.reduce((sum, review) => sum + review.rate.CheckIn, 0) / this.stay.reviews.length).toFixed(1);
+    // },
+    // averageLocation() {
+    //   return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Location, 0) / this.stay.reviews.length).toFixed(1);
+    // },
+    // averageValue() {
+    //   return (this.stay.reviews.reduce((sum, review) => sum + review.rate.Value, 0) / this.stay.reviews.length).toFixed(1);
+    // },
+    // totalAverage() {
+    //   return ((+this.averageCleanliness + +this.averageCommunication + +this.averageAccuracy + +this.averageCheckIn +
+    //     +this.averageLocation + +this.averageValue) / 6).toFixed(2)
+    // },
     isLiked() {
       return this.liked ? "isLiked" : "";
     },
