@@ -94,7 +94,7 @@
           <th class="user-order-th">Revenue</th>
           <th class="user-order-th">Actions</th>
         </tr>
-        <tr v-for="order in user.orders" :key="order._id">
+        <tr v-for="order in user.incomingOrders" :key="order._id">
           <td class="flex align-center stay-name-details">
             <div class="review-img q-pa-md q-gutter-sm">
               <!-- <q-avatar>
@@ -219,7 +219,7 @@ export default {
       orderService.add(order);
     },
     addOrder(order) {
-      this.user.orders.unshift(order);
+      this.user.incomingOrders.unshift(order);
     },
     formatedPrice(price) {
       return new Intl.NumberFormat("en-IN", {
