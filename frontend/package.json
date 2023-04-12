@@ -26,6 +26,7 @@
     "v-calendar": "^3.0.2",
     "vue": "^3.2.37",
     "vue-chart-3": "^3.1.8",
+    "vue-picture-input": "^2.4.0",
     "vue-router": "^4.1.2",
     "vue-slick-carousel": "^1.0.6",
     "vue-ssr-carousel": "^2.1.0",
