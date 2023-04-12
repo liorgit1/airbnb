@@ -129,14 +129,14 @@ export default {
                 })
 
                 this.$router.push(`/trip`)
-                // ElNotification({
-                //     title: "Success",
-                //     message:
-                //         "Your booking request has been sent to the host",
-                //     type: "success",
-                // });
+                ElNotification({
+                    title: "Success",
+                    message:
+                        "Your booking request has been sent to the host",
+                    type: "success",
+                });
 
-                // socketService.emit("addOrder", orderToSave);
+                socketService.emit("addOrder", orderToSave);
             }
             catch {
                 console.error;
