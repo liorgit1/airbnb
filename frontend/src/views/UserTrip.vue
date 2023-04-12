@@ -154,7 +154,7 @@ export default {
     socketService.off("host topic", user._id);
   },
   components: {
-    appHeader,
+    // appHeader,
     chart,
   },
 };
