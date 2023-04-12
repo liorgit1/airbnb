@@ -24,6 +24,8 @@
   color:#333;
   font-size: 18px;
   font-family:Helvetica;
+  border-radius: 10px;
+  
 
 
 }
@@ -42,3 +44,30 @@
   gap: 10px;
   justify-content: space-between;
 }
+
+.amenities-grid{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  row-gap: 20px;
+  justify-content: space-between;
+
+  div{
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.btn-section{
+  display: flex;
+  justify-content: space-around;
+
+  button{
+    color: white;
+    background-color: #ff385c;
+    height: 57px;
+    width: 218px;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
