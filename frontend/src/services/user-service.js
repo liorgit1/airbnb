@@ -21,21 +21,18 @@ export const userService = {
 };
 
 async function getUserStays(entityId) {
-  let userStays = []
-  const stays = await stayService.query();
-  // console.log('userStays', stays);
   // console.log('entityId', entityId);
   try {
-    console.log('userStays123', stays);
-    // console.log('userSta;f;f;f;ys', userStays);
-    // console.log('klflflfyId', entityId);
-    userStays = await stays.filter(stay => stay.host._id === entityId)
-    console.log('entityId', entityId);
-    console.log('userStays', userStays);
-    console.log('entityId', entityId);
+    // let userStays = []
+    const stays = await stayService.query()
+    console.log('123Stays', stays);
+    let userStays = stays.filter(stay => stay.host._id === entityId)
+    console.log('userStays123', userStays)
+
     return userStays
-  } catch {
-    console.log('baiaaa');
+  }
+  catch {
+    console.log('baiaaa')
 
   }
 }
@@ -53,7 +50,7 @@ async function getUserOrder(entityId) {
   // console.log('orders',orders);
   try {
     userOrders = orders.filter(order => order.hostId === entityId)
-    console.log('userOrders',userOrders);
+    console.log('userOrders', userOrders);
     return userOrders;
   } catch {
     console.error("cannot get user order");

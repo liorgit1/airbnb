@@ -152,7 +152,7 @@
           <th>Address</th>
           <th>Actions</th>
         </tr>
-        <tr v-for="stay in stays" :key="stay._id">
+        <tr v-for="stay in user.stays" :key="stay._id">
           <td>
             <div class="review-img q-pa-md q-gutter-sm"></div>
           </td>
