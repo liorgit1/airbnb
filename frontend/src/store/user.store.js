@@ -136,7 +136,7 @@ export default {
       if (!state.loggedinUser) return
       commit({ type: "setLikedStay", stay });
       try {
-        await userService.saveUser(state.loggedinUser);
+        await userService.saveUser(state.loggedinUser); 
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;
