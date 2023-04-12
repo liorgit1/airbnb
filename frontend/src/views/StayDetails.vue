@@ -125,8 +125,10 @@ export default {
             order.guests = orderInfo.guests;
             order.startDate = orderInfo.startDate;
             order.endDate = orderInfo.endDate;
-            const totalPrice =  orderService.getTotalPrice(order);
+            const totalPrice = orderService.getTotalPrice(order);
             order.totalPrice = totalPrice;
+            const stayTime = orderService.getStayTime(order);
+            order.stayTime = stayTime;
             // console.log(" totalPrice",  totalPrice);
             // console.log(" order.total",  order.total);
 
@@ -135,25 +137,26 @@ export default {
                 // console.log('no stay time stydetails134');
                 return;
             }
-            
-            try {
-                // console.log("orderToSave", orderToSave);
-                const newOrder = await this.$store.dispatch({
-                    type: "addNewOrder",
-                    orderToSave,
-                });
+            this.$store.commit({ type: "setCurrOrder", newOrder: order });
 
-                // ElNotification({
-                //     title: "Success",
-                //     message:
-                //         "Your booking request has been sent to the host",
-                //     type: "success",
-                // });
+            // try {
+            //     // console.log("orderToSave", orderToSave);
+            //     const newOrder = await this.$store.dispatch({
+            //         type: "addNewOrder",
+            //         orderToSave,
+            //     });
 
-                // socketService.emit("addOrder", orderToSave);
-            } catch {
-                console.error;
-            }
+            //     // ElNotification({
+            //     //     title: "Success",
+            //     //     message:
+            //     //         "Your booking request has been sent to the host",
+            //     //     type: "success",
+            //     // });
+
+            //     // socketService.emit("addOrder", orderToSave);
+            // } catch {
+            //     console.error;
+            // }
         },
 
 

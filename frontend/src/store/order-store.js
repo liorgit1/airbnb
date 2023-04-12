@@ -2,13 +2,22 @@ import { orderService } from '../services/order-service'
 
 export default {
     state: {
+        currOrder: {},
         orders: [],
     },
     getters: {
+        currOrder(state) {
+            return state.currOrder
+        },
     },
     mutations: {
         setOrder(state, { newOrder }) {
             state.orders.push(newOrder)
+        },
+        setCurrOrder(state, { newOrder }) {
+            console.log('newOrder :>> ', newOrder);
+            state.currOrder = newOrder
+            console.log('state.currOrder :>> ', state.currOrder);
         },
 
     },

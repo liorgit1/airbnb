@@ -89,7 +89,9 @@ export default {
         loc: { country: '' },
         reviews: [],
         imgUrls:[],
-        host: {},
+        host: {
+          pictureUrl:'https://a0.muscache.com/im/pictures/user/241be2bb-a5b5-4768-a8de-4d2438e3bb42.jpg?im_w=240',
+        },
         amenities:[],
         likedByUsers:[]
       },
@@ -123,7 +125,7 @@ export default {
   created() {
     console.log('this.user :>> ', this.user);
     console.log('this.newStay.host :>> ', this.newStay.host);
-    this.newStay.host = this.user
+    this.newStay.host._id = this.user._id
 
     
   },

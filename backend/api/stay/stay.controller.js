@@ -1,5 +1,4 @@
 const stayService = require('../stay/stay.service.js')
-const socketService = require('../../services/socket.service.js')
 const logger = require('../../services/logger.service')
 
 // async function getStays(req, res) {
@@ -61,17 +60,17 @@ async function addStay(req, res) {
 
   try {
     const Stay = req.body
-    Stay.owner = loggedinUser
+    // Stay.owner = loggedinUser
     const addedStay = await stayService.add(Stay)
     res.json(addedStay)
 
-    if (loggedinUser.isAdmin) {
-      socketService.broadcastAdminUpdate({
-        productName: Stay.name,
-        type: 'add',
-        adminId: loggedinUser._id,
-      })
-    }
+    // if (loggedinUser.isAdmin) {
+    //   socketService.broadcastAdminUpdate({
+    //     productName: Stay.name,
+    //     type: 'add',
+    //     // adminId: loggedinUser._id,
+    //   })
+    // }
     // socketService.broadcastAdminUpdate
   } catch (err) {
     logger.error('Failed to add Stay', err)
@@ -81,17 +80,17 @@ async function addStay(req, res) {
 
 async function updateStay(req, res) {
   try {
-    const { loggedinUser } = req
+    // const { loggedinUser } = req
     const Stay = req.body
     const updatedStay = await stayService.update(Stay)
     res.json(updatedStay)
-    if (loggedinUser.isAdmin) {
-      socketService.broadcastAdminUpdate({
-        productName: Stay.name,
-        type: 'update',
-        adminId: loggedinUser._id,
-      })
-    }
+    // if (loggedinUser.isAdmin) {
+    //   socketService.broadcastAdminUpdate({
+    //     productName: Stay.name,
+    //     type: 'update',
+    //     // adminId: loggedinUser._id,
+    //   })
+    // }
   } catch (err) {
     logger.error('Failed to update Stay', err)
     res.status(500).send({ err: 'Failed to update Stay' })
@@ -100,17 +99,17 @@ async function updateStay(req, res) {
 
 async function removeStay(req, res) {
   try {
-    const { loggedinUser } = req
+    // const { loggedinUser } = req
     const StayId = req.params.id
     const removedStayName = await stayService.remove(StayId)
-    res.send()
-    if (loggedinUser.isAdmin) {
-      socketService.broadcastAdminUpdate({
-        productName: removedStayName,
-        type: 'remove',
-        adminId: loggedinUser._id,
-      })
-    }
+    res.send(removedId)
+    // if (loggedinUser.isAdmin) {
+    //   socketService.broadcastAdminUpdate({
+    //     productName: removedStayName,
+    //     type: 'remove',
+    //     adminId: loggedinUser._id,
+    //   })
+    // }
   } catch (err) {
     logger.error('Failed to remove Stay', err)
     res.status(500).send({ err: 'Failed to remove Stay' })
@@ -134,7 +133,7 @@ async function addStayMsg(req, res) {
 }
 
 async function removeStayMsg(req, res) {
-  const { loggedinUser } = req
+  // const { loggedinUser } = req
   try {
     const StayId = req.params.id
     const { msgId } = req.params
