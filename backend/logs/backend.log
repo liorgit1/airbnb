@@ -2771,3 +2771,77 @@
 12.4.2023, 14:49:07 - INFO - Hi | 90 | Bobo 
 12.4.2023, 14:49:07 - INFO - Server is running on port: 3030 
 12.4.2023, 14:49:25 - DEBUG - Setting (gC2iXxxeyqrfkEYTAAAD) socket.userId = 64301e16ebb7fb1f1393b2d2 
+12.4.2023, 14:51:24 - DEBUG - Setting (CgJ3qPm31ypx7VcsAAAF) socket.userId = 64301e16ebb7fb1f1393b2d2 
+12.4.2023, 14:52:35 - DEBUG - auth.service - signup with username: ron, fullname: ron 
+12.4.2023, 14:52:35 - DEBUG - auth.service - login with username: ron 
+12.4.2023, 14:52:35 - ERROR - Failed to Login Invalid username or password 
+12.4.2023, 14:52:35 - ERROR - cannot insert user | Error: Username taken 
+12.4.2023, 14:52:35 - ERROR - Failed to signup Error: Username taken 
+12.4.2023, 14:52:47 - DEBUG - auth.service - login with username: ron 
+12.4.2023, 14:52:47 - ERROR - Failed to Login Invalid username or password 
+12.4.2023, 14:53:00 - DEBUG - auth.service - login with username: ron 
+12.4.2023, 14:53:00 - ERROR - Failed to Login Invalid username or password 
+12.4.2023, 14:53:14 - DEBUG - auth.service - login with username: ron 
+12.4.2023, 14:53:15 - ERROR - Failed to Login Invalid username or password 
+12.4.2023, 14:53:50 - DEBUG - auth.service - signup with username: abab, fullname: abab 
+12.4.2023, 14:53:50 - DEBUG - auth.service - login with username: abab 
+12.4.2023, 14:53:50 - ERROR - Failed to Login Invalid username or password 
+12.4.2023, 14:53:51 - DEBUG - auth.route - new account created: {"username":"abab","password":"$2b$10$FTVuNxil58WioZkK6saFm.Y0Unt5HfVUE5OHq26fJhYvsITfs4zw6","fullname":"abab","likedStays":[],"orders":[],"incomingOrders":[],"_id":"64369bcfa3ce5d18717e14d8"} 
+12.4.2023, 14:53:51 - DEBUG - auth.service - login with username: abab 
+12.4.2023, 14:53:51 - INFO - User login:  | {"_id":"64369bcfa3ce5d18717e14d8","username":"abab","fullname":"abab","likedStays":[],"orders":[],"incomingOrders":[]} 
+12.4.2023, 14:54:06 - DEBUG - auth.service - login with username: abab 
+12.4.2023, 14:54:06 - INFO - User login:  | {"_id":"64369bcfa3ce5d18717e14d8","username":"abab","fullname":"abab","likedStays":[],"orders":[],"incomingOrders":[]} 
+12.4.2023, 14:54:06 - DEBUG - Setting (LwRprLVcBlRkYSE5AAAJ) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 14:57:19 - DEBUG - Setting (SVXjkGDUuorkeuTaAAAL) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 14:58:31 - DEBUG - Setting (dhiVeijdYYt-oN1aAAAN) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 14:59:09 - DEBUG - Setting (q1goENyhM74MBZBfAAAP) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:00:46 - DEBUG - Setting (q1goENyhM74MBZBfAAAP) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:00:58 - DEBUG - Setting (pp7GVIc8jr38zjz4AAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:01:09 - DEBUG - Setting (DvFpNR_L4k10SZN1AAAT) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:01:58 - DEBUG - Setting (DvFpNR_L4k10SZN1AAAT) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:02:19 - DEBUG - Setting (Dq_i5b7XPZShKn7TAAAV) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:03:16 - INFO - Hi | 90 | Bobo 
+12.4.2023, 15:03:16 - INFO - Server is running on port: 3030 
+12.4.2023, 15:03:22 - DEBUG - Setting (3NsS-m0-LtUh86icAAAD) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:03:53 - INFO - Hi | 90 | Bobo 
+12.4.2023, 15:03:53 - INFO - Server is running on port: 3030 
+12.4.2023, 15:03:59 - DEBUG - Setting (eoI3IT_4dWeKQU9uAAAD) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:04:59 - INFO - Hi | 90 | Bobo 
+12.4.2023, 15:04:59 - INFO - Server is running on port: 3030 
+12.4.2023, 15:05:19 - DEBUG - Setting (B53w_ICSTUPNKXUvAAAD) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:05:38 - DEBUG - Setting (0MbhHkhQtygEWEjTAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:08:44 - DEBUG - Setting (0MbhHkhQtygEWEjTAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:09:13 - DEBUG - Setting (shKE0wPK4INQ4sqlAAAH) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:11:30 - DEBUG - Setting (dNzmKlqaBF0JTdXtAAAJ) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:13:30 - INFO - Hi | 90 | Bobo 
+12.4.2023, 15:13:30 - INFO - Server is running on port: 3030 
+12.4.2023, 15:13:47 - DEBUG - Setting (DJzeNxdSmxAAFe_jAAAD) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:16:25 - DEBUG - Setting (DJzeNxdSmxAAFe_jAAAD) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:16:46 - DEBUG - Setting (599yZbMAa1n1ZPuYAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:17:30 - DEBUG - Setting (599yZbMAa1n1ZPuYAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:18:52 - DEBUG - Setting (599yZbMAa1n1ZPuYAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:19:14 - DEBUG - Setting (G9FzU_CoBQ0cOWQJAAAH) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:24:56 - DEBUG - Setting (UKC26IziWCfPnL9ZAAAJ) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:25:25 - DEBUG - Setting (y3bnc4C4War-Wo32AAAL) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:31:36 - DEBUG - Setting (bvXh8tVkPyUUcDVuAAAN) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:50:00 - DEBUG - Setting (bvXh8tVkPyUUcDVuAAAN) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:50:08 - DEBUG - Setting (n442WFh27xv1Yir_AAAP) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:50:32 - DEBUG - Setting (n442WFh27xv1Yir_AAAP) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:50:37 - DEBUG - Setting (BriFb3SMCH9HbmPRAAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:51:33 - DEBUG - Setting (BriFb3SMCH9HbmPRAAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:51:46 - DEBUG - Setting (BriFb3SMCH9HbmPRAAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:52:02 - DEBUG - Setting (BriFb3SMCH9HbmPRAAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:52:10 - DEBUG - Setting (5B2G6sizH9VlmYJwAAAT) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:54:13 - DEBUG - Setting (5B2G6sizH9VlmYJwAAAT) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:54:38 - DEBUG - Setting (SRgvi_GCEeeybUY8AAAV) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:56:21 - DEBUG - Setting (SRgvi_GCEeeybUY8AAAV) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 15:56:28 - DEBUG - Setting (WySKuQI1LC40wNeYAAAX) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:05:23 - DEBUG - Setting (q3T0EekXWsbK4q7lAAAZ) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:05:29 - DEBUG - Setting (nHLGU5XpwZkT3ykAAAAb) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:06:06 - DEBUG - Setting (bkkrVDc9qkpZh-0XAAAd) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:07:25 - DEBUG - Setting (d1r4hHS_NkHw0mb0AAAf) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:08:41 - DEBUG - Setting (lQHUW1El9Ldw7xuaAAAh) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:09:36 - DEBUG - Setting (vQZ2pWuD4qfydoLpAAAj) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:10:33 - DEBUG - Setting (tkfGk_asVCAJJU7UAAAl) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 16:12:31 - INFO - Hi | 90 | Bobo 
+12.4.2023, 16:12:31 - INFO - Server is running on port: 3030 

@@ -124,8 +124,8 @@ export default {
     async loadStaysUser({ commit, state }) {
       try {
         const stays = await userService.getUserStays(state.loggedinUser._id);
-        console.log('staysstore', stays);
         commit({ type: "setStaysUser", stays });
+        // console.log('staysstore', stays);
         const orders = await userService.getUserOrder(state.loggedinUser._id);
         commit({ type: "setOrderUser", orders });
       } catch (err) {
@@ -154,16 +154,16 @@ export default {
         throw err;
       }
     },
-    // async saveUser(context, payload) {
-    //   try {
-    //     await userService
-    //       .saveUser(payload.user);
-    //     context.commit(payload);
-    //   } catch (err) {
-    //     console.error("Cannot change user", err);
-    //     throw err;
-    //   }
-    // },
+    async saveUser(context, payload) {
+      try {
+        await userService
+          .saveUser(payload.user);
+        context.commit(payload);
+      } catch (err) {
+        console.error("Cannot change user", err);
+        throw err;
+      }
+    },
 
     async loadAndWatchUser({ commit }, { userId }) {
       try {

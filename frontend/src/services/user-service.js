@@ -30,8 +30,8 @@ async function getUserStays(entityId) {
     // console.log('userSta;f;f;f;ys', userStays);
     // console.log('klflflfyId', entityId);
     userStays = await stays.filter(stay => stay.host._id === entityId)
-    console.log('entityId', entityId);
     console.log('userStays', userStays);
+    console.log('entityId', entityId);
     console.log('entityId', entityId);
     return userStays
   } catch {

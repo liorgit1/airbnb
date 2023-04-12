@@ -73,6 +73,7 @@ async function update(user) {
             username: user.username,
             fullname: user.fullname,
             likedStays: user.likedStays,
+            stays: user.stays,
             orders: user.orders,
             incomingOrders: user.incomingOrders 
         }
@@ -96,6 +97,7 @@ async function add(user) {
             username: user.username,
             password: user.password,
             fullname: user.fullname,
+            stays: [],
             likedStays: [],
 
 
