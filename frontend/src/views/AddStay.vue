@@ -89,11 +89,12 @@ export default {
         loc: { country: '' },
         reviews: [],
         imgUrls:[],
+        amenities:[],
+        likedByUsers:[],
         host: {
           pictureUrl:'https://a0.muscache.com/im/pictures/user/241be2bb-a5b5-4768-a8de-4d2438e3bb42.jpg?im_w=240',
         },
-        amenities:[],
-        likedByUsers:[]
+       
       },
 
       imgUrlss:[{id:0 , imgUrl:null},
