@@ -96,7 +96,7 @@
 import { orderService } from "../services/order-service.js";
 // import { userService } from "../services/user-service.js";
 import { socketService } from "../services/socket.service.js";
-import chart from "../cmps/chart.vue";
+// import chart from "../cmps/chart.vue";
 export default {
   data() {
     return {
@@ -154,8 +154,8 @@ export default {
     socketService.off("host topic", user._id);
   },
   components: {
-    appHeader,
-    chart,
+    // appHeader,
+    // chart,
   },
 };
 </script>
