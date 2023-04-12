@@ -22,13 +22,15 @@ export const userService = {
 
 async function getUserStays(entityId) {
   // console.log('entityId', entityId);
+  let userStays = []
   try {
-    // let userStays = []
-    const stays = await stayService.query()
-    console.log('123Stays', stays);
-    let userStays = stays.filter(stay => stay.host._id === entityId)
-    console.log('userStays123', userStays)
-
+    console.log('userStays123', stays);
+    // console.log('userSta;f;f;f;ys', userStays);
+    // console.log('klflflfyId', entityId);
+    userStays = await stays.filter(stay => stay.host._id === entityId)
+    console.log('userStays', userStays);
+    console.log('entityId', entityId);
+    console.log('entityId', entityId);
     return userStays
   }
   catch {
