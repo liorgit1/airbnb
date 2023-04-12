@@ -73,7 +73,7 @@
 <script>
 
 import { stayService } from '../services/stay-service'
-import PictureInput from 'vue-picture-input'
+// import PictureInput from 'vue-picture-input'
 import {uploadImg} from '../services/uploadService'
 import { keys } from 'lodash'
 
@@ -120,7 +120,7 @@ export default {
   },
 
   components: {
-    PictureInput
+    // PictureInput
   },
 
   created() {
