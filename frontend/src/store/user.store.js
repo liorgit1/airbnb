@@ -50,7 +50,7 @@ export default {
       userService.saveUser(state.loggedinUser);
     },
     setOrderUser(state, { orders }) {
-      state.loggedinUser.orders = orders;
+      state.loggedinUser.incomingOrders = orders;
       userService.saveUser(state.loggedinUser);
     },
     addOrderUser(state, { newOrder }) {
