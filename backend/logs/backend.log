@@ -2914,3 +2914,27 @@
 12.4.2023, 16:22:06 - INFO - Hi | 90 | Bobo 
 12.4.2023, 16:22:06 - INFO - Server is running on port: 3030 
 >>>>>>> aa755365b047cf176b361da89f0bd11a46e294fc
+12.4.2023, 19:04:34 - INFO - Hi | 90 | Bobo 
+12.4.2023, 19:04:34 - INFO - Server is running on port: 3030 
+12.4.2023, 19:04:53 - DEBUG - Setting (SuZSrwCsPd9IT3fWAAAD) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:05:03 - DEBUG - Setting (ogL1fNJLibyhbBHOAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:06:58 - DEBUG - Setting (Lrj96TxIBp-sxQY6AAAH) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:07:19 - DEBUG - Setting (YQqTmMh6GYq71ae2AAAJ) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:08:45 - DEBUG - Setting (il2d9IHBFq82b2AFAAAL) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:08:52 - DEBUG - Setting (BZyUVUZ6n_Bi3IqiAAAN) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:10:07 - DEBUG - Setting (vwaDU2unXDzeJSr6AAAP) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:12:34 - DEBUG - Setting (tBnYED5hIkSJJEdeAAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 19:26:59 - DEBUG - Setting (tep0hII9QyeTnaUSAAAV) socket.userId = 64369bcfa3ce5d18717e14d8 
+12.4.2023, 21:16:08 - ERROR - cannot update user 64369bcfa3ce5d18717e14d8 | MongoNetworkError: connection 2 to 35.181.10.156:27017 closed 
+12.4.2023, 21:16:08 - ERROR - Failed to update user | MongoNetworkError: connection 2 to 35.181.10.156:27017 closed 
+12.4.2023, 21:16:16 - DEBUG - Setting (lNn6ZZB84d5-IlqFAAAa) socket.userId = 64369bcfa3ce5d18717e14d8 
+13.4.2023, 0:09:00 - DEBUG - Setting (-kCu02sKRMm3m9dOAAAe) socket.userId = 64369bcfa3ce5d18717e14d8 
+13.4.2023, 2:10:00 - DEBUG - Setting (sFiHACwZUOsdZMllAAAi) socket.userId = 64369bcfa3ce5d18717e14d8 
+13.4.2023, 11:09:21 - INFO - Hi | 90 | Bobo 
+13.4.2023, 11:09:22 - INFO - Server is running on port: 3030 
+13.4.2023, 11:10:45 - DEBUG - auth.service - login with username: ben 
+13.4.2023, 11:10:45 - INFO - User login:  | {"_id":"6431bec9beaf5c66a4ea5a03","username":"ben","fullname":"benben","likedStays":[],"orders":[{"name":"Cosy penthouse close to Barra beach","hostId":"47893384","country":"Brazil","guestName":"benben","stay_id":"6426def81a9c822559a29b61","pricePerNight":3544,"guests":{"adults":null,"kids":null,"infants":null,"pets":null},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=17","created":"8/4/2023","startDate":"4/8/2023","endDate":"4/12/2023","totalPrice":14176,"_id":"6431ca94beaf5c66a4ea5a05"},{"name":"INSTAGRAM HOME *MTR*ELEMENT MALL*NEW TRAIN KOWLOON","hostId":"66883702","country":"Hong Kong","guestName":"benben","stay_id":"6426def81a9c822559a29b5c","pricePerNight":1562,"guests":{"adults":null,"kids":null,"infants":null,"pets":null},"stayTime":"","status":"Pending","ImgUrl":"https://i.pravatar.cc/150?img=32","created":"8/4/2023","startDate":"4/4/2023","endDate":"4/7/2023","totalPrice":4686,"_id":"6431bee7beaf5c66a4ea5a04"}],"incomingOrders":[]} 
+13.4.2023, 11:10:45 - DEBUG - Setting (9jo7Ka7s7dfu22f9AAAB) socket.userId = 6431bec9beaf5c66a4ea5a03 
+13.4.2023, 11:11:52 - DEBUG - Setting (7NEo_hIJoHX0fzwDAAAD) socket.userId = 6431bec9beaf5c66a4ea5a03 
+13.4.2023, 11:46:39 - INFO - Hi | 90 | Bobo 
+13.4.2023, 11:46:39 - INFO - Server is running on port: 3030 
