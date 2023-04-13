@@ -3069,3 +3069,5 @@
 13.4.2023, 18:11:01 - DEBUG - Setting (1iCRwfTHXNDnc7EGAADf) socket.userId = 643069ee43be54dedea7feea 
 13.4.2023, 18:11:07 - DEBUG - Setting (xAwwGSA8yW9zpHCHAADh) socket.userId = 643069ee43be54dedea7feea 
 >>>>>>> ddc03c1d30f2cbe6b1a5b1fcd589698f0ffa0fdb
+13.4.2023, 18:57:19 - INFO - Hi | 90 | Bobo 
+13.4.2023, 18:57:20 - INFO - Server is running on port: 3030 
