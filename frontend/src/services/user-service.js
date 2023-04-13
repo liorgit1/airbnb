@@ -24,11 +24,13 @@ export const userService = {
 async function getUserStays(entityId) {
   // console.log('entityId', entityId);
   let userStays = []
+  const stays = await stayService.query()
   try {
-    console.log('userStays123', stays);
     // console.log('userSta;f;f;f;ys', userStays);
     // console.log('klflflfyId', entityId);
+    console.log('staysaaaaa :>> ', stays);
     userStays = await stays.filter(stay => stay.host._id === entityId)
+    // console.log('userStays123', stays);
     console.log('userStays', userStays);
     console.log('entityId', entityId);
     console.log('entityId', entityId);
