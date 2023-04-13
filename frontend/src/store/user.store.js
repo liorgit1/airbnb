@@ -53,6 +53,12 @@ export default {
       state.loggedinUser.incomingOrders = orders;
       userService.saveUser(state.loggedinUser);
     },
+    reloadOrders(state, { newOrders }) {
+      state.loggedinUser.orders = newOrders;
+      userService.saveUser(state.loggedinUser);
+      console.log('newOrders :>> ', newOrders);
+      console.log('state.loggedinUser :>> ', state.loggedinUser);
+    },
     addOrderUser(state, { newOrder }) {
       console.log('state.loggedinUser :>> ', state.loggedinUser);
 
@@ -133,11 +139,21 @@ export default {
         throw err;
       }
     },
+    async reloadOrders({ commit, state }, { orders }) {
+      try {
+  
+        const newOrders = await userService.getMyOrder(orders);
+        commit({ type: "reloadOrders", newOrders });
+      } catch (err) {
+        console.error("Cannot Load stays", err);
+        throw err;
+      }
+    },
     async setLikedStay({ commit, state }, { stay }) {
       if (!state.loggedinUser) return
       commit({ type: "setLikedStay", stay });
       try {
-        await userService.saveUser(state.loggedinUser); 
+        await userService.saveUser(state.loggedinUser);
       } catch (err) {
         console.error("Cannot Load stays", err);
         throw err;
