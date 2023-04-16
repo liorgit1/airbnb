@@ -27,7 +27,7 @@ async function getUserStays(entityId) {
   const stays = await stayService.query()
   try {
     // console.log('userSta;f;f;f;ys', userStays);
-    // console.log('klflflfyId', entityId);
+    // console.log('klflflfyId', entityId); 
     console.log('staysaaaaa :>> ', stays);
     userStays = await stays.filter(stay => stay.host._id === entityId)
     // console.log('userStays123', stays);
