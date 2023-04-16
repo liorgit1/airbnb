@@ -12,21 +12,21 @@
           <h4><span>{{ likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
           <button class="mini-card-btn">Go to wishlist</button>
         </div>
-        <div class="mini-card-grid mini-card grid-item-3" >
+        <div v-if="user" class="mini-card-grid mini-card grid-item-3">
           <h1>Messages</h1>
-          <div v-for="order in user.orders.slice(0,9)" :key="order._id" class="mini-card-header ">
+          <div v-for="order in user.orders.slice(0, 9)" :key="order._id" class="mini-card-header ">
             <h4 v-if="order.status !== 'Pending'" @load="changeOrderStatus(order)">
               order #{{ order._id.slice(-2) }} has been {{ order.status }}d
             </h4>
           </div>
         </div>
-        <div class="mini-card next-stay flex row space-between grid-item-1" v-if="user.orders!== 0">
+        <div class="mini-card next-stay flex row space-between grid-item-1" v-if="user && user.orders !== 0">
           <div class="next-stay-first flex row wrap">
             <div class="mini-card-header flex wrap">
               <h1>Your Next Stay</h1>
             </div>
             <h4 style="line-height: 15px;">
-              <p>{{ this.myNextStay.summary}}</p>
+              <p>{{ this.myNextStay.summary }}</p>
             </h4>
             <h4 style="letter-spacing: -1px;">
               <p>From {{ user.orders[0].startDate }} to {{ user.orders[0].endDate }}</p>
@@ -34,23 +34,23 @@
             <h4 style="letter-spacing: -1px;">
               <p>Check-In for {{ user.orders[0].stayTime }} guests</p>
             </h4>
-            <button class="next-oreder-img" @click =goToHoliday()>Go to stay</button>
+            <button class="next-oreder-img" @click=goToHoliday()>Go to stay</button>
           </div>
           <div class="next-stay-img">
             <img :src="this.myNextStay.imgUrls[0]" alt="">
           </div>
         </div>
-        <section class="old-trips grid-item">
+        <section v-if="user" class="old-trips grid-item">
           <h2>Where have you been</h2>
           <ul class="mini-stays flex row" v-for="order in user.orders.slice(-2)" :key="order._id">
             <li class="mini-stay flex row nowrap">
               <div class="mini-stay-img">
-                <img :src="previousImageUrl(order)" >
+                <img :src="imageUrls[order._id]">
               </div>
               <div class="mini-stay-desc flex row wrap">
                 <h2>{{ order.country }}</h2>
                 <h4>ssssssss</h4>
-                <h4>{{order.startDate}}-{{order.endDate}}</h4>
+                <h4>{{ order.startDate }}-{{ order.endDate }}</h4>
               </div>
             </li>
           </ul>
@@ -73,7 +73,8 @@ export default {
       renderOrder: false,
       likedStays: [],
       stays: [],
-      myNextStay: {}
+      myNextStay: {},
+      imageUrls: {}
     };
   },
   async created() {
@@ -88,7 +89,7 @@ export default {
     const stays = await this.$store.getters.user.stays;
     this.stays = stays;
 
-    const myNextStay =await stayService.getById(this.user.orders[0].stay_id)
+    const myNextStay = await stayService.getById(this.user.orders[0].stay_id)
     console.log('mynextstay', myNextStay);
     this.myNextStay = myNextStay
 
@@ -99,6 +100,14 @@ export default {
     // console.log("lalalalala", user.orders);
     // console.log("added order", user.orders);
     // console.log("this.user", this.user);
+
+    if (this.user) {
+      for (const order of this.user.orders) {
+        const imageUrl = await this.imageUrl(order)
+        this.imageUrls[order._id] = imageUrl
+      }
+console.log(' this.imageUrls :>> ',  this.imageUrls);
+    }
     socketService.on('set-user-socket', this.user._id);
     socketService.on("order recived", this.addOrder);
   },
@@ -115,18 +124,15 @@ export default {
       const msg = val;
       socketService.emit("order-status-change", msg);
     },
-
-    async previousImageUrl() {
-      const previousStay = await stayService.getById(this.order.stay_id)
-      return previousStay.imgUrls[0];
+    async imageUrl(order) {
+      if (this.user) {
+        const previousStay = await stayService.getById(order.stay_id);
+        console.log('previousStay?.imgUrls[0]  :>> ', previousStay?.imgUrls[0]);
+        return previousStay?.imgUrls[0] || null
+      }
     },
 
 
-    // async getPreviousOrdersUrl(order){
-    // const previousStay =await stayService.getById(order.stay_id)
-    // console.log('previousOrder',previousStay.imgUrls[0]);
-    // return previousStay.imgUrls
-    // },
     changeOrderStatusBack(order) {
       if (order.status === "Approve") order.status = "Decline";
       else order.status = "Approve";
@@ -140,19 +146,19 @@ export default {
         maximumSignificantDigits: 3,
       }).format(price);
     },
-    async goToHoliday(){
+    async goToHoliday() {
       this.$router.push('/stay/' + this.myNextStay._id)
-                ElNotification({
-                    title: "Ready for paradise?",
-                    message:
-                        "Welcome to your next dream house vacation ",
-                    type: "success",
-                });
-              },
+      ElNotification({
+        title: "Ready for paradise?",
+        message:
+          "Welcome to your next dream house vacation ",
+        type: "success",
+      });
+    },
   },
 
   computed: {
-   
+
   },
   unmounted() {
     socketService.off("order recived", this.addMsg);
