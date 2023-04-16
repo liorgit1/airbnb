@@ -1,5 +1,5 @@
 <template>
-  <section class="main-layout2 my-details-section" v-if="user">
+  <section class="main-layout" v-if="user">
     <div class="my-details flex-row">
       <button class="flex align-center" @click="toggle(false)">
         <svg
@@ -23,7 +23,7 @@
           aria-hidden="true"
           role="presentation"
           focusable="false"
-          style="display: block; height: 24px; width: 24px; fill: currentcolor"
+          style="display: block; height: 22px; width: 24px; fill: currentcolor"
         >
           <path
             d="m26 6h-4v-2a2.00229 2.00229 0 0 0 -2-2h-8a2.002 2.002 0 0 0 -2 2v2h-4a5.00588 5.00588 0 0 0 -5 5v14a5.00588 5.00588 0 0 0 5 5h20a5.00588 5.00588 0 0 0 5-5v-14a5.00588 5.00588 0 0 0 -5-5zm-14.00146-2h8.00146v2h-8.00134zm-5.99854 24a3.00328 3.00328 0 0 1 -3-3v-14a3.00328 3.00328 0 0 1 3-3h4v20zm6 0-.00122-20h8.00122v20zm17-3a3.00328 3.00328 0 0 1 -3 3h-4v-20h4a3.00328 3.00328 0 0 1 3 3z"
@@ -44,7 +44,7 @@
               aria-hidden="true"
               role="presentation"
               focusable="false"
-              style="display: block; height: 14px; width: 14px; fill: #ff385c"
+              style="display: block; height: 16px; width: 14px;translate:-69px; fill: #ff385c"
             >
               <path
                 d="M15.094 1.579l-4.124 8.885-9.86 1.27a1 1 0 0 0-.542 1.736l7.293 6.565-1.965
@@ -53,24 +53,26 @@
                 fill-rule="evenodd"
               ></path>
             </svg>
-            <span> 4.7 avg </span>
-            <span> 420 reviews </span>
+            <section style="translate: -67px;">
+            <h4>Avarge Rate: {{this.totalRate.toFixed(2)}} </h4>
+            <h4>Total Reviews: {{this.reviewsCount}} </h4>
+          </section>
           </div>
         </div>
-        <div class="user-profit">
+        <div class="user-profit" >
           <span>Total revenues </span>
-          <div class="profit">
+          <div class="profit" v-if="user.incomingOrders!== 0">
             <div class="flex-col">
               <span>Month </span>
-              <span>$1,500 </span>
+              <span>${{monthlyIncome()}} </span>
             </div>
             <div class="flex-col">
               <span>Year </span>
-              <span>$30,330 </span>
+              <span>${{yearlyIncome()}}</span>
             </div>
             <div class="flex-col">
               <span>Total </span>
-              <span>$67,242</span>
+              <span>${{overAllIncome()}}</span>
             </div>
           </div>
         </div>
@@ -78,7 +80,9 @@
 
       <div class="orders-div">
         <span>Orders</span>
-        <chart />
+        <chart 
+        :data="countOrdersByStatus(this.user.incomingOrders)"
+        />
       </div>
     </div>
 
@@ -175,13 +179,16 @@ import { utilService } from "../services/util-service.js";
 import { orderService } from "../services/order-service.js";
 // import { userService } from "../services/user-service.js";
 import { socketService } from "../services/socket.service.js";
+import { stayService } from "../services/stay-service.js";
 import chart from "../cmps/chart.vue";
 export default {
   data() {
     return {
-      // orders: [],
+      orders: [],
       user: null,
       renderOrder: false,
+      totalRate: null,
+      reviewsCount: null,
       // stays: [],
     };
   },
@@ -194,11 +201,19 @@ export default {
     this.user = user;
     console.log(user);
     console.log('hostStays',this.user.stays);
+    // const orders = await this.$store.getters.orders;
+    // this.orders = orders;
     // console.log("lalalalala", this.orders);
     // console.log("added order", user.orders);
     // console.log("this.user", this.user);
     socketService.on("set-user-socket", user._id);
     socketService.on("order recived", this.addOrder);
+
+    const sumReviews = this.getReviewsSummary(this.user.stays)
+    console.log('sumReviews', sumReviews);
+    this.reviewsCount = sumReviews.reviewsCount
+    this.totalRate = sumReviews.totalRate
+
   },
   methods: {
     toggle(val) {
@@ -207,27 +222,125 @@ export default {
     // formattedTime(time) {
     //   return time.slice(0, 10);
     // },
-    changeOrderStatus(order, val) {
-      order.status = val;
-      orderService.add(order);
-      const msg = val;
-      socketService.emit("order-status-change", msg);
-    },
-    changeOrderStatusBack(order) {
-      if (order.status === "Approve") order.status = "Decline";
-      else order.status = "Approve";
-      orderService.add(order);
-    },
-    addOrder(order) {
-      this.user.incomingOrders.unshift(order);
-    },
-    formatedPrice(price) {
-      return new Intl.NumberFormat("en-IN", {
-        maximumSignificantDigits: 3,
-      }).format(price);
-    },
+// Calculates the total revenue from all incoming orders
+overAllIncome() {
+    let totalPrice = 0;
+    if (this.user.incomingOrders && this.user.incomingOrders.length > 0) {
+      for (let i = 0; i < this.user.incomingOrders.length; i++) {
+        totalPrice += this.user.incomingOrders[i].totalPrice;
+      }
+    }
+    return totalPrice;
   },
-  computed: {},
+// Calculates the revenue for the current month from incoming orders
+monthlyIncome() {
+  let totalPrice = 0;
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth();
+  const currentYear = currentDate.getFullYear();
+  
+  if (this.user.incomingOrders && this.user.incomingOrders.length > 0) {
+    for (let i = 0; i < this.user.incomingOrders.length; i++) {
+      const order = this.user.incomingOrders[i];
+      const orderDate = new Date(order.startDate);
+      const orderMonth = orderDate.getMonth();
+      const orderYear = orderDate.getFullYear();
+      
+      if (orderMonth === currentMonth && orderYear === currentYear) {
+        totalPrice += order.totalPrice;
+      }
+    }
+  }
+  
+  return totalPrice;
+},
+
+yearlyIncome() {
+  let totalPrice = 0;
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  
+  if (this.user.incomingOrders && this.user.incomingOrders.length > 0) {
+    for (let i = 0; i < this.user.incomingOrders.length; i++) {
+      const order = this.user.incomingOrders[i];
+      const orderDate = new Date(order.startDate);
+      const orderYear = orderDate.getFullYear();
+      
+      if (orderYear === currentYear) {
+        totalPrice += order.totalPrice;
+      }
+    }
+  }
+  
+  return totalPrice;
+},
+
+countOrdersByStatus(orders) {
+  const initialCounts = { total: 0, pending: 0, approve: 0, decline: 0 };
+  const counts = orders.reduce((acc, order) => {
+    acc.total++;
+    switch (order.status) {
+      case 'Pending':
+        acc.pending++;
+        break;
+      case 'Approve':
+        acc.approve++;
+        break;
+      case 'Decline':
+        acc.decline++;
+        break;
+      default:
+        break;
+    }
+    return acc;
+  }, initialCounts);
+  console.log('orders', orders);
+  console.log('status',counts.total, counts.pending, counts.approve, counts.decline );
+  return [counts.total, counts.pending, counts.approve, counts.decline];
+} ,
+
+getReviewsSummary(stays) {
+  let totalReviews = 0;
+  let totalRate = 0;
+  stays.forEach((stay) => {
+    stay.reviews.forEach((review) => {
+      totalReviews++;
+      totalRate +=
+        review.rate.Accuracy +
+        review.rate.CheckIn +
+        review.rate.Cleanliness +
+        review.rate.Communication +
+        review.rate.Location +
+        review.rate.Value;
+    });
+  });
+  const avgRate = totalRate / (totalReviews * 6);
+  return { reviewsCount: totalReviews, totalRate: avgRate };
+},
+ 
+      changeOrderStatus(order, val) {
+        order.status = val;
+        orderService.add(order);
+        const msg = val;
+        socketService.emit("order-status-change", msg);
+      },
+      changeOrderStatusBack(order) {
+        if (order.status === "Approve") order.status = "Decline";
+        else order.status = "Approve";
+        orderService.add(order);
+      },
+      addOrder(order) {
+        this.user.incomingOrders.unshift(order);
+      },
+      formatedPrice(price) {
+        return new Intl.NumberFormat("en-IN", {
+          maximumSignificantDigits: 3,
+        }).format(price);
+      }
+    },
+      computed: {
+   
+      },
   unmounted() {
     socketService.off("order recived", this.addMsg);
     socketService.off("set-user-socket", user._id);

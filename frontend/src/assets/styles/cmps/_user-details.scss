@@ -39,9 +39,10 @@
   display: contents;
 
   h2 {
-    margin-top: 69px;
-    margin-bottom: 1px;
-    font-size: xx-large;
+      margin-top: 69px;
+      margin-bottom: 1px;
+      font-size: xx-large;
+      grid-column: 2;
   }
 
   .table-header {
@@ -62,6 +63,7 @@
     font-size: 15px;
     border-collapse: collapse;
     margin-top: 50px;
+    grid-column: 2;
   }
 
   th:first-child {
@@ -118,7 +120,7 @@
 
   table {
     margin-top: 50px;
-    width: 100%;
+    width: 103%;
   }
 
   th,
@@ -289,4 +291,15 @@
   margin-top: 90px;
   z-index: 100;
   margin-bottom: 15px;
+}
+
+.card-rate {
+  justify-content: flex-end;
+  font-family: "cereal", sans-serif;
+  margin-block-end: 2px;
+  font-size: 0.9375rem;
+  align-items: right;
+  padding-top: 0.625rem;
+  color: black;
+  translate: 20px;
 }

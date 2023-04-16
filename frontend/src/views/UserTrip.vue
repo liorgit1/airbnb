@@ -2,7 +2,7 @@
   <section v-if="user">
     <div class="alert" style="display: none;">
     </div>
-    <section class="main-layout">
+    <section class="main-layout2 my-details-section">
       <h1 class="trips">Trips</h1>
       <section class="user-trips">
         <div class="mini-card-grid mini-card grid-item-2">
@@ -12,77 +12,45 @@
           <h4><span>{{ likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
           <button class="mini-card-btn">Go to wishlist</button>
         </div>
-        <div class="mini-card-grid mini-card grid-item-3" v-for="order in user.orders" :key="order._id">
-          <div class="mini-card-header">
-            <h1>Messages</h1>
+        <div class="mini-card-grid mini-card grid-item-3" >
+          <h1>Messages</h1>
+          <div v-for="order in user.orders.slice(0,9)" :key="order._id" class="mini-card-header ">
             <h4 v-if="order.status !== 'Pending'" @load="changeOrderStatus(order)">
-
-              order #{{ orders.length }} has been {{ order.status }}
+              order #{{ order._id.slice(-2) }} has been {{ order.status }}d
             </h4>
-            <button class="mini-card-btn">Go to messages</button>
           </div>
         </div>
-        <div class="mini-card next-stay flex row space-between grid-item-1" v-for="stay in user.stays" :key="stay">
+        <div class="mini-card next-stay flex row space-between grid-item-1" v-if="user.orders!== 0">
           <div class="next-stay-first flex row wrap">
             <div class="mini-card-header flex wrap">
               <h1>Your Next Stay</h1>
             </div>
             <h4 style="line-height: 15px;">
-              <p>{{ stays.summery }}</p>
+              <p>{{ this.myNextStay.summary}}</p>
             </h4>
             <h4 style="letter-spacing: -1px;">
-              <p>From {{ orders.startDate }} to {{ orders.endDate }}</p>
+              <p>From {{ user.orders[0].startDate }} to {{ user.orders[0].endDate }}</p>
             </h4>
             <h4 style="letter-spacing: -1px;">
-              <p>Check-In for {{ orders.stayTime }} guests</p>
+              <p>Check-In for {{ user.orders[0].stayTime }} guests</p>
             </h4>
-            <button class="next-oreder-img">Go to stay</button>
+            <button class="next-oreder-img" @click =goToHoliday()>Go to stay</button>
           </div>
           <div class="next-stay-img">
-            <img src="http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436294/mvhb3iazpiar6duvy9we.jpg" alt="">
+            <img :src="this.myNextStay.imgUrls[0]" alt="">
           </div>
         </div>
-        <section class="old-trips grid-item-4">
+        <section class="old-trips grid-item">
           <h2>Where have you been</h2>
-          <ul class="mini-stays flex row">
+          <ul class="mini-stays flex row" v-for="order in user.orders.slice(-2)" :key="order._id">
             <li class="mini-stay flex row nowrap">
               <div class="mini-stay-img">
-                <img src="http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436496/ihozxprafjzuhil9qhh4.jpg" alt="">
+                <img :src="previousImageUrl(order)" >
               </div>
               <div class="mini-stay-desc flex row wrap">
-                <h1>Madrid</h1>
-                <h4>hosted by Jonas</h4>
-                <h4>Nov 12-19, 2020</h4>
-              </div>
-            </li>
-            <li class="mini-stay flex row nowrap">
-              <div class="mini-stay-img">
-                <img src="http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436294/mvhb3iazpiar6duvy9we.jpg" alt="">
-              </div>
-              <div class="mini-stay-desc flex row wrap">
-                <h1>Boston</h1>
-                <h4>Hosted by David</h4>
-                <h4>June 08-20, 2022</h4>
-              </div>
-            </li>
-            <li class="mini-stay flex row nowrap">
-              <div class="mini-stay-img">
-                <img src="http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436867/yocip4igdbruuh2grzpf.jpg" alt="">
-              </div>
-              <div class="mini-stay-desc flex row wrap">
-                <h1>Berlin</h1>
-                <h4>Hosted by Rachel</h4>
-                <h4>Jan 1-5, 2013</h4>
-              </div>
-            </li>
-            <li class="mini-stay flex row nowrap">
-              <div class="mini-stay-img">
-                <img src="http://res.cloudinary.com/dmtlr2viw/image/upload/v1663436975/hx9ravtjop3uqv4giupt.jpg" alt="">
-              </div>
-              <div class="mini-stay-desc flex row wrap">
-                <h1>Tel-Aviv</h1>
-                <h4>Hosted by Shula</h4>
-                <h4>Aug 07-10, 2020</h4>
+                <h2>{{ order.country }}</h2>
+                <h4>ssssssss</h4>
+                <h4>{{order.startDate}}-{{order.endDate}}</h4>
               </div>
             </li>
           </ul>
@@ -95,6 +63,7 @@
 <script>
 import { orderService } from "../services/order-service.js";
 import { socketService } from "../services/socket.service.js";
+import { stayService } from "../services/stay-service";
 // import chart from "../cmps/chart.vue";
 export default {
   data() {
@@ -104,6 +73,7 @@ export default {
       renderOrder: false,
       likedStays: [],
       stays: [],
+      myNextStay: {}
     };
   },
   async created() {
@@ -118,6 +88,10 @@ export default {
     const stays = await this.$store.getters.user.stays;
     this.stays = stays;
 
+    const myNextStay =await stayService.getById(this.user.orders[0].stay_id)
+    console.log('mynextstay', myNextStay);
+    this.myNextStay = myNextStay
+
     const likedStays = await this.$store.getters.user.likedStays;
     this.likedStays = likedStays;
     // console.log('hostStays',user.stays);
@@ -125,7 +99,7 @@ export default {
     // console.log("lalalalala", user.orders);
     // console.log("added order", user.orders);
     // console.log("this.user", this.user);
-    socketService.on('set-user-socket', user._id);
+    socketService.on('set-user-socket', this.user._id);
     socketService.on("order recived", this.addOrder);
   },
   methods: {
@@ -141,6 +115,18 @@ export default {
       const msg = val;
       socketService.emit("order-status-change", msg);
     },
+
+    async previousImageUrl() {
+      const previousStay = await stayService.getById(this.order.stay_id)
+      return previousStay.imgUrls[0];
+    },
+
+
+    // async getPreviousOrdersUrl(order){
+    // const previousStay =await stayService.getById(order.stay_id)
+    // console.log('previousOrder',previousStay.imgUrls[0]);
+    // return previousStay.imgUrls
+    // },
     changeOrderStatusBack(order) {
       if (order.status === "Approve") order.status = "Decline";
       else order.status = "Approve";
@@ -154,11 +140,23 @@ export default {
         maximumSignificantDigits: 3,
       }).format(price);
     },
+    async goToHoliday(){
+      this.$router.push('/stay/' + this.myNextStay._id)
+                ElNotification({
+                    title: "Ready for paradise?",
+                    message:
+                        "Welcome to your next dream house vacation ",
+                    type: "success",
+                });
+              },
   },
-  computed: {},
+
+  computed: {
+   
+  },
   unmounted() {
     socketService.off("order recived", this.addMsg);
-    socketService.off('set-user-socket', user._id);
+    socketService.off('set-user-socket', this.user._id);
   },
   components: {
     // appHeader,
