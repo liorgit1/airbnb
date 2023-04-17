@@ -2,7 +2,7 @@
   <section v-if="user">
     <div class="alert" style="display: none;">
     </div>
-    <section class="main-layout2 my-details-section">
+    <section class="main-layout">
       <h1 class="trips">Trips</h1>
       <section class="user-trips">
         <div class="mini-card-grid mini-card grid-item-2">
@@ -14,7 +14,7 @@
         </div>
         <div class="mini-card-grid mini-card grid-item-3" >
           <h1>Messages</h1>
-          <div v-for="order in user.orders.slice(0,9)" :key="order._id" class="mini-card-header ">
+          <div v-for="order in user.orders.slice(0,7)" :key="order._id" class="mini-card-header ">
             <h4 v-if="order.status !== 'Pending'" @load="changeOrderStatus(order)">
               order #{{ order._id.slice(-2) }} has been {{ order.status }}d
             </h4>
@@ -25,8 +25,8 @@
             <div class="mini-card-header flex wrap">
               <h1>Your Next Stay</h1>
             </div>
-            <h4 style="line-height: 15px;">
-              <p>{{ this.myNextStay.summary}}</p>
+            <h4 >
+              <p style="line-height: 22px;max-width: 194px;">{{ this.myNextStay.summary}}</p>
             </h4>
             <h4 style="letter-spacing: -1px;">
               <p>From {{ user.orders[0].startDate }} to {{ user.orders[0].endDate }}</p>
@@ -45,10 +45,10 @@
           <ul class="mini-stays flex row" v-for="order in user.orders.slice(-2)" :key="order._id">
             <li class="mini-stay flex row nowrap">
               <div class="mini-stay-img">
-                <img :src="previousImageUrl(order)" >
+                <img :src="this.previousStay" >
               </div>
               <div class="mini-stay-desc flex row wrap">
-                <h2>{{ order.country }}</h2>
+                <h3>{{ order.country }}</h3>
                 <h4>ssssssss</h4>
                 <h4>{{order.startDate}}-{{order.endDate}}</h4>
               </div>
@@ -73,7 +73,8 @@ export default {
       renderOrder: false,
       likedStays: [],
       stays: [],
-      myNextStay: {}
+      myNextStay: {},
+      previousStay: null,
     };
   },
   async created() {
@@ -91,6 +92,9 @@ export default {
     const myNextStay =await stayService.getById(this.user.orders[0].stay_id)
     console.log('mynextstay', myNextStay);
     this.myNextStay = myNextStay
+
+    const previousStay = await stayService.getById(this.orders.stay_id)
+    this.previousStay.imgUrls[0] = previousStay;
 
     const likedStays = await this.$store.getters.user.likedStays;
     this.likedStays = likedStays;
@@ -116,10 +120,10 @@ export default {
       socketService.emit("order-status-change", msg);
     },
 
-    async previousImageUrl() {
-      const previousStay = await stayService.getById(this.order.stay_id)
-      return previousStay.imgUrls[0];
-    },
+    // async previousImageUrl() {
+    //   const previousStay = await stayService.getById(this.order.stay_id)
+    //   return previousStay.imgUrls[0];
+    // },
 
 
     // async getPreviousOrdersUrl(order){
