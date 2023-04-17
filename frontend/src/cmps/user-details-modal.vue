@@ -1,19 +1,38 @@
 <template>
-  <section v-if="userLogged" class="user-modal flex-col">
-    <router-link class="spank" to="/wishList"> Wish List</router-link>
-    <router-link class="border1" to="/trip"> Trips</router-link>
+  <section v-if="userLogged" class="before-login-modal flex-col">
 
-    <router-link to="/dashboard"> Dashboard</router-link>
-    <router-link to="/" class="border1"> Account</router-link>
-    <span class="spank" @click="doLogout">Logout</span>
-    <router-link class="border1" to="/"> About</router-link>
+    <router-link to="/dashboard"> 
+    <h1 style="font-weight: bold;" class="border1">Dashboard</h1>
+    </router-link>
+
+    <router-link  to="/wishList"> 
+    <h1 class="border1">Wish List</h1>
+    </router-link>
+
+    <router-link  to="/trip"> 
+    <h1 class="border1">Trips</h1>
+    </router-link>
+
+    <router-link  to="/AddStay"> 
+    <h1 class="border1">Add your home</h1>
+    </router-link>
+
+    <!-- <router-link to="/"> 
+    <h1 class="border1">Account</h1> 
+    </router-link> -->
+
+    <h1 class="border1" @click="doLogout">Logout</h1>
+    <!-- <router-link class="border1" to="/"> About</router-link> -->
   </section>
 
   <section v-else class="before-login-modal flex-col">
-    <router-link to="/"> Messages</router-link>
-    <span class="border1" @click="openModalLogin"> Login</span>
-    <span class="border1" @click="openSingUpModal"> Sign Up</span>
-    <span class="spank"> Logout</span>
+    <!-- <router-link to="/"> Messages</router-link> -->
+    <h1 style="font-weight: bold;" class="border1" @click="openModalLogin"> Login</h1>
+    <h1 class="border1" @click="openSingUpModal"> Sign Up</h1>
+    <!-- <span class="spank"> Logout</span> -->
+    <RouterLink to="/Addstay">
+    <h1 class="border1" to="/AddStay">earthbnb your home</h1>
+  </RouterLink>
   </section>
 </template>
 

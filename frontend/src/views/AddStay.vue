@@ -147,6 +147,7 @@ export default {
     goBack() {
       this.$router.push('/')
     },
+    
     saveStay() {
       console.log(this.newStay)
       console.log(this.newStay.loc.country)
