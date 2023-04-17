@@ -5,6 +5,7 @@
 <script>
 import { Chart, registerables } from "chart.js";
 import { PieChart } from "vue-chart-3";
+import { orderService } from "../services/order-service";
 Chart.register(...registerables);
 
 export default {
@@ -12,6 +13,8 @@ export default {
   components: { PieChart },
   data() {
     return {
+      orders: [],
+      user: null,
       testData: {
         labels: [
           "Total",
@@ -21,7 +24,7 @@ export default {
         ],
         datasets: [
           {
-            data: [27, 7, 9, 3],
+            data: ["Total", "Pending", "Approve ","Decline"],
 
             backgroundColor: [
               // "#FFF6E6",
@@ -34,6 +37,9 @@ export default {
         ],
       },
     };
+  },
+  mounted() {
+    this.testData.datasets[0].data = this.data;
   },
 };
 </script>

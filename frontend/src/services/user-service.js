@@ -10,6 +10,7 @@ const STORAGE_KEY = "userDB";
 const ENDPOINT = "auth";
 
 export const userService = {
+  getMyOrder,
   getLoggedinUser,
   saveUser,
   getUserStays,
@@ -23,11 +24,13 @@ export const userService = {
 async function getUserStays(entityId) {
   // console.log('entityId', entityId);
   let userStays = []
+  const stays = await stayService.query()
   try {
-    console.log('userStays123', stays);
     // console.log('userSta;f;f;f;ys', userStays);
-    // console.log('klflflfyId', entityId);
+    // console.log('klflflfyId', entityId); 
+    console.log('staysaaaaa :>> ', stays);
     userStays = await stays.filter(stay => stay.host._id === entityId)
+    // console.log('userStays123', stays);
     console.log('userStays', userStays);
     console.log('entityId', entityId);
     console.log('entityId', entityId);
@@ -52,8 +55,21 @@ async function getUserOrder(entityId) {
   // console.log('orders',orders);
   try {
     userOrders = orders.filter(order => order.hostId === entityId)
-    console.log('userOrders', userOrders);
+    // console.log('userOrders', userOrders);
     return userOrders;
+  } catch {
+    console.error("cannot get user order");
+  }
+}
+async function getMyOrder(orders) {
+  console.log('123123   orders :>> ', orders);
+  try {
+
+    const allOrders = await orderService.query();
+    console.log('allOrders', allOrders);
+    const ordersWithSameId = allOrders.filter(order => orders.some(o => o._id === order._id));
+    console.log('ordersWithSameId :>> ', ordersWithSameId);
+    return ordersWithSameId;
   } catch {
     console.error("cannot get user order");
   }

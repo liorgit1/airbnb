@@ -1,5 +1,5 @@
 <template>
-  <section class="detailsImgContainer">
+  <section class="main-layout">
 
     <h1>Wish list</h1>
     <stayList v-if="stays" :stays="stays" @stayLiked="setLiked" />
