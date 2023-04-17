@@ -3641,3 +3641,6 @@
 17.4.2023, 17:16:54 - DEBUG - Setting (PJQDTXcd8pSLfAp9AAAB) socket.userId = 64301e16ebb7fb1f1393b2d2 
 17.4.2023, 17:16:56 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
 17.4.2023, 17:16:56 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+17.4.2023, 17:17:55 - DEBUG - Setting (YwAzQJTNKXetZTbwAAAD) socket.userId = 64301e16ebb7fb1f1393b2d2 
+17.4.2023, 17:17:56 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+17.4.2023, 17:17:56 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
