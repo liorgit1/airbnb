@@ -9,7 +9,7 @@
           <div class="mini-card-header flex row wrap">
             <h1>Wishlist</h1>
           </div>
-          <h4><span>{{ likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
+          <h4><span>{{ user.likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
           <button class="mini-card-btn">Go to wishlist</button>
         </div>
         <div class="mini-card-grid mini-card grid-item-3" >
