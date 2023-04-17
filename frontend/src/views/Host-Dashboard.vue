@@ -88,7 +88,7 @@
 
     <div class="user-order" v-if="renderOrder">
       <h2>My orders</h2>
-      <table style="overflow-x: auto">
+      <table v-if="user" style="overflow-x: auto">
         <tr class="table-header">
           <th class="stay-name-details">Guest</th>
           <th class="stay-name-details">Asset</th>
@@ -98,7 +98,7 @@
           <th class="user-order-th">Revenue</th>
           <th class="user-order-th">Actions</th>
         </tr>
-        <tr v-for="order in user.incomingOrders" :key="order._id">
+        <tr  v-for="order in user.incomingOrders" :key="order._id">
           <td class="flex align-center stay-name-details">
             <div class="review-img q-pa-md q-gutter-sm">
               <!-- <q-avatar>
@@ -146,7 +146,7 @@
         </tr>
       </table>
     </div>
-    <div class="user-stays" v-if="!renderOrder">
+    <div class="user-stays" v-if="!renderOrder && user">
       <h3>My stays</h3>
       <table>
         <tr>
