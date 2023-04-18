@@ -3,6 +3,7 @@
         <!-- <AppHeader
       @openModalLogin="openModalLogin"
     /> -->
+    <!-- <detailsMap :stay="stay"></detailsMap> -->
     </section>
     <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
 
@@ -59,6 +60,7 @@
                 <StayAmenities :stay="stay" />
             </div>
         </section>
+        <detailsMap :stay="stay"></detailsMap>
         <StayReviews :stay="stay" @setTotalRate="setTotalRate($event)" />
 
 
@@ -66,6 +68,7 @@
 
         <!-- <pre>{{ stay }}</pre> -->
 
+        
     </section>
 </template>
 
@@ -77,6 +80,7 @@ import Reservation from '../cmps/reservation.vue'
 import StayInfo from './StayInfo.vue'
 import StayAmenities from '../cmps/StayAmenities.vue'
 import StayReviews from '../cmps/StayReviews.vue'
+import detailsMap from '../cmps/details-map.vue'
 import AppHeader from '../cmps/AppHeader.vue'
 
 import { orderService } from "../services/order-service.js"
@@ -168,7 +172,8 @@ export default {
         StayAmenities,
         GuestsModal,
         StayReviews,
-        AppHeader
+        AppHeader,
+        detailsMap,
     }
     , computed: {
 

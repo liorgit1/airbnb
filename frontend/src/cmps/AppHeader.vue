@@ -46,10 +46,10 @@
         </div>
 
         <!-- <RouterLink to="/">become a host</RouterLink> -->
-        
+        <div class="flex" style="align-items: center;">
         <div>
           <RouterLink to="/Addstay">
-           become a host
+          <h1 style="margin-block-end: 0px; font-size:smaller; padding: 10px;border:0px solid;border-radius: 40px;color: black;font-weight: 500;">eartrbnb your home</h1>
           </RouterLink>
         </div>
         <label
@@ -90,6 +90,7 @@
         </label>
         <userDetailsModal v-if="modalUser" @openSignUpModal="openSignUpModal" @openModalLogin="toggleModalLogin"
           @closeLoginModal="modalLoginIsOpen = false" @closeModalDetails="closeModalUser" />
+        </div>
       </nav>
       <signUpModal
         v-if="modalSignUpIsOpen"
@@ -101,9 +102,10 @@
         v-if="modalLoginIsOpen"
         @closeLoginModal="modalLoginIsOpen = false"
         @login="setLogin"
-        @setLogin="modalLoginIsOpen = false"
-      />
+        @setLogin="modalLoginIsOpen = false"/>
     </section>
+    
+  
   </header>
 </template>
 <!-- modalSignUpIsOpen = false -->

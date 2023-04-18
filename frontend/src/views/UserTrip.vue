@@ -2,19 +2,19 @@
   <section v-if="user">
     <div class="alert" style="display: none;">
     </div>
-    <section class="main-layout2 my-details-section">
+    <section class="main-layout">
       <h1 class="trips">Trips</h1>
       <section class="user-trips">
         <div class="mini-card-grid mini-card grid-item-2">
           <div class="mini-card-header flex row wrap">
             <h1>Wishlist</h1>
           </div>
-          <h4><span>{{ likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
-          <button class="mini-card-btn">Go to wishlist</button>
+          <h4><span>{{ user.likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
+          <button class="mini-card-btn" style="margin-top: 65px;">Go to wishlist</button>
         </div>
         <div v-if="user" class="mini-card-grid mini-card grid-item-3">
           <h1>Messages</h1>
-          <div v-for="order in user.orders.slice(0, 9)" :key="order._id" class="mini-card-header ">
+          <div v-for="order in user.orders.slice(0,7)" :key="order._id" class="mini-card-header ">
             <h4 v-if="order.status !== 'Pending'" @load="changeOrderStatus(order)">
               order #{{ order._id.slice(-2) }} has been {{ order.status }}d
             </h4>
@@ -25,8 +25,8 @@
             <div class="mini-card-header flex wrap">
               <h1>Your Next Stay</h1>
             </div>
-            <h4 style="line-height: 15px;">
-              <p>{{ this.myNextStay.summary }}</p>
+            <h4 >
+              <p style="line-height: 22px;max-width: 194px;">{{ this.myNextStay.summary}}</p>
             </h4>
             <h4 style="letter-spacing: -1px;">
               <p>From {{ user.orders[0].startDate }} to {{ user.orders[0].endDate }}</p>
@@ -41,16 +41,16 @@
           </div>
         </div>
         <section v-if="user" class="old-trips grid-item">
-          <h2>Where have you been</h2>
+          <h2 style="margin-bottom: 50px;">Where have you been</h2>
           <ul class="mini-stays flex row" v-for="order in user.orders.slice(-2)" :key="order._id">
             <li class="mini-stay flex row nowrap">
               <div class="mini-stay-img">
                 <img :src="imageUrls[order._id]">
               </div>
               <div class="mini-stay-desc flex row wrap">
-                <h2>{{ order.country }}</h2>
-                <h4>ssssssss</h4>
-                <h4>{{ order.startDate }}-{{ order.endDate }}</h4>
+                <h3 style="width=100%">{{ order.country }}</h3>
+                <h4 class="next-stay" style="margin-top: -50px;">{{order.name}}</h4>
+                <h4 class="next-stay" style="margin-top: -50px;">{{ order.startDate }} - {{ order.endDate }}</h4>
               </div>
             </li>
           </ul>

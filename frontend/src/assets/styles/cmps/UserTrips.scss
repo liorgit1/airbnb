@@ -38,6 +38,7 @@ div {
     border-radius: 12px;
     padding: 18px;
     margin-block-start: 20px;
+    height: 700px;
 }
 
 
@@ -162,7 +163,7 @@ ul {
     background-color: #f7f7f7;
     transition: .1s;
     padding: 8px;
-    align-items: center;
+    align-items: bottom;
     height: 40px;
     border-radius: 4px;
     color: #222;
@@ -331,7 +332,7 @@ li {
 }
 
 .old-trips {
-    margin-top: -125px;
+    margin-top: -479px;
     margin-left: 0px;
     border: 1px solid #DDDDDD;
     color: #222;
@@ -388,6 +389,6 @@ button.next-oreder-img {
 .grid-item-2 {
     grid-row: 1/2;
     width: 100%;
-    max-height: 167px;
+    max-height: 211px;
 }
 
