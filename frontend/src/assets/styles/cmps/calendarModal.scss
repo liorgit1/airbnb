@@ -29,3 +29,19 @@
 .vc-pane-layout{
     column-gap: 25px;
 }
+
+@media screen and (max-width: 600px){
+.vc-pane-layout{
+    grid-template-columns: inherit !important;
+}
+
+.calendar-container{
+    width: auto;
+    left:-12%;
+    z-index: 2;
+}
+
+.vc-container{
+    
+}
+}

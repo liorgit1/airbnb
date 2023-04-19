@@ -1,5 +1,5 @@
 <template>
-  <section class="main-layout">
+  <section class="main-layout update-section">
     <form  @submit.prevent="saveStay">
       
       <section style = "box-shadow: 0px 1px #00000014; padding-block: 20px; display: grid;row-gap: 10px;">
@@ -61,7 +61,7 @@
         </textarea>
       </div>
 
-      <section class="grid" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;margin-bottom:20px;row-gap:10px;"> 
+      <section class="grid mobile-block" style = "box-shadow: 0px 1px #00000014; padding-block: 20px;margin-bottom:20px;row-gap:10px;"> 
       Select your amenities:
       <section class="amenities-grid">
       <div v-for = "amenitiy in nAmenities" key:amenitiy.id>
