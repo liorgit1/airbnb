@@ -10,7 +10,7 @@
             <h1>Wishlist</h1>
           </div>
           <h4><span>{{ user.likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
-          <button class="mini-card-btn">Go to wishlist</button>
+          <button class="mini-card-btn" style="margin-top: 65px;">Go to wishlist</button>
         </div>
         <div v-if="user" class="mini-card-grid mini-card grid-item-3">
           <h1>Messages</h1>
@@ -41,16 +41,16 @@
           </div>
         </div>
         <section v-if="user" class="old-trips grid-item">
-          <h2>Where have you been</h2>
+          <h2 style="margin-bottom: 50px;">Where have you been</h2>
           <ul class="mini-stays flex row" v-for="order in user.orders.slice(-2)" :key="order._id">
             <li class="mini-stay flex row nowrap">
               <div class="mini-stay-img">
                 <img :src="imageUrls[order._id]">
               </div>
               <div class="mini-stay-desc flex row wrap">
-                <h3>{{ order.country }}</h3>
-                <h4>ssssssss</h4>
-                <h4>{{ order.startDate }}-{{ order.endDate }}</h4>
+                <h3 style="width=100%">{{ order.country }}</h3>
+                <h4 class="next-stay" style="margin-top: -50px;">{{order.name}}</h4>
+                <h4 class="next-stay" style="margin-top: -50px;">{{ order.startDate }} - {{ order.endDate }}</h4>
               </div>
             </li>
           </ul>
@@ -93,9 +93,6 @@ export default {
     console.log('mynextstay', myNextStay);
     this.myNextStay = myNextStay
 
-    const previousStay = await stayService.getById(this.orders.stay_id)
-    this.previousStay.imgUrls[0] = previousStay;
-
     const likedStays = await this.$store.getters.user.likedStays;
     this.likedStays = likedStays;
     // console.log('hostStays',user.stays);
@@ -109,7 +106,7 @@ export default {
         const imageUrl = await this.imageUrl(order)
         this.imageUrls[order._id] = imageUrl
       }
-console.log(' this.imageUrls :>> ',  this.imageUrls);
+      console.log(' this.imageUrls :>> ', this.imageUrls);
     }
     socketService.on('set-user-socket', this.user._id);
     socketService.on("order recived", this.addOrder);

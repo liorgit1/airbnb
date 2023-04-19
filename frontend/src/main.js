@@ -5,10 +5,10 @@ import { store } from './store/store.js'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import vClickOutside from "click-outside-vue3"
-
+import VueGoogleMaps from '@fawmi/vue-google-maps'
+import isEqual from 'fast-deep-equal';
 import 'v-calendar/style.css';
 import VCalendar from 'v-calendar';
-
 import PrimeVue from 'primevue/config';
 import "primevue/resources/themes/lara-light-indigo/theme.css"; 
 import "primevue/resources/primevue.min.css";
@@ -24,6 +24,14 @@ import './assets/styles/main.scss'
 import App from './App.vue'
 
 const app = createApp(App)
+
+app.use(VueGoogleMaps, {
+    load: {
+        key: 'AIzaSyAbRDDBiC5xOsik1Lrk047ZtNpRZzqOaw4',
+
+    }
+})
+
 app.use(router)
 app.use(store)
 app.use(ElementPlus)
