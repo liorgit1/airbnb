@@ -8,19 +8,17 @@
     </p>
 
     <GMapMap
-    style="width: 100%; height: 500px"
+    style="width: 100%; height: 400px"
     :center="center"
-    :zoom="10"
+    :zoom="12"
       map-type-id="terrain"
     >
       <GMapCluster>
         <GMapMarker
           :key="index"
-          v-for="(m, index) in markers"
-          :position="m.position"
-          @click="center = m.position"
+          v-for="index in markers" :options="m" @click="center = m.position"
           />
-          <!-- :icon="'https://res.cloudinary.com/yonatan-cajan22/image/upload/v1648371973/airyny/MAPS.gif'" -->
+         
       </GMapCluster>
     </GMapMap>
   </section>
@@ -48,19 +46,19 @@ export default {
             lat: this.stay.loc.lan,
             lng: this.stay.loc.lat,
           },
-          icon: {},
         },
       ],
     };
   },
   created() {
-    this.icon = {
-      fillColor: "#FF0000",
-      fillOpacity: 0.8,
-      strokeWeight: 0,
+    // this.icon = {
+    //   fillColor: "#FF0000",
+    //   fillOpacity: 0.8,
+    //   strokeWeight: 0,
 
-      scale: 1,
-    };
+    //   scale: 1,
+    // };
+    console.log('latlan', this.stay.loc.lat, this.stay.loc.lan);
   },
   methods: {},
 };

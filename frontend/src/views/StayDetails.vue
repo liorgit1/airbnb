@@ -60,7 +60,7 @@
                 <StayAmenities :stay="stay" />
             </div>
         </section>
-        <detailsMap :stay="stay"></detailsMap>
+        <detailsMap v-if="stay.loc.lat && stay.loc.lan " :stay="stay"></detailsMap>
         <StayReviews :stay="stay" @setTotalRate="setTotalRate($event)" />
 
 
