@@ -1,6 +1,6 @@
 <template>
   <hr class="hr-border" />
-  <section id="map" class="details-layout">
+  <section id="map">
     <h2>Where you’ll be</h2>
     <p>
       {{ stay.loc.country }}
@@ -46,8 +46,8 @@ export default {
   created() {
     this.icon = {
       fillColor: "#FF0000",
-      fillOpacity: 0.8,
-      strokeWeight: 0,
+      fillOpacity: 0.2,
+      strokeWeight: 1,
 
       scale: 1,
     };
