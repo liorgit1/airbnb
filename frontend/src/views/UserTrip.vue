@@ -106,7 +106,7 @@ export default {
         const imageUrl = await this.imageUrl(order)
         this.imageUrls[order._id] = imageUrl
       }
-console.log(' this.imageUrls :>> ',  this.imageUrls);
+      console.log(' this.imageUrls :>> ', this.imageUrls);
     }
     socketService.on('set-user-socket', this.user._id);
     socketService.on("order recived", this.addOrder);
