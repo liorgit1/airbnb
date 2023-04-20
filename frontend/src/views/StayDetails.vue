@@ -143,24 +143,24 @@ export default {
             }
             this.$store.commit({ type: "setCurrOrder", newOrder: order });
 
-            // try {
-            //     // console.log("orderToSave", orderToSave);
-            //     const newOrder = await this.$store.dispatch({
-            //         type: "addNewOrder",
-            //         orderToSave,
-            //     });
+            try {
+                // console.log("orderToSave", orderToSave);
+                const newOrder = await this.$store.dispatch({
+                    type: "addNewOrder",
+                    orderToSave,
+                });
 
-            //     // ElNotification({
-            //     //     title: "Success",
-            //     //     message:
-            //     //         "Your booking request has been sent to the host",
-            //     //     type: "success",
-            //     // });
+                ElNotification({
+                    title: "Success",
+                    message:
+                        "Your booking request has been sent to the host",
+                    type: "success",
+                });
 
-            //     // socketService.emit("addOrder", orderToSave);
-            // } catch {
-            //     console.error;
-            // }
+                // socketService.emit("addOrder", orderToSave);
+            } catch {
+                console.error;
+            }
         },
 
 
