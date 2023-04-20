@@ -136,9 +136,10 @@
           <RouterLink
           to="/"
           @click="isOpen = false && resetParams()"
+          
           class="logo"
         >
-          <RouterLink to="/" class="logo" />
+          <RouterLink to="/" class="logo" @click="scrollToTop()"/>
           <img class="logo-img" src="../assets/pngs/logo1.png" />
         </RouterLink>
   </section>
@@ -277,9 +278,12 @@ export default {
 }
 else this.isMobileLayout = false
   },
+
   scrollToTop(){
-    window.scrollTo(0, this.top);
-  }
+
+    this.$refs.main.scrollTo(0, 0)
+  
+  },
   },
 
   
@@ -291,7 +295,7 @@ else this.isMobileLayout = false
 
     resetParams() {
       this.$router.replace({ query: null });
-      scrollToTop()
+      
     },
     loggedInUser() {
       return this.$store.getters.loggedinUser;

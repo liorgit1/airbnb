@@ -1,5 +1,5 @@
 <template>
-    <section class="stay-reviews details-layout">
+    <section class="stay-reviews details-layout stay-review-layout">
 
 
         <div class="overall-rating">
