@@ -1,6 +1,6 @@
 <template>
   <hr class="hr-border" />
-  <section id="map" class="details-layout">
+  <section id="map" class="details-layout map-layout ">
     <h2>Where you’ll be</h2>
     <p>
       {{ stay.loc.country }}
@@ -57,4 +57,3 @@ export default {
 </script>
 
 <style></style>
-
