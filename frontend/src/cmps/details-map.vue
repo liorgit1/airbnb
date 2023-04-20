@@ -1,6 +1,6 @@
 <template>
   <hr class="hr-border" />
-  <section id="map">
+  <section id="map" class="details-layout map-layout ">
     <h2>Where you’ll be</h2>
     <p>
       {{ stay.loc.country }}
@@ -38,23 +38,22 @@ export default {
             lat: this.stay.loc.lan,
             lng: this.stay.loc.lat,
           },
-          icon: {},
         },
       ],
     };
   },
   created() {
-    this.icon = {
-      fillColor: "#FF0000",
-      fillOpacity: 0.2,
-      strokeWeight: 1,
+    // this.icon = {
+    //   fillColor: "#FF0000",
+    //   fillOpacity: 0.8,
+    //   strokeWeight: 0,
 
-      scale: 1,
-    };
+    //   scale: 1,
+    // };
+    console.log('latlan', this.stay.loc.lat, this.stay.loc.lan);
   },
   methods: {},
 };
 </script>
 
 <style></style>
-

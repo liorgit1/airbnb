@@ -1,7 +1,9 @@
 <template>
   <div v-click-outside="onClickedOutside" ref="container" class="container">
-    <div class="bar">
-      <div class="location bar-div" :class="{ 'clicked': showLocationsModal }"
+
+    <section class="" :class="{'mobile-bar':isMobileLayout , 'bar':!isMobileLayout}" >
+
+      <div class="location bar-div" :class="{ 'clicked': showLocationsModal}"
         @click="showLocationsModal = true, showGuestsModal = false, showDatesModal = false, checkInClicked = false, checkOutClicked = false">
         <p>Location</p>
 
@@ -47,8 +49,62 @@
         @setPetsCount="setPetsCount($event)"
         style="top:153px ; right:5px; font-size:initial ; border-radius: 32px ; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0392156863), 0 8px 16px rgba(0, 0, 0, 0.1490196078);" />
 
-    </div>
+    </section>
+
+   <!-- <div class="mobile-bar" v-else>
+
+    <div class="location bar-div" :class="{ 'clicked': showLocationsModal }"
+        @click="showLocationsModal = true, showGuestsModal = false, showDatesModal = false, checkInClicked = false, checkOutClicked = false">
+        <p>Location</p>
+
+        <input type="text" v-model="searchBy.country" placeholder="Where are you going?" @keyup.enter="setSearch()" />
+      </div>
+
+      <LocationsModal @passData="getData($event)" @close="showLocationsModal = false" v-if="showLocationsModal" />
+
+      <div class="check-in bar-div" :class="{ 'clicked': checkInClicked }"
+        @click="showLocationsModal = false, showGuestsModal = false, showDatesModal = true, checkInClicked = true, checkOutClicked = false">
+        <p>Check in</p>
+        <input type="text" v-model="getDates.start" placeholder="Add dates" @keyup.enter="setSearch()" />
+      </div>
+
+      <DatePickerModal @passDateData="getDateData($event)" @close="showDatesModal = false" v-if="showDatesModal" />
+
+      <div class="check-out bar-div" :class="{ 'clicked': checkOutClicked }"
+        @click="showLocationsModal = false, showGuestsModal = false, showDatesModal = true, checkInClicked = false, checkOutClicked = true">
+        <p>Check out</p>
+        <input type="text" v-model="getDates.end" placeholder="Add dates" @keyup.enter="setSearch()" />
+      </div>
+
+      <div class="guests bar-div" :class="{ 'clicked': showGuestsModal }"
+        @click="showDatesModal = false, showLocationsModal = false, showGuestsModal = true, checkInClicked = false, checkOutClicked = false">
+        <div>
+          <p>Guests</p>
+          <input type="text" v-model="guestsDisplay" placeholder="Add guests" />
+           v-model="searchBy.guests" -->
+        <!-- </div>
+        <span @click="setSearch(), $emit('close')"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" role="presentation" focusable="false"
+            style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible; margin-left: 1px; margin-top: 2px !important;">
+            <g fill="none">
+              <path
+                d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9">
+              </path>
+            </g>
+          </svg>Search</span>
+      </div>
+
+      <GuestsModal v-if="showGuestsModal" @setChildrenCount="setChildrenCount($event)"
+        @setAdultCount="setAdultCount1($event)" @setInfantsCount="setInfantsCount($event)"
+        @setPetsCount="setPetsCount($event)"
+        style="top:153px ; right:5px; font-size:initial ; border-radius: 32px ; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.0392156863), 0 8px 16px rgba(0, 0, 0, 0.1490196078);" />
+
+
+   </div> -->
+
   </div>
+
+  
   <!-- class="lni lni-search-alt" -->
 </template>
 
@@ -64,6 +120,8 @@ import GuestsModal from '../cmps/GuestsModal.vue'
 export default {
 
   components: { LocationsModal, DatePickerModal, GuestsModal, vClickOutside },
+  
+  // props:['isMobileLayout'],
 
   name: 'DestSearch',
 
@@ -92,16 +150,27 @@ export default {
 
       checkOutClicked: false,
 
+      isMobileLayout: false,
+      
+     
       mounted() {
 
         this.searchBy.country = data.country
 
       },
-    }
+    };
+
   },
 
   directives: {
     clickOutside: vClickOutside.directive
+  },
+
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+    
+    window.addEventListener("resize", this.handleScreenChange);
+   
   },
 
   methods: {
@@ -155,8 +224,17 @@ export default {
     onClickedOutside() {
       this.openDatesModal = false,
       this.$emit('close')
-    }
+    },
 
+    handleScreenChange(){
+      if (window.matchMedia("(max-width: 768px)").matches) {
+      this.isMobileLayout = true;
+    }
+    else this.isMobileLayout = false;
+
+    console.log(this.isMobileLayout)
+   }
+   
   },
 
   computed: {
@@ -178,8 +256,10 @@ export default {
     }
   }
 
-
 }
+
+
+
 </script>
 
 

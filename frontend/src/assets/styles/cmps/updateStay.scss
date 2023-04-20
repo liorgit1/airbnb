@@ -75,3 +75,40 @@
   border-bottom: 1px #E0E0E0 solid;
 }
 
+@media screen and (max-width: 600px){
+  .update-section{
+    display: grid;
+    grid-template-columns: 10px 1fr 10px !important;
+
+    >* {
+        grid-column: 2 !important;
+
+        &.full {
+            grid-column: 1 /-1 !important;
+        }
+    } 
+  }
+
+  .img-container{
+    display: grid;
+  }
+
+  .amenities-grid{
+   
+  }
+
+  .mobile-block{
+    display: block;
+  }
+
+  .btn-section{
+    display: flex;
+    position: relative;
+    bottom:1.5%;
+
+    .btn{
+      // position: absolute;
+      width: 50%;
+    }
+  }
+}

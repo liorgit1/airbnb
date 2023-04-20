@@ -95,6 +95,11 @@ nav p{
    
 }
 
+.on-mobile-layout{
+width:100%;
+    
+}
+
 .search-bar button:not(:last-child){
     background-color: transparent;
     color: inherit;
@@ -164,7 +169,8 @@ font-weight: normal;
 }
 
 .user-nav:hover{
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 8px 16px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px, 
+    
 }
 
 .user-nav .user-png{
@@ -190,6 +196,51 @@ font-weight: normal;
 
 .filter-list svg{
     margin-left: 1px;
+}
+
+.mobile-footer{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px){
+    .user-nav{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    h1{
+        // display: none;
+    }
+
+    .mobile-footer{
+        display:flex !important;
+        width: 100%;
+        background-color: #DDDDDD;
+        border-top: 1px #DDDDDD solid;
+        bottom:0;
+        clear: both;
+        position: fixed;
+        z-index: 10;
+        height: 3em;
+        margin-top: -3em;
+        justify-content: space-around;
+        align-items: center;
+
+        .user-nav{
+            display: flex;
+        }
+    
+        .logo{
+            display: flex;
+         z-index: 100;
+         align-items: center;
+        }
+        
+    }
 }
 
 

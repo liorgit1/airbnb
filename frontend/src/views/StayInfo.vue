@@ -2,7 +2,7 @@
     <section class="stay-info flex-col">
         <div class="host-info flex">
             <div>
-                <h2>{{ stay.type }} hosted by {{ stay.host.fullname }} </h2>
+                <h2 class="hosted-By">{{ stay.type }} hosted by {{ stay.host.fullname }} </h2>
                 <ul style="margin-block-start: -13px;" class="stay-baths-beds flex">
                     <div>{{ stay.capacity }} guests</div><span class="dot">·</span>
                     <div>{{ stay.capacity }} beds</div><span class="dot">·</span>

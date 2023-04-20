@@ -66,3 +66,12 @@
 .border1:hover {
     // color: hsla(0, 0%, 92.5%, .48627450980392156);
 }
+
+@media screen and (max-width: 600px){
+    .before-login-modal{
+        position: fixed;
+        width: 100%;
+        top: 68%;
+        z-index: 1001;
+    }
+}

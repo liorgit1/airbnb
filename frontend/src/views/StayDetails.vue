@@ -3,7 +3,7 @@
         <!-- <AppHeader
       @openModalLogin="openModalLogin"
     /> -->
-    <!-- <detailsMap :stay="stay"></detailsMap> -->
+        <!-- <detailsMap :stay="stay"></detailsMap> -->
     </section>
     <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
 
@@ -60,7 +60,7 @@
                 <StayAmenities :stay="stay" />
             </div>
         </section>
-        <detailsMap :stay="stay"></detailsMap>
+        <detailsMap v-if="stay.loc.lat && stay.loc.lan" :stay="stay"></detailsMap>
         <StayReviews :stay="stay" @setTotalRate="setTotalRate($event)" />
 
 
@@ -68,7 +68,7 @@
 
         <!-- <pre>{{ stay }}</pre> -->
 
-        
+
     </section>
 </template>
 
@@ -143,24 +143,24 @@ export default {
             }
             this.$store.commit({ type: "setCurrOrder", newOrder: order });
 
-            // try {
-            //     // console.log("orderToSave", orderToSave);
-            //     const newOrder = await this.$store.dispatch({
-            //         type: "addNewOrder",
-            //         orderToSave,
-            //     });
+            try {
+                // console.log("orderToSave", orderToSave);
+                const newOrder = await this.$store.dispatch({
+                    type: "addNewOrder",
+                    orderToSave,
+                });
 
-            //     // ElNotification({
-            //     //     title: "Success",
-            //     //     message:
-            //     //         "Your booking request has been sent to the host",
-            //     //     type: "success",
-            //     // });
+                    ElNotification({
+                        title: "Success",
+                        message:
+                            "Your booking request has been sent to the host",
+                        type: "success",
+                    });
 
-            //     // socketService.emit("addOrder", orderToSave);
-            // } catch {
-            //     console.error;
-            // }
+                //     // socketService.emit("addOrder", orderToSave);
+            } catch {
+                console.error;
+            }
         },
 
 
