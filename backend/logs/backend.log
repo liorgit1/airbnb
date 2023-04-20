@@ -4101,7 +4101,47 @@
 20.4.2023, 16:23:46 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
 =======
 20.4.2023, 15:39:18 - DEBUG - Setting (_wQeeoICH09XHfenAABr) socket.userId = 64369bcfa3ce5d18717e14d8 
+<<<<<<< HEAD
+20.4.2023, 15:42:27 - DEBUG - Setting (ErRZkN4S_0ls4LQ5AABt) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:46:24 - DEBUG - Setting (ErRZkN4S_0ls4LQ5AABt) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:47:28 - DEBUG - Setting (ErRZkN4S_0ls4LQ5AABt) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:47:32 - DEBUG - Setting (EgC7ST0ZS8FISN2IAABv) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:52:12 - DEBUG - Setting (EgC7ST0ZS8FISN2IAABv) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:52:22 - DEBUG - Setting (BrbN_kTvWw6OgG5QAABx) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:52:45 - DEBUG - Setting (BrbN_kTvWw6OgG5QAABx) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:52:56 - DEBUG - Setting (ic7Y-CWVL9VAMva4AABz) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 17:30:40 - DEBUG - Setting (__GMae9fTMEM10-nAAB1) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 17:31:06 - INFO - Hi | 90 | Bobo 
+20.4.2023, 17:31:06 - INFO - Server is running on port: 3030 
+20.4.2023, 17:31:55 - DEBUG - Setting (4ynz8fAirjT8qKDVAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+=======
 >>>>>>> 8aeb0997ed0f0d96b982869ae3875e24e48dbdac
 >>>>>>> 263f2d13083c76c7d6073fd1dfebb7a5c31a77b3
 20.4.2023, 17:27:47 - DEBUG - Setting (PBx2jSMCvSYq2aWWAAAn) socket.userId = 64369bcfa3ce5d18717e14d8 
+<<<<<<< HEAD
 20.4.2023, 19:01:32 - DEBUG - Setting (9xI5E1V6b_f4E54YAAAp) socket.userId = 64369bcfa3ce5d18717e14d8 
+=======
+>>>>>>> 6779ec0e4ae865ef39e337506e39d34131543597
+20.4.2023, 17:33:17 - DEBUG - Setting (4ynz8fAirjT8qKDVAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+<<<<<<< HEAD
+20.4.2023, 17:35:05 - DEBUG - Setting (9gQo255NJuBLi_DVAAAH) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 17:38:08 - DEBUG - Setting (nfbTUXN4RSkI5Ci6AAAJ) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 17:43:08 - DEBUG - Setting (Zqlg9coQ43ftK1YgAAAL) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 17:45:46 - DEBUG - Setting (FpjuPVWw8o3948SeAAAN) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 17:55:38 - DEBUG - Setting (s79GafRJaAbtBkfZAAAP) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 17:59:16 - DEBUG - Setting (F8uD_p8cfiolH-l5AAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 18:01:48 - DEBUG - Setting (F8uD_p8cfiolH-l5AAAR) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 18:01:59 - DEBUG - Setting (xAD1abfdMLRldvAVAAAT) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 18:05:03 - DEBUG - Setting (hhHbXsv7iC0R57WVAAAV) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 18:15:52 - DEBUG - Setting (i2tkDIr39hXlMeSvAAAX) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 18:18:01 - DEBUG - Setting (nHktGS68iNMLKJJ8AAAZ) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 18:25:25 - DEBUG - Setting (xCzbK0ndmzbata2dAAAb) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 18:29:04 - DEBUG - Setting (wHuMboqTH6EsvP_PAAAd) socket.userId = 64369bcfa3ce5d18717e14d8 
+=======
+20.4.2023, 18:33:32 - INFO - Hi | 90 | Bobo 
+20.4.2023, 18:33:32 - INFO - Server is running on port: 3030 
+20.4.2023, 18:34:40 - DEBUG - Setting (czkjLDG4rhvFAn7NAAAF) socket.userId = 643069ee43be54dedea7feea 
+20.4.2023, 18:34:56 - DEBUG - Setting (4E6MytgfINMdZPewAAAH) socket.userId = 643069ee43be54dedea7feea 
+>>>>>>> 1e243c2c7a6bb0456f035a955b0c3410e47c854a
+>>>>>>> d1369bcf340408cf13d56d704149219e25f9e9c7
+20.4.2023, 19:02:18 - DEBUG - Setting (9xI5E1V6b_f4E54YAAAp) socket.userId = 64369bcfa3ce5d18717e14d8 

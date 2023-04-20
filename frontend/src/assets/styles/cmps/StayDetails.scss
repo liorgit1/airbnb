@@ -127,6 +127,7 @@
 @media (max-width: 768px) {
     .host-info {
         justify-content: end !important;
+        border-block: 1px solid #ddd !important;
     }
 
     .stay-info {
@@ -138,7 +139,8 @@
         .likeAndShare {
             display: block;
 
-            .fs16 , .flex {
+            .fs16,
+            .flex {
                 display: none;
             }
         }
