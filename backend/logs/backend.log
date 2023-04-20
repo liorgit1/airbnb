@@ -4120,6 +4120,7 @@
 20.4.2023, 17:27:47 - DEBUG - Setting (PBx2jSMCvSYq2aWWAAAn) socket.userId = 64369bcfa3ce5d18717e14d8 
 >>>>>>> 6779ec0e4ae865ef39e337506e39d34131543597
 20.4.2023, 17:33:17 - DEBUG - Setting (4ynz8fAirjT8qKDVAAAF) socket.userId = 64369bcfa3ce5d18717e14d8 
+<<<<<<< HEAD
 20.4.2023, 17:35:05 - DEBUG - Setting (9gQo255NJuBLi_DVAAAH) socket.userId = 64369bcfa3ce5d18717e14d8 
 20.4.2023, 17:38:08 - DEBUG - Setting (nfbTUXN4RSkI5Ci6AAAJ) socket.userId = 64369bcfa3ce5d18717e14d8 
 20.4.2023, 17:43:08 - DEBUG - Setting (Zqlg9coQ43ftK1YgAAAL) socket.userId = 64369bcfa3ce5d18717e14d8 
@@ -4133,3 +4134,9 @@
 20.4.2023, 18:18:01 - DEBUG - Setting (nHktGS68iNMLKJJ8AAAZ) socket.userId = 64369bcfa3ce5d18717e14d8 
 20.4.2023, 18:25:25 - DEBUG - Setting (xCzbK0ndmzbata2dAAAb) socket.userId = 64369bcfa3ce5d18717e14d8 
 20.4.2023, 18:29:04 - DEBUG - Setting (wHuMboqTH6EsvP_PAAAd) socket.userId = 64369bcfa3ce5d18717e14d8 
+=======
+20.4.2023, 18:33:32 - INFO - Hi | 90 | Bobo 
+20.4.2023, 18:33:32 - INFO - Server is running on port: 3030 
+20.4.2023, 18:34:40 - DEBUG - Setting (czkjLDG4rhvFAn7NAAAF) socket.userId = 643069ee43be54dedea7feea 
+20.4.2023, 18:34:56 - DEBUG - Setting (4E6MytgfINMdZPewAAAH) socket.userId = 643069ee43be54dedea7feea 
+>>>>>>> 1e243c2c7a6bb0456f035a955b0c3410e47c854a
