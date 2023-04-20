@@ -211,6 +211,21 @@
     }
 }
 
+@media (max-width: 700px){
+.main-layout , .details-layout{
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+
+    >* {
+        grid-column: 2;
+
+        &.full {
+            grid-column: 1 /-1;
+        }
+    }
+}
+}
+
 // @media (min-width: 1440px)
 // .main-layout {
 //     grid-template-columns: 80px 1fr 80px;
