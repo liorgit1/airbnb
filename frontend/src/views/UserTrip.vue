@@ -26,7 +26,7 @@
               <h1>Your Next Stay</h1>
             </div>
             <h4 >
-              <p style="line-height: 22px;max-width: 194px;">{{ this.myNextStay.summary}}</p>
+              <p class="next-stay-text" >{{ this.myNextStay.summary}}</p>
             </h4>
             <h4 style="letter-spacing: -1px;">
               <p>From {{ user.orders[0].startDate }} to {{ user.orders[0].endDate }}</p>
