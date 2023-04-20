@@ -3927,8 +3927,21 @@
 19.4.2023, 16:08:39 - DEBUG - Setting (WBKmc-8MB5WgS41uAABx) socket.userId = 643069ee43be54dedea7feea 
 =======
 >>>>>>> a7f35169f2820ac3d7aa45bfa679b4e02fe7201b
+<<<<<<< HEAD
+19.4.2023, 15:06:22 - DEBUG - Setting (viulzhJXlKYgq71oAABR) socket.userId = 64369bcfa3ce5d18717e14d8 
+19.4.2023, 15:06:36 - DEBUG - Setting (j8-TOiMVjcp1nbiOAABT) socket.userId = 64369bcfa3ce5d18717e14d8 
+19.4.2023, 15:06:48 - DEBUG - Setting (cOD3Pr6FKlgoMeMyAABV) socket.userId = 64369bcfa3ce5d18717e14d8 
+19.4.2023, 15:07:58 - DEBUG - Setting (YK8m8ZUOC0UtlfN2AABX) socket.userId = 64369bcfa3ce5d18717e14d8 
+19.4.2023, 15:11:57 - DEBUG - Setting (7-_OT6D-ZggYOvF1AABZ) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 8:32:26 - DEBUG - Setting (70nZ_C3AqUR5YsXAAABd) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 13:50:54 - DEBUG - Setting (pvOJ3SePQMPuqUxJAABf) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 14:28:38 - DEBUG - Setting (a7r_kQFZoc5llzIKAABj) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 14:50:53 - DEBUG - Setting (AhfgTdbu93Fq67HwAABn) socket.userId = 64369bcfa3ce5d18717e14d8 
+20.4.2023, 15:37:26 - DEBUG - Setting (_wQeeoICH09XHfenAABr) socket.userId = 64369bcfa3ce5d18717e14d8 
+=======
 >>>>>>> 82f36d65a46f1b647b415c5c51369db17ba5e85c
 >>>>>>> 3362f90e6bd3b3f7cef73de65a2be49349619f5a
+<<<<<<< HEAD
 19.4.2023, 18:44:11 - INFO - Hi | 90 | Bobo 
 19.4.2023, 18:44:11 - INFO - Server is running on port: 3030 
 19.4.2023, 18:49:02 - DEBUG - Setting (h_PC7RLtzHw9PUuNAAAJ) socket.userId = 643069ee43be54dedea7feea 
@@ -4016,3 +4029,6 @@
 20.4.2023, 15:59:21 - DEBUG - Setting (5VnVQBDBl7tK8UiAAAAF) socket.userId = 643069ee43be54dedea7feea 
 20.4.2023, 16:23:46 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
 20.4.2023, 16:23:46 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+=======
+20.4.2023, 15:39:18 - DEBUG - Setting (_wQeeoICH09XHfenAABr) socket.userId = 64369bcfa3ce5d18717e14d8 
+>>>>>>> 8aeb0997ed0f0d96b982869ae3875e24e48dbdac
