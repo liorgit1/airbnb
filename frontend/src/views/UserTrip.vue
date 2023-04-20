@@ -10,7 +10,7 @@
             <h1>Wishlist</h1>
           </div>
           <h4><span>{{ user.likedStays.length }}</span>&nbsp;stays that you dream to visit</h4>
-          <button class="mini-card-btn" style="margin-top: 65px;">Go to wishlist</button>
+          <button class="mini-card-btn" style="margin-top: 65px;" @click="goToWishList()">Go to wishlist</button>
         </div>
         <div v-if="user" class="mini-card-grid mini-card grid-item-3">
           <h1>Messages</h1>
@@ -153,6 +153,15 @@ export default {
         message:
           "Welcome to your next dream house vacation ",
         type: "success",
+      });
+    },
+
+    async goToWishList() {
+      this.$router.push('/wishlist/')
+      ElNotification({
+        title: "welcome back !",
+        message:
+          "Have another look at your favorite stays ",
       });
     },
   },
