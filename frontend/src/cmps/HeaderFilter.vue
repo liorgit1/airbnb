@@ -18,7 +18,7 @@
         <input type="text" v-model="getDates.start" placeholder="Add dates" @keyup.enter="setSearch()" />
       </div>
 
-      <DatePickerModal :isDetails="false" @passDateData="getDateData($event)" @close="showDatesModal = false"
+      <DatePickerModal @click.stop :isDetails="false" @passDateData="getDateData($event)" @close="showDatesModal = false"
         v-if="showDatesModal" />
 
       <div class="check-out bar-div" :class="{ 'clicked': checkOutClicked }"
