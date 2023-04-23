@@ -124,7 +124,63 @@
     flex-direction: row-reverse;
 }
 
+.card-img {
+
+    &.full {
+        display: none;
+
+    }
+}
+
 @media (max-width: 768px) {
+    .info-container {
+        flex-direction: column-reverse;
+    }
+
+    .date-picker-reservation {
+        translate: 89px !important;
+    }
+
+
+    .mobile-reservation {}
+
+    .calendar-container-mobile {
+        translate: 0px !important;
+        position: fixed;
+    }
+
+    .vc-container {
+        width: 100% !important;
+    }
+
+
+    .vue-map {
+        height: 220px !important;
+        width: 320px !important;
+    }
+
+
+    .details-img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 1.053/1;
+        height: auto;
+        vertical-align: bottom;
+        box-sizing: border-box;
+        border-radius: 0px !important;
+
+    }
+
+    .card-img {
+
+        &.full {
+            border-radius: 0px !important;
+            display: block;
+        }
+    }
+
+
     .host-info {
         justify-content: end !important;
         border-block: 1px solid #ddd !important;
@@ -154,9 +210,18 @@
 
     /* Hide detailsImgContainer on mobile devices */
     .stay-details .detailsImgContainer,
-    .order-container,
+
     .review-container .rating {
         display: none !important;
+    }
+
+    .order-container {
+        width: 345px !important;
+        // display: none;
+    }
+
+    .translate-modal-mobile {
+        translate: 17px -63px !important;
     }
 
     .review {

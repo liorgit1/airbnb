@@ -1,15 +1,9 @@
 <template>
-  <el-carousel
-    :interval="5000"
-    indicator-position="inside"
-    :autoplay="false"
-    height="100%"
-  >
-    <el-carousel-item  v-for="img in imgs" :key="img">
-        <img :src="img"
-        class="card-img"
-        height="105%"/>
-       
+  <el-carousel :interval="5000" indicator-position="inside" :autoplay="false" height="100%">
+    <el-carousel-item v-for="img in imgs" :key="img">
+      <img :src="img" :class="{ 'details-img': thisRoute === 'stay-details', 'card-img': thisRoute !== 'stay-details' }"
+        height="105%" />
+
     </el-carousel-item>
   </el-carousel>
 </template>
@@ -19,9 +13,16 @@ export default {
     imgs: {
       type: Array,
     },
+  }, computed: {
+    thisRoute() {
+      return this.$route.name;
+    }
   },
-  created(){
-  }
+  created() {
+  }, mounted() {
+    console.log('this.route :>> ', this.$route.name);
+
+  },
 };
 </script>
 
@@ -32,6 +33,7 @@ export default {
 
   font-size: initial;
 }
+
 .el-carousel__container {
   position: relative;
   height: 260px;
@@ -43,6 +45,7 @@ export default {
   left: 0;
   position: absolute;
 }
+
 .el-carousel__button {
   z-index: 10;
   border-radius: 30%;

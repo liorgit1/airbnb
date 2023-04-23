@@ -4,7 +4,7 @@
       <div class="stay-preview">
         <div class="stay-preview-gallery">
           <section>
-            <img-carousel indicator-position="" :imgs="stay.imgUrls" class="card-img" />
+            <img-carousel indicator-position="" :imgs="stay.imgUrls" class="card-img " />
           </section>
           <div>
             <span class="icon-heart">
