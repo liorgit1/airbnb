@@ -4254,3 +4254,28 @@
 23.4.2023, 23:35:36 - INFO - Server is running on port: 3030 
 23.4.2023, 23:35:38 - INFO - Hi | 90 | Bobo 
 23.4.2023, 23:35:38 - INFO - Server is running on port: 3030 
+23.4.2023, 23:40:36 - DEBUG - Setting (DSN_wX6NBtuqbWWVAAAB) socket.userId = 643069ee43be54dedea7feea 
+23.4.2023, 23:40:50 - DEBUG - Setting (bAaI3tzlCOuvuyu1AAAD) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 1:01:17 - DEBUG - Setting (xtWu1OC55Nz8A6yMAAAH) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:18:14 - DEBUG - Setting (3NDhyttlcjxFa7FNAAAJ) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:18:16 - DEBUG - Setting (6ldQB8wM5EbJmRgmAAAL) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:18:21 - DEBUG - Setting (2RXcdlPxdc1VXAgpAAAN) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:18:40 - DEBUG - Setting (MbshyiMpjphmdiwvAAAP) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:19:13 - DEBUG - Setting (AEa_GU4Xb5zfV0HQAAAR) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:21:05 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+24.4.2023, 18:21:05 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+24.4.2023, 18:21:06 - DEBUG - Setting (af3c2l0lDUIwkWl2AAAT) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:21:28 - DEBUG - Setting (7jOOqL8-0z3hVOY5AAAV) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:24:33 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+24.4.2023, 18:24:33 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+24.4.2023, 18:24:34 - DEBUG - Setting (_e6GsTZdJ-JLkePGAAAX) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:24:40 - DEBUG - Setting (GiZHAVZXUs4Vnh08AAAZ) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:28:20 - DEBUG - Setting (r4QUybov8042Gzk6AAAb) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:30:35 - DEBUG - Setting (yTWXAZnMSFYZvDp0AAAd) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:30:43 - DEBUG - Setting (JAlgtFaJqqmS_xnrAAAf) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:30:59 - DEBUG - Setting (YltmCXZdTR13IjgkAAAh) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:31:07 - DEBUG - Setting (x9iVIHYgHBhVv-i4AAAj) socket.userId = 643069ee43be54dedea7feea 
+24.4.2023, 18:59:03 - ERROR - while finding stay undefined | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+24.4.2023, 18:59:03 - ERROR - Failed to get Stay | BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer 
+24.4.2023, 19:15:06 - INFO - Hi | 90 | Bobo 
+24.4.2023, 19:15:06 - INFO - Server is running on port: 3030 
