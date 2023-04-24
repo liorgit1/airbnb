@@ -6,7 +6,7 @@
         <div class="confirmation-container ">
             <div class="your-trip flex-col">
                 <div class="rare-find">
-                    <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                    <svg class="diamond-logo" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
                         focusable="false"
                         style="translate: 352px -15px;display: block; height: 40px; width: 40px; fill: rgb(227, 28, 95); stroke: currentcolor;">
                         <g stroke="none">
@@ -22,7 +22,7 @@
                     <h4 style="translate: -10px -37px;">{{ this.stay.host.fullname }}'s place is usually booked
                     </h4>
                 </div>
-                <div style="padding-block-end: 10px;">
+                <div class="your-trip-container" style="padding-block-end: 10px;">
                     <h2 style="padding-block:40px ;padding-block-end: 26px;">Your trip</h2>
                     <div class="flex space-between">
 
@@ -39,8 +39,8 @@
                     </div>
                 </div>
 
-                <div class="flex">
-                    <p style="font-size: 22px;translate: 67px 92px;; text-decoration: underline;">close</p>
+                <div class="flex approve-btns-container">
+                    <p class="close-btn" style="font-size: 22px;translate: 67px 92px;; text-decoration: underline;">close</p>
                     <div style="cursor: pointer;" @click="makeOrder" class=" approveBtn">
                         <span style="padding-inline-start: 41px;">
                             Approve

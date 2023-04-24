@@ -53,8 +53,9 @@
                     }">
                         <div class="date-input">
                             <label class="fs10" style="color: black; ">CHECK IN</label>
-                            <DatePickerModalVue @click.stop v-if="openDatesModal" style="translate: -212px; z-index: 1 ;"
-                                @passDateData="getDateData($event)" v-click-outside="onClickedOutside" />
+                            <DatePickerModalVue class="date-picker-reservation" :isDetails="true" @click.stop v-if="openDatesModal"
+                                style="translate: -212px; z-index: 1 ;" @passDateData="getDateData($event)"
+                                v-click-outside="onClickedOutside" />
                             <input v-model="orderInfo.startDate" placeholder="Add date">
                         </div>
                         <div class="date-input">
@@ -99,7 +100,7 @@
                         </div>
                     </span>
 
-                    <GuestsModal v-if="showModal" @setChildrenCount="setChildrenCount($event)"
+                    <GuestsModal class="translate-modal-mobile" v-if="showModal" @setChildrenCount="setChildrenCount($event)"
                         @setAdultCount="setAdultCount1($event)" @setInfantsCount="setInfantsCount($event)"
                         @setPetsCount="setPetsCount($event)" />
 

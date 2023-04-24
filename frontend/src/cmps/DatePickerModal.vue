@@ -1,6 +1,9 @@
 <template>
-  <section class="calendar-container" >
-    <VDatePicker locale="en" :columns="2" v-model.range="range" mode="dateTime" @input="onDateRangeChange" @click.stop />
+  <section class="calendar-container">
+    <VDatePicker v-if="thisRoute !== 'stay-details'" locale="en" :columns="2" v-model.range="range" mode="dateTime"
+      @input="onDateRangeChange" @click.stop />
+    <VDatePicker v-else locale="en" :columns="1" v-model.range="range" mode="dateTime" @input="onDateRangeChange"
+      @click.stop />
     <!--  -->
   </section>
 </template>
@@ -20,6 +23,11 @@ const range = ref({
 });
 
 export default {
+  props: {
+    isDetails: {
+      type: Boolean,
+    },
+  },
   components: {
 
     // Calendar, DatePicker,    
@@ -38,6 +46,10 @@ export default {
   methods: {
     onDateRangeChange() {
       console.log(this.range)
+    }
+  }, computed: {
+    thisRoute() {
+      return this.$route.name;
     }
   },
 

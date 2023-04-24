@@ -5,9 +5,11 @@
     /> -->
         <!-- <detailsMap :stay="stay"></detailsMap> -->
     </section>
+    <img-carousel indicator-position="" :imgs="stay.imgUrls" class="card-img full" />
     <section @click="closeModal()" v-if="stay" class="stay-details details-layout">
 
         <!-- header-details -->
+
 
 
         <!-- <section> -->
@@ -63,7 +65,6 @@
         <detailsMap v-if="stay.loc.lat && stay.loc.lan" :stay="stay"></detailsMap>
         <StayReviews :stay="stay" @setTotalRate="setTotalRate($event)" />
 
-
         <!-- </section> -->
 
         <!-- <pre>{{ stay }}</pre> -->
@@ -86,7 +87,8 @@ import AppHeader from '../cmps/AppHeader.vue'
 import { orderService } from "../services/order-service.js"
 import { eventBus } from '../services/event-bus.service.js'
 import { stayService } from '../services/stay-service.js'
-
+import imgCarousel from '../cmps/img-carousel.vue'
+import DatePickerModal from '../cmps/DatePickerModal.vue'
 
 export default {
 
@@ -150,12 +152,12 @@ export default {
                     orderToSave,
                 });
 
-                    ElNotification({
-                        title: "Success",
-                        message:
-                            "Your booking request has been sent to the host",
-                        type: "success",
-                    });
+                ElNotification({
+                    title: "Success",
+                    message:
+                        "Your booking request has been sent to the host",
+                    type: "success",
+                });
 
                 //     // socketService.emit("addOrder", orderToSave);
             } catch {
@@ -167,6 +169,7 @@ export default {
 
     },
     components: {
+        imgCarousel,
         Reservation,
         StayInfo,
         StayAmenities,
@@ -174,6 +177,7 @@ export default {
         StayReviews,
         AppHeader,
         detailsMap,
+        DatePickerModal,
     }
     , computed: {
 

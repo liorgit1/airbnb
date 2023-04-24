@@ -54,11 +54,11 @@
     cursor: pointer;
 }
 
-@media  (max-width: 600px){
+@media (max-width: 600px) {
     .guest-modal {
         margin: auto;
-        top: 350px !important;
-        position: fixed;
+        top: 284px !important;
+        // position: fixed;
         height: fit-content;
         width: fit-content;
         display: grid;
@@ -73,7 +73,7 @@
         align-content: center;
         justify-self: center;
         top: 126%;
-        right:8% !important;
-    
+        right: 8% !important;
+        margin: auto !important;
     }
 }

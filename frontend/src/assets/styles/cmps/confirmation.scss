@@ -26,6 +26,7 @@
     .confirm-price-modal {
         grid-column: 2/3;
         align-items: flex-end;
+
         .apt-modal {
             height: 504px;
             width: 500px;
@@ -71,4 +72,64 @@
 .confirm-modal-top {
     padding-block-end: 10px;
     border-bottom: solid 1px #dddd;
+}
+
+
+@media (max-width: 768px) {
+    .confirmation-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .diamond-logo {
+        translate: 308px -20px !important;
+    }
+
+    .rare-find {
+        width: 390px !important;
+    }
+
+    .approveBtn {
+        translate: 0px !important;
+    }
+
+    .close-btn {
+        translate: 36px 10px !important;
+    }
+
+    .approve-btns-container {
+        justify-content: space-between !important;
+        margin-block-end: 25px !important;
+    }
+
+    .confirmation-container .confirm-price-modal .apt-modal {
+        width: unset !important;
+    }
+
+    .your-trip-container {
+        padding-inline-start: 34px !important;
+    }
+
+    .your-trip-container {
+        border: 1px solid #ddd !important;
+        border-radius: 9% !important;
+        margin-block: 20px !important;
+    h2{
+        padding: unset !important;
+    }
+    }
+
+    .flex {
+        &.space-between {
+            h3 {
+                padding-inline-end: 15px !important;
+            }
+
+        }
+    }
+
+    .confirm-price-modal {
+        height: 570px !important;
+    }
 }
